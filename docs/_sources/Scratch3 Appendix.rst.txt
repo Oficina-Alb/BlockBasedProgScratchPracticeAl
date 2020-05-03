@@ -1,4 +1,4 @@
-Appendix
+Shtesë
 ==========
 
 .. include:: blocks.txt
@@ -9,54 +9,54 @@ Appendix
 
   |intro11s|
 
-Block Functions
+Funksionet bllok
 ----------------
 
-In Scratch, the shape of a block ensures that, when the blocks are connected, they can form only scripts, which are syntactically correct. There are independent blocks and function blocks. Independent blocks (hat blocks, stack blocks, C-blocks, and cap blocks) correspond to language commands. Function blocks (reporters and logical blocks) store values of independent blocks. In lesson 3, we talked about the different types of blocks, and now we will introduce the functions of main block groups and some of the groups located in the part Extensions. 
+Në Scratch, forma e një blloku siguron që, kur blloqet janë të lidhura, ato mund të formojnë vetëm shkrime, të cilat janë sintetike të sakta. Ka blloqe të pavarura dhe blloqe funksionimi. Blloqet e pavarura (blloqet e kapelave, blloqet e pirgut, blloqet C dhe blloqet e kapakëve) korrespondojnë me komandat gjuhësore. Blloqet e funksioneve (reporterët dhe blloqet logjike) ruajnë vlerat e blloqeve të pavarura. Në mësimin 3, ne folëm për llojet e ndryshme të blloqeve, dhe tani do të prezantojmë funksionet e grupeve kryesore të bllokut dhe disa prej grupeve të vendosura në pjesën Zgjatjet.
 
-Motion Blocks
+blloqet e lëvizjes
 ~~~~~~~~~~~~~~~~
 
-.. sidebar:: |motion_blocks| Motion
+.. sidebar:: |motion_blocks| Lëvizja
     
    |fig11_1|
  
 .. |fig11_1| image:: ../_images/11/fig11_1.png
     
    
-The commands assigned to these blocks can only be executed by sprites. The stage is motionless, which is why it cannot execute motion commands. There are 18 blocks in the group *Motion*, one more than in the version Scratch 2.0. The block |glide_to| was added.  
+Komandat e caktuara në këto blloqe mund të ekzekutohen vetëm nga sprites. Faza është pa lëvizje, për këtë arsye nuk mund të ekzekutojë komanda lëvizjeje. Ekzistojnë 18 blloqe në grupin *Motion*, një më shumë sesa në versionin Scratch 2.0. Blloku |glide_to| u shtua.
 
-To make them easier to use, blocks that perform similar functions stand close together and form subgroups. The functions of the subgroups are the following:
+Për t'i bërë ato më të lehtë në përdorim, blloqet që kryejnë funksione të ngjashme qëndrojnë pranë dhe formojnë nëngrupe. Funksionet e nëngrupeve janë këto:
 
-1.  moving the sprite in a straight line or in a circle,
+1. lëvija e sprite në një vijë të drejtë ose në një rreth,
 
-2.  moving the sprite to a specified position,
+2. lëvija e sprite në një pozicion të specifikuar,
 
-3.  pointing the sprite toward something,
+3. derjtimi i sprite drejt diçkaje,
 
-4.  moving the sprite by changing its coordinates,
+4. zhvendosja e sprite duke ndryshuar koordinatat e saj,
 
-5.  keeping the sprite within the boundaries of the stage,
+5. mbajtja e sprite brenda kufijve të fazës,
 
-6.  setting the sprites rotation style,
+6. vendosjen e stilit të rrotullimit të sprites,
 
-7.  storing the current coordinates of the sprite.
+7. ruajtja e koordinatave aktuale të sprite.
 
-Blocks belonging to the first six groups are stack blocks, while the seventh group represents reporters, whose function is to store data. They cannot stand on their own; they are inserted into the input fields of other blocks, thus specifying their actions. 
+Blloqet që i përkasin gjashtë grupeve të para janë blloqe rafte, ndërsa grupi i shtatë përfaqëson reporterët, funksioni i të cilëve është ruajtja e të dhënave. Ata nuk mund të qëndrojnë më vete; ato futen në fushat hyrëse të blloqeve të tjera, duke specifikuar kështu veprimet e tyre.
 
-The blocks from the first group perform relative motion, movement in relation to the current position and direction. Unlike these blocks, the ones from the second group move the sprite to a specified point on the stage, regardless of its current position. This type of motion is called absolute motion. 
+Blloqet nga grupi i parë kryejnë lëvizje, lëvizje relative në lidhje me pozicionin dhe drejtimin aktual. Për dallim prej këtyre blloqeve, ato nga grupi i dytë e zhvendosin rrjedhën në një pikë të caktuar në skenë, pavarësisht nga pozicioni i saj aktual. Ky lloj lëvizjeje quhet lëvizje absolute.
 
-Several types of data can be entered into the input fields of motion blocks: values of destination coordinates, rotation angle, number of steps, or duration of movement. One step corresponds to one pixel. The time is expressed in seconds, and angles in degrees.   
+Disa lloje të të dhënave mund të futen në fushat hyrëse të blloqeve të lëvizjes: vlerat e koordinatave të destinacionit, këndi i rrotullimit, numri i hapave ose kohëzgjatja e lëvizjes. Një hap i përgjigjet një pixel. Koha shprehet në sekonda, dhe këndet në shkallë.
 
-In some of the blocks, the destination is chosen from the block's drop-down list. This can be the mouse-pointer, some other sprite participating in the project, as well a point whose coordinates are generated randomly. 
+Në disa prej blloqeve, destinacioni zgjidhet nga lista rënëse e bllokut. Ky mund të jetë treguesi i miut, disa sprite të tjera që marrin pjesë në projekt, si dhe një pikë, koordinatat e së cilës gjenerohen në mënyrë të rastësishme.
 
-The block |rotation_style| has three rotation style options: *all around*, *left-right* and *don't rotate*. The first option means that the sprite can face any of the 360 degrees. *Left-right* means that the sprite can only face left or right, and any other direction is disabled. The last option means that the sprite always faces right. 
+Blloku |rotacioni_style| ka tre opsione të stilit të rrotullimit: *të gjithë rreth*, *majtas-djathtas* dhe *nuk rrotullohen*. Opsioni i parë do të thotë që sprite mund të përballet me cilindo nga 360 gradë. *Majtas-djathtas* do të thotë që sprite mund të përballet vetëm majtas ose djathtas, dhe çdo drejtim tjetër është i paaftë. Mundësia e fundit do të thotë që sprite gjithmonë përballet drejt.
 
-The blocks from the group *Motion* are elaborated in lesson 2 of this practicum. 
+Blloqet nga grupi *Motion* janë shtjelluar në mësimin 2 të këtij praktiku.
 
 .....
 
-Looks Blocks
+Blloqet Looks
 ~~~~~~~~~~~~~~~
 
 .. sidebar:: |looks_blocks| Looks
@@ -65,58 +65,58 @@ Looks Blocks
  
 .. |fig11_2| image:: ../_images/11/fig11_2.png
 
-The blocks from this group control the appearance of sprites. Seven out of 21 blocks from this group control the appearance of the stage. 
-Twenty blocks are visible when the sprite is in focus and three block subgroups when the stage is in focus. The block |switch_backdrop_wait|, which enables the backdrop to change and wait until that happens can be seen only when the stage is active (it is not visible when the sprite is in focus). The remaining blocks that can be attached to the stage can also be seen in this case. The functions of the subgroups are as follows:
+Blloqet nga ky grup kontrollojnë shfaqjen e sprites. Shtatë nga 21 blloqe nga ky grup kontrollojnë shfaqjen e skenës.
+Njëzet blloqe janë të dukshme kur sprite është në fokus dhe tre nëngrupe blloku kur faza është në fokus. Blloku |Switch_backdrop_wait|, i cili mundëson që sfondi të ndryshojë dhe të presë derisa të ndodhë kjo mund të shihet vetëm kur faza është aktive (nuk është e dukshme kur sprite është në fokus). Blloqet e mbetura që mund të ngjiten në skenë gjithashtu mund të shihen në këtë rast. Funksionet e nëngrupeve janë si më poshtë:
 
-1. displaying what the sprite is saying of thinking,
+1. shfaqja e asaj që po thotë të folurit e të menduarit,
 
-2. changing the costume of the sprite and the backdrop of the stage,
+2. ndryshimi i kostumit të sprite dhe sfondi i skenës,
 
-3. changing the size of the sprite,
+3. ndryshimi i madhësisë së sprite,
 
-4. working with graphic effects that can be attached to sprites and the stage,
+4. duke punuar me efekte grafike që mund t'i bashkëngjiten sprites dhe skenës,
 
-5. showing or hiding the sprite,
+5. duke treguar ose fshehur sprite,
 
-6. putting the sprite in the specified layer of the image,
+6. vendosja e sprite në shtresën e specifikuar të figurës,
 
-7. reporters that indicate the current costume and size of the sprite, as well as the current backdrop of the stage. 
+7. reporterët që tregojnë kostumin aktual dhe madhësinë e sprite, si dhe sfondin aktual të skenës.
 
-Graphic effects, which can be added to the sprite, are: 
+Efektet grafike, të cilat mund të shtohen në sprite, janë:
 
 .. hlist::
     :columns: 1
 
-    * color - changes the color of the sprite,
-    * fisheye - gives the impression of a sprite being seen through a wide-angle lens,
-    * whirl - twists the sprite around its center point, 
-    * pixelate - pixelates the sprite, 
-    * mosaic - creates multiple smaller images of the sprite, 
-    * brightness - changes the brightness of the sprite, and 
-    * ghost - changes the transparency of the sprite. 
+    * color - ndryshon ngjyrën e sprite,
+    * fisheye - jep përshtypjen e një sprite që shihet përmes një lente me kënd të gjerë,
+    * whirl - kthesë rrëshqitje rreth pikës së saj qendrore,
+    * pixelate - pikselon sprite,
+    * mozaic - krijon imazhe të shumëfishta më të vogla të sprite,
+    * brightness - ndryshon shkëlqimin e sprite, dhe
+    * ghost - ndryshon transparencën e sprite.
 
 
-Changing the color, for example, can give the illusion that the sprite is expressing emotions or flashing, it may look like a completely new thing appeared. If you use color change with the ``stamp`` command, you can make attractive patterns, for example, a rainbow. 
+Ndryshimi i ngjyrës, për shembull, mund të japë iluzionin se sprite po shpreh emocione ose ndezje, mund të duket sikur u shfaq një gjë krejtësisht e re. Nëse përdorni ndryshimin e ngjyrave me komandën ``stamp``, mund të bëni modele tërheqëse, për shembull, ylber.
 
-By using the fisheye effect, you can give an illusion that the sprite is moving toward or away from the screen, becoming fatter, and the like. It can be used as a transition between costumes. 
+Duke përdorur efektin fisheye, ju mund të jepni një iluzion që sprite po lëviz drejt ose larg nga ekrani, duke u bërë më i trashë dhe të ngjashme. Mund të përdoret si një tranzicion midis kostumeve.
 
-The whirl effect can symbolize time travel, teleportation, vertigo, nausea.  
+Efekti i vorbullës mund të simbolizojë udhëtimin në kohë, teleportation, vertigo, vjellje.
 
-The pixelation effect makes sprites look like they did in the first versions of computer games, when the monitors had low resolution; it can also be used to censor or block out the sprite on the stage. 
+Efekti i pixelation bën që sprites të duken si ato në versionet e para të lojërave kompjuterike, kur monitorët kishin rezolucion të ulët; ai gjithashtu mund të përdoret për të censuruar ose bllokuar spërkatjen në skenë.
 
-The mosaic effect is used for multiplying sprites without cloning.
+Efekti mozaik përdoret për shumëzimin e sprites pa klonim.
 
-By changing the brightness of the sprite, it can give the impression of glowing, or it can become darker, and the ghost effect can make the sprite invisible for the user, but other sprites can still detect it on the stage. 
+Duke ndryshuar shkëlqimin e sprite, ajo mund të japë përshtypjen e ndezjes, ose mund të bëhet më e errët, dhe efekti fantazmë mund ta bëjë sprite të padukshëm për përdoruesin, por spritat e tjerë ende mund ta zbulojnë atë në skenë.
 
-Blocks |goto_layer| and |go_layers| are different from blocks that performed similar functions in the previous version of Scratch.
+Blloqet |goto_layer| dhe |go_layers| janë të ndryshme nga blloqet që kryenin funksione të ngjashme në versionin e mëparshëm të Scratch.
 
-When the stage is in focus, you can see 8 blocks divided into 3 subgroups: for changing the backdrop, for setting graphic effects for the backdrop and the reporter that indicates the current backdrop. The backdrop ``Backdrop Name``, which existed in the version Scratch 2.0, is not included in the new version.
+Kur faza është në fokus, mund të shihni 8 blloqe të ndara në 3 nëngrupe: për ndryshimin e sfondit, për vendosjen e efekteve grafike për sfondin dhe raportuesin që tregon sfondin aktual. Sfondi ``Emri i sfondit``, i cili ekzistonte në versionin Scratch 2.0, nuk është përfshirë në versionin e ri.
 
-The blocks from the group *Looks* are elaborated in lesson 3 of this practicum.
+Blloqet nga grupi *Show* janë shtjelluar në mësimin 3 të këtij kursi.
 
 .....
 
-Sound Blocks
+Blloqet Sound
 ~~~~~~~~~~~~~
 
 .. sidebar:: |sound_blocks| Sound 
@@ -125,37 +125,37 @@ Sound Blocks
  
 .. |fig11_3| image:: ../_images/11/fig11_3.png
 
-Two types of sounds can be used in projects: sounds and notes. The blocks from this group can be used for working with sounds, and the blocks from the extension *Music* for working with notes. Sounds are accessible only by importing, recording, or from a built-in library of sounds. They are played using the sound blocks, which control the volume, tempo and more. The *Sound* group of blocks has been modified significantly, compared to how it was organized in Scratch 2.0 version. Some of the blocks from this group were moved to the extension *Music*. The group *Sound* has 9 blocks, which are divided into 3 subgroups. They can be applied to both sprites and the background. 
+Dy projekte tingujsh mund të përdoren në projekte: tinguj dhe shënime. Blloqet nga ky grup mund të përdoren për të punuar me tinguj, dhe blloqet nga shtesa *Music* për të punuar me shënime. Tinguj janë të arritshëm vetëm duke importuar, regjistruar ose nga një bibliotekë e integruar e tingujve. Ata janë luajtur duke përdorur blloqet e tingullit, të cilat kontrollojnë vëllimin, tempo dhe më shumë. Grupi i blloqeve *Sound* është modifikuar në mënyrë të konsiderueshme, në krahasim me mënyrën se si është organizuar në versionin Scratch 2.0. Disa nga blloqet e këtij grupi u zhvendosën në shtesën *Music*. Grupi *Sound* ka 9 blloqe, të cilat ndahen në 3 nëngrupe. Ato mund të aplikohen për të dy sprites dhe sfondin.
 
-The functions of the subgroups are the following:
+Funksionet e nëngrupeve janë këto:
 
-1. starting, stopping and playing sounds,
+1. fillimi, ndalimi dhe interpretimi i tingujve,
 
-2. applying sound effects,
+2. aplikimi i efekteve të tingullit,
 
-3. controlling the volume.
+3. kontrollin e vëllimit.
 
-**Starting, Stopping and Playing Sounds**
+**Fillimi, Ndërprerja dhe Dëgjimi i Tingujve**
 
-The block |play_until| plays a specific sound, pausing the script until it is finished. Unlike this block, the block |start_sound| plays a sound without pausing the script. This is why the block ``start sound`` is usually used to announce an action, inform a sprite that a goal has been reached, or highlight certain events.
+Blloku |play_until| luan një tingull specifik, duke ndalur skenarin deri sa të mbarojë. Për dallim nga ky bllok, blloku |start_sound| interpreton një tingull pa e ndalur skenarin. Kjo është arsyeja pse blloku ``start sound`` zakonisht përdoret për të shpallur një veprim, për të informuar një sprint se është arritur një qëllim, ose të nxjerrë në pah ngjarje të caktuara.
 
-On the other hand, the blocks ``play until`` is usually used to play the "background music". This block is placed into the block ``forever`` and the appropriate music is played during the whole running of the program. It can also be used for pausing the running of the script instead of the control block ``wait``.
+Nga ana tjetër, blloqet ``play up`` zakonisht përdoren për të luajtur "muzikë në sfond". Ky bllok vendoset në bllokun ``forever`` dhe muzika e duhur luhet gjatë gjithë ekzekutimit të programit. Mund të përdoret gjithashtu për ndaljen e ekzekutimit të skenarit në vend të bllokut të kontrollit ``wait``.
 
-The block ``stop sounds`` will stop all sounds that are currently being played - of all sprites and the stage. For example, if the project offers the option of music, this block is used to turn off the music. It is also common for all sounds to be stopped before the project moves on to the next scene, and the like. 
+Blloku ``stop sounds`` do të ndalojë të gjithë tingujt që janë duke u luajtur aktualisht - të të gjitha sprites dhe skenës. Për shembull, nëse projekti ofron mundësinë e muzikës, ky bllok përdoret për të fikur muzikën. Shtë gjithashtu e zakonshme që të gjithë tingujt të ndalen përpara se projekti të kalojë në skenën tjetër, dhe të ngjashme.
 
-**Applying Sound Effects**
+**Aplikimi i efekteve të tingullit**
 
-Blocks that set and change sound effects were introduced in Scratch 3.0. Although the new sound editor provides more sound effects (see below in the sound editor section), the blocks support only two: setting and changing the pitch, and shifting the audio toward left or right.
+Blloqet që vendosin dhe ndryshojnë efektet e zërit u prezantuan në Scratch 3.0. Edhe pse redaktori i ri i tingullit siguron më shumë efekte tingujsh (shihni më poshtë në seksionin e redaktorit të tingullit), blloqet mbështesin vetëm dy: vendosjen dhe ndryshimin e katranit, dhe zhvendosjen e zërit në të majtë ose të djathtë.
 
-**Volume Control**
+**Kontrolli i vëllimit**
 
-These blocks affect only the sprite (or backdrop) to which they are assigned. For example, clicking on the sprite can turn the volume down if the sprite is getting smaller, thus appearing as if the sprite is getting further away from the user. Also, if blocks from the *Music* extension are used, some parts of the composition may be heard louder and others quieter. 
+Këto blloqe ndikojnë vetëm në degëzimin (ose sfondin) të cilit i janë caktuar. Për shembull, duke klikuar në sprite mund të kthehet vëllimi nëse sprite po bëhet më i vogël, duke u shfaqur kështu sikur Sprite po largohet nga përdoruesi. Gjithashtu, nëse përdoren blloqe nga shtesa *Music*, disa pjesë të përbërjes mund të dëgjohen më të zëshme dhe të tjera më të qeta.
 
-Eight of these blocks are stack blocks, and one is a reporter block, which stores the information on the volume of the sound.
+Tetë nga këto blloqe janë blloqe rafte, dhe një është një reportazh, i cili ruan informacionin mbi vëllimin e tingullit.
 
 .....
 
-Event Blocks
+Blloqet Event
 ~~~~~~~~~~~~~
 
 .. sidebar:: |events_blocks| Events
@@ -164,33 +164,33 @@ Event Blocks
  
 .. |fig11_4| image:: ../_images/11/fig11_4.png
 
-The blocks in this group are used to trigger the running of the script and send and receive messages. There are 9 blocks in this group and they are divided into 3 subgroups. Since in this version of Scratch the video sensing has been moved to the extensions part, it has been removed from the drop-down menu of the block |when_greater|.
+Blloqet në këtë grup përdoren për të shkaktuar drejtimin e skenarit dhe dërgimin dhe pranimin e mesazheve. Në këtë grup ka 9 blloqe dhe ato ndahen në 3 nëngrupe. Meqenëse në këtë version të Scratch, sensacioni i videos është zhvendosur në pjesën e shtesave, është hequr nga menyja drop-down e bllokut | kur_greater |.
 
-The functions of the subgroups are the following:
+Funksionet e nëngrupeve janë këto:
 
-1. triggering scripts with a specific activity performed by the user, 
+1. skriptet nxitëse me një aktivitet specifik të kryer nga përdoruesi,
 
-2. triggering scripts when a specific condition was fulfilled during the running of the project,
+2. Shkrimet e nxitjes kur një ekzekutim i veçantë ishte përmbushur gjatë ekzekutimit të projektit,
 
-3. enabling the broadcasting and receipt of messages.
+3. duke mundësuar transmetimin dhe pranimin e mesazheve.
 
-**Triggering of scripts with activities performed by the user**
+**Ndjekja e shkrimeve me aktivitete të kryera nga përdoruesi**
 
-The user can start the running of the project by clicking the button |g_flag|, one of the sprites participating in the project, the backdrop or by pressing one of the keyboard keys. The project is usually triggered when the green flag is clicked, this is when all scripts, which start with this block, will be activated. These are scripts that perform various initializations, and then hand over the management to other scripts. For example, they delete all list elements, reset variables, set scenes by showing or hiding sprites and by changing their costumes, delete anything drawn on the stage, start the background music, etc. While it is entirely possible to create projects without using this block, it is not recommended. The only way a project could be started without using this block would be to activate scripts that start with some other block from this subgroup. In this case, the project would only last until the scripts that depend on the initial scripts were completed.
+Përdoruesi mund të fillojë ekzekutimin e projektit duke klikuar butonin |g_flag|, një nga sprites që merr pjesë në projekt, në sfond ose duke shtypur një nga tastet e tastierës. Projekti zakonisht nxitet kur klikohet flamuri i gjelbër, kjo është kur të gjitha skriptet, të cilat fillojnë me këtë bllok, do të aktivizohen. Këto janë skriptet që kryejnë inicializime të ndryshme, dhe pastaj ia dorëzojnë menaxhimin shkrimeve të tjera. Për shembull, ata fshijnë të gjithë elementët e listës, rivendosin variablat, vendosin skena duke treguar ose fshehur sprites dhe duke ndryshuar kostumet e tyre, fshijnë çdo gjë të tërhequr në skenë, fillojnë muzikën në sfond, etj. Ndërsa është plotësisht e mundur të krijoni projekte pa përdorur këtë bllok, nuk rekomandohet. E vetmja mënyrë se si mund të fillohet një projekt pa përdorur këtë bllok do të ishte aktivizimi i skripteteve që fillojnë me ndonjë bllok tjetër nga kjo nëngrup. Në këtë rast, projekti do të zgjaste vetëm derisa të përfundonin skriptet që varen nga skriptet fillestare.
 
-Note. The block |clicked_stage| is visible only when the stage is in focus.
+Shënim. Blloku |clicked_staza| është e dukshme vetëm kur faza është në fokus.
 
-**Triggering scripts when a specific condition was fulfilled during the running of the project**
+**Shkrimet e shkëputjes kur u plotësua një kusht specifik gjatë ekzekutimit të projektit**
 
-Some of the events that can trigger the running of scripts starting with one of the blocks from this group are changing of the backdrop, expiration of a specific period of time, or increasing the volume beyond a certain level.
+Disa nga ngjarjet që mund të shkaktojnë mbarimin e skripteteve duke filluar me një nga blloqet nga ky grup janë ndryshimi i sfondit, skadimi i një periudhe specifike kohore ose rritja e vëllimit përtej një niveli të caktuar.
 
-**Broadcasting and receipt of messages**
+**Transmetimi dhe pranimi i mesazheve**
 
-Broadcasting of messages is the main mechanism for coordinating the behavior of sprites participating in a project, and it can also be used for the realization of procedures. Broadcasting is used for calling scripts that should be activated when certain conditions are met. The scripts that start with the block |when_receive| will be called after the specified message has been broadcast. If the same message is broadcast while the script is still running, the current running will be stopped, and the script will start running again from the beginning. Therefore, if we put the block, which broadcasts the message to which the script is responding, into the script that starts with the block ``when receive``, we have a situation where the script is calling itself. This is called **recursion**, and it can be used for creating fractals, forever loops, and the like.
+Transmetimi i mesazheve është mekanizmi kryesor për koordinimin e sjelljes së sprites që marrin pjesë në një projekt, dhe mund të përdoret gjithashtu për realizimin e procedurave. Transmetimi përdoret për të thirrur skriptet që duhet të aktivizohen kur plotësohen kushte të caktuara. Skriptet që fillojnë me bllokun |when_receive| do të thirret pasi të jetë transmetuar mesazhi i specifikuar. Nëse transmetohet i njëjti mesazh ndërsa skenari është akoma duke ekzekutuar, ekzekutimi aktual do të ndalet, dhe skenari do të fillojë të ekzekutohet përsëri nga fillimi. Prandaj, nëse vendosim bllokun, i cili transmeton mesazhin të cilit po i përgjigjet skenari, në skenarin që fillon me bllokun ``when receive``, kemi një situatë kur skenari po thërret vetë. Kjo quhet **rekursion**, dhe mund të përdoret për krijimin e fraktaleve, sythe përgjithmonë dhe të ngjashme.
 
 .....
 
-Control Blocks
+Blloqet Control
 ~~~~~~~~~~~~~~~~
 
 .. sidebar:: |control_blocks| Control
@@ -199,33 +199,33 @@ Control Blocks
  
 .. |fig11_5| image:: ../_images/11/fig11_5.png
 
-The blocks from this group control the running of scripts. They enable branching, repetition, and working with sprite clones, and they can stop the running of scripts. There are 11 blocks in total, one is a starting (hat) block, two are cap blocks, three are stack blocks, five are C-blocks, and the ``if then else`` is an E-shaped block. They are divided into five subgroups, whose functions are the following:
+Blloqet nga ky grup kontrollojnë ekzekutimin e shkrimeve. Ato mundësojnë degëzim, përsëritje dhe punë me klone sprite, dhe ato mund të ndalojnë mbarimin e shkrimeve. Gjithsej janë 11 blloqe, një është një bllok (kapelë) fillestar, dy janë blloqe kapele, tre janë blloqe rafte, pesë janë blloqe C, dhe ``if else then`` është një bllok në formë E. Ata janë të ndarë në pesë nëngrupe, funksionet e të cilave janë këto:
 
-1. block for waiting (pausing the script),
+1. bllok për pritje (duke ndalur skenarin),
 
-2. repetition blocks,
+2. blloqe përsëritje,
 
-3. blocks with branches, 
+3. blloqe me degë,
 
-4. block for conditional repetitions,
+4. bllok për përsëritjet e kushtëzuara,
 
-5. block for stopping the script,
+5. bllok për ndalimin e skenarit,
 
-6. blocks used for working with clones.
+6. blloqe që përdoren për të punuar me klone.
 
-The functions of these blocks are elaborated in lessons 5, 6 and 7 of this practicum.
+Funksionet e këtyre blloqeve janë shtjelluar në mësimet 5, 6 dhe 7 të këtij praktiku.
 
-**Working with clones**
+**Puna me klone**
 
-Cloning is a feature that allows the sprite to create a copy of itself while the project is running. Each clone (copy) has the same costumes, sounds and scripts as the original, but it is otherwise independent. Cloning is different form stamping because clones are individual sprites that can run scripts and behave according to those scripts. They are also different from the sprites created with the duplication option because the ordinary duplicates are permanent and appear in the sprite list, whereas clones do not, and they disappear when the project is finished. 
+Klonimi është një veçori që lejon që sprite të krijojë një kopje të vetvetes ndërsa projekti po funksionon. Çdo klon (kopje) ka të njëjtat kostume, tinguj dhe shkrime si origjinali, por është ndryshe i pavarur. Klonimi është vulosje me forma të ndryshme sepse klonet janë sprites individuale që mund të drejtojnë skriptet dhe të sillen sipas atyre shkrimeve. Ato janë gjithashtu të ndryshme nga spritet e krijuara me opsionin e dublikimit sepse kopjimet e zakonshme janë të përhershme dhe paraqiten në listën sprite, ndërsa klonet jo, dhe ato zhduken kur projekti ka mbaruar.
 
-Cloning is used whenever a project has similar sprites doing similar things. Since clones are made by the project, and not by the user, cloning liberates the user from making the same changes to each of the many sprites. For example, cloning can be used for creating multiple friend and enemy sprites in games, as well as for special effects like fireworks and snow.  
+Klonimi përdoret sa herë që një projekt ka sprites të ngjashëm që bëjnë gjëra të ngjashme. Meqenëse klonet janë bërë nga projekti, dhe jo nga përdoruesi, klonimi çliron përdoruesin të bëjë të njëjtat ndryshime në secilën nga shumë sprites. Për shembull, klonimi mund të përdoret për krijimin e spritave të shumëfishtë të mikut dhe armikut në lojëra, si dhe për efekte speciale si fishekzjarre dhe borë.
 
-Clones usually perform an action when created. The block |when_clone| triggers the script, which starts running when a clone is created. Multiple scripts starting with this block can be added to the same sprite, and they will all run simultaneously when a clone is created. The script itself can be running on multiple clones at once. Some of the actions that this block can perform include putting the clone in a random position, moving the clone until it collides with another sprite. 
+Klonët zakonisht kryejnë një veprim kur krijohen. Blloku |when_clone| shkakton skenarin, i cili fillon të ekzekutohet kur krijohet një klon. Skriptet e shumta që fillojnë me këtë bllok mund të shtohen në të njëjtën sprite, dhe të gjitha ato do të funksionojnë njëkohësisht kur të krijohet një klon. Skenari vetë mund të jetë duke u ekzekutuar në klone të shumta njëkohësisht. Disa nga veprimet që ky bllok mund të kryejë përfshijnë vendosjen e klonit në një pozicion të rastësishëm, lëvizjen e klonit derisa të përplaset me një tjetër sprit.
 
 .....
 
-Sensing Blocks
+Blloqet e ndjeshmërisë
 ~~~~~~~~~~~~~~~
 
 .. sidebar:: |sensing_blocks| Sensing
@@ -234,36 +234,36 @@ Sensing Blocks
  
 .. |fig11_6| image:: ../_images/11/fig11_6.png
 
-This group is made up of blocks that allow the project to accept input from different devices, much like how the human senses collect information from their environment.
-There are 18 blocks in the group *Sensing*. Three blocks, which were in the Scratch 2.0 version and which referred to video editing and monitoring movement registered by a video, are no longer included, but the block |set_drag| was added. This block regulates whether a full-screen sprite can be dragged or not, which was previously adjusted in the sprite's information. The blocks related to video detection have been moved to the corresponding extension.  
+Ky grup është i përbërë nga blloqe që lejojnë projektin të pranojë të dhëna nga pajisje të ndryshme, ashtu si mënyra se shqisat njerëzore mbledhin informacione nga mjedisi i tyre.
+Ekzistojnë 18 blloqe në grupin *Sensing*. Tre blloqe, të cilat ishin në versionin Scratch 2.0 dhe që i referoheshin lëvizjes së redaktimit dhe monitorimit të videos të regjistruar nga një video, nuk janë më të përfshira, por blloku |set_drag| u shtua. Ky bllok rregullon nëse një sprite me ekran të plotë mund të tërhiqet ose jo, i cili ishte rregulluar më parë në informacionin e sprite. Blloqet në lidhje me zbulimin e videos janë zhvendosur në shtrirjen përkatëse.
 
-These blocks are divided into 6 subgroups with the following functions:
+Këto blloqe ndahen në 6 nëngrupe me këto funksione:
 
-1.  storing information on the distance of the sprite in relation to the mouse-pointer or other objects,
+1. ruajtja e informacionit për distancën e spritit në lidhje me treguesin e miut ose objektet e tjera,
 
-2.  entering input data from the keyboard,
+2. vendosjen e të dhënave hyrëse nga tastiera,
 
-3.  storing information on the current operations of the mouse-pointer and the keyboard,
+3. ruajtja e informacionit për operacionet aktuale të treguesit të miut dhe tastierës,
 
-4.  storing the current value of the loudness of the sound,
+4. ruajtja e vlerës aktuale të zhurmës së tingullit,
 
-5.  working with a timer,
+5. duke punuar me një kohëmatës,
 
-6.  storing parameters of sprites and the stage,
+6. ruajtja e parametrave të sprites dhe skenës,
 
-7.  storing information on the current time and the user.
+7. ruajtja e informacionit për kohën e tanishme dhe përdoruesin.
 
-Only three blocks from this group can stand on their own, the rest of them are function blocks. Therefore, the blocks from the first group are inserted into control blocks, which should enable the execution of different activities depending on the position of the sprite. The blocks of the second group correspond to the information that a person collects with the sense of touch, and the third group corresponds to the information that is collected by the sense of hearing. The timer can be used to limit the playing time in a game or the time it takes to complete a test task. The block that stores the parameters of sprites and the stage can provide a lot of data on all of the objects, which participate in the project. Information that a person would collect through the sense of sight, and a computer with a video camera, can be used if the extension *Video Sensing* is added to the project.
+Vetëm tre blloqe nga ky grup mund të qëndrojnë më vete, pjesa tjetër janë blloqe funksioni. Prandaj, blloqet nga grupi i parë futen në blloqe kontrolli, të cilat duhet të mundësojnë kryerjen e aktiviteteve të ndryshme në varësi të pozitës së sprite. Blloqet e grupit të dytë korrespondojnë me informacionin që një person mbledh me sensin e prekjes, dhe grupi i tretë i përgjigjet informacionit që mblidhet nga sensi i të dëgjuarit. Koha mund të përdoret për të kufizuar kohën e lojës ose kohën që duhet për të përfunduar një detyrë provë. Blloku që ruan parametrat e sprites dhe skena mund të sigurojë shumë të dhëna për të gjitha objektet, të cilët marrin pjesë në projekt. Informacioni që një person do të mbledhë përmes sensit të shikimit, dhe një kompjuter me një kamerë video, mund të përdoret nëse shtesa *Ndjesia Video* i shtohet projektit.
 
-We have elaborated the functions of most blocks in this group through the examples in the previous lessons. Here we will just mention the functions of logical blocks and current time reporters.
+Ne kemi shtjelluar funksionet e shumicës së blloqeve në këtë grup përmes shembujve në mësimet e mëparshme. Këtu do të përmendim vetëm funksionet e blloqeve logjikë dhe reporterëve të kohës aktuale.
 
-**Logical Blocks**
+**Blloqe logjike**
 
-There are 5 logical blocks in this group. Each of these blocks can return only one out of two values: true or false, depending on whether the condition was fulfilled or not. Logical blocks are placed in the input fields of the hexagonal shape of the control blocks.
+Ka 5 blloqe logjike në këtë grup. Secila prej këtyre blloqeve mund të kthejë vetëm një nga dy vlera: e vërtetë ose e rremë, në varësi të faktit nëse kushti është përmbushur apo jo. Blloqet logjike vendosen në fushat hyrëse të formës gjashtëkëndore të blloqeve të kontrollit.
 
-**Current time and user information**
+**Koha aktuale dhe informacioni i përdoruesit**
 
-The reporter block |time_unit| can give the following information on the current time. 
+Blloku i reporterit |time_unit| mund të japë informacionin e mëposhtëm për kohën aktuale.
 
 .. image:: ../_images/11/fig11_6b.png
      :width: 200px   
@@ -271,7 +271,7 @@ The reporter block |time_unit| can give the following information on the current
 
 .....
 
-Operators Blocks
+Blloqet Operator
 ~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |operator_blocks| Operators
@@ -280,35 +280,35 @@ Operators Blocks
  
 .. |fig11_7| image:: ../_images/11/fig11_7.png
 
-In the group *Operators* there are no independent blocks, which would correspond to language commands. All blocks are function blocks, i.e. they store the values of number, string or logical expressions and they are inserted into appropriate input fields of independent blocks or other function blocks. The block |text_contains| is a new block in this group, which returns the values *true* or *false* depending on whether the string contains the given character or not. 
+Në grupin *Operatorët* nuk ka blloqe të pavarura, të cilat do të korrespondonin me komandat gjuhësore. Të gjitha blloqet janë blloqe funksioni, d.m.th. ato ruajnë vlerat e numrit, vargjeve ose shprehjeve logjike dhe ato futen në fushat përkatëse hyrëse të blloqeve të pavarura ose blloqeve të tjera të funksionit. Blloku |text_contains| është një bllok i ri në këtë grup, i cili kthen vlerat *true* ose *false* në varësi të faktit nëse vargu përmban karakterin e dhënë apo jo.
 
-There are 18 blocks in the group *Operators* - 11 reporters and 7 logical (boolean) blocks, which enable the following types of operations:
+Ekzistojnë 18 blloqe në grupin *Operatorët* - 11 reporterë dhe 7 blloqe logjike (boolean), të cilat mundësojnë llojet e mëposhtme të operacioneve:
 
-1.  the basic arithmetic operations – addition, subtraction, multiplication and division,
+1. operacionet themelore aritmetike - shtimi, zbritja, shumëzimi dhe ndarja,
 
-2.  generating random numbers,
+2. gjenerimi i numrave të rastit,
 
-3.  comparisons - greater than, less than, equal to,
+3. krahasimet - më të mëdha se, më pak se, të barabarta me,
 
-4.  constructing complex logical expressions,
+4. ndërtimin e shprehjeve logjike komplekse,
 
-5.  operations with strings,
+5. operacione me tela,
 
-6.  integer operations, 
+6. operacione të plotë,
 
-7.  calculating the value of mathematical functions.
+7. llogaritja e vlerës së funksioneve matematikore.
 
-Basic arithmetic operations can be performed with integer and real numbers. Only division by zero (divisor = 0) can lead to problems, because there aren't any numbers that, when multiplied by zero, would give a number other than zero (quotient * divisor = dividend). This is why division by zero should be prevented in programs. We showed how this could be achieved in the project *Young Mathematician* from lesson 7 of this practicum. 
+Operacionet themelore aritmetike mund të kryhen me numër të plotë dhe real. Vetëm ndarja me zero (pjesëtuesi = 0) mund të çojë në probleme, sepse nuk ka ndonjë numër që, kur shumëzohet me zero, do të jepte një numër tjetër përveç zeros (pjesëtori * pjesëtuesi = dividenti). Kjo është arsyeja pse ndarja me zero duhet të parandalohet në programe. Ne treguam se si mund të arrihet kjo në projekt *Matematikan i ri* nga mësimi 7 i këtij praktiku.
 
-As the result of the division by zero, the Scratch interpreter returns one of the values *Infinity*, *NaN* (not a number) or *-Infinity*, depending on whether the dividend is a positive number, zero or a negative number. 
+Si rezultat i ndarjes në zero, përkthyesi Scratch kthen njërën prej vlerave *Infinity*, *NaN* (jo një numër) ose *Përfundimi*, në varësi të faktit nëse dividenti është një numër pozitiv, zero ose një numër negativ .
 
-We have explained the use of random numbers, logical expressions, and complex logical expressions formed by the logical operations *and*, *or* and *not* with the examples presented in the previous lessons.
+Ne kemi shpjeguar përdorimin e numrave të rastit, shprehjeve logjike dhe shprehjeve logjike komplekse të formuara nga operacionet logjike *dhe*, *ose* dhe *jo* me shembujt e paraqitur në mësimet e mëparshme.
 
-The operations used with strings enable the joining of two strings, selecting characters located in specified positions in the string, determine the length of the string, and check if the string contains the specified character. The operation performed on strings were elaborated in lesson 9 of this practicum.  
- 
-The integer operations supported in Scratch are the computation of the remainder in the integer division, and the rounding of the numbers.
+Operacionet e përdorura me string mundësojnë bashkimin e dy vargjeve, zgjedhjen e karaktereve të vendosura në pozicione të përcaktuara në varg, përcaktimin e gjatësisë së vargut dhe kontrolloni nëse vargu përmban karakterin e specifikuar. Operacioni i kryer në tela u shtjellua në mësimin 9 të këtij kursi.
+ 
+Operacionet e numrave të plotë të mbështetur në Scratch janë llogaritja e pjesës tjetër në ndarjen e numrit të plotë dhe rrumbullakimi i numrave.
 
-Mathematical functions that can be selected from the drop-down list of the block |function| are:
+Funksionet matematikore që mund të zgjidhen nga lista drop-down e bllokut |function| janë:
 
 .. hlist::
     :columns: 6
@@ -328,7 +328,7 @@ Mathematical functions that can be selected from the drop-down list of the block
 
 .....
 
-Variable and List Blocks
+Variablat dhe Blloqet Lista
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |variables_blocks| Variables and Lists
@@ -337,64 +337,64 @@ Variable and List Blocks
  
 .. |fig11_8| image:: ../_images/11/fig11_8.png
 
-The functions of the subgroups are the following:
+Funksionet e nëngrupeve janë këto:
 
-For variables
+Për variablat
 
-1. reporters for user's variables,
+1. reporterët për variablat e përdoruesit,
 
-2. setting and changing the value of a variable,  
+2. vendosjen dhe ndryshimin e vlerës së një variabli,
 
-3. showing and hiding variable reporters on stage.
+3. duke treguar dhe fshehur reporterë të ndryshueshëm në skenë.
 
-For lists
+Për listat
 
-4. reporters for user's lists,
+4. reporterët për listat e përdoruesve,
 
-5. adding elements onto the end of the list,
+5. duke shtuar elemente në fund të listës,
 
-6. operations performed on the list, 
+6. operacionet e kryera në listë,
 
-7. returning list information, 
+7. informacioni për listën e kthimit,
 
-8. showing and hiding list reporters on the stage.
+8. duke treguar dhe fshehur reporterët e listave në skenë.
 
-The operations that are supported for working with lists are: 
-
-.. hlist::
-    :columns: 1
-
-    * deleting an item from a specified position on the list,
-    * deleting all items from a particular list,
-    * inserting items into the list at given positions, and  
-    * replacing items in specified positions.
-
-The following information can be obtained about the list:
+Operacionet që janë mbështetur për të punuar me listat janë:
 
 .. hlist::
     :columns: 1
 
-    * which item is in the specified position, 
-    * what is the position (on the list) of the specified item, 
-    * the length of the list (number of items on the list), and 
-    * whether an item is included in a list or not. 
+     * fshirjen e një artikulli nga një pozicion i caktuar në listë,
+     * fshirjen e të gjitha sendeve nga një listë e veçantë,
+     * futja e artikujve në listë në pozicionet e dhëna, dhe
+     * zëvendësimi i artikujve në pozicione të përcaktuara.
 
-Variable and lists can be global - they can be used by all sprites, or local - they can be used only by one sprite. The variables and lists created for the stage are visible to all sprites. 
+Informacioni i mëposhtëm mund të merret në lidhje me listën:
 
-Current values of the variables can be followed on the stage via variable monitors. Variable monitors can come in three formats: 
+.. hlist::
+    :columns: 1
+
+     * cili artikull është në pozicionin e specifikuar,
+     * cili është pozicioni (në listë) të sendit të specifikuar,
+     * gjatësia e listës (numri i artikujve në listë), dhe
+     * nëse një artikull është përfshirë në një listë apo jo.
+
+Variablat dhe listat mund të jenë globale - ato mund të përdoren nga të gjithë sprites, ose lokalë - ato mund të përdoren vetëm nga një sprite. Variablat dhe listat e krijuara për skenë janë të dukshme për të gjitha sprites.
+
+Vlerat aktuale të variablave mund të ndiqen në skenë përmes monitorëve të ndryshueshëm. Monitorët e ndryshueshëm mund të vijnë në tre formate:
 
 .. hlist::
     :columns: 1
     
-    * displaying the value with the name of the variable,
-    * large display of the value without the corresponding name of the variable, 
-    * display containing a slider bar, which can be used to change the value of the variable.
+     * shfaqja e vlerës me emrin e ndryshores,
+     * shfaqje e madhe e vlerës pa emrin përkatës të ndryshores,
+     * ekran që përmban një shirit rrëshqitës, i cili mund të përdoret për të ndryshuar vlerën e ndryshores.
 
-Variables are elaborated in lesson 7, and lists in lesson 9 of this practicum.
+Variablat janë shtjelluar në mësimin 7, dhe listat në mësimin 9 të këtij praktiku.
  
 .....
 
-My Blocks
+Blloqet e mia
 ~~~~~~~~~~~~
 
 .. sidebar:: |my_blocks| My blocks
@@ -403,17 +403,17 @@ My Blocks
  
 .. |fig11_9| image:: ../_images/11/fig11_9.png
 
-The option for the user to make his/her own blocks and thus implement procedures was first introduced in the Scratch version 2.0. In the new version of Scratch, the color and the shape of user's blocks were changed. 
+Mundësia që përdoruesi të bëjë blloqet e tij / saj dhe në këtë mënyrë të zbatojë procedurat u prezantua për herë të parë në versionin Scratch 2.0. Në versionin e ri të Scratch, ngjyra dhe forma e blloqeve të përdoruesit u ndryshuan.
 
-The define block is the first block that will appear when the user asks to introduce a new block. The actions, which should be performed by this newly introduced block, should be added onto the define block. Then a stack block will appear in the block palette with the name assigned to it in the definition. The new user-defined block can further be used like any other block.    
+Blloku përcaktues është blloku i parë që do të shfaqet kur përdoruesi kërkon të prezantojë një bllok të ri. Veprimet, të cilat duhet të kryhen nga ky bllok i prezantuar rishtazi, duhet të shtohen në bllokun e përcaktuar. Pastaj në paletën e bllokut do të shfaqet një pirg me emrin që i është caktuar në përkufizim. Blloku i ri i përcaktuar nga përdoruesi mund të përdoret më tej si çdo bllok tjetër.
 
-The new block can have input fields. *Parameters* are inserted into the input field of the definition header. Procedures can have more than one parameter. When the new block is used to call a procedure, in its input fields the user will enter *arguments*. The arguments replace each appearance of the corresponding parameters in the procedure.
+Blloku i ri mund të ketë fushat e hyrjes. *Parametrat* futen në fushën e hyrjes së titullit të përkufizimit. Procedurat mund të kenë më shumë se një parametër. Kur blloku i ri përdoret për të thirrur një procedurë, në fushat e tij të hyrjes përdoruesi do të fusë *argumentet*. Argumentet zëvendësojnë çdo paraqitje të parametrave përkatës në procedurë.
 
-The creation and the use of introduced blocks are elaborated in lesson 8 of this practicum.
+Krijimi dhe përdorimi i blloqeve të prezantuara janë shtjelluar në mësimin 8 të këtij kursi.
 
 .....
 
-Blocks of the Pen Extension 
+Blloqet e Pen Extension 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |pen_extension| Pen
@@ -422,27 +422,27 @@ Blocks of the Pen Extension
  
 .. |fig11_10| image:: ../_images/11/fig11_10.png
 
-In Scratch, each sprite can be assigned a position, direction and orientation of movement and it can leave a mark while moving. In doing so, the size, shape and color of the sprite have no effect on the mark left by the sprite drawing with a pen. The sprite can be invisible, or it can consist of a single dot, but this does not affect its drawing. The sprite's ability to leave a mark while moving is based on blocks from this group. Images that are created by sprites are stored as a collection of figures, along with their parameters. Images defined in this manner are called *vector graphics*. 
+Në Scratch, secilës sprite mund të caktohet një pozicion, drejtim dhe orientim i lëvizjes dhe mund të lërë një shenjë gjatë lëvizjes. Duke vepruar kështu, madhësia, forma dhe ngjyra e sprite nuk kanë asnjë efekt në shenjën e lënë nga vizatimi i sprite me një stilolaps. Sprite mund të jetë e padukshme, ose mund të përbëhet nga një pikë e vetme, por kjo nuk ndikon në vizatimin e saj. Mundësia e sprite për të lënë një shenjë gjatë lëvizjes bazohet në blloqe të këtij grupi. Imazhet që janë krijuar nga sprites ruhen si një koleksion figurash, së bashku me parametrat e tyre. Imazhet e përcaktuara në këtë mënyrë quhen *grafika vektoriale*.
 
-The blocks in the *Pen* extension are divided into 5 subgroups. Shade pen command from the previous versions has been taken out, and instead of setting pen color by number alone, color is now defined by hue, saturation, and brightness. All blocks belonging to this group are stack blocks.
+Blloqet në shtrirjen *Pen* janë të ndara në 5 nëngrupe. Komanda e stilolapsit Shade nga versionet e mëparshme është nxjerrë, dhe në vend që të vendosni ngjyrën e stilolapsit vetëm nga numri, ngjyra tani përcaktohet nga ngjyrimi, ngopja dhe shkëlqimi. Të gjitha blloqet që i përkasin këtij grupi janë blloqe pirgësh.
 
-The functions of the subgroups are:
+Funksionet e nëngrupeve janë:
 
-1.  deleting everything drawn (removing all pen marks from the stage),
+1. fshirja e çdo gjëje e tërhequr (heqja e të gjitha shenjave të stilolapsit nga skena),
 
-2.  stamping the sprite,
+2. vulosja e sprite,
 
-3.  putting the pen up or down,
+3. vendosjen e stilolapsit lart ose poshtë,
 
-4.  setting and changing pen attributes,
+4. vendosjen dhe ndryshimi i atributeve të stilolapsit,
 
-5.  setting and changing pen size (thickness).
+5. vendosja dhe ndryshimi i madhësisë së stilolapsit (trashësia).
 
-The graphical editor in this version of Scratch is working with the so-called HSB (Hue, Saturation, Brightness) color model. This means that the color is built with 3 components: Hue, Saturation and Brightness. The color shade indicates the color number in the spectral palette, that is, the color itself. It is described in a color circle in which the 0° angle represents the color red (color number is zero), and the 180° angle represents the blue-green color called cyan (color number 100). The saturation refers to the intensity of the color - the higher the saturation, the purer the color. The saturation can be from 0 to 100%, with the 0% intensity representing white and the 100% intensity pure color. The brightness of the color depends on the amount of the color black mixed in with the observed color.  
+Redaktori grafik në këtë version të Scratch është duke punuar me të ashtuquajturin model ngjyrash HSB (Hue, Saturation, Brightness). Kjo do të thotë që ngjyra është e ndërtuar me 3 përbërës: Hue, ngopje dhe shkëlqim. Hija e ngjyrave tregon numrin e ngjyrave në paletën spektrale, domethënë vetë ngjyrën. Është përshkruar në një rreth ngjyrash, në të cilin këndi 0 ° përfaqëson ngjyrën e kuqe të ngjyrës (numri i ngjyrës është zero), dhe këndi 180 ° paraqet ngjyrën blu-jeshile të quajtur cyan (numri i ngjyrës 100). Ngopja i referohet intensitetit të ngjyrës - sa më e lartë të jetë ngopja, aq më e pastër është ngjyra. Ngopja mund të jetë nga 0 në 100%, me intensitetin 0% që përfaqëson të bardhë dhe ngjyrën e pastër me intensitet 100%. Shkëlqimi i ngjyrës varet nga sasia e ngjyrës së zezë të përzier me ngjyrën e vrojtuar.
 
 .....
 
-The Blocks from the Text to Speech and the Translate Extensions
+Blloqet Text to Speech dhe Translate Extensions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |voices_extension| Text to Speech and |translate_extension| Translate
@@ -451,216 +451,216 @@ The Blocks from the Text to Speech and the Translate Extensions
  
 .. |fig11_11| image:: ../_images/11/fig11_11.png
 
-**Text to Speech Extension**
+**Zgjatja e tekstit në të folu **
 
-This extension can be used only if the computer is connected to the Internet |requires|, because it uses the Amazon Web Services.
+Kjo zgjatje mund të përdoret vetëm nëse kompjuteri është i lidhur me Internet |search|, sepse ai përdor Shërbimet Ueb në Amazon.
 
-When you choose |voices_extension| from the group *Extensions*, three new blocks will appear in the block palette. They allow the sprite to say the text inserted into the input field of the first block, in the language set by the user with the third block from this group. The user can also set the voice, which will actually speak the text: female (soprano or alto) or male (tenor or bass). This is set by another block from this group.   
+Kur zgjidhni |voice_extension| nga grupi *Zgjatjet*, tre blloqe të reja do të shfaqen në paletën e bllokut. Ato lejojnë që sprite të thotë tekstin e futur në fushën hyrëse të bllokut të parë, në gjuhën e vendosur nga përdoruesi me bllokun e tretë nga ky grup. Përdoruesi mund të vendosë edhe zërin, i cili në të vërtetë do të flasë tekstin: femër (soprano ose alto) ose mashkull (tenor ose bas). Kjo është vendosur nga një bllok tjetër nga ky grup.
 
-**Extension Translate**
+**Përkthim i zgjatjes**
 
-This extension can only be used if the computer is connected to the Internet |requires|, because it uses Google. 
+Kjo shtesë mund të përdoret vetëm nëse kompjuteri është i lidhur në Internet | kërkon |, sepse përdor Google.
 
-When you choose the |translate_extension| from *Extensions*, two new blocks appear in the block palette. They allow the text written in one language to be translated into another language. The block |language| shows which language is set in Scratch. Text written in the current language in the first input field of the block |translate_to| is translated into the language selected from the drop-down list of the second input field. If the translation block is placed in the input field of the block ``say`` or ``think``, the user can see the translation.  
+Kur ju zgjidhni |translate_extension| nga *Zgjatjet*, dy blloqe të reja shfaqen në paletën e bllokut. Ato lejojnë që teksti i shkruar në një gjuhë të përkthehet në një gjuhë tjetër. Blloku |language| tregon se cila gjuhë është e vendosur në Scratch. Teksti i shkruar në gjuhën e tanishme në fushën e parë hyrëse të bllokut |translate_to| është përkthyer në gjuhën e zgjedhur nga lista rënëse e fushës së dytë të hyrjes. Nëse blloku i përkthimit vendoset në fushën hyrëse të bllokut ``say`` ose ``think``, përdoruesi mund të shohë përkthimin.
 
-Using the built-in graphics (paint) editor
+Përdorimi i redaktorit të integruar të grafikëve (bojës)
 --------------------------------------------
 
-Scratch has a built-in paint editor that you can use to create and modify sprites, costumes, and backdrops. This editor supports two different drawing modes: raster (bitmap) and vector. 
+Scratch ka një redaktues të integruar të bojrave që mund të përdorni për të krijuar dhe modifikuar sprites, kostumet dhe sfondet. Kjo edito
 
 .. infonote:: 
 
-  Computers can store images in two ways: raster and vector.
-  
-  In **raster graphics** the image is stored as a rectangular grid of pixels - bitmap. The bitmap is technically determined by the width and height of the sprite in pixels and the number of bits needed to store the color of the pixels. For example, if we have 16 colors, 4 bits per pixel are required for storing its color. The raster graphics is dependent on the resolution. Raster images cannot be enlarged without losing the image quality.
+  Kompjuterët mund të ruajnë imazhet në dy mënyra: raster dhe vektor.
+  
+   Në grafikët **raster** imazhi ruhet si një rrjet drejtkëndësh i pikselave - bitmap. Bitmap-i përcaktohet teknikisht nga gjerësia dhe lartësia e sprite në pixel dhe nga numri i bitëve të nevojshëm për të ruajtur ngjyrën e pikselave. Për shembull, nëse kemi 16 ngjyra, nevojiten 4 bit për pixel për ruajtjen e ngjyrës së tij. Grafika e rasterit varet nga rezolucioni. Imazhet në raster nuk mund të zmadhohen pa humbur cilësinë e figurës.
 
-  This disadvantage is overcome by the application of the **vector graphics**, which stores an image as a collection of figures together with its data (parameters) that defines how the figure will be drawn and where it will be located. The turtle graphics is an example of the vector graphics.
+   Ky disavantazh tejkalohet nga aplikimi i grafikës **vektor**, i cili ruan një imazh si koleksion figurash së bashku me të dhënat e tij (parametrat) që përcaktojnë se si do të vizatohet figura dhe ku do të vendoset. Grafika e breshkës është një shembull i grafikëve vektoriale.
 
-  The following figure shows an enlarged image of a line drawn in these two ways.
+   Figura e mëposhtme tregon një imazh të zgjeruar të një linje të tërhequr në këto dy mënyra.
 
   .. image:: ../_images/11/fig11_12.png
      :width: 210px   
      :align: center
 
-User Interface
+Ndërfaqja e përdoruesit
 ~~~~~~~~~~~~~~~
 
-The following figure shows the layout of the built-in paint editor in vector and raster mode. 
+Figura e mëposhtme tregon paraqitjen e redaktorit të ngjyrave të integruara në mënyrën vektoriale dhe rasteri.
 
 .. image:: ../_images/11/fig11_13.png
      :width: 1200px   
      :align: center
 
-.. sidebar:: New costumes
+.. sidebar:: Kostume të reja
     
    |novi|
  
 .. |novi| image:: ../_images/11/fig11_14.png
 
-**Costume Area**
+**Zona e Kostumit**
 
-To the left is the costume area (1) with icons for each costume and the sequence number of the costume. At the bottom of the costume area is a button for creating new costumes. To edit different costumes in the paint editor, simply click on the icon of the desired costume and the corresponding image will appear in the editing area - drawing area or canvas (7).
+Në të majtë është zona e kostumit (1) me ikona për çdo kostum dhe numrin rendor të kostumit. Në fund të zonës së kostumit është një buton për krijimin e kostumeve të reja. Për të modifikuar kostume të ndryshme në redaktorin e pikturës, thjesht klikoni në ikonën e kostumit të dëshiruar dhe imazhi përkatës do të shfaqet në zonën e redaktimit - zona e vizatimit ose kanavacë (7).
 
-You can add a new costume (or backdrop) by hovering over the button |b_sprite| located at the bottom of this area with the mouse-pointer and choosing one of the options that will appear. You can choose a costume from the costumes library, draw your own, download an image file from your computer, take a picture, or choose a "surprise costume", which is randomly selected from the costumes library. 
+Ju mund të shtoni një kostum të ri (ose sfond) duke rri pezull mbi butonin |b_sprite| vendosur në fund të kësaj zone me treguesin e miut dhe zgjedhjen e njërës nga opsionet që do të shfaqet. Ju mund të zgjidhni një kostum nga libraria e kostumeve, të vizatoni vetë, të shkarkoni një skedar imazhi nga kompjuteri juaj, të bëni një fotografi ose të zgjidhni një "kostum surprizë", i cili zgjidhet rastësisht nga libraria e kostumeve.
 
-Note. The costumes library contains individual costumes of all sprites found in the sprites library.
+Shënim. Libraria e kostumeve përmban kostume individuale të të gjitha sprites që gjenden në bibliotekën e sprites.
 
-.. sidebar:: Changing the mode of operation 
+.. sidebar:: Ndryshimi i gjendjes së operatorit 
     
    |vector_bmp|
    
    |bmp_vector|
  
 
-**Converting the vector mode to raster mode and vice versa**
+**Konvertimi i mënyrës vektoriale në modalitetin e rasterit dhe anasjelltas**
 
-Below the lower left corner of the drawing area is the button (2) that switches the editor from one mode to another. The tools specific to the particular mode can be found on the left side of the screen next to the drawing area, in our figure the vector mode is marked with (5) and raster (bitmap) mode with (6). The options can be seen above the drawing area (canvas). Some of them are common to both modes of operation, in the figure, these options are framed with red rectangles (3), and some of them apply only to the vector mode, these are framed with grey rectangles (4). 
+Nën këndin e poshtëm të majtë të zonës së vizatimit është butoni (2) që ndërron redaktorin nga një modalitet në një tjetër. Mjetet specifike për mënyrën e veçantë mund të gjenden në anën e majtë të ekranit pranë zonës së vizatimit, në figurën tonë mënyra e vektorit shënohet me (5) dhe modalitetin raster (bitmap) me (6). Opsionet mund të shihen sipër zonës së vizatimit (kanavacë). Disa prej tyre janë të zakonshme për të dy mënyrat e funksionimit, në figurë, këto opsione janë përshtatur me drejtkëndësha të kuq (3), dhe disa prej tyre vlejnë vetëm për mënyrën vektoriale, këto janë të përshtatura me drejtkëndësha gri (4).
 
-Common options
+Opsione të zakonshme
 ~~~~~~~~~~~~~~~
 
-These options are located above the drawing area.
+Këto opsione janë të vendosura mbi zonën e vizatimit.
 
-.. sidebar::  Changing the color
+.. sidebar::  Ndryshimi i ngjyrës
     
    |promena_boje|
  
 .. |promena_boje| image:: ../_images/11/fig11_15.png
 
-|fill| **Changing the Color**
+|fill| **Ndryshimi i ngjyrës**
 
-Clicking on the input field of the block that is used to set the color will open a drop-down menu containing sliders: color, saturation, and brightness and below them an eyedropper tool (pipette) for sampling color. You can set the color you want by moving the slider or clicking the eyedropper tool.
+Duke klikuar në fushën hyrëse të bllokut që përdoret për të vendosur ngjyrën, do të hapni një menyë drop-down që përmban rrëshqitës: ngjyrën, ngopjen dhe shkëlqimin dhe nën to një mjet eyedropper (pipetë) për marrjen e mostrës së ngjyrës. Ju mund të vendosni ngjyrën që dëshironi duke lëvizur rrëshqitësin ose duke klikuar mjetin e syrit.
 
-Moving the *color* slider changes the hue of the color (for example, from red to blue). This tool is the most commonly used because it has the largest difference between colors. 
-Moving the slider *saturation* changes the intensity of the color: the saturation 100 is the selected color, 50 - is a lighter color, and 0 - is completely white. 
-Moving the slider *brightness* changes how dark the color is: the brightness 0 is completely black, while 100 is the selected color.
+Lëvizja e shiritit *color* ndryshon ngjyrën e ngjyrës (për shembull, nga e kuqja në blu). Ky mjet është më shpesh i përdorur sepse ka ndryshimin më të madh midis ngjyrave.
+Zhvendosja e ngopjes *e saturation* ndryshon intensitetin e ngjyrës: ngopja 100 është ngjyra e zgjedhur, 50 - është një ngjyrë më e lehtë, dhe 0 - është plotësisht e bardhë.
+Lëvizja e shkëlqimit *brightness* ndryshon sa e errët është ngjyra: shkëlqimi 0 është plotësisht i zi, ndërsa 100 është ngjyra e zgjedhur.
 
-When you click on the eyedropper tool, a magnifying glass appears with a circle in the center. 
-To select the desired color, you need to position the center of the magnifying glass above the part of the drawing area on which that color is located and click. 
+Kur klikoni në mjetin e syrit, shfaqet një xham zmadhues me një rreth në qendër.
+Për të zgjedhur ngjyrën e dëshiruar, duhet të vendosni qendrën e xhamit zmadhues mbi pjesën e zonës së vizatimit në të cilën ndodhet ajo ngjyrë dhe të klikoni.
 
-There are four options above the three sliders. These enable different ways of filling in an area with color. An area can be filled in evenly with a solid color, or as a gradient, with different shades of a color. If you click one of the options other than the solid color option, two selected colors will appear: |swap|. By clicking on the first or the second color you can set them. Clicking *swap* between the two colors changes their order. The fill options are: solid color, vertical gradient, horizontal gradient or circle gradient. 
+Ekzistojnë katër opsione sipër tre rrëshqitësve. Këto mundësojnë mënyra të ndryshme të mbushjes së një zone me ngjyra. Një zonë mund të plotësohet në mënyrë të barabartë me një ngjyrë të fortë, ose si një gradient, me hije të ndryshme të një ngjyre. Nëse klikoni në njërën prej opsioneve përveç opsionit të ngjyrave të ngurta, do të shfaqen dy ngjyra të zgjedhura: |change|. Duke klikuar në ngjyrën e parë ose të dytë ju mund t'i vendosni ato. Klikimi i *swap* midis dy ngjyrave ndryshon rendin e tyre. Opsionet e mbushjes janë: ngjyra e ngurtë, gradient vertikal, gradient horizontal ose gradient rrethi.
 
-|size| **Changing Pen Size**
+|Size| **Ndryshimi i madhësisë së stilolapsit**
 
-There is an input field to select the pen size (thickness). You can type in the size or use the arrows on the side to change it. The higher the number, the thicker the line.
+Ekziston një fushë hyrëse për të zgjedhur madhësinë e stilolapsit (trashësinë). Ju mund të shkruani madhësinë ose të përdorni shigjetat në anën për ta ndryshuar atë. Sa më i lartë numri, aq më i trashë është linja.
 
-|name| **Naming Costumes**
+|Name| **Emërtimi i Kostumeve**
 
-The name of the costume is important for the organization and sometimes also for the programming of the project. Since each costume is assigned its own sequence number, it is not recommended to name the costumes by only using numbers without any other characters. To name a costume, you should click on the text bar at the upper left corner of the paint editor and enter the new name.  
+Emri i kostumit është i rëndësishëm për organizatën dhe nganjëherë edhe për programimin e projektit. Meqenëse çdo kostum është caktuar numri i sekuencës së tij, nuk rekomandohet të vini emrat e kostumeve vetëm duke përdorur numra pa ndonjë karaktere të tjera. Për të emëruar një kostum, duhet të klikoni në shiritin e tekstit në këndin e sipërm të majtë të redaktorit të bojës dhe të shkruani emrin e ri.
 
-|copy| **Copying and** |paste| **Pasting** 
+|Copy| **Kopjimi dhe ngjtija** |paste|
 
-The second row of options includes copy and paste buttons. The copy option copies the selected area, while the paste puts it somewhere else. You can also use the keyboard shortcuts: Ctrl+C to copy and Ctrl+V to paste. First, select the rectangular area you want to copy and then drag it to where you want to place the copy.
+Rreshti i dytë i opsioneve përfshin butonat kopjues dhe ngjitës. Opsioni i kopjimit kopjon zonën e zgjedhur, ndërsa paste e vendos atë diku tjetër. Ju gjithashtu mund të përdorni shkurtoret e tastierës: Ctrl + C për të kopjuar dhe Ctrl + V për të ngjitur. Së pari, zgjidhni zonën drejtkëndëshe që dëshironi të kopjoni dhe pastaj tërhiqeni atë atje ku dëshironi të vendosni kopjen.
 
-|redo| **Undo and Redo**
+|Redo| **Zhbëj**
 
-On the right, next to the costume name, there are two buttons called undo and redo. These buttons allow you to undo the last action or repeat the action you previously undid. The redo button cannot be used unless the undo button has been used. If you exit the paint editor, everything you have done in it will become permanent and it can only be undone manually. The keyboard shortcut for the undo option is Ctrl+Z.
+Në të djathtë, pranë emrit të kostumit, ka dy butona që quhen prishje dhe ribërë. Këto butona ju lejojnë të prishni veprimin e fundit ose të përsërisni veprimin që më parë i keni zhbërur. Butoni i ribërë nuk mund të përdoret nëse nuk është përdorur butoni i prishjes. Nëse dilni nga redaktori i bojës, gjithçka që keni bërë në të do të bëhet e përhershme dhe ajo vetëm mund të zhvishet me dorë. Shkurtorja e tastierës për opsionin e prishjes është Ctrl + Z.
 
 
-|flip_h| **Horizontal**  |flip_v| **and Vertical Flipping**
+|Flip_h| **Fluturimi horizontal** |flip_v| **Fluturimi vertikal**
 
-When you select an object, there is the option to flip it horizontally or vertically. In the second line of options, there are two buttons with two arrows each pointing to a dotted line. The one on the left flips the selected object horizontally, and the one on the right vertically.
+Kur zgjidhni një objekt, ekziston mundësia që ta rrokullisni atë horizontalisht ose vertikalisht. Në rreshtin e dytë të opsioneve, ka dy butona me dy shigjeta secila duke treguar një vijë pikash. Një në të majtë rrotullon objektin e zgjedhur horizontalisht, dhe atë në të djathtë vertikalisht.
 
-Vector Editor Options
+Opsionet e redaktorit të vektorit
 ~~~~~~~~~~~~~~~~~~~~~~
 
-These options are available only when the graphics editor is in vector mode and do not appear when it is in raster mode.
+Këto opsione janë të disponueshme vetëm kur redaktori grafik është në modalitetin e vektorit dhe nuk shfaqet kur është në modalitetin e rasterit.
 
-**Precise Object Movement**
+**Lëvizja e saktë e objektit**
 
-When an object is selected in the vector editor, the arrow keys can be used to move it precisely one pixel. In raster editor, the user can also use the arrow keys to move selected areas. This option can be useful if you want to make a precise drawing or align different objects.
+Kur një objekt zgjidhet në redaktorin e vektorit, çelësat e shigjetave mund të përdoren për ta lëvizur atë saktësisht një piksel. Në redaktorin e rasterit, përdoruesi mund të përdorë gjithashtu tastet me shigjeta për të lëvizur zonat e zgjedhura. Ky opsion mund të jetë i dobishëm nëse doni të bëni një vizatim të saktë ose të rreshtoni objektet e ndryshme.
 
-.. sidebar::  Changing the Outline
+.. sidebar::  Ndryshimi konturit
     
    |promena_konture|
  
 .. |promena_konture| image:: ../_images/11/fig11_16.png
 
-|outline| **Outlines**
+|outline| **Konturi**
 
-On the right of the option used for setting the color, there is a drop-down menu that allows the user to change outlines of objects. This drop-down menu has three sliders, but unlike the color-setting menu, here the user does not have the option to mix two different colors. On the right, next to that drop-down menu, is an input field where the user can select the thickness of the outline. You can type in a number or use the arrows to change it.  
+Në të djathtë të opsionit të përdorur për vendosjen e ngjyrës, ekziston një menu drop-down që lejon përdoruesin të ndryshojë skicat e objekteve. Kjo menu që bie poshtë ka tre rrëshqitëse, por ndryshe nga menyja për përcaktimin e ngjyrave, këtu përdoruesi nuk ka mundësinë të përziejë dy ngjyra të ndryshme. Në të djathtë, pranë asaj menyje rënëse, është një fushë hyrëse ku përdoruesi mund të zgjedhë trashësinë e skicës. Mund të shkruani një numër ose të përdorni shigjetat për ta ndryshuar atë.
 
-**Layering the Image**
+**Shtrirja e figurës**
 
-We can use the following analogy to explain how sprites are presented on stage. Imagine that each sprite is drawn on a separate sheet of transparent foil and that all sheets are stacked over the one on which the background is painted. In Scratch, these transparent sheets of foil correspond to **layers**. Every time a sprite moves, it will cover the images drawn on the layers beneath. 
+Ne mund të përdorim analogjinë e mëposhtme për të shpjeguar sesi sprites prezantohen në skenë. Imagjinoni që secila sprite është vizatuar në një fletë të veçantë të letrës së tejdukshme dhe që të gjitha fletët të grumbullohen mbi atë në të cilën është pikturuar sfondi. Në Scratch, këto fletë transparente korrespondojnë me **shtresat**. Sa herë që lëviz një sprite, do të mbulojë imazhet e vizatuara në shtresat poshtë tij.
 
-At the upper right part of the paint editor, there are four buttons, which allow you to move objects through different layers:  
+Në pjesën e sipërme të djathtë të redaktorit të pikturave, ka katër butona, të cilat ju lejojnë të lëvizni objektet nëpër shtresa të ndryshme:
 
 .. hlist::
     :columns: 1
     
-    * |v_forward| moves the object one layer forward (in front of the current one),
-    * |v_front| moves the object all the way in front,
-    * |v_backward| moves the object one layer backward (behind the current one),
-    * |v_back| moves the object all the way back.
+     * |v_forward| e zhvendos objektin një shtresë përpara (përpara asaj aktuale),
+     * |v_front| lëviz objektin gjatë gjithë rrugës përpara,
+     * |v_backward| zhvendos objektin një shtresë prapa (pas asaj aktuale),
+     * |v_back| lëviz objektin gjatë gjithë rrugës prapa.
 
-|v_group| **Grouping** |v_Ungroup| **and Ungrouping**
+|v_group| **Grupimi** |v_Ungroup| **Çgrupimi**
 
-This option is used to group multiple objects into one whole. When there are many objects that you need to move at once, it can be useful to group them. This way, they can all be moved or deleted at the same time. To select objects, click and drag the mouse-pointer over the desired objects (or hold down the Shift key on the keyboard and click on each object), and then click the grouping option. From this point on, all objects will be treated as a single object. 
+Ky opsion përdoret për të grupuar shumë objekte në një tërësi. Kur ka shumë objekte që ju duhet të lëvizni menjëherë, mund të jetë e dobishme t'i gruponi ato. Në këtë mënyrë, të gjithë mund të zhvendosen ose fshihen në të njëjtën kohë. Për të zgjedhur objektet, klikoni dhe tërhiqni treguesin e miut mbi objektet e dëshiruara (ose mbani shtypur butonin Shift në tastierë dhe klikoni në secilin objekt), dhe pastaj klikoni në opsionin e grupimit. Nga kjo pikë e tutje, të gjitha objektet do të trajtohen si një objekt i vetëm.
 
-The ungrouping option does the opposite - the selected group can be broken down into smaller parts. This button will become visible once you have selected a group of objects and it will allow you to ungroup them.   
+Opsioni ungrouping bën të kundërtën - grupi i zgjedhur mund të ndahet në pjesë më të vogla. Ky buton do të bëhet i dukshëm pasi të keni zgjedhur një grup objektesh dhe do t'ju lejojë të mos grumbulloni ato.
 
-|v_curved| **Curved** |v_pointed| **or Pointed**
+|V_curved| **i lakuar** |v_point| **shënim**
 
-When using the reshape tool, there are two options to the right of the outlines, which allow you to make the splines either curved, like an ellipse, or pointed, like a rectangle. This is useful when creating shapes with both curved and pointed edges. If more than one point is selected (hold the shift key and click on more than one), the specified change will be applied to all selected points.
+Kur përdorni mjetin e riformësimit, ekzistojnë dy mundësi në të djathtë të skicave, të cilat ju lejojnë të bëni skajet ose të lakuara, si një elips ose të theksuar, si një drejtkëndësh. Kjo është e dobishme kur krijoni forma me të dy skajet e lakuara dhe të theksuara. Nëse zgjidhen më shumë se një pikë (mbajeni tastin shift dhe klikoni në më shumë se një), ndryshimi i specifikuar do të zbatohet në të gjitha pikat e zgjedhura.
 
-Working in the Raster Mode
+Duke punuar në modën Raster 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. sidebar:: Raster Tools
+.. sidebar:: Veglat Raster 
 
- |rasterski|
+|rasterski|
 
 .. |rasterski| image:: ../_images/11/fig11_17.png
   
-|r_brush| **Free-hand Drawing**
+|r_brush| **Vizatim i lirë**
 
-You can set the color and the size (thickness) of the paintbrush with the appropriate options. Use the undo and redo options if you make a mistake. You can also use the eraser for correcting mistakes. 
+Ju mund të vendosni ngjyrën dhe madhësinë (trashësinë) e furçës së bojës me opsionet e duhura. Përdorni opsionet e prishjes dhe ribërë nëse bëni një gabim. Ju gjithashtu mund të përdorni gomë për korrigjimin e gabimeve.
 
-|r_line| **Drawing a Straight line**
+|r_line| **Vizato një vijë të drejë**
 
-You can change the line thickness with the appropriate option. Press Shift and drag to draw horizontal or vertical lines. 
+Ju mund të ndryshoni trashësinë e linjës me opsionin e duhur. Shtypni Shift dhe tërhiqni për të vizatuar linja horizontale ose vertikale.
 
-|r_circle| **Drawing an Ellipse**
+|r_circle| **Vizato një Ellips**
 
-You can draw a hollow (outlined) or filled (with color) ellipse. Press Shift and drag to draw a circle. With the appropriate options, you can select the fill style and change the thickness of the outline.
+Mund të vizatoni një elips të thjeshtë ose të mbushur (me ngjyra). Shtypni Shift dhe tërhiqni për të vizatuar një rreth. Me opsionet e duhura, ju mund të zgjidhni stilin e mbushjes dhe të ndryshoni trashësinë e skicës.
 
-|r_rectan| **Drawing a Rectangle**
+|r_rectan| **Vizato një drejtkëndësh**
 
-You can draw a hollow (outlined) or filled (with color) rectangle. Press Shift and drag to draw a rectangle. With the appropriate options, you can select the fill style and change the thickness of the outline.
+Ju mund të vizatoni një drejtkëndësh të thjeshtë ose të mbushur (me ngjyra). Shtypni Shift dhe tërhiqni për të vizatuar një drejtkëndësh. Me opsionet e duhura, ju mund të zgjidhni stilin e mbushjes dhe të ndryshoni trashësinë e skicës
 
-.. sidebar:: Text
+.. sidebar:: Tekst
 
  |tekst|
 
 .. |tekst| image:: ../_images/11/fig11_18.png
 
-|r_text| **Writing Text**
+|r_text| **Teksti i të shkruarit**
 
-Click anywhere on the drawing area (canvas) and when the cursor appears, type the desired text. Then click outside of the text area. The select tool automatically selects the text, so you can change its size and orientation. You can use the measurement box that appears on the outer edge of the selection box (circles and arrows around the text) to resize and change the orientation of the text.
+Klikoni kudo në zonën e vizatimit (kanavacë) dhe kur kursori shfaqet, shtypni tekstin e dëshiruar. Pastaj klikoni jashtë zonës së tekstit. Mjeti i zgjedhur automatikisht zgjedh tekstin, kështu që ju mund të ndryshoni madhësinë dhe orientimin e tij. Ju mund të përdorni kutinë e matjes që shfaqet në skajin e jashtëm të kutisë së zgjedhjes (rrathë dhe shigjeta rreth tekstit) për të ndryshuar madhësinë dhe për të ndryshuar orientimin e tekstit.
 
-|r_fill|  **Filling closed areas with color**
- 
-You can fill the area evenly with one color or as a gradient, with shades of colors using the appropriate fill option.
+|R_fill| **Mbushja e zonave të mbyllura me ngjyra**
+ 
+Ju mund ta mbushni zonën në mënyrë të barabartë me një ngjyrë ose si një gradient, me hije ngjyrash duke përdorur opsionin e duhur të mbushjes.
 
-|r_eraser| **Free-hand Eraser Tool**
+|R_eraser| **Vegël për fshirje jo manualisht**
 
-You can set the size of the eraser by using the appropriate option. The erased areas become transparent.
+Ju mund të vendosni madhësinë e gomës duke përdorur opsionin e duhur. Zonat e fshira bëhen transparente.
 
-|r_select| **Selecting a Rectangle-shaped Area**
+| R_select | **Zgjedhja e një zone në formë drejtkëndëshi**
 
-The selected area can be:
+Zona e zgjedhur mund të jetë:
 
-1.  dragged to a new location,
+1. tërhequr në një lokacion të ri,
 
-2.  made larger, made smaller, or rotated,
+2. të bëra më të mëdha, të bëra më të vogla ose të rrotulluara,
 
-3. erased by pressing the Del key on the keyboard.
+3. fshihet duke shtypur butonin Del në tastierë.
 
-Working in the Vector Mode
+Punimi në mënyrën vektoriale
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. sidebar:: Vector Tools
+.. sidebar:: Veglat e vektorit
 
  |vektorski|
 
@@ -672,58 +672,58 @@ This tool is used for moving, erasing, resizing and rotating objects. When you c
 
 .. |izbor_objekta| image:: ../_images/11/fig11_20.png
 
-If you want to select multiple objects at once, click the left mouse button and drag the mouse over the desired object or hold the Shift key and click on each object you wish to select at the same time. 
-When you move the cursor near the center of the object, it changes its shape and becomes a hand, which means that you can move the object around on the canvas. The object can also be moved with the keyboard arrow keys. 
-The selected object can be deleted by pressing the Del key. Objects can be resized with the measurement boxes that appear on the outer edge of the selection box.
-To rotate an object, grasp and drag the rotation arrows.
+Nëse dëshironi të zgjidhni shumë objekte menjëherë, klikoni në butonin e majtë të miut dhe tërhiqni miun mbi objektin e dëshiruar ose mbani tastin Shift dhe klikoni në secilin objekt që dëshironi të zgjidhni në të njëjtën kohë.
+Kur zhvendosni kursorin afër qendrës së objektit, ai ndryshon formën e tij dhe bëhet një dorë, që do të thotë se ju mund ta lëvizni objektin në telajo. Objekti gjithashtu mund të zhvendoset me tastet e shigjetës së tastierës.
+Objekti i zgjedhur mund të fshihet duke shtypur butonin Del. Objektet mund të ndryshohen në madhësi me kutitë e matjes që shfaqen në skajin e jashtëm të kutisë së zgjedhjes.
+Për të rrotulluar një objekt, kapni dhe tërhiqni shigjetat e rrotullimit.
 
-|v_reshape| **Reshaping an Object**
+|V_reshape| **Ristrukturimi i një objekti**
 
-Click on the object you wish to reshape and a set of control points will appear on the perimeter of the object, as shown in the figure (1). Click on one of the control points and drag (2). By clicking on the outline of the object you can create other control points (3).You can delete a control point by bringing the cursor to it (4). The selected point will change color and then you should click on it (5). The buttons |v_curved| and |v_pointed|, which appear in the options, allow you to curve or point the outline of the object.    
+Klikoni në objektin që dëshironi të riorganizoni dhe një grup pikash kontrolli do të shfaqen në perimetrin e objektit, siç tregohet në figurën (1). Klikoni në njërën nga pikat e kontrollit dhe tërhiqni (2). Duke klikuar në skicën e objektit mund të krijoni pika të tjera kontrolli (3). Ju mund të fshini një pikë kontrolli duke sjellë kursorin në të (4). Pika e zgjedhur do të ndryshojë ngjyrën dhe pastaj duhet të klikoni mbi të (5). Butonat |v_curved| dhe |v_point|, të cilat paraqiten në opsione, ju lejojnë të lakoni ose drejtoni skicën e objektit.
 
 .. image:: ../_images/11/fig11_21.png
    :width: 680px   
    :align: center
 
-|v_brush| **Free-hand Drawing**
+|V_brush| **Vizatimi pa duar**
 
-This tool is similar to the corresponding tool in raster mode. Hold the mouse cursor and move it to draw a curved line. Instead of pixels, the spline here is defined by a set of control points. You can change the appearance of the line with the tool *Reshape*.
+Ky mjet është i ngjashëm me mjetin përkatës në modalitetin e rasterit. Mbajeni kursorin e miut dhe lëvizeni për të vizatuar një vijë të lakuar. Në vend të pikselave, linja këtu përcaktohet nga një grup pikash kontrolli. Mund të ndryshoni pamjen e rreshtit me mjetin *Rishape*.
 
-|v_eraser| **Eraser**
+|V_eraser| ** Eraser**
 
-This tool is similar to the corresponding tool in raster mode.
+Ky mjet është i ngjashëm me mjetin përkatës në modalitetin e rasterit.
 
-|v_fill| **Filling closed areas with color or coloring the outline of an object**
+|V_fill| **Mbushja e zonave të mbyllura me ngjyra ose ngjyrosja e skicës së një objekt **
 
-The paint bucket tool in vector mode works differently than in raster mode, where the tool fills in any selected closed area. Vector mode bucket only works with vector objects. After selecting this tool, you can change the color or the outline color of an object by clicking on it.
+Mjeti i kovës së bojës në modalitetin vektor funksionon ndryshe sesa në mënyrën e rasterit, ku mjet plotëson çdo zonë të zgjedhur të mbyllur. Kova e mënyrës vektoriale funksionon vetëm me objekte vektoriale. Pas zgjedhjes së këtij mjeti, mund të ndryshoni ngjyrën ose ngjyrën skicë të një objekti duke klikuar mbi të.
 
-|v_text| **Writing Text**
+|V_text| **Teksti i të shkruarit**
 
-Click on the tool and then anywhere on the canvas; when a cursor appears, begin typing the desired text. Once you have finished, click anywhere outside of the text area. The tool *Select* will automatically select the text, so you can change its size and orientation. Unlike the text in the raster mode, the text created in vector mode can be edited at any time, even after exiting the paint editor. To be able to modify its contents, you only need to select the text.
+Klikoni në mjet dhe pastaj kudo në kanavacë; kur shfaqet kursori, filloni të shtypni tekstin e dëshiruar. Pasi të keni mbaruar, klikoni kudo tjetër jashtë zonës së tekstit. Mjeti *Choose* do të zgjedhë automatikisht tekstin, në mënyrë që të ndryshoni madhësinë dhe orientimin e tij. Për dallim nga teksti në modalitetin e rasterit, teksti i krijuar në modalitetin vektor mund të redaktohet në çdo kohë, edhe pas daljes nga redaktori i pikturës. Për të qenë në gjendje të modifikoni përmbajtjen e tij, ju vetëm duhet të zgjidhni tekstin.
 
-|v_line| **Drawing a Straight Line**
+|V_line| **Vizatimi i një linje të drejtë**
 
-The line is defined by two control points at both ends. To draw a line, click and hold the mouse where you want the line to start, and drag to draw the line to the end point. To draw a horizontal or vertical line, hold down the Shift key while dragging the mouse.
+Linja përcaktohet nga dy pika kontrolli në të dy skajet. Për të vizatuar një rresht, klikoni dhe mbani miun ku dëshironi të fillojë rreshtin dhe tërhiqni për të tërhequr vijën në pikën e fundit. Për të vizatuar një vijë horizontale ose vertikale, mbani shtypur butonin Shift ndërsa tërhiqni miun.
 
-To draw a curved line, you must first draw a straight line, then select the tool *Reshape*, press Shift and click anywhere on the line to create a new point and then drag the new control point. This is a way to form a curved line.
+Për të vizatuar një vijë të lakuar, së pari duhet të vizatoni një vijë të drejtë, pastaj zgjidhni mjetin *Rishape*, shtypni Shift dhe klikoni kudo në vijë për të krijuar një pikë të re dhe më pas tërhiqni pikën e re të kontrollit. Kjo është një mënyrë për të formuar një vijë të lakuar.
 
-|v_circle| **Drawing an Ellipse**
+|V_circle| **Vizatimi i një Ellipse**
 
-Use this tool if you want to draw an ellipse in the color chosen for drawing. Click to highlight the top left corner, then drag (hold the shift key while drawing with the ellipse tool) until you get the size you want. You can change the fill style (filled or blank) and line thickness by using the buttons in the options area. The created ellipse has 4 evenly spaced control points.
+Përdorni këtë mjet nëse doni të vizatoni një elips në ngjyrën e zgjedhur për vizatim. Klikoni për të nënvizuar këndin e sipërm të majtë, pastaj tërhiqni (mbani tastin shift ndërsa vizatoni me mjetin e elipsit) derisa të merrni madhësinë që dëshironi. Ju mund të ndryshoni stilin e mbushjes (të mbushur ose bosh) dhe trashësinë e linjës duke përdorur butonat në zonën e opsioneve. Elipsi i krijuar ka 4 pika kontrolli në mënyrë të barabartë.
 
-|v_rectan| **Drawing a Rectangle**
+|V_rectan| **Vizatimi i një drejtkëndëshi**
 
-Use this tool if you want to draw a rectangle in the color chosen for drawing. Click to highlight the top left corner, then drag (hold the shift key while drawing with the rectangle tool) until you get the size you want. You can change the fill style (filled or blank) and line thickness by using the buttons in the options area. The created rectangle has 4 control points, one on each end.
+Përdorni këtë mjet nëse doni të vizatoni një drejtkëndësh në ngjyrën e zgjedhur për vizatim. Klikoni për të nënvizuar këndin e sipërm të majtë, pastaj tërhiqni (mbani tastin shift ndërsa vizatoni me mjetin drejtkëndësh) derisa të merrni madhësinë që dëshironi. Ju mund të ndryshoni stilin e mbushjes (të mbushur ose bosh) dhe trashësinë e linjës duke përdorur butonat në zonën e opsioneve. Drejtkëndëshi i krijuar ka 4 pika kontrolli, një në secilin skaj.
 
-Using the Built-in Sound Editor
+Duke përdorur Redaktorin e Tingullit të Ndërtuar
 --------------------------------
 
-The sound editor allows users to edit and remix the sounds. In music, the term *remix* is used to refer to a new, modified version of a music composition.
+Redaktori i tingullit lejon përdoruesit të modifikojnë dhe rimodelojnë tinguj. Në muzikë, termi *remix* përdoret për t'iu referuar një versioni të ri, të modifikuar të një përbërje muzikore.
 
-The User Interface
+Ndërfaqja e përdoruesit
 ~~~~~~~~~~~~~~~~~~~~
 
-The sound editor window is divided into two areas: the sound list (1) and the editing area (2).
+Dritarja e redaktorit të tingullit është e ndarë në dy fusha: lista e tingullit (1) dhe zona e redaktimit (2).
 
 .. image:: ../_images/11/fig11_22.png
    :width: 880px   
@@ -735,26 +735,26 @@ The sound editor window is divided into two areas: the sound list (1) and the ed
 
 .. |novi_zvuk| image:: ../_images/11/fig11_23.png
 
-**Sound List**
+**Lista e Tingullit**
 
-The sound list is located on the left side of the window and it is used for selecting sounds, which will be edited in the editing area. You select a sound by clicking on it. A thick blue outline will appear around the icon of the chosen sound, similar to the one around the active sprite in the sprite list. An "x" appears in the upper left corner of the active sprite, which allows it to be deleted.  
+Lista e tingujve ndodhet në anën e majtë të dritares dhe përdoret për zgjedhjen e tingujve, të cilat do të redaktohen në zonën e redaktimit. Ju zgjidhni një tingull duke klikuar mbi të. Një skicë e trashë blu do të shfaqet rreth ikonës së tingullit të zgjedhur, e ngjashme me atë rreth rrjedhës aktive në listën e sprite. Një "x" shfaqet në këndin e sipërm të majtë të degëzës aktive, e cila lejon që ajo të fshihet.
 
-At the bottom of the area, there is a button |b_sound|, which enables the introduction of new sounds.
+Në fund të zonës, ka një buton |b_sound|, i cili mundëson futjen e tingujve të rinj.
 
-**Editing Area** 
+**Zona e redaktimit**
 
-The editing area has a bar on top (3), a graphical representation of a sound in the middle (4) and a bar on the bottom (5), which contains 7 tools. 
+Zona e redaktimit ka një shirit në majë (3), një paraqitje grafike të një tingulli në mes (4) dhe një shirit në fund (5), i cili përmban 7 mjete.
 
-In the top bar are the tools that edit the sound, but do not add any effects. These are:
+Në shiritin e lartë janë mjetet që redaktojnë tingullin, por nuk shtojnë asnjë efekt. Këto janë:
 
 .. hlist::
     :columns: 1
     
-    * a name field for the sound,
-    * the undo and redo buttons, and
-    * the button |trim|, which deletes selected parts of the sound.
+     * një fushë emri për tingullin,
+     * butonat e ribërë dhe ribërë, dhe
+     * butoni |trim|, i cili fshin pjesët e zgjedhura të tingullit.
 
-In the bottom bar are the tools, which make special effects while the sound is playing:
+Në shiritin e poshtëm janë mjetet, të cilat bëjnë efekte speciale ndërsa tingulli është duke luajtur:
 
 .. hlist::
     :columns: 1
@@ -767,7 +767,7 @@ In the bottom bar are the tools, which make special effects while the sound is p
     * |softer| - softer and
     * |reverse| - reverse, makes the sound run backward. 
     
-Making the sound faster or slower is achieved by playing the higher or lower note instead of the actual one. The echo effect is achieved by re-playing the sound after 0.15 seconds.
+Bërja e tingullit më e shpejtë ose e ngadaltë arrihet duke luajtur notën më të lartë ose më të ulët në vend të asaj aktuale. Efekti jehon arrihet duke riprodhuar tingullin pas 0,15 sekondash.
 
 
 

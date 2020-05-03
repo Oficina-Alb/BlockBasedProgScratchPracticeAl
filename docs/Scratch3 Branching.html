@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Yes Or No - Making Decisions &#8212; Block-based programming in Scratch - practice lessons</title>
+    <title>Po ose jo - Marrja e vendimeve &#8212; Block-based programming in Scratch - practice lessons</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,8 +140,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Variables" href="Scratch3 Variables.html" />
-    <link rel="prev" title="Repeating Steps" href="Scratch3 Repeating.html" />
+    <link rel="next" title="Variablat" href="Scratch3 Variables.html" />
+    <link rel="prev" title="Përsëritja e hapave" href="Scratch3 Repeating.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,8 +203,16 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="yes-or-no-making-decisions">
-<h1>Yes Or No - Making Decisions<a class="headerlink" href="#yes-or-no-making-decisions" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="po-ose-jo-marrja-e-vendimeve">
+<h1>Po ose jo - Marrja e vendimeve<a class="headerlink" href="#po-ose-jo-marrja-e-vendimeve" title="Permalink to this headline">¶</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 2)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Po</span> <span class="n">ose</span> <span class="n">jo</span> <span class="o">-</span> <span class="n">Marrja</span> <span class="n">e</span> <span class="n">vendimeve</span>
+<span class="o">============================</span>
+</pre></div>
+</div>
+</div>
 
     <div class="course-box course-box-info">
         <div class="course-content">
@@ -212,171 +220,199 @@
 <p><img alt="intro6" src="_images/intro6.png" /></p>
 
     </p></div></div>
-<p>In this lesson, we are going to learn how to use command blocks that enable branching and how to build complex conditions based on which decisions are made. We will systematize the blocks that enable the realization of the basic elements of the program logic in Scratch. We will get to know more blocks from the <em>Sensing</em> group, as well as show how to use the image editor in vector mode.</p>
+<p>Në këtë mësim, ne do të mësojmë se si të përdorim blloqet e komandës që mundësojnë degëzimin dhe si të krijojmë kushte komplekse në bazë të të cilave merren vendimet. Ne do të sistemojmë blloqet që mundësojnë realizimin e elementeve themelorë të logjikës së programit në Scratch. Do të njohim më shumë blloqe nga grupi <em>Sensing</em>, si dhe do të tregojmë se si të përdorim redaktorin e figurës në mënyrën vektoriale</p>
 <div class="topic">
-<p class="topic-title first">Commands with Branches</p>
-<p>In projects that have a simple linear structure, each command runs only once.
-In the previous lesson, we learned about the C-blocks - blocks describing the cycle, which allow other commands, which are inserted into them, to run multiple times. Apart from the blocks describing the cycle, the blocks that enable branching also have an entrance for a script. Depending on whether the branching condition is fulfilled, the entered commands will be executed or not.</p>
-<p>The branching command that corresponds to the C-block has one script entrance, in addition to the logical expression input field. While the branching command that corresponds to the E-block has two script entrances. If the branching condition has been fulfilled, the first command will allow the running of commands entered into the <em>if…then</em> “mouth”, and if not, these commands will not be executed, and the program will proceed to the <em>else</em> part of the block, which describes what should be done in case the condition has not been fulfilled.</p>
-<a class="reference internal image-reference" href="_images/fig6_1.png"><img alt="_images/fig6_1.png" class="align-center" src="_images/fig6_1.png" style="width: 500px;" /></a>
-<p>The second conditional branching command skips some commands depending on whether the branch condition has been fulfilled or not. If the condition is fulfilled, the commands from the NO branch will not run. If the condition is not fulfilled, the commands from the YES branch will not run.</p>
-<p>Therefore, unlike the simple linear programs, where each command runs exactly once, and loops where there are commands that can run multiple times (within the loop body), in programs with branches there are commands that will not run, not even once.</p>
-<a class="reference internal image-reference" href="_images/fig6_2.png"><img alt="_images/fig6_2.png" class="align-center" src="_images/fig6_2.png" style="width: 520px;" /></a>
+<p class="topic-title">Komanda me Degët</p>
+<p>Në projektet që kanë një strukturë të thjeshtë lineare, çdo komandë funksionon vetëm një herë.</p>
 </div>
-<div class="topic">
-<p class="topic-title first">The Basic Elements of the Program Logic in Scratch</p>
-<p>As we said previously, the scripts describe the behavior of the objects to which they are attached. All behavior scenarios, however complex, are made up of combinations of basic elements of the program logic, these are:</p>
-<ul class="simple">
-<li><p>steps sequences,</p></li>
-<li><p>repetition and</p></li>
-<li><p>branching.</p></li>
-</ul>
-<p>In computer science, instead of the term <em>script</em> we use the term <strong>algorithm</strong>. The term algorithm has been known for centuries, but it gained a special meaning with the introduction of computers. We can say that an algorithm is any set of understandable and precise instructions on how to solve a given task.</p>
-<p>Crossing the street, preparing food by following a recipe, making a phone call, solving a math problem - everything comes down to execution of individual elementary operations in a given order. In algorithms, these elementary operations are called <strong>commands</strong>, <strong>steps</strong> or <strong>orders</strong>.</p>
-<p>An algorithm can be given, more or less precisely, by using words. However, a graphical record of an algorithm provides a much better insight into the structure and order in which the instructions are executed. The graphical scheme, which indicates with its symbols the nature of individual algorithmic steps, is called a <strong>block diagram</strong>. Block diagrams use special symbols to record individual types of algorithmic steps.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 19)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
 </div>
+<p> Në mësimin e mëparshëm, mësuam për blloqet C - blloqet që përshkruajnë ciklin, të cilat lejojnë që komandat e tjera, të cilat futen në to, të ekzekutojnë shumë herë. Përveç blloqeve që përshkruajnë ciklin, blloqet që mundësojnë degëzimin gjithashtu kanë një hyrje për një skenar. Në varësi të plotësimit të kushteve të degëzimit, komandat e futura do të ekzekutohen apo jo.</p>
+<p> Komanda e degëzimit që korrespondon me bllokun C ka një hyrje në skript, përveç fushës së hyrjes logjike të shprehjes. Ndërsa komanda e degëzimit që korrespondon me bllokun E ka dy hyrje të skriptit. Nëse kushti i degëzimit është përmbushur, komanda e parë do të lejojë ekzekutimin e komandave të futura në <em>if … else</em> “mouth”, dhe nëse jo, këto komanda nuk do të ekzekutohen, dhe programi do të vazhdojë në <em>else</em> pjesë e bllokut, e cila përshkruan se çfarë duhet të bëhet në rast se kushti nuk është përmbushur.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig6_1.png"><img alt="_images/fig6_1.png" class="align-center" src="_images/fig6_1.png" style="width: 500px;" /></a>
+</div></blockquote>
+<p>Komanda e dytë e ndarjes me kusht kushton disa komanda në varësi të faktit nëse gjendja e degës është përmbushur apo jo. Nëse kushti përmbushet, komandat nga dega NO nuk do të funksionojnë. Nëse kushti nuk plotësohet, komandat nga dega YES nuk do të ekzekutohen.</p>
+<p>  Prandaj, ndryshe nga programet lineare të thjeshta, ku secila komandë ekzekuton saktësisht një herë, dhe sythe ku ka komanda që mund të ekzekutojnë shumëfish (brenda trupit të ciklit), në programet me degë ka komanda që nuk do të funksionojnë, madje as një herë.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig6_2.png"><img alt="_images/fig6_2.png" class="align-center" src="_images/fig6_2.png" style="width: 520px;" /></a>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 35)</p>
+<p>Content block expected for the “topic” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span> <span class="n">Elementët</span> <span class="n">bazë</span> <span class="n">të</span> <span class="n">programimit</span> <span class="n">logjik</span> <span class="n">në</span> <span class="n">Scratch</span>
+</pre></div>
+</div>
+</div>
+<p>Siç thamë edhe më parë, shkrimet përshkruajnë sjelljen e objekteve, të cilave u janë bashkangjitur. Të gjithë skenarët e sjelljes, sado komplekse, përbëhen nga kombinime të elementeve themelorë të logjikës së programit, këto janë:</p>
+<p> * sekuencat hap,</p>
+<p> * përsëritje dhe</p>
+<p> * degëzim.</p>
+<p> Në shkencën e kompjuterave, në vend të termit <em>skript</em> ne përdorim termin <strong>algoritëm</strong>. Termi algoritëm është i njohur me shekuj, por ajo fitoi një kuptim të veçantë me futjen e kompjuterave. Mund të themi se një algoritëm është çdo grup udhëzimesh të kuptueshme dhe të sakta se si të zgjidhni një detyrë të caktuar.</p>
+<p> Kalimi në rrugë, përgatitja e ushqimit duke ndjekur një recetë, duke bërë një telefonatë, duke zgjidhur një problem matematikor - gjithçka zbret në ekzekutimin e operacioneve elementare individuale në një urdhër të caktuar. Në algoritme, këto operacione elementare quhen <strong>komanda</strong>, <strong>hapa</strong> ose <strong>urdhra</strong>.</p>
+<p> Një algoritëm mund të jepet, pak a shumë saktësisht, duke përdorur fjalë. Sidoqoftë, një regjistrim grafik i një algoritmi siguron një pasqyrë shumë më të mirë të strukturës dhe rendit në të cilin ekzekutohen udhëzimet. Skema grafike, e cila tregon me simbolet e saj natyrën e hapave individualë algoritmikë, quhet një diagram <strong>bllok</strong>. Diagrama bllok përdorin simbole të veçanta për të regjistruar llojet individuale të algorithmic steps.</p>
 <div class="sidebar">
-<p class="sidebar-title">Symbols of Certain Types of Algorithmic Steps</p>
+<p class="sidebar-title">Simbolet e llojeve të caktuara të hapave algoritmik</p>
 <p><img alt="simboli" src="_images/fig6_3.png" /></p>
 </div>
-<p>The main goal of a block diagram is to indicate the sequence of execution of individual algorithmic steps. It provides a clear link between the details and the whole of the algorithm and makes it easy to detect errors in its structure.</p>
-<p>The structure of an algorithm can be linear, or it can include branches or loops. In algorithms with a simple linear structure, the steps are executed one after the other, from start to finish. In algorithms with branches, there are several alternative execution routes. Depending on the data, some steps will not be performed at all. In algorithms with loops, some steps can be performed multiple times.</p>
-<p>The following figure shows a block diagram for calculating the value of <em>x</em> based on a given input value, with the use of three algorithm types: with simple linear, with branches and with loops.</p>
+<p>Qëllimi kryesor i një diagrami bllok është të tregojë sekuencën e ekzekutimit të hapave individualë algoritëm. Ajo siguron një lidhje të qartë midis detajeve dhe tërësisë së algoritmit dhe e bën të lehtë zbulimin e gabimeve në strukturën e tij.</p>
+<p>Struktura e një algoritmi mund të jetë linear, ose mund të përfshijë degë ose sythe. Në algoritme me një strukturë të thjeshtë lineare, hapat ekzekutohen njëra pas tjetrës, nga fillimi në fund. Në algoritme me degë, ka disa rrugë alternative ekzekutimi. Në varësi të të dhënave, disa hapa nuk do të kryhen fare. Në algoritme me sythe, disa hapa mund të kryhen shumë herë.</p>
+<p>Figura e mëposhtme tregon një diagram bllok për llogaritjen e vlerës së <em>x</em> bazuar në një vlerë të dhënë hyrëse, me përdorimin e tre llojeve të algoritmit: me linear të thjeshtë, me degë dhe me sythe.</p>
 <a class="reference internal image-reference" href="_images/fig6_4.png"><img alt="_images/fig6_4.png" class="align-center" src="_images/fig6_4.png" style="width: 600px;" /></a>
-<p>The examples are taken from the mathematics textbook for the second grade of primary school. Try to answer the following questions based on them.</p>
+<p>Shembujt janë marrë nga libri shkollor i matematikës për klasën e dytë të shkollës fillore. Mundohuni t’i përgjigjeni pyetjeve të mëposhtme bazuar në to.</p>
 <ul class="simple">
-<li><p>What will be the value of <em>х</em> after the execution of each of the algorithms if the input value is <em>а=5</em>, and what if it is <em>а=16</em>?</p></li>
-<li><p>In an algorithm with branches, which of the steps will not be performed if <em>а=5</em>, and which if <em>а=16</em>?</p></li>
-<li><p>How many times will the addition <em>х=х+3</em> be performed in an algorithm with loops if <em>а=5</em>, and how many times if <em>а=16</em>?</p></li>
+<li><p>Cila do të jetë vlera e <em>х</em> pas ekzekutimit të secilit prej algoritmeve nëse vlera e hyrjes është <em>a = 5</em>, dhe çfarë nëse është <em>a = 16</em> ?</p></li>
+<li><p>Në një algoritëm me degë, cili nga hapat nuk do të kryhet nëse <em>a = 5</em>, dhe cili nëse <em>a = 16</em>?</p></li>
+<li><p>Sa herë <em>х = х + 3</em> do të kryhet në një algoritëm me sythe nëse <em>a = 5</em>, dhe sa herë nëse <em>a = 16</em>?</p></li>
 </ul>
-<p>The following figures show how these algorithms would be written in Scratch.</p>
-<p>The first algorithm, which has a linear structure, corresponds to the script that has a sequence of steps.</p>
+<p>Shifrat e mëposhtme tregojnë se si do të shkruheshin këto algoritme në Scratch.</p>
+<p>Algoritmi i parë, i cili ka një strukturë lineare, korrespondon me skenarin që ka një sekuencë hapash.</p>
 <a class="reference internal image-reference" href="_images/fig6_5.png"><img alt="_images/fig6_5.png" class="align-center" src="_images/fig6_5.png" style="width: 690px;" /></a>
-<p>The second algorithm, which has branches, corresponds to the script that has branches.</p>
+<p>Algoritmi i dytë, i cili ka degë, korrespondon me skenarin që ka degë.</p>
 <a class="reference internal image-reference" href="_images/fig6_6.png"><img alt="_images/fig6_6.png" class="align-center" src="_images/fig6_6.png" style="width: 950px;" /></a>
-<p>The third algorithm, which has loops, corresponds to the script that has commands for repetition.</p>
+<p>Algoritmi i tretë, i cili ka sythe, korrespondon me skenarin që ka komanda për përsëritje.</p>
 <a class="reference internal image-reference" href="_images/fig6_7.png"><img alt="_images/fig6_7.png" class="align-center" src="_images/fig6_7.png" style="width: 755px;" /></a>
-<p><strong>Scripts in Scratch look like algorithms written with block diagrams.</strong></p>
+<p><strong>Skriptet në Scratch duken si algoritme të shkruara me diagrame bllok.</strong></p>
 <div class="topic">
-<p class="topic-title first">Functions of blocks from the group <em>Sensing</em></p>
-<p>The <em>Sensing</em> group is made up of blocks that allow the project to accept input from different devices, much like humans use senses to collect information from their environment. There are blocks, which store data that correspond to the data a person would collect with the sense of touch, sight or hearing. Some blocks in this group allow different actions to be triggered depending on the sprite’s position, as well as depending on time, date, etc. In this lesson, we will introduce the blocks that:</p>
-<ul class="simple">
-<li><p>store information about the position of the sprite relative to the mouse pointer and other objects,</p></li>
-<li><p>enable input data by using the keyboard,</p></li>
-<li><p>store information on ongoing operations performed by the mouse and keyboard.</p></li>
-</ul>
-<p>The remaining blocks from the <em>Sensing</em> group will be introduced in the following lessons, and a full overview of their functions is given in the part <em>Appendix</em>.</p>
+<p class="topic-title">Funksionet e bllokut nga grupi*Sensing*</p>
+<p>Grupi <em>Sensing</em> është i përbërë nga blloqe që lejojnë projektin të pranojë të dhëna nga pajisje të ndryshme, ashtu si njerëzit përdorin shqisat për të mbledhur informacione nga mjedisi i tyre. Ekzistojnë blloqe, të cilat ruajnë të dhënat që korrespondojnë me të dhënat që një person do të mbledhte me sensin e prekjes, shikimit ose dëgjimit. Disa blloqe në këtë grup lejojnë që të nxiten veprime të ndryshme në varësi të pozitës së sprite, si dhe në varësi të kohës, datës, etj. Në këtë mësim, ne do të prezantojmë blloqet që:</p>
 </div>
-<div class="section" id="study-study-the-following-examples">
-<h2><img alt="study" src="_images/study.png" /> Study the following examples<a class="headerlink" href="#study-study-the-following-examples" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="example-1-project-selection">
-<h3>Example 1 - Project “Selection”<a class="headerlink" href="#example-1-project-selection" title="Permalink to this headline">¶</a></h3>
+<p>  * ruaj informacionin për pozicionin e sprite në lidhje me treguesin e miut dhe objektet e tjera,
+  * aktivizoni të dhënat hyrëse duke përdorur tastierën,
+  * ruaj informacionin për operacionet e vazhdueshme të kryera nga miu dhe tastiera.</p>
+<p>  Blloqet e mbetura nga grupi <em>Sensing</em> do të prezantohen në mësimet e mëposhtme, dhe një përmbledhje e plotë e funksioneve të tyre është dhënë në pjesën * Shtojca <a href="#id1"><span class="problematic" id="id2">*</span></a>.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 105); <em><a href="#id2">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<div class="section" id="study-studioni-shembujt-e-meposhtem">
+<h2><img alt="study" src="_images/study.png" /> Studioni shembujt e mëposhtëm<a class="headerlink" href="#study-studioni-shembujt-e-meposhtem" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 109)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">study</span><span class="o">|</span> <span class="n">Studioni</span> <span class="n">shembujt</span> <span class="n">e</span> <span class="n">mëposhtëm</span>
+<span class="o">------------------------------------</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="shembulli-1-projekt-selection">
+<h3>Shembulli 1 - Projekt “Selection”<a class="headerlink" href="#shembulli-1-projekt-selection" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>In this project, the old wizard needs to choose an assistant.</p>
+<p>Në këtë projekt, magjistari i vjetër duhet të zgjedhë një asistent.</p>
 <a class="reference internal image-reference" href="_images/fig6_8.png"><img alt="_images/fig6_8.png" class="align-center" src="_images/fig6_8.png" style="width: 300px;" /></a>
-<p>He can’t decide on his own which assistant to choose, so he asks the user to help him by entering the number of one of the candidates.</p>
-<a class="reference internal image-reference" href="_images/fig6_9.png"><img alt="_images/fig6_9.png" class="align-center" src="_images/fig6_9.png" style="width: 475px;" /></a>
-<p>This value is compared with the conditional statement containing the candidate number. If the user enters number 1, the wizard will turn to the left, toward the candidate number 1; otherwise, he will turn to the right toward the candidate number 2.</p>
-<a class="reference internal image-reference" href="_images/fig6_10.png"><img alt="_images/fig6_10.png" class="align-center" src="_images/fig6_10.png" style="width: 400px;" /></a>
-<p>The complete script describing the behavior of the wizard is presented in the figure below.</p>
-<a class="reference internal image-reference" href="_images/fig6_11.png"><img alt="_images/fig6_11.png" class="align-center" src="_images/fig6_11.png" style="width: 300px;" /></a>
+<p>Ai nuk mund të vendosë vetë se cilin asistent të zgjedhë, kështu që i kërkon përdoruesit ta ndihmojë atë duke futur numrin e njërit prej kandidatëve.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_9.png"><img alt="../_images/6/fig6_9.png" class="align-center" src="../_images/6/fig6_9.png" style="width: 475px;" /></a>
+<p>Kjo vlerë krahasohet me deklaratën e kushtëzuar që përmban numrin e kandidatit. Nëse përdoruesi hyn në numrin 1, magjistari do të kthehet në të majtë, drejt kandidatit numër 1; përndryshe, ai do të kthehet në të djathtë drejt kandidatit numër 2.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_10.png"><img alt="../_images/6/fig6_10.png" class="align-center" src="../_images/6/fig6_10.png" style="width: 400px;" /></a>
+<p>Skenari i plotë që përshkruan sjelljen e magjistarit është paraqitur në figurën më poshtë.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_11.png"><img alt="../_images/6/fig6_11.png" class="align-center" src="../_images/6/fig6_11.png" style="width: 300px;" /></a>
 </div>
-<div class="section" id="example-2-project-dangerous-snowflakes">
-<h3>Example 2 - Project “Dangerous Snowflakes”<a class="headerlink" href="#example-2-project-dangerous-snowflakes" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-2-projekti-dangerous-snowflakes">
+<h3>Shembulli 2 - Projekti “Dangerous Snowflakes”<a class="headerlink" href="#shembulli-2-projekti-dangerous-snowflakes" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 143)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Dangerous Snowflakes&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>The <em>Dangerous Snowflakes</em> project is a simple game where the user tries to save the Snowman from large, dangerous, and continuously falling snowflakes.
-The user uses the arrow keys on the keyboard to guide the Snowman from left to right trying to avoid snowflakes that fall at different speeds and angles from the top of the screen.
-If a snowflake touches the Snowman, it will swell up, its shape will become deformed, and the game will be over.</p>
-<p><strong>Sprites and Backdrops</strong></p>
-<p>When you start this new project, load the <em>Slopes</em> backdrop and sprites <em>Snowflake</em> and <em>Snowman</em> from the library.
-Place the Snowman sprite in the lower right corner of the stage, and you can start programming.</p>
-<p><strong>Behavior of a Snowflake</strong></p>
-<p>To introduce uncertainty, it is necessary to enable the snowflakes to appear at different places and fall at different speeds and in different directions.
-We will achieve this by using the block <img alt="pick_random" src="_images/pick_random.png" />.</p>
-<p>A snowflake should appear at the top of the stage and glide to the bottom. The following commands describe this movement.</p>
+<p>Projekti <em>Dangerous Snowflakes</em> është një lojë e thjeshtë ku përdoruesi përpiqet të shpëtojë Snowman nga dëbora e madhe, e rrezikshme dhe vazhdimisht në rënie.
+Përdoruesi përdor çelësat e shigjetave në tastierë për të udhëhequr Snowman nga e majta në të djathtë duke u përpjekur të shmangë dëborën që bie me shpejtësi dhe kënde të ndryshme nga lartësia e ekranit.
+Nëse një lule dëbore prek burrë dëborën, ajo do të rritet, forma e saj do të deformohet dhe loja do të mbarojë.</p>
+<p><strong>Sprites dhe Sfondet</strong></p>
+<p>Kur filloni këtë projekt të ri, ngarkoni sfondin <em>Shpatet</em> dhe spritet Snowflake* dhe <em>Snowman</em> nga biblioteka.
+Vendosni sprite Snowman në këndin e poshtëm të djathtë të skenës, dhe ju mund të filloni të programoni.</p>
+<p><strong>Sjellja e një lule dëbore</strong></p>
+<p>Për të prezantuar pasiguri, është e nevojshme të mundësoni që dëbora të shfaqet në vende të ndryshme dhe të bjerë me shpejtësi të ndryshme dhe në drejtime të ndryshme.
+Ne do ta arrijmë këtë duke përdorur bllokun <img alt="pick_random" src="_images/pick_random.png" /></p>
+<p>Një lule dëbore duhet të shfaqet në krye të fazës dhe të rrëshqasë në fund. Komandat e mëposhtme përshkruajnë këtë lëvizje.</p>
 <a class="reference internal image-reference" href="_images/fig6_12.png"><img alt="_images/fig6_12.png" class="align-center" src="_images/fig6_12.png" style="width: 600px;" /></a>
-<p>The first command places the snowflake in the position for which the x coordinate will be generated randomly. The third command sets the position towards which the snowflake will glide between 0.5 and 3.5 seconds; when it reaches this position, the snowflake will disappear.</p>
-<p>We will insert this stack of commands into the loop, which will repeat until the snowflake touches the Snowman. When the snowflake touches the Snowman, the game will be over.</p>
+<p>Komanda e parë vendos dëborën në pozicionin për të cilin x koordinata x do të gjenerohet në mënyrë të rastësishme. Komanda e tretë përcakton pozicionin drejt së cilës do të rrëshqasë dëbora midis 0.5 dhe 3.5 sekondave; kur të arrijë në këtë pozicion, fleta e borës do të zhduket.</p>
+<p>Ne do të futim këtë pirg të komandave në cikël, i cili do të përsëritet derisa dëbora të prek Snowman. Kur floku i borës prek Snowman, loja do të marrë fund.</p>
 <a class="reference internal image-reference" href="_images/fig6_13.png"><img alt="_images/fig6_13.png" class="align-center" src="_images/fig6_13.png" style="width: 620px;" /></a>
-<p><strong>Behavior of the Snowman</strong></p>
-<p>The Snowman has three scripts attached to it - reactions to the user clicking on the green flag, and pressing the right or the left arrow key on the keyboard.</p>
-<p>In the beginning, the Snowman gives instructions for how to play the game, and in the forever loop checks whether it has been touched by a snowflake.
-If the answer is yes, it will broadcast that the game is over, and it will stop the running of all scripts.</p>
+<p><strong>Sjellja e burrit të dëborës</strong></p>
+<p>Snowman ka tre skriptet bashkangjitur tij - reagime ndaj përdoruesit duke klikuar mbi flamurin e gjelbër dhe duke shtypur tastin e djathtë ose të majtë të tastit në tastierë.</p>
+<p>Në fillim, Snowman jep udhëzime se si të luajë lojën, dhe në kontrollet e gjelbërta përgjithmonë nëse është prekur nga një lule dëbore.
+Nëse përgjigjja është po, do të transmetojë që loja ka mbaruar dhe do të ndalojë ekzekutimin e të gjitha skenarëve.</p>
 <a class="reference internal image-reference" href="_images/fig6_14.png"><img alt="_images/fig6_14.png" class="align-center" src="_images/fig6_14.png" style="width: 650px;" /></a>
-<p>To make the game more attractive, we will add special effects. This can be done by using the blocks from the group <em>Looks</em>.</p>
-<p>As we saw in Example 2 of the lesson <em>Sequencing</em>, the command <img alt="change_effect" src="_images/change_effect.png" /> can change the sprite in multiple ways.</p>
-<p>When the snowflake touches the Snowman, we will change its size and apply the effects fisheye and color. We will repeat these changes five times, pausing briefly after each change (figure A).
-To make sure that the Snowman is not deformed when the program starts running again, in the beginning, we will clear all graphic effects and set the size to 100% (figure B).</p>
+<p>Për ta bërë lojën më tërheqëse, do të shtojmë efekte speciale. Kjo mund të bëhet duke përdorur blloqet nga grupi <em>Looks</em>.</p>
+<p>Siç pamë në Shembullin 2 të mësimit <em>Sekuencimi</em>, komanda <img alt="change_effect" src="_images/change_effect.png" /> mund të ndryshojë sprite në mënyra të shumta.</p>
+<p>Kur fleta e dëborës prek Snowman, ne do të ndryshojmë madhësinë e saj dhe do të aplikojmë efektet fisheye dhe ngjyrën. Ne do t’i përsërisim këto ndryshime pesë herë, duke ndalur shkurtimisht pas çdo ndryshimi (figura A).
+Për t’u siguruar që Snowman nuk është deformuar kur programi fillon të kandidojë përsëri, në fillim, ne do të pastrojmë të gjitha efektet grafike dhe do të vendosim madhësinë në 100% (figura B).</p>
 <a class="reference internal image-reference" href="_images/fig6_15.png"><img alt="_images/fig6_15.png" class="align-center" src="_images/fig6_15.png" style="width: 490px;" /></a>
 </div>
-<div class="section" id="example-3-project-day-and-night">
-<h3>Example 3 - Project “Day and Night”<a class="headerlink" href="#example-3-project-day-and-night" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="hembulli-3-projekti-day-and-night">
+<h3>hembulli 3 - Projekti “Day and Night”<a class="headerlink" href="#hembulli-3-projekti-day-and-night" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>In this project, two sprites, a cat and a dog, behave differently depending on whether it is day or night.</p>
-<p>There are two small houses on the stage; one belongs to the cat and one to the dog. There are two backdrops added to them - <em>day</em> and <em>night</em>.</p>
-<p>On the backdrop <em>day</em> you can see the sun, light blue sky and grass.
-On the backdrop <em>night</em> everything, except for the houses, is dark blue, and you can see stars and a waxing crescent moon in the sky. The day and night backdrops alternate every 5 seconds.</p>
-<p>When it is daytime, the cat and the dog come out of their houses and chase one another. The cat runs around in a circle and the dog points toward the cat and tries to come closer to it.</p>
-<p>When it is night-time, the cat and the dog go back to their houses and keep still.</p>
+<p>Në këtë projekt, dy sprites, një mace dhe një qen, sillen ndryshe në varësi të faktit nëse është ditë apo natë.</p>
+<p>Ka dy shtëpi të vogla në skenë; njëra i përket maceve dhe një qenit. Janë shtuar dy sfonde - <em>day</em> dhe <em>night</em>.</p>
+<p>Në sfondin <em>day</em> ju mund të shihni diellin, qiellin blu të lehtë dhe bar.
+Në sfondin <em>day</em> gjithçka, përveç shtëpive, është blu e errët, dhe ju mund të shihni yje dhe një hënë gjysmëhënës që depilon në qiell. Sfondet e ditës dhe të natës alternojnë çdo 5 sekonda.</p>
+<p>Kur është ditë, macja dhe qeni dalin nga shtëpitë e tyre dhe ndjekin njëri-tjetrin. Macja vrapon përreth në një rreth dhe qeni drejton macen dhe përpiqet t’i afrohet asaj.</p>
+<p>Kur është natë, macja dhe qeni kthehen në shtëpitë e tyre dhe mbajnë qetësi.</p>
 <a class="reference internal image-reference" href="_images/fig6_16.png"><img alt="_images/fig6_16.png" class="align-center" src="_images/fig6_16.png" style="width: 500px;" /></a>
-<p><strong>Creating Sprites</strong></p>
-<p>Delete the <em>Sprite1</em> and then upload the <em>Dog2</em> sprite and the <em>Cat2</em> sprite, from the library.
-The dog has three costumes, but we will use only the first two, so you can delete the third. The cat has only one costume, and since we want to make a motion animation, we will have to draw another one.
-To create the second costume for the cat, we will use the paint editor in the vector mode. By right-clicking on the cat sprite, we will open the shortcut menu from which we can select the option <em>Duplicate</em>.</p>
-<p>This way we get a new costume, <em>Cat3</em>, which we will change with the steps presented in the following figure.</p>
-<a class="reference internal image-reference" href="_images/fig6_17.png"><img alt="_images/fig6_17.png" class="align-center" src="_images/fig6_17.png" style="width: 380px;" /></a>
-<p><strong>Creating the Backdrop</strong></p>
-<p>Click on the button <em>Choose a Backdrop</em> (on the right, next to the sprite list), and then choose the option <em>Paint</em>.
-From the palette, containing vector tools choose <img alt="v_rectan" src="_images/v_rectan.png" />, and the drawing mode should have the fill color turned off. Draw a small house, as shown in the following figure.</p>
-<a class="reference internal image-reference" href="_images/fig6_18.png"><img alt="_images/fig6_18.png" class="align-center" src="_images/fig6_18.png" style="width: 380px;" /></a>
-<p>Since you used the tool <img alt="v_group" src="_images/v_group.png" /> to group the objects, which make up the house, you can use the tool <img alt="copy" src="_images/copy.png" /> to duplicate it. Once you have done this, put the copy in the lower right corner of the stage, and the original house in the upper left corner.
-Then set the size of both sprites so they can fit inside their houses.</p>
-<p>Now, we will move on to painting, and we will use the tool <img alt="v_fill" src="_images/v_fill.png" />. The application of this tool, when it comes to filling in certain areas, is not the same as in the raster (bitmap) mode.
-If the area is not closed, in raster mode the paint will “leak” onto the whole image. In vector mode, this does not happen - you will not be able to paint it at all.
-This is why you should first “close” the area you want to paint.
-This is done by using the tool <img alt="v_select" src="_images/v_select.png" />, you should click on the image, and then you select the part of the image that is not connected (2) and attach it to the rest of the image (3). Then, by using the tool <img alt="v_fill" src="_images/v_fill.png" />, you can paint both the interior (4) and the lines that form the area (5).</p>
-<a class="reference internal image-reference" href="_images/fig6_19.png"><img alt="_images/fig6_19.png" class="align-center" src="_images/fig6_19.png" style="width: 500px;" /></a>
-<p>Since we used the tool <img alt="v_rectan" src="_images/v_rectan.png" /> for drawing, there shouldn’t be any problems when we paint.
-In the following figure, you can see the result of painting parts of the house and how it is done.</p>
-<a class="reference internal image-reference" href="_images/fig6_20.png"><img alt="_images/fig6_20.png" class="align-center" src="_images/fig6_20.png" style="width: 380px;" /></a>
-<p>When you finish painting the houses, multiply this background.</p>
-<p>We will add to the first backdrop, so it represents night-time, and to the second, so it represents daytime.</p>
-<p><strong>Creating the night-time backdrop</strong></p>
-<p>Draw a filled dark blue rectangle across the entire stage, then using the tool <em>Back</em> <img alt="v_back" src="_images/v_back.png" /> set this rectangle behind both houses. The same thing can be done with the tool <em>Layer back</em> <img alt="v_backward" src="_images/v_backward.png" />, but you will have to click on the stage as many times as there are layers in the image.
-When both houses are visible, you can start drawing the moon and the stars.</p>
-<p>A waxing crescent moon can be drawn by first drawing a filled yellow circle (1) and then partially drawing a larger circle filled with the backdrop color (2) over it.</p>
-<p>A star can be created by drawing a white triangle (3), which we can then duplicate and rotate (4) and finally fill in the entire shape with white (5).</p>
-<a class="reference internal image-reference" href="_images/fig6_21.png"><img alt="_images/fig6_21.png" class="align-center" src="_images/fig6_21.png" style="width: 400px;" /></a>
-<p>Now you can copy the finished stars and arrange them around the stage, some of them you can make smaller and some larger. With this, the night-time backdrop is finished.</p>
+<p><strong>Krijimi i Sprites</strong></p>
+<p>Fshini burimin <em>Sprite1</em> dhe më pas ngarkoni burimin <em>Dog2</em> dhe burimin <em>Cat2</em> nga biblioteka.
+Qeni ka tre kostume, por ne do të përdorim vetëm y të parat, kështu që ju mund të fshini të tretin. Macja ka vetëm një kostum, dhe duke qenë se duam të bëjmë një animacion lëvizjeje, do të na duhet të vizatojmë një tjetër.
+Për të krijuar kostumin e dytë për macen, ne do të përdorim redaktorin e pikturave në mënyrën vektoriale. Duke klikuar me të djathtën në mprehtësin e maceve, ne do të hapim menunë e shkurtore nga e cila mund të zgjedhim opsionin <em>Copy</em>.</p>
+<p>Në këtë mënyrë marrim një kostum të ri, <em>Cat3</em>, të cilin do ta ndryshojmë me hapat e paraqitur në figurën vijuese.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_17.png"><img alt="../_images/6/fig6_17.png" class="align-center" src="../_images/6/fig6_17.png" style="width: 380px;" /></a>
+<p><strong>Krijimi i sfondit</strong></p>
+<p>Klikoni në butonin <em>Zgjidhni një sfond</em> (në të djathtë, ngjitur me listën e sprite), dhe pastaj zgjidhni opsionin <em>Paint</em>.
+Nga paleta, mjetet që përmbajnë vektor zgjedhin <img alt="v_rectan" src="_images/v_rectan.png" />, dhe mënyra e vizatimit duhet të ketë të fikur ngjyrën e mbushjes. Vizatoni një shtëpi të vogël, siç tregohet në figurën e mëposhtme.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_18.png"><img alt="../_images/6/fig6_18.png" class="align-center" src="../_images/6/fig6_18.png" style="width: 380px;" /></a>
+<p>Meqenëse keni përdorur mjetin <a href="#id3"><span class="problematic" id="id4">|v_group  për të grupuar objektet, të cilat përbëjnë shtëpinë, mund të përdorni mjetin |copy|</span></a> për ta kopjuar atë. Pasi ta keni bërë këtë, vendosni kopjen në këndin e poshtëm të djathtë të skenës dhe shtëpinë origjinale në këndin e sipërm të majtë.
+Pastaj vendosni madhësinë e të dy sprites që të mund të futen brenda shtëpive të tyre.</p>
+<p>Tani, ne do të kalojmë në pikturë, dhe ne do të përdorim mjetin  v_fill|. Zbatimi i këtij mjeti, kur bëhet fjalë për plotësimin e zonave të caktuara, nuk është i njëjtë me mënyrën e rasterit (bitmap).
+Nëse zona nuk është e mbyllur, në modalitetin e rasterit bojë do të “rrjedh” në tërë imazhin. Në mënyrën vektoriale, kjo nuk ndodh - nuk do të jeni në gjendje ta pikturoni atë fare.
+Kjo është arsyeja pse së pari duhet të “mbyllni” zonën që dëshironi të pikturoni.
+Kjo është bërë duke përdorur mjetin <img alt="v_select" src="_images/v_select.png" />, ju duhet të klikoni në imazh, dhe pastaj ju zgjidhni pjesën e figurës që nuk është e lidhur (2) dhe bashkëngjitni atë në pjesën tjetër të figurës (3). Pastaj, duke përdorur mjetin <img alt="v_fill" src="_images/v_fill.png" />, ju mund të pikturoni si brendësinë (4) ashtu edhe linjat që formojnë zonën (5).</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_19.png"><img alt="../_images/6/fig6_19.png" class="align-center" src="../_images/6/fig6_19.png" style="width: 500px;" /></a>
+<p>Meqenëse kemi përdorur mjetin <img alt="v_rectan" src="_images/v_rectan.png" /> për vizatim, nuk duhet të ketë probleme kur pikturojmë.
+Në figurën e mëposhtme, ju mund të shihni rezultatin e pikturimit të pjesëve të shtëpisë dhe se si bëhet.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_20.png"><img alt="../_images/6/fig6_20.png" class="align-center" src="../_images/6/fig6_20.png" style="width: 380px;" /></a>
+<p>Kur të përfundoni pikturimin e shtëpive, shumëzoni këtë sfond.</p>
+<p>Ne do të shtojmë në sfondin e parë, kështu që përfaqëson kohën e natës, dhe të dytën, kështu që përfaqëson ditën.</p>
+<p><strong>Krijimi i sfondit të natës</strong></p>
+<p>Vizatoni një drejtkëndësh të mbushur blu të errët në të gjithë fazën, pastaj duke përdorur mjetin <em>Back</em> <img alt="v_back" src="_images/v_back.png" /> vendosni këtë drejtkëndësh pas të dy shtëpive. E njëjta gjë mund të bëhet me mjetin <em>Layer back</em> <img alt="v_backward" src="_images/v_backward.png" />, por do të duhet të klikoni në skenë sa herë që ka shtresa në figurë.
+Kur të dy shtëpitë janë të dukshme, mund të filloni të vizatoni Hënën dhe yjet.</p>
+<p>Një hënë e gjysmëhënës që depilon mund të vizatohet duke vizatuar së pari një rreth të verdhë të mbushur (1) dhe më pas duke vizatuar pjesërisht një rreth më të madh të mbushur me ngjyrën e sfondit (2) mbi të.</p>
+<p>Një yll mund të krijohet duke vizatuar një trekëndësh të bardhë (3), të cilin pastaj mund ta kopjojmë dhe rrotullojmë (4) dhe në fund ta mbushim tërë formën me të bardhë (5).</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_21.png"><img alt="../_images/6/fig6_21.png" class="align-center" src="../_images/6/fig6_21.png" style="width: 400px;" /></a>
+<p>Tani ju mund të kopjoni yjet e përfunduar dhe t’i rregulloni ato rreth skenës, disa prej tyre mund t’i bëni më të vogla dhe disa më të mëdha. Me këtë mbaron sfondi i natës.</p>
 <a class="reference internal image-reference" href="_images/fig6_22.png"><img alt="_images/fig6_22.png" class="align-center" src="_images/fig6_22.png" style="width: 380px;" /></a>
-<p><strong>Creating the daytime backdrop</strong></p>
-<p>Draw the sun with the tool <img alt="v_circle" src="_images/v_circle.png" />, and for the rays, you can use the tool <img alt="v_line" src="_images/v_line.png" />. Then draw a large rectangle filled in with light blue color, the width of the rectangle should be the same as the stage. Place it as many layers back as necessary to see all the details on the stage.
-(If you were to draw the sky first, and the sun second, you would be able to put the sky rectangle in the appropriate layer faster. This way you need to go back underneath all the rays of the sun).</p>
-<p>Then draw a rectangle filled with green, as wide as the stage, draw grass as send it to the background of the image.</p>
-<p>The process of creating the daytime backdrop is presented in the figure below.</p>
+<p><strong>Krijimi i sfondit të ditës</strong></p>
+<p>Vizatoni diellin me mjetin <img alt="v_circle" src="_images/v_circle.png" />, dhe për rrezet, mund të përdorni mjetin <img alt="v_line" src="_images/v_line.png" />. Pastaj vizatoni një drejtkëndësh të madh të mbushur me ngjyrë blu të lehta, gjerësia e drejtkëndëshit duhet të jetë e njëjtë me fazën. Vendosni sa më shumë shtresa prapa sa të jetë e nevojshme për të parë të gjitha detajet në skenë.
+(Nëse do të vizatonit qiellin e parë, dhe diellin e dytë, do të ishit në gjendje ta vendosni drejtkëndëshin e qiellit në shtresën e duhur më shpejt. Në këtë mënyrë duhet të ktheheni nën të gjitha rrezet e diellit).</p>
+<p>Pastaj vizatoni një drejtkëndësh të mbushur me jeshil, aq i gjerë sa skena, vizatoni barin, ndërsa dërgojeni në sfondin e figurës.</p>
+<p>Procesi i krijimit të sfondit të ditës është paraqitur në figurën më poshtë.</p>
 <a class="reference internal image-reference" href="_images/fig6_23.png"><img alt="_images/fig6_23.png" class="align-center" src="_images/fig6_23.png" style="width: 500px;" /></a>
-<p>Since we are done creating the backdrop daytime, we can now start writing the script, which will define the behavior of the sprites.</p>
-<p><strong>Synchronization of events in the Project Day and Night</strong></p>
-<p>In this project, the behavior is dictated by the backdrop. It broadcasts the messages <em>day</em> and <em>night</em>, to which both sprites respond.</p>
-<a class="reference internal image-reference" href="_images/fig6_24.png"><img alt="_images/fig6_24.png" class="align-center" src="_images/fig6_24.png" style="width: 250px;" /></a>
-<p>The following figures represent scripts added to the sprites, from which you can see how they react to these messages.</p>
-<a class="reference internal image-reference" href="_images/fig6_25.png"><img alt="_images/fig6_25.png" class="align-center" src="_images/fig6_25.png" style="width: 680px;" /></a>
-<a class="reference internal image-reference" href="_images/fig6_26.png"><img alt="_images/fig6_26.png" class="align-center" src="_images/fig6_26.png" style="width: 680px;" /></a>
+<p>Meqenëse ne kemi bërë krijimin e sfondit gjatë ditës, tani mund të fillojmë të shkruajmë skenarin, i cili do të përcaktojë sjelljen e sprites.</p>
+<p><strong>Sinkronizimi i ngjarjeve në Ditën dhe Natën e Projektit</strong></p>
+<p>Në këtë projekt, sjellja diktohet nga sfondi. Ajo transmeton mesazhet <em>day</em> dhe <em>night</em>, të cilave u përgjigjen të dy spritet.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_24.png"><img alt="../_images/6/fig6_24.png" class="align-center" src="../_images/6/fig6_24.png" style="width: 250px;" /></a>
+<p>Shifrat e mëposhtme paraqesin shkrime të shtuara në sprites, nga të cilat mund të shihni se si reagojnë ndaj këtyre mesazheve.</p>
+<a class="reference internal image-reference" href="../_images/6/fig6_25.png"><img alt="../_images/6/fig6_25.png" class="align-center" src="../_images/6/fig6_25.png" style="width: 680px;" /></a>
+<a class="reference internal image-reference" href="../_images/6/fig6_26.png"><img alt="../_images/6/fig6_26.png" class="align-center" src="../_images/6/fig6_26.png" style="width: 680px;" /></a>
 </div>
 </div>
-<div class="section" id="ask-did-you-understand">
-<h2><img alt="ask" src="_images/ask.png" /> Did you understand?<a class="headerlink" href="#ask-did-you-understand" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ask-e-kuptuat">
+<h2><img alt="ask" src="_images/ask.png" /> E kuptuat?<a class="headerlink" href="#ask-e-kuptuat" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pyetja-1">
+<h3>Pyetja 1<a class="headerlink" href="#pyetja-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -384,19 +420,19 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if01">
-            <p>Q-1: Will the sprite say <em>Hello</em> after the execution of the condition command?</p>
+            <p>Q-1: A do të thotë sprite <em>Hello</em> pas ekzekutimit të kushtit të komandës?</p>
 <a class="reference internal image-reference" href="_images/q6_01.png"><img alt="_images/q6_01.png" class="align-center" src="_images/q6_01.png" style="width: 250px;" /></a>
 
-            <li data-component="answer" data-correct id="if01_opt_a">yes</li><li data-component="feedback" id="if01_opt_a"></li>
+            <li data-component="answer" data-correct id="if01_opt_a">po</li><li data-component="feedback" id="if01_opt_a"></li>
             
-            <li data-component="answer"  id="if01_opt_b">no</li><li data-component="feedback" id="if01_opt_b">The condition 1=1 is not fulfilled.</li>
+            <li data-component="answer"  id="if01_opt_b">jo</li><li data-component="feedback" id="if01_opt_b">Kushti1=1 nuk përmbushet.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-2">
+<h3>Pyetja 2<a class="headerlink" href="#pyetja-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -404,19 +440,19 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if02">
-            <p>Q-2: Will the sprite say <em>Hello</em> after the execution of the condition command?</p>
+            <p>Q-2: A do të thotë sprite <em>Hello</em> pas ekzekutimit të kushtit të komandës?</p>
 <a class="reference internal image-reference" href="_images/q6_02.png"><img alt="_images/q6_02.png" class="align-center" src="_images/q6_02.png" style="width: 255px;" /></a>
 
-            <li data-component="answer"  id="if02_opt_a">yes</li><li data-component="feedback" id="if02_opt_a">Since the value of the expression 1=2 is always false, the command from the YES branch will never run.</li>
+            <li data-component="answer"  id="if02_opt_a">po</li><li data-component="feedback" id="if02_opt_a">Meqenëse vlera e shprehjes 1 = 2 është gjithnjë e gabuar, komanda nga dega YES nuk do të funksionojë kurrë.</li>
             
-            <li data-component="answer" data-correct id="if02_opt_b">no</li><li data-component="feedback" id="if02_opt_b"></li>
+            <li data-component="answer" data-correct id="if02_opt_b">jo</li><li data-component="feedback" id="if02_opt_b"></li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-3">
-<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-3">
+<h3>Pyetja 3<a class="headerlink" href="#pyetja-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -424,23 +460,23 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="if03">
-            <p>Q-3: Which of the user’s answers will allow the execution of the command in the YES branch?</p>
+            <p>Q-3: Cila nga përgjigjet e përdoruesit do të lejojë ekzekutimin e komandës në degën YES?</p>
 <a class="reference internal image-reference" href="_images/q6_03.png"><img alt="_images/q6_03.png" class="align-center" src="_images/q6_03.png" style="width: 215px;" /></a>
 
-            <li data-component="answer"  id="if03_opt_a">5</li><li data-component="feedback" id="if03_opt_a">False 5<5</li>
+            <li data-component="answer"  id="if03_opt_a">5</li><li data-component="feedback" id="if03_opt_a">Gabim 5<5</li>
             
-            <li data-component="answer" data-correct id="if03_opt_b">-5</li><li data-component="feedback" id="if03_opt_b">True.</li>
+            <li data-component="answer" data-correct id="if03_opt_b">-5</li><li data-component="feedback" id="if03_opt_b">Saktë.</li>
             
-            <li data-component="answer" data-correct id="if03_opt_c">0</li><li data-component="feedback" id="if03_opt_c">True.</li>
+            <li data-component="answer" data-correct id="if03_opt_c">0</li><li data-component="feedback" id="if03_opt_c">Saktë.</li>
             
-            <li data-component="answer"  id="if03_opt_d">10</li><li data-component="feedback" id="if03_opt_d">False 10<5.</li>
+            <li data-component="answer"  id="if03_opt_d">10</li><li data-component="feedback" id="if03_opt_d">Gabim 10<5.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-4">
-<h3>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-4">
+<h3>Pyetja 4<a class="headerlink" href="#pyetja-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -448,19 +484,21 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if04">
-            <p>Q-4: What will the sprite say if, when asked <em>Is it raining?</em>, the user answers <em>Yes</em>?</p>
-<a class="reference internal image-reference" href="_images/q6_04.png"><img alt="_images/q6_04.png" class="align-center" src="_images/q6_04.png" style="width: 310px;" /></a>
-
-            <li data-component="answer" data-correct id="if04_opt_a">Bring an umbrella.</li><li data-component="feedback" id="if04_opt_a"></li>
             
-            <li data-component="answer"  id="if04_opt_b">Nothing will be said</li><li data-component="feedback" id="if04_opt_b">In that case, the condition for branching is fulfilled.</li>
+            <li data-component="answer" data-correct id="if04_opt_a">sill një çadër.</li><li data-component="feedback" id="if04_opt_a"></li>
+            
+            <li data-component="answer"  id="if04_opt_b">nuk do thuhet asgjë</li><li data-component="feedback" id="if04_opt_b">Në atë rast, kushti për degëzim plotësohet.</li>
             
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-5">
-<h3>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h3>
+            <p>   Çfarë do të thotë sprite nëse, kur pyeten <em>A bie shi?</em>, Përgjigjet përdoruesi <em>po</em>?</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q6_04.png"><img alt="_images/q6_04.png" class="align-center" src="_images/q6_04.png" style="width: 310px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-5">
+<h3>Pyetja 5<a class="headerlink" href="#pyetja-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -468,19 +506,19 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if05">
-            <p>Q-5: What will the sprite say after the execution of the condition command?</p>
+            <p>Q-5: Çfarë do të thonë sprite pas ekzekutimit të komandës kusht?</p>
 <a class="reference internal image-reference" href="_images/q6_05.png"><img alt="_images/q6_05.png" class="align-center" src="_images/q6_05.png" style="width: 315px;" /></a>
 
-            <li data-component="answer" data-correct id="if05_opt_a">The condition is fulfilled.</li><li data-component="feedback" id="if05_opt_a"></li>
+            <li data-component="answer" data-correct id="if05_opt_a">Kushti përmbushet.</li><li data-component="feedback" id="if05_opt_a"></li>
             
-            <li data-component="answer"  id="if05_opt_b">The condition is not fulfilled.</li><li data-component="feedback" id="if05_opt_b">Since the value of the expression А=А is always true, the command from the YES branch will be executed.</li>
+            <li data-component="answer"  id="if05_opt_b">Kushti nuk përmbushet.</li><li data-component="feedback" id="if05_opt_b">Meqenëse vlera e shprehjes А = А është gjithmonë e vërtetë, komanda nga dega YES do të ekzekutohet</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-6">
-<h3>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-6">
+<h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -488,43 +526,50 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if06">
-            <p>Q-6: Will the sprite appear after the execution of the condition command?</p>
+            <p>Q-6: A do të shfaqet sprite pas ekzekutimit të komandës kusht?</p>
 <a class="reference internal image-reference" href="_images/q6_06.png"><img alt="_images/q6_06.png" class="align-center" src="_images/q6_06.png" style="width: 165px;" /></a>
 
-            <li data-component="answer"  id="if06_opt_a">yes</li><li data-component="feedback" id="if06_opt_a">Since the value of the expression А=B is always false, the command from the NO branch will be executed.</li>
+            <li data-component="answer"  id="if06_opt_a">po</li><li data-component="feedback" id="if06_opt_a">Meqenëse vlera e shprehjes А = B është gjithmonë e gabuar, komanda nga dega NO do të ekzekutohet.</li>
             
-            <li data-component="answer" data-correct id="if06_opt_b">no</li><li data-component="feedback" id="if06_opt_b"></li>
+            <li data-component="answer" data-correct id="if06_opt_b">jo</li><li data-component="feedback" id="if06_opt_b"></li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-7">
-<h3>Question 7<a class="headerlink" href="#question-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-7">
+<h3>Pyetja 7<a class="headerlink" href="#pyetja-7" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="if07">
-            <p>Q-7: What is the result of the execution of the block commands (А) and (В)?</p>
-<a class="reference internal image-reference" href="_images/q6_07.png"><img alt="_images/q6_07.png" class="align-center" src="_images/q6_07.png" style="width: 600px;" /></a>
-
-            <li data-component="answer"  id="if07_opt_a">different regardless of the position of the sprite</li><li data-component="feedback" id="if07_opt_a">In both cases, the condition that has to be fulfilled for the sentence "You are in the center of the stage" to be said, is the same.</li>
-            
-            <li data-component="answer" data-correct id="if07_opt_b">the same regardless of the position of the sprite</li><li data-component="feedback" id="if07_opt_b"></li>
-            
-            <li data-component="answer"  id="if07_opt_c">different if the y is not 0</li><li data-component="feedback" id="if07_opt_c">In this case, the condition is not fulfilled in any of the blocks (A) or (B), and "You are in the center of the stage" will not be said.</li>
-            
-            <li data-component="answer"  id="if07_opt_d">different if the x is not 0</li><li data-component="feedback" id="if07_opt_d">In this case, the condition is not fulfilled in any of the blocks (A) or (B), and "You are in the center of the stage" will not be said.</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="question-8">
-<h3>Question 8<a class="headerlink" href="#question-8" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 436)</p>
+<p>No correct answer specified.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">mchoice</span><span class="p">::</span> <span class="n">if07</span>
+   <span class="p">:</span><span class="n">answer_a</span><span class="p">:</span> <span class="n">të</span> <span class="n">ndryshme</span> <span class="n">pavarësisht</span> <span class="n">nga</span> <span class="n">pozicioni</span> <span class="n">i</span> <span class="n">sprite</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 438)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>   :answer_b: e njëjta pavarësisht nga pozicioni i sprite
+   :answer_c: e ndryshme nëse y nuk është 0
+   :answer_d: e ndryshme nëse x nuk është 0
+   :correct: b
+   :feedback_a: Në të dyja rastet, kushti që duhet të përmbushet për fjalinë “Ju jeni në qendër të fazës” që duhet thënë, është e njëjtë.
+   :Feedback_b:
+   :feedback_c: Në këtë rast, kushti nuk plotësohet në asnjë prej blloqeve (A) ose (B), dhe “Ju jeni në qendër të fazës” nuk do të thuhet.
+   :feedback_d: Në këtë rast, kushti nuk plotësohet në asnjë prej blloqeve (A) ose (B), dhe “Ju jeni në qendër të fazës” nuk do të thuhet.</p>
+<p>    Cili është rezultati i ekzekutimit të komandave të bllokut (А) dhe (В)?</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q6_07.png"><img alt="_images/q6_07.png" class="align-center" src="_images/q6_07.png" style="width: 600px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-8">
+<h3>Pyetja 8<a class="headerlink" href="#pyetja-8" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -532,21 +577,29 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="if08">
-            <p>Q-8: Which of the condition commands has the right condition for the statement - location coordinates of the sprite are (0,0), i.e. the sprite is in the center of the stage? (Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q6_08.png"><img alt="_images/q6_08.png" class="align-center" src="_images/q6_08.png" style="width: 1020px;" /></a>
-
-            <li data-component="answer" data-correct id="if08_opt_a"></li><li data-component="feedback" id="if08_opt_a">Explicitly determines that х=0 and у=0.</li>
             
-            <li data-component="answer"  id="if08_opt_b"></li><li data-component="feedback" id="if08_opt_b">These are the coordinates of some of the points on the diagonal of the coordinate system, they can be (0,0), but they don't have to be.</li>
+            <li data-component="answer" data-correct id="if08_opt_a"></li><li data-component="feedback" id="if08_opt_a">Në mënyrë të qartë përcakton që х = 0 dhe у = 0.</li>
             
-            <li data-component="answer"  id="if08_opt_c"></li><li data-component="feedback" id="if08_opt_c">These are the coordinates of some of the points on the x-axis or y-axis. It may also be the point where they intersect, but it does not have to be.</li>
+            <li data-component="answer"  id="if08_opt_b"></li><li data-component="feedback" id="if08_opt_b"></li>
+            
+            <li data-component="answer"  id="if08_opt_c"></li><li data-component="feedback" id="if08_opt_c"></li>
             
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-9">
-<h3>Question 9<a class="headerlink" href="#question-9" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 465)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>   :feedback_b: Këto janë koordinatat e disa prej pikave në diagonale të sistemit të koordinatave, ato mund të jenë (0,0), por ato nuk duhet të jenë.
+   :feedback_c: Këto janë koordinatat e disa prej pikave në boshtin x ose boshtin y. Mund të jetë gjithashtu pika ku ato kryqëzohen, por nuk ka pse të jetë.</p>
+<p>    Cila nga komandat e gjendjes ka gjendjen e duhur për thënien - koordinatat e vendndodhjes së sprite janë (0,0), d.m.th. spraza është në qendër të fazës? (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q6_08.png"><img alt="_images/q6_08.png" class="align-center" src="_images/q6_08.png" style="width: 1020px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-9">
+<h3>Pyetja 9<a class="headerlink" href="#pyetja-9" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -554,27 +607,36 @@ When both houses are visible, you can start drawing the moon and the stars.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="if09">
-            <p>Q-9: In the project <em>Making a Decision</em> we showed how the operation <em>mod</em> is used to check whether a certain number can be divided by 2.
-Which of the following conditions allows you to check whether the number you enter can be divided by 6? (Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q6_09.png"><img alt="_images/q6_09.png" class="align-center" src="_images/q6_09.png" style="width: 640px;" /></a>
-
-            <li data-component="answer" data-correct id="if09_opt_a"></li><li data-component="feedback" id="if09_opt_a">The remainder, after the number has been divided by 6, is 0.</li>
             
-            <li data-component="answer"  id="if09_opt_b"></li><li data-component="feedback" id="if09_opt_b">The number 2 and 3 satisfy this condition, but they cannot be divided by 6.</li>
+            <li data-component="answer" data-correct id="if09_opt_a"></li><li data-component="feedback" id="if09_opt_a">Pjesa e mbetur, pasi numri është ndarë me 6, është 0.</li>
             
-            <li data-component="answer"  id="if09_opt_c"></li><li data-component="feedback" id="if09_opt_c">The number 11 satisfies this condition, but it cannot be divided by 6.</li>
+            <li data-component="answer"  id="if09_opt_b"></li><li data-component="feedback" id="if09_opt_b"></li>
             
-            <li data-component="answer" data-correct id="if09_opt_d"></li><li data-component="feedback" id="if09_opt_d">The number can be divided by both prime factors of the number 6.</li>
+            <li data-component="answer"  id="if09_opt_c"></li><li data-component="feedback" id="if09_opt_c"></li>
+            
+            <li data-component="answer" data-correct id="if09_opt_d"></li><li data-component="feedback" id="if09_opt_d"></li>
             
 
             </ul>
             </div>
-            </div>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 487)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>   :feedback_b: Numri 2 dhe 3 plotësojnë këtë gjendje, por ato nuk mund të ndahen me 6.
+   :feedback_c: Numri 11 e plotëson këtë gjendje, por nuk mund të ndahet me 6.
+   :feedback_d: Numri mund të ndahet nga të dy faktorët kryesorë të numrit 6.</p>
+<p>    Në projektin <em>Marrja e një vendimi</em> treguam se si përdoret operacioni <em>mod</em> për të kontrolluar nëse një numër i caktuar mund të ndahet me 2.
+    Cila nga kushtet e mëposhtme ju lejon të kontrolloni nëse numri që vendosni mund të ndahet me 6? (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q6_09.png"><img alt="_images/q6_09.png" class="align-center" src="_images/q6_09.png" style="width: 640px;" /></a>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="try-try-it">
 <h2><img alt="try" src="_images/try.png" /> Try it!<a class="headerlink" href="#try-try-it" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="exercise-1">
-<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-1">
+<h3>Ushtrimi 1<a class="headerlink" href="#ushtrimi-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -583,20 +645,22 @@ Which of the following conditions allows you to check whether the number you ent
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>When the user is expected to enter some kind of information, we need to ask a question that suggests the expected form of the answer, for example: “Enter your date of birth (dd/mm/yy)”.
-Formulate the input questions for entering:</p>
-<p>а) A number between 1 and 10</p>
-<ol class="loweralpha simple" start="2">
-<li><p>A number between -1.0 and 2.25</p></li>
-<li><p>Name and surname</p></li>
-<li><p>Weight</p></li>
-<li><p>Height</p></li>
-</ol>
+<p>Kur përdoruesi pritet të fusë një lloj informacioni, duhet të bëjmë një pyetje që sugjeron formën e pritur të përgjigjes, për shembull: “Vendosni datën tuaj të lindjes (dd / mm / yy)”.</p>
 
     </p></div></div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 509)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
 </div>
-<div class="section" id="exercise-2">
-<h3>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<p>   Formuloni pyetjet e dhëna për hyrjen:</p>
+<p>   а) Një numër midis 1 dhe 10</p>
+<p>   b) Një numër midis -1.0 dhe 2.25</p>
+<p>   c) Emri dhe mbiemri</p>
+<p>   d) Pesha</p>
+<p>   e) Lartësia</p>
+</div>
+<div class="section" id="ushtrimi-2">
+<h3>Ushtrimi 2<a class="headerlink" href="#ushtrimi-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -605,13 +669,17 @@ Formulate the input questions for entering:</p>
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>The program, which should calculate the ideal weight, requires the user to enter his/her weight (in kg) and height (in cm).
-Write parts of the program that check if the user has entered the correct weight data, e.g. from the interval [40,160] and height, e.g. [140,210].</p>
+<p>Programi, i cili duhet të llogarisë peshën ideale, kërkon që përdoruesi të futë peshën e tij / saj (në kg) dhe gjatësinë (në cm).</p>
 
     </p></div></div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 528)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
 </div>
-<div class="section" id="exercise-3">
-<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h3>
+<p>  Shkruani pjesë të programit që kontrollojnë nëse përdoruesi ka hyrë në të dhënat e sakta të peshës, p.sh. nga intervali [40,160] dhe lartësia, p.sh. [140.210].</p>
+</div>
+<div class="section" id="ushtrimi-3">
+<h3>Ushtrimi 3<a class="headerlink" href="#ushtrimi-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -620,28 +688,34 @@ Write parts of the program that check if the user has entered the correct weight
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write what should be the arguments of the operation <img alt="pick_random" src="_images/pick_random.png" /> for it to generate numbers from the set:</p>
-<p>а) {0, 1}</p>
+
+    </p></div></div>
+<p>Shkruani cilat duhet të jenë argumentet e operacionit <img alt="pick_random" src="_images/pick_random.png" /> që ajo të gjenerojë numra nga grupi:</p>
+<blockquote>
+<div><p>а) {0, 1}</p>
 <ol class="loweralpha simple" start="2">
 <li><p>{0, 1, 2, 3, … , 10}</p></li>
 <li><p>{–2, 0, 2, 4, 6, 8}</p></li>
 <li><p>{0, 10, 20, 30, … , 100}</p></li>
 <li><p>{0, 0.1, 0.15, 0.26, 0.38, … , 1.0}</p></li>
 </ol>
-<p>Check your answers by testing what will the appropriate operation return for each example in the loop that should be repeated 5 times.</p>
-
+</div></blockquote>
+<p>Kontrolloni përgjigjet tuaja duke provuar se çfarë do të kthehet operacioni i duhur për secilin shembull në cikël që duhet të përsëritet 5 herë.</p>
+<blockquote>
+<div>
     <div data-component="reveal" id="упутство11"   data-showtitle="Show the instruction" data-hidetitle="Hide the instruction">
-    <p><strong>Instruction:</strong></p>
-<p>The whole block of commands is given for the example a), and for the others, only the part which generates numbers that should be inserted into the block <code class="docutils literal notranslate"><span class="pre">say</span></code>.</p>
-<p>From example e), you can see that it is enough to put just one limit that has a decimal point to generate decimal numbers.</p>
-<a class="reference internal image-reference" href="_images/ex6_3.png"><img alt="_images/ex6_3.png" class="align-center" src="_images/ex6_3.png" style="width: 400px;" /></a>
+    <p><strong>Udhëzim:</strong></p>
 
     </div>
-    
-    </p></div></div>
+    </div></blockquote>
+<p>    Tërë blloku i komandave është dhënë për shembullin a), dhe për të tjerët, vetëm pjesa që gjeneron numra që duhet të futen në bllokun <code class="docutils literal notranslate"><span class="pre">say</span></code>.</p>
+<p>    Nga shembulli e), ju mund të shihni se është e mjaftueshme të vendosni vetëm një kufi që ka një pikë dhjetore për të gjeneruar numra dhjetorë.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/ex6_3.png"><img alt="_images/ex6_3.png" class="align-center" src="_images/ex6_3.png" style="width: 400px;" /></a>
+</div></blockquote>
 </div>
-<div class="section" id="exercise-4">
-<h3>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-4">
+<h3>Ushtrimi 4<a class="headerlink" href="#ushtrimi-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
@@ -650,14 +724,16 @@ Write parts of the program that check if the user has entered the correct weight
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write the condition command with a complex condition equivalent to the following compositions of condition commands:</p>
-<a class="reference internal image-reference" href="_images/ex6_4.png"><img alt="_images/ex6_4.png" class="align-center" src="_images/ex6_4.png" style="width: 530px;" /></a>
-<p>Check your answers by testing them in the Scratch environment.</p>
 
     </p></div></div>
+<p>Shkruaj kushtin e komandës me një gjendje komplekse ekuivalente me përbërjet e mëposhtme të komandave të gjendjes:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/ex6_4.png"><img alt="_images/ex6_4.png" class="align-center" src="_images/ex6_4.png" style="width: 530px;" /></a>
+<p>Kontrolloni përgjigjet tuaja duke i provuar ato në mjedisin Scratch.</p>
+</div></blockquote>
 </div>
-<div class="section" id="exercise-5">
-<h3>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-5">
+<h3>Ushtrimi 5<a class="headerlink" href="#ushtrimi-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -666,21 +742,27 @@ Write parts of the program that check if the user has entered the correct weight
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Create a mini-project called <em>Greater</em> in which the sprite asks the user to insert a number between 1 and 100.
-The program chooses a number (by using the random number operator block) also between 1 and 100 and then tells the user whose number is greater.
-The dialogue should be initiated by clicking on the sprite.</p>
+<p>Krijoni një mini-projekt të quajtur <em>Greater</em> në të cilin sprite i kërkon përdoruesit të fusë një numër midis 1 dhe 100.</p>
 
-    <div data-component="reveal" id="упутство12"   data-showtitle="Show the instruction" data-hidetitle="Hide the instruction">
-    <p><strong>Instruction:</strong></p>
-<a class="reference internal image-reference" href="_images/ex6_5.png"><img alt="_images/ex6_5.png" class="align-center" src="_images/ex6_5.png" style="width: 390px;" /></a>
+    </p></div></div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 585)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>  Programi zgjedh një numër (duke përdorur bllokun e operatorit të numrave të rastit) gjithashtu midis 1 dhe 100 dhe pastaj i thotë përdoruesit numri i të cilit është më i madh.
+  Dialogu duhet të fillohet duke klikuar në sprite.</p>
+<blockquote>
+<div>
+    <div data-component="reveal" id="упутство12"   data-showtitle="Trego instruksionin" data-hidetitle="Fshih instruksionin">
+    <p><strong>Instruksion:</strong></p>
+<a class="reference internal image-reference" href="../_images/6/ex6_5.png"><img alt="../_images/6/ex6_5.png" class="align-center" src="../_images/6/ex6_5.png" style="width: 390px;" /></a>
 
     </div>
-    
-    </p></div></div>
+    </div></blockquote>
 </div>
 </div>
-<div class="section" id="bug-debug-it">
-<h2><img alt="bug" src="_images/bug.png" /> Debug it!<a class="headerlink" href="#bug-debug-it" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bug-debug">
+<h2><img alt="bug" src="_images/bug.png" /> Debug!<a class="headerlink" href="#bug-debug" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="bug-1">
 <h3>Bug 1<a class="headerlink" href="#bug-1" title="Permalink to this headline">¶</a></h3>
 
@@ -689,15 +771,19 @@ The dialogue should be initiated by clicking on the sprite.</p>
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The student wanted to create a script that allowed the movement of the sprite to be controlled by arrows. He/she wrote the program shown in the figure on the left.
-Then the student noticed that the command <img alt="move_steps" src="_images/move_steps.png" /> is repeated 4 times, so he/she changed the script into the program presented in the figure on the right. However, the student did not achieve the desired behavior of the sprite. Where did the student make a mistake?</p>
+<dd class="field-odd"><p>Studenti dëshironte të krijonte një skenar që lejonte lëvizjen e degës të kontrollohej nga shigjetat. Ai / ajo shkroi programin e treguar në figurën në të majtë.</p>
 </dd>
 </dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 608)</p>
+<p>Field list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    Pastaj studenti vuri re që komanda <img alt="move_steps" src="_images/move_steps.png" /> përsëritet 4 herë, kështu që ai / ajo e ndryshoi skenarin në programin e paraqitur në figurën në të djathtë. Sidoqoftë, studenti nuk arriti sjelljen e dëshiruar të sprite. Ku bëri një gabim studenti?</p>
 <a class="reference internal image-reference" href="_images/bug6_1.png"><img alt="_images/bug6_1.png" class="align-center" src="_images/bug6_1.png" style="width: 500px;" /></a>
 
-    <div data-component="reveal" id="сакривање13"   data-showtitle="Show the answer" data-hidetitle="Hide the answer">
-    <p><strong>Answer:</strong></p>
-<p>In the changed program, the command <img alt="move_steps" src="_images/move_steps.png" /> will run continuously and the sprite will move in the direction that was chosen last, regardless of whether the key with that direction has been pressed or not.</p>
+    <div data-component="reveal" id="сакривање13"   data-showtitle="Shih përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigjs:</strong></p>
+<p>Në programin e ndryshuar, komanda <a href="#id5"><span class="problematic" id="id6">|veprim_steps|</span></a> do të rrjedhë vazhdimisht dhe sprite do të lëvizë në drejtimin që u zgjodh e fundit, pavarësisht nëse çelësi me atë drejtim është shtypur apo jo.</p>
 
     </div>
     </div>
@@ -709,18 +795,20 @@ Then the student noticed that the command <img alt="move_steps" src="_images/mov
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The student wanted to change the behavior of the candidates for the position of wizard’s assistant in the project “Selection”. When the wizard chooses the girl, the boy should think to himself “Why did you choose her?”. This is why he/she added the following script to the boy sprite. However, the added thought was put at the very beginning of the program, before the wizard chose anyone. How can you coordinate the activities of the boy and the wizard?</p>
+<dd class="field-odd"><p>Studenti dëshironte të ndryshonte sjelljen e kandidatëve për pozicionin e asistentit të magjistarit në projektin “Përzgjedhja”. Kur magjistari zgjedh vajzën, djali duhet të mendojë me vete “Pse e zgjodhi atë?”. Kjo është arsyeja pse ai / ajo shtoi skenarin e mëposhtëm në sprite djali. Sidoqoftë, mendimi i shtuar u vu në fillim të programit, përpara se magjistari të zgjidhte ndonjë. Si mund të koordinoni aktivitetet e djalit dhe magjistarit?</p>
 </dd>
 </dl>
-<a class="reference internal image-reference" href="_images/bug6_2.png"><img alt="_images/bug6_2.png" class="align-center" src="_images/bug6_2.png" style="width: 220px;" /></a>
+<a class="reference internal image-reference" href="../_images/6/bug6_2.png"><img alt="../_images/6/bug6_2.png" class="align-center" src="../_images/6/bug6_2.png" style="width: 220px;" /></a>
 
-    <div data-component="reveal" id="сакривање16"   data-showtitle="Show the answer" data-hidetitle="Hide the answer">
-    <p><strong>Answer:</strong></p>
-<p>One way is to make the wizard broadcast the message that he has made his decision, and then allow the boy to react when he receives this message. Of course, if we don’t want the boy to react when the wizard chooses him, then we have to expand this communication by adding the part where the program will check which of the candidates was selected.</p>
-<a class="reference internal image-reference" href="_images/ans6_2.png"><img alt="_images/ans6_2.png" class="align-center" src="_images/ans6_2.png" style="width: 595px;" /></a>
+    <div data-component="reveal" id="сакривање16"   data-showtitle="Shih përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigje:</strong></p>
 
     </div>
-    </div>
+    <p>    Një mënyrë është që magjistari të transmetojë mesazhin që ai ka marrë vendimin e tij, dhe pastaj të lejoni që djali të reagojë kur të marrë këtë mesazh. Sigurisht, nëse nuk duam që djali të reagojë kur magjistari e zgjedh atë, atëherë duhet ta zgjerojmë këtë komunikim duke shtuar pjesën ku programi do të kontrollojë se cili nga kandidatët u zgjodh.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/6/ans6_2.png"><img alt="../_images/6/ans6_2.png" class="align-center" src="../_images/6/ans6_2.png" style="width: 595px;" /></a>
+</div></blockquote>
+</div>
 <div class="section" id="bug-3">
 <h3>Bug 3<a class="headerlink" href="#bug-3" title="Permalink to this headline">¶</a></h3>
 
@@ -729,34 +817,44 @@ Then the student noticed that the command <img alt="move_steps" src="_images/mov
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The student wanted his sprite, which is controlled with the arrow keys left and right, to keep saying the word “left” while it is on the left half of the stage, and the word “right” while it is on the right half of the stage. He/she added the following scripts to the sprite, but it kept saying the same word no matter where on the stage it was located. What should be changed in the scripts?</p>
+<dd class="field-odd"><p>Studenti dëshironte që sprita e tij, e cila kontrollohet me çelësat e shigjetës majtas dhe djathtas, të vazhdojë të thotë fjalën “majtas” ndërsa është në gjysmën e majtë të skenës, dhe fjalën “djathtas” ndërsa është në gjysmën e djathtë të skena. Ai / ajo shtoi shkrimet e mëposhtme në sprite, por vazhdonte të thoshte të njëjtën fjalë, pavarësisht se ku ishte në skenë ku ishte. ShoÇfarë duhet të ndryshohet në skriptet?</p>
 </dd>
 </dl>
-<a class="reference internal image-reference" href="_images/bug6_3.png"><img alt="_images/bug6_3.png" class="align-center" src="_images/bug6_3.png" style="width: 510px;" /></a>
+<a class="reference internal image-reference" href="../_images/6/bug6_3.png"><img alt="../_images/6/bug6_3.png" class="align-center" src="../_images/6/bug6_3.png" style="width: 510px;" /></a>
 
-    <div data-component="reveal" id="сакривање17"   data-showtitle="Show the answer" data-hidetitle="Hide the answer">
-    <p><strong>Answer:</strong></p>
-<p>The program checks on which half of the stage the sprite is located only at the beginning. This check should be inserted into a forever loop.</p>
-<a class="reference internal image-reference" href="_images/ans6_3.png"><img alt="_images/ans6_3.png" class="align-center" src="_images/ans6_3.png" style="width: 240px;" /></a>
+    <div data-component="reveal" id="сакривање17"   data-showtitle="Shih përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigje:</strong></p>
 
     </div>
-    </div>
+    <p>    Programi kontrollon në cilën gjysmën e fazës së sprite ndodhet vetëm në fillim. Ky kontroll duhet të futet në një lak përgjithmonë.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/6/ans6_3.png"><img alt="../_images/6/ans6_3.png" class="align-center" src="../_images/6/ans6_3.png" style="width: 240px;" /></a>
+</div></blockquote>
 </div>
-<div class="section" id="book-summary">
-<h2><img alt="book" src="_images/book.png" /> Summary<a class="headerlink" href="#book-summary" title="Permalink to this headline">¶</a></h2>
-<p>In this lesson, we learned about the branching commands that allow you to create branching scripts. We introduced the blocks from the <em>Sensing</em> group and showed how the command for entering data by using the keyboard is executed in Scratch. We also learned how to synchronize the behavior of sprites by using message broadcasting. Furthermore, we showed how to use tool in the vector mode of the built-in paint editor.</p>
-<p><strong>New concepts</strong>:  structure with branches, complex condition.</p>
-<p><strong>Scratch commands</strong>: <img alt="control_blocks" src="_images/control.png" /> - <img alt="if_then" src="_images/if_then.png" />, <img alt="if_then_else" src="_images/if_then_else.png" />, <img alt="wait_until" src="_images/wait_until.png" />; <img alt="looks_blocks" src="_images/looks.png" /> - <img alt="switch_backdrop" src="_images/switch_backdrop.png" />, <img alt="backdrop" src="_images/backdrop.png" />; <img alt="sensing_blocks" src="_images/sensing.png" /> - <img alt="touching" src="_images/touching.png" />; <img alt="operator_blocks" src="_images/operators.png" /> - <img alt="equal" src="_images/equal.png" /></p>
 </div>
-<div class="section" id="project-create-a-projects">
-<h2><img alt="project" src="_images/project.png" /> Create a projects<a class="headerlink" href="#project-create-a-projects" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-1-falling-apples">
-<h3>Project 1 – “Falling Apples”<a class="headerlink" href="#project-1-falling-apples" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="book-permbledhje">
+<h2><img alt="book" src="_images/book.png" /> Përmbledhje<a class="headerlink" href="#book-permbledhje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 672)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">book</span><span class="o">|</span> <span class="n">Përmbledhje</span>
+<span class="o">--------------</span>
+</pre></div>
+</div>
+</div>
+<p>Në këtë mësim, mësuam për urdhrat e degëzimit që ju lejojnë të krijoni shkrime degëzuese. Ne prezantuam blloqet nga grupi <em>Sensing</em> dhe treguam se si komanda për futjen e të dhënave duke përdorur tastierën është ekzekutuar në Scratch. Ne gjithashtu mësuam se si të sinkronizojmë sjelljen e sprites duke përdorur transmetimin e mesazheve. Për më tepër, ne treguam se si të përdorim mjetin në mënyrën vektoriale të redaktorit të brendshëm të bojrave.</p>
+<p><strong>Konceptet e reja</strong>: struktura me degë, gjendje komplekse.</p>
+<p><strong>Komandat Scratch</strong>: <img alt="control_blocks" src="_images/control.png" /> - <img alt="if_then" src="_images/if_then.png" />, <img alt="if_then_else" src="_images/if_then_else.png" />, <img alt="wait_until" src="_images/wait_until.png" />; <img alt="looks_blocks" src="_images/looks.png" /> - <img alt="switch_backdrop" src="_images/switch_backdrop.png" />, <img alt="backdrop" src="_images/backdrop.png" />; <img alt="sensing_blocks" src="_images/sensing.png" /> - <img alt="touching" src="_images/touching.png" />; <img alt="operator_blocks" src="_images/operators.png" /> - <img alt="equal" src="_images/equal.png" /></p>
+</div>
+<div class="section" id="project-krijoni-projekte">
+<h2><img alt="project" src="_images/project.png" /> Krijoni projekte<a class="headerlink" href="#project-krijoni-projekte" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="projekti-1-falling-apples">
+<h3>Projekti 1 – “Falling Apples”<a class="headerlink" href="#projekti-1-falling-apples" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>Create a game with a scenario similar to the project “Dangerous Snowflakes”. The main sprite of this project should be a boy sprite, whose movement is controlled with the left and right arrow keys. He should avoid apples that appear at random positions in the upper part of the stage and glide down to random positions in the lower part of the stage. If an apple touches the boy at any point, the game will be over, if they don’t touch him, they hide and reappear in the upper part of the stage and glide down. The glide speed should also be set randomly, for example, between 1 and 3 seconds. To make the game more exciting, once you are done making the first apple sprite, multiply it, so there are, for example, 3 apples repeating the appropriate behavior.</p>
+<p>Krijoni një lojë me një skenar të ngjashëm me projektin “Snowflakes Dangerous”. Rrjedha kryesore e këtij projekti duhet të jetë një djalë, një lëvizje e të cilit kontrollohet me tastet e shigjetës së majtë dhe të djathtë. Ai duhet të shmangë mollët që shfaqen në pozicione të rastësishme në pjesën e sipërme të fazës dhe të rrëshqasin në pozicione të rastësishme në pjesën e poshtme të fazës. Nëse një mollë prek djalin në çdo pikë, loja do të marrë fund, nëse nuk e prekin atë, ata fshihen dhe rishfaqen në pjesën e sipërme të fazës dhe rrëshqasin poshtë. Shpejtësia e rrëshqitjes gjithashtu duhet të vendoset në mënyrë të rastësishme, për shembull, midis 1 dhe 3 sekondave. Për ta bërë lojën më tërheqëse, pasi të keni mbaruar bërjen e mollës së parë, shumëzojeni, kështu që ka, për shembull, 3 mollë që përsërisin sjelljen e duhur.</p>
 </div>
 <div class="section" id="project-2-hungry-shark">
 <h3>Project 2 - “Hungry Shark”<a class="headerlink" href="#project-2-hungry-shark" title="Permalink to this headline">¶</a></h3>
@@ -764,22 +862,30 @@ Then the student noticed that the command <img alt="move_steps" src="_images/mov
     <div data-level="2" style="display:none">
 
     </div>
-<p>Create a project in which the shark sprite is chasing fish. The shark should cruise left to right constantly, and when the space bar is pressed, it should move upward. If the shark sprite touches a fish, the fish will disappear, and then reappear after 3 to 5 seconds in a random position. Different duration of the pause between the disappearance and the reappearance of a fish and different locations can be achieved by using the operation <em>random number</em>. The shark sprite (Shark2) has three costumes, so changing the costume can represent the reaction of the shark when it touches a fish. Attribute different movement to the fish sprites, crab sprite and the jellyfish sprite. The jellyfish should move up and down, the crab should move left and right, and fish should move at different speeds. All sprites - shark, different types of fish, the crab and the jellyfish, as well as the backdrop can be taken from the sprites and backdrop libraries. You can make different types of fish by using different costumes of the sprite <em>Fish</em>.</p>
+<p>Krijoni një projekt në të cilin peshkaqeni po ndjek peshk. Peshkaqeni duhet të lundrojë majtas në të djathtë vazhdimisht, dhe kur presioni i hapësirës, ​​ai duhet të lëvizë lart. Nëse sprite peshkaqeni prek një peshk, peshqit do të zhduken, dhe pastaj rishfaqen pas 3 deri në 5 sekonda në një pozicion të rastit. Kohëzgjatja e ndryshme e pauzës midis zhdukjes dhe rishfaqjes së një peshku dhe lokacioneve të ndryshme mund të arrihet duke përdorur operacionin <em>numrin e rastit</em>. Sprite (Shark2) ka tre kostume, kështu që ndryshimi i kostumit mund të përfaqësojë reagimin e peshkaqenit kur prek një peshk. Atribuoni lëvizje të ndryshme tek spritat e peshkut, sprite cancer dhe kandil deti. Kandil deti duhet të lëvizë lart e poshtë, gaforret duhet të lëvizin majtas dhe djathtas, dhe peshqit duhet të lëvizin me shpejtësi të ndryshme. Të gjitha sprites - peshkaqen, lloje të ndryshme të peshkut, gaforret dhe kandil deti, si dhe sfondi mund të merren nga bibliotekat e sprites dhe sfondit. Ju mund të bëni lloje të ndryshme të peshkut duke përdorur kostume të ndryshme të sprite <em>fish</em>.</p>
 </div>
-<div class="section" id="project-3-a-dog-and-a-cat">
-<h3>Project 3 - “A dog and a cat”<a class="headerlink" href="#project-3-a-dog-and-a-cat" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-3-nje-qen-dhe-nje-mace">
+<h3>Projekti 3 - “Një qen dhe një mace”<a class="headerlink" href="#projekti-3-nje-qen-dhe-nje-mace" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Branching.rst</span>, line 700)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Projekti</span> <span class="mi">3</span> <span class="o">-</span> <span class="s2">&quot;Një qen dhe një mace&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>Create a project where you will use two sprites - a dog and a cat, as well as two backdrops. In the beginning, the cat slowly moves left and right between the edges of the stage, and its thoughts should appear in the cloud of the block <code class="docutils literal notranslate"><span class="pre">think</span></code>. After 10 seconds, the dog sprite should appear, it starts barking, and it scares the cat. The cat starts running and when it reaches the edge of the stage with the first backdrop, the second backdrop should appear. When the cat crosses the whole stage with the new backdrop it should disappear, this means that the cat managed to hide. Only when this is done, the dog will appear on the stage, stop and a question mark will appear in the cloud of the block <code class="docutils literal notranslate"><span class="pre">think</span></code>.</p>
-<p>To create this project, you will need to:</p>
+<p>Krijoni një projekt ku do të përdorni dy sprites - një qen dhe një mace, si dhe dy prapavijë. Në fillim, macja ngadalë lëviz majtas dhe djathtas midis skajeve të skenës, dhe mendimet e saj duhet të shfaqen në re në bllokun <code class="docutils literal notranslate"><span class="pre">think</span></code>. Pas 10 sekondash, duhet të shfaqet pllaka e qenit, ajo fillon të leh, dhe ajo tremb macen. Macja fillon të vrapojë dhe kur arrin skajin e skenës me sfondin e parë, duhet të shfaqet sfondi i dytë. Kur macja kalon të gjithë fazën me sfondin e ri ajo duhet të zhduket, kjo do të thotë se macja arriti të fshihej. Vetëm kur të bëhet kjo, qeni do të shfaqet në skenë, të ndalet dhe një pikëpyetje do të shfaqet në re të bllokut <code class="docutils literal notranslate"><span class="pre">think</span></code>.</p>
+<p>Për të krijuar këtë projekt, do t’ju duhet:</p>
 <ul class="simple">
-<li><p>write scripts describing the behavior of the cat sprite,</p></li>
-<li><p>upload the dog sprite from the sprite library and add a barking audio file to it along with scripts describing its behavior,</p></li>
-<li><p>upload two backdrops, <em>Playing Field</em> and <em>Garden-rock</em>: the first where the cat meets the dog and the second where the cat escapes when it hears the dog’s barking,</p></li>
-<li><p>synchronize dog’s barking and the cat’s reaction to it - cat runs away,</p></li>
-<li><p>synchronize the “behavior” of the two backdrops, i.e. the moment when they change.</p></li>
+<li><p>shkruaj shkrime që përshkruajnë sjelljen e maceve,</p></li>
+<li><p>ngarkoni qenin nga qenka bibliotekë dhe shtoni një skedar audio që leh së bashku me skriptet që përshkruajnë sjelljen e tij,</p></li>
+<li><p>ngarkoni dy prapavijë, <em>fushën e lojës</em> dhe <em>kopsht-shkëmb</em>: e para ku macja takon qenin dhe e dyta ku macja shpëton kur dëgjon lehjen e qenit,</p></li>
+<li><p>sinkronizoni lehjen e qenit dhe reagimin e maceve ndaj tij - macja ik,</p></li>
+<li><p>sinkronizoni “sjelljen” e dy prapavijave, d.m.th. momentin kur ato ndryshojnë.</p></li>
 </ul>
 </div>
 </div>
@@ -789,17 +895,17 @@ Then the student noticed that the command <img alt="move_steps" src="_images/mov
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Repeating Steps' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Përsëritja e hapave' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Variables' data-toggle="tooltip"><a href="Scratch3 Variables.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Variablat' data-toggle="tooltip"><a href="Scratch3 Variables.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Repeating Steps' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Përsëritja e hapave' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Variables' data-toggle="tooltip"><a href="Scratch3 Variables.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Variablat' data-toggle="tooltip"><a href="Scratch3 Variables.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

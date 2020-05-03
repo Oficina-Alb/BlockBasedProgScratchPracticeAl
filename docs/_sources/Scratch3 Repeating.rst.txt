@@ -1,4 +1,4 @@
-Repeating Steps
+Përsëritja e hapave
 ===============
 
 .. include:: blocks.txt
@@ -10,366 +10,365 @@ Repeating Steps
  |intro5|
 
 
-In the line drawing examples of the previous lesson, we used the repetition commands to get our sprites, moving with the pen down, to draw what we wanted, with less writing. 
-For example, instead of adding 400 commands to draw a dotted line that is 400 pixels long, we added only five: four which repeat a pattern, and the fifth which sets the number of required repetitions.  
+Në shembujt e linjave të vizatimit të mësimit të mëparshëm, ne kemi përdorur urdhërat e përsëritjes për të marrë sprites tonë, duke lëvizur me stilolaps poshtë, për të tërhequr atë që donim, me më pak shkrime.
+Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vijë të pikuar që është e gjatë 400 piksele, shtuam vetëm pesë: katër që përsërisin një model, dhe e pesta që përcakton numrin e përsëritjeve të kërkuara.
 
-In this lesson, we will connect the repetition commands to the motion and looks commands, so we can create different animations. In addition, we will introduce a command which allows you to enter input data, and blocks that store the values ​​of logical expressions.
+Në këtë mësim, ne do t'i lidhim komandat e përsëritjes me komandat e lëvizjes dhe shikimit, në mënyrë që të krijojmë animacione të ndryshme. Për më tepër, ne do të prezantojmë një komandë e cila ju lejon të vendosni të dhëna hyrëse dhe blloqe që ruajnë vlerat e shprehjeve logjike.
 
+.. topic:: blloqe që lejojnë përseritjen
 
-.. topic:: Blocks which enable repetition
-
- One of the simplest examples of repetition commands is the command for the description of the so-called "forever loop". The repeating commands make up the **loop body**. Their running can be stopped only by stopping the program. 
+Një nga shembujt më të thjeshtë të komandave të përsëritjes është komanda për përshkrimin e të ashtuquajturit "forever loop". Komandat përsëritëse përbëjnë **trupin e ciklit**. Drejtimi i tyre mund të ndalet vetëm duke ndaluar programin.
  
  .. image:: ../_images/5/fig5_1.png
    :width: 310px   
    :align: center
 
- For example, if you want to achieve an illusion that the cat is walking, the ballerina is dancing, and the butterfly is flying, all you need to do is add a script to them that repeats the blocks |next_costume| and |wait_sec| in a forever loop. 
- 
- Of course, a sprite should have at least two costumes and the wait period should be short, for example, 2 tenths of a second (0.2). The wait command between the costume changes is necessary so we can observe the change in the appearance. 
- The human eye is not able to register changes at the speed the computer makes them. That is why we are "halting" the appearance of the costume by using the wait command, until our eye registers the previous image.
- 
- In the examples presented in the previous lesson we used the so-called "counting loops". These are repetitions that know in advance how many times the loop body will be executed. 
+ Për shembull, nëse doni të arrini një iluzion që macja po ecën, balerina po vallëzon, dhe flutura po fluturon, gjithçka që duhet të bëni është të shtoni një skenar për ta që përsërit blloqet |next_costume | dhe |wait_sec| në një lak përgjithmonë.
+ 
+  Sigurisht, një sprite duhet të ketë të paktën dy kostume dhe periudha e pritjes duhet të jetë e shkurtër, për shembull, 2 të dhjetat e sekondës (0.2). Komanda e pritjes midis ndryshimeve të kostumit është e domosdoshme që të mund të vëzhgojmë ndryshimin e pamjes.
+  Syri i njeriut nuk është në gjendje të regjistrojë ndryshimet me shpejtësinë që i bën kompjuteri. Kjo është arsyeja pse ne jemi duke "ndalur" pamjen e kostumit duke përdorur komandën e pritjes, derisa syri ynë të regjistrojë imazhin e mëparshëm.
+ 
+  Në shembujt e paraqitur në mësimin e mëparshëm kemi përdorur të ashtuquajturat "sythe numërimi". Këto janë përsëritje që dinë paraprakisht se sa herë trupi i lakut do të ekzekutohet.
 
  .. image:: ../_images/5/fig5_2.png
    :width: 350px   
    :align: center
 
 
- In Scratch, there is also a command to describe a loop when the number of repetitions is not known in advance, but depends on whether the condition for exiting the loop is fulfilled.
+ Në Scratch, ekziston gjithashtu një urdhër për të përshkruar një cikël kur numri i përsëritjeve nuk dihet paraprakisht, por varet nëse plotësohet kushti për daljen nga cikli.
 
  .. image:: ../_images/5/fig5_3.png
    :width: 365px   
    :align: center
 
- The condition for skipping loop body commands (the condition for exiting), is checked at the beginning of every loop, so there is a possibility that the loop will not be executed even once, if it is determined that the condition is fulfilled during the first check.   
- It may also happen that the loop will continue running indefinitely if the condition for exiting the loop is never fulfilled.
+ Kushti për kalimin e komandave të trupit të ciklit (kushti për dalje), kontrollohet në fillim të çdo ciklit, kështu që ekziston mundësia që cikli mos të ekzekutohet as një herë, nëse përcaktohet se kushti është përmbushur gjatë parë kontrolloni.
+  Mund të ndodhë gjithashtu që cikli të vazhdojë të funksionojë pafundësisht nëse kushti për daljen nga lak nuk është përmbushur kurrë.
 
-|study| Study the following examples
+|study| Studioni shembujt e mëposhtëm
 ------------------------------------
 
-.. sidebar:: Sprite Dimensions
+.. sidebar:: Dimensionet e Sprite 
  
   |star|
 
 .. |star| image:: ../_images/5/fig5_4.png
 
-We saw that the stage is 480 pixels wide, 360 pixels high, and that every spot on the stage can be accessed by using its coordinates. In the following examples we will create images by stamping our sprites on specific locations. Of course, we can draw our own sprite shapes by using the paint editor - for example, a red circle, or a blue square, but since we want the images to be as attractive as possible, we will use the *Star* sprite - a yellow star from the sprites library.
+Ne pamë që faza është e gjerë 480 piksele, e lartë 360 pixel dhe se çdo pikë në skenë mund të arrihet duke përdorur koordinatat e saj. Në shembujt e mëposhtëm do të krijojmë imazhe duke vulosur sprites tonë në vende të veçanta. Sigurisht, ne mund të vizatojmë format tona të spriteve duke përdorur redaktorin e bojës - për shembull, një rreth të kuq, ose një shesh blu, por meqenëse duam që imazhet të jenë sa më tërheqëse të jetë e mundur, ne do të përdorim sprite *Star* - një yll i verdhë nga libraria e sprites.
 
-To fine-tune the images, we will modify the star slightly. The original size of the star is 47х48 pixels, which we can see if we go to the *Costumes* tab. 
+Për të rregulluar imazhet, ne do ta modifikojmë yllin pak. Madhësia origjinale e yllit është 47х48 piksele, të cilat mund të shohim nëse shkojmë në butonin *Costums*.
 
-We need the sprite size to be 40x40, that way exactly 12 stars fit in the space between the left and the right edge of the stage (480:40), and exactly 9 between the upper and lower edge (360:40). Furthermore, we want the sprite to be evenly filled with one color and not to have a contour line.
+Ne kemi nevojë që madhësia e sprite të jetë 40x40, në atë mënyrë saktësisht 12 yje përshtaten në hapësirën midis majtë dhe skajit të djathtë të skenës (480: 40), dhe saktësisht 9 midis buzës së sipërme dhe të poshtme (360: 40). Për më tepër, ne dëshirojmë që sprite të mbushet në mënyrë të barabartë me një ngjyrë dhe të mos ketë një vijë kontur.
 
 
-.. sidebar:: Editing Sprites
+.. sidebar:: Editioni Sprites
  
   |change|
 
 .. |change| image:: ../_images/5/fig5_5.png
 
-**How we edit sprites**
+**Si të editojmë sprites**
 
-|1| We use the |v_select| tool to select the whole sprite
+|1| Ne përdorim |v_select| mjet për të zgjedhur tërë sprite
 
-|2| Remove the contour line (set the thickness of the line to 0)
+|2| Hiq vijën e konturit (vendos trashësinë e rreshtit në 0)
 
-|3| We select the inner star and delete it
+|3| Ne zgjedhim yllin e brendshëm dhe e fshijmë
 
-|4| We select the whole sprite and set the size to 40х40.
-    
-  
-This customized star will be the only sprite used in the following examples.
+|4| Ne zgjedhim tërë sprite dhe vendosim madhësinë në 40х40.
+    
+  
+Ky yll i përshtatur do të jetë i vetmi sprite i përdorur në shembujt e mëposhtëm.
 
-The following example illustrates how stacking multiple loops can be used to construct complex loops. It also shows how using the tools of the built-in paint editor in vector mode can be used to edit sprites. The project itself consists of several simple tasks.
+Shembulli i mëposhtëm ilustron se si stacking unazore të shumta mund të përdoren për ndërtimin e sytheve komplekse. Ajo gjithashtu tregon se si përdorimi i mjeteve të redaktorit të bojës së integruar në modalitetin vektor mund të përdoret për të redaktuar sprites. Vetë projekti përbëhet nga disa detyra të thjeshta.
 
 
-Example 1 - Project "Stars" 
+Shembulli 1 - Projekti "Yje"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
-.. sidebar:: Image 1
+.. sidebar:: Imazhi 1
 
   |fig1|
 
 .. |fig1| image:: ../_images/5/fig5_6.png
 
-.. topic::  Task 1
+.. topic::  Detyra 1
 
- Write a program which will draw 4 stars side by side, from the left to the right edge of the stage, they should all be differently colored and their size should be 120 pixels. The drawing should be done by using the |stamp| command. 
-   
- The desired result of completing the task can be seen in Image 1.
+ Shkruaj një program i cili do të tërheqë 4 yje krah për krah, nga e majta në skajin e djathtë të skenës, të gjithë duhet të jenë me ngjyra të ndryshme dhe madhësia e tyre duhet të jetë 120 piksele. Vizatimi duhet të bëhet duke përdorur  komandën |stamp|.
+   
+  Rezultati i dëshiruar i përfundimit të detyrës mund të shihet në Figurën 1.
 
- This result can be achieved by completing the following steps:
+  Ky rezultat mund të arrihet duke përfunduar hapat e mëposhtëm::
 
  .. hlist::
     :columns: 2
 
-    * |1|	we enlarge the sprite 300% so now the star has the dimensions 120х120,
-    * |2|	we position the sprite so that the left side of the star is right next to the left edge of the stage: х=-180,
-    * |3|	we leave a stamp,
-    * |4|	we move the sprite its width to the right (120 steps),
-    * |5|	we change the color of the sprite (using the change color effect command),
-    * |6|	we leave a stamp,
-    * |7|	we move the sprite its width to the right (120 steps),
-    * |8|	we change the color of the sprite (using the change color effect command),
-    * |9|	we leave a stamp,
-    * |10| we move the sprite its width to the right (120 steps),
-    * |11| we change the color of the sprite (using the change color effect command),
-    * |12| we leave a stamp.
+     * |1| ne zmadhojmë sprite 300% kështu që tani ylli ka dimensionet 120х120,
+     * |2| ne e pozicionojmë sprite në mënyrë që ana e majtë e yllit të jetë e drejtë pranë skajit të majtë të fazës: х = -180,
+     * |3| ne lëmë një pullë,
+     * |4| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
+     * |5| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
+     * |6| ne lëmë një pullë,
+     * |7| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
+     * |8| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
+     * |9| ne lëmë një pullë,
+     * |10| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
+     * |11| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
+     * |12| ne lëmë një pullë.
 
- We can see that we repeated the steps 4-6 three times. We could have done the same with less writing, as the following Figure illustrates.
+  Mund të shohim që i përsërisëm hapat 4-6 tri herë. Mund të kishim bërë të njëjtën gjë me më pak shkrime, siç ilustron figura e mëposhtme.
 
  .. image:: ../_images/5/fig5_7.png
    :width: 500px   
    :align: center
 
- The |repeat| block from the *Control* group allows us to stack the required script just once and set how many times it should repeat. 
+ Blloku |repeat| nga grupi *Control* na lejon të grumbullojmë skenarin e kërkuar vetëm një herë dhe të vendosim sa herë duhet të përsëritet.
 
- This block is an example of the so-called **C-blocks**, whose shape reminds us of the letter C. The slot inside a C-block takes a script in like an input field. Therefore, this block has two input fields: one for the number of repetitions and the other for the script. 
+  Ky bllok është një shembull i të ashtuquajturave **C-blocks**, forma e të cilit na kujton shkronjën C. Thërrima brenda një blloku C merr një skenar si një fushë hyrëse. Prandaj, ky bllok ka dy fusha hyrëse: njëra për numrin e përsëritjeve dhe tjetra për skenarin.
 
-.. sidebar:: Image 2
+.. sidebar:: Imazhi 2
 
   |fig2|
 
 .. |fig2| image:: ../_images/5/fig5_8.png
 
-.. topic::  Task 2
+.. topic::  Detyra 2
 
- Write a program which will draw 12 stars side by side, from the left to the right edge of the stage, as shown in Image 2, the size of the stars should be 40x40. 
- 
- This task will be similar to the previous one, but we don't need to change the dimensions of the sprite. First, we need to put our sprite in the position x=-220, y=0, and then stamp it. After this, we should repeat the steps 4-6 from the previous task 11 times, with the difference that we would move the sprite 40 instead of 120 steps. How much time would it take to write this simple program without using the command for repetition?  
- 
- The solution to the task is given in the following Figure.
+ Shkruaj një program i cili do të tërheqë 12 yje krah për krah, nga e majta në skajin e djathtë të skenës, siç tregohet në figurën 2, madhësia e yjeve duhet të jetë 40x40.
+ 
+  Kjo detyrë do të jetë e ngjashme me atë të mëparshme, por ne nuk kemi nevojë të ndryshojmë dimensionet e sprite. Së pari, ne duhet ta vendosim sprite-in tonë në pozicionin x = -220, y = 0, dhe më pas ta vulosim atë. Pas kësaj, ne duhet të përsërisim hapat 4-6 nga detyra e mëparshme 11 herë, me ndryshimin se ne do të lëviznim sprite 40 në vend të 120 hapave. Sa kohë do të duhej për të shkruar këtë program të thjeshtë pa përdorur komandën për përsëritje?
+ 
+  Zgjidhja e detyrës është dhënë në figurën e mëposhtme.
 
  .. image:: ../_images/5/fig5_9.png
    :width: 215px   
    :align: center
 
-.. sidebar:: Image 3
+.. sidebar:: Imazhi 3
 
   |fig3|
 
 .. |fig3| image:: ../_images/5/fig5_10.png
 
-.. topic::  Task 3
+.. topic::  Detyra 3
 
- Write a program which will draw 15 differently colored stars one on top of the other in the center of the stage, the size of the first star should be 320x320 (800% larger than the original), and each one after that should be smaller by 50, as is presented in the Image 3. 
- 
- However, when we say smaller by 50, we mean 750%, 700% ... larger than the original (and not 50 pixels smaller, or 50% of 800%). In order to avoid mixing the new image with the one made during the previous run, we need to add the erase all command at the beginning. 
+Shkruaj një program i cili do të vizatojë 15 yje me ngjyra të ndryshme njëra mbi tjetrën në qendër të skenës, madhësia e yllit të parë duhet të jetë 320x320 (800% më e madhe se origjinali), dhe secila pas kësaj duhet të jetë më e vogël nga 50, siç është paraqitur në figurën 3.
+ 
+  Sidoqoftë, kur themi më të vogël për 50, nënkuptojmë 750%, 700% ... më të mëdha se origjinale (dhe jo 50 pixel më të vegjël, ose 50% të 800%). Për të shmangur përzierjen e imazhit të ri me atë të bërë gjatë ekzekutimit të mëparshëm, duhet të shtojmë komandën erase në fillim.
 
- The solution to the task is given in the following Figure.
+  Zgjidhja e detyrës është dhënë në figurën e mëposhtme.
 
  .. image:: ../_images/5/fig5_11.png
    :width: 225px   
    :align: center
 
-.. sidebar:: Image 4
+.. sidebar:: Imazhi 4
 
   |fig4|
 
 .. |fig4| image:: ../_images/5/fig5_12.png
 
-.. topic::  Task 4
+.. topic::  Detyra 4
 
 
- Write a program that will draw a frame around the stage made up of differently colored stars, as seen in Image 4.
- 
- We can devise a solution by connecting solutions to 4 simpler problems. 
+ Shkruani një program që do të vizatojë një kornizë rreth skenës së përbërë nga yje me ngjyra të ndryshme, siç shihet në Figurën 4.
+ 
+ Ne mund të krijojmë një zgjidhje duke lidhur zgjidhje për 4 probleme më të thjeshta.
 
- 1. Drawing stars along the top edge of the stage left to right.
- 2. Drawing stars along the right edge of the stage top to bottom.
- 3. Drawing stars along the bottom edge of the stage right to left. 
- 4. Drawing the stars along the left edge of the stage bottom to top.
+ 1. Vizatimi i yjeve përgjatë skajit të sipërm të skenës majtas djathtas.
+ 2. Vizatimi i yjeve përgjatë skajit të djathtë të skenës nga lart poshtë.
+ 3. Vizatimi i yjeve përgjatë skajit të poshtëm të skenës djathtas majtas.
+ 4. Vizatimi i yjeve përgjatë skajit të majtë të skenës në krye.
 
- The first problem was solved in Task 2. The only thing you need to do is change the values which define the starting position of the star, instead of у=0 put у=160.
- The second problem can easily be solved by changing the orientation of the sprite, instead of moving to the right it should move down. The blocks for moving, changing color, and stamping should be repeated 8 times. 
- The third and the fourth problem can be solved similarly you only need to change the orientation  of the sprite and how many times it should leave a stamp. The solution for the entire task, as well as the parts showing the solution for the third and fourth problem, are given in the Figure below.
+ Problemi i parë u zgjidh në Detyrën 2. E vetmja gjë që duhet të bëni është të ndryshoni vlerat të cilat përcaktojnë pozicionin fillestar të yllit, në vend të у = 0 të vendosni = 160.
+ Problemi i dytë mund të zgjidhet lehtësisht duke ndryshuar orientimin e rrjedhës, në vend që të zhvendoset në të djathtë ai duhet të lëvizë poshtë. Blloqet për lëvizjen, ndryshimin e ngjyrës dhe vulosjen duhet të përsëriten 8 herë.
+ Problemi i tretë dhe i katërt mund të zgjidhen në mënyrë të ngjashme, ju vetëm duhet të ndryshoni orientimin e sprite dhe sa herë duhet të lërë një pullë. Zgjidhja për të gjithë detyrën, si dhe pjesët që tregojnë zgjidhjen për problemin e tretë dhe të katërt, janë dhënë në figurën më poshtë.
 
  .. image:: ../_images/5/fig5_13.png
    :width: 450px
    :align: center
 
- The structure of the solution to this task, where multiple loops are strung together, is called **linear composition**. 
+Struktura e zgjidhjes për këtë detyrë, ku sythe të shumta janë të lidhura së bashku, quhet **përbërje lineare**.
 
-.. sidebar:: Image 5
+.. sidebar:: Imazhi 5
 
   |fig5|
 
 .. |fig5| image:: ../_images/5/fig5_14.png
 
-.. topic::  Task 5
+.. topic::  Detyra 5
 
- Write a program which will draw 4 stars side by side, from the left to the right edge of the stage, the size of the star should be 120 pixels. Each star should be composed of multiple stars of various sizes and colors, as the star from Task 3.
+ Shkruaj një program i cili do të tërheqë 4 yje krah për krah, nga e majta në skajin e djathtë të skenës, madhësia e yllit duhet të jetë 120 piksele. Do yll duhet të jetë i përbërë nga yje të shumfishtë të madhësive dhe ngjyrave të ndryshme, si yll nga Detyra 3.
 
- The result should look like Image 5.
+  Rezultati duhet të duket në figurën 5.
 
- The solution to this task has a complex structure. We will have to insert the loop form Task 3, which stamps smaller stars on top of larger ones, into the loop that should be repeated 4 times, which draws large stars side by side, like in Task 1. The complete solution is presented in the following Figure.
+  Zgjidhja për këtë detyrë ka një strukturë komplekse. Do të na duhet të fusim formën e ciklit te Detyra 3, e cila vulos yje më të vegjël në krye të atyre më të mëdhenjve, në cikël që duhet të përsëritet 4 herë, i cili tërheq yje të mëdhenj krah për krah, si në Detyrën 1. Zgjidhja e plotë është paraqitur në figura e mëposhtme.
 
  .. image:: ../_images/5/fig5_15.png
    :width: 255px   
    :align: center
 
- The structure of the solution to this task, where one loop is inserted into another, is called a **nested composition**.
+Struktura e zgjidhjes për këtë detyrë, ku një cikël është futur në një tjetër, quhet një përbërje **fole**.
 
 .......
 
-Example 2 - Project "Geometric Shapes" 
+Shembulli 2 - Projekti "Format gjeometrike"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
-In this project, we will show how we can draw regular geometric shapes - triangles, squares, pentagons, and hexagons. 
+Në këtë projekt, ne do të tregojmë se si mund të vizatojmë forma të rregullta gjeometrike - trekëndësha, sheshe, pentagona dhe gjashtëkëndëshe.
 
-Regular polygons have sides that are all equal and interior angles that are all equal. We will draw the polygons starting from the top in the center of the screen, with sides that are 100 pixels long. 
+Shumëkëndëshat e rregullt kanë anët që janë të gjitha kënde të barabarta dhe të brendshme të gjitha janë të barabarta. Do t'i vizatojmë poligonet duke filluar nga lart në qendër të ekranit, me anët që janë të gjata 100 pixel.
 
-Let's start by drawing a square. We will send the pen to the center of the screen, to the position (0,0), then we will put the pen down and repeat the following commands 4 times: move 100 steps, turn 90 degrees. 
+Le të fillojmë duke vizatuar një shesh. Ne do ta dërgojmë stilolapsin në qendër të ekranit, në pozicionin (0,0), atëherë do ta vendosim stilolapsën dhe do t'i përsërisim urdhrat e mëposhtëm 4 herë: lëvizni 100 hapa, kthejeni 90 gradë.
 
-If we know that the sum of all exterior angles of a regular polygon is 360 :sup:`о` (see figure below), we can easily stack command blocks which will draw triangles, pentagons, and hexagons.
+Nëse e dimë që shuma e të gjitha këndeve të jashtme të një poligoni të rregullt është 360: sup: `о` (shiko figurën më poshtë), ne lehtë mund të grumbullojmë blloqe komanduese të cilat do të tërheqin trekëndësha, pentagona dhe gjashtëkëndëshe.
 
 .. image:: ../_images/5/fig5_16.png
    :width: 650px   
    :align: center
 
-Parts of the scripts used for drawing the mentioned polygons are presented in the following Figure.
+Pjesët e shkrimeve të përdorura për vizatimin e poligoneve të përmendur janë paraqitur në figurën e mëposhtme.
 
 .. image:: ../_images/5/fig5_17.png
    :width: 680px   
    :align: center
 
-**Note**. You can also use the turn left command and try to draw a square or a hexagon in the position presented in the picture above. 
+**Shënim**. Ju gjithashtu mund të përdorni komandën kthesë majtas dhe të përpiqeni të vizatoni një shesh ose një gjashtëkëndësh në pozicionin e paraqitur në foton më lart.
 
-As in the previous example, clicking on the green flag erases everything that was previously on stage, sets values ​​for the color and size of the pen and gives instructions on how to use the project.
+Si në shembullin e mëparshëm, duke klikuar mbi flamurin e gjelbër fshin gjithçka që më parë ishte në skenë, vendos vlera për ngjyrën dhe madhësinë e lapsit dhe jep udhëzime se si të përdorësh projektin.
 
-Since we want to keep the instruction on the stage, we will design a backdrop that has the instruction written on it, by using the built-in paint editor. The look of the stage after the running of the program is depicted in the following Figure.
+Meqenëse duam të mbajmë udhëzimet në skenë, do të hartojmë një sfond që ka udhëzimet e shkruara në të, duke përdorur redaktorin e bojës së integruar. Pamja e fazës pas ekzekutimit të programit është përshkruar në figurën e mëposhtme.
 
 .. image:: ../_images/5/fig5_18.png
    :width: 480px   
    :align: center
 
-Each script associated with the keys 3-6 on the keyboard will erase all previously made marks, hide the sprite, and then draw the corresponding polygon. 
+Scriptdo skript i lidhur me çelësat 3-6 në tastierë do të fshijë të gjitha shenjat e bëra më parë, do të fshehë sprite dhe pastaj do të vizatojë poligonin përkatës.
 
-On the following Figure, you can see the scripts for starting the program and drawing a triangle and a square.
+Në figurën e mëposhtme, ju mund të shihni skriptet për fillimin e programit dhe vizatimin e një trekëndëshi dhe një sheshi.
 
 .. image:: ../_images/5/fig5_19.png
    :width: 600px   
    :align: center
 
-**Upgrading the Project**
+**Përditësimi i Projektit**
 
-We will upgrade the project so that it draws a geometric shape given by the user with the input data. In this version of the project, the drawing parameters are set by clicking on the green flag. Then the user is asked to type in the number of the sides of the polygon he/she wants to draw.
+Ne do të përmirësojmë projektin në mënyrë që ai të tërheq një formë gjeometrike të dhënë nga përdoruesi me të dhënat e hyrjes. Në këtë version të projektit, parametrat e vizatimit përcaktohen duke klikuar mbi flamurin e gjelbër. Pastaj përdoruesit i kërkohet të shtypë numrin e anëve të poligonit që ai / ajo dëshiron të vizatojë.
 
-The input data block |ask_wait| is located in the *Sensing* group.
+Blloku i të dhënave hyrëse |ask_wait| ndodhet në grupin *Sensing .
 
-After executing this command, Scratch remembers what the user put in the space called |answer|.
+Pas ekzekutimit të kësaj komande, Scratch kujton atë që përdoruesi vendosi në hapësirën e quajtur |answer|
 
-It is expected that the user will type in one of the numbers between 3 and 6, however, if the user inputs a number which is not in this interval, the program will not work properly, and this should be prevented. 
+Pritet që përdoruesi të shkruajë një nga numrat midis 3 dhe 6, megjithatë, nëse përdoruesi fut një numër i cili nuk është në këtë interval, programi nuk do të funksionojë siç duhet, dhe kjo duhet të parandalohet.
 
-One of the ways to control the input data is to repeat the question until the user inputs a number from the correct interval.
+Një nga mënyrat për të kontrolluar të dhënat e hyrjes është të përsërisni pyetjen derisa përdoruesi të fusë një numër nga intervali i saktë.
 
 .. image:: ../_images/5/fig5_20.png
    :width: 380px   
    :align: center
 
-Once the correct input data has been received, it will be used to calculate the number of repetitions and the turning angle, therefore, all four polygons can be drawn with the same commands. 
+Pasi të jenë marrë të dhënat e sakta të hyrjes, do të përdoren për të llogaritur numrin e përsëritjeve dhe këndin e kthesës, prandaj, të katër poligonët mund të vizatohen me të njëjtat komanda.
 
 .. image:: ../_images/5/fig5_21.png
    :width: 380px   
    :align: center
 
-We will use parts of the previous projects for our next project. In it, we will show how we can use the nested composition of counting loops to draw effective images produced by repeating patterns. The pattern can be repeated after a certain number of steps - that way we will get the so-called decorative edges. Patterns can be repeated after turning to create an angle or after the combination of both movements. 
+Ne do të përdorim pjesë të projekteve të mëparshme për projektin tonë të ardhshëm. Në të, ne do të tregojmë se si mund të përdorim përbërjen e foleve të sytheve të numërimit për të tërhequr imazhe efektive të prodhuara duke përsëritur modele. Modeli mund të përsëritet pas një numri të caktuar hapash - në atë mënyrë do të marrim të ashtuquajturat skajet dekorative. Modelet mund të përsëriten pas kthimit për të krijuar një kënd ose pas kombinimit të të dy lëvizjeve.
 
 .......
 
-Example 3 - Project "Ornaments" 
+Shembulli 3 - Projekti "Ornamente" 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
-If we repeat the counting loop that draws a regular pentagon from the previous example multiple times, we will draw an ornament - a more complex image composed of pentagons. For example, if we draw 20 such pentagons, moving from the left to the right edge of the stage, we will draw the following decorative border. 
+Nëse e përsërisim lakin e numërimit që tërheq një pentagon të rregullt nga shembulli i mëparshëm shumë herë, do të vizatojmë një zbukurim - një imazh më i ndërlikuar i përbërë nga pentagona. Për shembull, nëse vizatojmë 20 pentagona të tilla, duke lëvizur nga e majta në skajin e djathtë të skenës, do të tërheqim kufirin e mëposhtëm dekorativ.
 
 .. image:: ../_images/5/fig5_22.png
    :width: 705px   
    :align: center
 
-The drawing of the pentagon is enabled by the loop (2), which has been inserted into the exterior loop (1). The exterior loop is repeated 20 times. Every time the exterior loop runs, one pentagon is drawn in the current position of the pen, after which the sprite moves to the right with the pen up (3). The sprite moves only half of the length of the pentagon's side, which is why the pentagons overlap.  
+Vizatimi i pentagonit mundësohet nga cikli (2), i cili është futur në lakin e jashtëm (1). Cikli i jashtëm përsëritet 20 herë. Sa herë që Cikli i jashtëm vrapon, një pentagon tërhiqet në pozicionin aktual të lapsit, pas së cilës sprite lëviz në të djathtë me stilolaps lart (3). Sprite lëviz vetëm gjysmën e gjatësisë së anës së pentagonit, kjo është arsyeja pse pentagonët mbivendosen.
 
-However, if we repeat the drawing of the pentagons while changing the direction of the sprite before drawing each pentagon, so the sprite turns in a full circle, we will get the following ornament.
+Sidoqoftë, nëse përsërisim vizatimin e pentagonave ndërsa ndryshojmë drejtimin e sprite para se të vizatojmë secilën pentagon, kështu që sprite kthehet në një rreth të plotë, do të marrim stolinë e mëposhtme.
 
 .. image:: ../_images/5/fig5_23.png
    :width: 405px   
    :align: center
 
-Since a full circle has 360 degrees, and the sprite turns 15 degrees after each pentagon (2) with the pen up (3), we need to repeat this procedure 24 times; therefore, the exterior loop (1) is repeated 24 times.  
-If between drawings, the sprite changes an angle and also moves 10 steps, we will get a slightly different ornament.
+Meqenëse një rreth i plotë ka 360 gradë, dhe sprite kthehet 15 gradë pas secilës pentagon (2) me stilolaps lart (3), duhet ta përsërisim këtë procedurë 24 herë; prandaj, cikli i jashtëm (1) përsëritet 24 herë.
+Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa, do të marrim një zbukurim pak më të ndryshëm.
 
 .. image:: ../_images/5/fig5_24.png
    :width: 345px   
    :align: center
 
-If we repeat the second ornament 4 times, going from the left to the right edge of the stage, we will get the image below.
+Nëse e përsërisim zbukurimin e dytë 4 herë, duke shkuar nga e majta në skajin e djathtë të skenës, do të marrim imazhin më poshtë.
 
 .. image:: ../_images/5/fig5_25.png
    :width: 755px   
    :align: center
 
-Therefore, the drawing of the last decorative border is achieved with the nested composition which has 3 loops: the interior loop draws one pentagon (3), the middle loop (2) repeats the drawing of the pentagon and turns the sprite with the pen up 24 times, and the exterior loop (1) repeats the drawing of the circular ornament and moves the sprite with the pen up for the value of the ornament diameter.   
+Prandaj, vizatimi i kufirit të fundit dekorativ arrihet me përbërjen e mbivendosur i cili ka 3 sythe: cikli i brendshëm tërheq një pentagon (3), cikli i mesëm (2) përsërit vizatimin e pentagonit dhe e kthen spërkatjen me stilolaps lart 24 herë, dhe cikli i jashtëm (1) përsërit vizatimin e stoli rrethore dhe e zhvendos sprite me stilolaps lart për vlerën e diametrit të stolive.
 
-This project allows us to draw each of the ornaments by pressing one of the keys 1-4 on the keyboard. In addition to these 4 scripts, there is a script which is triggered by clicking on the green flag, and one which is triggered with the message *instruction*. The message *instruction* is broadcast by each script at the end of the running process. When the sprite receives this message, it appears near the top of the screen and gives the instruction for drawing the ornament. 
+Ky projekt na lejon të vizatojmë secilën prej zbukurimeve duke shtypur një nga çelësat 1-4 në tastierë. Përveç këtyre 4 skripteteve, ekziston një skenar i cili nxitet duke klikuar mbi flamurin e gjelbër, dhe një i cili nxitet me udhëzimin *mesazh*. Udhëzimi *mesazhi* transmetohet nga secila skenar në fund të procesit të drejtimit. Kur sprite merr këtë mesazh, ai shfaqet afër pjesës së sipërme të ekranit dhe jep udhëzimin për vizatimin e stolive.
 
 .. image:: ../_images/5/fig5_26.png
    :width: 450px   
    :align: center
 
 
-|ask| Did you understand?
+|ask| E kuptuat?
 -------------------------
 
-Question 1
+Pyetja 1
 ~~~~~~~~~~
 
 .. level:: 1
 
 .. mchoice:: loop01
-   :answer_a: yes
-   :answer_b: no
+   :answer_a: po
+   :answer_b: jo
    :correct: b
    :feedback_a:  
-   :feedback_b: Correct.
+   :feedback_b: Saktë.
    
-    Is the condition that allows exiting from a loop called the loop body?
+    A është gjendja që lejon daljen nga një cikël i quajtur trupi i ciklit?
 
-Question 2
+Pyetja 2
 ~~~~~~~~~~
 
 .. level:: 1
 
 .. mchoice:: loop02
-   :answer_a: yes
-   :answer_b: no
+   :answer_a: po
+   :answer_b: jo
    :correct: a
-   :feedback_a: Correct.  
+   :feedback_a: Saktë.  
    :feedback_b: 
    
-    Is stopping the program the only way to stop the running of the forever loop?
+    A është ndalja e programit mënyra e vetme për të ndaluar funksionimin e forever loop?
 
 
-Question 3
+Pyetja 3
 ~~~~~~~~~~
 
 .. level:: 1
 
 .. mchoice:: loop03
-   :answer_a: yes
-   :answer_b: no
+   :answer_a: po
+   :answer_b: jo
    :correct: b
    :feedback_a:  
-   :feedback_b: Correct.
+   :feedback_b: Saktë.
 
-    Does the ``repeat until`` command know in advance how many times the loop body will be repeated?
+    A e di paraprakisht komanda ``repeat until`` Sa herë trupi i ciklit do të përsëritet??
 
 
-Question 4
+Pyetja 4
 ~~~~~~~~~~
 
 .. level:: 1
@@ -386,13 +385,13 @@ Question 4
    :feedback_c: 
    :feedback_d: 
 
-   Which of these forever loops allows the sprite to move left-right and look right, if the |goto_xy|, |point_towards| and |rotation_style| commands were previously executed? (Select all correct answers).
+   Cila nga këto cikle forever lejon që sprite të lëvizë majtas-djathtas dhe të duket djathtas, nëse |goto_xy|, |point_towards| dhe |rotation_style| komandat ishin ekzekutuar më parë? (Zgjidhni të gjitha përgjigjet e sakta).
 
    .. image:: ../_images/5/q5_4.png
       :width: 665px   
       :align: center
 
-Question 5
+Pyetja 5
 ~~~~~~~~~~
 
 .. level:: 1
@@ -409,7 +408,7 @@ Question 5
    :feedback_c: 
    :feedback_d: 
 
-   Which of these forever loops allows the sprite to change constantly between two positions: legs up and legs down, if the |goto_xy|, |point_towards| and |rotation_style2| commands were previously executed? (Select all correct answers).
+   Cila nga këto sythe përgjithmonë lejon që sprite të ndryshojë vazhdimisht midis dy pozicioneve: këmbët lart dhe këmbët poshtë, nëse |goto_xy|, |point_towards| dhe |rotation_style2| komandat ishin ekzekutuar më parë? (Zgjidhni të gjitha përgjigjet e sakta).
 
    .. |rotation_style2| image:: ../_images/5/rotation_style2.png
 
@@ -418,7 +417,7 @@ Question 5
       :align: center
 
 
-Question 6
+Pyetja 6
 ~~~~~~~~~~
 
 .. level:: 2
@@ -435,13 +434,13 @@ Question 6
    :feedback_c: 
    :feedback_d: 
   
-   Which of these counting loops allows the sprite to make 80 steps? (Select all correct answers).
+   Cila nga këto cikle numërimi lejon që Sprite të bëjë 80 hapa? (Zgjidhni të gjitha përgjigjet e sakta).
 
    .. image:: ../_images/5/q5_6.png
       :width: 565px   
       :align: center
 
-Question 7
+Pyetja 7
 ~~~~~~~~~~
 
 .. level:: 2
@@ -458,14 +457,14 @@ Question 7
    :feedback_c: 
    :feedback_d: 
    
-   Which of these counting loops allows the sprite to make 80 steps? (Select all correct answers).
+   Cila nga këto cikle numërimi lejon që Sprite të bëjë 80 hapa? (Zgjidhni të gjitha përgjigjet e sakta).
 
    .. image:: ../_images/5/q5_7.png
       :width: 595px   
       :align: center
 
 
-Question 8
+Pyetja 8
 ~~~~~~~~~~
 
 .. level:: 2
@@ -479,13 +478,13 @@ Question 8
    :answer_b: What's your name
    :answer_c: Goodbye
    :correct: c
-   :feedback_a: Scratch doesn't make a distinction between upper and lower case letters, therefore, the condition for exiting the loop has been fulfilled.
-   :feedback_b: This is the message for entering and not exiting.
-   :feedback_c: Correct.
+   :feedback_a: Gërvishtja nuk bën një dallim midis shkronjave të mëdha dhe të vogla, prandaj, kushti për daljen nga cikli është përmbushur.
+   :feedback_b: Ai është mesazhi për të hyrë dhe për të mos dalë.
+   :feedback_c: Saktë.
 
-   What will the sprite say if the user's answer to the question *What's your name* is *END*? 
+   Çfarë do të thotë sprite nëse përgjigja e përdoruesit në pyetjen *What's your name* është *END*? 
       
-Question 9
+Pyetja 9
 ~~~~~~~~~~
 
 .. level:: 3
@@ -493,15 +492,15 @@ Question 9
 .. mchoice:: repeat2
    :answer_a: A 
    :answer_b: B
-   :answer_c: both 
-   :answer_d: none
+   :answer_c: të dy 
+   :answer_d: asnjë
    :correct: a
-   :feedback_a: Correct.
-   :feedback_b: That is the condition for entering the loop in this stack of commands.
-   :feedback_c: The thing that is the condition for exiting the loop in (A) is, at the same time, the condition for entering the loop in (B).
-   :feedback_d: The stack (А) allows the sprite to say Hello under the given condition.
+   :feedback_a: Saktë.
+   :feedback_b: Ky është kushti për të hyrë në cikël në këtë pirg të komandave.
+   :feedback_c: Është kushti për daljen nga cikli në (A) është, në të njëjtën kohë, kushti për hyrjen në cikli në (B).
+   :feedback_d: Stack (А) lejon që Sprite të thotë Hello në kushtet e dhëna.
 
-   Which of these stacks will allow the sprite to say *Hello* if the user inputs the value 0? 
+   Cila nga këto rafte do të lejojë që Sprite të thotë *Hello* nëse përdoruesi fut vlerën 0?
    
    .. image:: ../_images/5/q5_9.png
       :width: 500px   
@@ -509,19 +508,19 @@ Question 9
       
 
 .. mchoice:: repeat2b
-   :answer_a: not once 
-   :answer_b: 2 times
-   :answer_c: 3 times
-   :answer_d: 4 times
+   :answer_a: asnjëherë 
+   :answer_b: 2 herë
+   :answer_c: 3 herë
+   :answer_d: 4 herë
    :correct: c
-   :feedback_a: The condition for exiting the loop wasn't fulfilled for the first 3 answers. 
-   :feedback_b: The condition for exiting the loop wasn't fulfilled for number 3 either.
-   :feedback_c: Correct.
-   :feedback_d: When the condition for exiting the loop is fulfilled the commands from the loop body are not executed.
+   :feedback_a: Kushti për daljen nga cikli nuk u plotësua për 3 përgjigjet e para
+   :feedback_b: Kushti për të dalë nga cikli nuk u plotësua as për numrin 3.
+   :feedback_c: Saktë.
+   :feedback_d: Kur plotësohet kushti për daljen nga cikli, komandat nga trupi i lakut nuk ekzekutohen.
 
-   How many times will the loop body (А) run, if the user inputs the answers to the question in the following order: 1, 2, 3, 0.
+   Sa herë do të funksionojë trupi i ciklit (А), nëse përdoruesi fut përgjigjet e pyetjes sipas rendit vijues: 1, 2, 3, 0.
    
-Question 10
+Pyetje 10
 ~~~~~~~~~~~
 
 .. level:: 3
@@ -535,138 +534,138 @@ Question 10
    :answer_b:  
    :answer_c: 
    :correct: a
-   :feedback_a: Correct. 
-   :feedback_b: For example, it will accept 7 as a correct entry.
-   :feedback_c: For example, it won't accept 3 as a correct entry.
+   :feedback_a: Saktë. 
+   :feedback_b: Për shembull, do të pranojë 7 si një hyrje të saktë.
+   :feedback_c: Për shembull, nuk do të pranojë 3 si një hyrje të saktë.
       
-   Which letter marks the condition that will enable the check of the entered data to be correct?
+   Cila shkronjë shënon gjendjen që do të bëjë të mundur kontrollin e të dhënave të shkruara të jenë të sakta?
 
 
-|try| Try it!
+|try| Provoje!
 -------------
 
-Exercise 1
+Ushtrimi 1
 ~~~~~~~~~~
 
 .. infonote::
 
-  **Open Necklace**. Create a project which displays a string of circles of different color and size starting from the left edge of the stage. 
+  **Gjerdan e hapur**. Krijoni një projekt i cili tregon një varg qarqesh me ngjyra dhe madhësi të ndryshme duke filluar nga buza e majtë e skenës.
   
   .. image:: ../_images/5/ex5_1.png
       :width: 240px   
       :align: center
 
   .. reveal:: instruction2
-     :showtitle: Show the Instruction
-     :hidetitle: Hide the Instruction
+     :showtitle: Shih Instruksionet
+     :hidetitle: Shih Instruksionet
  
-     **Instruction:**
-   
-     The image is achieved by changing the color of the pen and putting it down, the size of the pen should be 80, the sprite holding it should be hidden, and its starting position should be (-200,0). 
-     The loop should be repeated 5 times, and in it the sprite should move 80 steps with the pen up, and increase the pen color number by 30, and then put the pen down. 
-     The starting value of the pen color should be 0. You need to arrange for the previous drawing to be erased when the green flag is clicked.     
+     **Udhëzim:**
+   
+      Imazhi arrihet duke ndryshuar ngjyrën e lapsit dhe duke e vendosur poshtë, madhësia e stilolapsit duhet të jetë 80, sprite që e mban atë duhet të fshihet, dhe pozicioni i saj fillestar duhet të jetë (-200,0).
+      Cikli duhet të përsëritet 5 herë, dhe në të sprite duhet të lëvizë 80 hapa me stilolapsin lart, dhe të rritet numri i ngjyrës së stilolapsit me 30, dhe pastaj ta vendosë lapsin poshtë.
+      Vlera fillestare e ngjyrës së stilolapsit duhet të jetë 0. Ju duhet të rregulloni që vizatimi i mëparshëm të fshihet kur të klikohet flamuri jeshil.   
   
 .......
 
-Exercise 2
+Ushtrimi 2
 ~~~~~~~~~~
 
 .. infonote::
 
-  **Closed Necklace**. Create a project which draws a closed sequence of 12 circles of different color. The size of the pen should be 50.
+  **Gjerdan i Mbyllur**. Krijoni një projekt i cili tërheq një sekuencë të mbyllur me 12 qarqe me ngjyra të ndryshme. Madhësia e lapsit duhet të jetë 50.
    
   .. image:: ../_images/5/ex5_2.png
       :width: 200px   
       :align: center
       
   .. reveal:: instruction3
-     :showtitle: Show the Instruction
-     :hidetitle: Hide the Instruction
- 
-     **Instruction:**
-   
-     The image is achieved by changing the color of the pen and putting it down, the size of the pen should be 50, the sprite holding it should be hidden, and its starting position should be (-50,50). 
-     The loop should be repeated 12 times, and in it the sprite should move 50 steps with the pen up, turn 30 degrees and increase the pen color number by 15, and then put the pen down to leave a mark. The starting value of the pen color should be 0. You need to arrange for the previous drawing to be erased when the green flag is clicked.
+     :showtitle: Shih Instruksionet
+     :hidetitle: Shih Instruksionet
+
+    **Udhëzim:**
+   
+      Imazhi arrihet duke ndryshuar ngjyrën e lapsit dhe duke e vendosur poshtë, madhësia e stilolapsit duhet të jetë 50, sprite që e mban atë duhet të fshihet, dhe pozicioni i saj fillestar duhet të jetë (-50,50).
+      Cikli duhet të përsëritet 12 herë, dhe në të sprite duhet të lëvizë 50 hapa me stilolaps lart, të kthehet 30 gradë dhe të rritet numri i ngjyrës së stilolapsit me 15, dhe pastaj ta vendosë lapsin poshtë për të lënë një shenjë. Vlera fillestare e ngjyrës së stilolapsit duhet të jetë 0. Ju duhet të rregulloni që vizatimi i mëparshëm të fshihet kur të klikohet flamuri jeshil.
      
 
 .......
 
-Exercise 3
+Ushtrimi 3
 ~~~~~~~~~~
 
 .. infonote::
 
-  **Series of Circles**. Create a project which displays a series of circles of different color and size, starting from the left edge of the stage.
+  **Seritë e qarqeve**. Krijoni një projekt i cili tregon një seri qarqesh me ngjyra dhe madhësi të ndryshme, duke filluar nga skaji i majtë i skenës.
     
   .. image:: ../_images/5/ex5_3.png
       :width: 240px   
       :align: center
       
   .. reveal:: instruction4
-     :showtitle: Show the Instruction
-     :hidetitle: Hide the Instruction
+     :showtitle: Shih Instruksionet
+     :hidetitle: Shih Instruksionet
  
-     **Instruction:**
-  
-     The image is achieved by changing the size and the color of the pen and putting it down, the sprite holding the pen should be hidden, and its starting position should be (-200,0).
-     The starting value for the pen color should be 0 and for the pen size 80. The loop should be repeated 5 times, and in it the number of the pen color should be increased by 30, and the size of the pen should be decreased by 10. 
-     The sprite should move 80 steps to the right, with the pen up, of course. The *wait* command should also be added to the loop, so you can follow the process more easily. 
-     You need to arrange for the previous drawing to be erased when the green flag is clicked.
+     **Udhëzim:**
+  
+      Imazhi arrihet duke ndryshuar madhësinë dhe ngjyrën e lapsit dhe duke e vendosur poshtë, sprite që mban stilolapsin duhet të fshihet, dhe pozicioni i saj fillestar duhet të jetë (-200,0).
+      Vlera fillestare për ngjyrën e stilolapsit duhet të jetë 0 dhe për madhësinë e lapsit 80. Cikli duhet të përsëritet 5 herë, dhe në të numri i ngjyrës së stilolapsit duhet të rritet për 30, dhe madhësia e lapsit duhet të zvogëlohet me 10.
+      Sprite duhet të lëvizë 80 hapa në të djathtë, me stilolaps lart, natyrisht. Komanda *wait* gjithashtu duhet të shtohet në cikël, kështu që ju mund ta ndiqni procesin më lehtë.
+      Ju duhet të rregulloni që vizatimi i mëparshëm të fshihet kur të klikohet flamuri i gjelbër.
 
      
 .......
 
-Exercise 4
+Ushtrimi 4
 ~~~~~~~~~~
 
 .. infonote::
 
-  **Concentric Circles**. Create a project which displays a series of concentric circles of different colors in the center of the stage.
+  **Rrethet koncentrike**. Krijoni një projekt i cili tregon një seri qarqesh koncentrike me ngjyra të ndryshme në qendër të skenës.
     
   .. image:: ../_images/5/ex5_4.png
       :width: 200px   
       :align: center
       
   .. reveal:: instruction5
-     :showtitle: Show the Instruction
-     :hidetitle: Hide the Instruction
+     :showtitle: Shih Instruksionet
+     :hidetitle: Shih Instruksionet
  
-     **Instruction:**
-     
-     The image is achieved with changing the size and color of the pen and putting it down, the sprite holding it should be hidden and it should be placed in the center of the stage. 
-     The loop should be repeated 8 times, and in it the number of the pen color should be increased by 25 and the size of the pen should be decreased by 30. The starting value for the pen color should be 0 (red), and for the size 240 (the largest size).
-     The *wait* command should also be added to the loop, so you can follow the process more easily.
-     The pen should be lowered after each change.
-     You need to arrange for the previous drawing to be erased when the green flag is clicked.
+     **Udhëzim:**
+     
+      Imazhi arrihet me ndryshimin e madhësisë dhe ngjyrës së lapsit dhe vendosjen e tij, sprite që e mban atë duhet të fshihet dhe ajo duhet të vendoset në qendër të skenës.
+      Cikli duhet të përsëritet 8 herë, dhe në të numri i ngjyrës së stilolapsit duhet të rritet me 25 dhe madhësia e lapsit të zvogëlohet për 30. Vlera fillestare për ngjyrën e lapsit duhet të jetë 0 (e kuqe), dhe për madhësia 240 (madhësia më e madhe).
+      Komanda *wait* gjithashtu duhet të shtohet në cikli, kështu që ju mund ta ndiqni procesin më lehtë.
+      Pena duhet të ulet pas çdo ndryshimi.
+      Ju duhet të rregulloni që vizatimi i mëparshëm të fshihet kur të klikohet flamuri i gjelbër.
 
  
-|bug| Debug it!
+|bug| Debug!
 ---------------
 
 Bug 1
 ~~~~~~~~
 
-The pupil wanted the sprite to walk between the left and the right edge of the stage. 
-This is why he/she added the constant changing of the costume and moving 10 steps until reaching the edge, when the sprite turns. 
-However, the pupil doesn't like the fact that the sprite is walking upside-down towards the left edge of the stage. What should be done to fix this mistake?
+Nxënësi dëshironte që sprite të shëtiste midis majës dhe skajit të djathtë të skenës.
+Kjo është arsyeja pse ai / ajo shtoi ndryshimin e vazhdueshëm të kostumit dhe lëviz 10 hapa deri sa të arrijë në skaj, kur kthehet sprite.
+Sidoqoftë, nxënësit nuk i pëlqen fakti që sprite është duke ecur kokëposhtë drejt skajit të majtë të skenës. Çfarë duhet të bëhet për të rregulluar këtë gabim?
    
 .. image:: ../_images/5/bug5_1.png
    :width: 145px   
    :align: center   
    
 .. reveal:: hiding10
-   :showtitle: Show the Answer
-   :hidetitle: Show the Answer
+   :showtitle: Trego përgjigjen
+   :hidetitle: Fshih përgjigjen
  
-   **Answer:**
+   **Përgjigja:**
    
-   This can be fixed by adding the |rotation_style| block to the sprite's script.
+   Kjo mund të rregullohet duke shtuar bllokun |rotation_style| në skenarin e sprite.
 
 Bug 2
 ~~~~~~~~
 
-The pupil wanted his butterfly sprite, which has two costumes - one with raised and one with lowered wings, to glide flapping its wings between two random positions.
-However, his program did not enable this. The butterfly glided between two positions, but its wings were either lowered or raised. Where did the pupil go wrong?
+Nxënësi dëshironte që fluturën e tij të fluturonte, e cila ka dy kostume - një me ngritje dhe një me krahë të ulur, të rrëshqasë duke tundur krahët mes dy pozicioneve të rastit.
+Sidoqoftë, programi i tij nuk e mundësoi këtë. Flutura u rrëshqit në mes të dy pozicioneve, por krahët e saj ishin ulur ose ngritur. Ku gaboi nxënësi?
 
 .. image:: ../_images/5/bug5_2.png
    :width: 245px   
@@ -674,89 +673,88 @@ However, his program did not enable this. The butterfly glided between two posit
    
      
 .. reveal:: hiding8
-   :showtitle: Show the Answer
-   :hidetitle: Show the Answer
+   :showtitle: Trego përgjigjen
+   :hidetitle: Fshih përgjigjen
  
-   **Answer:**
+   **Përgjigja:**
      
-   Two scripts, which would run in parallel, should have been created.
+   Duhej të ishin krijuar dy skenare, të cilat do të funksiononin paralelisht.
 
    .. image:: ../_images/5/ans5_2.png
       :width: 400px   
       :align: center   
 
 
-|book| Summary
+|book| Përmbledhje
 --------------
 
-In this lesson, we covered commands for repetition. With examples of different projects we illustrated how to use each of the three types of loops: forever loop, counting loop - where we know the number of repetitions in advance, and the condition loop - where a pattern will be repeated until a certain condition has been fulfilled. We also showed that two or more loops could be combined to run one after another (linear composition), or one can be inserted into the other (nested composition). Furthermore, we learned how to use the data input command. 
+Në këtë mësim, ne kemi mbuluar komandat për përsëritje. Me shembuj të projekteve të ndryshme kemi ilustruar se si të përdorim secilën nga tre llojet e sytheve: forever loop, coun loop - ku ne e dimë paraprakisht numrin e përsëritjeve, dhe ciklin e gjendjes - ku një model do të përsëritet derisa të ketë një gjendje të caktuar është përmbushur. Ne gjithashtu treguam se dy ose më shumë sythe mund të kombinohen për të ekzekutuar njëra pas tjetrës (përbërja lineare), ose njëra mund të futet në tjetrën (përbërja e folesë). Për më tepër, mësuam si të përdorim komandën e futjes së të dhënave. 
 
-**Scratch projects**: 5Studio_
+**Projekte Scratch**: 5Studio_
 
 .. _5Studio: https://scratch.mit.edu/studios/25119445/
 
-**New concepts**: loop, loop body, the exit condition, forever loop, counting loop, condition loop, linear composition of loops, nested loop composition, data input command.
+**Koncepte të reja**: loop, loop body, the exit condition, forever loop, counting loop, condition loop, linear composition of loops, nested loop composition, data input command.
 
-**Scratch commands**: |control_blocks| - |forever|, |repeat|, |repeat_until|; |pen_extension| - |stamp|; 
+**Koamnda Scratch**: |control_blocks| - |forever|, |repeat|, |repeat_until|; |pen_extension| - |stamp|; 
 
 |sensing_blocks| - |ask_wait|, |answer|; |operator_blocks| - |less|, |greater|, |and|.
 
 
-|project| Create a projects
+|project| Krijoni projekte
 ---------------------------
 
-Project 1 - "Hexagon"
+Projekti 1 - "Hexagon"
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
-Create a project which will draw a hexagon; the length of the sides should be generated randomly from the interval [100,200].
+Krijoni një projekt i cili do të tërheqë një gjashtëkëndësh; gjatësia e anëve duhet të gjenerohet në mënyrë të rastësishme nga intervali [100,200].
 
-Project 2 - "Squares"
+Projekti 2 - "Katrorë"
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
-Create a project which offers to draw a square whose sides are parallel to the coordinate axes, or form a 45 :sup:`о` angle with the coordinate axes. 
-The selection should be made with the key 1 or 2 on the keyboard. The instruction on how to use the program should be written on the stage backdrop, like in example 2.  
-The length of the side should be 100 pixels.
+Krijoni një projekt i cili ofron për të vizatuar një katror, faqet e të cilit janë paralele me boshtet e koordinatave, ose formoni një kënd prej 45: sup: `о` me boshtet e koordinatave.
+Përzgjedhja duhet të bëhet me tastin 1 ose 2 në tastierë. Udhëzimi se si të përdoret programi duhet të shkruhet në sfondin e skenës, si në shembullin 2.
+Gjatësia e brinjës duhet të jetë 100 pixel.
 
  
-Project 3 - "Triangles"
+Projekti 3 - "trekëndësha"
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
-Write a project which offers to draw the following types of triangles: 
+Shkruaj një projekt i cili ofron për të tërhequr llojet e mëposhtme të trekëndëshave:
 
-а) equilateral,  
-b) isosceles,  
-c) right,  
-d) acute,  
-e) obtuse.
+а) barabrinj,
+b) izosceles,
+c) drejt,
+d) akute,
+e) i mpirë.
 
-The project should have an instruction, which indicates which key triggers the drawing of which type of triangle. 
+Projekti duhet të ketë një udhëzim, i cili tregon se cili çelës nxit vizatimin e llojit të trekëndëshit.
 
-Plan the coordinates for each triangle, and then draw the sides with the ``glide`` command.
+Planifikoni koordinatat për secilin trekëndësh, dhe pastaj vizatoni anët me komandën ``glide``.
 
-Project 4 - "Quadrilaterals"
+Projekti 4 - "Shumëkëndëshat"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
-Write a project which offers to draw the following types of quadrilaterals: 
+Shkruaj një projekt i cili ofron për të tërhequr llojet e mëposhtme të katërkëndëshave:
 
-a) square,	
-b) rectangle,	
-c) rhomb,	
-d) parallelogram, 
+nje katror,
+b) drejtkëndësh,
+c) romb,
+d) paralelogram,
 e) trapezoid.
 
-Plan the drawing, so all of the quadrilaterals mentioned above are drawn on the stage at the end of running process. 
+Planifikoni vizatimin, kështu që të gjitha katërkëndëshat e përmendura më lart janë tërhequr në skenë në fund të procesit të drejtimit.
 
-The instruction for the use of the program should appear on the stage when the green flag is clicked. 
+Udhëzimi për përdorimin e programit duhet të shfaqet në skenën kur klikohet flamuri i gjelbër.
 
-Events that trigger the drawing of particular types of quadrilaterals should be associated with keyboard keys of your choice. 
+Ngjarjet që shkaktojnë vizatimin e llojeve të veçanta të katërkëndëshave duhet të shoqërohen me çelësat e tastierës sipas dëshirës tuaj.
 
-Note. "Quadrilaterals" are elaborated in the mathematics curriculum for the sixth grade.
-
+Shënim. "Quadrilaterals" janë mësuar në kurrikulën e matematikës për klasën e gjashtë.

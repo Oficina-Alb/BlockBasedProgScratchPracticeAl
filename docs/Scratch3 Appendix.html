@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Appendix &#8212; Block-based programming in Scratch - practice lessons</title>
+    <title>Shtesë &#8212; Block-based programming in Scratch - practice lessons</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,7 +140,7 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Strings" href="Scratch3 Strings.html" />
+    <link rel="prev" title="Vargje" href="Scratch3 Strings.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -202,8 +202,8 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="appendix">
-<h1>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="shtese">
+<h1>Shtesë<a class="headerlink" href="#shtese" title="Permalink to this headline">¶</a></h1>
 
     <div class="course-box course-box-info">
         <div class="course-content">
@@ -211,191 +211,215 @@
 <p><img alt="intro11s" src="_images/intro11s.png" /></p>
 
     </p></div></div>
-<div class="section" id="block-functions">
-<h2>Block Functions<a class="headerlink" href="#block-functions" title="Permalink to this headline">¶</a></h2>
-<p>In Scratch, the shape of a block ensures that, when the blocks are connected, they can form only scripts, which are syntactically correct. There are independent blocks and function blocks. Independent blocks (hat blocks, stack blocks, C-blocks, and cap blocks) correspond to language commands. Function blocks (reporters and logical blocks) store values of independent blocks. In lesson 3, we talked about the different types of blocks, and now we will introduce the functions of main block groups and some of the groups located in the part Extensions.</p>
-<div class="section" id="motion-blocks">
-<h3>Motion Blocks<a class="headerlink" href="#motion-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="funksionet-bllok">
+<h2>Funksionet bllok<a class="headerlink" href="#funksionet-bllok" title="Permalink to this headline">¶</a></h2>
+<p>Në Scratch, forma e një blloku siguron që, kur blloqet janë të lidhura, ato mund të formojnë vetëm shkrime, të cilat janë sintetike të sakta. Ka blloqe të pavarura dhe blloqe funksionimi. Blloqet e pavarura (blloqet e kapelave, blloqet e pirgut, blloqet C dhe blloqet e kapakëve) korrespondojnë me komandat gjuhësore. Blloqet e funksioneve (reporterët dhe blloqet logjike) ruajnë vlerat e blloqeve të pavarura. Në mësimin 3, ne folëm për llojet e ndryshme të blloqeve, dhe tani do të prezantojmë funksionet e grupeve kryesore të bllokut dhe disa prej grupeve të vendosura në pjesën Zgjatjet.</p>
+<div class="section" id="blloqet-e-levizjes">
+<h3>blloqet e lëvizjes<a class="headerlink" href="#blloqet-e-levizjes" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 18)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">blloqet</span> <span class="n">e</span> <span class="n">lëvizjes</span>
+<span class="o">~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 <div class="sidebar">
-<p class="sidebar-title"><img alt="motion_blocks" src="_images/motion.png" /> Motion</p>
+<p class="sidebar-title"><img alt="motion_blocks" src="_images/motion.png" /> Lëvizja</p>
 <p><img alt="fig11_1" src="_images/fig11_1.png" /></p>
 </div>
-<p>The commands assigned to these blocks can only be executed by sprites. The stage is motionless, which is why it cannot execute motion commands. There are 18 blocks in the group <em>Motion</em>, one more than in the version Scratch 2.0. The block <img alt="glide_to" src="_images/glide_to.png" /> was added.</p>
-<p>To make them easier to use, blocks that perform similar functions stand close together and form subgroups. The functions of the subgroups are the following:</p>
+<p>Komandat e caktuara në këto blloqe mund të ekzekutohen vetëm nga sprites. Faza është pa lëvizje, për këtë arsye nuk mund të ekzekutojë komanda lëvizjeje. Ekzistojnë 18 blloqe në grupin <em>Motion</em>, një më shumë sesa në versionin Scratch 2.0. Blloku <img alt="glide_to" src="_images/glide_to.png" /> u shtua.</p>
+<p>Për t’i bërë ato më të lehtë në përdorim, blloqet që kryejnë funksione të ngjashme qëndrojnë pranë dhe formojnë nëngrupe. Funksionet e nëngrupeve janë këto:</p>
 <ol class="arabic simple">
-<li><p>moving the sprite in a straight line or in a circle,</p></li>
-<li><p>moving the sprite to a specified position,</p></li>
-<li><p>pointing the sprite toward something,</p></li>
-<li><p>moving the sprite by changing its coordinates,</p></li>
-<li><p>keeping the sprite within the boundaries of the stage,</p></li>
-<li><p>setting the sprites rotation style,</p></li>
-<li><p>storing the current coordinates of the sprite.</p></li>
+<li><p>lëvija e sprite në një vijë të drejtë ose në një rreth,</p></li>
+<li><p>lëvija e sprite në një pozicion të specifikuar,</p></li>
+<li><p>derjtimi i sprite drejt diçkaje,</p></li>
+<li><p>zhvendosja e sprite duke ndryshuar koordinatat e saj,</p></li>
+<li><p>mbajtja e sprite brenda kufijve të fazës,</p></li>
+<li><p>vendosjen e stilit të rrotullimit të sprites,</p></li>
+<li><p>ruajtja e koordinatave aktuale të sprite.</p></li>
 </ol>
-<p>Blocks belonging to the first six groups are stack blocks, while the seventh group represents reporters, whose function is to store data. They cannot stand on their own; they are inserted into the input fields of other blocks, thus specifying their actions.</p>
-<p>The blocks from the first group perform relative motion, movement in relation to the current position and direction. Unlike these blocks, the ones from the second group move the sprite to a specified point on the stage, regardless of its current position. This type of motion is called absolute motion.</p>
-<p>Several types of data can be entered into the input fields of motion blocks: values of destination coordinates, rotation angle, number of steps, or duration of movement. One step corresponds to one pixel. The time is expressed in seconds, and angles in degrees.</p>
-<p>In some of the blocks, the destination is chosen from the block’s drop-down list. This can be the mouse-pointer, some other sprite participating in the project, as well a point whose coordinates are generated randomly.</p>
-<p>The block <img alt="rotation_style" src="_images/rotation_style.png" /> has three rotation style options: <em>all around</em>, <em>left-right</em> and <em>don’t rotate</em>. The first option means that the sprite can face any of the 360 degrees. <em>Left-right</em> means that the sprite can only face left or right, and any other direction is disabled. The last option means that the sprite always faces right.</p>
-<p>The blocks from the group <em>Motion</em> are elaborated in lesson 2 of this practicum.</p>
+<p>Blloqet që i përkasin gjashtë grupeve të para janë blloqe rafte, ndërsa grupi i shtatë përfaqëson reporterët, funksioni i të cilëve është ruajtja e të dhënave. Ata nuk mund të qëndrojnë më vete; ato futen në fushat hyrëse të blloqeve të tjera, duke specifikuar kështu veprimet e tyre.</p>
+<p>Blloqet nga grupi i parë kryejnë lëvizje, lëvizje relative në lidhje me pozicionin dhe drejtimin aktual. Për dallim prej këtyre blloqeve, ato nga grupi i dytë e zhvendosin rrjedhën në një pikë të caktuar në skenë, pavarësisht nga pozicioni i saj aktual. Ky lloj lëvizjeje quhet lëvizje absolute.</p>
+<p>Disa lloje të të dhënave mund të futen në fushat hyrëse të blloqeve të lëvizjes: vlerat e koordinatave të destinacionit, këndi i rrotullimit, numri i hapave ose kohëzgjatja e lëvizjes. Një hap i përgjigjet një pixel. Koha shprehet në sekonda, dhe këndet në shkallë.</p>
+<p>Në disa prej blloqeve, destinacioni zgjidhet nga lista rënëse e bllokut. Ky mund të jetë treguesi i miut, disa sprite të tjera që marrin pjesë në projekt, si dhe një pikë, koordinatat e së cilës gjenerohen në mënyrë të rastësishme.</p>
+<p>Blloku <a href="#id10"><span class="problematic" id="id11">|rotacioni_style|</span></a> ka tre opsione të stilit të rrotullimit: <em>të gjithë rreth</em>, <em>majtas-djathtas</em> dhe <em>nuk rrotullohen</em>. Opsioni i parë do të thotë që sprite mund të përballet me cilindo nga 360 gradë. <em>Majtas-djathtas</em> do të thotë që sprite mund të përballet vetëm majtas ose djathtas, dhe çdo drejtim tjetër është i paaftë. Mundësia e fundit do të thotë që sprite gjithmonë përballet drejt.</p>
+<p>Blloqet nga grupi <em>Motion</em> janë shtjelluar në mësimin 2 të këtij praktiku.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="looks-blocks">
-<h3>Looks Blocks<a class="headerlink" href="#looks-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-looks">
+<h3>Blloqet Looks<a class="headerlink" href="#blloqet-looks" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="looks_blocks" src="_images/looks.png" /> Looks</p>
 <p><img alt="fig11_2" src="_images/fig11_2.png" /></p>
 </div>
-<p>The blocks from this group control the appearance of sprites. Seven out of 21 blocks from this group control the appearance of the stage.
-Twenty blocks are visible when the sprite is in focus and three block subgroups when the stage is in focus. The block <img alt="switch_backdrop_wait" src="_images/switch_backdrop_wait.png" />, which enables the backdrop to change and wait until that happens can be seen only when the stage is active (it is not visible when the sprite is in focus). The remaining blocks that can be attached to the stage can also be seen in this case. The functions of the subgroups are as follows:</p>
+<p>Blloqet nga ky grup kontrollojnë shfaqjen e sprites. Shtatë nga 21 blloqe nga ky grup kontrollojnë shfaqjen e skenës.
+Njëzet blloqe janë të dukshme kur sprite është në fokus dhe tre nëngrupe blloku kur faza është në fokus. Blloku <img alt="switch_backdrop_wait" src="_images/switch_backdrop_wait.png" />, i cili mundëson që sfondi të ndryshojë dhe të presë derisa të ndodhë kjo mund të shihet vetëm kur faza është aktive (nuk është e dukshme kur sprite është në fokus). Blloqet e mbetura që mund të ngjiten në skenë gjithashtu mund të shihen në këtë rast. Funksionet e nëngrupeve janë si më poshtë:</p>
 <ol class="arabic simple">
-<li><p>displaying what the sprite is saying of thinking,</p></li>
-<li><p>changing the costume of the sprite and the backdrop of the stage,</p></li>
-<li><p>changing the size of the sprite,</p></li>
-<li><p>working with graphic effects that can be attached to sprites and the stage,</p></li>
-<li><p>showing or hiding the sprite,</p></li>
-<li><p>putting the sprite in the specified layer of the image,</p></li>
-<li><p>reporters that indicate the current costume and size of the sprite, as well as the current backdrop of the stage.</p></li>
+<li><p>shfaqja e asaj që po thotë të folurit e të menduarit,</p></li>
+<li><p>ndryshimi i kostumit të sprite dhe sfondi i skenës,</p></li>
+<li><p>ndryshimi i madhësisë së sprite,</p></li>
+<li><p>duke punuar me efekte grafike që mund t’i bashkëngjiten sprites dhe skenës,</p></li>
+<li><p>duke treguar ose fshehur sprite,</p></li>
+<li><p>vendosja e sprite në shtresën e specifikuar të figurës,</p></li>
+<li><p>reporterët që tregojnë kostumin aktual dhe madhësinë e sprite, si dhe sfondin aktual të skenës.</p></li>
 </ol>
-<p>Graphic effects, which can be added to the sprite, are:</p>
+<p>Efektet grafike, të cilat mund të shtohen në sprite, janë:</p>
 <table class="hlist"><tr><td><ul class="simple">
-<li><p>color - changes the color of the sprite,</p></li>
-<li><p>fisheye - gives the impression of a sprite being seen through a wide-angle lens,</p></li>
-<li><p>whirl - twists the sprite around its center point,</p></li>
-<li><p>pixelate - pixelates the sprite,</p></li>
-<li><p>mosaic - creates multiple smaller images of the sprite,</p></li>
-<li><p>brightness - changes the brightness of the sprite, and</p></li>
-<li><p>ghost - changes the transparency of the sprite.</p></li>
+<li><p>color - ndryshon ngjyrën e sprite,</p></li>
 </ul>
 </td></tr></table>
-<p>Changing the color, for example, can give the illusion that the sprite is expressing emotions or flashing, it may look like a completely new thing appeared. If you use color change with the <code class="docutils literal notranslate"><span class="pre">stamp</span></code> command, you can make attractive patterns, for example, a rainbow.</p>
-<p>By using the fisheye effect, you can give an illusion that the sprite is moving toward or away from the screen, becoming fatter, and the like. It can be used as a transition between costumes.</p>
-<p>The whirl effect can symbolize time travel, teleportation, vertigo, nausea.</p>
-<p>The pixelation effect makes sprites look like they did in the first versions of computer games, when the monitors had low resolution; it can also be used to censor or block out the sprite on the stage.</p>
-<p>The mosaic effect is used for multiplying sprites without cloning.</p>
-<p>By changing the brightness of the sprite, it can give the impression of glowing, or it can become darker, and the ghost effect can make the sprite invisible for the user, but other sprites can still detect it on the stage.</p>
-<p>Blocks <img alt="goto_layer" src="_images/goto_layer.png" /> and <img alt="go_layers" src="_images/go_layers.png" /> are different from blocks that performed similar functions in the previous version of Scratch.</p>
-<p>When the stage is in focus, you can see 8 blocks divided into 3 subgroups: for changing the backdrop, for setting graphic effects for the backdrop and the reporter that indicates the current backdrop. The backdrop <code class="docutils literal notranslate"><span class="pre">Backdrop</span> <span class="pre">Name</span></code>, which existed in the version Scratch 2.0, is not included in the new version.</p>
-<p>The blocks from the group <em>Looks</em> are elaborated in lesson 3 of this practicum.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 91)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    * fisheye - jep përshtypjen e një sprite që shihet përmes një lente me kënd të gjerë,
+    * whirl - kthesë rrëshqitje rreth pikës së saj qendrore,
+    * pixelate - pikselon sprite,
+    * mozaic - krijon imazhe të shumëfishta më të vogla të sprite,
+    * brightness - ndryshon shkëlqimin e sprite, dhe
+    * ghost - ndryshon transparencën e sprite.</p>
+<p>Ndryshimi i ngjyrës, për shembull, mund të japë iluzionin se sprite po shpreh emocione ose ndezje, mund të duket sikur u shfaq një gjë krejtësisht e re. Nëse përdorni ndryshimin e ngjyrave me komandën <code class="docutils literal notranslate"><span class="pre">stamp</span></code>, mund të bëni modele tërheqëse, për shembull, ylber.</p>
+<p>Duke përdorur efektin fisheye, ju mund të jepni një iluzion që sprite po lëviz drejt ose larg nga ekrani, duke u bërë më i trashë dhe të ngjashme. Mund të përdoret si një tranzicion midis kostumeve.</p>
+<p>Efekti i vorbullës mund të simbolizojë udhëtimin në kohë, teleportation, vertigo, vjellje.</p>
+<p>Efekti i pixelation bën që sprites të duken si ato në versionet e para të lojërave kompjuterike, kur monitorët kishin rezolucion të ulët; ai gjithashtu mund të përdoret për të censuruar ose bllokuar spërkatjen në skenë.</p>
+<p>Efekti mozaik përdoret për shumëzimin e sprites pa klonim.</p>
+<p>Duke ndryshuar shkëlqimin e sprite, ajo mund të japë përshtypjen e ndezjes, ose mund të bëhet më e errët, dhe efekti fantazmë mund ta bëjë sprite të padukshëm për përdoruesin, por spritat e tjerë ende mund ta zbulojnë atë në skenë.</p>
+<p>Blloqet <img alt="goto_layer" src="_images/goto_layer.png" /> dhe <img alt="go_layers" src="_images/go_layers.png" /> janë të ndryshme nga blloqet që kryenin funksione të ngjashme në versionin e mëparshëm të Scratch.</p>
+<p>Kur faza është në fokus, mund të shihni 8 blloqe të ndara në 3 nëngrupe: për ndryshimin e sfondit, për vendosjen e efekteve grafike për sfondin dhe raportuesin që tregon sfondin aktual. Sfondi <code class="docutils literal notranslate"><span class="pre">Emri</span> <span class="pre">i</span> <span class="pre">sfondit</span></code>, i cili ekzistonte në versionin Scratch 2.0, nuk është përfshirë në versionin e ri.</p>
+<p>Blloqet nga grupi <em>Show</em> janë shtjelluar në mësimin 3 të këtij kursi.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="sound-blocks">
-<h3>Sound Blocks<a class="headerlink" href="#sound-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-sound">
+<h3>Blloqet Sound<a class="headerlink" href="#blloqet-sound" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="sound_blocks" src="_images/sound.png" /> Sound</p>
 <p><img alt="fig11_3" src="_images/fig11_3.png" /></p>
 </div>
-<p>Two types of sounds can be used in projects: sounds and notes. The blocks from this group can be used for working with sounds, and the blocks from the extension <em>Music</em> for working with notes. Sounds are accessible only by importing, recording, or from a built-in library of sounds. They are played using the sound blocks, which control the volume, tempo and more. The <em>Sound</em> group of blocks has been modified significantly, compared to how it was organized in Scratch 2.0 version. Some of the blocks from this group were moved to the extension <em>Music</em>. The group <em>Sound</em> has 9 blocks, which are divided into 3 subgroups. They can be applied to both sprites and the background.</p>
-<p>The functions of the subgroups are the following:</p>
+<p>Dy projekte tingujsh mund të përdoren në projekte: tinguj dhe shënime. Blloqet nga ky grup mund të përdoren për të punuar me tinguj, dhe blloqet nga shtesa <em>Music</em> për të punuar me shënime. Tinguj janë të arritshëm vetëm duke importuar, regjistruar ose nga një bibliotekë e integruar e tingujve. Ata janë luajtur duke përdorur blloqet e tingullit, të cilat kontrollojnë vëllimin, tempo dhe më shumë. Grupi i blloqeve <em>Sound</em> është modifikuar në mënyrë të konsiderueshme, në krahasim me mënyrën se si është organizuar në versionin Scratch 2.0. Disa nga blloqet e këtij grupi u zhvendosën në shtesën <em>Music</em>. Grupi <em>Sound</em> ka 9 blloqe, të cilat ndahen në 3 nëngrupe. Ato mund të aplikohen për të dy sprites dhe sfondin.</p>
+<p>Funksionet e nëngrupeve janë këto:</p>
 <ol class="arabic simple">
-<li><p>starting, stopping and playing sounds,</p></li>
-<li><p>applying sound effects,</p></li>
-<li><p>controlling the volume.</p></li>
+<li><p>fillimi, ndalimi dhe interpretimi i tingujve,</p></li>
+<li><p>aplikimi i efekteve të tingullit,</p></li>
+<li><p>kontrollin e vëllimit.</p></li>
 </ol>
-<p><strong>Starting, Stopping and Playing Sounds</strong></p>
-<p>The block <img alt="play_until" src="_images/play_until.png" /> plays a specific sound, pausing the script until it is finished. Unlike this block, the block <img alt="start_sound" src="_images/start_sound.png" /> plays a sound without pausing the script. This is why the block <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">sound</span></code> is usually used to announce an action, inform a sprite that a goal has been reached, or highlight certain events.</p>
-<p>On the other hand, the blocks <code class="docutils literal notranslate"><span class="pre">play</span> <span class="pre">until</span></code> is usually used to play the “background music”. This block is placed into the block <code class="docutils literal notranslate"><span class="pre">forever</span></code> and the appropriate music is played during the whole running of the program. It can also be used for pausing the running of the script instead of the control block <code class="docutils literal notranslate"><span class="pre">wait</span></code>.</p>
-<p>The block <code class="docutils literal notranslate"><span class="pre">stop</span> <span class="pre">sounds</span></code> will stop all sounds that are currently being played - of all sprites and the stage. For example, if the project offers the option of music, this block is used to turn off the music. It is also common for all sounds to be stopped before the project moves on to the next scene, and the like.</p>
-<p><strong>Applying Sound Effects</strong></p>
-<p>Blocks that set and change sound effects were introduced in Scratch 3.0. Although the new sound editor provides more sound effects (see below in the sound editor section), the blocks support only two: setting and changing the pitch, and shifting the audio toward left or right.</p>
-<p><strong>Volume Control</strong></p>
-<p>These blocks affect only the sprite (or backdrop) to which they are assigned. For example, clicking on the sprite can turn the volume down if the sprite is getting smaller, thus appearing as if the sprite is getting further away from the user. Also, if blocks from the <em>Music</em> extension are used, some parts of the composition may be heard louder and others quieter.</p>
-<p>Eight of these blocks are stack blocks, and one is a reporter block, which stores the information on the volume of the sound.</p>
+<p><strong>Fillimi, Ndërprerja dhe Dëgjimi i Tingujve</strong></p>
+<p>Blloku <img alt="play_until" src="_images/play_until.png" /> luan një tingull specifik, duke ndalur skenarin deri sa të mbarojë. Për dallim nga ky bllok, blloku <img alt="start_sound" src="_images/start_sound.png" /> interpreton një tingull pa e ndalur skenarin. Kjo është arsyeja pse blloku <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">sound</span></code> zakonisht përdoret për të shpallur një veprim, për të informuar një sprint se është arritur një qëllim, ose të nxjerrë në pah ngjarje të caktuara.</p>
+<p>Nga ana tjetër, blloqet <code class="docutils literal notranslate"><span class="pre">play</span> <span class="pre">up</span></code> zakonisht përdoren për të luajtur “muzikë në sfond”. Ky bllok vendoset në bllokun <code class="docutils literal notranslate"><span class="pre">forever</span></code> dhe muzika e duhur luhet gjatë gjithë ekzekutimit të programit. Mund të përdoret gjithashtu për ndaljen e ekzekutimit të skenarit në vend të bllokut të kontrollit <code class="docutils literal notranslate"><span class="pre">wait</span></code>.</p>
+<p>Blloku <code class="docutils literal notranslate"><span class="pre">stop</span> <span class="pre">sounds</span></code> do të ndalojë të gjithë tingujt që janë duke u luajtur aktualisht - të të gjitha sprites dhe skenës. Për shembull, nëse projekti ofron mundësinë e muzikës, ky bllok përdoret për të fikur muzikën. Shtë gjithashtu e zakonshme që të gjithë tingujt të ndalen përpara se projekti të kalojë në skenën tjetër, dhe të ngjashme.</p>
+<p><strong>Aplikimi i efekteve të tingullit</strong></p>
+<p>Blloqet që vendosin dhe ndryshojnë efektet e zërit u prezantuan në Scratch 3.0. Edhe pse redaktori i ri i tingullit siguron më shumë efekte tingujsh (shihni më poshtë në seksionin e redaktorit të tingullit), blloqet mbështesin vetëm dy: vendosjen dhe ndryshimin e katranit, dhe zhvendosjen e zërit në të majtë ose të djathtë.</p>
+<p><strong>Kontrolli i vëllimit</strong></p>
+<p>Këto blloqe ndikojnë vetëm në degëzimin (ose sfondin) të cilit i janë caktuar. Për shembull, duke klikuar në sprite mund të kthehet vëllimi nëse sprite po bëhet më i vogël, duke u shfaqur kështu sikur Sprite po largohet nga përdoruesi. Gjithashtu, nëse përdoren blloqe nga shtesa <em>Music</em>, disa pjesë të përbërjes mund të dëgjohen më të zëshme dhe të tjera më të qeta.</p>
+<p>Tetë nga këto blloqe janë blloqe rafte, dhe një është një reportazh, i cili ruan informacionin mbi vëllimin e tingullit.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="event-blocks">
-<h3>Event Blocks<a class="headerlink" href="#event-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-event">
+<h3>Blloqet Event<a class="headerlink" href="#blloqet-event" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="events_blocks" src="_images/events.png" /> Events</p>
 <p><img alt="fig11_4" src="_images/fig11_4.png" /></p>
 </div>
-<p>The blocks in this group are used to trigger the running of the script and send and receive messages. There are 9 blocks in this group and they are divided into 3 subgroups. Since in this version of Scratch the video sensing has been moved to the extensions part, it has been removed from the drop-down menu of the block <img alt="when_greater" src="_images/when_greater.png" />.</p>
-<p>The functions of the subgroups are the following:</p>
+<p>Blloqet në këtë grup përdoren për të shkaktuar drejtimin e skenarit dhe dërgimin dhe pranimin e mesazheve. Në këtë grup ka 9 blloqe dhe ato ndahen në 3 nëngrupe. Meqenëse në këtë version të Scratch, sensacioni i videos është zhvendosur në pjesën e shtesave, është hequr nga menyja drop-down e bllokut | kur_greater <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 167); <em><a href="#id2">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
+</div>
+<p>Funksionet e nëngrupeve janë këto:</p>
 <ol class="arabic simple">
-<li><p>triggering scripts with a specific activity performed by the user,</p></li>
-<li><p>triggering scripts when a specific condition was fulfilled during the running of the project,</p></li>
-<li><p>enabling the broadcasting and receipt of messages.</p></li>
+<li><p>skriptet nxitëse me një aktivitet specifik të kryer nga përdoruesi,</p></li>
+<li><p>Shkrimet e nxitjes kur një ekzekutim i veçantë ishte përmbushur gjatë ekzekutimit të projektit,</p></li>
+<li><p>duke mundësuar transmetimin dhe pranimin e mesazheve.</p></li>
 </ol>
-<p><strong>Triggering of scripts with activities performed by the user</strong></p>
-<p>The user can start the running of the project by clicking the button <img alt="g_flag" src="_images/g_flag.png" />, one of the sprites participating in the project, the backdrop or by pressing one of the keyboard keys. The project is usually triggered when the green flag is clicked, this is when all scripts, which start with this block, will be activated. These are scripts that perform various initializations, and then hand over the management to other scripts. For example, they delete all list elements, reset variables, set scenes by showing or hiding sprites and by changing their costumes, delete anything drawn on the stage, start the background music, etc. While it is entirely possible to create projects without using this block, it is not recommended. The only way a project could be started without using this block would be to activate scripts that start with some other block from this subgroup. In this case, the project would only last until the scripts that depend on the initial scripts were completed.</p>
-<p>Note. The block <img alt="clicked_stage" src="_images/clicked_stage.png" /> is visible only when the stage is in focus.</p>
-<p><strong>Triggering scripts when a specific condition was fulfilled during the running of the project</strong></p>
-<p>Some of the events that can trigger the running of scripts starting with one of the blocks from this group are changing of the backdrop, expiration of a specific period of time, or increasing the volume beyond a certain level.</p>
-<p><strong>Broadcasting and receipt of messages</strong></p>
-<p>Broadcasting of messages is the main mechanism for coordinating the behavior of sprites participating in a project, and it can also be used for the realization of procedures. Broadcasting is used for calling scripts that should be activated when certain conditions are met. The scripts that start with the block <img alt="when_receive" src="_images/when_receive.png" /> will be called after the specified message has been broadcast. If the same message is broadcast while the script is still running, the current running will be stopped, and the script will start running again from the beginning. Therefore, if we put the block, which broadcasts the message to which the script is responding, into the script that starts with the block <code class="docutils literal notranslate"><span class="pre">when</span> <span class="pre">receive</span></code>, we have a situation where the script is calling itself. This is called <strong>recursion</strong>, and it can be used for creating fractals, forever loops, and the like.</p>
+<p><strong>Ndjekja e shkrimeve me aktivitete të kryera nga përdoruesi</strong></p>
+<p>Përdoruesi mund të fillojë ekzekutimin e projektit duke klikuar butonin <img alt="g_flag" src="_images/g_flag.png" />, një nga sprites që merr pjesë në projekt, në sfond ose duke shtypur një nga tastet e tastierës. Projekti zakonisht nxitet kur klikohet flamuri i gjelbër, kjo është kur të gjitha skriptet, të cilat fillojnë me këtë bllok, do të aktivizohen. Këto janë skriptet që kryejnë inicializime të ndryshme, dhe pastaj ia dorëzojnë menaxhimin shkrimeve të tjera. Për shembull, ata fshijnë të gjithë elementët e listës, rivendosin variablat, vendosin skena duke treguar ose fshehur sprites dhe duke ndryshuar kostumet e tyre, fshijnë çdo gjë të tërhequr në skenë, fillojnë muzikën në sfond, etj. Ndërsa është plotësisht e mundur të krijoni projekte pa përdorur këtë bllok, nuk rekomandohet. E vetmja mënyrë se si mund të fillohet një projekt pa përdorur këtë bllok do të ishte aktivizimi i skripteteve që fillojnë me ndonjë bllok tjetër nga kjo nëngrup. Në këtë rast, projekti do të zgjaste vetëm derisa të përfundonin skriptet që varen nga skriptet fillestare.</p>
+<p>Shënim. Blloku <a href="#id12"><span class="problematic" id="id13">|clicked_staza|</span></a> është e dukshme vetëm kur faza është në fokus.</p>
+<p><strong>Shkrimet e shkëputjes kur u plotësua një kusht specifik gjatë ekzekutimit të projektit</strong></p>
+<p>Disa nga ngjarjet që mund të shkaktojnë mbarimin e skripteteve duke filluar me një nga blloqet nga ky grup janë ndryshimi i sfondit, skadimi i një periudhe specifike kohore ose rritja e vëllimit përtej një niveli të caktuar.</p>
+<p><strong>Transmetimi dhe pranimi i mesazheve</strong></p>
+<p>Transmetimi i mesazheve është mekanizmi kryesor për koordinimin e sjelljes së sprites që marrin pjesë në një projekt, dhe mund të përdoret gjithashtu për realizimin e procedurave. Transmetimi përdoret për të thirrur skriptet që duhet të aktivizohen kur plotësohen kushte të caktuara. Skriptet që fillojnë me bllokun <img alt="when_receive" src="_images/when_receive.png" /> do të thirret pasi të jetë transmetuar mesazhi i specifikuar. Nëse transmetohet i njëjti mesazh ndërsa skenari është akoma duke ekzekutuar, ekzekutimi aktual do të ndalet, dhe skenari do të fillojë të ekzekutohet përsëri nga fillimi. Prandaj, nëse vendosim bllokun, i cili transmeton mesazhin të cilit po i përgjigjet skenari, në skenarin që fillon me bllokun <code class="docutils literal notranslate"><span class="pre">when</span> <span class="pre">receive</span></code>, kemi një situatë kur skenari po thërret vetë. Kjo quhet <strong>rekursion</strong>, dhe mund të përdoret për krijimin e fraktaleve, sythe përgjithmonë dhe të ngjashme.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="control-blocks">
-<h3>Control Blocks<a class="headerlink" href="#control-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-control">
+<h3>Blloqet Control<a class="headerlink" href="#blloqet-control" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="control_blocks" src="_images/control.png" /> Control</p>
 <p><img alt="fig11_5" src="_images/fig11_5.png" /></p>
 </div>
-<p>The blocks from this group control the running of scripts. They enable branching, repetition, and working with sprite clones, and they can stop the running of scripts. There are 11 blocks in total, one is a starting (hat) block, two are cap blocks, three are stack blocks, five are C-blocks, and the <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">then</span> <span class="pre">else</span></code> is an E-shaped block. They are divided into five subgroups, whose functions are the following:</p>
+<p>Blloqet nga ky grup kontrollojnë ekzekutimin e shkrimeve. Ato mundësojnë degëzim, përsëritje dhe punë me klone sprite, dhe ato mund të ndalojnë mbarimin e shkrimeve. Gjithsej janë 11 blloqe, një është një bllok (kapelë) fillestar, dy janë blloqe kapele, tre janë blloqe rafte, pesë janë blloqe C, dhe <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">else</span> <span class="pre">then</span></code> është një bllok në formë E. Ata janë të ndarë në pesë nëngrupe, funksionet e të cilave janë këto:</p>
 <ol class="arabic simple">
-<li><p>block for waiting (pausing the script),</p></li>
-<li><p>repetition blocks,</p></li>
-<li><p>blocks with branches,</p></li>
-<li><p>block for conditional repetitions,</p></li>
-<li><p>block for stopping the script,</p></li>
-<li><p>blocks used for working with clones.</p></li>
+<li><p>bllok për pritje (duke ndalur skenarin),</p></li>
+<li><p>blloqe përsëritje,</p></li>
+<li><p>blloqe me degë,</p></li>
+<li><p>bllok për përsëritjet e kushtëzuara,</p></li>
+<li><p>bllok për ndalimin e skenarit,</p></li>
+<li><p>blloqe që përdoren për të punuar me klone.</p></li>
 </ol>
-<p>The functions of these blocks are elaborated in lessons 5, 6 and 7 of this practicum.</p>
-<p><strong>Working with clones</strong></p>
-<p>Cloning is a feature that allows the sprite to create a copy of itself while the project is running. Each clone (copy) has the same costumes, sounds and scripts as the original, but it is otherwise independent. Cloning is different form stamping because clones are individual sprites that can run scripts and behave according to those scripts. They are also different from the sprites created with the duplication option because the ordinary duplicates are permanent and appear in the sprite list, whereas clones do not, and they disappear when the project is finished.</p>
-<p>Cloning is used whenever a project has similar sprites doing similar things. Since clones are made by the project, and not by the user, cloning liberates the user from making the same changes to each of the many sprites. For example, cloning can be used for creating multiple friend and enemy sprites in games, as well as for special effects like fireworks and snow.</p>
-<p>Clones usually perform an action when created. The block <img alt="when_clone" src="_images/when_clone.png" /> triggers the script, which starts running when a clone is created. Multiple scripts starting with this block can be added to the same sprite, and they will all run simultaneously when a clone is created. The script itself can be running on multiple clones at once. Some of the actions that this block can perform include putting the clone in a random position, moving the clone until it collides with another sprite.</p>
+<p>Funksionet e këtyre blloqeve janë shtjelluar në mësimet 5, 6 dhe 7 të këtij praktiku.</p>
+<p><strong>Puna me klone</strong></p>
+<p>Klonimi është një veçori që lejon që sprite të krijojë një kopje të vetvetes ndërsa projekti po funksionon. Çdo klon (kopje) ka të njëjtat kostume, tinguj dhe shkrime si origjinali, por është ndryshe i pavarur. Klonimi është vulosje me forma të ndryshme sepse klonet janë sprites individuale që mund të drejtojnë skriptet dhe të sillen sipas atyre shkrimeve. Ato janë gjithashtu të ndryshme nga spritet e krijuara me opsionin e dublikimit sepse kopjimet e zakonshme janë të përhershme dhe paraqiten në listën sprite, ndërsa klonet jo, dhe ato zhduken kur projekti ka mbaruar.</p>
+<p>Klonimi përdoret sa herë që një projekt ka sprites të ngjashëm që bëjnë gjëra të ngjashme. Meqenëse klonet janë bërë nga projekti, dhe jo nga përdoruesi, klonimi çliron përdoruesin të bëjë të njëjtat ndryshime në secilën nga shumë sprites. Për shembull, klonimi mund të përdoret për krijimin e spritave të shumëfishtë të mikut dhe armikut në lojëra, si dhe për efekte speciale si fishekzjarre dhe borë.</p>
+<p>Klonët zakonisht kryejnë një veprim kur krijohen. Blloku <img alt="when_clone" src="_images/when_clone.png" /> shkakton skenarin, i cili fillon të ekzekutohet kur krijohet një klon. Skriptet e shumta që fillojnë me këtë bllok mund të shtohen në të njëjtën sprite, dhe të gjitha ato do të funksionojnë njëkohësisht kur të krijohet një klon. Skenari vetë mund të jetë duke u ekzekutuar në klone të shumta njëkohësisht. Disa nga veprimet që ky bllok mund të kryejë përfshijnë vendosjen e klonit në një pozicion të rastësishëm, lëvizjen e klonit derisa të përplaset me një tjetër sprit.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="sensing-blocks">
-<h3>Sensing Blocks<a class="headerlink" href="#sensing-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-e-ndjeshmerise">
+<h3>Blloqet e ndjeshmërisë<a class="headerlink" href="#blloqet-e-ndjeshmerise" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 229)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Blloqet</span> <span class="n">e</span> <span class="n">ndjeshmërisë</span>
+<span class="o">~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="sensing_blocks" src="_images/sensing.png" /> Sensing</p>
 <p><img alt="fig11_6" src="_images/fig11_6.png" /></p>
 </div>
-<p>This group is made up of blocks that allow the project to accept input from different devices, much like how the human senses collect information from their environment.
-There are 18 blocks in the group <em>Sensing</em>. Three blocks, which were in the Scratch 2.0 version and which referred to video editing and monitoring movement registered by a video, are no longer included, but the block <img alt="set_drag" src="_images/set_drag.png" /> was added. This block regulates whether a full-screen sprite can be dragged or not, which was previously adjusted in the sprite’s information. The blocks related to video detection have been moved to the corresponding extension.</p>
-<p>These blocks are divided into 6 subgroups with the following functions:</p>
+<p>Ky grup është i përbërë nga blloqe që lejojnë projektin të pranojë të dhëna nga pajisje të ndryshme, ashtu si mënyra se shqisat njerëzore mbledhin informacione nga mjedisi i tyre.
+Ekzistojnë 18 blloqe në grupin <em>Sensing</em>. Tre blloqe, të cilat ishin në versionin Scratch 2.0 dhe që i referoheshin lëvizjes së redaktimit dhe monitorimit të videos të regjistruar nga një video, nuk janë më të përfshira, por blloku <img alt="set_drag" src="_images/set_drag.png" /> u shtua. Ky bllok rregullon nëse një sprite me ekran të plotë mund të tërhiqet ose jo, i cili ishte rregulluar më parë në informacionin e sprite. Blloqet në lidhje me zbulimin e videos janë zhvendosur në shtrirjen përkatëse.</p>
+<p>Këto blloqe ndahen në 6 nëngrupe me këto funksione:</p>
 <ol class="arabic simple">
-<li><p>storing information on the distance of the sprite in relation to the mouse-pointer or other objects,</p></li>
-<li><p>entering input data from the keyboard,</p></li>
-<li><p>storing information on the current operations of the mouse-pointer and the keyboard,</p></li>
-<li><p>storing the current value of the loudness of the sound,</p></li>
-<li><p>working with a timer,</p></li>
-<li><p>storing parameters of sprites and the stage,</p></li>
-<li><p>storing information on the current time and the user.</p></li>
+<li><p>ruajtja e informacionit për distancën e spritit në lidhje me treguesin e miut ose objektet e tjera,</p></li>
+<li><p>vendosjen e të dhënave hyrëse nga tastiera,</p></li>
+<li><p>ruajtja e informacionit për operacionet aktuale të treguesit të miut dhe tastierës,</p></li>
+<li><p>ruajtja e vlerës aktuale të zhurmës së tingullit,</p></li>
+<li><p>duke punuar me një kohëmatës,</p></li>
+<li><p>ruajtja e parametrave të sprites dhe skenës,</p></li>
+<li><p>ruajtja e informacionit për kohën e tanishme dhe përdoruesin.</p></li>
 </ol>
-<p>Only three blocks from this group can stand on their own, the rest of them are function blocks. Therefore, the blocks from the first group are inserted into control blocks, which should enable the execution of different activities depending on the position of the sprite. The blocks of the second group correspond to the information that a person collects with the sense of touch, and the third group corresponds to the information that is collected by the sense of hearing. The timer can be used to limit the playing time in a game or the time it takes to complete a test task. The block that stores the parameters of sprites and the stage can provide a lot of data on all of the objects, which participate in the project. Information that a person would collect through the sense of sight, and a computer with a video camera, can be used if the extension <em>Video Sensing</em> is added to the project.</p>
-<p>We have elaborated the functions of most blocks in this group through the examples in the previous lessons. Here we will just mention the functions of logical blocks and current time reporters.</p>
-<p><strong>Logical Blocks</strong></p>
-<p>There are 5 logical blocks in this group. Each of these blocks can return only one out of two values: true or false, depending on whether the condition was fulfilled or not. Logical blocks are placed in the input fields of the hexagonal shape of the control blocks.</p>
-<p><strong>Current time and user information</strong></p>
-<p>The reporter block <img alt="time_unit" src="_images/time_unit.png" /> can give the following information on the current time.</p>
-<a class="reference internal image-reference" href="_images/fig11_6b.png"><img alt="_images/fig11_6b.png" class="align-center" src="_images/fig11_6b.png" style="width: 200px;" /></a>
+<p>Vetëm tre blloqe nga ky grup mund të qëndrojnë më vete, pjesa tjetër janë blloqe funksioni. Prandaj, blloqet nga grupi i parë futen në blloqe kontrolli, të cilat duhet të mundësojnë kryerjen e aktiviteteve të ndryshme në varësi të pozitës së sprite. Blloqet e grupit të dytë korrespondojnë me informacionin që një person mbledh me sensin e prekjes, dhe grupi i tretë i përgjigjet informacionit që mblidhet nga sensi i të dëgjuarit. Koha mund të përdoret për të kufizuar kohën e lojës ose kohën që duhet për të përfunduar një detyrë provë. Blloku që ruan parametrat e sprites dhe skena mund të sigurojë shumë të dhëna për të gjitha objektet, të cilët marrin pjesë në projekt. Informacioni që një person do të mbledhë përmes sensit të shikimit, dhe një kompjuter me një kamerë video, mund të përdoret nëse shtesa <em>Ndjesia Video</em> i shtohet projektit.</p>
+<p>Ne kemi shtjelluar funksionet e shumicës së blloqeve në këtë grup përmes shembujve në mësimet e mëparshme. Këtu do të përmendim vetëm funksionet e blloqeve logjikë dhe reporterëve të kohës aktuale.</p>
+<p><strong>Blloqe logjike</strong></p>
+<p>Ka 5 blloqe logjike në këtë grup. Secila prej këtyre blloqeve mund të kthejë vetëm një nga dy vlera: e vërtetë ose e rremë, në varësi të faktit nëse kushti është përmbushur apo jo. Blloqet logjike vendosen në fushat hyrëse të formës gjashtëkëndore të blloqeve të kontrollit.</p>
+<p><strong>Koha aktuale dhe informacioni i përdoruesit</strong></p>
+<p>Blloku i reporterit <img alt="time_unit" src="_images/time_unit.png" /> mund të japë informacionin e mëposhtëm për kohën aktuale.</p>
+<a class="reference internal image-reference" href="../_images/11/fig11_6b.png"><img alt="../_images/11/fig11_6b.png" class="align-center" src="../_images/11/fig11_6b.png" style="width: 200px;" /></a>
 </div>
 <hr class="docutils" />
-<div class="section" id="operators-blocks">
-<h3>Operators Blocks<a class="headerlink" href="#operators-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-operator">
+<h3>Blloqet Operator<a class="headerlink" href="#blloqet-operator" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="operator_blocks" src="_images/operators.png" /> Operators</p>
 <p><img alt="fig11_7" src="_images/fig11_7.png" /></p>
 </div>
-<p>In the group <em>Operators</em> there are no independent blocks, which would correspond to language commands. All blocks are function blocks, i.e. they store the values of number, string or logical expressions and they are inserted into appropriate input fields of independent blocks or other function blocks. The block <img alt="text_contains" src="_images/text_contains.png" /> is a new block in this group, which returns the values <em>true</em> or <em>false</em> depending on whether the string contains the given character or not.</p>
-<p>There are 18 blocks in the group <em>Operators</em> - 11 reporters and 7 logical (boolean) blocks, which enable the following types of operations:</p>
+<p>Në grupin <em>Operatorët</em> nuk ka blloqe të pavarura, të cilat do të korrespondonin me komandat gjuhësore. Të gjitha blloqet janë blloqe funksioni, d.m.th. ato ruajnë vlerat e numrit, vargjeve ose shprehjeve logjike dhe ato futen në fushat përkatëse hyrëse të blloqeve të pavarura ose blloqeve të tjera të funksionit. Blloku <img alt="text_contains" src="_images/text_contains.png" /> është një bllok i ri në këtë grup, i cili kthen vlerat <em>true</em> ose <em>false</em> në varësi të faktit nëse vargu përmban karakterin e dhënë apo jo.</p>
+<p>Ekzistojnë 18 blloqe në grupin <em>Operatorët</em> - 11 reporterë dhe 7 blloqe logjike (boolean), të cilat mundësojnë llojet e mëposhtme të operacioneve:</p>
 <ol class="arabic simple">
-<li><p>the basic arithmetic operations – addition, subtraction, multiplication and division,</p></li>
-<li><p>generating random numbers,</p></li>
-<li><p>comparisons - greater than, less than, equal to,</p></li>
-<li><p>constructing complex logical expressions,</p></li>
-<li><p>operations with strings,</p></li>
-<li><p>integer operations,</p></li>
-<li><p>calculating the value of mathematical functions.</p></li>
+<li><p>operacionet themelore aritmetike - shtimi, zbritja, shumëzimi dhe ndarja,</p></li>
+<li><p>gjenerimi i numrave të rastit,</p></li>
+<li><p>krahasimet - më të mëdha se, më pak se, të barabarta me,</p></li>
+<li><p>ndërtimin e shprehjeve logjike komplekse,</p></li>
+<li><p>operacione me tela,</p></li>
+<li><p>operacione të plotë,</p></li>
+<li><p>llogaritja e vlerës së funksioneve matematikore.</p></li>
 </ol>
-<p>Basic arithmetic operations can be performed with integer and real numbers. Only division by zero (divisor = 0) can lead to problems, because there aren’t any numbers that, when multiplied by zero, would give a number other than zero (quotient * divisor = dividend). This is why division by zero should be prevented in programs. We showed how this could be achieved in the project <em>Young Mathematician</em> from lesson 7 of this practicum.</p>
-<p>As the result of the division by zero, the Scratch interpreter returns one of the values <em>Infinity</em>, <em>NaN</em> (not a number) or <em>-Infinity</em>, depending on whether the dividend is a positive number, zero or a negative number.</p>
-<p>We have explained the use of random numbers, logical expressions, and complex logical expressions formed by the logical operations <em>and</em>, <em>or</em> and <em>not</em> with the examples presented in the previous lessons.</p>
-<p>The operations used with strings enable the joining of two strings, selecting characters located in specified positions in the string, determine the length of the string, and check if the string contains the specified character. The operation performed on strings were elaborated in lesson 9 of this practicum.</p>
-<p>The integer operations supported in Scratch are the computation of the remainder in the integer division, and the rounding of the numbers.</p>
-<p>Mathematical functions that can be selected from the drop-down list of the block <img alt="function" src="_images/function.png" /> are:</p>
+<p>Operacionet themelore aritmetike mund të kryhen me numër të plotë dhe real. Vetëm ndarja me zero (pjesëtuesi = 0) mund të çojë në probleme, sepse nuk ka ndonjë numër që, kur shumëzohet me zero, do të jepte një numër tjetër përveç zeros (pjesëtori * pjesëtuesi = dividenti). Kjo është arsyeja pse ndarja me zero duhet të parandalohet në programe. Ne treguam se si mund të arrihet kjo në projekt <em>Matematikan i ri</em> nga mësimi 7 i këtij praktiku.</p>
+<p>Si rezultat i ndarjes në zero, përkthyesi Scratch kthen njërën prej vlerave <em>Infinity</em>, <em>NaN</em> (jo një numër) ose <em>Përfundimi</em>, në varësi të faktit nëse dividenti është një numër pozitiv, zero ose një numër negativ .</p>
+<p>Ne kemi shpjeguar përdorimin e numrave të rastit, shprehjeve logjike dhe shprehjeve logjike komplekse të formuara nga operacionet logjike <em>dhe</em>, <em>ose</em> dhe <em>jo</em> me shembujt e paraqitur në mësimet e mëparshme.</p>
+<p>Operacionet e përdorura me string mundësojnë bashkimin e dy vargjeve, zgjedhjen e karaktereve të vendosura në pozicione të përcaktuara në varg, përcaktimin e gjatësisë së vargut dhe kontrolloni nëse vargu përmban karakterin e specifikuar. Operacioni i kryer në tela u shtjellua në mësimin 9 të këtij kursi.</p>
+<p>Operacionet e numrave të plotë të mbështetur në Scratch janë llogaritja e pjesës tjetër në ndarjen e numrit të plotë dhe rrumbullakimi i numrave.</p>
+<p>Funksionet matematikore që mund të zgjidhen nga lista drop-down e bllokut <img alt="function" src="_images/function.png" /> janë:</p>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p>abs</p></li>
 <li><p>floor</p></li>
@@ -423,274 +447,386 @@ There are 18 blocks in the group <em>Sensing</em>. Three blocks, which were in t
 </td></tr></table>
 </div>
 <hr class="docutils" />
-<div class="section" id="variable-and-list-blocks">
-<h3>Variable and List Blocks<a class="headerlink" href="#variable-and-list-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="variablat-dhe-blloqet-lista">
+<h3>Variablat dhe Blloqet Lista<a class="headerlink" href="#variablat-dhe-blloqet-lista" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 332)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Variablat</span> <span class="n">dhe</span> <span class="n">Blloqet</span> <span class="n">Lista</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="variables_blocks" src="_images/variables.png" /> Variables and Lists</p>
 <p><img alt="fig11_8" src="_images/fig11_8.png" /></p>
 </div>
-<p>The functions of the subgroups are the following:</p>
-<p>For variables</p>
+<p>Funksionet e nëngrupeve janë këto:</p>
+<p>Për variablat</p>
 <ol class="arabic simple">
-<li><p>reporters for user’s variables,</p></li>
-<li><p>setting and changing the value of a variable,</p></li>
-<li><p>showing and hiding variable reporters on stage.</p></li>
+<li><p>reporterët për variablat e përdoruesit,</p></li>
+<li><p>vendosjen dhe ndryshimin e vlerës së një variabli,</p></li>
+<li><p>duke treguar dhe fshehur reporterë të ndryshueshëm në skenë.</p></li>
 </ol>
-<p>For lists</p>
+<p>Për listat</p>
 <ol class="arabic simple" start="4">
-<li><p>reporters for user’s lists,</p></li>
-<li><p>adding elements onto the end of the list,</p></li>
-<li><p>operations performed on the list,</p></li>
-<li><p>returning list information,</p></li>
-<li><p>showing and hiding list reporters on the stage.</p></li>
+<li><p>reporterët për listat e përdoruesve,</p></li>
+<li><p>duke shtuar elemente në fund të listës,</p></li>
+<li><p>operacionet e kryera në listë,</p></li>
+<li><p>informacioni për listën e kthimit,</p></li>
+<li><p>duke treguar dhe fshehur reporterët e listave në skenë.</p></li>
 </ol>
-<p>The operations that are supported for working with lists are:</p>
-<table class="hlist"><tr><td><ul class="simple">
-<li><p>deleting an item from a specified position on the list,</p></li>
-<li><p>deleting all items from a particular list,</p></li>
-<li><p>inserting items into the list at given positions, and</p></li>
-<li><p>replacing items in specified positions.</p></li>
-</ul>
-</td></tr></table>
-<p>The following information can be obtained about the list:</p>
-<table class="hlist"><tr><td><ul class="simple">
-<li><p>which item is in the specified position,</p></li>
-<li><p>what is the position (on the list) of the specified item,</p></li>
-<li><p>the length of the list (number of items on the list), and</p></li>
-<li><p>whether an item is included in a list or not.</p></li>
-</ul>
-</td></tr></table>
-<p>Variable and lists can be global - they can be used by all sprites, or local - they can be used only by one sprite. The variables and lists created for the stage are visible to all sprites.</p>
-<p>Current values of the variables can be followed on the stage via variable monitors. Variable monitors can come in three formats:</p>
-<table class="hlist"><tr><td><ul class="simple">
-<li><p>displaying the value with the name of the variable,</p></li>
-<li><p>large display of the value without the corresponding name of the variable,</p></li>
-<li><p>display containing a slider bar, which can be used to change the value of the variable.</p></li>
-</ul>
-</td></tr></table>
-<p>Variables are elaborated in lesson 7, and lists in lesson 9 of this practicum.</p>
+<p>Operacionet që janë mbështetur për të punuar me listat janë:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 364)</p>
+<p>.. hlist content is not a list</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 368)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>     * fshirjen e të gjitha sendeve nga një listë e veçantë,
+     * futja e artikujve në listë në pozicionet e dhëna, dhe
+     * zëvendësimi i artikujve në pozicione të përcaktuara.</p>
+<p>Informacioni i mëposhtëm mund të merret në lidhje me listën:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 374)</p>
+<p>.. hlist content is not a list</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 378)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>     * cili është pozicioni (në listë) të sendit të specifikuar,
+     * gjatësia e listës (numri i artikujve në listë), dhe
+     * nëse një artikull është përfshirë në një listë apo jo.</p>
+<p>Variablat dhe listat mund të jenë globale - ato mund të përdoren nga të gjithë sprites, ose lokalë - ato mund të përdoren vetëm nga një sprite. Variablat dhe listat e krijuara për skenë janë të dukshme për të gjitha sprites.</p>
+<p>Vlerat aktuale të variablave mund të ndiqen në skenë përmes monitorëve të ndryshueshëm. Monitorët e ndryshueshëm mund të vijnë në tre formate:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 386)</p>
+<p>.. hlist content is not a list</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 390)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>     * shfaqje e madhe e vlerës pa emrin përkatës të ndryshores,
+     * ekran që përmban një shirit rrëshqitës, i cili mund të përdoret për të ndryshuar vlerën e ndryshores.</p>
+<p>Variablat janë shtjelluar në mësimin 7, dhe listat në mësimin 9 të këtij praktiku.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="my-blocks">
-<h3>My Blocks<a class="headerlink" href="#my-blocks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-e-mia">
+<h3>Blloqet e mia<a class="headerlink" href="#blloqet-e-mia" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 398)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Blloqet</span> <span class="n">e</span> <span class="n">mia</span>
+<span class="o">~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="my_blocks" src="_images/my_blocks.png" /> My blocks</p>
 <p><img alt="fig11_9" src="_images/fig11_9.png" /></p>
 </div>
-<p>The option for the user to make his/her own blocks and thus implement procedures was first introduced in the Scratch version 2.0. In the new version of Scratch, the color and the shape of user’s blocks were changed.</p>
-<p>The define block is the first block that will appear when the user asks to introduce a new block. The actions, which should be performed by this newly introduced block, should be added onto the define block. Then a stack block will appear in the block palette with the name assigned to it in the definition. The new user-defined block can further be used like any other block.</p>
-<p>The new block can have input fields. <em>Parameters</em> are inserted into the input field of the definition header. Procedures can have more than one parameter. When the new block is used to call a procedure, in its input fields the user will enter <em>arguments</em>. The arguments replace each appearance of the corresponding parameters in the procedure.</p>
-<p>The creation and the use of introduced blocks are elaborated in lesson 8 of this practicum.</p>
+<p>Mundësia që përdoruesi të bëjë blloqet e tij / saj dhe në këtë mënyrë të zbatojë procedurat u prezantua për herë të parë në versionin Scratch 2.0. Në versionin e ri të Scratch, ngjyra dhe forma e blloqeve të përdoruesit u ndryshuan.</p>
+<p>Blloku përcaktues është blloku i parë që do të shfaqet kur përdoruesi kërkon të prezantojë një bllok të ri. Veprimet, të cilat duhet të kryhen nga ky bllok i prezantuar rishtazi, duhet të shtohen në bllokun e përcaktuar. Pastaj në paletën e bllokut do të shfaqet një pirg me emrin që i është caktuar në përkufizim. Blloku i ri i përcaktuar nga përdoruesi mund të përdoret më tej si çdo bllok tjetër.</p>
+<p>Blloku i ri mund të ketë fushat e hyrjes. <em>Parametrat</em> futen në fushën e hyrjes së titullit të përkufizimit. Procedurat mund të kenë më shumë se një parametër. Kur blloku i ri përdoret për të thirrur një procedurë, në fushat e tij të hyrjes përdoruesi do të fusë <em>argumentet</em>. Argumentet zëvendësojnë çdo paraqitje të parametrave përkatës në procedurë.</p>
+<p>Krijimi dhe përdorimi i blloqeve të prezantuara janë shtjelluar në mësimin 8 të këtij kursi.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="blocks-of-the-pen-extension">
-<h3>Blocks of the Pen Extension<a class="headerlink" href="#blocks-of-the-pen-extension" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-e-pen-extension">
+<h3>Blloqet e Pen Extension<a class="headerlink" href="#blloqet-e-pen-extension" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="pen_extension" src="_images/pen.png" /> Pen</p>
 <p><img alt="fig11_10" src="_images/fig11_10.png" /></p>
 </div>
-<p>In Scratch, each sprite can be assigned a position, direction and orientation of movement and it can leave a mark while moving. In doing so, the size, shape and color of the sprite have no effect on the mark left by the sprite drawing with a pen. The sprite can be invisible, or it can consist of a single dot, but this does not affect its drawing. The sprite’s ability to leave a mark while moving is based on blocks from this group. Images that are created by sprites are stored as a collection of figures, along with their parameters. Images defined in this manner are called <em>vector graphics</em>.</p>
-<p>The blocks in the <em>Pen</em> extension are divided into 5 subgroups. Shade pen command from the previous versions has been taken out, and instead of setting pen color by number alone, color is now defined by hue, saturation, and brightness. All blocks belonging to this group are stack blocks.</p>
-<p>The functions of the subgroups are:</p>
+<p>Në Scratch, secilës sprite mund të caktohet një pozicion, drejtim dhe orientim i lëvizjes dhe mund të lërë një shenjë gjatë lëvizjes. Duke vepruar kështu, madhësia, forma dhe ngjyra e sprite nuk kanë asnjë efekt në shenjën e lënë nga vizatimi i sprite me një stilolaps. Sprite mund të jetë e padukshme, ose mund të përbëhet nga një pikë e vetme, por kjo nuk ndikon në vizatimin e saj. Mundësia e sprite për të lënë një shenjë gjatë lëvizjes bazohet në blloqe të këtij grupi. Imazhet që janë krijuar nga sprites ruhen si një koleksion figurash, së bashku me parametrat e tyre. Imazhet e përcaktuara në këtë mënyrë quhen <em>grafika vektoriale</em>.</p>
+<p>Blloqet në shtrirjen <em>Pen</em> janë të ndara në 5 nëngrupe. Komanda e stilolapsit Shade nga versionet e mëparshme është nxjerrë, dhe në vend që të vendosni ngjyrën e stilolapsit vetëm nga numri, ngjyra tani përcaktohet nga ngjyrimi, ngopja dhe shkëlqimi. Të gjitha blloqet që i përkasin këtij grupi janë blloqe pirgësh.</p>
+<p>Funksionet e nëngrupeve janë:</p>
 <ol class="arabic simple">
-<li><p>deleting everything drawn (removing all pen marks from the stage),</p></li>
-<li><p>stamping the sprite,</p></li>
-<li><p>putting the pen up or down,</p></li>
-<li><p>setting and changing pen attributes,</p></li>
-<li><p>setting and changing pen size (thickness).</p></li>
+<li><p>fshirja e çdo gjëje e tërhequr (heqja e të gjitha shenjave të stilolapsit nga skena),</p></li>
+<li><p>vulosja e sprite,</p></li>
+<li><p>vendosjen e stilolapsit lart ose poshtë,</p></li>
+<li><p>vendosjen dhe ndryshimi i atributeve të stilolapsit,</p></li>
+<li><p>vendosja dhe ndryshimi i madhësisë së stilolapsit (trashësia).</p></li>
 </ol>
-<p>The graphical editor in this version of Scratch is working with the so-called HSB (Hue, Saturation, Brightness) color model. This means that the color is built with 3 components: Hue, Saturation and Brightness. The color shade indicates the color number in the spectral palette, that is, the color itself. It is described in a color circle in which the 0° angle represents the color red (color number is zero), and the 180° angle represents the blue-green color called cyan (color number 100). The saturation refers to the intensity of the color - the higher the saturation, the purer the color. The saturation can be from 0 to 100%, with the 0% intensity representing white and the 100% intensity pure color. The brightness of the color depends on the amount of the color black mixed in with the observed color.</p>
+<p>Redaktori grafik në këtë version të Scratch është duke punuar me të ashtuquajturin model ngjyrash HSB (Hue, Saturation, Brightness). Kjo do të thotë që ngjyra është e ndërtuar me 3 përbërës: Hue, ngopje dhe shkëlqim. Hija e ngjyrave tregon numrin e ngjyrave në paletën spektrale, domethënë vetë ngjyrën. Është përshkruar në një rreth ngjyrash, në të cilin këndi 0 ° përfaqëson ngjyrën e kuqe të ngjyrës (numri i ngjyrës është zero), dhe këndi 180 ° paraqet ngjyrën blu-jeshile të quajtur cyan (numri i ngjyrës 100). Ngopja i referohet intensitetit të ngjyrës - sa më e lartë të jetë ngopja, aq më e pastër është ngjyra. Ngopja mund të jetë nga 0 në 100%, me intensitetin 0% që përfaqëson të bardhë dhe ngjyrën e pastër me intensitet 100%. Shkëlqimi i ngjyrës varet nga sasia e ngjyrës së zezë të përzier me ngjyrën e vrojtuar.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="the-blocks-from-the-text-to-speech-and-the-translate-extensions">
-<h3>The Blocks from the Text to Speech and the Translate Extensions<a class="headerlink" href="#the-blocks-from-the-text-to-speech-and-the-translate-extensions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blloqet-text-to-speech-dhe-translate-extensions">
+<h3>Blloqet Text to Speech dhe Translate Extensions<a class="headerlink" href="#blloqet-text-to-speech-dhe-translate-extensions" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
 <p class="sidebar-title"><img alt="voices_extension" src="_images/voices.png" /> Text to Speech and <img alt="translate_extension" src="_images/translate.png" /> Translate</p>
 <p><img alt="fig11_11" src="_images/fig11_11.png" /></p>
 </div>
-<p><strong>Text to Speech Extension</strong></p>
-<p>This extension can be used only if the computer is connected to the Internet <img alt="requires" src="_images/requires.png" />, because it uses the Amazon Web Services.</p>
-<p>When you choose <img alt="voices_extension" src="_images/voices.png" /> from the group <em>Extensions</em>, three new blocks will appear in the block palette. They allow the sprite to say the text inserted into the input field of the first block, in the language set by the user with the third block from this group. The user can also set the voice, which will actually speak the text: female (soprano or alto) or male (tenor or bass). This is set by another block from this group.</p>
-<p><strong>Extension Translate</strong></p>
-<p>This extension can only be used if the computer is connected to the Internet <img alt="requires" src="_images/requires.png" />, because it uses Google.</p>
-<p>When you choose the <img alt="translate_extension" src="_images/translate.png" /> from <em>Extensions</em>, two new blocks appear in the block palette. They allow the text written in one language to be translated into another language. The block <img alt="language" src="_images/language.png" /> shows which language is set in Scratch. Text written in the current language in the first input field of the block <img alt="translate_to" src="_images/translate_to.png" /> is translated into the language selected from the drop-down list of the second input field. If the translation block is placed in the input field of the block <code class="docutils literal notranslate"><span class="pre">say</span></code> or <code class="docutils literal notranslate"><span class="pre">think</span></code>, the user can see the translation.</p>
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Zgjatja e tekstit në të folu **</p>
+<div class="system-message" id="id3">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 454); <em><a href="#id4">backlink</a></em></p>
+<p>Inline strong start-string without end-string.</p>
+</div>
+<p>Kjo zgjatje mund të përdoret vetëm nëse kompjuteri është i lidhur me Internet <a href="#id14"><span class="problematic" id="id15">|search|</span></a>, sepse ai përdor Shërbimet Ueb në Amazon.</p>
+<p>Kur zgjidhni <a href="#id16"><span class="problematic" id="id17">|voice_extension|</span></a> nga grupi <em>Zgjatjet</em>, tre blloqe të reja do të shfaqen në paletën e bllokut. Ato lejojnë që sprite të thotë tekstin e futur në fushën hyrëse të bllokut të parë, në gjuhën e vendosur nga përdoruesi me bllokun e tretë nga ky grup. Përdoruesi mund të vendosë edhe zërin, i cili në të vërtetë do të flasë tekstin: femër (soprano ose alto) ose mashkull (tenor ose bas). Kjo është vendosur nga një bllok tjetër nga ky grup.</p>
+<p><strong>Përkthim i zgjatjes</strong></p>
+<p>Kjo shtesë mund të përdoret vetëm nëse kompjuteri është i lidhur në Internet | kërkon <a href="#id5"><span class="problematic" id="id6">|</span></a>, sepse përdor Google.</p>
+<div class="system-message" id="id5">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 462); <em><a href="#id6">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
+</div>
+<p>Kur ju zgjidhni <img alt="translate_extension" src="_images/translate.png" /> nga <em>Zgjatjet</em>, dy blloqe të reja shfaqen në paletën e bllokut. Ato lejojnë që teksti i shkruar në një gjuhë të përkthehet në një gjuhë tjetër. Blloku <img alt="language" src="_images/language.png" /> tregon se cila gjuhë është e vendosur në Scratch. Teksti i shkruar në gjuhën e tanishme në fushën e parë hyrëse të bllokut <img alt="translate_to" src="_images/translate_to.png" /> është përkthyer në gjuhën e zgjedhur nga lista rënëse e fushës së dytë të hyrjes. Nëse blloku i përkthimit vendoset në fushën hyrëse të bllokut <code class="docutils literal notranslate"><span class="pre">say</span></code> ose <code class="docutils literal notranslate"><span class="pre">think</span></code>, përdoruesi mund të shohë përkthimin.</p>
 </div>
 </div>
-<div class="section" id="using-the-built-in-graphics-paint-editor">
-<h2>Using the built-in graphics (paint) editor<a class="headerlink" href="#using-the-built-in-graphics-paint-editor" title="Permalink to this headline">¶</a></h2>
-<p>Scratch has a built-in paint editor that you can use to create and modify sprites, costumes, and backdrops. This editor supports two different drawing modes: raster (bitmap) and vector.</p>
+<div class="section" id="perdorimi-i-redaktorit-te-integruar-te-grafikeve-bojes">
+<h2>Përdorimi i redaktorit të integruar të grafikëve (bojës)<a class="headerlink" href="#perdorimi-i-redaktorit-te-integruar-te-grafikeve-bojes" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 467)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Përdorimi</span> <span class="n">i</span> <span class="n">redaktorit</span> <span class="n">të</span> <span class="n">integruar</span> <span class="n">të</span> <span class="n">grafikëve</span> <span class="p">(</span><span class="n">bojës</span><span class="p">)</span>
+<span class="o">--------------------------------------------</span>
+</pre></div>
+</div>
+</div>
+<p>Scratch ka një redaktues të integruar të bojrave që mund të përdorni për të krijuar dhe modifikuar sprites, kostumet dhe sfondet. Kjo edito</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Computers can store images in two ways: raster and vector.</p>
-<p>In <strong>raster graphics</strong> the image is stored as a rectangular grid of pixels - bitmap. The bitmap is technically determined by the width and height of the sprite in pixels and the number of bits needed to store the color of the pixels. For example, if we have 16 colors, 4 bits per pixel are required for storing its color. The raster graphics is dependent on the resolution. Raster images cannot be enlarged without losing the image quality.</p>
-<p>This disadvantage is overcome by the application of the <strong>vector graphics</strong>, which stores an image as a collection of figures together with its data (parameters) that defines how the figure will be drawn and where it will be located. The turtle graphics is an example of the vector graphics.</p>
-<p>The following figure shows an enlarged image of a line drawn in these two ways.</p>
-<a class="reference internal image-reference" href="_images/fig11_12.png"><img alt="_images/fig11_12.png" class="align-center" src="_images/fig11_12.png" style="width: 210px;" /></a>
+<p>Kompjuterët mund të ruajnë imazhet në dy mënyra: raster dhe vektor.</p>
 
     </p></div></div>
-<div class="section" id="user-interface">
-<h3>User Interface<a class="headerlink" href="#user-interface" title="Permalink to this headline">¶</a></h3>
-<p>The following figure shows the layout of the built-in paint editor in vector and raster mode.</p>
+<p>   Në grafikët <strong>raster</strong> imazhi ruhet si një rrjet drejtkëndësh i pikselave - bitmap. Bitmap-i përcaktohet teknikisht nga gjerësia dhe lartësia e sprite në pixel dhe nga numri i bitëve të nevojshëm për të ruajtur ngjyrën e pikselave. Për shembull, nëse kemi 16 ngjyra, nevojiten 4 bit për pixel për ruajtjen e ngjyrës së tij. Grafika e rasterit varet nga rezolucioni. Imazhet në raster nuk mund të zmadhohen pa humbur cilësinë e figurës.</p>
+<p>   Ky disavantazh tejkalohet nga aplikimi i grafikës <strong>vektor</strong>, i cili ruan një imazh si koleksion figurash së bashku me të dhënat e tij (parametrat) që përcaktojnë se si do të vizatohet figura dhe ku do të vendoset. Grafika e breshkës është një shembull i grafikëve vektoriale.</p>
+<p>   Figura e mëposhtme tregon një imazh të zgjeruar të një linje të tërhequr në këto dy mënyra.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig11_12.png"><img alt="_images/fig11_12.png" class="align-center" src="_images/fig11_12.png" style="width: 210px;" /></a>
+</div></blockquote>
+<div class="section" id="nderfaqja-e-perdoruesit">
+<h3>Ndërfaqja e përdoruesit<a class="headerlink" href="#nderfaqja-e-perdoruesit" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 486)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Ndërfaqja</span> <span class="n">e</span> <span class="n">përdoruesit</span>
+<span class="o">~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
+<p>Figura e mëposhtme tregon paraqitjen e redaktorit të ngjyrave të integruara në mënyrën vektoriale dhe rasteri.</p>
 <a class="reference internal image-reference" href="_images/fig11_13.png"><img alt="_images/fig11_13.png" class="align-center" src="_images/fig11_13.png" style="width: 1200px;" /></a>
 <div class="sidebar">
-<p class="sidebar-title">New costumes</p>
+<p class="sidebar-title">Kostume të reja</p>
 <p><img alt="novi" src="_images/fig11_14.png" /></p>
 </div>
-<p><strong>Costume Area</strong></p>
-<p>To the left is the costume area (1) with icons for each costume and the sequence number of the costume. At the bottom of the costume area is a button for creating new costumes. To edit different costumes in the paint editor, simply click on the icon of the desired costume and the corresponding image will appear in the editing area - drawing area or canvas (7).</p>
-<p>You can add a new costume (or backdrop) by hovering over the button <img alt="b_sprite" src="_images/b_sprite.png" /> located at the bottom of this area with the mouse-pointer and choosing one of the options that will appear. You can choose a costume from the costumes library, draw your own, download an image file from your computer, take a picture, or choose a “surprise costume”, which is randomly selected from the costumes library.</p>
-<p>Note. The costumes library contains individual costumes of all sprites found in the sprites library.</p>
+<p><strong>Zona e Kostumit</strong></p>
+<p>Në të majtë është zona e kostumit (1) me ikona për çdo kostum dhe numrin rendor të kostumit. Në fund të zonës së kostumit është një buton për krijimin e kostumeve të reja. Për të modifikuar kostume të ndryshme në redaktorin e pikturës, thjesht klikoni në ikonën e kostumit të dëshiruar dhe imazhi përkatës do të shfaqet në zonën e redaktimit - zona e vizatimit ose kanavacë (7).</p>
+<p>Ju mund të shtoni një kostum të ri (ose sfond) duke rri pezull mbi butonin <img alt="b_sprite" src="_images/b_sprite.png" /> vendosur në fund të kësaj zone me treguesin e miut dhe zgjedhjen e njërës nga opsionet që do të shfaqet. Ju mund të zgjidhni një kostum nga libraria e kostumeve, të vizatoni vetë, të shkarkoni një skedar imazhi nga kompjuteri juaj, të bëni një fotografi ose të zgjidhni një “kostum surprizë”, i cili zgjidhet rastësisht nga libraria e kostumeve.</p>
+<p>Shënim. Libraria e kostumeve përmban kostume individuale të të gjitha sprites që gjenden në bibliotekën e sprites.</p>
 <div class="sidebar">
-<p class="sidebar-title">Changing the mode of operation</p>
+<p class="sidebar-title">Ndryshimi i gjendjes së operatorit</p>
 <p><img alt="vector_bmp" src="_images/vector_bmp.png" /></p>
 <p><img alt="bmp_vector" src="_images/bmp_vector.png" /></p>
 </div>
-<p><strong>Converting the vector mode to raster mode and vice versa</strong></p>
-<p>Below the lower left corner of the drawing area is the button (2) that switches the editor from one mode to another. The tools specific to the particular mode can be found on the left side of the screen next to the drawing area, in our figure the vector mode is marked with (5) and raster (bitmap) mode with (6). The options can be seen above the drawing area (canvas). Some of them are common to both modes of operation, in the figure, these options are framed with red rectangles (3), and some of them apply only to the vector mode, these are framed with grey rectangles (4).</p>
+<p><strong>Konvertimi i mënyrës vektoriale në modalitetin e rasterit dhe anasjelltas</strong></p>
+<p>Nën këndin e poshtëm të majtë të zonës së vizatimit është butoni (2) që ndërron redaktorin nga një modalitet në një tjetër. Mjetet specifike për mënyrën e veçantë mund të gjenden në anën e majtë të ekranit pranë zonës së vizatimit, në figurën tonë mënyra e vektorit shënohet me (5) dhe modalitetin raster (bitmap) me (6). Opsionet mund të shihen sipër zonës së vizatimit (kanavacë). Disa prej tyre janë të zakonshme për të dy mënyrat e funksionimit, në figurë, këto opsione janë përshtatur me drejtkëndësha të kuq (3), dhe disa prej tyre vlejnë vetëm për mënyrën vektoriale, këto janë të përshtatura me drejtkëndësha gri (4).</p>
 </div>
-<div class="section" id="common-options">
-<h3>Common options<a class="headerlink" href="#common-options" title="Permalink to this headline">¶</a></h3>
-<p>These options are located above the drawing area.</p>
+<div class="section" id="opsione-te-zakonshme">
+<h3>Opsione të zakonshme<a class="headerlink" href="#opsione-te-zakonshme" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 520)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Opsione</span> <span class="n">të</span> <span class="n">zakonshme</span>
+<span class="o">~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
+<p>Këto opsione janë të vendosura mbi zonën e vizatimit.</p>
 <div class="sidebar">
-<p class="sidebar-title">Changing the color</p>
+<p class="sidebar-title">Ndryshimi i ngjyrës</p>
 <p><img alt="promena_boje" src="_images/fig11_15.png" /></p>
 </div>
-<p><img alt="fill" src="_images/fill.png" /> <strong>Changing the Color</strong></p>
-<p>Clicking on the input field of the block that is used to set the color will open a drop-down menu containing sliders: color, saturation, and brightness and below them an eyedropper tool (pipette) for sampling color. You can set the color you want by moving the slider or clicking the eyedropper tool.</p>
-<p>Moving the <em>color</em> slider changes the hue of the color (for example, from red to blue). This tool is the most commonly used because it has the largest difference between colors.
-Moving the slider <em>saturation</em> changes the intensity of the color: the saturation 100 is the selected color, 50 - is a lighter color, and 0 - is completely white.
-Moving the slider <em>brightness</em> changes how dark the color is: the brightness 0 is completely black, while 100 is the selected color.</p>
-<p>When you click on the eyedropper tool, a magnifying glass appears with a circle in the center.
-To select the desired color, you need to position the center of the magnifying glass above the part of the drawing area on which that color is located and click.</p>
-<p>There are four options above the three sliders. These enable different ways of filling in an area with color. An area can be filled in evenly with a solid color, or as a gradient, with different shades of a color. If you click one of the options other than the solid color option, two selected colors will appear: <img alt="swap" src="_images/swap.png" />. By clicking on the first or the second color you can set them. Clicking <em>swap</em> between the two colors changes their order. The fill options are: solid color, vertical gradient, horizontal gradient or circle gradient.</p>
-<p><img alt="size" src="_images/size.png" /> <strong>Changing Pen Size</strong></p>
-<p>There is an input field to select the pen size (thickness). You can type in the size or use the arrows on the side to change it. The higher the number, the thicker the line.</p>
-<p><img alt="name" src="_images/name.png" /> <strong>Naming Costumes</strong></p>
-<p>The name of the costume is important for the organization and sometimes also for the programming of the project. Since each costume is assigned its own sequence number, it is not recommended to name the costumes by only using numbers without any other characters. To name a costume, you should click on the text bar at the upper left corner of the paint editor and enter the new name.</p>
-<p><img alt="copy" src="_images/copy.png" /> <strong>Copying and</strong> <img alt="paste" src="_images/paste.png" /> <strong>Pasting</strong></p>
-<p>The second row of options includes copy and paste buttons. The copy option copies the selected area, while the paste puts it somewhere else. You can also use the keyboard shortcuts: Ctrl+C to copy and Ctrl+V to paste. First, select the rectangular area you want to copy and then drag it to where you want to place the copy.</p>
-<p><img alt="redo" src="_images/redo.png" /> <strong>Undo and Redo</strong></p>
-<p>On the right, next to the costume name, there are two buttons called undo and redo. These buttons allow you to undo the last action or repeat the action you previously undid. The redo button cannot be used unless the undo button has been used. If you exit the paint editor, everything you have done in it will become permanent and it can only be undone manually. The keyboard shortcut for the undo option is Ctrl+Z.</p>
-<p><img alt="flip_h" src="_images/flip_h.png" /> <strong>Horizontal</strong>  <img alt="flip_v" src="_images/flip_v.png" /> <strong>and Vertical Flipping</strong></p>
-<p>When you select an object, there is the option to flip it horizontally or vertically. In the second line of options, there are two buttons with two arrows each pointing to a dotted line. The one on the left flips the selected object horizontally, and the one on the right vertically.</p>
+<p><img alt="fill" src="../_images/icons/fill.png" /> <strong>Ndryshimi i ngjyrës</strong></p>
+<p>Duke klikuar në fushën hyrëse të bllokut që përdoret për të vendosur ngjyrën, do të hapni një menyë drop-down që përmban rrëshqitës: ngjyrën, ngopjen dhe shkëlqimin dhe nën to një mjet eyedropper (pipetë) për marrjen e mostrës së ngjyrës. Ju mund të vendosni ngjyrën që dëshironi duke lëvizur rrëshqitësin ose duke klikuar mjetin e syrit.</p>
+<p>Lëvizja e shiritit <em>color</em> ndryshon ngjyrën e ngjyrës (për shembull, nga e kuqja në blu). Ky mjet është më shpesh i përdorur sepse ka ndryshimin më të madh midis ngjyrave.
+Zhvendosja e ngopjes <em>e saturation</em> ndryshon intensitetin e ngjyrës: ngopja 100 është ngjyra e zgjedhur, 50 - është një ngjyrë më e lehtë, dhe 0 - është plotësisht e bardhë.
+Lëvizja e shkëlqimit <em>brightness</em> ndryshon sa e errët është ngjyra: shkëlqimi 0 është plotësisht i zi, ndërsa 100 është ngjyra e zgjedhur.</p>
+<p>Kur klikoni në mjetin e syrit, shfaqet një xham zmadhues me një rreth në qendër.
+Për të zgjedhur ngjyrën e dëshiruar, duhet të vendosni qendrën e xhamit zmadhues mbi pjesën e zonës së vizatimit në të cilën ndodhet ajo ngjyrë dhe të klikoni.</p>
+<p>Ekzistojnë katër opsione sipër tre rrëshqitësve. Këto mundësojnë mënyra të ndryshme të mbushjes së një zone me ngjyra. Një zonë mund të plotësohet në mënyrë të barabartë me një ngjyrë të fortë, ose si një gradient, me hije të ndryshme të një ngjyre. Nëse klikoni në njërën prej opsioneve përveç opsionit të ngjyrave të ngurta, do të shfaqen dy ngjyra të zgjedhura: <a href="#id18"><span class="problematic" id="id19">|change|</span></a>. Duke klikuar në ngjyrën e parë ose të dytë ju mund t’i vendosni ato. Klikimi i <em>swap</em> midis dy ngjyrave ndryshon rendin e tyre. Opsionet e mbushjes janë: ngjyra e ngurtë, gradient vertikal, gradient horizontal ose gradient rrethi.</p>
+<p><img alt="size" src="_images/size.png" /> <strong>Ndryshimi i madhësisë së stilolapsit</strong></p>
+<p>Ekziston një fushë hyrëse për të zgjedhur madhësinë e stilolapsit (trashësinë). Ju mund të shkruani madhësinë ose të përdorni shigjetat në anën për ta ndryshuar atë. Sa më i lartë numri, aq më i trashë është linja.</p>
+<p><img alt="name" src="_images/name.png" /> <strong>Emërtimi i Kostumeve</strong></p>
+<p>Emri i kostumit është i rëndësishëm për organizatën dhe nganjëherë edhe për programimin e projektit. Meqenëse çdo kostum është caktuar numri i sekuencës së tij, nuk rekomandohet të vini emrat e kostumeve vetëm duke përdorur numra pa ndonjë karaktere të tjera. Për të emëruar një kostum, duhet të klikoni në shiritin e tekstit në këndin e sipërm të majtë të redaktorit të bojës dhe të shkruani emrin e ri.</p>
+<p><img alt="copy" src="_images/copy.png" /> <strong>Kopjimi dhe ngjtija</strong> <img alt="paste" src="_images/paste.png" /></p>
+<p>Rreshti i dytë i opsioneve përfshin butonat kopjues dhe ngjitës. Opsioni i kopjimit kopjon zonën e zgjedhur, ndërsa paste e vendos atë diku tjetër. Ju gjithashtu mund të përdorni shkurtoret e tastierës: Ctrl + C për të kopjuar dhe Ctrl + V për të ngjitur. Së pari, zgjidhni zonën drejtkëndëshe që dëshironi të kopjoni dhe pastaj tërhiqeni atë atje ku dëshironi të vendosni kopjen.</p>
+<p><img alt="redo" src="../_images/icons/redo.png" /> <strong>Zhbëj</strong></p>
+<p>Në të djathtë, pranë emrit të kostumit, ka dy butona që quhen prishje dhe ribërë. Këto butona ju lejojnë të prishni veprimin e fundit ose të përsërisni veprimin që më parë i keni zhbërur. Butoni i ribërë nuk mund të përdoret nëse nuk është përdorur butoni i prishjes. Nëse dilni nga redaktori i bojës, gjithçka që keni bërë në të do të bëhet e përhershme dhe ajo vetëm mund të zhvishet me dorë. Shkurtorja e tastierës për opsionin e prishjes është Ctrl + Z.</p>
+<p><img alt="flip_h" src="_images/flip_h.png" /> <strong>Fluturimi horizontal</strong> <img alt="flip_v" src="_images/flip_v.png" /> <strong>Fluturimi vertikal</strong></p>
+<p>Kur zgjidhni një objekt, ekziston mundësia që ta rrokullisni atë horizontalisht ose vertikalisht. Në rreshtin e dytë të opsioneve, ka dy butona me dy shigjeta secila duke treguar një vijë pikash. Një në të majtë rrotullon objektin e zgjedhur horizontalisht, dhe atë në të djathtë vertikalisht.</p>
 </div>
-<div class="section" id="vector-editor-options">
-<h3>Vector Editor Options<a class="headerlink" href="#vector-editor-options" title="Permalink to this headline">¶</a></h3>
-<p>These options are available only when the graphics editor is in vector mode and do not appear when it is in raster mode.</p>
-<p><strong>Precise Object Movement</strong></p>
-<p>When an object is selected in the vector editor, the arrow keys can be used to move it precisely one pixel. In raster editor, the user can also use the arrow keys to move selected areas. This option can be useful if you want to make a precise drawing or align different objects.</p>
+<div class="section" id="opsionet-e-redaktorit-te-vektorit">
+<h3>Opsionet e redaktorit të vektorit<a class="headerlink" href="#opsionet-e-redaktorit-te-vektorit" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 565)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Opsionet</span> <span class="n">e</span> <span class="n">redaktorit</span> <span class="n">të</span> <span class="n">vektorit</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
+<p>Këto opsione janë të disponueshme vetëm kur redaktori grafik është në modalitetin e vektorit dhe nuk shfaqet kur është në modalitetin e rasterit.</p>
+<p><strong>Lëvizja e saktë e objektit</strong></p>
+<p>Kur një objekt zgjidhet në redaktorin e vektorit, çelësat e shigjetave mund të përdoren për ta lëvizur atë saktësisht një piksel. Në redaktorin e rasterit, përdoruesi mund të përdorë gjithashtu tastet me shigjeta për të lëvizur zonat e zgjedhura. Ky opsion mund të jetë i dobishëm nëse doni të bëni një vizatim të saktë ose të rreshtoni objektet e ndryshme.</p>
 <div class="sidebar">
-<p class="sidebar-title">Changing the Outline</p>
+<p class="sidebar-title">Ndryshimi konturit</p>
 <p><img alt="promena_konture" src="_images/fig11_16.png" /></p>
 </div>
-<p><img alt="outline" src="_images/outline.png" /> <strong>Outlines</strong></p>
-<p>On the right of the option used for setting the color, there is a drop-down menu that allows the user to change outlines of objects. This drop-down menu has three sliders, but unlike the color-setting menu, here the user does not have the option to mix two different colors. On the right, next to that drop-down menu, is an input field where the user can select the thickness of the outline. You can type in a number or use the arrows to change it.</p>
-<p><strong>Layering the Image</strong></p>
-<p>We can use the following analogy to explain how sprites are presented on stage. Imagine that each sprite is drawn on a separate sheet of transparent foil and that all sheets are stacked over the one on which the background is painted. In Scratch, these transparent sheets of foil correspond to <strong>layers</strong>. Every time a sprite moves, it will cover the images drawn on the layers beneath.</p>
-<p>At the upper right part of the paint editor, there are four buttons, which allow you to move objects through different layers:</p>
-<table class="hlist"><tr><td><ul class="simple">
-<li><p><img alt="v_forward" src="_images/v_forward.png" /> moves the object one layer forward (in front of the current one),</p></li>
-<li><p><img alt="v_front" src="_images/v_front.png" /> moves the object all the way in front,</p></li>
-<li><p><img alt="v_backward" src="_images/v_backward.png" /> moves the object one layer backward (behind the current one),</p></li>
-<li><p><img alt="v_back" src="_images/v_back.png" /> moves the object all the way back.</p></li>
-</ul>
-</td></tr></table>
-<p><img alt="v_group" src="_images/v_group.png" /> <strong>Grouping</strong> <img alt="v_ungroup" src="_images/v_ungroup.png" /> <strong>and Ungrouping</strong></p>
-<p>This option is used to group multiple objects into one whole. When there are many objects that you need to move at once, it can be useful to group them. This way, they can all be moved or deleted at the same time. To select objects, click and drag the mouse-pointer over the desired objects (or hold down the Shift key on the keyboard and click on each object), and then click the grouping option. From this point on, all objects will be treated as a single object.</p>
-<p>The ungrouping option does the opposite - the selected group can be broken down into smaller parts. This button will become visible once you have selected a group of objects and it will allow you to ungroup them.</p>
-<p><img alt="v_curved" src="_images/v_curved.png" /> <strong>Curved</strong> <img alt="v_pointed" src="_images/v_pointed.png" /> <strong>or Pointed</strong></p>
-<p>When using the reshape tool, there are two options to the right of the outlines, which allow you to make the splines either curved, like an ellipse, or pointed, like a rectangle. This is useful when creating shapes with both curved and pointed edges. If more than one point is selected (hold the shift key and click on more than one), the specified change will be applied to all selected points.</p>
+<p><img alt="outline" src="../_images/icons/outline.png" /> <strong>Konturi</strong></p>
+<p>Në të djathtë të opsionit të përdorur për vendosjen e ngjyrës, ekziston një menu drop-down që lejon përdoruesin të ndryshojë skicat e objekteve. Kjo menu që bie poshtë ka tre rrëshqitëse, por ndryshe nga menyja për përcaktimin e ngjyrave, këtu përdoruesi nuk ka mundësinë të përziejë dy ngjyra të ndryshme. Në të djathtë, pranë asaj menyje rënëse, është një fushë hyrëse ku përdoruesi mund të zgjedhë trashësinë e skicës. Mund të shkruani një numër ose të përdorni shigjetat për ta ndryshuar atë.</p>
+<p><strong>Shtrirja e figurës</strong></p>
+<p>Ne mund të përdorim analogjinë e mëposhtme për të shpjeguar sesi sprites prezantohen në skenë. Imagjinoni që secila sprite është vizatuar në një fletë të veçantë të letrës së tejdukshme dhe që të gjitha fletët të grumbullohen mbi atë në të cilën është pikturuar sfondi. Në Scratch, këto fletë transparente korrespondojnë me <strong>shtresat</strong>. Sa herë që lëviz një sprite, do të mbulojë imazhet e vizatuara në shtresat poshtë tij.</p>
+<p>Në pjesën e sipërme të djathtë të redaktorit të pikturave, ka katër butona, të cilat ju lejojnë të lëvizni objektet nëpër shtresa të ndryshme:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 589)</p>
+<p>.. hlist content is not a list</p>
 </div>
-<div class="section" id="working-in-the-raster-mode">
-<h3>Working in the Raster Mode<a class="headerlink" href="#working-in-the-raster-mode" title="Permalink to this headline">¶</a></h3>
-<div class="sidebar">
-<p class="sidebar-title">Raster Tools</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 593)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>     * <img alt="v_front" src="_images/v_front.png" /> lëviz objektin gjatë gjithë rrugës përpara,
+     * <img alt="v_backward" src="_images/v_backward.png" /> zhvendos objektin një shtresë prapa (pas asaj aktuale),
+     * <img alt="v_back" src="_images/v_back.png" /> lëviz objektin gjatë gjithë rrugës prapa.</p>
+<p><img alt="v_group" src="_images/v_group.png" /> <strong>Grupimi</strong> <img alt="v_ungroup" src="_images/v_ungroup.png" /> <strong>Çgrupimi</strong></p>
+<p>Ky opsion përdoret për të grupuar shumë objekte në një tërësi. Kur ka shumë objekte që ju duhet të lëvizni menjëherë, mund të jetë e dobishme t’i gruponi ato. Në këtë mënyrë, të gjithë mund të zhvendosen ose fshihen në të njëjtën kohë. Për të zgjedhur objektet, klikoni dhe tërhiqni treguesin e miut mbi objektet e dëshiruara (ose mbani shtypur butonin Shift në tastierë dhe klikoni në secilin objekt), dhe pastaj klikoni në opsionin e grupimit. Nga kjo pikë e tutje, të gjitha objektet do të trajtohen si një objekt i vetëm.</p>
+<p>Opsioni ungrouping bën të kundërtën - grupi i zgjedhur mund të ndahet në pjesë më të vogla. Ky buton do të bëhet i dukshëm pasi të keni zgjedhur një grup objektesh dhe do t’ju lejojë të mos grumbulloni ato.</p>
+<p><img alt="v_curved" src="_images/v_curved.png" /> <strong>i lakuar</strong> <a href="#id20"><span class="problematic" id="id21">|v_point|</span></a> <strong>shënim</strong></p>
+<p>Kur përdorni mjetin e riformësimit, ekzistojnë dy mundësi në të djathtë të skicave, të cilat ju lejojnë të bëni skajet ose të lakuara, si një elips ose të theksuar, si një drejtkëndësh. Kjo është e dobishme kur krijoni forma me të dy skajet e lakuara dhe të theksuara. Nëse zgjidhen më shumë se një pikë (mbajeni tastin shift dhe klikoni në më shumë se një), ndryshimi i specifikuar do të zbatohet në të gjitha pikat e zgjedhura.</p>
+</div>
+<div class="section" id="duke-punuar-ne-moden-raster">
+<h3>Duke punuar në modën Raster<a class="headerlink" href="#duke-punuar-ne-moden-raster" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 610)</p>
+<p>Content block expected for the “sidebar” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">sidebar</span><span class="p">::</span> <span class="n">Veglat</span> <span class="n">Raster</span>
+</pre></div>
+</div>
+</div>
 <p><img alt="rasterski" src="_images/fig11_17.png" /></p>
-</div>
-<p><img alt="r_brush" src="_images/r_brush.png" /> <strong>Free-hand Drawing</strong></p>
-<p>You can set the color and the size (thickness) of the paintbrush with the appropriate options. Use the undo and redo options if you make a mistake. You can also use the eraser for correcting mistakes.</p>
-<p><img alt="r_line" src="_images/r_line.png" /> <strong>Drawing a Straight line</strong></p>
-<p>You can change the line thickness with the appropriate option. Press Shift and drag to draw horizontal or vertical lines.</p>
-<p><img alt="r_circle" src="_images/r_circle.png" /> <strong>Drawing an Ellipse</strong></p>
-<p>You can draw a hollow (outlined) or filled (with color) ellipse. Press Shift and drag to draw a circle. With the appropriate options, you can select the fill style and change the thickness of the outline.</p>
-<p><img alt="r_rectan" src="_images/r_rectan.png" /> <strong>Drawing a Rectangle</strong></p>
-<p>You can draw a hollow (outlined) or filled (with color) rectangle. Press Shift and drag to draw a rectangle. With the appropriate options, you can select the fill style and change the thickness of the outline.</p>
+<p><img alt="r_brush" src="_images/r_brush.png" /> <strong>Vizatim i lirë</strong></p>
+<p>Ju mund të vendosni ngjyrën dhe madhësinë (trashësinë) e furçës së bojës me opsionet e duhura. Përdorni opsionet e prishjes dhe ribërë nëse bëni një gabim. Ju gjithashtu mund të përdorni gomë për korrigjimin e gabimeve.</p>
+<p><img alt="r_line" src="_images/r_line.png" /> <strong>Vizato një vijë të drejë</strong></p>
+<p>Ju mund të ndryshoni trashësinë e linjës me opsionin e duhur. Shtypni Shift dhe tërhiqni për të vizatuar linja horizontale ose vertikale.</p>
+<p><img alt="r_circle" src="_images/r_circle.png" /> <strong>Vizato një Ellips</strong></p>
+<p>Mund të vizatoni një elips të thjeshtë ose të mbushur (me ngjyra). Shtypni Shift dhe tërhiqni për të vizatuar një rreth. Me opsionet e duhura, ju mund të zgjidhni stilin e mbushjes dhe të ndryshoni trashësinë e skicës.</p>
+<p><img alt="r_rectan" src="_images/r_rectan.png" /> <strong>Vizato një drejtkëndësh</strong></p>
+<p>Ju mund të vizatoni një drejtkëndësh të thjeshtë ose të mbushur (me ngjyra). Shtypni Shift dhe tërhiqni për të vizatuar një drejtkëndësh. Me opsionet e duhura, ju mund të zgjidhni stilin e mbushjes dhe të ndryshoni trashësinë e skicës</p>
 <div class="sidebar">
-<p class="sidebar-title">Text</p>
+<p class="sidebar-title">Tekst</p>
 <p><img alt="tekst" src="_images/fig11_18.png" /></p>
 </div>
-<p><img alt="r_text" src="_images/r_text.png" /> <strong>Writing Text</strong></p>
-<p>Click anywhere on the drawing area (canvas) and when the cursor appears, type the desired text. Then click outside of the text area. The select tool automatically selects the text, so you can change its size and orientation. You can use the measurement box that appears on the outer edge of the selection box (circles and arrows around the text) to resize and change the orientation of the text.</p>
-<p><img alt="r_fill" src="_images/r_fill.png" />  <strong>Filling closed areas with color</strong></p>
-<p>You can fill the area evenly with one color or as a gradient, with shades of colors using the appropriate fill option.</p>
-<p><img alt="r_eraser" src="_images/r_eraser.png" /> <strong>Free-hand Eraser Tool</strong></p>
-<p>You can set the size of the eraser by using the appropriate option. The erased areas become transparent.</p>
-<p><img alt="r_select" src="_images/r_select.png" /> <strong>Selecting a Rectangle-shaped Area</strong></p>
-<p>The selected area can be:</p>
+<p><img alt="r_text" src="_images/r_text.png" /> <strong>Teksti i të shkruarit</strong></p>
+<p>Klikoni kudo në zonën e vizatimit (kanavacë) dhe kur kursori shfaqet, shtypni tekstin e dëshiruar. Pastaj klikoni jashtë zonës së tekstit. Mjeti i zgjedhur automatikisht zgjedh tekstin, kështu që ju mund të ndryshoni madhësinë dhe orientimin e tij. Ju mund të përdorni kutinë e matjes që shfaqet në skajin e jashtëm të kutisë së zgjedhjes (rrathë dhe shigjeta rreth tekstit) për të ndryshuar madhësinë dhe për të ndryshuar orientimin e tekstit.</p>
+<p><img alt="r_fill" src="_images/r_fill.png" /> <strong>Mbushja e zonave të mbyllura me ngjyra</strong></p>
+<p>Ju mund ta mbushni zonën në mënyrë të barabartë me një ngjyrë ose si një gradient, me hije ngjyrash duke përdorur opsionin e duhur të mbushjes.</p>
+<p><img alt="r_eraser" src="_images/r_eraser.png" /> <strong>Vegël për fshirje jo manualisht</strong></p>
+<p>Ju mund të vendosni madhësinë e gomës duke përdorur opsionin e duhur. Zonat e fshira bëhen transparente.</p>
+<div class="line-block">
+<div class="line">R_select | <strong>Zgjedhja e një zone në formë drejtkëndëshi</strong></div>
+</div>
+<p>Zona e zgjedhur mund të jetë:</p>
 <ol class="arabic simple">
-<li><p>dragged to a new location,</p></li>
-<li><p>made larger, made smaller, or rotated,</p></li>
-<li><p>erased by pressing the Del key on the keyboard.</p></li>
+<li><p>tërhequr në një lokacion të ri,</p></li>
+<li><p>të bëra më të mëdha, të bëra më të vogla ose të rrotulluara,</p></li>
+<li><p>fshihet duke shtypur butonin Del në tastierë.</p></li>
 </ol>
 </div>
-<div class="section" id="working-in-the-vector-mode">
-<h3>Working in the Vector Mode<a class="headerlink" href="#working-in-the-vector-mode" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="punimi-ne-menyren-vektoriale">
+<h3>Punimi në mënyrën vektoriale<a class="headerlink" href="#punimi-ne-menyren-vektoriale" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 661)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Punimi</span> <span class="n">në</span> <span class="n">mënyrën</span> <span class="n">vektoriale</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 <div class="sidebar">
-<p class="sidebar-title">Vector Tools</p>
+<p class="sidebar-title">Veglat e vektorit</p>
 <p><img alt="vektorski" src="_images/fig11_19.png" /></p>
 </div>
 <p><img alt="v_select" src="_images/v_select.png" /> <strong>Selecting an Object</strong></p>
 <p>This tool is used for moving, erasing, resizing and rotating objects. When you click on an object, a frame will appear around it <img alt="izbor_objekta" src="_images/fig11_20.png" />, which indicates that the object is selected.</p>
-<p>If you want to select multiple objects at once, click the left mouse button and drag the mouse over the desired object or hold the Shift key and click on each object you wish to select at the same time.
-When you move the cursor near the center of the object, it changes its shape and becomes a hand, which means that you can move the object around on the canvas. The object can also be moved with the keyboard arrow keys.
-The selected object can be deleted by pressing the Del key. Objects can be resized with the measurement boxes that appear on the outer edge of the selection box.
-To rotate an object, grasp and drag the rotation arrows.</p>
-<p><img alt="v_reshape" src="_images/v_reshape.png" /> <strong>Reshaping an Object</strong></p>
-<p>Click on the object you wish to reshape and a set of control points will appear on the perimeter of the object, as shown in the figure (1). Click on one of the control points and drag (2). By clicking on the outline of the object you can create other control points (3).You can delete a control point by bringing the cursor to it (4). The selected point will change color and then you should click on it (5). The buttons <img alt="v_curved" src="_images/v_curved.png" /> and <img alt="v_pointed" src="_images/v_pointed.png" />, which appear in the options, allow you to curve or point the outline of the object.</p>
+<p>Nëse dëshironi të zgjidhni shumë objekte menjëherë, klikoni në butonin e majtë të miut dhe tërhiqni miun mbi objektin e dëshiruar ose mbani tastin Shift dhe klikoni në secilin objekt që dëshironi të zgjidhni në të njëjtën kohë.
+Kur zhvendosni kursorin afër qendrës së objektit, ai ndryshon formën e tij dhe bëhet një dorë, që do të thotë se ju mund ta lëvizni objektin në telajo. Objekti gjithashtu mund të zhvendoset me tastet e shigjetës së tastierës.
+Objekti i zgjedhur mund të fshihet duke shtypur butonin Del. Objektet mund të ndryshohen në madhësi me kutitë e matjes që shfaqen në skajin e jashtëm të kutisë së zgjedhjes.
+Për të rrotulluar një objekt, kapni dhe tërhiqni shigjetat e rrotullimit.</p>
+<p><img alt="v_reshape" src="_images/v_reshape.png" /> <strong>Ristrukturimi i një objekti</strong></p>
+<p>Klikoni në objektin që dëshironi të riorganizoni dhe një grup pikash kontrolli do të shfaqen në perimetrin e objektit, siç tregohet në figurën (1). Klikoni në njërën nga pikat e kontrollit dhe tërhiqni (2). Duke klikuar në skicën e objektit mund të krijoni pika të tjera kontrolli (3). Ju mund të fshini një pikë kontrolli duke sjellë kursorin në të (4). Pika e zgjedhur do të ndryshojë ngjyrën dhe pastaj duhet të klikoni mbi të (5). Butonat <img alt="v_curved" src="_images/v_curved.png" /> dhe <a href="#id22"><span class="problematic" id="id23">|v_point|</span></a>, të cilat paraqiten në opsione, ju lejojnë të lakoni ose drejtoni skicën e objektit.</p>
 <a class="reference internal image-reference" href="_images/fig11_21.png"><img alt="_images/fig11_21.png" class="align-center" src="_images/fig11_21.png" style="width: 680px;" /></a>
-<p><img alt="v_brush" src="_images/v_brush.png" /> <strong>Free-hand Drawing</strong></p>
-<p>This tool is similar to the corresponding tool in raster mode. Hold the mouse cursor and move it to draw a curved line. Instead of pixels, the spline here is defined by a set of control points. You can change the appearance of the line with the tool <em>Reshape</em>.</p>
-<p><img alt="v_eraser" src="_images/v_eraser.png" /> <strong>Eraser</strong></p>
-<p>This tool is similar to the corresponding tool in raster mode.</p>
-<p><img alt="v_fill" src="_images/v_fill.png" /> <strong>Filling closed areas with color or coloring the outline of an object</strong></p>
-<p>The paint bucket tool in vector mode works differently than in raster mode, where the tool fills in any selected closed area. Vector mode bucket only works with vector objects. After selecting this tool, you can change the color or the outline color of an object by clicking on it.</p>
-<p><img alt="v_text" src="_images/v_text.png" /> <strong>Writing Text</strong></p>
-<p>Click on the tool and then anywhere on the canvas; when a cursor appears, begin typing the desired text. Once you have finished, click anywhere outside of the text area. The tool <em>Select</em> will automatically select the text, so you can change its size and orientation. Unlike the text in the raster mode, the text created in vector mode can be edited at any time, even after exiting the paint editor. To be able to modify its contents, you only need to select the text.</p>
-<p><img alt="v_line" src="_images/v_line.png" /> <strong>Drawing a Straight Line</strong></p>
-<p>The line is defined by two control points at both ends. To draw a line, click and hold the mouse where you want the line to start, and drag to draw the line to the end point. To draw a horizontal or vertical line, hold down the Shift key while dragging the mouse.</p>
-<p>To draw a curved line, you must first draw a straight line, then select the tool <em>Reshape</em>, press Shift and click anywhere on the line to create a new point and then drag the new control point. This is a way to form a curved line.</p>
-<p><img alt="v_circle" src="_images/v_circle.png" /> <strong>Drawing an Ellipse</strong></p>
-<p>Use this tool if you want to draw an ellipse in the color chosen for drawing. Click to highlight the top left corner, then drag (hold the shift key while drawing with the ellipse tool) until you get the size you want. You can change the fill style (filled or blank) and line thickness by using the buttons in the options area. The created ellipse has 4 evenly spaced control points.</p>
-<p><img alt="v_rectan" src="_images/v_rectan.png" /> <strong>Drawing a Rectangle</strong></p>
-<p>Use this tool if you want to draw a rectangle in the color chosen for drawing. Click to highlight the top left corner, then drag (hold the shift key while drawing with the rectangle tool) until you get the size you want. You can change the fill style (filled or blank) and line thickness by using the buttons in the options area. The created rectangle has 4 control points, one on each end.</p>
+<p><img alt="v_brush" src="_images/v_brush.png" /> <strong>Vizatimi pa duar</strong></p>
+<p>Ky mjet është i ngjashëm me mjetin përkatës në modalitetin e rasterit. Mbajeni kursorin e miut dhe lëvizeni për të vizatuar një vijë të lakuar. Në vend të pikselave, linja këtu përcaktohet nga një grup pikash kontrolli. Mund të ndryshoni pamjen e rreshtit me mjetin <em>Rishape</em>.</p>
+<p><img alt="v_eraser" src="_images/v_eraser.png" /> ** Eraser**</p>
+<p>Ky mjet është i ngjashëm me mjetin përkatës në modalitetin e rasterit.</p>
+<p><img alt="v_fill" src="_images/v_fill.png" /> <a href="#id7"><span class="problematic" id="id8">**</span></a>Mbushja e zonave të mbyllura me ngjyra ose ngjyrosja e skicës së një objekt **</p>
+<div class="system-message" id="id7">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 696); <em><a href="#id8">backlink</a></em></p>
+<p>Inline strong start-string without end-string.</p>
+</div>
+<p>Mjeti i kovës së bojës në modalitetin vektor funksionon ndryshe sesa në mënyrën e rasterit, ku mjet plotëson çdo zonë të zgjedhur të mbyllur. Kova e mënyrës vektoriale funksionon vetëm me objekte vektoriale. Pas zgjedhjes së këtij mjeti, mund të ndryshoni ngjyrën ose ngjyrën skicë të një objekti duke klikuar mbi të.</p>
+<p><img alt="v_text" src="_images/v_text.png" /> <strong>Teksti i të shkruarit</strong></p>
+<p>Klikoni në mjet dhe pastaj kudo në kanavacë; kur shfaqet kursori, filloni të shtypni tekstin e dëshiruar. Pasi të keni mbaruar, klikoni kudo tjetër jashtë zonës së tekstit. Mjeti <em>Choose</em> do të zgjedhë automatikisht tekstin, në mënyrë që të ndryshoni madhësinë dhe orientimin e tij. Për dallim nga teksti në modalitetin e rasterit, teksti i krijuar në modalitetin vektor mund të redaktohet në çdo kohë, edhe pas daljes nga redaktori i pikturës. Për të qenë në gjendje të modifikoni përmbajtjen e tij, ju vetëm duhet të zgjidhni tekstin.</p>
+<p><img alt="v_line" src="_images/v_line.png" /> <strong>Vizatimi i një linje të drejtë</strong></p>
+<p>Linja përcaktohet nga dy pika kontrolli në të dy skajet. Për të vizatuar një rresht, klikoni dhe mbani miun ku dëshironi të fillojë rreshtin dhe tërhiqni për të tërhequr vijën në pikën e fundit. Për të vizatuar një vijë horizontale ose vertikale, mbani shtypur butonin Shift ndërsa tërhiqni miun.</p>
+<p>Për të vizatuar një vijë të lakuar, së pari duhet të vizatoni një vijë të drejtë, pastaj zgjidhni mjetin <em>Rishape</em>, shtypni Shift dhe klikoni kudo në vijë për të krijuar një pikë të re dhe më pas tërhiqni pikën e re të kontrollit. Kjo është një mënyrë për të formuar një vijë të lakuar.</p>
+<p><img alt="v_circle" src="_images/v_circle.png" /> <strong>Vizatimi i një Ellipse</strong></p>
+<p>Përdorni këtë mjet nëse doni të vizatoni një elips në ngjyrën e zgjedhur për vizatim. Klikoni për të nënvizuar këndin e sipërm të majtë, pastaj tërhiqni (mbani tastin shift ndërsa vizatoni me mjetin e elipsit) derisa të merrni madhësinë që dëshironi. Ju mund të ndryshoni stilin e mbushjes (të mbushur ose bosh) dhe trashësinë e linjës duke përdorur butonat në zonën e opsioneve. Elipsi i krijuar ka 4 pika kontrolli në mënyrë të barabartë.</p>
+<p><img alt="v_rectan" src="_images/v_rectan.png" /> <strong>Vizatimi i një drejtkëndëshi</strong></p>
+<p>Përdorni këtë mjet nëse doni të vizatoni një drejtkëndësh në ngjyrën e zgjedhur për vizatim. Klikoni për të nënvizuar këndin e sipërm të majtë, pastaj tërhiqni (mbani tastin shift ndërsa vizatoni me mjetin drejtkëndësh) derisa të merrni madhësinë që dëshironi. Ju mund të ndryshoni stilin e mbushjes (të mbushur ose bosh) dhe trashësinë e linjës duke përdorur butonat në zonën e opsioneve. Drejtkëndëshi i krijuar ka 4 pika kontrolli, një në secilin skaj.</p>
 </div>
 </div>
-<div class="section" id="using-the-built-in-sound-editor">
-<h2>Using the Built-in Sound Editor<a class="headerlink" href="#using-the-built-in-sound-editor" title="Permalink to this headline">¶</a></h2>
-<p>The sound editor allows users to edit and remix the sounds. In music, the term <em>remix</em> is used to refer to a new, modified version of a music composition.</p>
-<div class="section" id="the-user-interface">
-<h3>The User Interface<a class="headerlink" href="#the-user-interface" title="Permalink to this headline">¶</a></h3>
-<p>The sound editor window is divided into two areas: the sound list (1) and the editing area (2).</p>
+<div class="section" id="duke-perdorur-redaktorin-e-tingullit-te-ndertuar">
+<h2>Duke përdorur Redaktorin e Tingullit të Ndërtuar<a class="headerlink" href="#duke-perdorur-redaktorin-e-tingullit-te-ndertuar" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 719)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Duke</span> <span class="n">përdorur</span> <span class="n">Redaktorin</span> <span class="n">e</span> <span class="n">Tingullit</span> <span class="n">të</span> <span class="n">Ndërtuar</span>
+<span class="o">--------------------------------</span>
+</pre></div>
+</div>
+</div>
+<p>Redaktori i tingullit lejon përdoruesit të modifikojnë dhe rimodelojnë tinguj. Në muzikë, termi <em>remix</em> përdoret për t’iu referuar një versioni të ri, të modifikuar të një përbërje muzikore.</p>
+<div class="section" id="id9">
+<h3>Ndërfaqja e përdoruesit<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 724)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Ndërfaqja</span> <span class="n">e</span> <span class="n">përdoruesit</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
+<p>Dritarja e redaktorit të tingullit është e ndarë në dy fusha: lista e tingullit (1) dhe zona e redaktimit (2).</p>
 <a class="reference internal image-reference" href="_images/fig11_22.png"><img alt="_images/fig11_22.png" class="align-center" src="_images/fig11_22.png" style="width: 880px;" /></a>
 <div class="sidebar">
 <p class="sidebar-title">New Sound</p>
 <p><img alt="novi_zvuk" src="_images/fig11_23.png" /></p>
 </div>
-<p><strong>Sound List</strong></p>
-<p>The sound list is located on the left side of the window and it is used for selecting sounds, which will be edited in the editing area. You select a sound by clicking on it. A thick blue outline will appear around the icon of the chosen sound, similar to the one around the active sprite in the sprite list. An “x” appears in the upper left corner of the active sprite, which allows it to be deleted.</p>
-<p>At the bottom of the area, there is a button <img alt="b_sound" src="_images/b_sound.png" />, which enables the introduction of new sounds.</p>
-<p><strong>Editing Area</strong></p>
-<p>The editing area has a bar on top (3), a graphical representation of a sound in the middle (4) and a bar on the bottom (5), which contains 7 tools.</p>
-<p>In the top bar are the tools that edit the sound, but do not add any effects. These are:</p>
-<table class="hlist"><tr><td><ul class="simple">
-<li><p>a name field for the sound,</p></li>
-<li><p>the undo and redo buttons, and</p></li>
-<li><p>the button <img alt="trim" src="_images/trim.png" />, which deletes selected parts of the sound.</p></li>
-</ul>
-</td></tr></table>
-<p>In the bottom bar are the tools, which make special effects while the sound is playing:</p>
+<p><strong>Lista e Tingullit</strong></p>
+<p>Lista e tingujve ndodhet në anën e majtë të dritares dhe përdoret për zgjedhjen e tingujve, të cilat do të redaktohen në zonën e redaktimit. Ju zgjidhni një tingull duke klikuar mbi të. Një skicë e trashë blu do të shfaqet rreth ikonës së tingullit të zgjedhur, e ngjashme me atë rreth rrjedhës aktive në listën e sprite. Një “x” shfaqet në këndin e sipërm të majtë të degëzës aktive, e cila lejon që ajo të fshihet.</p>
+<p>Në fund të zonës, ka një buton <img alt="b_sound" src="_images/b_sound.png" />, i cili mundëson futjen e tingujve të rinj.</p>
+<p><strong>Zona e redaktimit</strong></p>
+<p>Zona e redaktimit ka një shirit në majë (3), një paraqitje grafike të një tingulli në mes (4) dhe një shirit në fund (5), i cili përmban 7 mjete.</p>
+<p>Në shiritin e lartë janë mjetet që redaktojnë tingullin, por nuk shtojnë asnjë efekt. Këto janë:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 750)</p>
+<p>.. hlist content is not a list</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Appendix.rst</span>, line 754)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>     * butonat e ribërë dhe ribërë, dhe
+     * butoni <img alt="trim" src="../_images/icons/trim.png" />, i cili fshin pjesët e zgjedhura të tingullit.</p>
+<p>Në shiritin e poshtëm janë mjetet, të cilat bëjnë efekte speciale ndërsa tingulli është duke luajtur:</p>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p><img alt="faster" src="_images/faster.png" /> - faster,</p></li>
 <li><p><img alt="slower" src="_images/slower.png" /> - slower,</p></li>
@@ -701,7 +837,7 @@ To rotate an object, grasp and drag the rotation arrows.</p>
 <li><p><img alt="reverse" src="_images/reverse.png" /> - reverse, makes the sound run backward.</p></li>
 </ul>
 </td></tr></table>
-<p>Making the sound faster or slower is achieved by playing the higher or lower note instead of the actual one. The echo effect is achieved by re-playing the sound after 0.15 seconds.</p>
+<p>Bërja e tingullit më e shpejtë ose e ngadaltë arrihet duke luajtur notën më të lartë ose më të ulët në vend të asaj aktuale. Efekti jehon arrihet duke riprodhuar tingullin pas 0,15 sekondash.</p>
 </div>
 </div>
 </div>
@@ -710,13 +846,13 @@ To rotate an object, grasp and drag the rotation arrows.</p>
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Strings' data-toggle="tooltip"><a href="Scratch3 Strings.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vargje' data-toggle="tooltip"><a href="Scratch3 Strings.html">Previous chapter</a></li>
     
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Strings' data-toggle="tooltip"><a href="Scratch3 Strings.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vargje' data-toggle="tooltip"><a href="Scratch3 Strings.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
 <!-- </ul> -->

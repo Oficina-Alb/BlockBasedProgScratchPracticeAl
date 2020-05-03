@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Let’s Draw - Turtle Graphics &#8212; Block-based programming in Scratch - practice lessons</title>
+    <title>Le të vizatojmë - Grafik &#8212; Block-based programming in Scratch - practice lessons</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,8 +140,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Repeating Steps" href="Scratch3 Repeating.html" />
-    <link rel="prev" title="Sequencing Steps" href="Scratch3 Sequencing.html" />
+    <link rel="next" title="Përsëritja e hapave" href="Scratch3 Repeating.html" />
+    <link rel="prev" title="Hapat e sekuencave" href="Scratch3 Sequencing.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,8 +203,8 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="let-s-draw-turtle-graphics">
-<h1>Let’s Draw - Turtle Graphics<a class="headerlink" href="#let-s-draw-turtle-graphics" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="le-te-vizatojme-grafik">
+<h1>Le të vizatojmë - Grafik<a class="headerlink" href="#le-te-vizatojme-grafik" title="Permalink to this headline">¶</a></h1>
 
     <div class="course-box course-box-info">
         <div class="course-content">
@@ -212,154 +212,192 @@
 <p><img alt="intro4" src="_images/intro4.png" /></p>
 
     </p></div></div>
-<p>In the previous lessons, we learned how we could move the sprite by using our mouse and keyboard. Now, we will learn how we can make our sprite leave a mark while moving. We will use various examples to explore the functions of blocks from the group called <em>Pen</em>, which allow the sprite to leave a mark on the stage when it moves. This type of drawing is called turtle graphics. We have also learned how we can synchronize the behavior of our sprites by adding wait blocks to their scripts. In this lesson we will show a more efficient way of doing this - synchronizing sprites by exchanging messages.</p>
-<div class="topic">
-<p class="topic-title first">Turtle Graphics</p>
-<p>Scratch is one of the modern programming languages that include turtle graphics options, introduced for the first time in the <em>Logo</em> language some fifty years ago.</p>
-<p><em>Logo</em> enabled the control of a turtle device, a type of robot, which was connected to the computer. The turtle could move on a horizontal surface back and forth and change its direction and orientation. If a piece of paper was placed under the turtle, it could leave a mark, thus forming graphics called the <em>turtle graphics</em>.</p>
-<p>This way of setting an image as a collection of figures, together with their data (parameters), which define how the figure will be drawn and where it will be placed is called <strong>vector graphics</strong>.</p>
-<p>Unlike the vector graphics, in the <strong>raster graphics</strong> the image is stored as a rectangular grid of pixels - bitmaps. Bitmaps are technically characterized by the width and height of the image in pixels, and the number of bits needed to store the color of the pixels. For example, if there are only 16 colors, you need 4 bits per pixel to store the color. Raster graphics are resolution- dependent. They cannot be enlarged without the loss of quality of the image.</p>
-<p>In Scratch, every sprite has the option to behave like the Logo turtle: you can determine their position, direction and orientation of movement, and they can leave a mark when they move. The size, the shape and the color of the sprite do not affect the mark they leave, because the sprites are drawing with a pen. The sprite can also be invisible or composed of only one dot, and this does not affect its drawing.</p>
+<p>Në mësimet e mëparshme, mësuam se si mund të lëvizim sprite duke përdorur miun dhe tastierën tonë. Tani, ne do të mësojmë se si mund ta bëjmë sprite tonë të lërë një shenjë ndërsa lëviz. Ne do të përdorim shembuj të ndryshëm për të eksploruar funksionet e blloqeve nga grupi i quajtur <em>Pen</em>, të cilat lejojnë që sprite të lërë një shenjë në skenë kur lëviz. Ky lloj vizatimi quhet grafika e breshkave. Ne kemi mësuar gjithashtu se si mund të sinkronizojmë sjelljen e sprites tonë duke shtuar blloqe pritjeje në shkrimet e tyre. Në këtë mësim do të tregojmë një mënyrë më efikase për ta bërë këtë - sinkronizimi i sprites duke shkëmbyer mesazhe.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 14)</p>
+<p>Content block expected for the “topic” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span> <span class="n">Grafik</span> <span class="n">breshke</span>
+</pre></div>
 </div>
-<div class="topic">
-<p class="topic-title first">Functions of the <em>Pen</em> blocks</p>
-<p>The <em>Pen</em> group of blocks, which enable the sprites to leave a mark when they move, i.e. to support the turtle graphics are located among the extensions.</p>
-<p>In order to use blocks from this group, you need to:</p>
-<ol class="arabic simple">
-<li><p>Click on the <img alt="extensions" src="_images/extension.png" /> icon in the bottom left corner of the blocks palette.</p></li>
-<li><p>Select the <em>Pen</em> extension from the opened gallery.</p></li>
-<li><p>The icon and the blocks will appear in the blocks palette.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/fig4_1.png"><img alt="_images/fig4_1.png" class="align-center" src="_images/fig4_1.png" style="width: 740px;" /></a>
-<p>The <em>Pen</em> group includes the following blocks:</p>
-<table class="hlist"><tr><td><ul class="simple">
-<li><p><img alt="erase_all" src="_images/erase_all.png" /> - erases all marks made by the pen</p></li>
-<li><p><img alt="stamp" src="_images/stamp.png" /> - stamps the image of the sprite on the stage</p></li>
-<li><p><img alt="pen_up" src="_images/pen_up.png" /> - lifts the pen up</p></li>
-<li><p><img alt="pen_down" src="_images/pen_down.png" /> - puts the pen down</p></li>
-<li><p><img alt="set_color" src="_images/set_color.png" /> - sets the color of the pen</p></li>
-</ul>
-</td><td><ul class="simple">
-<li><p><img alt="set_pen" src="_images/set_pen.png" />- sets the drawing parameters</p></li>
-<li><p><img alt="change_pen" src="_images/change_pen.png" /> - changes the drawing parameters</p></li>
-<li><p><img alt="set_pen_size" src="_images/set_pen_size.png" /> - sets the size (thickness) of the pen mark</p></li>
-<li><p><img alt="change_pen_size" src="_images/change_pen_size.png" /> - changes the size (thickness) of the pen mark</p></li>
-</ul>
-</td></tr></table>
-<p>If you add the <img alt="pen_down" src="_images/pen_down.png" /> block to your sprite, from then on, the sprite will leave a mark on the stage whenever it moves. When you add the <img alt="pen_up" src="_images/pen_up.png" /> block, it will stop leaving the mark until you add the <img alt="pen_down" src="_images/pen_down.png" /> block again. The look of the mark is determined by the drawing parameters. The drawing parameters include the size (thickness), color, saturation, brightness and transparency of the mark left by the pen.</p>
-<p>Note.  <img alt="erase_all" src="_images/erase_all.png" /> <img alt="!=" src="_images/not_equal.png" /> <img alt="hide" src="_images/hide.png" />. The first block refers to drawings and the second to the sprites.</p>
 </div>
-<div class="topic">
-<p class="topic-title first">Using messages for synchronization</p>
-<p>The behavior is always triggered by an event, which can be an action or receipt of a message. In the previous lessons and projects, we used the <code class="docutils literal notranslate"><span class="pre">wait</span></code> block when we wanted to synchronize the behavior of our sprites. In the “Calculation” project we enabled our girl and boy sprites to have a synchronized conversation - when the girl was speaking, the boy was listening and vice versa.</p>
-<p>We will now show how the actions of the sprites (and the stage) can be coordinated, depending on whether a broadcast message event has occurred.
-You noticed that we didn’t say that we <strong>send</strong> a message, but that we <strong>broadcast</strong> it. This is because, in Scratch, the message is directed to all objects, and not just one. Broadcasting and receiving messages in Scratch is achieved with the following blocks <img alt="broadcast" src="_images/broadcast.png" />, <img alt="broadcast_wait" src="_images/broadcast_wait.png" /> and <img alt="when_receive" src="_images/when_receive.png" /> from the <em>Events</em> group.</p>
+<p>Scratch është një nga gjuhët moderne të programimit që përfshin opsionet e grafikës së breshkave, e futur për herë të parë në gjuhën <em>Logo</em> rreth pesëdhjetë vjet më parë.</p>
+<p> <em>Logo</em> mundësoi kontrollin e një pajisjeje breshke, një lloj roboti, i cili ishte i lidhur me kompjuterin. Breshka mund të lëvizë në një sipërfaqe horizontale mbrapa dhe me radhë dhe të ndryshojë drejtimin dhe orientimin e saj. Nëse një copë letër ishte vendosur nën breshkë, ajo mund të linte një shenjë, duke formuar kështu grafika të quajtura <em>grafika e breshkës</em>.</p>
+<p> Kjo mënyrë e vendosjes së një imazhi si koleksion figurash, së bashku me të dhënat e tyre (parametrat), të cilat përcaktojnë se si do të vizatohet figura dhe ku do të vendoset quhet <strong>grafika vektoriale</strong>.</p>
+<p> Për dallim nga grafika vektoriale, në grafikën <strong>raster</strong> imazhi ruhet si një rrjet drejtkëndëshe pikash - bitmaps. Bitmaps karakterizohen teknikisht nga gjerësia dhe lartësia e figurës në pixel, dhe numri i biteve të nevojshme për të ruajtur ngjyrën e pikselave. Për shembull, nëse ka vetëm 16 ngjyra, ju nevojiten 4 bit për pixel për të ruajtur ngjyrën. Grafikat e rasterit varen nga rezolucioni. Ato nuk mund të zmadhohen pa humbjen e cilësisë së figurës.</p>
+<p> Në Scratch, çdo sprite ka mundësinë që të sillet si breshka Logo: ju mund të përcaktoni pozicionin e tyre, drejtimin dhe orientimin e lëvizjes, dhe ata mund të lënë një shenjë kur lëvizin. Madhësia, forma dhe ngjyra e sprite nuk ndikojnë në shenjën që ata lënë, sepse sprites po vizatojnë me një stilolaps. Sprite gjithashtu mund të jetë e padukshme ose e përbërë nga vetëm një pikë, dhe kjo nuk ndikon në vizatimin e saj.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 28)</p>
+<p>Content block expected for the “topic” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span> <span class="n">Funksionet</span> <span class="n">e</span> <span class="n">blloqeve</span> <span class="o">*</span><span class="n">Pen</span><span class="o">*</span>
+</pre></div>
 </div>
-<div class="section" id="study-study-the-following-examples">
-<h2><img alt="study" src="_images/study.png" /> Study the following examples<a class="headerlink" href="#study-study-the-following-examples" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="example-1-project-drawing-a-line">
-<h3>Example 1 - Project “Drawing a Line”<a class="headerlink" href="#example-1-project-drawing-a-line" title="Permalink to this headline">¶</a></h3>
-<p>We will create a project in which we will draw a line that is 10 pixels wide and 300 pixels long. We will choose the Pencil sprite from the sprites library, and we will delete the cat sprite. Since we want the mark to be positioned along the tip of the Pencil sprite, we will move the center of the costume to the top. We can do this by opening the <em>Costume</em> tab. The available tools will appear on the left side of the drawing display; in our case, these will be vector tools because we chose a vector sprite (1). Use the <img alt="v_select" src="_images/v_select.png" /> to select the whole sprite (2), and then drag the sprite so that the tip of the pencil is above the sign <img alt="center" src="_images/center.png" /> which indicates the center of the screen (3).</p>
+</div>
+<p>Grupi <em>pen</em> i blloqeve, të cilat bënë të mundur që sprites të lënë një shenjë kur lëvizin, d.m.th. për të mbështetur grafikët e breshkave, janë të vendosura midis shtesave.</p>
+<p>  Për të përdorur blloqe nga ky grup, duhet të:</p>
+<p>  1. Klikoni në ikonat <img alt="extensions" src="_images/extension.png" /> në këndin e poshtëm të majtë të paletës së blloqeve.</p>
+<p>  2. Zgjidhni shtesën <em>Pen</em> nga galeria e hapur.</p>
+<p>  3. Ikona dhe blloqet do të shfaqen në paletën e blloqeve.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig4_1.png"><img alt="_images/fig4_1.png" class="align-center" src="_images/fig4_1.png" style="width: 740px;" /></a>
+</div></blockquote>
+<p>Grupi <em>Pen</em> përfshin blloqet e mëposhtme:</p>
+<blockquote>
+<div><div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 46)</p>
+<p>.. hlist content is not a list</p>
+</div>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 50)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>     * <img alt="stamp" src="_images/stamp.png" /> - vulos imazhin e sprite në skenë
+     * <img alt="pen_up" src="_images/pen_up.png" /> - heq stilolapsin lart
+     * <img alt="pen_down" src="_images/pen_down.png" /> - e ul penën
+     * <img alt="set_color" src="_images/set_color.png" /> - vendos ngjyrën e lapsit
+     * <img alt="set_pen" src="_images/set_pen.png" /> - vendos parametrat e vizatimit
+     * <img alt="change_pen" src="_images/change_pen.png" /> - ndryshon parametrat e vizatimit
+     * <img alt="set_pen_size" src="_images/set_pen_size.png" /> - përcakton madhësinë (trashësinë) e shenjës së stilolapsit
+     * <img alt="change_pen_size" src="_images/change_pen_size.png" /> - ndryshon madhësinë (trashësinë) e shenjës së stilolapsit</p>
+<p>Nëse shtoni <img alt="pen_down" src="_images/pen_down.png" /> bllokoni në Sprite tuaj, që nga atëherë, Sprite do të lërë një shenjë në skenë sa herë që lëviz. Kur shtoni bllokun <img alt="pen_up" src="_images/pen_up.png" />, ajo do të ndalojë të lërë shenjën derisa të shtoni <img alt="pen_down" src="_images/pen_down.png" /> bllokohet përsëri. Pamja e shenjës përcaktohet nga parametrat e vizatimit. Parametrat e vizatimit përfshijnë madhësinë (trashësinë), ngjyrën, ngopjen, shkëlqimin dhe transparencën e shenjës së lënë nga stilolapsi.</p>
+<p>  Shënim. <img alt="erase_all" src="_images/erase_all.png" /> <a href="#id5"><span class="problematic" id="id6">|! = | |Fshi|</span></a>. Blloku i parë i referohet vizatimeve dhe i dyti sprites.</p>
+<div class="topic">
+<p class="topic-title">Përdor mesazhe për sinkronizim</p>
+<p>Sjellja nxitet gjithmonë nga një ngjarje, e cila mund të jetë një veprim ose marrje e një mesazhi. Në mësimet dhe projektet e mëparshme, ne përdorëm bllokun <code class="docutils literal notranslate"><span class="pre">wait</span></code> kur donim të sinkronizon sjelljen e sprites tonë. Në projektin “Llogaritja” kemi mundësuar që vajzat dhe djemtë tanë të kenë një bisedë të sinkronizuar - kur vajza po fliste, djali po dëgjonte dhe anasjelltas.</p>
+</div>
+<p>  Tani do të tregojmë se si mund të koordinohen veprimet e sprites (dhe skena), në varësi të faktit nëse ka ndodhur një ngjarje e mesazhit të transmetuar.
+  Ju vini re që ne nuk kemi thënë që ne dërgojmë <strong>një mesazh, por që ne e transmetojmë</strong>. Kjo pasi, në Scratch, mesazhi u drejtohet të gjitha objekteve, dhe jo vetëm një. Transmetimi dhe marrja e mesazheve në Scratch arrihet me blloqet e mëposhtme <a href="#id7"><span class="problematic" id="id8">|Transmition|</span></a>, <a href="#id9"><span class="problematic" id="id10">|transmision_wait|</span></a> dhe <img alt="when_receive" src="_images/when_receive.png" /> nga grupi <em>Events</em>.</p>
+<div class="section" id="study-studioni-shembujt-e-meposhtem">
+<h2><img alt="study" src="_images/study.png" /> Studioni shembujt e mëposhtëm<a class="headerlink" href="#study-studioni-shembujt-e-meposhtem" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 72)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">study</span><span class="o">|</span> <span class="n">Studioni</span> <span class="n">shembujt</span> <span class="n">e</span> <span class="n">mëposhtëm</span>
+<span class="o">------------------------------------</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="shembulli-1-projekt-vizato-nje-vije">
+<h3>Shembulli 1 - Projekt “Vizato një vijë”<a class="headerlink" href="#shembulli-1-projekt-vizato-nje-vije" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 75)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Projekt</span> <span class="s2">&quot;Vizato një vijë&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
+<p>Do të krijojmë një projekt në të cilin do të vizatojmë një rresht që është 10 pixel i gjerë dhe 300 pixel i gjatë. Ne do të zgjedhim sprite Pencil nga biblioteka e sprites, dhe ne do të fshijmë spërkatjen e maceve. Meqenëse duam që shenja të pozicionohet përgjatë majës së sprite të Lapsit, ne do ta lëvizim qendrën e kostumit në majë. Ne mund ta bëjmë këtë duke hapur skedën <em>Costum</em>. Mjetet e disponueshme do të shfaqen në anën e majtë të ekranit të vizatimit; në rastin tonë, këto do të jenë mjete vektoriale sepse kemi zgjedhur një sprite vektoriale (1). Përdorni <img alt="v_select" src="_images/v_select.png" /> për të zgjedhur tërë sprite (2), dhe pastaj tërhiqeni sprite në mënyrë që maja e lapsit të jetë mbi shenjën <img alt="center" src="_images/center.png" /> që tregon qendrën e ekranit (3).</p>
 <a class="reference internal image-reference" href="_images/fig4_2.png"><img alt="_images/fig4_2.png" class="align-center" src="_images/fig4_2.png" style="width: 900px;" /></a>
-<p>First, you need to erase everything that was previously drawn by using the <img alt="erase_all" src="_images/erase_all.png" /> block, place the pencil in the starting position from which it will start drawing, set the color, and the size of the pen, and then use the <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">down</span></code> block to allow the pencil sprite to leave a mark when it moves. You need to add the <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">up</span></code> block at the end to stop the sprite from leaving a mark in the process of returning to the starting position, each time the program runs.</p>
-<p>There are two ways to set the color of the pen:</p>
+<p>Së pari, duhet të fshini gjithçka që është tërhequr më parë duke përdorur bllokun <img alt="erase_all" src="_images/erase_all.png" />, vendoseni lapsin në pozicionin fillestar nga i cili do të fillojë vizatimi, vendosni ngjyrën dhe madhësinë e lapsit, dhe më pas përdorni bllokun <code class="docutils literal notranslate"><span class="pre">stil</span> <span class="pre">poshtë</span></code> për të lejuar që sprite e lapsit të lërë një shenjë kur lëviz . Ju duhet të shtoni bllokun <code class="docutils literal notranslate"><span class="pre">lart</span> <span class="pre">lart</span></code> në fund për të ndaluar që sprite të mos lërë një shenjë në procesin e kthimit në pozicionin fillestar, sa herë që programi funksionon.</p>
+<p>Ekzistojnë dy mënyra për të vendosur ngjyrën e lapsit:</p>
 <ul class="simple">
-<li><p>by using the <img alt="set_color" src="_images/set_color.png" /> block, where you can select a color by clicking on the input field</p></li>
-<li><p>by using the <img alt="set_pen" src="_images/set_pen.png" /> block, where you can select a color by inserting a number into the second input field.</p></li>
+<li><p>duke përdorur bllokun <img alt="set_color" src="_images/set_color.png" />, ku mund të zgjidhni një ngjyrë duke klikuar në fushën e hyrjes</p></li>
+<li><p>duke përdorur bllokun <img alt="set_pen" src="_images/set_pen.png" />, ku mund të zgjidhni një ngjyrë duke futur një numër në fushën e dytë të hyrjes.</p></li>
 </ul>
-<p>In this project, we will use the first option.</p>
+<p>Në këtë projekt, ne do të përdorim opsionin e parë.</p>
 <a class="reference internal image-reference" href="_images/fig4_3.png"><img alt="_images/fig4_3.png" class="align-center" src="_images/fig4_3.png" style="width: 750px;" /></a>
-<p>Clicking on the input field of the block for setting the pen color, we open the drop-down menu where we will find sliders with color components: number attached to the color, saturation and brightness, and at the bottom we will see a tool - a pipette for collecting color samples (1). The desired color can be set by moving the sliders or by clicking on the pipette. If you click on the pipette, a stage with a magnifier on it that has a circle in the center will light up (2). To choose a color, we need to place the center of the circle above the part of the stage where that color is located and then click on it. We will get the same result, as shown in Figure (3).</p>
-<p>Note. You can find more information on the HSB color mode, which uses the components: hue, saturation and brightness, in the part <em>Appendix</em>.</p>
-<p>The result of the running of the script and the script itself are presented in the Figure below.</p>
+<p>Duke klikuar në fushën hyrëse të bllokut për vendosjen e ngjyrës së stilolapsit, ne hapim menunë rënëse, ku do të gjejmë rrëshqitje me përbërës të ngjyrave: numër i bashkangjitur me ngjyrën, ngopjen dhe shkëlqimin, dhe në fund do të shohim një mjet - një pipetë për mbledhjen e mostrave me ngjyra (1). Ngjyra e dëshiruar mund të vendoset duke lëvizur rrëshqitësit ose duke klikuar në pipetë. Nëse klikoni në pipetë, një fazë me një zmadhues në të që ka një rreth në qendër do të ndizet (2). Për të zgjedhur një ngjyrë, duhet të vendosim qendrën e rrethit sipër pjesës së fazës ku ndodhet ajo ngjyrë dhe pastaj të klikojmë në të. Do të marrim të njëjtin rezultat, siç tregohet në figurën (3).</p>
+<p>Shënim. Mund të gjeni më shumë informacion mbi mënyrën e ngjyrave HSB, e cila përdor përbërësit: ngjyrim, ngopje dhe shkëlqim, në pjesën <em>Shtojca</em>.</p>
+<p>Rezultati i ekzekutimit të skenarit dhe vetë skenarit janë paraqitur në figurën më poshtë.</p>
 <a class="reference internal image-reference" href="_images/fig4_4.png"><img alt="_images/fig4_4.png" class="align-center" src="_images/fig4_4.png" style="width: 470px;" /></a>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-2-project-free-hand-drawing">
-<h3>Example 2 - Project “Free-hand Drawing”<a class="headerlink" href="#example-2-project-free-hand-drawing" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembull-2-projekti-vizatim-i-lire">
+<h3>Shembull 2 - Projekti “Vizatim i lirë”<a class="headerlink" href="#shembull-2-projekti-vizatim-i-lire" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>This project should illustrate how we use drawing commands and show that the mark does not depend on the size of the sprite, nor on whether the sprite is visible or hidden. The pen is doing the drawing, so it does not matter which sprite is holding it. This time we will choose the <em>Ladybug 1</em> sprite from the sprites library.</p>
-<p>The script, which is activated by clicking on the green flag, allows the ladybug to follow the mouse-pointer for the duration of the running. At the beginning of the script, all drawings from previous running of the project will be erased from the stage, and the pen will be raised. The <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">down</span></code> command will be added to the <em>when down arrow is pressed</em> event block, and the <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">up</span></code> command will be added to the <em>when up arrow is pressed</em> event block. This way we will make sure that the sprite will not leave any marks when it moves until we press the <em>down arrow</em> key. The sprite will stop leaving marks when we press the <em>up arrow</em> key.</p>
-<p>The scripts added to the ladybug are presented in the Figure below. The drawing would be performed the same way even if the block <img alt="hide" src="_images/hide.png" /> was inserted where the red arrow in the Figure is pointing, but then the sprite wouldn’t be visible, and it would appear that the drawing is being done by the mouse-pointer.</p>
+<p>Ky projekt duhet të ilustrojë se si ne përdorim komandat e vizatimit dhe të tregojmë se shenja nuk varet nga madhësia e sprite, as nga fakti nëse sprite është e dukshme ose e fshehur. Pena po e bën vizatimin, kështu që nuk ka rëndësi se cila sprite po e mban atë. Këtë herë ne do të zgjedhim burimin <em>Ladybug 1</em> nga libraria e sprites.</p>
+<p>Skenari, i cili aktivizohet duke klikuar në flamurin e gjelbër, lejon që ladybug të ndjekë treguesin e miut për kohëzgjatjen e funksionimit. Në fillim të skenarit, të gjitha vizatimet nga ekzekutimi i mëparshëm i projektit do të fshihen nga skena, dhe stilolapsi do të ngrihet. Komanda <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">down</span></code> do t’i shtohet kur të shtypet shigjeta poshtë Ky projekt duhet të ilustrojë se si ne përdorim komandat e vizatimit dhe të tregojmë se shenja nuk varet nga madhësia e sprite, as nga fakti nëse sprite është e dukshme ose e fshehur. Pena po e bën vizatimin, kështu që nuk ka rëndësi se cila sprite po e mban atë. Këtë herë ne do të zgjedhim burimin <em>Ladybug 1</em> nga libraria e sprites.</p>
+<p>Shkrimet e shtuara në zonjën e parave janë paraqitur në figurën më poshtë. Vizatimi do të kryhej në të njëjtën mënyrë edhe nëse blloku <img alt="hide" src="_images/hide.png" /> do futej aty ku tregon shigjetën e kuqe në figurë, por atëherë sprite nuk do të ishte e dukshme, dhe do të duket se vizatimi po bëhet nga bllokut të ngjarjes të miut, dhe komanda <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">up</span></code> do t’i shtohet kur të shtypet blloku i ngjarjes shigjeta <em>up</em> . Në këtë mënyrë do të sigurohemi që sprite nuk do të lërë asnjë shenjë kur lëviz derisa të shtypim tastin <em>down arrow</em>. Sprite do të ndalojë së lëni shenja kur shtypim tastin <em>up</em>.</p>
 <a class="reference internal image-reference" href="_images/fig4_5.png"><img alt="_images/fig4_5.png" class="align-center" src="_images/fig4_5.png" style="width: 380px;" /></a>
-<p>Of course, it would be more natural if we didn’t have to press the keys of the keyboard to lower and lift the pen, but just draw while holding the mouse button pressed, and then stop drawing by lifting the finger. This type of drawing is achieved by the following script.</p>
+<p>Sigurisht, do të ishte më e natyrshme nëse nuk do të na duhej të shtypnim çelësat e tastierës për të ulur dhe ngritur stilolapsin, por thjesht vizatoni ndërsa mbani të shtypur butonin e mouse, dhe pastaj ndaloni të vizatoni duke ngritur gishtin. Ky lloj vizatimi arrihet me skenarin vijues.</p>
 <a class="reference internal image-reference" href="_images/fig4_6.png"><img alt="_images/fig4_6.png" class="align-center" src="_images/fig4_6.png" style="width: 195px;" /></a>
-<p>The effects of the <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">then</span> <span class="pre">else</span></code> command will be elaborated in the lesson number 6 of this manual. For now, let’s just say that the script in this E-block will either execute the <img alt="goto" src="_images/goto.png" /> and <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">down</span></code> command from the upper slot, or the <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">up</span></code> from the lower slot. Which command is being executed will depend on whether the mouse button is pressed or not, which is determined by the value set in the <img alt="mouse_down" src="_images/mouse_down.png" /> block. This block belongs to the <em>Sensing</em> group, and it reports whether the value is true or false.  Hexagonal function blocks that report only the values <em>true</em> or <em>false</em> are called <strong>Boolean blocks</strong>.</p>
+<p>Efektet e komandës <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">else</span> <span class="pre">then</span></code> do të shtjellohen në mësimin numër 6 të këtij manuali. Tani për tani, le të themi vetëm që skripti në këtë E-bllok ose do të ekzekutojë <img alt="goto" src="_images/goto.png" /> dhe komanda <code class="docutils literal notranslate"><span class="pre">pen</span></code>  ga foleja e sipërme ose <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">up</span></code> nga foleja e poshtme. Cila komandë është duke u ekzekutuar do të varet nga fakti nëse shtypet butoni i miut ose jo, i cili përcaktohet nga vlera e vendosur në bllokun <img alt="mouse_down" src="_images/mouse_down.png" />. Ky bllok i përket grupit <em>Sensing</em> dhe raporton nëse vlera është e vërtetë apo e rremë. Blloqet e funksionit gjashtëkëndor që raportojnë vetëm vlerat <em>true</em> ose <em>false</em> quhen <strong>blloqe boolean</strong>.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-3-project-follow-my-trace">
-<h3>Example 3 - Project “Follow my Trace”<a class="headerlink" href="#example-3-project-follow-my-trace" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-3-projekzzi-ndiq-gjurmet">
+<h3>Shembulli 3 - Projekzzi “Ndiq gjurmët”<a class="headerlink" href="#shembulli-3-projekzzi-ndiq-gjurmet" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>In this project, the movement of the ladybug is guided by the use of arrow keys, like in example 3, of the <em>Stage Coordinates</em> lesson. The mark left by the ladybug is a broken line made of horizontal and vertical lines. The following Figure includes the project scripts and the look of the stage after one project execution.</p>
+<p>Në këtë projekt, lëvizja e ladybug udhëhiqet nga përdorimi i tasteve shigjetë, si në shembullin 3, të mësimit <em>Koordinatat e fazës</em>. Shenja e lënë nga ladybug është një vijë e thyer e bërë nga linja horizontale dhe vertikale. Figura e mëposhtme përfshin skriptet e projektit dhe pamjen e fazës pas një ekzekutimi të projektit.
+.</p>
 <a class="reference internal image-reference" href="_images/fig4_7.png"><img alt="_images/fig4_7.png" class="align-center" src="_images/fig4_7.png" style="width: 415px;" /></a>
 <div class="sidebar">
-<p class="sidebar-title">Color Coding with Numbers</p>
-<p>Every whole number from the interval [0,199] corresponds to a particular color. For example, 0 is red, 30 is yellow, 70 green, 130 blue, and 170 magenta. Color numbering in Scratch is based on the order of colors in the spectrum.</p>
+<p class="sidebar-title">Kodimi i ngjyrave me numra</p>
+<p>Çdo numër i plotë nga intervali [0,199] korrespondon me një ngjyrë të veçantë. Për shembull, 0 është e kuqe, 30 është e verdhë, 70 jeshile, 130 blu dhe 170 magjen. Numrimi i ngjyrave në Scratch bazohet në rendin e ngjyrave në spektër.</p>
 <p><img alt="krug_boje" src="_images/fig4_8.png" /></p>
 </div>
-<p><strong>Upgrading the project</strong></p>
-<p>We will change the project so that the sprite that we will use for drawing moves more freely, like in example 4 of the <em>Stage Coordinates</em> lesson. We will add the setting which will allow the color and size of the pen to change in a random manner every 5 seconds, this way we will create a more attractive mark. To set the pen color randomly, we will have to use a different command to the one we used in the previous example. This time we will use the <img alt="set_pen" src="_images/set_pen.png" /> block, where the color is set by a number.</p>
-<p>The following figure represents a script that sets the initial values and the appearance of the stage after the modified project finished running ​​(the script is activated by clicking on the green flag). The <code class="docutils literal notranslate"><span class="pre">repeat</span> <span class="pre">forever</span></code> block contains commands that set the color and size of the pen in a “random” manner.</p>
+<p><strong>Përditësimi i projektit</strong></p>
+<p>Ne do ta ndryshojmë projektin në mënyrë që dega që do të përdorim për vizatim të lëvizë më lirshëm, si në shembullin 4 të mësimit <em>Koordinatat e fazës</em>. Do të shtojmë vendosjen e cila do të lejojë që ngjyra dhe madhësia e lapsit të ndryshojë në mënyrë të rastësishme çdo 5 sekonda, në këtë mënyrë do të krijojmë një shenjë më tërheqëse. Për të vendosur ngjyrën e stilolapsit në mënyrë të rastësishme, do të duhet të përdorim një komandë të ndryshme me atë që kemi përdorur në shembullin e mëparshëm. Këtë herë do të përdorim <img alt="set_pen" src="_images/set_pen.png" /> bllok, ku ngjyra vendoset nga një numër.</p>
+<p>Shifra e mëposhtme paraqet një skenar që përcakton vlerat fillestare dhe pamjen e skenës pasi projekti i modifikuar përfunduar në ekzekutim (skripti aktivizohet duke klikuar në flamurin e gjelbër). Blloku <code class="docutils literal notranslate"><span class="pre">repeat</span> <span class="pre">forever</span></code> përmban komanda që vendosin ngjyrën dhe madhësinë e lapsit në një mënyrë “të rastësishme”.
+.</p>
 <a class="reference internal image-reference" href="_images/fig4_9.png"><img alt="_images/fig4_9.png" class="align-center" src="_images/fig4_9.png" style="width: 265px;" /></a>
 <hr class="docutils" />
-<p>The following example shows how we can draw different styles of lines for underlining, by using the repetition command to specify the number of times an action is repeated, which we will introduce in the next lesson.</p>
+<p>Shembulli i mëposhtëm tregon se si mund të vizatojmë stile të ndryshme të linjave për nënvizim, duke përdorur komandën përsëritëse për të specifikuar numrin e herë që përsëritet një veprim, të cilin do t’i prezantojmë në mësimin tjetër.</p>
 </div>
-<div class="section" id="example-4-project-lines">
-<h3>Example 4 - Project “Lines”<a class="headerlink" href="#example-4-project-lines" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-4-projekti-linjat">
+<h3>Shembulli 4 - Projekti “Linjat”<a class="headerlink" href="#shembulli-4-projekti-linjat" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 171)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Linjat&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>In the <em>Lines</em> project we will draw a purple line, 400 pixels long and 2 pixels wide, starting from the point (-200,0) in five different styles.</p>
+<p>Në projektin <em>Lines</em> do të vizatojmë një vijë vjollcë, 400 piksele të gjata dhe 2 pixel të gjerë, duke filluar nga pika (-200,0) në pesë stile të ndryshme.</p>
 <a class="reference internal image-reference" href="_images/fig4_10.png"><img alt="_images/fig4_10.png" class="align-center" src="_images/fig4_10.png" style="width: 150px;" /></a>
-<p>The sprite drawing the line is invisible. It will appear in the upper left corner of the stage, only when it finishes drawing the line, and it will say how the line was drawn.
-The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.png" /> event block, the script for the first style is activated by pressing number 1 on the keyboard, the second style by pressing 2, and so on.</p>
-<p>Clicking on the green flag erases everything that was previously on the stage, sets values ​​for the color and size of the pen, sprite appears and gives instructions on how to start the project.</p>
-<p>Each of the scripts associated with keys 1-5 on the keyboard first erases everything that was previously drawn on the stage, hides the sprite, draws the line in the given style, and then shows the sprite in the upper left corner of the stage, which tells us how the line was drawn.</p>
-<p>The first style is a continuous straight line. This can be done immediately, by giving just one command “go 400 steps”, but to make this last almost as long as other scripts we added the repeat command, so the sprite would move 10 steps 40 times.</p>
-<p>The second style - the sprite repeats the same pattern 100 times: it moves 1 step with the pen down, and 3 with the pen up.</p>
-<p>The third style - the sprite repeats the same pattern 50 times: it moves 3 steps with the pen down and, and 5 with the pen up.</p>
-<p>The fourth style - the sprite repeats the same pattern 40 times: it moves 6 steps with the pen down and, and 4 with the pen up.</p>
-<p>The fifth style - the sprite repeats the same pattern 25 times: it moves 6 steps with the pen down and, and 4 with the pen up, 2 steps with the pen down, and 4 with the pen up.</p>
-<p>In the Figure below you will find the scripts for the events <em>when the green flag is clicked</em>, <em>when 1 key is pressed</em>, and <em>when 2 key is pressed</em>.</p>
+<p>Sprite që vizaton vijën është e padukshme. Do të shfaqet në këndin e sipërm të majtë të skenës, vetëm kur të përfundojë vizatimin e rreshtit, dhe do të thotë se si u vizatua linja.
+Vizatimi aktivizohet nga blloku ngjarjes <img alt="clicked_key" src="_images/clicked_key.png" /> , skripti për stilin e parë aktivizohet duke shtypur numrin 1 në tastierë, stilin e dytë duke shtypur 2, etj.</p>
+<p>Duke klikuar mbi flamurin e gjelbër fshin gjithçka që më parë ishte në skenë, vendos vlera për ngjyrën dhe madhësinë e lapsit, shfaqet sprite dhe jep udhëzime se si të fillohet projekti.</p>
+<p>Secila nga skriptet e lidhur me çelësat 1-5 në tastierë së pari fshin gjithçka që ishte vizatuar më parë në skenë, fsheh sprite, vizaton rreshtin në stilin e dhënë, dhe pastaj tregon sprite në këndin e sipërm të majtë të skenës, që na tregon se si u vizatua linja.</p>
+<p>Stili i parë është një vijë e drejtë e vazhdueshme. Kjo mund të bëhet menjëherë, duke dhënë vetëm një urdhër “shkoni 400 hapa”, por për ta bërë këtë të fundit pothuajse për sa kohë që shkrimet e tjera kemi shtuar komandën përsëritëse, kështu që sprite do të lëvizte 10 hapa 40 herë.</p>
+<p>Stili i dytë - sprite përsërit të njëjtin model 100 herë: lëviz 1 hap me stilolaps poshtë dhe 3 me stilolaps lart.</p>
+<p>Stili i tretë - sprite përsërit të njëjtin model 50 herë: lëviz 3 hapa me stilolaps poshtë dhe, dhe 5 me stilolaps lart.</p>
+<p>Stili i katërt - sprite përsërit të njëjtin model 40 herë: lëviz 6 hapa me stilolaps poshtë dhe, dhe 4 me stilolaps lart.</p>
+<p>Stili i pestë - sprite përsërit të njëjtin model 25 herë: lëviz 6 hapa me stilolaps poshtë dhe, dhe 4 me stilolaps lart, 2 hapa me stilolapsin poshtë dhe 4 me stilolaps lart.</p>
+<p>Në figurën më poshtë do të gjeni skriptet për ngjarjet <em>kur të klikohet flamuri jeshil</em>, <em>kur shtypet 1 çelës</em>, dhe <em>kur shtypet 2 tasti</em>.</p>
 <a class="reference internal image-reference" href="_images/fig4_11.png"><img alt="_images/fig4_11.png" class="align-center" src="_images/fig4_11.png" style="width: 470px;" /></a>
-<p>Note that repetition commands do not shorten program running time, but only allow the programmer to write programs more clearly and concisely.</p>
+<p>Vini re se komandat e përsëritjes nuk e shkurtojnë kohën e funksionimit të programit, por vetëm lejojnë programuesin të shkruaj programe më qartë dhe koncize.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-5-project-the-family">
-<h3>Example 5 - Project “The Family”<a class="headerlink" href="#example-5-project-the-family" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-5-projekti-familja">
+<h3>Shembulli 5 - Projekti “Familja”<a class="headerlink" href="#shembulli-5-projekti-familja" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>In this project, a Chick is introducing its family: mother hen, father rooster, brother, and sister. At the beginning we only see one chick we named Lisa, and the rest of the sprites are hidden. First, Lisa introduces her mother, Marge. When she says her name, the mother will appear and broadcast that she is there. Then, Lisa introduces her father, Homer. Homer also appears when he “hears” his name, and then “answers” with a message containing his name. Her brother Bart and her sister Maggie are introduced to the stage in a similar fashion. The synchronization of the sprite appearances and broadcasting is achieved with messages. When Lisa introduces someone, she broadcasts the message. The sprites are “listening”, and when they receive the appropriate message, they appear and broadcast a message announcing their name. When Lisa receives that message - response, she continues with the introduction of the next family member.</p>
-<p>The following Figure shows how the appearances of the sprites are synchronized with messages.</p>
+<p>Në këtë projekt, një pulë po prezanton familjen e saj: pulë nënë, gjeli i babait, vëllai dhe motra. Në fillim shohim vetëm një pulë që kemi quajtur Lisa, dhe pjesa tjetër e sprites janë të fshehura. Së pari, Lisa prezanton nënën e saj, Marge. Kur ajo thotë emrin e saj, nëna do të shfaqet dhe do të transmetojë se është atje. Pastaj, Lisa prezanton babanë e saj, Homerin. Homeri gjithashtu paraqitet kur ai “dëgjon” emrin e tij, dhe pastaj “përgjigjet” me një mesazh që përmban emrin e tij. Vëllai i saj Bart dhe motra e saj Maggie janë prezantuar në skenë në një mënyrë të ngjashme. Sinkronizimi i paraqitjeve dhe transmetimeve të sprejit arrihet me mesazhe. Kur Lisa prezanton dikë, ajo transmeton mesazhin. Sprites po “dëgjojnë”, dhe kur marrin mesazhin e duhur, ata shfaqen dhe transmetojnë një mesazh që njofton emrin e tyre. Kur Lisa merr atë mesazh - përgjigje, ajo vazhdon me prezantimin e anëtarit tjetër të familjes.</p>
+<p>Figura e mëposhtme tregon se si paraqitjet e sprites janë sinkronizuar me mesazhe.</p>
 <a class="reference internal image-reference" href="_images/fig4_12.png"><img alt="_images/fig4_12.png" class="align-center" src="_images/fig4_12.png" style="width: 600px;" /></a>
-<p><strong>Sprite preparation</strong></p>
+<p><strong>Përgatitja e Sprite</strong></p>
 <div class="sidebar">
-<p class="sidebar-title">Layout of the Sprites on the Stage</p>
-<a class="reference internal image-reference" href="_images/fig4_13.png"><img alt="_images/fig4_13.png" class="align-center" src="_images/fig4_13.png" style="width: 400px;" /></a>
+<p class="sidebar-title">Shtresat e Sprites në skenë</p>
+<a class="reference internal image-reference" href="../_images/4/fig4_13.png"><img alt="../_images/4/fig4_13.png" class="align-center" src="../_images/4/fig4_13.png" style="width: 400px;" /></a>
 </div>
-<p><img alt="1" src="_images/1.png" /> For this next presentation you will need the following characters: Lisa, Marge, Homer, Bart and Maggie. For Lisa, Bart and Maggie we will use the <em>Chick</em> sprite, for the mom we will use the <em>Hen</em> sprite, and for the dad, we will use the <em>Rooster</em> sprite from the sprites library. Once you have added the sprites, change their names so they correspond to our project.</p>
-<a class="reference internal image-reference" href="_images/fig4_14.png"><img alt="_images/fig4_14.png" class="align-center" src="_images/fig4_14.png" style="width: 400px;" /></a>
-<p><img alt="2" src="_images/2.png" /> Select the <em>Farm</em> backdrop from the backdrop library.</p>
-<p><img alt="3" src="_images/3.png" /> Place the Lisa sprite in the middle in the upper part of the stage.</p>
-<p><img alt="4" src="_images/4.png" /> Place the Marge sprite in the lower left part, and put Maggie, who you need to make smaller, next to her.</p>
-<p><img alt="5" src="_images/5.png" /> Place the Homer sprite in the lower right part of the stage and turn him so he is facing to the left. Make the Bart sprite larger and place him between Maggie and his dad, and turn him so he is facing to the left.</p>
-<p>The scripts added to the sprites are presented in the following Figure.</p>
+<p><img alt="1" src="_images/1.png" /> Për këtë prezantim tjetër do t’ju duhet personazhet e mëposhtëm: Lisa, Marge, Homer, Bart dhe Maggie. Për Lisa, Bart dhe Maggie do të përdorim sprite <em>Chick</em>, për nënën do të përdorim sprite <em>Hen</em> dhe për babanë do të përdorim spërkatjen <em>Rooster</em> nga libraria e sprites. Pasi të keni shtuar sprites, ndryshoni emrat e tyre në mënyrë që ata të korrespondojnë me projektin tonë.</p>
+<a class="reference internal image-reference" href="../_images/4/fig4_14.png"><img alt="../_images/4/fig4_14.png" class="align-center" src="../_images/4/fig4_14.png" style="width: 400px;" /></a>
+<p><img alt="2" src="_images/2.png" /> Zgjidhni librarinë <em>Farm</em> nga libraria e sfondit.</p>
+<p><img alt="3" src="_images/3.png" /> Vendoseni sprite Lisa në mes në pjesën e sipërme të fazës.</p>
+<p><img alt="4" src="_images/4.png" /> Vendoseni sprite Marge në pjesën e poshtme të majtë dhe vendosni Maggie, të cilën ju duhet ta bëni më të vogël, pranë saj.</p>
+<p><img alt="5" src="_images/5.png" /> Vendoseni Homerin sprite në pjesën e poshtme të djathtë të skenës dhe kthejeni atë në mënyrë që ai të përballet në të majtë. Bëni Bart sprite më të madh dhe vendoseni midis Maggie dhe babait të tij, dhe kthejeni atë në mënyrë që ai të përballet në të majtë.</p>
+<p>Shkrimet e shtuara në sprites janë paraqitur në figurën vijuese.</p>
 <a class="reference internal image-reference" href="_images/fig4_15.png"><img alt="_images/fig4_15.png" class="align-center" src="_images/fig4_15.png" style="width: 850px;" /></a>
 </div>
 </div>
-<div class="section" id="ask-did-you-understand">
-<h2><img alt="ask" src="_images/ask.png" /> Did you understand?<a class="headerlink" href="#ask-did-you-understand" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ask-e-kuptuat">
+<h2><img alt="ask" src="_images/ask.png" /> E kuptuat?<a class="headerlink" href="#ask-e-kuptuat" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pyetja-1">
+<h3>Pyetja 1<a class="headerlink" href="#pyetja-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -367,18 +405,18 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="turtle1">
-            <p>Q-25: Scratch is the first programming language to introduce the turtle graphics options.</p>
+            <p>Q-25: Scratch është gjuha e parë programuese që prezanton opsionet e grafikës së breshkave.</p>
 
-            <li data-component="answer"  id="turtle1_opt_a">yes</li><li data-component="feedback" id="turtle1_opt_a">The Logo programming language introduced the turtle graphics.</li>
+            <li data-component="answer"  id="turtle1_opt_a">po</li><li data-component="feedback" id="turtle1_opt_a">Gjuha e programimit Logo prezantoi grafikat e breshkës.</li>
             
-            <li data-component="answer" data-correct id="turtle1_opt_b">no</li><li data-component="feedback" id="turtle1_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="turtle1_opt_b">jo</li><li data-component="feedback" id="turtle1_opt_b">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-2">
+<h3>Pyetja 2<a class="headerlink" href="#pyetja-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -386,18 +424,18 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="turtle2">
-            <p>Q-26: The block <code class="docutils literal notranslate"><span class="pre">erase</span> <span class="pre">all</span></code> from the <em>Pen</em> group has the same function as the block <code class="docutils literal notranslate"><span class="pre">hide</span></code> from the group <em>Looks</em>.</p>
+            <p>Q-26: Blloku <code class="docutils literal notranslate"><span class="pre">erase</span> <span class="pre">all</span></code> nga grupi <em>Pen</em> ka të njëjtin funksion si blloku <code class="docutils literal notranslate"><span class="pre">fshih</span></code> nga grupi <em>Show</em>.</p>
 
-            <li data-component="answer"  id="turtle2_opt_a">yes</li><li data-component="feedback" id="turtle2_opt_a">No, the first one refers to the drawings, and the second to the sprites.</li>
+            <li data-component="answer"  id="turtle2_opt_a">po</li><li data-component="feedback" id="turtle2_opt_a">Jo, i pari i referohet vizatimeve, dhe i dyti sprites.</li>
             
-            <li data-component="answer" data-correct id="turtle2_opt_b">no</li><li data-component="feedback" id="turtle2_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="turtle2_opt_b">jo</li><li data-component="feedback" id="turtle2_opt_b">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-3">
-<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-3">
+<h3>Pyetja 3<a class="headerlink" href="#pyetja-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -405,18 +443,18 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="turtle3">
-            <p>Q-27: If you add the <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">down</span></code> block to a script of a particular sprite, it will continue to leave a mark when moving.</p>
+            <p>Q-27: Nëse shtoni bllokun <code class="docutils literal notranslate"><span class="pre">pen</span> <span class="pre">down</span></code> në një skenar të një sprite të veçantë, do të vazhdojë të lërë një shenjë kur lëviz.</p>
 
-            <li data-component="answer" data-correct id="turtle3_opt_a">yes</li><li data-component="feedback" id="turtle3_opt_a">Correct.</li>
+            <li data-component="answer" data-correct id="turtle3_opt_a">po</li><li data-component="feedback" id="turtle3_opt_a">Saktë.</li>
             
-            <li data-component="answer"  id="turtle3_opt_b">no</li><li data-component="feedback" id="turtle3_opt_b"></li>
+            <li data-component="answer"  id="turtle3_opt_b">jo</li><li data-component="feedback" id="turtle3_opt_b"></li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-4">
-<h3>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-4">
+<h3>Pyetja 4<a class="headerlink" href="#pyetja-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -424,9 +462,7 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="commands_pen1">
-            <p>Q-28: Which of the blocks belong to the <em>Pen</em> group of blocks?
-(Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q4_4.png"><img alt="_images/q4_4.png" class="align-center" src="_images/q4_4.png" style="width: 600px;" /></a>
+            <p>Q-28: Cila prej blloqeve i përket grupit <em>Pen</em> të blloqeve?</p>
 
             <li data-component="answer"  id="commands_pen1_opt_a"></li><li data-component="feedback" id="commands_pen1_opt_a"></li>
             
@@ -439,9 +475,17 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-5">
-<h3>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 318)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q4_4.png"><img alt="_images/q4_4.png" class="align-center" src="_images/q4_4.png" style="width: 600px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-5">
+<h3>Pyetja 5<a class="headerlink" href="#pyetja-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -449,9 +493,7 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="commands_pen2">
-            <p>Q-29: Each of these blocks changes something. Which one will change the mark left by the pen while drawing?
-(Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q4_5.png"><img alt="_images/q4_5.png" class="align-center" src="_images/q4_5.png" style="width: 705px;" /></a>
+            <p>Q-29: Secili prej këtyre blloqeve ndryshon diçka. Cila do të ndryshojë shenjën e lënë nga lapsa gjatë vizatimit?</p>
 
             <li data-component="answer" data-correct id="commands_pen2_opt_a"></li><li data-component="feedback" id="commands_pen2_opt_a"></li>
             
@@ -464,9 +506,17 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-6">
-<h3>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 342)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q4_5.png"><img alt="_images/q4_5.png" class="align-center" src="_images/q4_5.png" style="width: 705px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-6">
+<h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -474,23 +524,27 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pen1">
-            <p>Q-30: In some programs the sprite doesn’t leave a mark when moving? Why does this happen?
-(Select all correct answers)</p>
+            <p>Q-30: Në disa programe sprite nuk lë shenjë kur lëviz? Pse ndodh kjo?</p>
 
-            <li data-component="answer" data-correct id="pen1_opt_a">the pen down block is not activated</li><li data-component="feedback" id="pen1_opt_a"></li>
+            <li data-component="answer" data-correct id="pen1_opt_a">blloku i penës poshtë nuk aktivizohet</li><li data-component="feedback" id="pen1_opt_a"></li>
             
-            <li data-component="answer" data-correct id="pen1_opt_b">the pen up block is activated</li><li data-component="feedback" id="pen1_opt_b"></li>
+            <li data-component="answer" data-correct id="pen1_opt_b">blloku i penës lart aktivizohet</li><li data-component="feedback" id="pen1_opt_b"></li>
             
-            <li data-component="answer"  id="pen1_opt_c">the sprite is hidden</li><li data-component="feedback" id="pen1_opt_c"></li>
+            <li data-component="answer"  id="pen1_opt_c">sprite fshihet</li><li data-component="feedback" id="pen1_opt_c"></li>
             
-            <li data-component="answer"  id="pen1_opt_d">the block erase all is activated</li><li data-component="feedback" id="pen1_opt_d"></li>
+            <li data-component="answer"  id="pen1_opt_d">fshirja e bllokut aktivizohet e gjitha</li><li data-component="feedback" id="pen1_opt_d"></li>
             
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-7">
-<h3>Question 7<a class="headerlink" href="#question-7" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 366)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
+</div>
+<div class="section" id="pyetja-7">
+<h3>Pyetja 7<a class="headerlink" href="#pyetja-7" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -498,7 +552,7 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pen2">
-    <span data-component="question">Q-31: By dragging the rectangles, pair the blocks with the groups they belong to.</span>
+    <span data-component="question">Q-31: Duke tërhequr drejtkëndësat, çiftoni blloqet me grupet që i përkasin.</span>
 	<span data-component=feedback>Try again</span>
 
     <li data-component="draggable" id="pen2_drag1">hide</li>
@@ -513,8 +567,8 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
     <li data-component="draggable" id="pen2_drag4">point towards</li>
     <li data-component="dropzone" for="pen2_drag4">Motion</li>
 </ul></div></div>
-<div class="section" id="question-8">
-<h3>Question 8<a class="headerlink" href="#question-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-8">
+<h3>Pyetja 8<a class="headerlink" href="#pyetja-8" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -522,8 +576,7 @@ The drawing is activated by the <img alt="clicked_key" src="_images/clicked_key.
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pen3">
-    <span data-component="question">Q-32: Every whole number in the interval [0,199] corresponds to a color.
-By dragging the rectangles, pair the colors with their code number.</span>
+    <span data-component="question">Q-32: Çdo numër i tërë në intervalin [0,199] korrespondon me një ngjyrë.</span>
 	<span data-component=feedback>Try again</span>
 
     <li data-component="draggable" id="pen3_drag1">red</li>
@@ -537,12 +590,25 @@ By dragging the rectangles, pair the colors with their code number.</span>
 
     <li data-component="draggable" id="pen3_drag4">blue</li>
     <li data-component="dropzone" for="pen3_drag4">130</li>
-</ul></div></div>
+</ul></div><div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 396)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
 </div>
-<div class="section" id="try-try-it">
-<h2><img alt="try" src="_images/try.png" /> Try it!<a class="headerlink" href="#try-try-it" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="exercise-1">
-<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<p>     Duke tërhequr drejtkëndësat, çiftoni ngjyrat me numrin e tyre të kodit.</p>
+</div>
+</div>
+<div class="section" id="try-provoje">
+<h2><img alt="try" src="_images/try.png" /> Provoje!<a class="headerlink" href="#try-provoje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 400)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>|try| Provoje!
+-------------
+</pre></div>
+</div>
+</div>
+<div class="section" id="ushtrimi-1">
+<h3>Ushtrimi 1<a class="headerlink" href="#ushtrimi-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -551,20 +617,20 @@ By dragging the rectangles, pair the colors with their code number.</span>
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>What are the following programs drawing?</p>
-<a class="reference internal image-reference" href="_images/ex4_1.png"><img alt="_images/ex4_1.png" class="align-center" src="_images/ex4_1.png" style="width: 390px;" /></a>
+<p>Çfarë vizaton programi?</p>
+<a class="reference internal image-reference" href="../_images/4/ex4_1.png"><img alt="../_images/4/ex4_1.png" class="align-center" src="../_images/4/ex4_1.png" style="width: 390px;" /></a>
 
     </p></div></div>
 
-    <div data-component="reveal" id="answer1"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
+    <div data-component="reveal" id="answer1"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Pëgjigja:</strong></p>
 <a class="reference internal image-reference" href="_images/ans4_1.png"><img alt="_images/ans4_1.png" class="align-center" src="_images/ans4_1.png" style="width: 300px;" /></a>
 
     </div>
     </div>
 <hr class="docutils" />
-<div class="section" id="exercise-2">
-<h3>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-2">
+<h3>Ushtrimi 2<a class="headerlink" href="#ushtrimi-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -573,17 +639,46 @@ By dragging the rectangles, pair the colors with their code number.</span>
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Create a script which will enable the following drawing.</p>
-<p>Move the sprite to the position (-50,30), put the pen down, than add blocks which enable following relative movements:</p>
-<p>1 →, 1 ↓, 2 →, 1 ↑, 1 →, 2 ↓, 4 ←, 2 ↑.</p>
-<p>The entry 5 → means that the sprite should move 10 steps to the right 5 times, and the entry 1 ↑ that the sprite should move 10 steps up 1 time.
-For adding motion commands, we will also use the signs ← and ↓.</p>
+<p>Krijoni një skenar i cili do të mundësojë vizatimin e mëposhtëm.</p>
+
+    </p></div></div>
+<p>   Zhvendoseni sprite në pozicionin (-50,30), vendoseni lapsin poshtë, se sa të shtoni blloqe që mundësojnë lëvizjet e mëposhtme relative:</p>
+<blockquote>
+<div><p>1 →, 1 ↓, 2 →, 1 ↑, 1 →, 2 ↓, 4 ←, 2 ↑.</p>
+<p>Hyrja 5 → do të thotë që sprite duhet të lëvizë 10 hapa në të djathtë 5 herë, dhe hyrja 1 ↑ që sprite duhet të lëvizë 10 hapa 1 herë.</p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 442)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>   Për shtimin e komandave lëvizëse, do të përdorim edhe shenjat ← dhe <a href="#id1"><span class="problematic" id="id2">|</span></a>down <a href="#id3"><span class="problematic" id="id4">|</span></a>.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 442); <em><a href="#id2">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
+</div>
+<div class="system-message" id="id3">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 442); <em><a href="#id4">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="ushtrimi-3">
+<h3>Ushtrimi 3<a class="headerlink" href="#ushtrimi-3" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Krijoni një skenar, i cili do të përdorë vetëm komandat e lëvizjes absolute (dhe urdhërat pen poshtë) për të vizatuar të njëjtën imazh si në programin e ushtrimit 2.</p>
 
     </p></div></div>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-3">
-<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-4">
+<h3>Ushtrimi 4<a class="headerlink" href="#ushtrimi-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -592,96 +687,89 @@ For adding motion commands, we will also use the signs ← and ↓.</p>
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Create a script, which will only use the absolute motion commands (and the pen down commands) for drawing the same image as in the exercise 2 program.</p>
+<p><strong>Diktimi Grafik 1</strong></p>
 
     </p></div></div>
-</div>
-<hr class="docutils" />
-<div class="section" id="exercise-4">
-<h3>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h3>
-
-    <div data-level="2" style="display:none">
-
-    </div>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p><strong>Graphic Dictation 1</strong></p>
-<p>This is the first of the <em>graphic dictation</em> exercises. First, you will have to do a bit of programming,and enter a lot of data from the keyboard.
-Later, this type of task will require more programming, and a lot less data entry.</p>
-<p>Create a project, which allows you to guide the sprite with the arrow keys on your keyboard, like in example 3 of this lesson:</p>
-<ul class="simple">
-<li><p>the right arrow moves the sprite 10 steps to the right,</p></li>
-<li><p>the left arrow moves the sprite 10 steps to the left,</p></li>
-<li><p>the up arrow moves the sprite 10 steps up,</p></li>
-<li><p>the down arrow moves the sprite 10 steps down.</p></li>
-</ul>
-<p>Make sure that the sprite is hidden and the stage is cleared.</p>
-<p>Move the sprite to the position (-50,30), this is going to be the starting point, put the pen down, then type the following series of arrows:</p>
-<p>1 →, 1 ↓, 2 →, 1 ↑, 1 →, 2 ↓, 5 →, 2 ↑, 1 ←, 1 ↑,</p>
+<p>   Kjo është e para nga ushtrimet <em>e diktimit grafik</em>. Së pari, do të duhet të bëni pak programim dhe të futni shumë të dhëna nga tastiera.
+   Më vonë, kjo lloj detyre do të kërkojë më shumë programim, dhe shumë më pak hyrje të të dhënave.</p>
+<p>   Krijoni një projekt, i cili ju lejon të drejtoni sprite me çelësat e shigjetave në tastierën tuaj, si në shembullin 3 të këtij mësimi:</p>
+<p>   - shigjeta e djathtë zhvendos sprite 10 hapa në të djathtë,</p>
+<p>   - shigjeta e majtë lëviz sprite 10 hapa në të majtë,</p>
+<p>   - shigjeta lart lëviz 10 vrima lart,</p>
+<p>   - shigjeta poshtë zhvendos sprite 10 hapa poshtë.</p>
+<p>   Sigurohuni që sprite është e fshehur dhe faza të pastrohet.</p>
+<p>   Zhvendoseni sprite në pozicionin (-50,30), kjo do të jetë pika fillestare, vendoseni stilolapsin poshtë, pastaj shtypni serinë e mëposhtme të shigjetave:</p>
+<blockquote>
+<div><p>1 →, 1 ↓, 2 →, 1 ↑, 1 →, 2 ↓, 5 →, 2 ↑, 1 ←, 1 ↑,</p>
 <p>2 →, 8 ↓, 1 ←, 2 ↑, 1 ←, 2 ↓, 1 ←, 2 ↑, 3 ←, 2 ↓,</p>
 <p>1 ←, 2 ↑, 1 ←, 2 ↓, 1 ←, 3 ↑, 1 ←, 4 ↑.</p>
-<p>If you followed the instructions well, you should return to your starting point.</p>
-<p>What did you draw?</p>
-
-    <div data-component="reveal" id="answer4"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<a class="reference internal image-reference" href="_images/ans4_4.png"><img alt="_images/ans4_4.png" class="align-center" src="_images/ans4_4.png" style="width: 130px;" /></a>
-
-    </div>
-    
-    </p></div></div>
-</div>
-<hr class="docutils" />
-<div class="section" id="exercise-5">
-<h3>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h3>
-
-    <div data-level="2" style="display:none">
-
-    </div>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p><strong>Graphic Dictation 2</strong></p>
-<p>All settings from the Graphics Dictation 1 still apply, but the algorithm for drawing is the following:</p>
-<p>Move the sprite to the starting point (-60,40), put the pen down and draw:</p>
-<p>3 →, 1 ↑, 1 →, 4 ↓, 6 →, 1 ↑, 1 →, 1 ↓, 1 ←,</p>
-<p>7 ↓, 1 ←, 3 ↑, 5 ←, 3 ↓, 1 ←, 7 ↑, 3 ←, 3 ↑.</p>
-<p>If you followed the instructions well, you should return to your starting point.</p>
-<p>What did you draw?</p>
+<blockquote>
+<div><p>Nëse i keni ndjekur mirë udhëzimet, duhet të ktheheni në pikën fillestare.</p>
+</div></blockquote>
+</div></blockquote>
+<p>   Çfarë vizatove?</p>
 <blockquote>
 <div>
-    <div data-component="reveal" id="answer5"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<a class="reference internal image-reference" href="_images/ans4_5.png"><img alt="_images/ans4_5.png" class="align-center" src="_images/ans4_5.png" style="width: 135px;" /></a>
+    <div data-component="reveal" id="answer4"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Pëgjigja:</strong></p>
+<a class="reference internal image-reference" href="../_images/4/ans4_4.png"><img alt="../_images/4/ans4_4.png" class="align-center" src="../_images/4/ans4_4.png" style="width: 130px;" /></a>
 
     </div>
     </div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="ushtrimi-5">
+<h3>Ushtrimi 5<a class="headerlink" href="#ushtrimi-5" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><strong>Diktimi Grafik 2</strong></p>
 
     </p></div></div>
+<p>  Të gjitha cilësimet nga Diktimi Grafik 1 ende zbatohen, por algoritmi për vizatim është si vijon:</p>
+<p>  Zhvendoseni sprite në pikën fillestare (-60,40), vendoseni lapsin poshtë dhe vizatoni:</p>
+<blockquote>
+<div><p>3 →, 1 ↑, 1 →, 4 ↓, 6 →, 1 ↑, 1 →, 1 ↓, 1 ←,</p>
+<p>7 ↓, 1 ←, 3 ↑, 5 ←, 3 ↓, 1 ←, 7 ↑, 3 ←, 3 ↑.</p>
+<blockquote>
+<div><p>Nëse i keni ndjekur mirë udhëzimet, duhet të ktheheni në pikën fillestare.</p>
+</div></blockquote>
+</div></blockquote>
+<p>  Çfarë vizatove?</p>
+<blockquote>
+<div>
+    <div data-component="reveal" id="answer5"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Pëgjigja:</strong></p>
+<a class="reference internal image-reference" href="../_images/4/ans4_5.png"><img alt="../_images/4/ans4_5.png" class="align-center" src="../_images/4/ans4_5.png" style="width: 135px;" /></a>
+
+    </div>
+    </div></blockquote>
 </div>
 </div>
-<div class="section" id="bug-debug-it">
-<h2><img alt="bug" src="_images/bug.png" /> Debug it!<a class="headerlink" href="#bug-debug-it" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bug-debug">
+<h2><img alt="bug" src="_images/bug.png" /> Debug<a class="headerlink" href="#bug-debug" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="bug-1">
 <h3>Bug 1<a class="headerlink" href="#bug-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The pupil has written a program which is supposed to draw a line 300 pixels long, where the first 100 pixels are red, second 100 pixels are green, and the last 100 pixels are blue.</p>
-<p>When he ran the script nothing happened. What is the problem?</p>
+<dd class="field-odd"><p>Nxënësi ka shkruar një program i cili supozohet të vizatojë një rresht 300 pixel të gjatë, ku 100 pikselat e parë janë të kuq, 100 pikselët e dytë janë jeshilë, dhe 100 pikselat e fundit janë blu.</p>
 </dd>
 </dl>
+<p>    Kur ai e drejtoi skenarin asgjë nuk ndodhi. Cili është problemi?</p>
 <a class="reference internal image-reference" href="_images/bug4_1.png"><img alt="_images/bug4_1.png" class="align-center" src="_images/bug4_1.png" style="width: 190px;" /></a>
 
-    <div data-component="reveal" id="hiding21"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The <img alt="pen_down" src="_images/pen_down.png" /> block was not added.</p>
+    <div data-component="reveal" id="hiding21"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Pëgjigja:</strong></p>
+<p>Blloku <img alt="pen_down" src="_images/pen_down.png" /> nuk ishte vendosur.</p>
 
     </div>
     </div>
@@ -693,20 +781,28 @@ Later, this type of task will require more programming, and a lot less data entr
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The pupil has written a program which is supposed to draw a blue line 300 pixels long, where the first 100 pixels are 10 pixels wide, second 100 pixels are 20 pixels wide, and the last 100 are 30 pixels wide.
-When he first ran the program everything was fine, but every time after that when he would run the programme the line was alway 30 pixels wide. What is the problem?</p>
+<dd class="field-odd"><p>Nxënësi ka shkruar një program i cili supozohet të vizatojë një vijë blu të gjatë 300 pixel, ku 100 pikselat e parë janë 10 pixel të gjerë, 100 pikselat e dytë janë 20 pixel të gjerë, dhe 100 të fundit janë 30 pixel të gjerë.</p>
 </dd>
 </dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 577)</p>
+<p>Field list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    Kur ai drejtoi për herë të parë programi gjithçka ishte në rregull, por çdo herë pas kësaj kur ai do të drejtonte programin linja ishte gjithnjë e gjerë 30 pixel. Cili është problemi?</p>
 <a class="reference internal image-reference" href="_images/bug4_2.png"><img alt="_images/bug4_2.png" class="align-center" src="_images/bug4_2.png" style="width: 205px;" /></a>
 
-    <div data-component="reveal" id="hiding22"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>At the end of the first run, the size of the pen is set at 30, the pen is located at the end of the line in the spot (200,0), and it is not up.
-Therefore, when the program runs for the second time, the pen will go back to the starting position with the pen size set at 30 pixels, so if it draws over the same mark with a smaller pen size the new mark won’t be visible.
-The mistake will be corrected if the pen is lifted up before it goes back to its starting position.</p>
+    <div data-component="reveal" id="hiding22"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Pëgjigja:</strong></p>
+<p>Në fund të vrapimit të parë, madhësia e lapsit është vendosur në 30, stilolapsi është vendosur në fund të rreshtit në vend (200,0), dhe nuk është lart.</p>
 
     </div>
-    </div>
+    <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 590)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    Prandaj, kur programi shkon për herë të dytë, stilolapsi do të kthehet në pozicionin e fillimit me madhësinë e stilolapsit të vendosur në 30 pixel, kështu që nëse tërheq mbi të njëjtën shenjë me një madhësi më të vogël të penës, shenja e re nuk do të jetë e dukshme .
+    Gabimi do të korrigjohet nëse lapsi ngrihet përpara se të kthehet në pozicionin e saj fillestar.</p>
+</div>
 <div class="section" id="bug-3">
 <h3>Bug 3<a class="headerlink" href="#bug-3" title="Permalink to this headline">¶</a></h3>
 
@@ -715,45 +811,53 @@ The mistake will be corrected if the pen is lifted up before it goes back to its
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The pupil has written a program which is supposed to draw a blue line 300 pixels long, where the first 100 pixels are 10 pixels wide, second 100 pixels are 20 pixels wide, and the last 100 are 30 pixels wide. Every time he/she ran the program the mark was the same, not with the required size changes, but much larger. What is the problem?</p>
+<dd class="field-odd"><p>Nxënësi ka shkruar një program i cili supozohet të vizatojë një vijë blu të gjatë 300 pixel, ku 100 pikselat e parë janë 10 pixel të gjerë, 100 pikselat e dytë janë 20 pixel të gjerë, dhe 100 të fundit janë 30 pixel të gjerë. Sa herë që ai / ajo drejtonte programin, marka ishte e njëjtë, jo me ndryshimet e madhësisë së kërkuar, por shumë më e madhe. Cili është problemi?</p>
 </dd>
 </dl>
 <a class="reference internal image-reference" href="_images/bug4_3.png"><img alt="_images/bug4_3.png" class="align-center" src="_images/bug4_3.png" style="width: 205px;" /></a>
 
-    <div data-component="reveal" id="hiding23"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The <img alt="change_pen_size" src="_images/change_pen_size.png" /> command should not have been used with the parameters 20 and 30, but with increasing the size by 10, or instead of that command use the <img alt="set_pen_size" src="_images/set_pen_size.png" /> block with the parameters 20 and 30.</p>
+    <div data-component="reveal" id="hiding23"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Pëgjigja:</strong></p>
+<p><img alt="change_pen_size" src="_images/change_pen_size.png" /> nuk duhej të ishte përdorur me parametrat 20 dhe 30, por me rritjen e madhësisë me 10, ose në vend të asaj komande të përdorni bllokun|set_pen_size| me parametrat 20 dhe 30.</p>
 
     </div>
     </div>
 </div>
-<div class="section" id="book-summary">
-<h2><img alt="book" src="_images/book.png" /> Summary<a class="headerlink" href="#book-summary" title="Permalink to this headline">¶</a></h2>
-<p>In this lesson, we introduced the turtle graphics, which represent an example of the vector graphics. In Scratch, every sprite has a pen with which it can draw while moving on the stage. This virtual pen has the shape of a round brush, and we can change its size, color, saturation, brightness and transparency. With different examples and exercises we learned how to use and connect <em>Motion</em> and <em>Pen</em> blocks to create different drawings. We have also learned how to use commands for repetition to create scripts which are shorter and more efficient. The commands for repetition will be further elaborated in the next lesson. In the last example, we showed how we could synchronize the behavior of the sprites by exchanging messages. The mechanism of exchanging messages can also be used for the realization of procedures, which will be explained in the next lesson.</p>
-<p><strong>Scratch projects</strong>: <a class="reference external" href="https://scratch.mit.edu/studios/25119442/">4Studio</a></p>
-<p><strong>New concepts</strong>:  turtle graphics, vector and raster graphics, color coding, broadcasting and receiving messages.</p>
-<p><strong>Scratch commands</strong>: <img alt="pen_extension" src="_images/pen.png" /> - <img alt="erase_all" src="_images/erase_all.png" />, <img alt="pen_up" src="_images/pen_up.png" />, <img alt="pen_down" src="_images/pen_down.png" />, <img alt="set_color" src="_images/set_color.png" />, <img alt="change_pen" src="_images/change_pen.png" />, <img alt="set_pen" src="_images/set_pen.png" />, <img alt="change_pen_size" src="_images/change_pen_size.png" />,| <img alt="set_pen_size" src="_images/set_pen_size.png" />; <img alt="sensing_blocks" src="_images/sensing.png" /> - <img alt="*" src="_images/asterix.png" /> <img alt="mouse_down" src="_images/mouse_down.png" />;</p>
+<div class="section" id="book-permbledhje">
+<h2><img alt="book" src="_images/book.png" /> Përmbledhje<a class="headerlink" href="#book-permbledhje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Graphics.rst</span>, line 616)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">book</span><span class="o">|</span> <span class="n">Përmbledhje</span>
+<span class="o">--------------</span>
+</pre></div>
+</div>
+</div>
+<p>Në këtë mësim, ne prezantuam grafikat e breshkave, të cilat paraqesin një shembull të grafikës vektoriale. Në Scratch, çdo sprite ka një stilolaps me të cilin mund të vizatohet ndërsa lëviz në skenë. Kjo stilolaps virtual ka formën e një furçe të rrumbullakët, dhe ne mund të ndryshojmë madhësinë e saj, ngjyrën, ngopjen, shkëlqimin dhe transparencën. Me shembuj dhe ushtrime të ndryshme mësuam se si të përdorim dhe të lidhim blloqet <em>Motion</em> dhe <em>Pen</em> për të krijuar vizatime të ndryshme. Ne kemi mësuar gjithashtu se si të përdorim komanda për përsëritje për të krijuar skriptet që janë më të shkurtër dhe më të efektshëm. Komandat për përsëritje do të shtjellohen më tej në mësimin tjetër. Në shembullin e fundit, ne treguam se si mund të sinkronizon sjelljen e sprites duke shkëmbyer mesazhe. Mekanizmi i shkëmbimit të mesazheve mund të përdoret gjithashtu për realizimin e procedurave, të cilat do të shpjegohen në mësimin tjetër.</p>
+<p><strong>Projekte Scratch</strong>: <a class="reference external" href="https://scratch.mit.edu/studios/25119442/">4Studio</a></p>
+<p><strong>Koncepte të reja</strong>:  turtle graphics, vector and raster graphics, color coding, broadcasting and receiving messages.</p>
+<p><strong>KomandaScratch</strong>: <img alt="pen_extension" src="_images/pen.png" /> - <img alt="erase_all" src="_images/erase_all.png" />, <img alt="pen_up" src="_images/pen_up.png" />, <img alt="pen_down" src="_images/pen_down.png" />, <img alt="set_color" src="_images/set_color.png" />, <img alt="change_pen" src="_images/change_pen.png" />, <img alt="set_pen" src="_images/set_pen.png" />, <img alt="change_pen_size" src="_images/change_pen_size.png" />,| <img alt="set_pen_size" src="_images/set_pen_size.png" />; <img alt="sensing_blocks" src="_images/sensing.png" /> - <img alt="*" src="_images/asterix.png" /> <img alt="mouse_down" src="_images/mouse_down.png" />;</p>
 <p><img alt="looks_blocks" src="_images/looks.png" /> - <img alt="hide" src="_images/hide.png" />, <img alt="show" src="_images/show.png" />; <img alt="events_blocks" src="_images/events.png" /> - <img alt="when_receive" src="_images/when_receive.png" />, <img alt="broadcast" src="_images/broadcast.png" />, <img alt="broadcast_wait" src="_images/broadcast_wait.png" />;</p>
 <p><img alt="control_blocks" src="_images/control.png" /> - <img alt="*" src="_images/asterix.png" /> <img alt="if_then_else" src="_images/if_then_else.png" />, <img alt="*" src="_images/asterix.png" /> <img alt="repeat" src="_images/repeat.png" />.</p>
-<p>Note. Blocks marked with the <img alt="*" src="_images/asterix.png" /> sign will be discussed in the lessons that follow.</p>
+<p>Shënim. Blloqe të shënuara me | * | shenja do të diskutohet në mësimet që vijojnë.</p>
 </div>
-<div class="section" id="project-create-a-projects">
-<h2><img alt="project" src="_images/project.png" /> Create a projects<a class="headerlink" href="#project-create-a-projects" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-1-lightning">
-<h3>Project 1 - “Lightning”<a class="headerlink" href="#project-1-lightning" title="Permalink to this headline">¶</a></h3>
-<p>Create a project where the <em>Lightning</em> sprite will draw with its tip. Once you have added the sprite from the sprites library, set the center of its costume to be on the top. Add scripts which define how it should move and set the drawing parameters.</p>
+<div class="section" id="project-krijo-projekte">
+<h2><img alt="project" src="_images/project.png" /> Krijo projekte<a class="headerlink" href="#project-krijo-projekte" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="projekti-1-drita">
+<h3>Projekti 1 - “Drita”<a class="headerlink" href="#projekti-1-drita" title="Permalink to this headline">¶</a></h3>
+<p>Krijoni një projekt ku Sprite <em>Rrufeja</em> do të tërheqë me majën e saj. Pasi të keni shtuar burimin nga biblioteka e sprites, vendosni që qendra e kostumit të saj të jetë në majë. Shtoni skriptet që përcaktojnë se si duhet të lëvizë dhe vendosni parametrat e vizatimit.</p>
 </div>
-<div class="section" id="project-2-black-and-white-world">
-<h3>Project 2 - “Black and White World”<a class="headerlink" href="#project-2-black-and-white-world" title="Permalink to this headline">¶</a></h3>
-<p>Create a project based on the “Free-hand Drawing” project. The stage should have a black backdrop. You can make the backdrop black by using <img alt="r_fill" src="_images/r_fill.png" /> tool in the raster mode of the paint editor to pour black paint on the desired backdrop. The sprite doing the drawing should be hidden, and the pen color should be white.</p>
+<div class="section" id="projekti-2-bota-bardhe-zi">
+<h3>Projekti 2 - “Bota bardhe zi”<a class="headerlink" href="#projekti-2-bota-bardhe-zi" title="Permalink to this headline">¶</a></h3>
+<p>Krijoni një projekt bazuar në projektin “Vizatim i dorës së Lirë”. Skena duhet të ketë një sfond të zi. Ju mund ta bëni sfondin të zi duke përdorur <img alt="r_fill" src="_images/r_fill.png" /> në mënyrën raster të redaktorit të bojës për të hedhur bojë të zezë në sfondin e dëshiruar. Sprite që bën vizatimin duhet të fshihet, dhe ngjyra e lapsit të jetë e bardhë.</p>
 </div>
-<div class="section" id="project-3-my-family">
-<h3>Project 3 - “My Family”<a class="headerlink" href="#project-3-my-family" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-3-familja-ime">
+<h3>Projekti 3 - “Familja ime”<a class="headerlink" href="#projekti-3-familja-ime" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>Start a new project which you will call <em>My family</em>. This should be an animation introducing the members of your family. For this presentation, you will need the following sprites: presenter (you), mom, dad, brother, sister (depending on the actual members of your family). Use photos or select images of sprites, which will represent the members of your family and customize them to fit the project (make them smaller or larger, arrange them around the stage and turn them, if necessary). All sprites should hide when the green flag is clicked and wait until they are introduced by the presenter and then appear on the stage in the previously set position. Synchronize the appearance of the sprites by using messages, as shown in the example “Family”. The presenter is the only sprite appearing on the stage the whole time. He/she will say his/her name first, and then introduce the rest of the family.</p>
+<p>Filloni një projekt të ri të cilin do ta quani <em>Familja ime</em>. Kjo duhet të jetë një animacion që prezanton anëtarët e familjes tuaj. Për këtë prezantim, do t’ju duhet sprites e mëposhtme: prezantuesja (ju), mamaja, babai, vëllai, motra (në varësi të anëtarëve aktualë të familjes tuaj). Përdorni fotografi ose zgjidhni imazhe të sprites, të cilat do të përfaqësojnë anëtarët e familjes tuaj dhe do t’i përshtatni ato për t’iu përshtatur projektit (t’i bëni ato më të vegjël ose më të mëdhenj, rregulloni ato rreth skenës dhe ktheni ato, nëse është e nevojshme). Të gjitha sprites duhet të fshihen kur klikohet flamuri i gjelbër dhe të presë derisa ato të prezantohen nga prezantuesi dhe më pas të paraqiten në skenë në pozicionin e vendosur më parë. Sinkronizoni pamjen e sprites duke përdorur mesazhe, siç tregohet në shembullin “Familja”. Prezantuesja është e vetmja sprite që shfaqet në skenë gjatë gjithë kohës. Ai / ajo do të thotë së pari emrin e tij / saj, dhe pastaj do të prezantojë pjesën tjetër të familjes.</p>
 </div>
 </div>
 </div>
@@ -762,17 +866,17 @@ The mistake will be corrected if the pen is lifted up before it goes back to its
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Sequencing Steps' data-toggle="tooltip"><a href="Scratch3 Sequencing.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Hapat e sekuencave' data-toggle="tooltip"><a href="Scratch3 Sequencing.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Repeating Steps' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Përsëritja e hapave' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Sequencing Steps' data-toggle="tooltip"><a href="Scratch3 Sequencing.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Hapat e sekuencave' data-toggle="tooltip"><a href="Scratch3 Sequencing.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Repeating Steps' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Përsëritja e hapave' data-toggle="tooltip"><a href="Scratch3 Repeating.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

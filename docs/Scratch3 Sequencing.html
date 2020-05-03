@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Sequencing Steps &#8212; Block-based programming in Scratch - practice lessons</title>
+    <title>Hapat e sekuencave &#8212; Block-based programming in Scratch - practice lessons</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,8 +140,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Let’s Draw - Turtle Graphics" href="Scratch3 Graphics.html" />
-    <link rel="prev" title="Tell Me Where To Go - Coordinates And Direction" href="Scratch3 Coordinates.html" />
+    <link rel="next" title="Le të vizatojmë - Grafik" href="Scratch3 Graphics.html" />
+    <link rel="prev" title="Më thuaj ku të shkoj - Koordinata dhe drejtimi" href="Scratch3 Coordinates.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,8 +203,16 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="sequencing-steps">
-<h1>Sequencing Steps<a class="headerlink" href="#sequencing-steps" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="hapat-e-sekuencave">
+<h1>Hapat e sekuencave<a class="headerlink" href="#hapat-e-sekuencave" title="Permalink to this headline">¶</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 2)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hapat</span> <span class="n">e</span> <span class="n">sekuencave</span>
+<span class="o">=================</span>
+</pre></div>
+</div>
+</div>
 
     <div class="course-box course-box-info">
         <div class="course-content">
@@ -212,11 +220,17 @@
 <p><img alt="intro3" src="_images/intro3.png" /></p>
 
     </p></div></div>
-<p>In the previous lesson we learned about motion commands, and now we will see how we can use the commands from the <em>Looks</em> and <em>Events</em> group. We will show how we assign a particular behavior to our sprite by connecting blocks to form a script. The projects in this lesson consist of scripts made up from a series of consecutive steps. We can say that this type of scripts have a <strong>simple linear structure</strong>.</p>
-<div class="topic">
-<p class="topic-title first">The Terminology and the Visual Grammar of the Scratch Language</p>
-<p>Sprites can execute more that 100 commands. The blocks which correspond to commands represent the vocabulary of the Scratch language, and the rules by which they are linked correspond to its grammar. The blocks are kept in the Blocks Palette, and they are divided into 10 different colours:</p>
-<table class="hlist"><tr><td><ul class="simple">
+<p>Në mësimin e mëparshëm mësuam rreth komandave të lëvizjes dhe tani do të shohim se si mund t’i përdorim komandat nga grupi <em>Looks</em> dhe <em>Events</em>. Ne do të tregojmë se si i caktojmë një sjellje të veçantë burimit tonë, duke lidhur blloqe për të formuar një skenar. Projektet në këtë mësim përbëhen nga shkrime të bëra nga një seri hapash të njëpasnjëshëm. Mund të themi se ky lloj i shkrimeve ka një strukturë <strong>të thjeshtë lineare</strong>.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 15)</p>
+<p>Content block expected for the “topic” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span> <span class="n">Terminologjia</span> <span class="n">dhe</span> <span class="n">gramatika</span> <span class="n">vizuale</span> <span class="n">e</span> <span class="n">gjuhës</span> <span class="n">gërvishtëse</span>
+</pre></div>
+</div>
+</div>
+<p>  Sprites mund të ekzekutojnë më shumë se 100 komanda. Blloqet që korrespondojnë me komandat paraqesin fjalorin e gjuhës Scratch, dhe rregullat me të cilat ato lidhen korrespondojnë me gramatikën e saj. Blloqet mbahen në Paleta Blocks, dhe ato ndahen në 10 ngjyra të ndryshme:</p>
+<blockquote>
+<div><table class="hlist"><tr><td><ul class="simple">
 <li><p><img alt="motion_blocks" src="_images/motion.png" /> Motion,</p></li>
 <li><p><img alt="looks_blocks" src="_images/looks.png" /> Looks,</p></li>
 </ul>
@@ -237,157 +251,207 @@
 <li><p><img alt="extensions" src="_images/extension.png" /> Extensions.</p></li>
 </ul>
 </td></tr></table>
-<p>Blocks are grouped together to make it easier for users to create scripts. Regardless of how complex the behavior of a certain sprite is, the script that describes it is made up of a set of simple operations contained in these 10 types. If you know which type of activity the sprite should perform, you can easily choose the right group and take from it the corresponding block.</p>
-<p>There are independent and function blocks.</p>
-<p><strong>Independent</strong> blocks correspond to language commands, that is, they correspond to algorithm steps. Some of them have input fields where the user can set a specific value.</p>
-<p><strong>Function</strong> blocks return values.  They cannot stand independently in a script, they have to be inserted into block fields which receive values and specify their actions.</p>
-<p>The blocks are shaped so that only those which form a correct language construction can be connected, that is to say, Scratch has a visual grammar which does not allow making syntax mistakes.</p>
-<a class="reference internal image-reference" href="_images/fig3_1.png"><img alt="_images/fig3_1.png" class="align-center" src="_images/fig3_1.png" style="width: 300px;" /></a>
-<p><strong>Independent Blocks</strong></p>
-<p>In the text, we will refer to blocks which correspond to processing steps as <strong>stack blocks</strong>. Every stack block corresponds to one activity, that is, it answers the question WHAT should be done. For example, the <img alt="move_steps" src="_images/move_steps.png" /> block commands the sprite to move a certain number of steps in its current direction. The shape of this block looks like a Lego brick, and the entire script looks like a stack of bricks.</p>
-<p>The specified number of steps is entered into the white circle - <strong>input field</strong> of the block.</p>
-<p>In the <img alt="say_sec" src="_images/say_sec.png" /> block one input field has a shape similar to a rounded rectangle, and the other has a shape of a circle. Rounded rectangle input fields can receive both text and number values, while the circle ones can only receive number values.</p>
-<p>The <img alt="glide_xy" src="_images/glide_xy.png" /> block has three input fields.</p>
-<p>Some of the blocks have hexagonal input fields, for example the control block <img alt="wait_until" src="_images/wait_until.png" />. These input fields can only receive logical values (true or false).</p>
-<p>In the <em>Control</em> group of blocks there are C-shaped blocks called <strong>С-blocks</strong>. The slot inside the C-block is a specific type of an input field where you can insert the entire script. The <img alt="repeat" src="_images/repeat.png" /> block has two input fields: one for the number and one for the script.</p>
-<p>The is also one control block which is E-shaped and it has three input fields, one for the condition (logical value), and two for the scripts. The first input field for the scripts gives the command for what should be done if the condition has been fulfilled, and the other what should be done if it hasn’t.</p>
-<p><strong>Hat blocks</strong> correspond to the initial algorithm step. They answer the question WHEN will the script run. These blocks have rounded tops, they are placed on the top of the stack, and they are connected with the block below through a bump at the bottom. Hat blocks define what should be done in order for the stack below it to start running.  You can, for example, click on the green flag or press a specific key on the keyboard.</p>
-<p><strong>Cap blocks</strong> correspond to the final algorithm step. They have a notch on the top, but they don’t have a bump on the bottom. Since there can be more than one script associated with a single object in Scratch, a cap block can stop the running of all activated scripts.</p>
-<p><strong>Function blocks</strong></p>
-<p>Function blocks hold information for other blocks. They are often called <strong>reporters</strong> because they report the current value of a variable. In the previous chapter we introduced the reporter blocks that hold the current coordinates and direction of the sprite. Some reporter blocks also have circular and rounded rectangular input fields, for example <img alt="plus" src="_images/plus.png" /> and <img alt="join" src="_images/join.png" />.</p>
-<p><strong>Boolean blocks</strong> hold the logical values (true or false). They have a hexagonal shape and they can only be placed into the input fields of the corresponding shape (hexagonal or rectangular). Like for example, the <img alt="equal" src="_images/equal.png" /> block. In Scratch, complex logical conditions can easily be constructed by inserting boolean blocks into the input fields of other boolean blocks.</p>
+</div></blockquote>
+<p>Blloqet grupohen së bashku për të bërë më të lehtë për përdoruesit të krijojnë skriptet. Pavarësisht se sa e ndërlikuar është sjellja e një sprite të caktuar, skenari që përshkruan se është i përbërë nga një seri operacionesh të thjeshta të përfshira në këto 10 lloje. Nëse e dini se cili lloj aktiviteti duhet të kryejë sprite, lehtë mund të zgjidhni grupin e duhur dhe të merrni prej tij bllokun përkatës.</p>
+<p>  Ka blloqe të pavarura dhe funksionale.</p>
+<p>  <strong>Blloqet e pavarura</strong> korrespondojnë me komandat gjuhësore, d.m.th., ato korrespondojnë me hapat e algoritmit. Disa prej tyre kanë fusha të dhëna ku përdoruesi mund të vendosë një vlerë specifike.</p>
+<p>  <strong>Funksioni</strong> bllokon vlerat e kthimit. Ata nuk mund të qëndrojnë në mënyrë të pavarur në një skenar, ato duhet të futen në fusha bllok që marrin vlera dhe specifikojnë veprimet e tyre.</p>
+<p>  Blloqet janë formuar në mënyrë që të lidhen vetëm ato që formojnë një ndërtim të saktë gjuhësor, domethënë, Scratch ka një gramatikë vizuale e cila nuk lejon të bëjmë gabime sintaksore.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig3_1.png"><img alt="_images/fig3_1.png" class="align-center" src="_images/fig3_1.png" style="width: 300px;" /></a>
+<p><strong>Blloqet e Pavarur</strong></p>
+</div></blockquote>
+<p> Në tekst, ne do t’i referohemi blloqeve që korrespondojnë me hapat e përpunimit si blloqe  <strong>rafte</strong>. Blockdo bllok rafte korrespondon me një aktivitet, domethënë, përgjigjet në pyetjen WHFAR should duhet të bëhet. Për shembull, <img alt="move_steps" src="_images/move_steps.png" /> bllokon komandat e sprite për të lëvizur një numër të caktuar hapash në drejtimin e tij aktual. Forma e këtij blloku duket si një tullë Lego, dhe e gjithë skenari duket si një pirg tullash.</p>
+<p> Numri i caktuar i hapave futet në rrethin e bardhë -  <strong>fusha hyrëse</strong> e bllokut.</p>
+<p> Në bllokun <img alt="say_sec" src="_images/say_sec.png" /> një fushë hyrëse ka një formë të ngjashme me një drejtkëndësh të rrumbullakosur, dhe tjetra ka një formë të një rrethi. Fushat e hyrjes drejtkëndësh të rrumbullakosur mund të marrin si vlera teksti ashtu edhe numri, ndërsa ato rrethore mund të marrin vetëm vlera të numrave.</p>
+<p> Blloku <a href="#id1"><span class="problematic" id="id2">|</span></a>Glide_xy|ka tre fusha hyrëse.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 55); <em><a href="#id2">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
 </div>
+<p> Disa prej blloqeve kanë fusha hyrjeje gjashtëkëndëshe, për shembull bllok kontrolli <img alt="wait_until" src="_images/wait_until.png" />. Këto fusha hyrëse mund të marrin vetëm vlera logjike (të vërteta ose false).</p>
+<p> Në grupin <em>e Kontrollit</em> të blloqeve ka blloqe në formë C të quajtur <strong>С-blocks</strong>. Pika brenda C-bllok është një lloj specifik i një fushe hyrëse ku mund të futni të gjithë skenarin. Blloku <img alt="repeat" src="_images/repeat.png" /> dy fusha hyrëse: një për numrin dhe një për skenarin.</p>
+<p> Është gjithashtu një bllok kontrolli i cili është në formë E dhe ka tre fusha hyrëse, një për kushtin (vlera logjike) dhe dy për skriptet. Fusha e parë e hyrjes për skriptet jep urdhrin për atë që duhet të bëhet nëse kushti është përmbushur, dhe tjetra çfarë duhet të bëhet nëse nuk ka.</p>
+<p> <strong>Blloqet e kapelave</strong> korrespondojnë me hapin fillestar të algoritmit. Ata i përgjigjen pyetjes KU do të kandidojë skenari. Këto blloqe kanë maja të rrumbullakosura, ato vendosen në majën e pirgut, dhe ato lidhen me bllokun më poshtë përmes një gungë në fund. Blloqet e kapelave përcaktojnë atë që duhet të bëhet në mënyrë që pirg nën të të fillojë të funksionojë. Për shembull, mund të klikoni në flamurin e gjelbër ose të shtypni një çelës specifik në tastierë.</p>
+<p> <strong>Blloqet e kapakëve</strong> korrespondojnë me hapin përfundimtar të algoritmit. Ata kanë një nivel në majë, por ata nuk kanë një gungë në fund. Meqenëse mund të ketë më shumë se një skenar të lidhur me një objekt të vetëm në Scratch, një bllok kapak mund të ndalojë ekzekutimin e të gjitha skripteteve të aktivizuara.</p>
+<p> <strong>Blloqet e funksionit</strong></p>
+<p> Blloqet e funksioneve mbajnë informacione për blloqe të tjera. Ata shpesh quhen <strong>reporterë</strong> sepse raportojnë vlerën aktuale të një ndryshoreje. Në kapitullin e mëparshëm kemi prezantuar blloqet e reporterit që mbajnë koordinatat aktuale dhe drejtimin e rrjedhës. Disa blloqe reporterësh gjithashtu kanë fusha hyrje drejtkëndëshe rrethore dhe të rrumbullakosura, për shembull <img alt="plus" src="_images/plus.png" /> dhe <img alt="join" src="_images/join.png" />.</p>
+<p> <strong>Blloqet e leshit</strong> mbajnë vlerat logjike (të vërteta ose false). Ata kanë një formë gjashtëkëndore dhe ato mund të vendosen vetëm në fushat hyrëse të formës përkatëse (gjashtëkëndor ose drejtkëndor). Si për shembull, blloku <img alt="equal" src="_images/equal.png" />. Në Scratch, kushtet komplekse logjike lehtë mund të ndërtohen duke futur blloqe boolean në fushat hyrëse të blloqeve të tjerë boolean.</p>
 <div class="sidebar">
-<p class="sidebar-title">Event Lead Programming</p>
-<p>Sometimes watching programs run is like watching cartoons. These are the programs that always run the same way, that is to say, the running does not depend on the user. However, there are programs which depend on the events created by the user or by the objects of the project - the sprites and the stage. The user, for example, can click the mouse or press one of the keys on the keyboard, while sprites and the stage can send and receive messages. The blocks that activate scripts associated with these types of <strong>actions</strong> and <strong>messages</strong> are located in the <em>Events</em> group of blocks.</p>
+<p class="sidebar-title">Programimi i drejtuar nga eventet</p>
+<p>Ndonjëherë shikimi i programeve të drejtuara është si të shikosh karikaturat. Këto janë programet që gjithmonë funksionojnë në të njëjtën mënyrë, domethënë, ekzekutimi nuk varet nga përdoruesi. Sidoqoftë, ka programe të cilat varen nga ngjarjet e krijuara nga përdoruesi ose nga objektet e projektit - sprites dhe skena. Përdoruesi, për shembull, mund të klikojë miun ose të shtypë një nga çelësat në tastierë, ndërsa sprites dhe skena mund të dërgojnë dhe marrin mesazhe. Blloqet që aktivizojnë skriptet që lidhen me këto lloje të <strong>veprimeve</strong> dhe <strong>mesazhe</strong> janë të vendosura në grupin <em>Ngjarjet</em> të blloqeve.</p>
 </div>
-<div class="topic">
-<p class="topic-title first">Functions of the <em>Looks</em> and <em>Events</em> Blocks</p>
-<p>The <em>Motion</em> blocks we elaborated in the previous lesson can only be used for sprites. Unlike them, you can use the blocks from the <em>Looks</em> group to manage the appearance of the sprite and the backdrop, i.e. the appearance of the stage. However, this does not this does not apply to all blocks of this group. Among them there are the ones that only apply to sprites, and the ones that only apply to the stage. The blocks from the <em>Events</em> group initiate the running of the scripts.</p>
-<p>In the previous lessons we already learn about the effects of some of the <em>Looks</em> and <em>Events</em> blocks, for example, <code class="docutils literal notranslate"><span class="pre">say</span></code> and <code class="docutils literal notranslate"><span class="pre">press</span> <span class="pre">a</span> <span class="pre">key</span></code>. In this lesson, we will introduce, in more detail, the blocks that allow easy animation with the application of built-in graphic effects, and expand the Scratch vocabulary by using new commands.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 77)</p>
+<p>Content block expected for the “topic” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span> <span class="n">Funksionet</span> <span class="n">e</span> <span class="n">blloqeve</span> <span class="o">*</span><span class="n">Looks</span><span class="o">*</span> <span class="n">dhe</span> <span class="o">*</span><span class="n">Events</span><span class="o">*</span>
+</pre></div>
 </div>
-<div class="section" id="study-study-the-following-examples">
-<h2><img alt="study" src="_images/study.png" /> Study the following examples<a class="headerlink" href="#study-study-the-following-examples" title="Permalink to this headline">¶</a></h2>
-<p>We can entertain our friends by telling jokes, and also by showing them mathematical tricks. The following project illustrates one of them. It has only one script with a simple linear structure.</p>
-<div class="section" id="example-1-project-math-trick">
-<h3>Example 1 - Project “Math Trick”<a class="headerlink" href="#example-1-project-math-trick" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Blloqet <em>Motion</em> që shtjelluam në mësimin e mëparshëm mund të përdoren vetëm për sprites. Për dallim prej tyre, ju mund të përdorni blloqet nga grupi <em>Looks</em> për të menaxhuar pamjen e sprite dhe sfond, d.m.th pamjen e skenës. Sidoqoftë, kjo nuk vlen kjo për të gjitha blloqet e këtij grupi. Midis tyre ka nga ato që vlejnë vetëm për sprites, dhe ato që vlejnë vetëm për skenën. Blloqet nga grupi <em>Events</em> inicojnë ekzekutimin e shkrimeve.</p>
+<p> Në mësimet e mëparshme ne mësojmë tashmë në lidhje me efektet e disa prej blloqeve <em>Looks</em> dhe <em>Events</em>, për shembull, <code class="docutils literal notranslate"><span class="pre">say</span></code> dhe <code class="docutils literal notranslate"><span class="pre">shtypni</span> <span class="pre">një</span> <span class="pre">çelës</span></code>. Në këtë mësim, ne do të prezantojmë, në mënyrë më të detajuar, blloqet që lejojnë animim të lehtë me aplikimin e efekteve grafike të integruara, dhe zgjerimin e fjalorit Scratch duke përdorur komanda të reja.</p>
+<div class="section" id="studim-studioni-shembujt-e-meposhtem">
+<h2><a href="#id7"><span class="problematic" id="id8">|Studim|</span></a> Studioni shembujt e mëposhtëm<a class="headerlink" href="#studim-studioni-shembujt-e-meposhtem" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 85)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">Studim</span><span class="o">|</span> <span class="n">Studioni</span> <span class="n">shembujt</span> <span class="n">e</span> <span class="n">mëposhtëm</span>
+<span class="o">------------------------------------</span>
+</pre></div>
+</div>
+</div>
+<p>Ne mund të argëtojmë miqtë tanë duke i treguar shaka, dhe gjithashtu duke u treguar atyre mashtrime matematikore. Projekti i mëposhtëm ilustron njërën prej tyre. Ka vetëm një skenar me një strukturë të thjeshtë lineare.</p>
+<div class="section" id="shembulli-1-projekti-mashtrim-matematikor">
+<h3>Shembulli 1 - Projekti “Mashtrim matematikor”<a class="headerlink" href="#shembulli-1-projekti-mashtrim-matematikor" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 90)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Mashtrim matematikor&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="1" style="display:none">
 
     </div>
 <ul class="simple">
-<li><p>Step 1: Think of a single three-digit number where all digits are the same, e.g. 111, 222.</p></li>
-<li><p>Step 2: Add those digits together.</p></li>
-<li><p>Step 3: Divide the three-digit number form Step 1 by the sum obtained in the Step 2.</p></li>
-<li><p>Step 4: The result is 37.</p></li>
+<li><p>Hapi 1: Mendoni për një numër të vetëm tre shifror ku të gjithë shifrat janë të njëjta, p.sh. 111, 222.</p></li>
+<li><p>Hapi 2: Shtoni ato shifra së bashku.</p></li>
+<li><p>Hapi 3: Ndani formularin e numrit tre shifror Hapi 1 me shumën e marrë në Hapi 2.</p></li>
+<li><p>Hapi 4: Rezultati është 37.</p></li>
 </ul>
-<p>The script of this project is quite simple. The sprite uses the <img alt="say_sec" src="_images/say_sec.png" /> block to give the user the first three requests, and the <img alt="say" src="_images/say.png" /> block to communicate the result.</p>
-<p>We will use the sprite of a girl called Avery from the sprite library, this sprite has two costumes (click on the <em>Costumes</em> tab to see them) and after each request we will give a command for changing the costume by using the <img alt="next_costume" src="_images/next_costume.png" /> block.</p>
-<p>Because the user needs time to calculate what is required of him/her, in the first two blocks we will put that the sprite should say the given text for 3 seconds, and in the third we will put 5 seconds. The <img alt="say" src="_images/say.png" /> block leaves the last text on the screen until we stop the running of the program by clicking the <em>stop</em> sign - the red octagon above the upper right corner of the stage.</p>
-<p>The script of this project is presented on the following Figure.</p>
-<a class="reference internal image-reference" href="_images/fig3_2.png"><img alt="_images/fig3_2.png" class="align-center" src="_images/fig3_2.png" style="width: 435px;" /></a>
+<p>Skenari i këtij projekti është mjaft i thjeshtë. Sprite përdor “say_sec” bllok për t’i dhënë përdoruesit tre kërkesat e para, dhe “say” bllok për të komunikuar rezultatin.</p>
+<p>Ne do të përdorim burimin e një vajze të quajtur Avery nga biblioteka e sprite, kjo sprite ka dy kostume (kliko në butonin <em>Costums</em> për t’i parë ato) dhe pas secilës kërkesë do të japim një komandë për ndryshimin e kostumit duke përdorur bllokun|next_costume|.</p>
+<p>Për shkak se përdoruesit i duhet kohë për të llogaritur atë që kërkohet prej tij / saj, në dy blloqet e para do të vendosim që sprite duhet ta thotë tekstin e dhënë për 3 sekonda, dhe në të tretën do të vendosim 5 sekonda. Blloku <img alt="say" src="_images/say.png" /> lë tekstin e fundit në ekran derisa të ndalojmë ekzekutimin e programit duke klikuar në shenjën * top* - tetëkëndëshin e kuq sipër qoshes së sipërme të djathtë të skenës.</p>
+<p>Skenari i këtij projekti është paraqitur në figurën vijuese.</p>
+<a class="reference internal image-reference" href="../_images/3/fig3_2.png"><img alt="../_images/3/fig3_2.png" class="align-center" src="../_images/3/fig3_2.png" style="width: 435px;" /></a>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-2-project-conversation">
-<h3>Example 2 - Project “Conversation”<a class="headerlink" href="#example-2-project-conversation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-2-projekti-biseda">
+<h3>Shembulli 2 - Projekti “Biseda”<a class="headerlink" href="#shembulli-2-projekti-biseda" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>This project represents an upgrade of the “Mathematician” project. In it, the girl Avery and the boy Devin present the same mathematical trick through a conversation in which Devin thinks of a number 222 and performs the required calculations, and in the end he asks “How did you know?”. The behavior of both sprites is determined by the scripts, which have a simple linear structure. To make it look like they are really talking, the girl’s script should include blocks for waiting while the boy thinks, and the boy’s script should include blocks for waiting while the girls asks the questions.</p>
-<p>The script of this project is presented on the following Figure.</p>
+<p>Ky projekt paraqet një azhurnim të projektit “Math”. Në të, vajza Avery dhe djali Devin paraqesin të njëjtin mashtrim matematikor përmes një bisede në të cilën Devin mendon për një numër 222 dhe kryen llogaritjet e kërkuara, dhe në fund ai pyet “Si e dinit?”. Sjellja e të dy spritave përcaktohet nga skriptet, të cilat kanë një strukturë të thjeshtë lineare. Për ta bërë të duket sikur po flasin vërtet, skripti i vajzës duhet të përfshijë blloqe për pritje ndërsa djali mendon, dhe skenari i djalit duhet të përfshijë blloqe për pritje ndërsa vajzat shtrojnë pyetjet.</p>
+<p>Skenari i këtij projekti është paraqitur në figurën vijuese.</p>
 <a class="reference internal image-reference" href="_images/fig3_3.png"><img alt="_images/fig3_3.png" class="align-center" src="_images/fig3_3.png" style="width: 980px;" /></a>
-<p><strong>Creating the Project</strong></p>
-<p><img alt="1" src="_images/1.png" /> Open the <em>Mathematician</em> project.</p>
-<p><img alt="2" src="_images/2.png" /> Save this project under the new name <em>Conversation</em>.</p>
-<p><strong>Advice. When you are creating a new version of an existing project, save it under a new name at the very beginning. That way you won’t loose the old version.</strong></p>
-<p><img alt="3" src="_images/3.png" /> From the sprite library choose the sprite of a boy called <em>Devin</em>.</p>
-<p><img alt="4" src="_images/4.png" /> Place the boy sprite next to the right edge of the stage and change his direction in the sprite information window to -90, so that he is facing the girl sprite.</p>
-<p><img alt="5" src="_images/5.png" /> Add the following scripts to the sprites.</p>
+<p><strong>Krijimi i projektit</strong></p>
+<p><img alt="1" src="_images/1.png" /> Hapni projektin <em>Mathematician</em>.</p>
+<p><img alt="2" src="_images/2.png" /> Ruani këtë projekt nën emrin e ri <em>Conversation</em>.</p>
+<p><strong>Këshilla. Kur jeni duke krijuar një version të ri të një projekti ekzistues, ruajeni atë nën një emër të ri që në fillim. Në këtë mënyrë nuk do ta humbni versionin e vjetër.</strong></p>
+<p><img alt="3" src="_images/3.png" /> Nga libraria e sprite zgjidhni burimin e një djali të quajtur <em>Devin</em>.</p>
+<p><img alt="4" src="_images/4.png" /> Vendoseni djalin të sprite pranë buzës së djathtë të skenës dhe ndryshoni drejtimin e tij në dritaren e informacionit të sprite në -90, në mënyrë që ai të përballet me vajzën e sprite.</p>
+<p><img alt="5" src="_images/5.png" /> Shtoni shkrimet e mëposhtme te sprites.</p>
 <a class="reference internal image-reference" href="_images/fig3_4.png"><img alt="_images/fig3_4.png" class="align-center" src="_images/fig3_4.png" style="width: 695px;" /></a>
-<p>In the <em>Mathematician</em> project, the girl says 4 sentences, and she changes her costume 3 times (she has 2 costumes). This means that if we run the project two consecutive times, the girl will not appear wearing the same costume at the beginning of both runs. Because we want the girl to appear at the beginning wearing the same costume both times, we add the appropriate command at the top of the script.</p>
-<p><strong>Advice. Put commands at the beginning of the project that initialize the sprites (specify where and in which costume they should appear), especially if the sprites are moving during the running of the project.</strong></p>
-<p>We coordinated the behavior of the sprites by inserting commands for waiting into their scripts.</p>
+<p>Në projektin <em>Mathematician</em>, vajza thotë 4 fjali, dhe ajo ndryshon veshjen e saj 3 herë (ajo ka 2 kostume). Kjo do të thotë që nëse e drejtojmë projektin dy herë radhazi, vajza nuk do të shfaqet e veshur me të njëjtën kostum në fillim të të dyja vrapimeve. Për shkak se ne dëshirojmë që vajza të shfaqet në fillim duke veshur të njëjtën veshje të dyja kohët, ne shtojmë komandën e duhur në krye të skenarit.</p>
+<p><strong>Këshilla. Vendosni komanda në fillim të projektit që inicializojnë sprites (specifikoni se ku dhe në cilën kostum duhet të shfaqen), veçanërisht nëse sprites po lëvizin gjatë ekzekutimit të projektit.</strong></p>
+<p>Ne koordinuam sjelljen e sprites duke futur komanda për pritje në skriptet e tyre.</p>
 <a class="reference internal image-reference" href="_images/fig3_5.png"><img alt="_images/fig3_5.png" class="align-center" src="_images/fig3_5.png" style="width: 800px;" /></a>
-<p><img alt="6" src="_images/6.png" /> Save the changed version of the project.</p>
-<p>If you want to know the answer to the boy’s question “How did you know?”, click on the <em>Show the Instruction</em> icon.</p>
+<p><img alt="6" src="_images/6.png" /> Ruani versionin e ndryshuar të projektit.</p>
+<p>Nëse doni të dini përgjigjen e pyetjes së djalit “Si e dini?”, Klikoni në ikonën <em>Show the Instruction</em>.</p>
 
-    <div data-component="reveal" id="instruction"   data-showtitle="Show the instruction" data-hidetitle="Hide the instruction">
-    <p><strong>Instruction:</strong></p>
-<p>The girl asked him to think of a three-digit number with the same digits. Let’s call this repeating digit x. In this case the unknown number can be presented as 111х, and the sum of its digits as 3х. The result of the operation of dividing the number with the sum of its digits is 111/3=37, regardless of the initial number.</p>
+    <div data-component="reveal" id="instruction"   data-showtitle="Shfaq instruksionin" data-hidetitle="Fshih instruksionin">
+    <p><strong>Instruksion:</strong></p>
+<p>Vajza i kërkoi që të mendojë për një numër tre shifror me të njëjtat shifra. Le ta quajmë këtë shifër të përsëritur x. Në këtë rast, numri i panjohur mund të paraqitet si 111х, dhe shuma e shifrave të tij si 3х. Rezultati i funksionimit të ndarjes së numrit me shumën e shifrave të tij është 111/3 = 37, pavarësisht nga numri fillestar.</p>
 
     </div>
     <hr class="docutils" />
-<div class="sidebar">
-<p class="sidebar-title">Arithmetic Expressions in Scratch</p>
-<p>The group <em>Operators</em> contains blocks that enable arithmetic operations to be performed. For example, the <img alt="plus" src="_images/plus.png" /> block enables addition. If you put numbers into the input fields of this block, it will calculate their sum. Operators cannot stand alone in the script, they need to be inserted into the input field of an independent block. For example, if you insert them into the input field of a <code class="docutils literal notranslate"><span class="pre">say</span></code> or <code class="docutils literal notranslate"><span class="pre">think</span></code> block, the value they calculate will be displayed.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 173)</p>
+<p>Content block expected for the “sidebar” directive; none found.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">sidebar</span><span class="p">::</span> <span class="n">Shprehjet</span> <span class="n">aritmetike</span> <span class="n">në</span> <span class="n">gërvishtje</span>
+</pre></div>
 </div>
 </div>
-<div class="section" id="example-3-project-calculation">
-<h3>Example 3 - Project “Calculation”<a class="headerlink" href="#example-3-project-calculation" title="Permalink to this headline">¶</a></h3>
+<p>  Grupi <em>Operatorët</em> përmban blloqe që mundësojnë kryerjen e operacioneve aritmetike. Për shembull, <img alt="plus" src="_images/plus.png" /> bllok mundëson shtesë. Nëse vendosni numrat në fushat hyrëse të këtij blloku, ajo do të llogarisë shumën e tyre. Operatorët nuk mund të qëndrojnë vetëm në skenar, ata duhet të futen në fushën e hyrjes së një blloku të pavarur. Për shembull, nëse i futni ato në fushën hyrëse të bllokut <code class="docutils literal notranslate"><span class="pre">say</span></code> ose <code class="docutils literal notranslate"><span class="pre">think</span></code>, vlera që llogaritin do të shfaqet.</p>
+</div>
+<div class="section" id="shembulli-3-projekti-calculation">
+<h3>Shembulli 3 - Projekti “Calculation”<a class="headerlink" href="#shembulli-3-projekti-calculation" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>The following project is also an upgrade of the previous one. In it, instead of the fixed number 222, the boy chooses another three-digit number with all three equal digits, and uses it to perform the required operations. This can be programmes thanks to the possibility of generating a <strong>random number</strong> from the given interval.</p>
+<p>Projekti i mëposhtëm është gjithashtu një azhurnim i projektit të mëparshëm. Në të, në vend të numrit fiks 222, djali zgjedh një numër tjetër tre-shifror me të tre shifrat e barabarta, dhe e përdor atë për të kryer operacionet e kërkuara. Kjo mund të jetë programe falë mundësisë së gjenerimit të një numri <strong>të rastit</strong> nga intervali i dhënë.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>Generating Random Numbers</strong></p>
-<p>Among the <em>Operators</em> blocks the is a command <img alt="pick_random" src="_images/pick_random.png" />. Generating a random number means randomly selecting a number from an interval. The lowest and the highest number of this interval are inserted into the input fields of this reporter block. So, if those numbers were 1 and 10, any number from the interval [1,10] would be selected, and, for example, if it were -100 and 100, then a number from the interval [-100,100] would be generated.</p>
 
     </p></div></div>
-<p>In our example, in the first field you should enter number 1, and in the second number 9.</p>
-<p>In this project we used <strong>variables</strong> which will be introduced in the eighth lesson. This is why it is marked as difficult. You can skip it and come back to it later.</p>
-<p>If on the other hand you like a challenge, let’s say something about this topic in advance. When we say variable we mean the area of computer memory where the program stores the current values ​​of the data it is working with. This area is called <strong>Name of the Variable</strong>, and <strong>value of the variable</strong> is what is stored in it.</p>
-<p><strong>Creation of the Project</strong></p>
+<p><strong>Gjenerimi i numrave të rastit</strong></p>
+<p> Në mesin e <em>Operatorëve</em> bllokon është një komandë <img alt="pick_random" src="_images/pick_random.png" /> Të gjenerosh një numër të rastësishëm do të thotë të zgjedhësh rastësisht një numër nga një interval. Numri më i ulët dhe më i lartë i këtij intervali futen në fushat hyrëse të këtij blloku reporterësh. Pra, nëse ato numra ishin 1 dhe 10, do të zgjidhej ndonjë numër nga intervali [1,10], dhe, për shembull, nëse do të ishte -100 dhe 100, atëherë do të gjenerohej një numër nga intervali [-100,100] .</p>
+<p>Në shembullin tonë, në fushën e parë duhet të futni numrin 1, dhe në numrin e dytë 9.</p>
+<p>Në këtë projekt kemi përdorur <strong>variabël</strong> të cilat do të prezantohen në mësimin e tetë. Kjo është arsyeja pse është shënuar si e vështirë. Mund ta kaloni dhe t’i riktheheni më vonë.</p>
+<p>Nëse nga ana tjetër ju pëlqen një sfidë, le të themi diçka për këtë temë paraprakisht. Kur themi i ndryshueshëm nënkuptojmë fushën e kujtesës kompjuterike ku programi ruan vlerat aktuale të të dhënave me të cilat është duke punuar. Kjo zonë quhet <strong>Emri i variblit</strong>, dhe vlera <strong>e variablit</strong> është ajo që është e ruajtur në të.</p>
+<p><strong>Krijimi i Projektit</strong></p>
 <div class="sidebar">
 <p class="sidebar-title">Part of the script added to the boy</p>
 <p><img alt="Devin" src="_images/fig3_6.png" /></p>
 </div>
-<p><img alt="1" src="_images/1.png" /> Open the <em>Conversation</em> project and save it under a new name <em>Calculation</em>.</p>
-<p><img alt="2" src="_images/2.png" /> Create the variable <em>x</em> which corresponds to the digits of a three-digit number and set a random number from the interval [1,9] as its initial value.</p>
-<p><img alt="3" src="_images/3.png" /> Create the variable <em>number</em>, and as the initial value set the value of the expression 111*x.</p>
-<p><img alt="4" src="_images/4.png" /> In the first <code class="docutils literal notranslate"><span class="pre">think</span></code> block of the boy’s script insert the reporter block of the variable <em>number</em> instead of the number 222.</p>
+<p><img alt="1" src="_images/1.png" /> Hapni projektin <em>Conversation</em> dhe ruajeni atë nën një emër të ri <em>Llogaritja</em>.</p>
+<p><img alt="2" src="_images/2.png" /> Krijoni variablin <em>x</em> që korrespondon me shifrat e një numri tre shifror dhe vendosni një numër të rastësishëm nga intervali [1,9] si vlera fillestare e tij.</p>
+<p><img alt="3" src="_images/3.png" /> Krijoni ndryshoren <em>number</em>, dhe si vlerë fillestare vendosni vlerën e shprehjes 111 * x.</p>
+<p><img alt="4" src="_images/4.png" /> Në bllokun e parë <code class="docutils literal notranslate"><span class="pre">think</span></code> të skenarit të djalit futni bllokun e reportazhit të variablës <em>number</em> në vend të numrit 222.</p>
 <p><img alt="n1" src="_images/n1.png" /> <img alt="!=" src="_images/not_equal.png" /> <img alt="n2" src="_images/n2.png" /></p>
-<p><img alt="5" src="_images/5.png" /> Create the variable <em>sum</em> and as it initial value set the value of the expression x+x+x. Since the block for addition has only two input fields, we will insert one block for addition into the input field of another addition block. (Of course, we could have done the same thing by using one multiplication block, because х+х+х=3*х)</p>
+<p><img alt="5" src="_images/5.png" /> Krijoni variablin <em>sum</em> dhe pasi vlera fillestare vendosni vlerën e shprehjes x + x + x. Meqenëse blloku për shtesë ka vetëm dy fusha hyrëse, ne do të futim një bllok për shtesë në fushën hyrëse të një blloku tjetër shtesë. (Sigurisht, ne mund të kishim bërë të njëjtën gjë duke përdorur një bllok shumëzimi, sepse х + х + х = 3 * х)</p>
 <a class="reference internal image-reference" href="_images/fig3_7.png"><img alt="_images/fig3_7.png" class="align-center" src="_images/fig3_7.png" style="width: 350px;" /></a>
-<p><img alt="6" src="_images/6.png" /> In the second <code class="docutils literal notranslate"><span class="pre">think</span></code> block of the boy’s script insert the reporter of the variable <em>sum</em> instead of the text <em>2+2+2</em>.</p>
-<p><img alt="7" src="_images/7.png" /> Create the variable <em>result</em> and as the initial value set the value of the expression number/sum.</p>
-<p><img alt="8" src="_images/8.png" /> In the third block of the boy’s script insert the reporter of the variable <em>result</em> instead of the number 37.</p>
-<p><img alt="9" src="_images/9.png" /> Run the project a few times to check if it generates different three-digit numbers.</p>
-<p><img alt="10" src="_images/10.png" /> Save the changed version of the project.</p>
+<p><img alt="6" src="_images/6.png" /> Në bllokun e dytë <code class="docutils literal notranslate"><span class="pre">think</span></code> të skenarit të djalit futni raportuesin e ndryshores <em>sum</em> në vend të tekstit <em>2 + 2 + 2</em>.</p>
+<p><img alt="7" src="_images/7.png" /> Krijoni variablin <em>result</em> dhe si vlerë fillestare vendosni vlerën e numrit / shumës së shprehjes.</p>
+<p><img alt="8" src="_images/8.png" /> Në bllokun e tretë të skenarit të djalit futni reporterin e variablit <em>result</em> në vend të numrit 37.</p>
+<p><img alt="9" src="_images/9.png" /> Drejtoni projektin disa herë për të parë nëse gjeneron numra të ndryshëm tre-shifrorë.</p>
+<p><img alt="10" src="_images/10.png" /> Ruani versionin e ndryshuar të projektit.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-4-project-sprite-effects">
-<h3>Example 4 - Project “Sprite Effects”<a class="headerlink" href="#example-4-project-sprite-effects" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-4-projekti-efekte-tsprite">
+<h3>Shembulli 4 - Projekti “Efekte tSprite”<a class="headerlink" href="#shembulli-4-projekti-efekte-tsprite" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 239)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Efekte tSprite&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>The following project shows how the <img alt="change_effect" src="_images/change_effect.png" /> command from the <em>Looks</em> group can affect sprite’s appearance. It also shows the event block <em>when this sprite is clicked</em> can start the running of the script.</p>
-<p><strong>Project Script</strong></p>
-<p>There are 7 copies of the same sprite on the stage. Clicking on one of them changes the sprite using one of the seven graphic effects. This is enabled by the <img alt="change_effect" src="_images/change_effect.png" /> command. The sprite also says which effect was used.</p>
+<p>Projekti i mëposhtëm tregon se si <img alt="change_effect" src="_images/change_effect.png" /> komanda nga grupi <em>Looks</em> mund të ndikojë në pamjen e sprite. Gjithashtu tregon bllokun e ngjarjes <em>kur klikohet kjo sprite</em> mund të fillojë ekzekutimin e skenarit.</p>
+<p><strong>Skenari i projektit</strong></p>
+<p>Janë 7 kopje të së njëjtës sprite në skenë. Duke klikuar në njërën prej tyre ndryshon sprite duke përdorur një nga shtatë efektet grafike. Kjo mundësohet nga komanda <img alt="change_effect" src="_images/change_effect.png" />. Sprite thotë gjithashtu se cili efekt është përdorur.</p>
 <div class="sidebar">
 <p class="sidebar-title">Graphic Effects</p>
-<p>By clicking on the white triangle in the input field
-you will open the drop-down list containing the following
-7 different effects.</p>
-<p><img alt="efekti" src="_images/fig3_8.png" /></p>
+<p>Duke klikuar në trekëndëshin e bardhë në fushën e hyrjes</p>
 </div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 252)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    ju do të hapni listën rënëse që përmban më poshtë
+    7 efekte të ndryshme</p>
+<blockquote>
+<div><p><img alt="efekti" src="_images/fig3_8.png" /></p>
+</div></blockquote>
 <p><strong>Creation of the Project</strong></p>
-<p><img alt="1" src="_images/1.png" /> Start a new project.</p>
-<p><img alt="2" src="_images/2.png" /> Delete the cat sprite and choose the <em>Singer1</em> sprite from the sprite library.</p>
-<p><img alt="3" src="_images/3.png" /> Add the following script to the sprite.</p>
+<p><img alt="1" src="_images/1.png" /> Nis njö projekt tö ri.</p>
+<p><a href="#id3"><span class="problematic" id="id4">|</span></a>2|Fshini sprite mace dhe zgjidhni Sprint <em>Singer1</em> nga biblioteka e sprite.</p>
+<div class="system-message" id="id3">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 263); <em><a href="#id4">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
+</div>
+<p><img alt="3" src="_images/3.png" /> Shtoni skriptin e mëposhtëm në sprite.</p>
 <a class="reference internal image-reference" href="_images/fig3_9.png"><img alt="_images/fig3_9.png" class="align-center" src="_images/fig3_9.png" style="width: 240px;" /></a>
-<p><img alt="4" src="_images/4.png" /> Right-click on the sprite in the sprite list to open the shortcut menu, and select the option <em>duplicate</em>. The <em>Singer2</em> sprite will appear in the sprite list, and it will have the same script as the sprite used to create it.</p>
-<p><img alt="5" src="_images/5.png" /> Change the effect in the <img alt="change_effect" src="_images/change_effect.png" /> block to the на <em>fisheye</em>, and in the <img alt="say_sec" src="_images/say_sec.png" /> block change the text so it says <em>fisheye</em>.</p>
-<p><img alt="6" src="_images/6.png" /> Do the same thing 5 more times, but every time choose another effect from the drop-down list and change the message that the sprite says when you click on it.</p>
-<p><img alt="7" src="_images/7.png" /> Arrange the sprites on the stage evenly and test whether the project is doing what was intended, by clicking on each sprite .</p>
-<p><img alt="8" src="_images/8.png" /> Each time you click on one of the sprites, the appropriate effect will appear.</p>
-<p><img alt="9" src="_images/9.png" /> Therefore, a script should be added to the stage which, when clicked on the green flag, will undo changes by using the <img alt="clear_effects" src="_images/clear_effects.png" /> block.</p>
-<p>The following Figure shows the appearance of the sprites after one or more applications of the corresponding effect.</p>
+<p><img alt="4" src="_images/4.png" /> Klikoni me të djathtën mbi listën e sprite në listën e sprite për të hapur menunë e shkurtoreve dhe zgjidhni opsionin <em>cpoy</em>. Sprite <em>Singer2</em> do të shfaqet në listën e spriteve dhe do të ketë të njëjtin skenar si sprite e përdorur për krijimin e tij.</p>
+<blockquote>
+<div><p>5| Ndryshoni efektin në bllokun <img alt="change_effect" src="_images/change_effect.png" /> të <em>fisheye</em>, dhe në <img alt="say_sec" src="_images/say_sec.png" /> bllokoni ndryshimin e tekstit kështu që ai thotë <em>fisheye</em>.</p>
+</div></blockquote>
+<p><img alt="6" src="_images/6.png" /> Bëni të njëjtën gjë 5 herë më shumë, por çdo herë zgjidhni një efekt tjetër nga lista drop-down dhe ndryshoni mesazhin që sprite thotë kur klikoni mbi të.</p>
+<p><img alt="7" src="_images/7.png" /> Organizoni sprites në skenë në mënyrë të barabartë dhe provoni nëse projekti po bën atë që ishte menduar, duke klikuar në secilën sprite.</p>
+<p><img alt="8" src="_images/8.png" /> Sa herë që klikoni në një nga sprites, do të shfaqet efekti i duhur.</p>
+<p><img alt="9" src="_images/9.png" /> Prandaj, në skenë duhet të shtohet një skenar i cili, kur klikohet në flamurin e gjelbër, do të zhbëjë ndryshimet duke përdorur bllokun <img alt="clear_effects" src="_images/clear_effects.png" />.</p>
+<p>Figura e mëposhtme tregon pamjen e sprites pas një ose më shumë aplikimeve të efektit përkatës.</p>
 <a class="reference internal image-reference" href="_images/fig3_10.png"><img alt="_images/fig3_10.png" class="align-center" src="_images/fig3_10.png" style="width: 435px;" /></a>
 </div>
 <hr class="docutils" />
@@ -397,16 +461,16 @@ you will open the drop-down list containing the following
     <div data-level="1" style="display:none">
 
     </div>
-<p>Unlike the <em>Motion</em> blocks, the <em>Looks</em> blocks can also be applied to the stage. All scripts in this project will be added to the stage. The purpose of this project is to show how the <img alt="change_effect" src="_images/change_effect.png" /> command affects the look of the stage, and to give you ideas on how you can use it in your future projects. To put everything back to normal, we will add the block for clearing all graphic effects to the <em>when green flag is clicked</em> event block.</p>
-<p><strong>Project Script</strong></p>
-<p>The cat is in the middle of the desert. The user can change the look of the backdrop by pressing on of the keys with the numbers from 1 to 3 on it. Each of these events corresponds to one of the graphic effects on the backdrop. The following Figure shows what the stage looks like at the beginning (0) and after the keys were pressed a few times: 1 - effect <em>color</em>, 2 - effect <em>fisheye</em>, 3 - effect <em>whirl</em> and 4 - effect <em>pixelate</em>.</p>
+<p>Për dallim nga blloqet <em>Motion</em>, blloqet <em>Looks</em> gjithashtu mund të aplikohen në skenë. Të gjitha skriptet në këtë projekt do të shtohen në skenë. Qëllimi i këtij projekti është të tregojë se si ndryshimi_efekti | komanda ndikon në pamjen e skenës dhe për t’ju dhënë ide se si mund ta përdorni atë në projektet tuaja të ardhshme. Për të vendosur gjithçka në normale, ne do të shtojmë bllokun për pastrimin e të gjitha efekteve grafike në * kur të klikohet flamuri jeshil * bllok i ngjarjes.</p>
+<p><strong>Skenari i projektit</strong></p>
+<p>Macja është në mes të shkretëtirës. Përdoruesi mund të ndryshojë pamjen e sfondit duke shtypur butonat me numrat nga 1 në 3 në të. Secila prej këtyre ngjarjeve korrespondon me një nga efektet grafike në sfond. Figura e mëposhtme tregon se si duket faza në fillim (0) dhe pasi çelësat u shtypën disa herë: 1 - efekti <em>color</em>, 2 - efekti <em>fisheye</em>, 3 - efekti <em>rotation</em> dhe 4 - efekti <em>pixelate</em>.</p>
 <a class="reference internal image-reference" href="_images/fig3_11.png"><img alt="_images/fig3_11.png" class="align-center" src="_images/fig3_11.png" style="width: 735px;" /></a>
 </div>
 </div>
-<div class="section" id="ask-did-you-understand">
-<h2><img alt="ask" src="_images/ask.png" /> Did you understand?<a class="headerlink" href="#ask-did-you-understand" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ask-e-kuptuat">
+<h2><img alt="ask" src="_images/ask.png" /> E kuptuat?<a class="headerlink" href="#ask-e-kuptuat" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pyetja-1">
+<h3>Pyetja 1<a class="headerlink" href="#pyetja-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -414,9 +478,7 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="commands_looks">
-            <p>Q-66: Which of the blocks belong to the <em>Looks</em> group of commands?
-(Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q3_1.png"><img alt="_images/q3_1.png" class="align-center" src="_images/q3_1.png" style="width: 410px;" /></a>
+            <p>Q-66: Cilat nga blloqet i përkasin grupit të komandave <em>Looks</em>?</p>
 
             <li data-component="answer"  id="commands_looks_opt_a"></li><li data-component="feedback" id="commands_looks_opt_a"></li>
             
@@ -429,9 +491,17 @@ you will open the drop-down list containing the following
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 327)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q3_1.png"><img alt="_images/q3_1.png" class="align-center" src="_images/q3_1.png" style="width: 410px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-2">
+<h3>Pyetja 2<a class="headerlink" href="#pyetja-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -439,9 +509,7 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="commands_events">
-            <p>Q-67: Which of the blocks belong to the <em>Events</em> group of commands?
-(Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q3_2.png"><img alt="_images/q3_2.png" class="align-center" src="_images/q3_2.png" style="width: 520px;" /></a>
+            <p>Q-67: Cilin nga blloqet i përkasin grupit <em>Events</em> të komandave?</p>
 
             <li data-component="answer" data-correct id="commands_events_opt_a"></li><li data-component="feedback" id="commands_events_opt_a"></li>
             
@@ -454,9 +522,17 @@ you will open the drop-down list containing the following
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-3">
-<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 351)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q3_2.png"><img alt="_images/q3_2.png" class="align-center" src="_images/q3_2.png" style="width: 520px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-3">
+<h3>Pyetja 3<a class="headerlink" href="#pyetja-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -464,9 +540,7 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="commands_control">
-            <p>Q-68: Which of the blocks belong to the <em>Control</em> group of commands?
-(Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q3_3.png"><img alt="_images/q3_3.png" class="align-center" src="_images/q3_3.png" style="width: 505px;" /></a>
+            <p>Q-68: Cilin nga blloqet i përkasin grupit <em>Control</em> të komandave?</p>
 
             <li data-component="answer" data-correct id="commands_control_opt_a"></li><li data-component="feedback" id="commands_control_opt_a"></li>
             
@@ -479,9 +553,17 @@ you will open the drop-down list containing the following
 
             </ul>
             </div>
-            </div>
-<div class="section" id="question-4">
-<h3>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h3>
+            <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 375)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/q3_3.png"><img alt="_images/q3_3.png" class="align-center" src="_images/q3_3.png" style="width: 505px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-4">
+<h3>Pyetja 4<a class="headerlink" href="#pyetja-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -489,18 +571,18 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="blocks2">
-            <p>Q-69: Can one script have multiple hat blocks?</p>
+            <p>Q-69: A mundet që një skenar të ketë blloqe kapele të shumta?</p>
 
-            <li data-component="answer"  id="blocks2_opt_a">yes</li><li data-component="feedback" id="blocks2_opt_a"></li>
+            <li data-component="answer"  id="blocks2_opt_a">po</li><li data-component="feedback" id="blocks2_opt_a"></li>
             
-            <li data-component="answer" data-correct id="blocks2_opt_b">no</li><li data-component="feedback" id="blocks2_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="blocks2_opt_b">jo</li><li data-component="feedback" id="blocks2_opt_b">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-5">
-<h3>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-5">
+<h3>Pyetja 5<a class="headerlink" href="#pyetja-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -508,11 +590,11 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="blocks3">
-            <p>Q-70: What do we call the blocks which have a notch at the top and a bump on the bottom?</p>
+            <p>Q-70: Si i quajmë blloqet të cilat kanë një shkallë në krye dhe një gungë në fund?</p>
 
             <li data-component="answer"  id="blocks3_opt_a">reporter blocks</li><li data-component="feedback" id="blocks3_opt_a"></li>
             
-            <li data-component="answer" data-correct id="blocks3_opt_b">stack blocks</li><li data-component="feedback" id="blocks3_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="blocks3_opt_b">stack blocks</li><li data-component="feedback" id="blocks3_opt_b">Saktë.</li>
             
             <li data-component="answer"  id="blocks3_opt_c">hat blocks</li><li data-component="feedback" id="blocks3_opt_c"></li>
             
@@ -522,8 +604,8 @@ you will open the drop-down list containing the following
             </ul>
             </div>
             </div>
-<div class="section" id="question-6">
-<h3>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-6">
+<h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -531,9 +613,9 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="blocks4">
-            <p>Q-71: What do we call blocks that hold the values and cannot stand independently in a script, but they have to be inserted into the input fields of other blocks?</p>
+            <p>Q-71: Si i quajmë blloqet që mbajnë vlerat dhe nuk mund të qëndrojnë në mënyrë të pavarur në një skenar, por ato duhet të futen në fushat hyrëse të blloqeve të tjerë?</p>
 
-            <li data-component="answer" data-correct id="blocks4_opt_a">reporter blocks</li><li data-component="feedback" id="blocks4_opt_a">Correct.</li>
+            <li data-component="answer" data-correct id="blocks4_opt_a">reporter blocks</li><li data-component="feedback" id="blocks4_opt_a">Saktë.</li>
             
             <li data-component="answer"  id="blocks4_opt_b">stack blocks</li><li data-component="feedback" id="blocks4_opt_b"></li>
             
@@ -545,8 +627,8 @@ you will open the drop-down list containing the following
             </ul>
             </div>
             </div>
-<div class="section" id="question-7">
-<h3>Question 7<a class="headerlink" href="#question-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-7">
+<h3>Pyetja 7<a class="headerlink" href="#pyetja-7" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -554,8 +636,8 @@ you will open the drop-down list containing the following
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="groups_commands">
-    <span data-component="question">Q-72: By dragging the rectangles, pair the blocks with their role in Scratch.</span>
-	<span data-component=feedback>Try again</span>
+    <span data-component="question">Q-72: Duke tërhequr drejtkëndësat, çiftoni blloqet me rolin e tyre në Scratch.</span>
+	<span data-component=feedback>Provo përsëri</span>
 
     <li data-component="draggable" id="groups_commands_drag1">hat</li>
     <li data-component="dropzone" for="groups_commands_drag1">define WHEN the script will run</li>
@@ -569,8 +651,8 @@ you will open the drop-down list containing the following
     <li data-component="draggable" id="groups_commands_drag4">stack blocks</li>
     <li data-component="dropzone" for="groups_commands_drag4">define WHAT should be done</li>
 </ul></div></div>
-<div class="section" id="question-8">
-<h3>Question 8<a class="headerlink" href="#question-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-8">
+<h3>Pyetja 8<a class="headerlink" href="#pyetja-8" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -578,18 +660,18 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="аi01">
-            <p>Q-73: Do the expressions <img alt="q3_8a" src="_images/q3_8a.png" /> and <img alt="q3_8b" src="_images/q3_8b.png" /> have the same value?</p>
+            <p>Q-73: A kanë të njëjtën vlerë shprehjet <img alt="q3_8a" src="_images/q3_8a.png" /> dhe <img alt="q3_8b" src="_images/q3_8b.png" />?</p>
 
-            <li data-component="answer"  id="аi01_opt_a">yes</li><li data-component="feedback" id="аi01_opt_a"></li>
+            <li data-component="answer"  id="аi01_opt_a">po</li><li data-component="feedback" id="аi01_opt_a"></li>
             
-            <li data-component="answer" data-correct id="аi01_opt_b">no</li><li data-component="feedback" id="аi01_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="аi01_opt_b">jo</li><li data-component="feedback" id="аi01_opt_b">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-9">
-<h3>Question 9<a class="headerlink" href="#question-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-9">
+<h3>Pyetja 9<a class="headerlink" href="#pyetja-9" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -597,22 +679,26 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="аi02">
-            <p>Q-74: Which of the expressions <img alt="q3_9a" src="_images/q3_9a.png" /> and <img alt="q3_9b" src="_images/q3_9b.png" /> has a negative value?</p>
+            <p>Q-74: Cila nga shprehejet <img alt="q3_9a" src="_images/q3_9a.png" /> dhe <a href="#id5"><span class="problematic" id="id6">|</span></a>q3_9b|ka vlerë negative?</p>
+<div class="system-message" id="id5">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 482); <em><a href="#id6">backlink</a></em></p>
+<p>Inline substitution_reference start-string without end-string.</p>
+</div>
 
-            <li data-component="answer"  id="аi02_opt_a">none</li><li data-component="feedback" id="аi02_opt_a">False. The second has the value 10/(-1)=-10</li>
+            <li data-component="answer"  id="аi02_opt_a">asnjëra</li><li data-component="feedback" id="аi02_opt_a">Gabim. E dyta ka vlerë 10/(-1)=-10</li>
             
-            <li data-component="answer"  id="аi02_opt_b">the first</li><li data-component="feedback" id="аi02_opt_b">False. The first has the value 5-3=2</li>
+            <li data-component="answer"  id="аi02_opt_b">e para</li><li data-component="feedback" id="аi02_opt_b">Gabim. E para ka vlerë 5-3=2</li>
             
-            <li data-component="answer" data-correct id="аi02_opt_c">the second</li><li data-component="feedback" id="аi02_opt_c">Correct.</li>
+            <li data-component="answer" data-correct id="аi02_opt_c">e dyta</li><li data-component="feedback" id="аi02_opt_c">Saktë.</li>
             
-            <li data-component="answer"  id="аi02_opt_d">both</li><li data-component="feedback" id="аi02_opt_d">False. The first has the value 2.</li>
+            <li data-component="answer"  id="аi02_opt_d">të dyja</li><li data-component="feedback" id="аi02_opt_d">Gabim. E para ka vlerë 2.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-10">
-<h3>Question 10<a class="headerlink" href="#question-10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-10">
+<h3>Pyetja 10<a class="headerlink" href="#pyetja-10" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -620,7 +706,7 @@ you will open the drop-down list containing the following
 
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="ai03">
-            <p>What is the value of the expression <img alt="q3_10" src="_images/q3_10.png" /> ? <input type="text"></p>
+            <p>Cila ëeshtë vlera e shprehjes <img alt="q3_10" src="_images/q3_10.png" /> ? <input type="text"></p>
 
         <script type="application/json">
             [[{"number": [19, 19], "feedback": "<p>Correct.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>False. (7+(8*2))-4 = (7+16)-4 = 23-4 = 19</p>\n"}]]
@@ -629,8 +715,8 @@ you will open the drop-down list containing the following
         </div>
         </div>
             </div>
-<div class="section" id="question-11">
-<h3>Question 11<a class="headerlink" href="#question-11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-11">
+<h3>Pyetja 11<a class="headerlink" href="#pyetja-11" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -638,20 +724,20 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ai04">
-            <p>Q-75: What is the value of the expression <img alt="q3_11" src="_images/q3_11.png" />?</p>
+            <p>Q-75: Cila është vlera e shprehjes <img alt="q3_11" src="_images/q3_11.png" />?</p>
 
-            <li data-component="answer"  id="ai04_opt_a">45</li><li data-component="feedback" id="ai04_opt_a">False. 5+(2*(7-4)) = 5+2*3 = 5+6 = 11</li>
+            <li data-component="answer"  id="ai04_opt_a">45</li><li data-component="feedback" id="ai04_opt_a">Gabim. 5+(2*(7-4)) = 5+2*3 = 5+6 = 11</li>
             
-            <li data-component="answer" data-correct id="ai04_opt_b">11</li><li data-component="feedback" id="ai04_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="ai04_opt_b">11</li><li data-component="feedback" id="ai04_opt_b">Saktë.</li>
             
-            <li data-component="answer"  id="ai04_opt_c">15</li><li data-component="feedback" id="ai04_opt_c">False. 5+(2*(7-4)) = 5+2*3 = 5+6 = 11</li>
+            <li data-component="answer"  id="ai04_opt_c">15</li><li data-component="feedback" id="ai04_opt_c">Gabim. 5+(2*(7-4)) = 5+2*3 = 5+6 = 11</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-12">
-<h3>Question 12<a class="headerlink" href="#question-12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-12">
+<h3>Pyetja 12<a class="headerlink" href="#pyetja-12" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -659,23 +745,31 @@ you will open the drop-down list containing the following
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="ai05">
-            <p>Q-76: What is the value of the expression <img alt="q3_12" src="_images/q3_12.png" />?</p>
+            <p>Q-76: Cila është vlera e shprehjes <img alt="q3_12" src="_images/q3_12.png" />?</p>
 
-            <li data-component="answer"  id="ai05_opt_a">3</li><li data-component="feedback" id="ai05_opt_a">False. ((2+1)*(9-5))/2 = 3*4/2 = 6</li>
+            <li data-component="answer"  id="ai05_opt_a">3</li><li data-component="feedback" id="ai05_opt_a">Gabim. ((2+1)*(9-5))/2 = 3*4/2 = 6</li>
             
-            <li data-component="answer"  id="ai05_opt_b">11</li><li data-component="feedback" id="ai05_opt_b">False. ((2+1)*(9-5))/2 = 3*4/2 = 6</li>
+            <li data-component="answer"  id="ai05_opt_b">11</li><li data-component="feedback" id="ai05_opt_b">Gabim. ((2+1)*(9-5))/2 = 3*4/2 = 6</li>
             
-            <li data-component="answer" data-correct id="ai05_opt_c">6</li><li data-component="feedback" id="ai05_opt_c">Correct.</li>
+            <li data-component="answer" data-correct id="ai05_opt_c">6</li><li data-component="feedback" id="ai05_opt_c">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
 </div>
-<div class="section" id="try-try-it">
-<h2><img alt="try" src="_images/try.png" /> Try it!<a class="headerlink" href="#try-try-it" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="exercise-1-enlargement">
-<h3>Exercise 1 - Enlargement<a class="headerlink" href="#exercise-1-enlargement" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="try-provoje">
+<h2><img alt="try" src="_images/try.png" /> Provoje!<a class="headerlink" href="#try-provoje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 545)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>|try| Provoje!
+-------------
+</pre></div>
+</div>
+</div>
+<div class="section" id="ushtrimi-1-zmadhimi">
+<h3>Ushtrimi 1 - Zmadhimi<a class="headerlink" href="#ushtrimi-1-zmadhimi" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -684,19 +778,19 @@ you will open the drop-down list containing the following
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Create a project in which the sprite will get bigger and smaller on the stage. The <em>up arrow</em> key should make it bigger, and the <em>down arrow</em> should make it smaller. Make it so that when the green flag is clicked, the sprite goes back to its normal size.</p>
+<p>Krijoni një projekt në të cilin sprite do të rritet më e madhe dhe më e vogël në skenë. Çelësi <em>up</em> duhet ta bëjë atë më të madh, dhe shigjeta <em>down</em> duhet ta bëjë atë më të vogël. Bëni atë në mënyrë që kur të klikohet flamuri i gjelbër, sprite kthehet përsëri në madhësinë e saj normale.</p>
 
     </p></div></div>
 
-    <div data-component="reveal" id="exercise 3_1"   data-showtitle="Show the Instruction" data-hidetitle="Hide the Instruction">
-    <p><strong>Instruction:</strong></p>
-<p>The following scripts should be added to the sprite: <img alt="ex3_1" src="_images/ex3_1.png" /></p>
+    <div data-component="reveal" id="exercise 3_1"   data-showtitle="Trego instruksionin" data-hidetitle="Fshih instruksionin">
+    <p><strong>Instruksion:</strong></p>
+<p>Shkrimet e mëposhtme duhet të shtohen në sprite:<img alt="ex3_1" src="_images/ex3_1.png" /></p>
 
     </div>
     </div>
 <hr class="docutils" />
-<div class="section" id="exercise-2-turning">
-<h3>Exercise 2 - Turning<a class="headerlink" href="#exercise-2-turning" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-2-kthimi">
+<h3>Ushtrimi 2 - Kthimi<a class="headerlink" href="#ushtrimi-2-kthimi" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -705,19 +799,19 @@ you will open the drop-down list containing the following
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>To the cat sprite add two more sprites from the sprite library: the girl <em>Avery</em> and the boy <em>Devin</em>. Place the sprite to the left, and the boy sprite to the right in relation to the cat. Create a project which will allow the cat sprite to turn left in the direction of the girl, and right in the direction of the boy. Turning to the left should be controlled with the <em>left arrow</em> key, and turning to the right with the <em>right arrow</em> key. Make sure that the cat is not upside down when it turns to the left.</p>
+<p>Në sprite-in e maceve shtoni edhe dy sprites të tjera nga libraria e sprite: vajza <em>Avery</em> dhe djali <em>Devin</em>. Vendoseni sprite në të majtë dhe djali spërkat djathtas në lidhje me macen. Krijoni një projekt i cili do të lejojë që macja e maces të kthehet majtas në drejtim të vajzës, dhe djathtas në drejtim të djalit. Kthimi në të majtë duhet të kontrollohet me butonin <em>left arrow</em>, dhe të kthehet në të djathtë me butonin <em>right arrow</em>. Sigurohuni që macja nuk është kokëposhtë kur kthehet në të majtë.</p>
 
     </p></div></div>
 
-    <div data-component="reveal" id="exercise 3_2"   data-showtitle="Show the Instruction" data-hidetitle="Hide the Instruction">
-    <p><strong>Instruction:</strong></p>
-<p>The following scripts should be added to the cat sprite: <img alt="ex3_2" src="_images/ex3_2.png" /></p>
+    <div data-component="reveal" id="exercise 3_2"   data-showtitle="Trego instruksionin" data-hidetitle="Fshih instruksionin">
+    <p><strong>Instruksion:</strong></p>
+<p>Shkrimet e mëposhtme duhet të shtohen në spriten e maces: <img alt="ex3_2" src="_images/ex3_2.png" /></p>
 
     </div>
     </div>
 <hr class="docutils" />
-<div class="section" id="exercise-3-changing-the-color-of-the-backdrop">
-<h3>Exercise 3 - Changing the Color of the Backdrop<a class="headerlink" href="#exercise-3-changing-the-color-of-the-backdrop" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-3-ndryshimi-i-ngjyres-se-backdrop">
+<h3>Ushtrimi 3 - Ndryshimi i ngjyrës së Backdrop<a class="headerlink" href="#ushtrimi-3-ndryshimi-i-ngjyres-se-backdrop" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -726,19 +820,19 @@ you will open the drop-down list containing the following
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Create a project which allows the color of the stage to change every time you click on it. Use the <em>color</em> effect, and make sure that clicking on the green flag removes graphic effects.</p>
+<p>Krijoni një projekt i cili lejon që ngjyra e skenës të ndryshojë çdo herë që klikoni mbi të. Përdorni efektin <em>color</em> dhe sigurohuni që duke klikuar mbi flamurin e gjelbër heq efektet grafike.</p>
 
     </p></div></div>
 
-    <div data-component="reveal" id="exercise 3_3"   data-showtitle="Show the Instruction" data-hidetitle="Hide the Instruction">
-    <p><strong>Instruction:</strong></p>
-<p>The following scripts should be added to the stage: <img alt="ex3_3" src="_images/ex3_3.png" /></p>
+    <div data-component="reveal" id="exercise 3_3"   data-showtitle="Trego instruksionin" data-hidetitle="Fshih instruksionin">
+    <p><strong>Instruksion:</strong></p>
+<p>Skenarët e mëposhtëm duhet të shtohen në skenë: <img alt="ex3_3" src="_images/ex3_3.png" /></p>
 
     </div>
     </div>
 <hr class="docutils" />
-<div class="section" id="exercise-4-coding-the-arithmetic-expressions-with-parentheses-1">
-<h3>Exercise 4 - Coding the Arithmetic Expressions with Parentheses (1)<a class="headerlink" href="#exercise-4-coding-the-arithmetic-expressions-with-parentheses-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-4-kodimi-i-shprehjeve-aritmetike-me-paranteze-1">
+<h3>Ushtrimi 4 - Kodimi i shprehjeve aritmetike me parantezë (1)<a class="headerlink" href="#ushtrimi-4-kodimi-i-shprehjeve-aritmetike-me-paranteze-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -747,19 +841,19 @@ you will open the drop-down list containing the following
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Create an arithmetic expression in Scratch which corresponds to the following mathematical expression: (5*(5+4))-(2*(2+3)). By inserting the appropriate reporter block into the input field of the <code class="docutils literal notranslate"><span class="pre">say</span></code> block check that you are getting the correct value: (5*(5+4))-(2*(2+3)) = 5*9-2*5 = 45-10 = 35</p>
+<p>Krijoni një shprehje aritmetike në Scratch e cila korrespondon me shprehjen e mëposhtme matematikore: (5 * (5 + 4)) - (2 * (2 + 3)). Duke futur bllokun e duhur të reporterit në fushën hyrëse të bllokut <code class="docutils literal notranslate"><span class="pre">say</span></code>, kontrolloni nëse po merrni vlerën e saktë: (5*(5+4))-(2*(2+3)) = 5*9-2*5 = 45-10 = 35</p>
 
     </p></div></div>
 
-    <div data-component="reveal" id="exercise 3_4"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
+    <div data-component="reveal" id="exercise 3_4"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigja:</strong></p>
 <p><img alt="ex3_4" src="_images/ex3_4.png" /></p>
 
     </div>
     </div>
 <hr class="docutils" />
-<div class="section" id="exercise-5-coding-the-arithmetic-expressions-with-parentheses-2">
-<h3>Exercise 5 - Coding the Arithmetic Expressions with Parentheses (2)<a class="headerlink" href="#exercise-5-coding-the-arithmetic-expressions-with-parentheses-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-5-kodimi-i-shprehjeve-aritmetike-me-paranteze-2">
+<h3>Ushtrimi 5 - Kodimi i shprehjeve aritmetike me parantezë (2)<a class="headerlink" href="#ushtrimi-5-kodimi-i-shprehjeve-aritmetike-me-paranteze-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -772,119 +866,137 @@ you will open the drop-down list containing the following
 
     </p></div></div>
 
-    <div data-component="reveal" id="exercise 3_5"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
+    <div data-component="reveal" id="exercise 3_5"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigja:</strong></p>
 <p><img alt="ex3_5" src="_images/ex3_5.png" /></p>
 
     </div>
     </div>
 </div>
-<div class="section" id="bug-debug-it">
-<h2><img alt="bug" src="_images/bug.png" /> Debug it!<a class="headerlink" href="#bug-debug-it" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="bug-1">
-<h3>Bug 1<a class="headerlink" href="#bug-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="bug-debug">
+<h2><img alt="bug" src="_images/bug.png" /> Debug!<a class="headerlink" href="#bug-debug" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gabimi-1">
+<h3>Gabimi 1<a class="headerlink" href="#gabimi-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>Is the following conversation synchronized correctly?</p>
+<dd class="field-odd"><p>Kodimi i shprehjeve aritmetike me parantezë</p>
 </dd>
 </dl>
 <a class="reference internal image-reference" href="_images/bug3_1.png"><img alt="_images/bug3_1.png" class="align-center" src="_images/bug3_1.png" style="width: 650px;" /></a>
 
-    <div data-component="reveal" id="bug3_1"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The timing is not set appropriately. The commands <code class="docutils literal notranslate"><span class="pre">wait</span></code> and <code class="docutils literal notranslate"><span class="pre">say</span></code> should have the same amount of seconds in the input fields for the conversation to be appropriately synchronized.</p>
+    <div data-component="reveal" id="bug3_1
+  :showtitle: Trego përgjigjen
+  :hidetitle: Fshih përgjigjen"   data-showtitle="Show" data-hidetitle="Hide">
+    <p><strong>Përgjigja:</strong></p>
+<p>Koha nuk është caktuar si duhet. Komandat <code class="docutils literal notranslate"><span class="pre">wait</span></code> dhe `` say`` duhet të kenë të njëjtën sasi sekondash në fushat hyrëse për bisedën të sinkronizohet siç duhet.</p>
 
     </div>
     </div>
-<div class="section" id="bug-2">
-<h3>Bug 2<a class="headerlink" href="#bug-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gabimi-2">
+<h3>Gabimi 2<a class="headerlink" href="#gabimi-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The pupil likes to do everything according to the rules and therefore wants to add the stop command to each program. So he/she added the <img alt="stop" src="_images/stop.png" /> block to the end of the script in the Mathematician project. However, the text of the last <img alt="say" src="_images/say.png" /> block was not visible at all. How can the pupil correct this bug, and still have the stop command at the end?</p>
+<dd class="field-odd"><p>Nxënësit i pëlqen të bëjë gjithçka sipas rregullave dhe për këtë arsye dëshiron të shtojë komandën stop në secilin program. Kështu që ai / ajo shtoi <img alt="stop" src="_images/stop.png" /> bllok deri në fund të skenarit në projektin Matematikan. Sidoqoftë, teksti i fundit <img alt="say" src="_images/say.png" /> blloku nuk ishte aspak i dukshëm. Si mund ta rregullojë nxënësin këtë problem, dhe akoma të ketë komandën stop në fund?</p>
 </dd>
 </dl>
 <a class="reference internal image-reference" href="_images/bug3_2.png"><img alt="_images/bug3_2.png" class="align-center" src="_images/bug3_2.png" style="width: 430px;" /></a>
 
-    <div data-component="reveal" id="bug3_2"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">say</span> <span class="pre">The</span> <span class="pre">result</span> <span class="pre">is</span> <span class="pre">37</span></code> command is instantly executed and the <code class="docutils literal notranslate"><span class="pre">stop</span> <span class="pre">all</span></code> command runs immediately after it, which is why we are practically unable to see the effect of the <code class="docutils literal notranslate"><span class="pre">say</span></code> block. Therefore, this block should be replaced with the <code class="docutils literal notranslate"><span class="pre">say__for__seconds</span></code> block where the text should, for example, be visible for 5 second.</p>
+    <div data-component="reveal" id="bug3_2"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigje:</strong></p>
 
     </div>
-    </div>
-<div class="section" id="bug-3">
-<h3>Bug 3<a class="headerlink" href="#bug-3" title="Permalink to this headline">¶</a></h3>
+    <p>    Komanda <code class="docutils literal notranslate"><span class="pre">say</span> <span class="pre">Rezultati</span> <span class="pre">është</span> <span class="pre">37</span></code> ekzekutohet menjëherë dhe komanda <code class="docutils literal notranslate"><span class="pre">stop</span> <span class="pre">all</span></code> shkon menjëherë pas saj, kjo është arsyeja pse ne praktikisht nuk jemi në gjendje të shohim efektin e bllokut <code class="docutils literal notranslate"><span class="pre">say</span></code>. Prandaj, ky bllok duhet të zëvendësohet me bllokun <code class="docutils literal notranslate"><span class="pre">say__for__seconds</span></code> ku teksti, për shembull, duhet të jetë i dukshëm për 5 sekondë.</p>
+</div>
+<div class="section" id="gabimi-3">
+<h3>Gabimi 3<a class="headerlink" href="#gabimi-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The pupil wants the sprite to rotate when he presses the space key. But this is not happening. Where is the bug?</p>
+<dd class="field-odd"><p>Nxënësi dëshiron që sprite të rrotullohet kur shtyp çelësin hapësinor. Por kjo nuk po ndodh. Ku është gabimi</p>
 </dd>
 </dl>
 <a class="reference internal image-reference" href="_images/bug3_3.png"><img alt="_images/bug3_3.png" class="align-center" src="_images/bug3_3.png" style="width: 180px;" /></a>
 
-    <div data-component="reveal" id="bug3_3"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The sprite is rotating, but it happens too quickly, at the speed with which the computer executes commands, so the human eye is not able to register the movement. If you want to see when the sprite rotates you need to put a wait command between the <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">right</span></code> commands. This is haw we will be able to see the sprite turn.</p>
+    <div data-component="reveal" id="bug3_3"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigje:</strong></p>
 
     </div>
-    </div>
+    <p>    Sprite po rrotullohet, por ndodh shumë shpejt, me shpejtësinë me të cilën kompjuteri ekzekuton komandat, kështu që syri i njeriut nuk është në gjendje të regjistrojë lëvizjen. Nëse dëshironi të shihni kur rrjedha e rrotullimit rrotullohet, duhet të vendosni një komandë pritjeje midis komandave <code class="docutils literal notranslate"><span class="pre">kthehuni</span> <span class="pre">djathtas</span></code>. Ne do të jemi në gjendje ta shohim sprite-in të kthehet.</p>
 </div>
-<div class="section" id="book-summary">
-<h2><img alt="book" src="_images/book.png" /> Summary<a class="headerlink" href="#book-summary" title="Permalink to this headline">¶</a></h2>
-<p>In this lesson we got to know the groups and the shapes of blocks from the block palette, which are used to give programming language commands in Scratch. Scratch’s visual vocabulary contains more than 100 blocks divided into 10 groups. The visual grammar of Scratch is realized through the specific shape the blocks have, which doesn’t allow them to connect if their functions are not compatible. Independent blocks are connected in such a way that they form scripts, which define the behavior of corresponding objects, and function blocks set the required values.</p>
-<p><strong>Scratch projects</strong>: <a class="reference external" href="https://scratch.mit.edu/studios/25119441/">3Studio</a></p>
-<p><strong>New concepts</strong>:  events, actions, arithmetic operators, random numbers, linear structure of the script.</p>
-<p><strong>Scratch commands</strong>: <img alt="events_blocks" src="_images/events.png" /> - <img alt="clicked_sprite" src="_images/clicked_sprite.png" />, <img alt="clicked_stage" src="_images/clicked_stage.png" />; <img alt="control_blocks" src="_images/control.png" /> - <img alt="wait_sec" src="_images/wait_sec.png" />, <img alt="stop" src="_images/stop.png" />;</p>
+</div>
+<div class="section" id="book-permbledhje">
+<h2><img alt="book" src="_images/book.png" /> Përmbledhje<a class="headerlink" href="#book-permbledhje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 717)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">book</span><span class="o">|</span> <span class="n">Përmbledhje</span>
+<span class="o">--------------</span>
+</pre></div>
+</div>
+</div>
+<p>Në këtë mësim u njohëm me grupet dhe format e blloqeve nga paleta e bllokut, të cilat përdoren për të dhënë komanda të gjuhës programuese në Scratch. Fjalori vizual i Scratch përmban më shumë se 100 blloqe të ndarë në 10 grupe. Gramatika vizuale e Scratch realizohet përmes formës specifike që kanë blloqet, gjë që nuk i lejon ata të lidhen nëse funksionet e tyre nuk janë të pajtueshme. Blloqet e pavarura janë të lidhura në atë mënyrë që ato formojnë skriptet, të cilat përcaktojnë sjelljen e objekteve përkatëse, dhe blloqet e funksioneve vendosin vlerat e kërkuara.</p>
+<p><strong>Projekte Scratch</strong>: <a class="reference external" href="https://scratch.mit.edu/studios/25119441/">3Studio</a></p>
+<p><strong>Koncepte të reja</strong>:  events, actions, arithmetic operators, random numbers, linear structure of the script.</p>
+<p><strong>Komanda Scratch</strong>: <img alt="events_blocks" src="_images/events.png" /> - <img alt="clicked_sprite" src="_images/clicked_sprite.png" />, <img alt="clicked_stage" src="_images/clicked_stage.png" />; <img alt="control_blocks" src="_images/control.png" /> - <img alt="wait_sec" src="_images/wait_sec.png" />, <img alt="stop" src="_images/stop.png" />;</p>
 <p><img alt="looks_blocks" src="_images/looks.png" /> - <img alt="think_sec" src="_images/think_sec.png" />, <img alt="next_costume" src="_images/next_costume.png" />, <img alt="change_effect" src="_images/change_effect.png" />, <img alt="clear_effects" src="_images/clear_effects.png" />, <img alt="set_size" src="_images/set_size.png" />, <img alt="change_size" src="_images/change_size.png" />;</p>
 <p><img alt="operator_blocks" src="_images/operators.png" /> - <img alt="plus" src="_images/plus.png" />, <img alt="minus" src="_images/minus.png" />, <img alt="multiply" src="_images/multiply.png" />, <img alt="divide" src="_images/divide.png" />, <img alt="pick_random" src="_images/pick_random.png" />; <img alt="variables_blocks" src="_images/variables.png" /> - <img alt="*" src="_images/asterix.png" /> <img alt="set_var" src="_images/set_var.png" />.</p>
-<p>Note. Blocks marked with the <img alt="*" src="_images/asterix.png" /> sign will be discussed in the lessons that follow.</p>
+<p>Shënim. Blloqet e shënuara me <img alt="*" src="_images/asterix.png" /> do të diskutohen në mësimet që vijojnë.</p>
 </div>
-<div class="section" id="project-create-a-projects">
-<h2><img alt="project" src="_images/project.png" /> Create a projects<a class="headerlink" href="#project-create-a-projects" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-1-genius">
-<h3>Project 1 - “Genius”<a class="headerlink" href="#project-1-genius" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="project-krijoni-projekte">
+<h2><img alt="project" src="_images/project.png" /> Krijoni projekte<a class="headerlink" href="#project-krijoni-projekte" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="projekti-1-gjeni">
+<h3>Projekti 1 - “Gjeni”<a class="headerlink" href="#projekti-1-gjeni" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>Create this project based on the example <em>Mathematician</em>.</p>
-<p>Start a new project, which you will call <em>Genius</em>. Select the main sprite form the sprite library, and the backdrop from the backdrop library. The sprite should give the following tasks.</p>
+<p>Krijoni këtë projekt bazuar në shembullin <em>Matematikan</em>.</p>
+<p>Filloni një projekt të ri, të cilin do ta quani <em>Genius</em>. Zgjidhni formën kryesore të librarisë, dhe sfondin nga libraria e prapavijës. Sprite duhet të japë detyrat e mëposhtme.</p>
 <ol class="arabic simple">
-<li><p>“Think of any three-digit number.”</p></li>
-<li><p>“Arrange the digits from the highest to the lowest - that will be the first number.”</p></li>
-<li><p>“Arrange the digits from the lowest to the highest - that will be the second number.”</p></li>
-<li><p>“Subtract the second number from the first number.”</p></li>
-<li><p>“Remember the result, and than flip its digits.”</p></li>
-<li><p>“This new number add to the result you previously remembered.”</p></li>
-<li><p>“The number you got is 1089.”</p></li>
+<li><p>“Mendoni për çdo numër tre shifror.”</p></li>
+<li><p>“Rregulloni shifrat nga më i larti tek më i ulti - ky do të jetë numri i parë.”</p></li>
+<li><p>“Rregulloni shifrat nga më të ultat në më të lartat - ky do të jetë numri i dytë”.</p></li>
+<li><p>“Zbrit numrin e dytë nga numri i parë.”</p></li>
+<li><p>“Mos harroni rezultatin, dhe sesa rrëzoni shifrat e tij.”</p></li>
+<li><p>“Ky numër i ri shton rezultatin që ju kujtuat më parë.”</p></li>
+<li><p>“Numri që keni është 1089.”</p></li>
 </ol>
 </div>
-<div class="section" id="project-2-chocolate-cake">
-<h3>Project 2 - “Chocolate Cake”<a class="headerlink" href="#project-2-chocolate-cake" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-2-kek-me-cokollate">
+<h3>Projekti 2 - “Kek me çokollatë”<a class="headerlink" href="#projekti-2-kek-me-cokollate" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Sequencing.rst</span>, line 763)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Projekti</span> <span class="mi">2</span> <span class="o">-</span> <span class="s2">&quot;Kek me çokollatë&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>Start a new project, which you will call <em>Chocolate Cake</em>. This should be an animation where a baker explains a recipe (algorithm) for making chocolate cake.</p>
-<p>For this animation you will need the following sprites: baker, eggs, flour, sugar, chocolate, bowl, mixer,an oven, cakes. Find the right images on your computer or on the Internet, and and customize them to fit your project (clear the background, make them larger or smaller…).</p>
-<p>Ensure the synchronization of the scripts by adding the <code class="docutils literal notranslate"><span class="pre">wait</span></code> command to all objects and setting the appropriate time. The only sprite that needs to be on the stage the whole time is the baker sprite. He is reading the recipe (algorithm) and determines when other sprites will appear or disappear.</p>
+<p>Filloni një projekt të ri, të cilin do ta quani <em>Cake Chocolate</em>. Kjo duhet të jetë një animacion ku një bukëpjekës shpjegon një recetë (algoritëm) për të bërë tortë me çokollatë.</p>
+<p>Për këtë animacion do t’ju duhet sprites e mëposhtme: bukëpjekës, vezë, miell, sheqer, çokollatë, tas, mikser, një furrë, ëmbëlsira. Gjeni imazhet e duhura në kompjuterin tuaj ose në internet dhe përshtatini ato për t’iu përshtatur projektit tuaj (pastroni sfondin, bëni ato më të mëdha ose më të vogla …).</p>
+<p>Siguroni sinkronizimin e shkrimeve duke shtuar komandën <code class="docutils literal notranslate"><span class="pre">wait</span></code> për të gjitha objektet dhe caktimin e kohës së duhur. Sprite e vetme që duhet të jetë në skenë gjatë gjithë kohës është sprite e bukës. Ai po lexon recetën (algoritmin) dhe përcakton se kur do të shfaqen ose do të zhduken spritet e tjera.</p>
 <ol class="arabic simple">
-<li><p>The baker is alone on the stage. He says: “Here is the ALGORITHM for making a chocolate cake!” (2 seconds)</p></li>
-<li><p>The baker says the following: “Take your eggs, flour, sugar and chocolate.” At that moment eggs, flour, sugar and chocolate should appear on the stage. This scene should last 2 seconds.</p></li>
-<li><p>The baker says the following: “Put everything in a bowl and combine with the mixer.” At that moment eggs, flour, sugar and chocolate disappear from the stage, and the bowl and the mixer appear. This scene should last 2 seconds.</p></li>
-<li><p>The baker says the following: “Put the bowl into the heated oven.” At that moment the bowl and the mixer disappear from the stage, and the oven appears. This scene should last 2 seconds.</p></li>
-<li><p>The baker says the following: “Bake the cake for 30 minutes.” Nothing changes on the stage. This scene should last 2 seconds.</p></li>
-<li><p>The baker says the following: “Serve the cake.” At that moment the oven disappears from the stage, and the cake appears. This scene should last 2 seconds.</p></li>
+<li><p>Bukëpjekësi është vetëm në skenë. Ai thotë: “Këtu është ALGORITMI për të bërë një tortë me çokollatë!” (2 sekonda)</p></li>
+<li><p>Bukëpjekësi thotë si vijon: “Merrni vezët, miellin, sheqerin dhe çokollatën”. Në atë moment vezët, mielli, sheqeri dhe çokollata duhet të shfaqen në skenë. Kjo skenë duhet të zgjasë 2 sekonda.</p></li>
+<li><p>Bukëpjekësi thotë si vijon: “Vendosni gjithçka në një tas dhe kombinoni me mikserin”. Në atë moment vezët, mielli, sheqeri dhe çokollata zhduken nga skena, dhe shfaqet tas dhe mikser. Kjo skenë duhet të zgjasë 2 sekonda.</p></li>
+<li><p>Bukëpjekësi thotë si vijon: “Vendoseni tasin në furrën e ndezur”. Në atë moment tas dhe mikser zhduken nga skena, dhe furra shfaqet. Kjo skenë duhet të zgjasë 2 sekonda.</p></li>
+<li><p>Bukëpjekësi thotë si vijon: “Piqeni tortën për 30 minuta”. Asgjë nuk ndryshon në skenë. Kjo skenë duhet të zgjasë 2 sekonda.</p></li>
+<li><p>Bukëpjekësi thotë si vijon: “Shërbeni tortën”. Në atë moment furra zhduket nga skena, dhe shfaqet torta. Kjo skenë duhet të zgjasë 2 sekonda.</p></li>
 </ol>
 </div>
 </div>
@@ -894,17 +1006,17 @@ you will open the drop-down list containing the following
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Tell Me Where To Go - Coordinates And Direction' data-toggle="tooltip"><a href="Scratch3 Coordinates.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Më thuaj ku të shkoj - Koordinata dhe drejtimi' data-toggle="tooltip"><a href="Scratch3 Coordinates.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Let’s Draw - Turtle Graphics' data-toggle="tooltip"><a href="Scratch3 Graphics.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Le të vizatojmë - Grafik' data-toggle="tooltip"><a href="Scratch3 Graphics.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Tell Me Where To Go - Coordinates And Direction' data-toggle="tooltip"><a href="Scratch3 Coordinates.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Më thuaj ku të shkoj - Koordinata dhe drejtimi' data-toggle="tooltip"><a href="Scratch3 Coordinates.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Let’s Draw - Turtle Graphics' data-toggle="tooltip"><a href="Scratch3 Graphics.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Le të vizatojmë - Grafik' data-toggle="tooltip"><a href="Scratch3 Graphics.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

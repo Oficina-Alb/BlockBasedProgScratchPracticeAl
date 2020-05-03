@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Lists &#8212; Block-based programming in Scratch - practice lessons</title>
+    <title>Listat &#8212; Block-based programming in Scratch - practice lessons</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,8 +140,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Strings" href="Scratch3 Strings.html" />
-    <link rel="prev" title="How to Program Faster – Procedures" href="Scratch3 Procedures.html" />
+    <link rel="next" title="Vargje" href="Scratch3 Strings.html" />
+    <link rel="prev" title="Si të programojmë më shpejt – Proçedurat" href="Scratch3 Procedures.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,8 +203,8 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="lists">
-<h1>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="listat">
+<h1>Listat<a class="headerlink" href="#listat" title="Permalink to this headline">¶</a></h1>
 
     <div class="course-box course-box-info">
         <div class="course-content">
@@ -212,126 +212,169 @@
 <p><img alt="intro9" src="_images/intro9.png" /></p>
 
     </p></div></div>
-<p>In the programs we created in the previous lessons, we used only simple data types - each variable kept the value of one piece of data. However, we often need to store a whole set of data under one name, for example, a set of numbers. If we want to store phone numbers of 10 of our friends, we will need to create 10 variables, which is not easy to maintain, so we will use a complex data type, which in Scratch is called a <strong>list</strong>.</p>
+<p>Në programet që kemi krijuar në mësimet e mëparshme, kemi përdorur vetëm lloje të thjeshta të të dhënave - secili variabël ruante vlerën e një pjese të të dhënave. Sidoqoftë, shpesh na duhet të ruajmë një seri të tërë të të dhënave nën një emër, për shembull, një grup numrash. Nëse duam të ruajmë numrat e telefonit prej 10 miqve tanë, do të na duhet të krijojmë 10 variabël, gjë që nuk është e lehtë për tu mirëmbajtur, kështu që do të përdorim një lloj kompleks të dhënash, i cili në Scratch quhet një <strong>listë</strong>.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>What is a list?</strong></p>
-<p>A list is a complex variable that is made up of multiple elements - multiple variables. These can be different types of data; in this example they are strings. It is created similarly to how ordinary variables are created.</p>
-<ol class="arabic simple">
-<li><p>In the group <em>Variables</em> click on the button <em>Make a List</em>.</p></li>
-<li><p>A dialogue window will appear where you should write the name of the list and confirm by clicking the <em>OK</em> button.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/fig9_1.png"><img alt="_images/fig9_1.png" class="align-center" src="_images/fig9_1.png" style="width: 575px;" /></a>
-<ol class="arabic simple" start="3">
-<li><p>A blank monitor of the list will appear on the stage, and the bottom of this monitor will have the current length of the list written on it, which will be 0.</p></li>
-<li><p>Clicking on the sign “+”, located in the bottom right corner, will open the field where you can enter your first element, and the length of the list will increase by 1.</p></li>
-<li><p>The first element of the list should be entered in the blank field.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/fig9_2.png"><img alt="_images/fig9_2.png" class="align-center" src="_images/fig9_2.png" style="width: 370px;" /></a>
-<p>By repeating this process, the desired number of list elements can be entered.</p>
-<p>At the same time, a block associated with the list and 11 other blocks that allow the list and its elements to be used in the program, will appear in the block palette.</p>
-<a class="reference internal image-reference" href="_images/fig9_3.png"><img alt="_images/fig9_3.png" class="align-center" src="_images/fig9_3.png" style="width: 420px;" /></a>
+<p><strong>Çfarë është një listë?</strong></p>
 
     </p></div></div>
-<div class="section" id="study-study-the-following-examples">
-<h2><img alt="study" src="_images/study.png" /> Study the following examples<a class="headerlink" href="#study-study-the-following-examples" title="Permalink to this headline">¶</a></h2>
-<p>In the project called “Quiz”, there is a list of questions and a list of correct answers. Questions and answers can be entered in advance, or they can be uploaded from a text database. The program asks the questions randomly and then checks if the answer given by the user is correct. If the answer is correct, the user will receive a point, and if not, the program will broadcast the correct answer. In the end, based on the number of correct answers, the user receives a grade.</p>
-<div class="section" id="example-1-project-quiz">
-<h3>Example 1 - Project “Quiz”<a class="headerlink" href="#example-1-project-quiz" title="Permalink to this headline">¶</a></h3>
+<p>  Një listë është një variabël komplekse që përbëhet nga elementë të shumtë - variabla të shumëfishta. Këto mund të jenë lloje të ndryshme të të dhënave; në këtë shembull ato janë vargje. Krijohet në mënyrë të ngjashme me atë se si krijohen variabla të zakonshëm.</p>
+<p>  (1) Në grupin <em>Variables</em>  klikoni në butonin <em>Make a list</em>.</p>
+<p>  (2) Do të shfaqet një dritare dialogu ku duhet të shkruani emrin e listës dhe të konfirmoni duke klikuar butonin <em>OK</em>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/9/fig9_1.png"><img alt="../_images/9/fig9_1.png" class="align-center" src="../_images/9/fig9_1.png" style="width: 575px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Në skenë do të shfaqet një monitor i zbrazët i listës, dhe në fund të këtij monitori do të ketë gjatësinë aktuale të listës të shkruar në të, e cila do të jetë 0.</p></li>
+</ol>
+</div></blockquote>
+<p>  (4) Duke klikuar në shenjën “+”, e vendosur në këndin e poshtëm të djathtë, do të hapni fushën ku mund të futni elementin tuaj të parë, dhe gjatësia e listës do të rritet me 1.</p>
+<p>  (5) Elementi i parë i listës duhet të futet në fushën bosh.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig9_2.png"><img alt="_images/fig9_2.png" class="align-center" src="_images/fig9_2.png" style="width: 370px;" /></a>
+<p>Duke përsëritur këtë proces, numri i dëshiruar i elementëve të listës mund të futet.</p>
+</div></blockquote>
+<p>  Në të njëjtën kohë, një bllok i lidhur me listën dhe 11 blloqe të tjera që lejojnë listën dhe elementët e tij të përdoren në program, do të shfaqet në paleta e bllokut.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/9/fig9_3.png"><img alt="../_images/9/fig9_3.png" class="align-center" src="../_images/9/fig9_3.png" style="width: 420px;" /></a>
+</div></blockquote>
+<div class="section" id="study-studio-shembujt-e-meposhtem">
+<h2><img alt="study" src="_images/study.png" /> Studio shembujt e mëposhtëm<a class="headerlink" href="#study-studio-shembujt-e-meposhtem" title="Permalink to this headline">¶</a></h2>
+<p>Në projektin e quajtur “Quiz”, ekziston një listë e pyetjeve dhe një listë me përgjigje të sakta. Pyetjet dhe përgjigjet mund të futen paraprakisht, ose ato mund të ngarkohen nga një bazë e të dhënave tekstuale. Programi shtron pyetjet rastësisht dhe më pas kontrollon nëse përgjigja e dhënë nga përdoruesi është e saktë. Nëse përgjigja është e saktë, përdoruesi do të marrë një pikë, dhe nëse jo, programi do të transmetojë përgjigjen e saktë. Në fund, bazuar në numrin e përgjigjeve të sakta, përdoruesi merr një notë.</p>
+<div class="section" id="shembulli-1-projekti-quiz">
+<h3>Shembulli 1 - Projekti “Quiz”<a class="headerlink" href="#shembulli-1-projekti-quiz" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 54)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Quiz&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>In this example, we will illustrate how a math quiz can be made. The quiz checks if participants are able to determine the greatest common divisor for two or three numbers.
-The questions are located in the list <em>Numbers</em>, and the answers in the list <em>GCD</em> (greatest common divisor). We will use the variable <strong>k</strong> to go through the lists, the value of this variable changes from 1 to 8 (the number of list elements), and we will store the number of correct answers in the variable <strong>b</strong>.</p>
+<p>Në projektin e quajtur “Quiz”, ekziston një listë e pyetjeve dhe një listë me përgjigje të sakta. Pyetjet dhe përgjigjet mund të futen paraprakisht, ose ato mund të ngarkohen nga një bazë e të dhënave tekstuale. Programi shtron pyetjet rastësisht dhe më pas kontrollon nëse përgjigja e dhënë nga përdoruesi është e saktë. Nëse përgjigja është e saktë, përdoruesi do të marrë një pikë, dhe nëse jo, programi do të transmetojë përgjigjen e saktë. Në fund, bazuar në numrin e përgjigjeve të sakta, përdoruesi merr një notë….</p>
 <a class="reference internal image-reference" href="_images/fig9_4.png"><img alt="_images/fig9_4.png" class="align-center" src="_images/fig9_4.png" style="width: 440px;" /></a>
-<p>The script for this project can be seen below.</p>
-<a class="reference internal image-reference" href="_images/fig9_5.png"><img alt="_images/fig9_5.png" class="align-center" src="_images/fig9_5.png" style="width: 565px;" /></a>
-<p>The following project illustrates how the list elements can be selected randomly. We will use the reporter block, which will return the value of the list element whose sequence number is written in the appropriate input field. This way, if we randomly generate the variable <em>number</em>, by entering that number into the sequence number input field, we will get the element, which is in that position on the list. The project also illustrates how randomly generated numbers can be used for broadcasting different messages.</p>
+<p>Skenari për këtë projekt mund të shihet më poshtë.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_5.png"><img alt="../_images/9/fig9_5.png" class="align-center" src="../_images/9/fig9_5.png" style="width: 565px;" /></a>
+<p>Projekti i mëposhtëm ilustron se si elementët e listës mund të zgjidhen rastësisht. Ne do të përdorim bllokun e reporterit, i cili do të kthejë vlerën e elementit të listës, numri rendor i të cilit është shkruar në fushën e duhur të hyrjes. Në këtë mënyrë, nëse gjenerojmë rastësisht ndryshoren <em>numrin</em>, duke e futur atë numër në fushën e hyrjes së numrit të sekuencës, do të marrim elementin, i cili është në atë pozicion në listë. Projekti ilustron gjithashtu se si mund të përdoren numrat e gjeneruar në mënyrë të rastësishme për transmetimin e mesazheve të ndryshme.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-2-project-hunger">
-<h3>Example 2 - Project “Hunger”<a class="headerlink" href="#example-2-project-hunger" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-2-projekti-uria">
+<h3>Shembulli 2 - Projekti “Uria”<a class="headerlink" href="#shembulli-2-projekti-uria" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 75)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Uria&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>There are 10 sprites participating in this project - hungry cat and 9 types of food the cat is fantasizing about.</p>
-<a class="reference internal image-reference" href="_images/fig9_6.png"><img alt="_images/fig9_6.png" class="align-center" src="_images/fig9_6.png" style="width: 460px;" /></a>
-<p>The cat is walking left and right, and “thinking” for 3 seconds one of the 11 sentences, chosen randomly, from the list of sentences called <em>food</em>.</p>
-<a class="reference internal image-reference" href="_images/fig9_7.png"><img alt="_images/fig9_7.png" class="align-center" src="_images/fig9_7.png" style="width: 220px;" /></a>
-<p>During the time the cloud is visible on the stage <img alt="think_sec" src="_images/think_sec.png" />, the image of the food the cat is thinking about appears in the white cloud located in the center of the stage.</p>
+<p>Ka 10 sprites që marrin pjesë në këtë projekt - macja e uritur dhe 9 lloje të ushqimit që mace po fantazon.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_6.png"><img alt="../_images/9/fig9_6.png" class="align-center" src="../_images/9/fig9_6.png" style="width: 460px;" /></a>
+<p>Macja po ecën majtas dhe djathtas dhe “po mendon” për 3 sekonda një nga 11 fjalitë, të zgjedhura rastësisht, nga lista e fjalive të quajtura <em>food</em>.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_7.png"><img alt="../_images/9/fig9_7.png" class="align-center" src="../_images/9/fig9_7.png" style="width: 220px;" /></a>
+<p>Gjatë kohës që reja është e dukshme në skenë <img alt="think_sec" src="_images/think_sec.png" />, imazhi i ushqimit për të cilin po mendon macja shfaqet në renë e bardhë të vendosur në qendër të skenës.</p>
 <a class="reference internal image-reference" href="_images/fig9_8.png"><img alt="_images/fig9_8.png" class="align-center" src="_images/fig9_8.png" style="width: 960px;" /></a>
-<p>The synchronization of the appearance of the food and cat’s thinking about that particular food will be achieved with the broadcasting of messages.</p>
-<p>The variable <em>number</em>, which is generated randomly is used both for selecting the sentence from the list <em>food</em> and for generating the message from “1” to “11”. No one reacts to the messages “1” and “11”, while sprites whose names are numbers between 2 and 9 will react to the messages from “2” to “9”.</p>
-<p>For example, the mouse who is sprite “2” will react to message “2”, the bird who is sprite “3”, will react to message “3”, etc.</p>
-<a class="reference internal image-reference" href="_images/fig9_9.png"><img alt="_images/fig9_9.png" class="align-center" src="_images/fig9_9.png" style="width: 660px;" /></a>
-<p>The reaction of each sprite is the same: they appear for 2 seconds, while the cat’s thinking cloud is visible, and then they hide again. When the green flag is clicked, all sprites (except for the cat) go to the position (0,110), which is the center of the white cloud, and they hide.</p>
-<p>The following figure contains all scripts added to the main sprite of this project.</p>
-<a class="reference internal image-reference" href="_images/fig9_10.png"><img alt="_images/fig9_10.png" class="align-center" src="_images/fig9_10.png" style="width: 385px;" /></a>
+<p>Sinkronizimi i pamjes së ushqimit dhe mendimit të maceve për atë ushqim të veçantë do të arrihet me transmetimin e mesazheve.</p>
+<p>Variabli <em>number</em>, i cili gjenerohet rastësisht, përdoret si për zgjedhjen e fjalisë nga lista <em>food</em> ashtu edhe për gjenerimin e mesazhit nga “1” në “11”. Askush nuk reagon ndaj mesazheve “1” dhe “11”, ndërsa sprites, emrat e të cilëve janë numra midis 2 dhe 9 do të reagojnë ndaj mesazheve nga “2” në “9”.</p>
+<p>Për shembull, mouse që është sprite “2” do të reagojë në mesazhin “2”, zogu që është sprite “3”, do të reagojë në mesazhin “3”, etj.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_9.png"><img alt="../_images/9/fig9_9.png" class="align-center" src="../_images/9/fig9_9.png" style="width: 660px;" /></a>
+<p>Reagimi i secilës sprite është i njëjtë: ato shfaqen për 2 sekonda, ndërsa reja e të menduarit për mace është e dukshme, dhe më pas ato fshihen përsëri. Kur klikohet flamuri i gjelbër, të gjitha sprites (përveç mace) shkojnë në pozicionin (0,110), që është qendra e re e bardhë, dhe ato fshihen.</p>
+<p>Shifra e mëposhtme përmban të gjitha skriptet e shtuara në rrjedhën kryesore të këtij projekti.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_10.png"><img alt="../_images/9/fig9_10.png" class="align-center" src="../_images/9/fig9_10.png" style="width: 385px;" /></a>
 <hr class="docutils" />
-<p>The following project illustrates how we can divide all objects into groups of desirable, undesirable and neutral. The record of desirable objects is stored in one list, and of undesirable objects in another list. When the object is chosen, the program first checks to which group it belongs: if it is desirable, positive points will be obtained, and if it is undesirable then negative points will be obtained; if it is neutral, the number of points will not change. For example, this could be the strategy if you are making a game for kids, where they need to collect as many useful items as possible and avoid dangerous items (see project tasks).</p>
+<p>Projekti i mëposhtëm ilustron se si mund t’i ndajmë të gjitha objektet në grupe të dëshirueshme, të padëshirueshme dhe asnjanëse. Regjistrimi i objekteve të dëshirueshme ruhet në një listë, dhe të objekteve të padëshirueshme në një listë tjetër. Kur zgjidhet objekti, programi së pari kontrollon se cilit grup i përket: nëse është e dëshirueshme, do të merren pikë pozitive, dhe nëse është e padëshirueshme, do të merren pikë negative; nëse është neutrale, numri i pikëve nuk do të ndryshojë. Për shembull, kjo mund të jetë strategjia nëse po bëni një lojë për fëmijë, ku ata duhet të mbledhin sa më shumë sende të dobishme dhe të shmangin sendet e rrezikshme (shiko detyrat e projektit).</p>
 </div>
-<div class="section" id="example-3-project-food">
-<h3>Example 3 - Project “Food”<a class="headerlink" href="#example-3-project-food" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-3-projekti-ushqimi">
+<h3>Shembulli 3 - Projekti “Ushqimi”<a class="headerlink" href="#shembulli-3-projekti-ushqimi" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 120)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Ushqimi&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p><strong>The scenario of the project</strong></p>
-<p>The main sprite of this project is a girl called Zara. During school recess, she can eat something, drink water or take a gift. You choose what Zara will take by clicking on the objects that appear on the stage. If you choose fattening food - a sandwich, chips or a donut, you will receive negative points. If instead you choose fruit - an orange, a banana or an apple, you will receive positive points. If you choose to get water or the gift, the points will remain unchanged.</p>
-<a class="reference internal image-reference" href="_images/fig9_11.png"><img alt="_images/fig9_11.png" class="align-center" src="_images/fig9_11.png" style="width: 400px;" /></a>
-<p>The names of items that earn positive points are in one list (in our case “fruit”), and those that earn negative points in the other (in our case “unhealthy”).</p>
-<p><strong>Behavior of the sprites</strong></p>
-<p>All items have the same behavior. When the green flag is clicked, they appear on the randomly chosen position on the right side of the stage. When the user clicks on them, they assign their name to the variable <em>food</em>, broadcast the message <em>taken</em> and hide.</p>
+<p><strong>Skenari i projektit</strong></p>
+<p>Rruga kryesore e këtij projekti është një vajzë e quajtur Zara. Gjatë pushimit të shkollës, ajo mund të hajë diçka, të pijë ujë ose të marrë një dhuratë. Ju zgjidhni atë që Zara do të marrë duke klikuar në objektet që shfaqen në skenë. Nëse zgjidhni ushqim që shëndoshi n - një sanduiç, patate të skuqura ose një donut, do të merrni pikë negative. Nëse në vend të kësaj zgjidhni fruta - një portokall, një banane ose një mollë, do të merrni pikë pozitive. Nëse vendosni të merrni ujë ose dhuratë, pikët do të mbeten të pandryshuara.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_11.png"><img alt="../_images/9/fig9_11.png" class="align-center" src="../_images/9/fig9_11.png" style="width: 400px;" /></a>
+<p>Emrat e artikujve që fitojnë pikë pozitive janë në njërën listë (në rastin tonë “frutat”), dhe ato që fitojnë pikë negative në tjetrën (në rastin tonë “jo të shëndetshëm”).</p>
+<p><strong>Sjellja e sprites</strong></p>
+<p>Të gjithë artikujt kanë të njëjtën sjellje. Kur klikohet flamuri i gjelbër, ato shfaqen në pozicionin e zgjedhur rastësisht në anën e djathtë të skenës. Kur përdoruesi klikon mbi ta, ata caktojnë emrin e tyre në variablin <em>food</em>, transmetojnë mesazhin <em>taken</em> dhe fshihen.</p>
 <a class="reference internal image-reference" href="_images/fig9_12.png"><img alt="_images/fig9_12.png" class="align-center" src="_images/fig9_12.png" style="width: 815px;" /></a>
-<p>The scripts added to Zara also allow the program to calculate the number of points depending on which food was selected.</p>
+<p>Shkrimet e shtuara në Zara gjithashtu lejojnë që programi të llogarisë numrin e pikave në varësi të cilës ushqim u zgjodh.</p>
 <a class="reference internal image-reference" href="_images/fig9_13.png"><img alt="_images/fig9_13.png" class="align-center" src="_images/fig9_13.png" style="width: 495px;" /></a>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-4-project-clumsy-wizard">
-<h3>Example 4 - Project “Clumsy Wizard”<a class="headerlink" href="#example-4-project-clumsy-wizard" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-4-projekti-magjistar-i-ngathet">
+<h3>Shembulli 4 - Projekti “Magjistar i ngathët”<a class="headerlink" href="#shembulli-4-projekti-magjistar-i-ngathet" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 151)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Magjistar i ngathët&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>The main sprite of this game is the Clumsy Wizard. He can use his magic wand to make multiple copies of the same thing, but he often gets confused and forgets exactly how much he promised, so he makes too many items or not enough.</p>
-<p>There is also his assistant, Wizard Girl, who keeps a close eye on what Clumsy Wizard has promised and how many copies he has made, reminding him if he makes a mistake.</p>
-<a class="reference internal image-reference" href="_images/fig9_14.png"><img alt="_images/fig9_14.png" class="align-center" src="_images/fig9_14.png" style="width: 600px;" /></a>
-<p><strong>How the Clumsy Wizard promises different things</strong></p>
-<p>To allow the Clumsy Wizard to promise to make different things, we need to create a sprite with those things as its costumes. Apart from that, we need to make a list with the names of those things. In our project, we will create a sprite called the <em>Creature</em>, which can appear in 5 different costumes.</p>
-<a class="reference internal image-reference" href="_images/fig9_15.png"><img alt="_images/fig9_15.png" class="align-center" src="_images/fig9_15.png" style="width: 630px;" /></a>
-<p>In order for the Clumsy Wizard to be able to say the names of the costumes, we have introduced a list called <em>things</em> and into it, we entered 5 costume names. A number between 1 and 5 is randomly generated and then the Clumsy Wizard says a sentence in which the text “Now I will make” is joined with the corresponding element from this list. For example, if number 2 is generated, the Clumsy Wizard will say “Now I will make apples”, and if number 4 is generated, he will say “Now I will make butterflies”.</p>
-<p>The following figure shows the behavior of the wizard sprite when the user clicks on him. First, the value of the variable <em>number</em> will be randomly generated from the interval [1,5]. Then, the wizard says that he will make one of the costumes of the sprite <em>Creature</em>, more specifically the one whose sequence number in the list is the same as the generated number. Then, he broadcasts the message <em>Show off</em> to which the Wizard Girl will react by asking the Clumsy Wizard how many copies of the creature he intends to make, her question will last for 2 seconds. This is why there is a block added to the wizard, which allows him to wait for 2 seconds. After this pause, the wizard will generate the value of the variable <em>how</em> from the interval [1,10].
-Since the costume dimensions of the sprite <em>Creature</em> are set to about 50x50 pixels, we decided that the maximum number of creatures that can be “created” by the Clumsy Wizard should be 10. This way, all of the copies will be visible on the stage. The Clumsy Wizard says how many copies he will create and broadcasts the message <em>create</em>.</p>
+<p>Sprite kryesore e kësaj loje është Clumsy Wizard. Ai mund të përdorë shkopin e tij magjik për të bërë kopje të shumta të së njëjtës gjë, por shpesh ai ngatërrohet dhe harron saktësisht sa premtoi, kështu që ai bën shumë sende ose jo sa duhet.</p>
+<p>Ekziston edhe ndihmësi i tij, Wizard Girl, i cili mban me vëmendje ato që i ka premtuar Clumsy Wizard dhe sa kopje ka bërë, duke e kujtuar nëse bën një gabim.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_14.png"><img alt="../_images/9/fig9_14.png" class="align-center" src="../_images/9/fig9_14.png" style="width: 600px;" /></a>
+<p><strong>Si magjistari i ngathët premton gjëra të ndryshme</strong></p>
+<p>Për të lejuar që Magjistari i ngathët të premtojë të bëjë gjëra të ndryshme, duhet të krijojmë një spërkatje me ato gjëra si kostumet e saj. Përveç kësaj, duhet të bëjmë një listë me emrat e atyre gjërave. Në projektin tonë, ne do të krijojmë një sprite të quajtur <em>Creature</em>, e cila mund të shfaqet në 5 kostume të ndryshme.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_15.png"><img alt="../_images/9/fig9_15.png" class="align-center" src="../_images/9/fig9_15.png" style="width: 630px;" /></a>
+<p>Në mënyrë që Wagard Clumsy të jetë në gjendje të thotë emrat e kostumeve, ne kemi prezantuar një listë të quajtur <em>things</em> dhe në të, kemi futur 5 emra të kostumeve. Një numër midis 1 dhe 5 gjenerohet rastësisht dhe më pas Clumsy Wizard thotë një fjali në të cilën teksti “Tani do të bëj” është bashkuar me elementin përkatës nga kjo listë. Për shembull, nëse gjenerohet numri 2, Magjistari i ngathët do të thotë “Tani do të bëj mollë”, dhe nëse gjenerohet numri 4, ai do të thotë “Tani do të bëj flutura”.</p>
+<p>Shifra e mëposhtme tregon sjelljen e sprite magjistarit kur përdoruesi klikon mbi të. Së pari, vlera e variablit <em>number</em> do të gjenerohet rastësisht nga intervali [1,5]. Pastaj, magjistari thotë se ai do të bëjë një nga kostumet e sprite <em>Creature</em>, më saktë atë që numri rendor i të cilit në listë është i njëjtë me numrin e gjeneruar. Pastaj, ai transmeton mesazhin <em>Show</em> të cilit do të reagojë Vajza Magjistare duke pyetur Magjistarin e ngathët se sa kopje të krijesës që ai synon të bëjë, pyetja e saj do të zgjasë 2 sekonda. Kjo është arsyeja pse ekziston një bllok i shtuar magjistarit, i cili i lejon atij të presë 2 sekonda. Pas kësaj pauze, magjistari do të gjenerojë vlerën e variablit <em>how</em> nga intervali [1,10].
+Meqenëse dimensionet e kostumit të sprite <em>Creature</em> janë vendosur në rreth 50x50 pixel, vendosëm që numri maksimal i krijesave që mund të “krijohen” nga Wagard Clumsy duhet të jetë 10. Në këtë mënyrë, të gjitha kopjet do të jenë të dukshme në skena. Clumsy Wizard thotë se sa kopje ai do të krijojë dhe transmetojë mesazhin <em>Create</em>.</p>
 <a class="reference internal image-reference" href="_images/fig9_16.png"><img alt="_images/fig9_16.png" class="align-center" src="_images/fig9_16.png" style="width: 460px;" /></a>
-<p>The following figure represents the scripts, which describe the behavior of the Wizard Girl. She reacts to both messages broadcast by the wizard, and she broadcasts her own message <em>hide</em> 4 seconds after she has received the message <em>create</em>. The message <em>hide</em> is the signal for the creature sprite to remove its clones and itself from the stage.</p>
+<p>Shifra e mëposhtme paraqet skriptet, të cilat përshkruajnë sjelljen e Girl Wizard. Ajo reagon ndaj të dy porosive të transmetuara nga magjistari dhe ajo transmeton mesazhin e vet <em>hide</em> 4 sekonda pasi të marrë mesazhin <em>create</em>. Mesazhi <em>fide</em> është sinjali që krijesa sprite të largojë klonët e saj dhe vetë nga skena.</p>
 <a class="reference internal image-reference" href="_images/fig9_17.png"><img alt="_images/fig9_17.png" class="align-center" src="_images/fig9_17.png" style="width: 490px;" /></a>
-<p>The following figure represents the scripts, which describe the behavior of the <em>Creature</em> sprite. This sprite reacts to 4 different events: clicking on the green flag, broadcasting the messages <em>create</em> and <em>hide</em>, and the cloning event. When the green flag is clicked, the creature hides, and when it receives the message <em>hide</em>, it changes the value of the variable <em>next</em>. This variable, unlike the global variables <em>number</em> and <em>how</em>, which can be used by all sprites, is created only to be used by the <em>Creature</em> sprite, so it is a local variable. The main characteristic of local variables is that they can be used only by the sprite they were created for. Other sprites can see their values, but they cannot change them. The variable <em>next</em> is used as a trigger. When its value changes from 0 (initial value that is set at the beginning of the reaction to the message <em>create</em>) to 1, the destruction of the clones (copies) begins, and the sprite hides.</p>
+<p>Figura e mëposhtme paraqet skriptet, të cilat përshkruajnë sjelljen e sprite <em>Creature</em>. Kjo sprint reagon ndaj 4 ngjarjeve të ndryshme: duke klikuar mbi flamurin e gjelbër, duke transmetuar mesazhet <em>create</em> dhe <em>hide</em>, dhe ngjarjen e klonimit. Kur klikohet flamuri jeshil, krijesa fshihet, dhe kur merr mesazhin <em>hide</em>, ajo ndryshon vlerën e variablit <em>other</em>. Ky variabël, ndryshe nga variablat globale <em>number</em> dhe <em>how</em>, të cilat mund të përdoren nga të gjitha sprites, është krijuar vetëm për t’u përdorur nga sprite <em>Create</em>, pra është një variabël lokal. Karakteristika kryesore e variablave lokale është se ato mund të përdoren vetëm nga sprite për të cilat janë krijuar. Sprites të tjerë mund të shohin vlerat e tyre, por ato nuk mund t’i ndryshojnë ato. Variabli <em>other</em> përdoret si shkas. Kur vlera e tij ndryshon nga 0 (vlera fillestare që është vendosur në fillim të reagimit ndaj mesazhit <em>Create</em>) në 1, fillon shkatërrimi i kloneve (kopjet) dhe spërkatja fshihet.</p>
 <a class="reference internal image-reference" href="_images/fig9_18.png"><img alt="_images/fig9_18.png" class="align-center" src="_images/fig9_18.png" style="width: 170px;" /></a>
-<p><strong>How does the Clumsy Wizard display the different number of sprite’s copies (clones)?</strong></p>
-<p>One more thing we need to explain is how the Clumsy Wizard is able to display multiple copies of a certain sprite (i.e. of costumes of the <em>Creature</em> sprite). For this, he uses the <strong>cloning</strong> of sprites. We have shown already that the sprite (and all scripts added to it) can be multiplied during the creation of the program. The multiplication is done by selecting the option <em>duplicate</em> from the shortcut menu that you get when you right-click on the sprite in the sprites list. In Scratch, there is also the option that allows the sprite to be multiplied during the running of the program. (It is similar to lists, to which the elements can be added both during the creation and running of the program)</p>
-<p>To clone the sprite and to manage the behavior of the clone, we use the instructions <img alt="create_clone" src="_images/create_clone.png" /> and <img alt="when_clone" src="_images/when_clone.png" /> from the group <em>Control</em>. In the script describing the behavior of the creature sprite when it receives wizard’s message <em>create</em>, the sprite appears on the left edge of the stage, after which its clones are created and displayed on the stage. Each clone is displayed at a distance of 50 steps from the previous one, so they stand side by side in a row. This is achieved with the loop that is repeated <em>how-1</em> number of times, which, together with the original sprite, produces the promised number sprite copies. Since the variable <em>next</em> is a local variable for the sprite that is being cloned, each of its clones has its own value of this variable, and all of the clones are visible on the stage until the variable <em>next</em> receives the value 1 (when the sprite receives the message <em>hide</em>). This is when each clone deletes itself, and the original sprite hides.</p>
+<p><strong>Si e shfaq Clumsy Wizard numrin e ndryshëm të kopjeve (kloneve) të sprite?</strong></p>
+<p>Një gjë tjetër që duhet të shpjegojmë është se si Kënga e ngathët është në gjendje të shfaqë kopje të shumëfishta të një sprite të caktuar (d.m.th. të kostumeve të sprite <em>Creature</em>). Për këtë, ai përdor <strong>klonimin</strong> të sprites. Ne kemi treguar tashmë që sprite (dhe të gjitha shkrimet e shtuara në të) mund të shumëzohen gjatë krijimit të programit. Shumëzimi bëhet duke zgjedhur opsionin <em>dublicate</em> nga menyja e shkurtoreve që merrni kur klikoni me të djathtën mbi sprite në listën e sprites. Në Scratch, ekziston edhe opsioni që lejon që sprite të shumëzohet gjatë ekzekutimit të programit. (Isshtë e ngjashme me listat, të cilave elementët mund të shtohen edhe gjatë krijimit dhe ekzekutimit të programit)</p>
+<p>Për të klonuar sprite dhe për të menaxhuar sjelljen e klonit, ne përdorim udhëzimet <img alt="create_clone" src="_images/create_clone.png" /> dhe <img alt="when_clone" src="_images/when_clone.png" /> nga grupi <em>Control</em>. Në skenarin që përshkruan sjelljen e krijesës së sprite kur merr mesazhin e magjistarit <em>create</em>, sprite shfaqet në skajin e majtë të skenës, pas së cilës klonet e saj krijohen dhe shfaqen në skenë. Çdo klon shfaqet në një distancë prej 50 hapash nga ai i mëparshmi, kështu që ata qëndrojnë krah për krah në një rresht. Kjo arrihet me ciklin që përsëritet <em>sa-1</em> numrin e herëve, i cili, së bashku me sprite origjinale, prodhon kopje të numrit të premtuar të sprite. Meqenëse variabla <em>next</em> është një variabël lokal për sprite që është duke u klonuar, secili prej kloneve të tij ka vlerën e vet të kësaj ndryshore, dhe të gjitha klonet janë të dukshëm në skenë derisa ndryshorja <em>other</em> të marrë vlerën 1 (kur sprite merr mesazhin <em>hide</em>). Kjo ndodh kur secili klon fshin vetveten, dhe burimi origjinal fshihet.</p>
 <a class="reference internal image-reference" href="_images/fig9_19.png"><img alt="_images/fig9_19.png" class="align-center" src="_images/fig9_19.png" style="width: 430px;" /></a>
-<p><strong>Upgrading the project Clumsy Wizard2</strong></p>
-<p>The idea of this upgrade is to arrange so that the wizard does not make as many copies of the object as he promised. He makes either too many or not enough. The user should say how many more or fewer objects the wizard has created, i.e. the child should learn to add and subtract numbers up to 10. We achieve this by generating the variable <em>error</em>, whose values can be integer numbers from the interval [-3,3]. Of course, if the generated error is 0, the wizard will create the exact number of copies he promised, but in other cases it will be necessary to determine how many objects he has created. The following figure shows some of the cases when the wizard gets “confused”.</p>
-<a class="reference internal image-reference" href="_images/fig9_20.png"><img alt="_images/fig9_20.png" class="align-center" src="_images/fig9_20.png" style="width: 610px;" /></a>
-<p>The following script describes the behavior of the creature.</p>
+<p><strong>Përditësimi i projektit Clumsy Wizard2</strong></p>
+<p>Ideja e kësaj azhurnimi është që të aranzhohet në mënyrë që magjistari të mos bëjë sa më shumë kopje të objektit siç premtoi. Ai bën ose shumë ose nuk mjafton. Përdoruesi duhet të thotë se sa më shumë ose më pak objekte që magjistari ka krijuar, d.m.th. fëmija duhet të mësojë të shtojë dhe zbresë numrat deri në 10. Ne e arrijmë këtë duke gjeneruar gabimin <em>të gabuar</em>, vlerat e të cilit mund të jenë numra të plotë nga intervali [ -3,3]. Sigurisht, nëse gabimi i gjeneruar është 0, magjistari do të krijojë numrin e saktë të kopjeve që premtoi, por në raste të tjera do të jetë e nevojshme të përcaktohet se sa objekte ka krijuar. Shifra e mëposhtme tregon disa nga rastet kur magjistari “hutohet”.</p>
+<a class="reference internal image-reference" href="../_images/9/fig9_20.png"><img alt="../_images/9/fig9_20.png" class="align-center" src="../_images/9/fig9_20.png" style="width: 610px;" /></a>
+<p>Skenari i mëposhtëm përshkruan sjelljen e krijesës.</p>
 <a class="reference internal image-reference" href="_images/fig9_21.png"><img alt="_images/fig9_21.png" class="align-center" src="_images/fig9_21.png" style="width: 410px;" /></a>
-<p>The script presented below describes the behavior of the Wizard Girl.</p>
+<p>Skenari i paraqitur më poshtë përshkruan sjelljen e Wizard Girl.</p>
 <a class="reference internal image-reference" href="_images/fig9_22.png"><img alt="_images/fig9_22.png" class="align-center" src="_images/fig9_22.png" style="width: 550px;" /></a>
-<p>Save this modified project under the name <em>Clumsy Wizard2</em>.</p>
-<p>Note. If the project is used to practice adding and subtracting with numbers up to 10, it will be useful to insert a “blank” question <img alt="ask_wait" src="_images/ask_wait.png" /> into the script added to the young girl wizard instead of the wait block <img alt="wait_sec" src="_images/wait_sec.png" />. Only when the child gives the answer, will we press <em>Enter</em> and check that answer.</p>
+<p>Ruani këtë projekt të modifikuar nën emrin <em>Clumsy Wizard2</em>.</p>
+<p>Shënim. Nëse projekti përdoret për të praktikuar shtimin dhe zbritjen me numra deri në 10, do të jetë e dobishme të futni një pyetje “bosh” <img alt="ask_wait" src="_images/ask_wait.png" /> në skenarin e shtuar tek magjistari i vajzës së re në vend të bllokut të pritjes <img alt="wait_sec" src="_images/wait_sec.png" />. Vetëm kur fëmija të japë përgjigjen, do ta shtypim <em>Enter</em> dhe do ta kontrollojmë atë përgjigje.</p>
 </div>
 </div>
-<div class="section" id="ask-answer-the-following-questions">
-<h2><img alt="ask" src="_images/ask.png" /> Answer the following questions<a class="headerlink" href="#ask-answer-the-following-questions" title="Permalink to this headline">¶</a></h2>
-<p>For all the questions that follow, it is assumed that, initially, the list has the following elements</p>
+<div class="section" id="ask-pergjigjuni-pyetjeve-te-meposhtme">
+<h2><img alt="ask" src="_images/ask.png" /> Përgjigjuni pyetjeve të mëposhtme<a class="headerlink" href="#ask-pergjigjuni-pyetjeve-te-meposhtme" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 227)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">ask</span><span class="o">|</span> <span class="n">Përgjigjuni</span> <span class="n">pyetjeve</span> <span class="n">të</span> <span class="n">mëposhtme</span>
+<span class="o">--------------------------------------</span>
+</pre></div>
+</div>
+</div>
+<p>Për të gjitha pyetjet që pasojnë, supozohet se, fillimisht, lista ka elementët e mëposhtëm</p>
 <a class="reference internal image-reference" href="_images/q9_1.png"><img alt="_images/q9_1.png" class="align-center" src="_images/q9_1.png" style="width: 125px;" /></a>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-1">
+<h3>Pyetja 1<a class="headerlink" href="#pyetja-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -339,43 +382,50 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="lista1">
-            <p>Q-43: What is the result of the execution of the command <img alt="l1" src="_images/l1.png" />? (Select all correct answers)</p>
+            <p>Q-43: Cili është rezultati i ekzekutimit të komandës <img alt="l1" src="_images/l1.png" />? (Zgjidhni të gjitha përgjigjet e sakta)</p>
 
-            <li data-component="answer" data-correct id="lista1_opt_a">the list will have one less element</li><li data-component="feedback" id="lista1_opt_a"></li>
+            <li data-component="answer" data-correct id="lista1_opt_a">lista do të ketë një element më pak</li><li data-component="feedback" id="lista1_opt_a"></li>
             
-            <li data-component="answer" data-correct id="lista1_opt_b">the element orange is in the number 1 spot on the list</li><li data-component="feedback" id="lista1_opt_b"></li>
+            <li data-component="answer" data-correct id="lista1_opt_b">elementi portokall është në vendin numër 1 në listë</li><li data-component="feedback" id="lista1_opt_b"></li>
             
-            <li data-component="answer"  id="lista1_opt_c">the element is moved to the end of the list</li><li data-component="feedback" id="lista1_opt_c"></li>
+            <li data-component="answer"  id="lista1_opt_c">elementi zhvendoset në fund të listës</li><li data-component="feedback" id="lista1_opt_c"></li>
             
-            <li data-component="answer"  id="lista1_opt_d">the last element on the list is taken out</li><li data-component="feedback" id="lista1_opt_d"></li>
+            <li data-component="answer"  id="lista1_opt_d">elementi i fundit në listë është nxjerrë</li><li data-component="feedback" id="lista1_opt_d"></li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-2">
+<h3>Pyetja 2<a class="headerlink" href="#pyetja-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="lista2">
-            <p>Q-44: What is the result of the execution of the command <img alt="l2" src="_images/l2.png" />?</p>
-
-            <li data-component="answer"  id="lista2_opt_a">the element will be added to the beginning of the list</li><li data-component="feedback" id="lista2_opt_a">This command adds to the end of the list.</li>
-            
-            <li data-component="answer" data-correct id="lista2_opt_b">the element will be added to the end of the list</li><li data-component="feedback" id="lista2_opt_b">Correct.</li>
-            
-            <li data-component="answer"  id="lista2_opt_c">the element will be added under the condition it was not previously on the list</li><li data-component="feedback" id="lista2_opt_c">No checks are made.</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="question-3">
-<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 261)</p>
+<p>No correct answer specified.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">mchoice</span><span class="p">::</span> <span class="n">lista2</span>
+    <span class="p">:</span><span class="n">answer_a</span><span class="p">:</span> <span class="n">elementi</span> <span class="n">do</span> <span class="n">të</span> <span class="n">shtohet</span> <span class="n">në</span> <span class="n">fillim</span> <span class="n">të</span> <span class="n">listës</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 263)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    :answer_b: elementi do të shtohet në fund të listës
+    :answer: elementi do të shtohet nën kushtin që nuk ishte më parë në listë
+    :correct: b
+    :feedback_a: Kjo komandë shton në fund të listës.
+    :feedback_b: E saktë.
+    :feedback_c: Nuk janë bërë kontrolle.</p>
+<blockquote>
+<div><p>Cili është rezultati i ekzekutimit të komandës <img alt="l2" src="_images/l2.png" />?</p>
+</div></blockquote>
+</div>
+<div class="section" id="pyetja-3">
+<h3>Pyetja 3<a class="headerlink" href="#pyetja-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -386,42 +436,48 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
             <p>Q-45: How many times will the sprite says “I like fruit”?</p>
 <a class="reference internal image-reference" href="_images/q9_3.png"><img alt="_images/q9_3.png" class="align-center" src="_images/q9_3.png" style="width: 220px;" /></a>
 
-            <li data-component="answer"  id="lista3_opt_a">zero</li><li data-component="feedback" id="lista3_opt_a">The list has 3 elements.</li>
+            <li data-component="answer"  id="lista3_opt_a">zero</li><li data-component="feedback" id="lista3_opt_a">Lista ka 3 elementë.</li>
             
-            <li data-component="answer"  id="lista3_opt_b">one time</li><li data-component="feedback" id="lista3_opt_b">The list has 3 elements.</li>
+            <li data-component="answer"  id="lista3_opt_b">një herë</li><li data-component="feedback" id="lista3_opt_b">Lista ka 3 elementë..</li>
             
-            <li data-component="answer"  id="lista3_opt_c">two times</li><li data-component="feedback" id="lista3_opt_c">The list has 3 elements.</li>
+            <li data-component="answer"  id="lista3_opt_c">dy herë</li><li data-component="feedback" id="lista3_opt_c">Lista ka 3 elementë.</li>
             
-            <li data-component="answer" data-correct id="lista3_opt_d">three times</li><li data-component="feedback" id="lista3_opt_d">Correct.</li>
+            <li data-component="answer" data-correct id="lista3_opt_d">tre herë</li><li data-component="feedback" id="lista3_opt_d">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-4">
-<h3>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-4">
+<h3>Pyetja 4<a class="headerlink" href="#pyetja-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 301)</p>
+<p>No correct answer specified.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. mchoice:: lista4
+   :multiple_answers:
+   :answer_a:
+   :answer_b:
+   :answer_c:
+   :correct: b, c
+   :feedback_a:
+   :feedback_b:
+   :feedback_c:
 
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="lista4">
-            <p>Q-46: Which command will place the element <em>strawberry</em> in the second position in the list <em>fruit</em>? (Select all correct answers)</p>
-<a class="reference internal image-reference" href="_images/q9_4.png"><img alt="_images/q9_4.png" class="align-center" src="_images/q9_4.png" style="width: 650px;" /></a>
+  Cila komandë do të vendosë elementin *strawberry* në pozicionin e dytë në listë *fruits*? (Zgjidhni të gjitha përgjigjet e sakta)
 
-            <li data-component="answer"  id="lista4_opt_a"></li><li data-component="feedback" id="lista4_opt_a"></li>
-            
-            <li data-component="answer" data-correct id="lista4_opt_b"></li><li data-component="feedback" id="lista4_opt_b"></li>
-            
-            <li data-component="answer" data-correct id="lista4_opt_c"></li><li data-component="feedback" id="lista4_opt_c"></li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="question-5">
-<h3>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h3>
+   .. image:: ../_images/9/q9_4.png
+      :width: 650px
+      :align: center
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pyetja-5">
+<h3>Pyetja 5<a class="headerlink" href="#pyetja-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -429,7 +485,7 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="lista5">
-            <p>Q-47: After the execution of which commands will the number of elements in the list increase? (Select all correct answers)</p>
+            <p>Q-47:  Pas ekzekutimit të cilave komanda do të rritet numri i elementeve në listë? (Zgjidhni të gjitha përgjigjet e sakta)</p>
 <a class="reference internal image-reference" href="_images/q9_4.png"><img alt="_images/q9_4.png" class="align-center" src="_images/q9_4.png" style="width: 650px;" /></a>
 
             <li data-component="answer" data-correct id="lista5_opt_a"></li><li data-component="feedback" id="lista5_opt_a"></li>
@@ -442,34 +498,41 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
             </ul>
             </div>
             </div>
-<div class="section" id="question-6">
-<h3>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-6">
+<h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="lista6">
-            <p>Q-48: What is the result of the execution of the following commands?</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 343)</p>
+<p>No correct answer specified.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">mchoice</span><span class="p">::</span> <span class="n">lista6</span>
+    <span class="p">:</span><span class="n">answer_a</span><span class="p">:</span> <span class="n">Nëse</span> <span class="n">lista</span> <span class="n">përfshin</span> <span class="n">elementin</span> <span class="n">luleshtrydhe</span><span class="p">,</span> <span class="n">madhësia</span> <span class="n">e</span> <span class="n">saj</span> <span class="n">nuk</span> <span class="n">do</span> <span class="n">të</span> <span class="n">ndryshojë</span><span class="p">;</span> <span class="n">përndryshe</span><span class="p">,</span> <span class="n">luleshtrydhet</span> <span class="n">e</span> <span class="n">elementit</span> <span class="n">do</span> <span class="n">t</span><span class="s1">&#39;i shtohen në fund të listës.</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 345)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    :answer_b: Pavarësisht nëse është përfshirë apo jo elementi i luleshtrydhes, ajo do ta shtojë atë në fund të listës.
+    :answer_c: Nëse lista përfshin elementin luleshtrydhe, madhësia e saj nuk do të ndryshojë; përndryshe, luleshtrydhet e elementit do t’i shtohen fillimit të listës.
+    :correct: a
+    :feedback_a: E saktë.
+    :feedback_b: Hyrja në listë kryhet nëse lista nuk e kishte më parë elementin luleshtrydhe.
+    :feedback_c: Nëse shtohet, ajo do të shtohet në fund të listës.</p>
+<blockquote>
+<div><p>Cili është rezultati i ekzekutimit të urdhrave të mëposhtëm?</p>
 <a class="reference internal image-reference" href="_images/q9_6.png"><img alt="_images/q9_6.png" class="align-center" src="_images/q9_6.png" style="width: 300px;" /></a>
-
-            <li data-component="answer" data-correct id="lista6_opt_a">If the list includes the element strawberry, its size will not change; otherwise, the element strawberry will be added to the end of the list.</li><li data-component="feedback" id="lista6_opt_a">Correct.</li>
-            
-            <li data-component="answer"  id="lista6_opt_b">Regardless of whether or not the element strawberry was included, it will add it to the end of the list.</li><li data-component="feedback" id="lista6_opt_b">List entry is accomplished if the list did not previously have the element strawberry.</li>
-            
-            <li data-component="answer"  id="lista6_opt_c">If the list includes the element strawberry, its size will not change; otherwise, the element strawberry will be added to the beginning of the list.</li><li data-component="feedback" id="lista6_opt_c">If it is added, it will be added to the end of the list.</li>
-            
-
-            </ul>
-            </div>
-            </div>
+</div></blockquote>
 </div>
-<div class="section" id="try-try-it">
-<h2><img alt="try" src="_images/try.png" /> Try it!<a class="headerlink" href="#try-try-it" title="Permalink to this headline">¶</a></h2>
-<p>In the first 3 exercises, it is assumed that we have a list called <strong>original</strong>, whose elements are numbers from 1 to 10 (in sequence).</p>
-<div class="section" id="exercise-1">
-<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="try-provoje">
+<h2><img alt="try" src="_images/try.png" /> Provoje!<a class="headerlink" href="#try-provoje" title="Permalink to this headline">¶</a></h2>
+<p>Në 3 ushtrimet e para, supozohet se kemi një listë të quajtur <strong>original</strong>, elementët e së cilës janë numrat nga 1 në 10 (në sekuencë).</p>
+<div class="section" id="ushtrimi-1">
+<h3>Ushtrimi 1<a class="headerlink" href="#ushtrimi-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -478,13 +541,13 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a script, which creates the list called <strong>duplicate</strong> and writes into it all the elements of the existing <strong>original</strong> list.</p>
+<p>Shkruaj një skenar, i cili krijon listën e quajtur <strong>dublicate</strong> dhe shkruan në të të gjithë elementët e listës ** origjinale ** ekzistuese</p>
 
     </p></div></div>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-2">
-<h3>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-2">
+<h3>Ushtrimi 2<a class="headerlink" href="#ushtrimi-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -493,13 +556,13 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a script that creates a list called <strong>backward</strong> and writes into it all the elements of the existing list <strong>original</strong> in the reverse order, i.e. the first element of the list <em>backward</em> should be the last element of the list <em>original</em>, the second - the penultimate from the list <em>original</em> and so on until the first element of the list <em>original</em>, which should be the last in the list <em>backward</em>.</p>
+<p>Shkruaj një skenar që krijon një listë të quajtur <strong>backward</strong> dhe shkruan në të të gjithë elementët e listës ekzistuese <strong>original</strong> në rend të kundërt, pra elementi i parë i listës <em>back</em> duhet të jetë elementi i fundit i lista <em>original</em>, e dyta - e parafundit nga lista <em>original</em> e kështu me radhë deri në elementin e parë të listës <em>origjinal</em>, i cili duhet të jetë i fundit në listë <em>backward</em>.</p>
 
     </p></div></div>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-3">
-<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-3">
+<h3>Ushtrimi 3<a class="headerlink" href="#ushtrimi-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -508,13 +571,13 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a script that creates the list <strong>even</strong> and writes into it every other element of the existing list <strong>original</strong>.</p>
+<p>Shkruaj një skenar që krijon listën <strong>even ** dhe shkruan në të çdo element tjetër të listës ekzistuese**original</strong>.</p>
 
     </p></div></div>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-4">
-<h3>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-4">
+<h3>Ushtrimi 4<a class="headerlink" href="#ushtrimi-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -523,13 +586,13 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a script that creates the list <strong>random1</strong> and writes into it 10 numbers from the interval [1,100], generated with the operator random number.</p>
+<p>Shkruaj një skenar që krijon listën <strong>random1</strong> dhe shkruan në të 10 numra nga intervali [1,100], i krijuar me numrin e rastësishëm të operatorit.</p>
 
     </p></div></div>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-5">
-<h3>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-5">
+<h3>Ushtrimi 5<a class="headerlink" href="#ushtrimi-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
@@ -538,13 +601,13 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a script that creates the list <strong>random2</strong> and writes into it 10 DIFFERENT numbers from the interval [1,100], generated with the operator random number.</p>
+<p>Shkruaj një skenar që krijon listën <strong>random2</strong> dhe shkruan në të 10 numra Diferencën nga intervali [1,100], i krijuar me numrin e rastësishëm të operatorit.</p>
 
     </p></div></div>
 </div>
 </div>
-<div class="section" id="bug-debug-it">
-<h2><img alt="bug" src="_images/bug.png" /> Debug it!<a class="headerlink" href="#bug-debug-it" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bug-debug">
+<h2><img alt="bug" src="_images/bug.png" /> Debug!<a class="headerlink" href="#bug-debug" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="bug-1">
 <h3>Bug 1<a class="headerlink" href="#bug-1" title="Permalink to this headline">¶</a></h3>
 
@@ -555,82 +618,98 @@ Since the costume dimensions of the sprite <em>Creature</em> are set to about 50
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>The student wanted to change Example 3 of this lesson so that there is a new list called <em>eaten</em> where the names of the different types of food chosen by Zara will be written. To Zara, he/she added the scripts for controlling movement with arrow keys and the script shown in the figure below. The figure also shows the scripts added to other sprites in the project. Most of the events were executed as expected; however, the student was not able to write the apple and the orange into the list. Where is the bug?</p>
+<p>Studenti dëshironte të ndryshojë Shembullin 3 të këtij mësimi në mënyrë që të ketë një listë të re të quajtur <em>eaten</em> ku do të shkruhen emrat e llojeve të ndryshme të ushqimit të zgjedhur nga Zara. Tek Zara, ai / ajo shtoi skriptet për kontrollin e lëvizjes me çelësat e shigjetave dhe skenarin e treguar në figurën më poshtë. Shifra tregon gjithashtu skriptet e shtuara në sprites të tjera në projekt. Shumica e ngjarjeve u ekzekutuan siç pritej; megjithatë, studenti nuk ishte në gjendje të shkruante mollën dhe portokallin në listë. Ku është faji?</p>
 <a class="reference internal image-reference" href="_images/bug9_1.png"><img alt="_images/bug9_1.png" class="align-center" src="_images/bug9_1.png" style="width: 810px;" /></a>
 
-    <div data-component="reveal" id="sаkrivаnjе24"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>In the command <code class="docutils literal notranslate"><span class="pre">wait</span> <span class="pre">until</span></code> of the scripts added to the apple and the orange sprites, the sprite which should touch them is not set correctly.</p>
+    <div data-component="reveal" id="sаkrivаnjе24"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigja:</strong></p>
+<p>Në komandën <code class="docutils literal notranslate"><span class="pre">wait</span> <span class="pre">until</span></code> të shkrimeve të shtuara në mollë dhe spritat e portokallit, ura që duhet t’i prekë nuk është vendosur si duhet.</p>
 
     </div>
     
     </p></div></div>
 </div>
 </div>
-<div class="section" id="book-summary">
-<h2><img alt="book" src="_images/book.png" /> Summary<a class="headerlink" href="#book-summary" title="Permalink to this headline">¶</a></h2>
-<p>In this lesson, we learned how to use lists in Scratch - the type of data that has a complex structure, which enables multiple values to be stored at the same time. We saw that list elements could be different types of data, and that they could be used for choosing one of the costumes of a certain sprite or for choosing one of the sprites from the list of sprites. With project examples, we also illustrated the synchronization of behavior of multiplied sprites by using messages. Furthermore, we showed how the program can be used to clone sprites and how these clones can behave differently if the sprite that created them has local variables.</p>
-<p><strong>Project Examples</strong>: <a class="reference external" href="https://scratch.mit.edu/studios/25119484/">9Studio</a></p>
-<p><strong>New concepts</strong>:  list, list element, clones.</p>
-<p><strong>New commands</strong>: <img alt="variables_blocks" src="_images/variables.png" /> - <img alt="add_to" src="_images/add_to.png" />,  <img alt="delete_of" src="_images/delete_of.png" />, <img alt="delete_all" src="_images/delete_all.png" />,  <img alt="insert_at" src="_images/insert_at.png" />,  <img alt="replace_with" src="_images/replace_with.png" />, <img alt="show_list" src="_images/show_list.png" />, <img alt="hide_list" src="_images/hide_list.png" />, <img alt="item_of" src="_images/item_of.png" />,  <img alt="length_of" src="_images/length_of.png" />,  <img alt="list_contains" src="_images/list_contains.png" />.</p>
+<div class="section" id="book-permbledhje">
+<h2><img alt="book" src="_images/book.png" /> Përmbledhje<a class="headerlink" href="#book-permbledhje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 437)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">book</span><span class="o">|</span> <span class="n">Përmbledhje</span>
+<span class="o">----------------</span>
+</pre></div>
+</div>
+</div>
+<p>Në këtë mësim, mësuam si të përdorim listat në Scratch - lloji i të dhënave që ka një strukturë komplekse, e cila mundëson të ruhen shumë vlera në të njëjtën kohë. Ne pamë që elementët e listës mund të jenë lloje të ndryshme të të dhënave, dhe se ato mund të përdoren për zgjedhjen e një prej kostumeve të një sprite të caktuar ose për zgjedhjen e një prej sprites nga lista e sprites. Me shembuj të projektit, ne gjithashtu ilustronim sinkronizimin e sjelljes së sprites të shumëzuar duke përdorur mesazhe. Për më tepër, ne treguam se si programi mund të përdoret për të klonuar sprites dhe si këto klone mund të sillen ndryshe nëse sprite që i krijuan ato kanë ndryshore lokale.</p>
+<p><strong>Shembuj projekti</strong>: <a class="reference external" href="https://scratch.mit.edu/studios/25119484/">9Studio</a></p>
+<p><strong>Koncepte të reja</strong>:  list, list element, clones.</p>
+<p><strong>Komanda të reja</strong>: <img alt="variables_blocks" src="_images/variables.png" /> - <img alt="add_to" src="_images/add_to.png" />,  <img alt="delete_of" src="_images/delete_of.png" />, <img alt="delete_all" src="_images/delete_all.png" />,  <img alt="insert_at" src="_images/insert_at.png" />,  <img alt="replace_with" src="_images/replace_with.png" />, <img alt="show_list" src="_images/show_list.png" />, <img alt="hide_list" src="_images/hide_list.png" />, <img alt="item_of" src="_images/item_of.png" />,  <img alt="length_of" src="_images/length_of.png" />,  <img alt="list_contains" src="_images/list_contains.png" />.</p>
 <p><img alt="control_blocks" src="_images/control.png" /> - <img alt="when_clone" src="_images/when_clone.png" />, <img alt="create_clone" src="_images/create_clone.png" />, <img alt="delete_clone" src="_images/delete_clone.png" />.</p>
 </div>
-<div class="section" id="project-create-a-project">
-<h2><img alt="project" src="_images/project.png" /> Create a project<a class="headerlink" href="#project-create-a-project" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-1-history-quiz">
-<h3>Project 1 - “History Quiz”<a class="headerlink" href="#project-1-history-quiz" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="project-krijo-projekte">
+<h2><img alt="project" src="_images/project.png" /> Krijo projekte<a class="headerlink" href="#project-krijo-projekte" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="projekti-1-history-quiz">
+<h3>Projekti 1 - “History Quiz”<a class="headerlink" href="#projekti-1-history-quiz" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>Load the list of questions from a text file.</p>
+<p>Ngarkoni listën e pyetjeve nga një skedar teksti.</p>
 <ol class="arabic simple">
-<li><p>By using the program Notepad write a list of history questions, each question should be written in a separate row.</p></li>
-<li><p>Save the text as a text file called <em>History.txt</em> with the UTF-8 encoding.</p></li>
+<li><p>Duke përdorur programin Notepad shkruaj një listë të pyetjeve të historisë, secila pyetje duhet të shkruhet në një rresht të veçantë.</p></li>
+<li><p>Ruani tekstin si skedar teksti të quajtur <em>History.txt</em> me kodimin UTF-8.</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/projekat9_1a.png"><img alt="_images/projekat9_1a.png" class="align-center" src="_images/projekat9_1a.png" style="width: 250px;" /></a>
 <ol class="arabic simple" start="3">
-<li><p>In Scratch, create a list called <em>questions</em>.</p></li>
-<li><p>Right-click on the list monitor and from the shortcut menu choose the operation <em>import</em>.</p></li>
+<li><p>Në Scratch, krijoni një listë të quajtur <em>questions</em>.</p></li>
+<li><p>Klikoni me të djathtën në monitorin e listës dhe nga menyja e shkurtoreve zgjidhni operacionin <em>import</em>.</p></li>
 </ol>
-<a class="reference internal image-reference" href="_images/projekat9_1b.png"><img alt="_images/projekat9_1b.png" class="align-center" src="_images/projekat9_1b.png" style="width: 230px;" /></a>
+<a class="reference internal image-reference" href="../_images/9/projekat9_1b.png"><img alt="../_images/9/projekat9_1b.png" class="align-center" src="../_images/9/projekat9_1b.png" style="width: 230px;" /></a>
 <ol class="arabic simple" start="5">
-<li><p>In the file name field write <em>History</em></p></li>
-<li><p>The list of questions you wrote previously in the Notepad will appear in your list.</p></li>
+<li><p>Në fushën e emrit të skedarit shkruaj <em>History</em></p></li>
+<li><p>Lista e pyetjeve që keni shkruar më parë në Notepad do të shfaqet në listën tuaj.</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/projekat9_1c.png"><img alt="_images/projekat9_1c.png" class="align-center" src="_images/projekat9_1c.png" style="width: 470px;" /></a>
-<p>Then, create a list with correct answers and a script, which will randomly choose a question from the list of questions, ask the user to answer and then compare the answer with the correct answer from the list. If the user answered correctly, you should increase the number of his/her points.</p>
+<p>Pastaj, krijoni një listë me përgjigje të sakta dhe një skenar, i cili do të zgjedhë rastësisht një pyetje nga lista e pyetjeve, kërkoni nga përdoruesi që të përgjigjet dhe pastaj të krahasojë përgjigjen me përgjigjen e saktë nga lista. Nëse përdoruesi është përgjigjur saktë, duhet të rrisni numrin e pikëve të tij / saj.</p>
 </div>
-<div class="section" id="project-2-telephone-book">
-<h3>Project 2 - “Telephone book”<a class="headerlink" href="#project-2-telephone-book" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-2-numra-telefoni">
+<h3>Projekti 2 - “Numra telefoni”<a class="headerlink" href="#projekti-2-numra-telefoni" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>Create three lists with names, birthdays and telephone numbers of your friends.
-Write a script that checks whether the name entered from the input is included in the list. If the name is in the list, it should show the date of birth and the phone number of the person whose name was entered, and if not, the appropriate message should be displayed.</p>
+<p>Krijoni tre lista me emra, ditëlindje dhe numra telefoni të miqve tuaj.
+Shkruaj një skenar që kontrollon nëse emri i futur nga hyrja është përfshirë në listë. Nëse emri është në listë, duhet të tregojë datën e lindjes dhe numrin e telefonit të personit, emri i të cilit është futur, dhe nëse jo, duhet të shfaqet mesazhi i duhur.</p>
 </div>
-<div class="section" id="project-3-twins">
-<h3>Project 3 - “Twins”<a class="headerlink" href="#project-3-twins" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-3-binjake">
+<h3>Projekti 3 - “Binjakë”<a class="headerlink" href="#projekti-3-binjake" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>Create procedures, which should be connected into the project Twins.</p>
-<p>The procedure <strong>Check</strong> should check whether the number given as the parameter is a prime number.</p>
-<p>The procedure <strong>Compose</strong> should compose a list called <em>Prime</em> where it will write every prime number from the interval [2,1000].</p>
-<p>The main program should display all twin numbers (prime numbers that differ by 2) from the interval [2,1000].</p>
+<p>Krijoni procedura, të cilat duhet të lidhen me projektin Binjakët.</p>
+<p>Procedura <strong>Control</strong> duhet të kontrollojë nëse numri i dhënë si parametër është një numër kryesor.</p>
+<p>Procedura <strong>Compose</strong> duhet të hartojë një listë të quajtur <em>Prime</em> ku do të shkruajë çdo numër kryesor nga intervali [2,1000].</p>
+<p>Programi kryesor duhet të shfaq të gjithë numrat binjakë (numrat kryesorë që ndryshojnë për 2) nga intervali [2,1000].</p>
 </div>
-<div class="section" id="project-4-game-dangerous-objects">
-<h3>Project 4 - Game “Dangerous Objects”<a class="headerlink" href="#project-4-game-dangerous-objects" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-4-loja-objekte-te-rrezikshme">
+<h3>Projekti 4 - Loja “Objekte të rrezikshme”<a class="headerlink" href="#projekti-4-loja-objekte-te-rrezikshme" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Lists.rst</span>, line 509)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Projekti</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">Loja</span> <span class="s2">&quot;Objekte të rrezikshme&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>Create a game where the user (a young child) should choose several objects, which are not dangerous, from the group of objects presented to him/her. The names (or sequence numbers of the costumes, like in example 4 of this lesson) of the dangerous objects on the stage should be written in the list <em>dangerous</em>.
-The objects are selected by clicking on them. Then the program checks whether that parameter is included in the dangerous list.
-If the user chooses an object that is not dangerous, he/she will receive a positive point; otherwise, he/she will receive a negative point. The goal is to collect at least 3 points (out of, for example, 5). This is when the game should end, or the users should go to the next level.</p>
-<p>The game can have multiple levels, for example, dangers in the kitchen (knife, bowl with boiling water fire, etc.), dangers in the backyard, nature, etc.</p>
+<p>Krijoni një lojë ku përdoruesi (një fëmijë i vogël) duhet të zgjedhë disa objekte, të cilat nuk janë të rrezikshme, nga grupi i objekteve të paraqitura atij / saj. Emrat (ose numri rendor i kostumeve, si në shembullin 4 të këtij mësimi) të objekteve të rrezikshme në skenë duhet të shkruhen në listë <em>dangerous</em>.
+Objektet zgjidhen duke klikuar mbi to. Pastaj programi kontrollon nëse ai parametër është përfshirë në listën e rrezikshme.
+Nëse përdoruesi zgjedh një objekt që nuk është i rrezikshëm, ai / ajo do të marrë një pikë pozitive; përndryshe, ai / ajo do të marrë një pikë negative. Qëllimi është të mbledhim të paktën 3 pikë (nga, për shembull, 5). Kjo është kur loja duhet të përfundojë, ose përdoruesit duhet të shkojnë në nivelin tjetër.</p>
+<p>Lojë mund të ketë nivele të shumta, për shembull, rreziqe në kuzhinë (thikë, tas me zjarr me ujë të valë, etj.), Rreziqe në oborrin e shtëpisë, natyrën, etj.</p>
 </div>
 </div>
 </div>
@@ -639,17 +718,17 @@ If the user chooses an object that is not dangerous, he/she will receive a posit
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - How to Program Faster – Procedures' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Si të programojmë më shpejt – Proçedurat' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Strings' data-toggle="tooltip"><a href="Scratch3 Strings.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vargje' data-toggle="tooltip"><a href="Scratch3 Strings.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - How to Program Faster – Procedures' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Si të programojmë më shpejt – Proçedurat' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Strings' data-toggle="tooltip"><a href="Scratch3 Strings.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vargje' data-toggle="tooltip"><a href="Scratch3 Strings.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

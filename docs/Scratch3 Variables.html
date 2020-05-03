@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Variables &#8212; Block-based programming in Scratch - practice lessons</title>
+    <title>Variablat &#8212; Block-based programming in Scratch - practice lessons</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,8 +140,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How to Program Faster – Procedures" href="Scratch3 Procedures.html" />
-    <link rel="prev" title="Yes Or No - Making Decisions" href="Scratch3 Branching.html" />
+    <link rel="next" title="Si të programojmë më shpejt – Proçedurat" href="Scratch3 Procedures.html" />
+    <link rel="prev" title="Po ose jo - Marrja e vendimeve" href="Scratch3 Branching.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,8 +203,8 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="variables">
-<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="variablat">
+<h1>Variablat<a class="headerlink" href="#variablat" title="Permalink to this headline">¶</a></h1>
 
     <div class="course-box course-box-info">
         <div class="course-content">
@@ -212,294 +212,449 @@
 <p><img alt="intro7" src="_images/intro7.png" /></p>
 
     </p></div></div>
-<p>Variables are one of the most important concepts in programming. In this lesson, we will get to know different types of variables and show how we can monitor the changes of their values on the stage. We will use project examples with scripts, which have a complex structure, to show how we can create competitive games, where we need to keep the scores, as well as how to form complex expressions that calculate the value of the variables.</p>
+<p>Variablat janë një nga konceptet më të rëndësishëm në programim. Në këtë mësim, do të njihemi me lloje të ndryshme të variablave dhe do të tregojmë se si mund të monitorojmë ndryshimet e vlerave të tyre në skenë. Do të përdorim shembuj të projektit me skriptet, të cilat kanë një strukturë komplekse, për të treguar se si mund të krijojmë lojëra konkurruese, ku duhet të mbajmë rezultatet, si dhe si të formojmë shprehje komplekse që llogaritin vlerën e variablave.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>What is a variable?</strong></p>
-<p>Variable is an assigned area of computer memory. We could say that a variable is like an assigned box in which the program temporarily stores the data it is currently working with.</p>
-<a class="reference internal image-reference" href="_images/fig7_1.png"><img alt="_images/fig7_1.png" class="align-center" src="_images/fig7_1.png" style="width: 250px;" /></a>
-<p>The variable in the figure above is named <em>Х</em>, and its current value is 15.</p>
-<p>Variable can store one value, for example, a number or a letter. These are <strong>simple variables</strong>.
-However, there are also <strong>complex variables</strong>, which store multiple values, for example, a series of letters (<em>string</em>), a series of numbers, words, … In Scratch, this string is called a <em>list</em>.</p>
+<p><strong>Çfarë është një variabël?</strong></p>
 
     </p></div></div>
-<p>In previous projects, we used unnamed values. The text “Hello World”, and others we typed into the <em>Say</em> and <em>Think</em> blocks are all data - strings (series of signs).</p>
-<p>The numbers we entered as arguments in motion commands (move, point in the direction, change by) are values, which can be set in variables.</p>
-<p>The condition for repeating and branching can have two values - true and false; therefore, this is also a value, a <strong>logical</strong> value.</p>
-<p>For more complex programs, we will have to assign certain values, i.e. to introduce <strong>variables</strong>.</p>
+<p>   Variabël është një zonë e caktuar e memorjes kompjuterike. Mund të themi se një ndryshore është si një kuti e caktuar në të cilën programi ruan përkohësisht të dhënat me të cilat është duke punuar me të.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig7_1.png"><img alt="_images/fig7_1.png" class="align-center" src="_images/fig7_1.png" style="width: 250px;" /></a>
+<p>Variabli në figurën e mësipërme emërtohet <em>Х</em>, dhe vlera e saj aktuale është 15.</p>
+</div></blockquote>
+<p>   Variabli mund të ruajë një vlerë, për shembull, një numër ose një letër. Këto janë <strong>variabla të thjeshta</strong>.
+   Sidoqoftë, ekzistojnë edhe <strong>variabla komplekse</strong>, të cilat ruajnë vlera të shumta, për shembull, një seri shkronjash (<em>varg</em>), një seri numrash, fjalësh, … Në Scratch, kjo varg quhet një <em>listë</em>.</p>
+<p>Në projektet e mëparshme, kemi përdorur vlera pa emër. Teksti “hello World”, dhe të tjerët që kemi shtypur në bllokun <em>Say</em> dhe <em>Think</em> janë të gjitha vargjet e të dhënave (seri shenjash).</p>
+<p>Numrat që kemi futur si argumente në komandat lëvizëse (lëviz, pikë në drejtim, ndryshim nga) janë vlera, të cilat mund të vendosen në variabël.</p>
+<p>Kushti për përsëritjen dhe degëzimin mund të ketë dy vlera - të vërteta dhe të rreme; prandaj, kjo është gjithashtu një vlerë, një vlerë <strong>logjike</strong>.</p>
+<p>Për programe më komplekse, do të duhet të caktojmë vlera të caktuara, d.m.th. të prezantojmë <strong>variablat</strong>.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>How to create variables?</strong></p>
-<p>In the beginning, there are no blocks in the <em>Variables</em> group (image A). First, you need to create a variable by clicking the <em>Make a variable</em> option.</p>
-<a class="reference internal image-reference" href="_images/fig7_2.png"><img alt="_images/fig7_2.png" class="align-center" src="_images/fig7_2.png" style="width: 680px;" /></a>
-<p>By clicking this button, you will open a dialogue window for creating a new variable (B).</p>
-<p>The variable can be <strong>local</strong>, added only to the active object (sprite or stage) or <strong>global</strong>.</p>
-<p>A global variable can be used by all objects in the project. When you type in the name of the variable and click the <em>OK</em> button, blocks for four commands and one reporter with the name of the variable on it and a checkbox next to it will appear in the blocks palette (C).</p>
-<p>The blocks, which represent the variables, are called <em>reporters</em> because they report on the current value of the variable.
-Reporters appear in two different shapes, and they can be set only in input fields of command blocks with corresponding shapes.</p>
-<p>Reporters with rounded edges (ellipse) store numbers or strings, and they can be inserted into the blocks with white rounded input fields.</p>
-<p>Hexagonal reporter blocks contain logical data (true or false), and they can be inserted into blocks with appropriately shaped input fields.</p>
-<p>Certain reporter blocks also have checkboxes. If the user clicks on the checkbox, a monitor will appear on the stage, and it will display the current value of the variable.
-The monitor can display the values of variables in many different formats shown in the following figure.</p>
-<a class="reference internal image-reference" href="_images/fig7_3.png"><img alt="_images/fig7_3.png" class="align-center" src="_images/fig7_3.png" style="width: 240px;" /></a>
-<ol class="upperalpha simple">
-<li><p>a small display of the value with the name of the variable,</p></li>
-<li><p>large display of the value without the name,</p></li>
-<li><p>with a slider, which enables the user to change the value of the variable.</p></li>
-</ol>
-<p>The format can be changed by double-clicking on the monitor. The slider format can only be used for variables created by the user. By right-clicking on the slider, you can set the minimum and maximum values.</p>
+<p><strong>Si të krijoni variabla?</strong></p>
 
     </p></div></div>
-<div class="section" id="study-study-the-following-examples">
-<h2><img alt="study" src="_images/study.png" /> Study the following examples<a class="headerlink" href="#study-study-the-following-examples" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="example-1-project-the-hunt">
-<h3>Example 1 - Project “The Hunt”<a class="headerlink" href="#example-1-project-the-hunt" title="Permalink to this headline">¶</a></h3>
+<p>   Në fillim, nuk ka bllok në grupin <em>Variablat</em> (imazhi A). Së pari, duhet të krijoni një variabël duke klikuar në opsionin <em>make a variable</em>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/fig7_2.png"><img alt="_images/fig7_2.png" class="align-center" src="_images/fig7_2.png" style="width: 680px;" /></a>
+<p>Duke klikuar këtë buton, do të hapni një dritare dialogu për krijimin e një variabli të ri (B).</p>
+</div></blockquote>
+<p>  Variabli mund të jetë <strong>lokal</strong>, i shtuar vetëm objektit aktiv (sprite ose fazë) ose <strong>global</strong>.</p>
+<p>  Një variabël globale mund të përdoret nga të gjitha objektet në projekt. Kur shkruani emrin e variablit dhe klikoni në butonin <em>OK</em>, blloqet për katër komanda dhe një reporter me emrin e variablit në të dhe një kuti kontrolluese pranë saj do të shfaqet në paletën e blloqeve (C).</p>
+<p>  Blloqet, të cilat paraqesin variablat, quhen <em>reporterë</em> sepse raportojnë për vlerën aktuale të variablës.
+  Raportuesit shfaqen në dy forma të ndryshme, dhe ato mund të vendosen vetëm në fushat hyrëse të blloqeve të komandës me forma përkatëse.</p>
+<p>  Reporterët me skajet e rrumbullakosura (elipsi) ruajnë numrat ose telat, dhe ato mund të futen në blloqe me fushat e rrumbullakëta të bardha.</p>
+<p>  Blloqet e reportazhit gjashtëkëndor përmbajnë të dhëna logjike (të vërteta ose false), dhe ato mund të futen në blloqe me fushat e dhëna të përshtatshme.</p>
+<p>  Disa blloqe reporterësh gjithashtu kanë kutitë e kontrollit. Nëse përdoruesi klikon në kutinë e kontrollit, në skenë do të shfaqet një monitor, dhe do të shfaq vlerën aktuale të variablit.
+  Monitori mund të shfaq vlerat e variablave në shumë formate të ndryshme të paraqitura në figurën vijuese.</p>
+<blockquote>
+<div><div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 63)</p>
+<p>Error in “image” directive:
+no content permitted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_3</span><span class="o">.</span><span class="n">png</span>
+       <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">240</span><span class="n">px</span>
+       <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
+
+ <span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="n">një</span> <span class="n">shfaqje</span> <span class="n">e</span> <span class="n">vogël</span> <span class="n">e</span> <span class="n">vlerës</span> <span class="n">me</span> <span class="n">emrin</span> <span class="n">e</span> <span class="n">variablit</span><span class="p">,</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<p>   (B) shfaqje e madhe e vlerës pa emrin,</p>
+<p>   (C) me një rrëshqitës, i cili i mundëson përdoruesit të ndryshojë vlerën e variablës.</p>
+<p>   Formati mund të ndryshohet duke klikuar dy herë në monitor. Formati i rrëshqitësit mund të përdoret vetëm për ndryshoret e krijuara nga përdoruesi. Duke klikuar me të djathtën në shiritin, mund të vendosni vlerat minimale dhe maksimale.</p>
+<div class="section" id="study-studioni-shembujt">
+<h2><img alt="study" src="_images/study.png" /> Studioni shembujt<a class="headerlink" href="#study-studioni-shembujt" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shembull-1-projekti-the-hunt">
+<h3>Shembull 1 - Projekti “The Hunt”<a class="headerlink" href="#shembull-1-projekti-the-hunt" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 80)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembull</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;The Hunt&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>This project is a game made for two players. Each player uses the keyboard to control the movement of his/her cat sprite, which is chasing a mouse that appears in randomly chosen positions on the stage.
-The player whose cat touches the mouse first receives a point. When one of the cats touches the mouse, it disappears and appears somewhere else.
-The first player controls the yellow cat with the arrow keys, and the second player controls the grey cat with the keys W A S D.</p>
-<p>We are introducing complex conditions and logical operations.</p>
-<p><strong>Creating the backdrop and sprites</strong></p>
-<p>In this project, there are three sprites - <em>Cat 1</em>, <em>Cat 2</em> and <em>Mouse</em> and one backdrop. We will create the backdrop by slightly modifying the <em>Hay field</em> backdrop form the Scratch library.</p>
-<a class="reference internal image-reference" href="_images/fig7_4.png"><img alt="_images/fig7_4.png" class="align-center" src="_images/fig7_4.png" style="width: 480px;" /></a>
-<p>The sprite <em>Cat 1</em> was created from the sprite <em>Cat 2</em> from the sprites library by adding one more costume, and <em>Cat 2</em> was created by copying <em>Cat 1</em> and changing the color.
-The third sprite was uploaded from the Internet, and it has only one costume since there is no need to animate its movement in the project.</p>
+<p>Ky projekt është një lojë e bërë për dy lojtarë. Playerdo lojtar përdor tastierën për të kontrolluar lëvizjen e maceve të tij / saj, e cila po ndjek një miun që shfaqet në pozicione të zgjedhura rastësisht në skenë.
+Lojtari, macja e të cilit prek miun, së pari merr një pikë. Kur njëra nga macet prek miun, ajo zhduket dhe shfaqet diku tjetër.
+Lojtari i parë kontrollon macen e verdhë me çelësat e shigjetës, dhe lojtari i dytë kontrollon macen gri me çelësat W A S D.</p>
+<p>Ne po prezantojmë kushte komplekse dhe operacione logjike.</p>
+<p><strong>Krijimi i sfondit dhe sprites</strong></p>
+<p>Në këtë projekt, ka tre sprites - <em>Cat 1</em>, <em>Cat 2</em> dhe <em>Mouse</em> dhe një sfond. Ne do të krijojmë sfondin duke modifikuar pak nga sfondi <a href="#id1"><span class="problematic" id="id2">*</span></a>fushën e Hay * nga libraria Scratch.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 92); <em><a href="#id2">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/7/fig7_4.png"><img alt="../_images/7/fig7_4.png" class="align-center" src="../_images/7/fig7_4.png" style="width: 480px;" /></a>
+<p>Sprite <em>Cat 1</em> u krijua nga sprite <em>Cat 2</em> nga libraria e sprites duke shtuar një kostum tjetër, dhe <em>Cat 2</em> u krijua duke kopjuar <em>Cat 1</em> dhe duke ndryshuar ngjyrën.
+Sprite e treta u ngarkua nga Interneti, dhe ajo ka vetëm një kostum pasi nuk ka nevojë të gjallërojë lëvizjen në projekt.</p>
 <a class="reference internal image-reference" href="_images/fig7_5.png"><img alt="_images/fig7_5.png" class="align-center" src="_images/fig7_5.png" style="width: 230px;" /></a>
-<p><strong>The behavior of the sprite Cat 1</strong></p>
-<p>First, we will write and test the scripts that we will add to the sprite <em>Cat 1</em>, and then we will duplicate this sprite and change the scripts slightly.</p>
+<p><strong>Sjellja e Sprite Cat 1</strong></p>
+<p>Së pari, ne do t’i shkruajmë dhe testojmë skriptet që do t’i shtojmë në sprite <em>Cat 1</em>, dhe pastaj do ta kopjojmë këtë sprite dhe do t’i ndryshojmë skriptet paksa.</p>
 <a class="reference internal image-reference" href="_images/fig7_6.png"><img alt="_images/fig7_6.png" class="align-center" src="_images/fig7_6.png" style="width: 500px;" /></a>
-<p>In the beginning, the sprite is pointing to the mouse, and the player can just use the key ↑ to reach the mouse and gain the first point. Later in the game, the player will have to lead the cat toward the mouse on his/her own by using the arrow keys ← and →, which are used to turn the sprite 15 degrees to the left and to the right. Sometimes, the player can use the key ↓ to move the sprite backward.
-For the sprite <em>Cat 2</em>, the navigation scripts are the same, only the keys used for moving the sprite are different. The key W moves the sprite forward, and A and D are used to turn the sprite 15 degrees to the left and to the right. The script that starts the program is also almost the same; the only difference is that another sprite is sent to the lower left corner, i.e. it is sent to the point that has the coordinates (-190, -130).</p>
-<p><strong>The behavior of the Mouse sprite</strong></p>
-<p>The following figure represents the script added to the mouse sprite. In the beginning, the mouse is placed at a randomly chosen location.
-After this, it enters into an infinite repetition (forever loop) of the following actions.</p>
+<p>Në fillim, sprite po tregon miun, dhe luajtësi thjesht mund të përdorë tastin ↑ për të arritur miun dhe për të fituar pikën e parë. Më vonë, në lojë, lojtari do të duhet ta udhëheqë mace drejt miut, duke përdorur çelësat e shigjetave ← dhe →, të cilat përdoren për ta kthyer sprite 15 gradë në të majtë dhe në të djathtë. Ndonjëherë, luajtësi mund të përdorë butonin për të zhvendosur sprite prapa.
+Për sprite <em>Cat 2</em>, skriptet e lundrimit janë të njëjta, vetëm çelësat e përdorur për lëvizjen e sprite janë të ndryshme. Çelësi W e lëviz sprite përpara dhe A dhe D përdoren për ta kthyer sprite 15 gradë në të majtë dhe në të djathtë. Skenari që fillon programin është gjithashtu pothuajse i njëjtë; ndryshimi i vetëm është se një sprite tjetër dërgohet në këndin e poshtëm të majtë, d.m.th. ai dërgohet në pikën që ka koordinatat (-190, -130).</p>
+<p><strong>Sjellja e Mouse sprite</strong></p>
+<p>Shifra e mëposhtme paraqet skenarin e shtuar në spritein e miut. Në fillim, miu vendoset në një vend të zgjedhur rastësisht.
+Pas kësaj, ajo hyn në një përsëritje të pafund (lcikloi forever) të veprimeve të mëposhtme.</p>
 <ol class="arabic simple">
-<li><p>The program waits until one of the cats touches the mouse,</p></li>
-<li><p>The mouse hides and reappears at another randomly chosen location.</p></li>
+<li><p>Programi pret derisa njëra nga macet të prek miun,</p></li>
+<li><p>Miu fshihet dhe rishfaqet në një vend tjetër të zgjedhur rastësisht.</p></li>
 </ol>
-<p>(within the loop, the mouse can appear both near the top and the bottom edge of the stage because now the interval for the value of the coordinate <em>у</em> is [-150, 150])</p>
-<a class="reference internal image-reference" href="_images/fig7_7.png"><img alt="_images/fig7_7.png" class="align-center" src="_images/fig7_7.png" style="width: 500px;" /></a>
-<p><strong>Formation of a complex condition</strong></p>
-<p>The condition in the command <img alt="wait_until" src="_images/wait_until.png" /> is composed of two conditions: Cat 1 touches the mouse or Cat 2 touches the mouse.</p>
-<p>A complex condition is created as follows.</p>
+<p>(brenda ciklit, miu mund të shfaqet si pranë skajit të sipërm ashtu edhe në pjesën e poshtme të fazës sepse tani intervali për vlerën e koordinatës <em>у</em> është [-150, 150])</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_7.png"><img alt="../_images/7/fig7_7.png" class="align-center" src="../_images/7/fig7_7.png" style="width: 500px;" /></a>
+<p><strong>Formimi i një gjendje komplekse</strong></p>
+<p>Gjendja në komandë <img alt="wait_until" src="_images/wait_until.png" /> është e përbërë nga dy kushte: Cat 1 prek miun ose Cat 2 prek miun.</p>
+<p>Një gjendje komplekse është krijuar si më poshtë.</p>
 <ol class="arabic simple">
-<li><p>From the group Operators, we will select the appropriate operation - in our case the logical operation <em>or</em> <img alt="or" src="_images/or.png" />.</p></li>
-<li><p>We place the appropriate conditions into the empty hexagons,</p></li>
+<li><p>Nga Operatorët e grupit, ne do të zgjedhim operacionin e duhur - në rastin tonë operacionin logjik <em>ose</em> <img alt="or" src="_images/or.png" />.</p></li>
+<li><p>Ne i vendosim kushtet e duhura në gjashtëkëndëshat bosh,</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/fig7_8.png"><img alt="_images/fig7_8.png" class="align-center" src="_images/fig7_8.png" style="width: 340px;" /></a>
 <ol class="arabic simple" start="3">
-<li><p>Finally, we place this complex condition into the block “wait until”.</p></li>
+<li><p>Më në fund, e vendosim këtë gjendje komplekse në bllokun “wait until”.</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/fig7_9.png"><img alt="_images/fig7_9.png" class="align-center" src="_images/fig7_9.png" style="width: 440px;" /></a>
-<p><strong>Upgrading the project</strong></p>
-<p>We will upgrade this project by introducing 2 variables: Player 1 and Player 2, which will store players’ points. Every time one of the cats touches the mouse, the player controlling that cat will gain a point. This will be stored in the script added to the mouse sprite.
-Players’ points will be displayed on the screen.
-We will also introduce a timer, which will stop the game after the specified time has elapsed. The winner is the player who has more points.</p>
-<p>In order to be able to track the players’ points, both variables <em>Player 1</em> and <em>Player 2</em> have to be checked, and their monitors have to be displayed in the first format.</p>
+<p><strong>Përditësimi i projektit</strong></p>
+<p>Ne do ta përmirësojmë këtë projekt duke prezantuar 2 ndryshore: Player 1 dhe Player 2, të cilat do të ruajnë pikët e lojtarëve. Sa herë që një nga macet prek miun, lojtari që kontrollon atë mace do të fitojë një pikë. Kjo do të ruhet në skenarin e shtuar në spritein e miut.
+Pikat e lojtarëve do të shfaqen në ekran.
+Ne gjithashtu do të prezantojmë një kohëmatës, i cili do të ndalojë lojën pasi të ketë kaluar koha e caktuar. Fituesi është lojtari që ka më shumë pikë.</p>
+<p>Në mënyrë që të mund të gjurmoni pikët e lojtarëve, të dy variablat <em>Player 1</em> dhe <em>Player 2</em> duhet të kontrollohen, dhe monitorët e tyre duhet të shfaqen në formatin e parë.</p>
 <a class="reference internal image-reference" href="_images/fig7_10.png"><img alt="_images/fig7_10.png" class="align-center" src="_images/fig7_10.png" style="width: 700px;" /></a>
-<p>At the beginning of the script added to the mouse, we need to set their initial values to 0. Every time a cat touches the mouse, the number of points should increase.
-Therefore, the mouse script now has the following appearance.</p>
+<p>Në fillim të shkrimit të shtuar te miu, ne duhet të vendosim vlerat e tyre fillestare në 0. Sa herë që një mace prek miun, numri i pikave duhet të rritet.
+Prandaj, skripti i miut tani ka pamjen e mëposhtme.</p>
 <a class="reference internal image-reference" href="_images/fig7_11.png"><img alt="_images/fig7_11.png" class="align-center" src="_images/fig7_11.png" style="width: 540px;" /></a>
-<p>What remains is to set the time limit for the game. We can do this by setting the value of the variable <em>Time</em>, located in the script triggered by clicking on the green flag, to the desired number, for example, 120 seconds. Then we will put the command <img alt="wait_sec" src="_images/wait_sec.png" /> into the loop, which will be repeated 120 times, and decrease the value of the variable by 1.
-We will add the command <img alt="stop" src="_images/stop.png" /> after the loop, and attach this script to the mouse sprite.</p>
-<a class="reference internal image-reference" href="_images/fig7_12.png"><img alt="_images/fig7_12.png" class="align-center" src="_images/fig7_12.png" style="width: 190px;" /></a>
+<p>Ajo që mbetet është të përcaktoni afatin kohor të lojës. Ne mund ta bëjmë këtë duke vendosur vlerën e variblit <em>Time</em>, e vendosur në skenarin e shkaktuar duke klikuar mbi flamurin e gjelbër, në numrin e dëshiruar, për shembull, 120 sekonda. Atëherë do ta vendosim komandën <img alt="wait_sec" src="_images/wait_sec.png" /> në cikël, i cili do të përsëritet 120 herë, dhe zvogëloni vlerën e variablës me 1.
+Do të shtojmë komandën <img alt="stop" src="_images/stop.png" /> mbas ciklit, dhe bashkëngjitni këtë skenar në degën e miut.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_12.png"><img alt="../_images/7/fig7_12.png" class="align-center" src="../_images/7/fig7_12.png" style="width: 190px;" /></a>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-2-the-game-maze">
-<h3>Example 2 - The Game “Maze”<a class="headerlink" href="#example-2-the-game-maze" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembulli-2-loja-maze">
+<h3>Shembulli 2 - Loja “Maze”<a class="headerlink" href="#shembulli-2-loja-maze" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>In the project <em>Maze</em>, the aim is to get the <em>Mouse 1</em> sprite through a complicated maze. The exit is located on the top the stage, so the condition for the game to be completed successfully is for the sprite’s coordinate to be greater than 180. The sprite is controlled with the arrow keys. If the sprite touches any of the walls, which are black, it will return to the starting position.</p>
-<p>In our remix, the movement of the mouse will be controlled more precisely. By pressing the arrow key once, the sprite will move only 3 steps (and not 10 like in the original project).
-Touching the wall will not be sanctioned with going back to the start, the sprite will only bounce off the maze wall (moving -2 steps), like in the <em>maze starter</em> project. Since the mouse frequently touched the walls with its tail, we cut off its tail (in the paint editor, first select the tail by using the tool <em>reshape</em> and then delete it by pressing the key <em>Del</em>).</p>
-<p>The modified scripts attached to the mouse sprite are represented in the figure below.</p>
-<a class="reference internal image-reference" href="_images/fig7_13.png"><img alt="_images/fig7_13.png" class="align-center" src="_images/fig7_13.png" style="width: 575px;" /></a>
-<p>However, the game will not be easier because the mouse will have to avoid its enemies: 2 poisonous balls and the ghost of the maze.</p>
-<a class="reference internal image-reference" href="_images/fig7_14.png"><img alt="_images/fig7_14.png" class="align-center" src="_images/fig7_14.png" style="width: 480px;" /></a>
-<p>The balls, like the mouse, bounce off the walls of the maze, while the ghost can pass through the walls.</p>
-<p>The mouse has 100 energy units at the beginning, which decreases by 5 every time it hits the maze wall,
-and if the enemy touches the mouse, it is even more dangerous. If a ball touches it, it will lose 10 energy units, and if the ghost touches it, it will lose 50.</p>
-<p>The game ends successfully if the mouse reaches the exit of the maze, and fails if it runs out of energy inside the maze.</p>
-<p><strong>The behavior of the ball</strong></p>
-<p>At the beginning of the game, the ball is hidden. It appears after 1 to 5 seconds from the start of the game, the coordinates of the <em>Ball 1</em> are (-120,0), and of <em>Ball 2</em> (165,55).</p>
+<p>Në projektin <em>Maze</em>, qëllimi është që të merrni <em>Mouse 1</em> sprite përmes një labirint të ndërlikuar. Dalja është e vendosur në krye skenën, kështu që kushti që loja të përfundojë me sukses është që koordinata e sprite të jetë më e madhe se 180. Sprite kontrollohet me çelësat e shigjetave. Nëse sprite prek ndonjë nga muret, të cilat janë të zeza, ajo do të kthehet në pozicionin fillestar.</p>
+<p>Në remixhin tonë, lëvizja e miut do të kontrollohet më saktësisht. Duke shtypur një herë tastin shigjetë, sprite do të lëvizë vetëm 3 hapa (dhe jo 10 si në projektin origjinal).
+Prekja e murit nuk do të sanksionohet me kthimin në fillim, sprite vetëm do të kërcej nga muri i labirint (lëviz -2 hapa), si në projektin <em>labirint starter</em>. Meqenëse miu prekte shpesh muret me bishtin e tij, ne e ndërpresë bishtin e tij (në redaktorin e bojës, së pari zgjedhni bishtin duke përdorur mjetin <em>riformulimin</em> dhe pastaj fshini atë duke shtypur tastin <em>Del</em>).</p>
+<p>Skriptet e modifikuar bashkangjitur spritës së miut janë paraqitur në figurën më poshtë.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_13.png"><img alt="../_images/7/fig7_13.png" class="align-center" src="../_images/7/fig7_13.png" style="width: 575px;" /></a>
+<p>Megjithatë, loja nuk do të jetë më e lehtë sepse miu do të duhet të shmangë armiqtë e tij: 2 topa helmues dhe fantazma e labirint.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_14.png"><img alt="../_images/7/fig7_14.png" class="align-center" src="../_images/7/fig7_14.png" style="width: 480px;" /></a>
+<p>Topat, si miu, kërcejnë nga muret e labirint, ndërsa fantazma mund të kalojë nëpër mure.</p>
+<p>Miu ka 100 njësi energjie në fillim, i cili zvogëlohet me 5 sa herë që godet murin e labirintit,
+dhe nëse armiku prek miun, është edhe më i rrezikshëm. Nëse një top e prek atë, ai do të humbasë 10 njësi energjetike, dhe nëse fantazma e prek atë, do të humbasë 50.</p>
+<p>Loja përfundon me sukses nëse miu arrin daljen e labirint, dhe nuk arrin nëse ajo harxhon energji brenda labirint.</p>
+<p><strong>Sjellja e topit</strong></p>
+<p>Në fillim të lojës, topi fshihet. Duket pas 1 deri në 5 sekonda nga fillimi i lojës, koordinatat e <em>Ball 1</em> janë (-120,0) dhe e <em>Ball 2</em> (165,55).</p>
 <div class="line-block">
-<div class="line">Until it touches the mouse, it keeps repeating the following movement:</div>
-<div class="line">it points in a random direction and moves 3 steps at a time until it touches the wall of the maze;</div>
-<div class="line">when it touches the wall, it moves -3 steps, and it changes its costume;</div>
-<div class="line">when it touches the mouse, it will reduce the number of its energy units by 10, hide, wait 3 seconds,     and then repeat everything.</div>
+<div class="line">Derisa prek miun, ajo vazhdon të përsërisë lëvizjen e mëposhtme:</div>
+<div class="line">ajo tregon në një drejtim të rastit dhe lëviz 3 hapa në të njëjtën kohë derisa të prek murin e labirint;</div>
+<div class="line">kur prek murin, lëviz -3 hapa, dhe ndryshon veshjen e tij;</div>
+<div class="line">kur prek miun, ai do të zvogëlojë numrin e njësive të tij të energjisë me 10, do të fshihet, do të presë 3 sekonda dhe pastaj do të përsërisë gjithçka.</div>
 </div>
-<a class="reference internal image-reference" href="_images/fig7_15.png"><img alt="_images/fig7_15.png" class="align-center" src="_images/fig7_15.png" style="width: 400px;" /></a>
-<p><strong>Behavior of the ghost</strong></p>
-<p>The ghost is also hidden at the beginning of the game. It appears after 5 to 10 seconds. Until it touches the mouse, it glides for 5 seconds to a randomly chosen position in the upper half of the maze.
-If it touches the mouse, it will reduce the number of its energy units by 50 points, then it will hide, and after 5 to 10 seconds it will repeat the previously described movement.</p>
-<a class="reference internal image-reference" href="_images/fig7_16.png"><img alt="_images/fig7_16.png" class="align-center" src="_images/fig7_16.png" style="width: 625px;" /></a>
+<a class="reference internal image-reference" href="../_images/7/fig7_15.png"><img alt="../_images/7/fig7_15.png" class="align-center" src="../_images/7/fig7_15.png" style="width: 400px;" /></a>
+<p><strong>Sjellja e fantazmës</strong></p>
+<p>Fantazma gjithashtu fshihet në fillimin e lojës. Duket pas 5 deri në 10 sekonda. Derisa prek miun, rrëshqet për 5 sekonda në një pozicion të zgjedhur rastësisht në gjysmën e sipërme të labirint.
+Nëse prek miun, ai do të zvogëlojë numrin e njësive të tij të energjisë me 50 pikë, atëherë do të fshihet, dhe pas 5 deri në 10 sekonda do të përsërisë lëvizjen e përshkruar më parë.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_16.png"><img alt="../_images/7/fig7_16.png" class="align-center" src="../_images/7/fig7_16.png" style="width: 625px;" /></a>
 </div>
 <hr class="docutils" />
-<div class="section" id="project-3-guess-my-number">
-<h3>Project 3 - “Guess my Number”<a class="headerlink" href="#project-3-guess-my-number" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-3-gjej-numrin-tim">
+<h3>Projekti 3 - “Gjej numrin tim”<a class="headerlink" href="#projekti-3-gjej-numrin-tim" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>The King in the Kingdom of Eights had 8 daughters. When the time came for his favorite daughter, the youngest princess, to get married, he asked what kind of a man she would want to be her husband.</p>
-<p>The princess decided that she would marry a smart young man, who can solve all the puzzles she puts before him.</p>
-<p>The first puzzle was to guess, by asking as few questions as possible, what is the number from 1 to 100 that she was thinking of.</p>
-<p>If he asked any questions, she would answer: <em>My number is lower</em>, <em>My number is higher</em> or <em>Well done, you guessed</em>.</p>
-<a class="reference internal image-reference" href="_images/fig7_17.png"><img alt="_images/fig7_17.png" class="align-center" src="_images/fig7_17.png" style="width: 610px;" /></a>
-<a class="reference internal image-reference" href="_images/fig7_18.png"><img alt="_images/fig7_18.png" class="align-center" src="_images/fig7_18.png" style="width: 370px;" /></a>
-<p><strong>Upgrades in the project Guess my number2</strong></p>
-<p>The princess was told by her mathematics teacher that, by asking smart questions, the puzzle could be solved in maximum 7 attempts, so the princess decided that only candidates who solve the puzzle in 7 and fewer attempts would go through.</p>
-<p>To create a project where the princess will check if the candidate guessed correctly and how many attempts it took him to guess correctly, we will have to create one more variable called <em>attempt</em>. The value of this variable will increase by 1 after the user has asked each question.</p>
-<p>This way, when we exit the loop in which we are looking for an answer, we will have a record of the number of attempts.
-The princess will say after how many attempts the candidate guessed her number, and then if there were less than 8 attempts, she will say <em>This means that you played wisely</em>, and if the number of attempts is equal to or greater than 8, she will say <em>This means you did not solve the puzzle in the best possible way</em>.</p>
-<a class="reference internal image-reference" href="_images/fig7_19.png"><img alt="_images/fig7_19.png" class="align-center" src="_images/fig7_19.png" style="width: 660px;" /></a>
-<p>The following example can be used as an educational program for preschoolers and elementary school students who are learning to count by using computer games. It is suitable because, by upgrading and programming it, slightly older students are able to get ideas on how to solve more complex mathematical problems.</p>
+<p>Mbreti në Mbretërinë e Tetëvijave kishte 8 vajza. Kur erdhi koha që vajza e tij e preferuar, princesha më e re, të martohej, ai pyeti se çfarë lloj burri do të dëshironte të ishte burri i saj.</p>
+<p>Princesha vendosi që ajo të martohej me një djalë të ri të zgjuar, i cili mund të zgjidhë të gjitha enigmat që vendos para tij.</p>
+<p>Misteri i parë ishte të merrte me mend, duke bërë sa më pak pyetje të jetë e mundur, cili është numri nga 1 në 100 për të cilin ajo ishte duke menduar.</p>
+<p>Nëse ai do të bënte ndonjë pyetje, ajo do të përgjigjej: <em>Numri im është më i ulët</em>, <em>numri im është më i lartë</em> ose <em>Shhumë mië, e keni mësuar</em>.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_17.png"><img alt="../_images/7/fig7_17.png" class="align-center" src="../_images/7/fig7_17.png" style="width: 610px;" /></a>
+<a class="reference internal image-reference" href="../_images/7/fig7_18.png"><img alt="../_images/7/fig7_18.png" class="align-center" src="../_images/7/fig7_18.png" style="width: 370px;" /></a>
+<p><strong>Përditësimet në projekt Guess my number2</strong></p>
+<p>Princesha u tha nga mësuesi i saj i matematikës se, duke bërë pyetje të zgjuara, enigma mund të zgjidhej në maksimum 7 përpjekje, kështu që princesha vendosi që vetëm kandidatët që zgjidhnin enigmën në 7 dhe më pak përpjekje të kalonin.</p>
+<p>Për të krijuar një projekt ku princesha do të kontrollojë nëse kandidati e ka guxuar me saktësi dhe sa përpjekje i është dashur që ai ta marrë me saktësi, do të na duhet të krijojmë një variabël tjetër të quajtur <em>përpjekje</em>. Vlera e këtij variabli do të rritet me 1 pasi përdoruesi të ketë bërë secilën pyetje.</p>
+<p>Në këtë mënyrë, kur dalim nga cikli në të cilin po kërkojmë përgjigje, do të kemi një rekord të numrit të përpjekjeve.
+Princesha do të thotë pas shumë përpjekjeve kandidatja me mend numrin e saj, dhe pastaj nëse do të kishte më pak se 8 përpjekje, ajo do të thotë <em>Kjo do të thotë që ju keni luajtur me mençuri</em>, dhe nëse numri i përpjekjeve është i barabartë me ose më i madh se 8, ajo do të thotë <em>Kjo do të thotë që ju nuk e keni zgjidhur enigmën në mënyrën më të mirë të mundshme</em>.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_19.png"><img alt="../_images/7/fig7_19.png" class="align-center" src="../_images/7/fig7_19.png" style="width: 660px;" /></a>
+<p>Shembulli i mëposhtëm mund të përdoret si një program arsimor për parashkollorët dhe nxënësit e shkollave fillore që po mësojnë të numërojnë duke përdorur lojëra kompjuterike. Shtë i përshtatshëm sepse, duke e përmirësuar dhe programuar atë, studentët pak më të vjetër janë në gjendje të marrin ide se si të zgjidhin probleme me komplekse matematikore enigma në mënyrën më të mirë të mundshme.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="example-4-project-young-mathematician">
-<h3>Example 4 - Project “Young Mathematician”<a class="headerlink" href="#example-4-project-young-mathematician" title="Permalink to this headline">¶</a></h3>
-
-    <div data-level="3" style="display:none">
-
-    </div>
-<p>In a magical land, there are four sprites a young wizard <em>Mathematician</em>, <em>Number1</em>, <em>Number2</em> and a <em>Sign</em> used for arithmetic operations. Each <em>Number</em> has 3 costumes in the shape of numbers arranged in a strict order: 1, 2, 3. The <em>Sign</em> has two costumes in the shape of signs used for arithmetic operations: * and +.</p>
-<a class="reference internal image-reference" href="_images/fig7_20.png"><img alt="_images/fig7_20.png" class="align-center" src="_images/fig7_20.png" style="width: 490px;" /></a>
-<p>The <em>Numbers</em> and the <em>Sign</em> like to play a game called <em>Examples</em>: every time the user clicks on the button <em>Set a Task</em> they randomly choose their costume, like when someone flips a coin.
-However the <em>Numbers</em> and the <em>Sign</em> change, the <em>Mathematician</em> adds and multiplies them without making a mistake.</p>
-<p>It is not known exactly which wizard taught him this, but it is said that the <em>Mathematician</em> is looking for a master who would teach him to divide and subtract.
-The secret of the <em>Mathematician</em> is that, in addition to having a name and an image, every costume also has a sequence number. It is an ordinary number with which mathematical operations can be performed. <em>Mathematician</em> just needs to find out which costume sequence number for each <em>Number</em> and <em>Sign</em> was chosen in the example.
-Since we have already seen that reporters know everything, the <em>Mathematician</em> can just take the reporters from the group <em>Sensing</em>, the branching block <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">then</span></code> from the group <em>Control</em>, the logical operator for equality and mathematical operator for multiplying and adding numbers from the group “Operators*.</p>
-<p>In the first version of the project, the user clicks the <em>imagine</em> button to set the task, and the young wizard solves it.</p>
-<p><strong>Creating the Sprites</strong></p>
-<p>We will choose the <em>Wizard Boy</em> sprite to be our main sprite, and for the <em>Number1</em> we will choose the sprite <em>1-Glow</em> from the sprites library.
-Then, in the <em>Costumes</em> tab, we will introduce two more costumes for the <em>Number1</em> sprite, first <em>2-Glow</em>, and then <em>3-Glow</em>. The <em>Number2</em> sprite will be created by duplicating the <em>Number1</em> sprite. Both costumes for the <em>Sign</em> sprite are drawn in the paint editor (a circle for multiplication, and the sign + for adding). We will also create the button <em>Think of a task</em> by using the sprite <em>button-3</em>, and on its first costume we will add the text “Think of a task”.</p>
-<div class="sidebar">
-<p class="sidebar-title">The young mathematician is adding numbers</p>
-<p><img alt="matematicar2" src="_images/fig7_21.png" /></p>
+<div class="section" id="shembulli-4-projekti-young-mathematician">
+<h3>Shembulli 4 - Projekti “Young Mathematician”<a class="headerlink" href="#shembulli-4-projekti-young-mathematician" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 273)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shembulli</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">Projekti</span> <span class="s2">&quot;Young Mathematician&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
 </div>
-<p><strong>The Scenario for Scripts and Sprites</strong></p>
-<p>The young wizard is located on the left side of the screen, and on the right side, there are <em>Number1</em>, <em>Sign</em> and <em>Number2</em>. The button <em>Think of a Task</em> is located at the bottom of the screen.
-The program starts when the button <em>Think of a Task</em> is clicked. Clicking the button broadcasts the message “task”. Every sprite has its reaction to the message: the mathematician thinks “Hmmm…”, while the numbers and the sigh react by appearing on the stage in a randomly chosen costume. When the mathematician sprite is clicked, a comic book bubble is displayed with the result of the given operation.
-Sprites <em>Number1</em>, <em>Number2</em> and <em>Sign</em> have only one script each - reaction to the event <em>When I receive the message with the task</em> with just one command - <em>Change the costume with a random number from 1 to 3</em> (1 to 2 for the Sign).
-The <em>button</em> sprite reacts only when it is clicked. It then changes the costume (so we know it was clicked) broadcasts a message, waits for half a second and goes back to the original appearance.
-The scripts associated with the numbers and the button are shown in the following figure.</p>
-<a class="reference internal image-reference" href="_images/fig7_22.png"><img alt="_images/fig7_22.png" class="align-center" src="_images/fig7_22.png" style="width: 800px;" /></a>
-<p>The scripts that describe the behavior of the mathematician sprite when he receives the message “task” and when the user clicks on it are shown in the following figure.</p>
-<a class="reference internal image-reference" href="_images/fig7_23.png"><img alt="_images/fig7_23.png" class="align-center" src="_images/fig7_23.png" style="width: 600px;" /></a>
-<p>Let’s look at the second script associated with the mathematician sprite. When we click on the sprite, he thinks of an answer, and this is how he does that. As we already mentioned before, the <em>Sign</em> can appear in one of the two costumes: the first costume - the costume that corresponds to the sequence number 1 is for multiplication, therefore, if the randomly generated number is 1, the mathematician will have to multiply the numbers.
-If number 1 was not generated for the Sign sprite, the mathematician would have to add the numbers. Similarly, the costume numbers for the <em>Number1</em> and <em>Number2</em> correspond to the numbers the mathematician sprite should use to perform the given operation. We used the operator <em>join</em> for the text that appears in the comic book bubble. The operator command <img alt="join" src="_images/join.png" /> is one of the operator commands that can be performed on the type of data called string (series of characters).
-This command takes two separate strings of characters and makes one string, which contains all of the characters from both strings, where the characters of the second string are added to the end of the first string. For example, the running of the blocks in the figure on the left will have the following result. If the answer to the question “What is your name?” is “Nikola”, the Cat sprite will say “Hello Nikola”.</p>
-<a class="reference internal image-reference" href="_images/fig7_24.png"><img alt="_images/fig7_24.png" class="align-center" src="_images/fig7_24.png" style="width: 580px;" /></a>
-<p><strong>How are function blocks inserted into other function blocks?</strong></p>
-<p>In our script, which we added to the mathematician, we put the operator <em>join</em> in the argument block of the command <em>think of</em>. In the first input field of the operator join we typed in the text “The answer is” and in the second we put the operator * (multiplication) or + (addition).
-Then we entered the costume number of the sprite <em>Number1</em> into the first input field of the block performing the arithmetic operation, and in the second input field, we entered the costume number of the sprite <em>Number2</em>. Is this explanation clear enough?</p>
-<p>If you are still not sure how to do this, see a more detailed explanation.</p>
-
-    <div data-component="reveal" id="објашњење"   data-showtitle="Show the explanation" data-hidetitle="Hide the explanation">
-    <p>In the chapter <em>Loops</em> we made a classification of blocks used in Scratch and indicated that so-called <em>Function blocks</em> are inserted into the so-called <em>Command blocks</em>. As we start creating projects that are more complex, we will have to use more complex function blocks, which are composed of several other function blocks, as in the example we are describing here. This is why we will use images to show step-by-step how the complex argument block <em>think of</em> is created. Doing this, we will go backward, from the end to the beginning.
-We should get:</p>
-<p>We should get <img alt="expr1" src="_images/fig7_21.png" /></p>
-<ol class="arabic simple">
-<li><p>How can we get <img alt="expr2" src="_images/fig7_26.png" /> and <img alt="expr3" src="_images/fig7_27.png" />?</p></li>
-</ol>
-<p>а) We take the block <img alt="expr4" src="_images/fig7_28.png" /> from the group <em>Sensing</em>.</p>
-<ol class="loweralpha simple" start="2">
-<li><p>From the sprite list, which we get when we click on the triangle next to the <em>Mathematician</em> sprite, we will choose <em>Number1</em> (i.e. <em>Number2</em>)</p></li>
-<li><p>From the list of variables added to this sprite, which we get when we click on the triangle next to the variable <em>place x</em>, we will choose <em>costume number</em></p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/fig7_29.png"><img alt="_images/fig7_29.png" class="align-center" src="_images/fig7_29.png" style="width: 615px;" /></a>
-<ol class="arabic simple" start="2">
-<li><p>How can we get <img alt="expr6" src="_images/fig7_30.png" /></p></li>
-</ol>
-<p>а) We take the block <img alt="multiply" src="_images/multiply.png" /> from the group <em>Operators</em></p>
-<ol class="loweralpha simple" start="2">
-<li><p>We put the first argument we got from description 1 into the first box <img alt="expr7" src="_images/fig7_31.png" /></p></li>
-</ol>
-<ol class="loweralpha simple" start="3">
-<li><p>We put the second argument we got from description 1 into the second box</p></li>
-</ol>
-<ol class="arabic simple" start="3">
-<li><p>How can we get <img alt="expr8" src="_images/fig7_32.png" /></p></li>
-</ol>
-<p>а) We take the block <img alt="join" src="_images/join.png" /> from the group <em>Operators</em></p>
-<ol class="loweralpha simple" start="2">
-<li><p>We type in the text “The answer is ” into the first field <img alt="expr9" src="_images/fig7_33.png" /></p></li>
-</ol>
-<ol class="loweralpha simple" start="19">
-<li><p>We put the argument we formed from description 2 into the second field</p></li>
-</ol>
-<ol class="arabic simple" start="4">
-<li><p>Finally, the argument formed in this manner, we put into the field of the block <img alt="think" src="_images/think.png" /></p></li>
-</ol>
-
-    </div>
-    <p><strong>The First Upgrade</strong></p>
-<p>If we want the project to use the numbers from 1 to 9, we need to add the costumes with the numbers from 4 to 9 to the sprites <em>Number1</em> and <em>Number2</em> (the numbers from <em>4-Glow</em> to <em>9-Glow</em> consecutively) and in their scripts, in the command <em>change costume</em> with a random number you should put “1 to 9” instead of “1 to 3”.</p>
-<p><strong>The Second Upgrade</strong></p>
-<p>We can upgrade the project so that, after receiving the message <em>task</em>, the young wizard, asks the user the appropriate question, and then broadcasts if the answer is correct or not. In this version of the project it is not necessary to process the event <em>click on the sprite</em> added to the mathematician sprite.
-Instruction on how the program should be used should also be added. This can be achieved with the introduction of one more button on which we can write the word <em>Instruction</em>. When this button is clicked, it broadcasts a message; both the backdrop and the mathematician sprite should react to this message. The backdrop will change into the <em>Backdrop2</em>, which has the instruction written on it, and the mathematician shrinks to 30% of his size so as not to cover the instruction.</p>
-<a class="reference internal image-reference" href="_images/fig7_34.png"><img alt="_images/fig7_34.png" class="align-center" src="_images/fig7_34.png" style="width: 625px;" /></a>
-<p><strong>Тhe Third Upgrade</strong></p>
+</div>
 
     <div data-level="3" style="display:none">
 
     </div>
-<p>If we want the program to perform the arithmetic operations of subtraction and division, the project will become more complex. To make this upgrade, we need to add two more costumes to the <em>Sign</em> sprite <code class="docutils literal notranslate"><span class="pre">–</span></code> for the subtraction and <code class="docutils literal notranslate"><span class="pre">:</span></code> for the division. We should also change the script, which describes the behavior of the mathematician when the user clicks on it.</p>
-<a class="reference internal image-reference" href="_images/fig7_35.png"><img alt="_images/fig7_35.png" class="align-center" src="_images/fig7_35.png" style="width: 625px;" /></a>
-<p>It is assumed that the user is familiar with the concept of negative numbers. When it comes to the division, we need to ensure that the result is an integer number and avoid the division by zero.
-To avoid the potential problems when it comes to division, if the selected operation, which is randomly generated, happens to be division, we will broadcast the message <em>divide</em>, while for all other operations we will use the same solution applied in previous versions of the project.</p>
+<p>Në një tokë magjike, ka katër sprites një magjistar i ri <em>Mathematician</em>, <em>Number1</em>, <em>Number2</em> dhe një <em>Sign</em> e përdorur për operacionet aritmetike. Secila <em>Number</em> ka 3 kostume në formën e numrave të rregulluar në një rend të rreptë: 1, 2, 3. <em>Sign</em> ka dy kostume në formën e shenjave të përdorura për operacionet aritmetike: * dhe +.</p>
+<a class="reference internal image-reference" href="_images/fig7_20.png"><img alt="_images/fig7_20.png" class="align-center" src="_images/fig7_20.png" style="width: 490px;" /></a>
+<p><em>Numbers</em> dhe <em>Signs</em> dëshirojnë të luajnë një lojë të quajtur <em>Example</em>: sa herë që përdoruesi klikon mbi butonin <em>Vendosni një detyrë</em> ata zgjedhin rastësisht kostumin e tyre, si kur dikush rrokullis një monedhë.
+Sidoqoftë ndryshimi i <em>Numbers</em> dhe <em>Signs</em>, <em>Mathematician</em> i shton dhe shumon ato pa bërë ndonjë gabim.</p>
+<p>Nuk dihet saktësisht se cili magjistar e mësoi atë, por thuhet se <em>Mathematician</em> po kërkon një mjeshtër i cili do ta mësonte atë të ndahej dhe të zbriste.
+Sekreti i <em>Mathematician</em> është se, përveç që kanë një emër dhe një imazh, çdo kostum gjithashtu ka një numër rendi. Është një numër i zakonshëm me të cilin mund të kryhen operacione matematikore. * Matematikani * thjesht duhet të zbulojë se cili numër i sekuencave të kostumeve për secilën <em>Number</em> dhe <em>Sign</em> u zgjodh në shembull.
+Meqenëse kemi parë tashmë që reporterët dinë gjithçka, <em>Mathematician</em> thjesht mund të marrë reporterët nga grupi <em>Sensing</em>, blloku i degëzimit <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">else</span></code> nga grupi <em>Control</em>, operatori logjik për barazi dhe operator matematikor për shumëzimin dhe shtimin e numrave nga grupi “Operatorët <a href="#id3"><span class="problematic" id="id4">*</span></a>.</p>
+<div class="system-message" id="id3">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 286); <em><a href="#id4">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<p>Në versionin e parë të projektit, përdoruesi klikon butonin <em>imagine</em> për të vendosur detyrën, dhe magjistari i ri e zgjidh atë.</p>
+<p><strong>Krijimi i Sprites</strong></p>
+<p>Ne do të zgjedhim Sprite <em>Wizard Boy</em> të jetë burimi ynë kryesor, dhe për <em>Number 1</em> ne do të zgjedhim sprite <em>1-Glow</em> nga biblioteka e sprites.
+Pastaj, në butonin <em>Kostumet</em>, ne do të prezantojmë dy kostume të tjera për sprite <em>Number1</em>, së pari <em>2-Glow</em>, dhe më pas <em>3-Glow</em>. Sprite <em>Number2</em> do të krijohet duke kopjuar sprite <em>Number1</em>. Të dy kostumet për sprite <em>Sign</em> janë tërhequr në redaktorin e bojës (një rreth për shumëzim dhe shenja + për shtimin). Ne gjithashtu do të krijojmë butonin <em>Mendoni për një detyrë</em> duke përdorur sprite <em>butonin-3</em>, dhe në kostumin e saj të parë do të shtojmë tekstin “Mendoni për një detyrë”.</p>
+<div class="sidebar">
+<p class="sidebar-title">Matematikani i ri po shton numra</p>
+<p><img alt="matematicar2" src="../_images/7/fig7_21.png" /></p>
+</div>
+<p><strong>Skenari për Skriptet dhe Sprites</strong></p>
+<p>Magjistari i ri ndodhet në anën e majtë të ekranit, dhe në anën e djathtë, ka <em>Numrin 1</em>, <em>Sign</em> dhe <em>Numrin2</em>. Butoni <em>Mendoni për një detyrë</em> ndodhet në fund të ekranit.
+Programi fillon kur të klikohet butoni <em>Mendoni për një detyrë</em>. Duke klikuar butonin transmeton mesazhin “detyrë”. Sprdo sprite ka reagimin e saj ndaj mesazhit: matematikan mendon “Hmmm …”, ndërsa numrat dhe psherëtima reagojnë duke u paraqitur në skenë në një kostum të zgjedhur rastësisht. Kur klikohet sprite matematikan, shfaqet një flluskë komike me rezultatin e operacionit të dhënë.
+Sprites <em>Number1</em>, <em>Number2</em> dhe <em>Sign</em> kanë vetëm një skenar secila - reagim ndaj ngjarjes <em>Kur marr mesazhin me detyrën</em> me vetëm një komandë - <em>Ndryshimin e kostumit me një numër të rastit nga 1 në 3</em> (1 deri 2 për Shenjën).
+Sprite e butonit reagon vetëm kur klikohet. Pastaj ndryshon kostumin (kështu që ne e dimë se u klikua) transmeton një mesazh, pret gjysmë sekondë dhe shkon përsëri në pamjen origjinale.
+Skriptet që lidhen me numrat dhe butonin tregohen në figurën vijuese.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_22.png"><img alt="../_images/7/fig7_22.png" class="align-center" src="../_images/7/fig7_22.png" style="width: 800px;" /></a>
+<p>Skriptet që përshkruajnë sjelljen e sprite matematikanit kur ai merr mesazhin “detyrë” dhe kur përdoruesi klikon mbi të janë treguar në figurën vijuese.</p>
+<a class="reference internal image-reference" href="_images/fig7_23.png"><img alt="_images/fig7_23.png" class="align-center" src="_images/fig7_23.png" style="width: 600px;" /></a>
+<p>Le të shohim skriptin e dytë që lidhet me degën e matematikanit. Kur klikojmë në sprite, ai mendon për një përgjigje dhe kështu e bën atë. Siç kemi përmendur edhe më parë, <em>Sign</em> mund të shfaqet në njërën nga dy kostumet: kostum i parë - kostum që korrespondon me sekuencën numër 1 është për shumëzim, pra, nëse numri i krijuar rastësisht është 1, matematikani do të ketë për të shumëzuar numrat.
+Nëse numri 1 nuk u krijua për Sprite Sign, matematikani do të duhet të shtojë numrat. Në mënyrë të ngjashme, numrat e kostumeve për <em>Numrin 1</em> dhe <em>Numri 2</em> korrespondojnë me numrat që duhet të përdorë sprite matematikani për të kryer operacionin e dhënë. Ne përdorëm operatorin <em>join</em> për tekstin që paraqitet në flluskën e librit komik. Komanda e operatorit <img alt="join" src="_images/join.png" /> është një nga komandat e operatorit që mund të kryhet në llojin e të dhënave të quajtur string (seri karaktere).
+Kjo komandë merr dy vargje të veçantë të karaktereve dhe bën një varg, i cili përmban të gjitha karakteret nga të dy vargjet, ku shkronjat e vargut të dytë shtohen në fund të vargut të parë. Për shembull, drejtimi i blloqeve në figurën në të majtë do të ketë rezultatin e mëposhtëm. Nëse përgjigja në pyetjen “Cili është emri juaj?” është “Nikolla”, Sprite Cat do të thotë “Përshëndetje Nikolla”.</p>
+<a class="reference internal image-reference" href="_images/fig7_24.png"><img alt="_images/fig7_24.png" class="align-center" src="_images/fig7_24.png" style="width: 580px;" /></a>
+<p><strong>Si futen blloqet e funksioneve në blloqe të tjera funksioni?</strong></p>
+<p>Në skriptin tonë, të cilin ia shtuam matematikanit, vendosëm operatorin <em>join</em> në bllokun e argumenteve të komandës <em>think of</em>. Në fushën e parë hyrëse të bashkimit të operatorit kemi shtypur në tekstin “Përgjigjja është” dhe në të dytën vendosim operatorin * (shumëzimi) ose + (shtesë).
+Pastaj kemi futur numrin e kostumit të sprite <em>Number1</em> në fushën e parë hyrëse të bllokut që kryen operacionin aritmetik, dhe në fushën e dytë të hyrjes, kemi futur numrin e kostumit të sprite <em>Number2</em>. A është mjaft i qartë ky shpjegim?</p>
+<p>Nëse nuk jeni akoma të sigurt se si ta bëni këtë, shihni një shpjegim më të hollësishëm.</p>
+
+    <div data-component="reveal" id="објашњење"   data-showtitle="Trego shpjegimin" data-hidetitle="Fshih shpjegimin">
+    <p>Në kapitullin <em>Loops</em> kemi bërë një klasifikim të blloqeve të përdorura në Scratch dhe treguam që të ashtuquajturat  blloqe të funksionit* futen në të ashtuquajturat <em>Blloqe të Komandës</em>. Ndërsa fillojmë krijimin e projekteve që janë më komplekse, do të duhet të përdorim blloqe funksionimi më komplekse, të cilat përbëhen nga disa blloqe të tjera funksioni, si në shembullin që po përshkruajmë këtu. Kjo është arsyeja pse ne do të përdorim imazhet për të treguar hap pas hapi se si krijohet blloku i ndërlikuar i argumentit <a href="#id5"><span class="problematic" id="id6">*</span></a>mendimi i <a href="#id7"><span class="problematic" id="id8">*</span></a>. Duke bërë këtë, ne do të kthehemi prapa, nga fundi në fillim.</p>
+<div class="system-message" id="id5">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 340); <em><a href="#id6">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<div class="system-message" id="id7">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 340); <em><a href="#id8">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+
+    </div>
+    <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 341)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    Ne duhet të marrim:</p>
+<blockquote>
+<div><p>Ne duhet të marrim <img alt="expr1" src="../_images/7/fig7_21.png" /></p>
+<ol class="arabic simple">
+<li><p>Si mund të marrim <img alt="expr2" src="_images/fig7_26.png" /> and <img alt="expr3" src="_images/fig7_27.png" />?</p></li>
+</ol>
+<p>а) Marrim bllokun <img alt="expr4" src="_images/fig7_28.png" /> nga grupi <em>Sensing</em>.</p>
+<ol class="loweralpha simple" start="2">
+<li><p>Nga lista sprite, të cilën e marrim kur klikojmë në trekëndëshin ngjitur me sprite <em>Mathematician</em>, do të zgjedhim <em>Numrin 1</em> (d.m.th. <em>Numrin2</em>)</p></li>
+</ol>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 358)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    c) Nga lista e ndryshoreve të shtuara në këtë sprite, të cilat i marrim kur klikojmë në trekëndëshin pranë ndryshores <em>vendin x</em>, do të zgjedhim <em>numrin e kostumit</em></p>
+<blockquote>
+<div><div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 360)</p>
+<p>Error in “image” directive:
+no content permitted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_29</span><span class="o">.</span><span class="n">png</span>
+      <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">615</span><span class="n">px</span>
+      <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
+
+
+ <span class="mf">2.</span> <span class="n">Si</span> <span class="n">mund</span> <span class="n">të</span> <span class="n">marrim</span> <span class="o">|</span><span class="n">expr6</span><span class="o">|</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 367)</p>
+<p>Error in “image” directive:
+no content permitted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_30</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">а</span><span class="p">)</span> <span class="n">Ne</span> <span class="n">e</span> <span class="n">marrim</span> <span class="n">bllokun</span> <span class="o">|</span><span class="n">multiply</span><span class="o">|</span> <span class="n">nga</span> <span class="n">grupi</span> <span class="o">*</span><span class="n">Operatorët</span><span class="o">*</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 367)</p>
+<p>Substitution definition “expr6” empty or invalid.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">expr6</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_30</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">а</span><span class="p">)</span> <span class="n">Ne</span> <span class="n">e</span> <span class="n">marrim</span> <span class="n">bllokun</span> <span class="o">|</span><span class="n">multiply</span><span class="o">|</span> <span class="n">nga</span> <span class="n">grupi</span> <span class="o">*</span><span class="n">Operatorët</span><span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<p>    b) Vendosim argumentin e parë që morëm nga përshkrimi 1 në kutinë e parë <a href="#id17"><span class="problematic" id="id18">|expr7|</span></a></p>
+<blockquote>
+<div><div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 373)</p>
+<p>Error in “image” directive:
+no content permitted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_31</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">c</span><span class="p">)</span> <span class="n">Vendosim</span> <span class="n">argumentin</span> <span class="n">e</span> <span class="n">dytë</span> <span class="n">që</span> <span class="n">morëm</span> <span class="n">nga</span> <span class="n">përshkrimi</span> <span class="mi">1</span> <span class="n">në</span> <span class="n">kutinë</span> <span class="n">e</span> <span class="n">dytë</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 373)</p>
+<p>Substitution definition “expr7” empty or invalid.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">expr7</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_31</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">c</span><span class="p">)</span> <span class="n">Vendosim</span> <span class="n">argumentin</span> <span class="n">e</span> <span class="n">dytë</span> <span class="n">që</span> <span class="n">morëm</span> <span class="n">nga</span> <span class="n">përshkrimi</span> <span class="mi">1</span> <span class="n">në</span> <span class="n">kutinë</span> <span class="n">e</span> <span class="n">dytë</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<p>    3. Si mund të marrim <a href="#id19"><span class="problematic" id="id20">|expr8|</span></a></p>
+<blockquote>
+<div><div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 379)</p>
+<p>Error in “image” directive:
+no content permitted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_32</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">а</span><span class="p">)</span> <span class="n">Ne</span> <span class="n">e</span> <span class="n">marrim</span> <span class="n">bllokun</span> <span class="o">|</span><span class="n">join</span><span class="o">|</span> <span class="n">nga</span> <span class="n">grupi</span> <span class="o">*</span><span class="n">Operatorët</span><span class="o">*</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 379)</p>
+<p>Substitution definition “expr8” empty or invalid.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">expr8</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_32</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">а</span><span class="p">)</span> <span class="n">Ne</span> <span class="n">e</span> <span class="n">marrim</span> <span class="n">bllokun</span> <span class="o">|</span><span class="n">join</span><span class="o">|</span> <span class="n">nga</span> <span class="n">grupi</span> <span class="o">*</span><span class="n">Operatorët</span><span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<p>    b) Ne shkruajmë tekstin “Përgjigja është” në fushën e parë <a href="#id21"><span class="problematic" id="id22">|expr9|</span></a></p>
+<blockquote>
+<div><div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 385)</p>
+<p>Error in “image” directive:
+no content permitted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_33</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">s</span><span class="p">)</span> <span class="n">Ne</span> <span class="n">e</span> <span class="n">vendosim</span> <span class="n">argumentin</span> <span class="n">që</span> <span class="n">formuam</span> <span class="n">nga</span> <span class="n">përshkrimi</span> <span class="mi">2</span> <span class="n">në</span> <span class="n">fushën</span> <span class="n">e</span> <span class="n">dytë</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 385)</p>
+<p>Substitution definition “expr9” empty or invalid.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">expr9</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">fig7_33</span><span class="o">.</span><span class="n">png</span>
+
+ <span class="n">s</span><span class="p">)</span> <span class="n">Ne</span> <span class="n">e</span> <span class="n">vendosim</span> <span class="n">argumentin</span> <span class="n">që</span> <span class="n">formuam</span> <span class="n">nga</span> <span class="n">përshkrimi</span> <span class="mi">2</span> <span class="n">në</span> <span class="n">fushën</span> <span class="n">e</span> <span class="n">dytë</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<p>    4. Më në fund, argumenti i formuar në këtë mënyrë, ne vendosëm në fushën e bllokut <img alt="think" src="_images/think.png" /></p>
+<p><strong>Përditësimi i parë</strong></p>
+<p>Nëse duam që projekti të përdorë numrat nga 1 në 9, duhet të shtojmë kostumet me numrat nga 4 në 9 tek spritet <em>Number1</em> dhe <em>Number2</em> (numrat nga <em>4-Shine</em> në <em>9-Shine</em> në mënyrë të njëpasnjëshme) dhe në skriptet e tyre, në komandën <em>ndryshoni kostumin</em> me një numër të rastit duhet të vendosni “1 në 9” në vend të “1 deri 3”.</p>
+<p><strong>Përditësimi i dytë</strong></p>
+<p>Ne mund ta përmirësojmë projektin në mënyrë që, pasi të marrim detyrën e mesazhit, magjistarin e ri, t’i drejtojë përdoruesit pyetjen e duhur, dhe pastaj të transmetojë nëse përgjigja është e saktë apo jo. Në këtë version të projektit nuk është e nevojshme të përpunohet ngjarja <em>klikoni mbi sprite</em> të shtuar në sprite matematikan.
+Duhet të shtohet gjithashtu udhëzimi se si duhet të përdoret programi. Kjo mund të arrihet me futjen e një butoni tjetër mbi të cilin mund të shkruajmë fjalën <em>Udhëzim</em>. Kur klikohet ky buton, transmeton një mesazh; si sfondi ashtu edhe sprite matematikan duhet të reagojnë ndaj këtij mesazhi. Sfondi do të shndërrohet në <em>Backdrop2</em>, i cili ka udhëzimet e shkruara në të, dhe matematikani zvogëlohet në 30% të madhësisë së tij, në mënyrë që të mos mbulojë udhëzimin.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_34.png"><img alt="../_images/7/fig7_34.png" class="align-center" src="../_images/7/fig7_34.png" style="width: 625px;" /></a>
+<p><strong>Përditësimi i tretë</strong></p>
+
+    <div data-level="3" style="display:none">
+
+    </div>
+<p>Nëse duam që programi të kryejë operacionet aritmetike të zbritjes dhe ndarjes, projekti do të bëhet më kompleks. Për ta bërë këtë azhurnim, duhet të shtojmë edhe dy kostume në burimin <em>Sign</em> për <code class="docutils literal notranslate"><span class="pre">zbritjen</span></code> dhe <code class="docutils literal notranslate"><span class="pre">:</span></code> për pjeëtimin. Ne gjithashtu duhet të ndryshojmë skenarin, i cili përshkruan sjelljen e matematikanit kur përdoruesi klikon mbi të.</p>
+<a class="reference internal image-reference" href="../_images/7/fig7_35.png"><img alt="../_images/7/fig7_35.png" class="align-center" src="../_images/7/fig7_35.png" style="width: 625px;" /></a>
+<p>Supozohet se përdoruesi është i njohur me konceptin e numrave negativ. Kur bëhet fjalë për ndarjen, duhet të sigurohemi që rezultati të jetë një numër i plotë dhe të shmangim ndarjen në zero.
+Për të shmangur problemet e mundshme kur bëhet fjalë për ndarjen, nëse operacioni i zgjedhur, i cili gjenerohet në mënyrë të rastësishme, ndodh të jetë ndarje, ne do të transmetojmë mesazhin <a href="#id9"><span class="problematic" id="id10">*</span></a>divide <a href="#id11"><span class="problematic" id="id12">*</span></a>, ndërsa për të gjitha operacionet e tjera do të përdorim të njëjtën zgjidhje të aplikuar në versionet e mëparshme të projektit.</p>
+<div class="system-message" id="id9">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 415); <em><a href="#id10">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<div class="system-message" id="id11">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 415); <em><a href="#id12">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
 <a class="reference internal image-reference" href="_images/fig7_36.png"><img alt="_images/fig7_36.png" class="align-center" src="_images/fig7_36.png" style="width: 625px;" /></a>
-<p>Therefore, when the button <em>Think of a Task</em> is clicked, it broadcasts the message “task”, both the <em>Mathematician</em> and the <em>Sign</em> react to this message.
-The <em>Mathematician</em> thinks “Hmmm…”, and the <em>Sign</em> generates a random number from 1 to 4 and appears in the appropriate costume (1 - multiplication, 2 - addition, 3 - subtraction, 4 - division).</p>
-<p>For all operations except division, the <em>Sign</em> sprite will broadcast the message “regular”. If the division is chosen, the sprite will broadcast the message “divide”, which will trigger a script for calculating the quotient of two numbers that ends with the broadcasting of the message “division”. The sprites <em>Number1</em> and <em>Number2</em> react to the messages sent by the <em>Sign</em> sprite.</p>
-<p>The sprites <em>Number1</em> and <em>Number2</em> react to the message “regular” the same way they reacted in the previous versions of the project, i.e. they appear in one of the randomly chosen costumes from 1 to 9.
-However, if the division was randomly chosen, the task will be set up in a different manner, the program goes from the result toward the numbers that produce it.
-In the procedure <em>Divide</em>, two random numbers are generated from the interval [1,9]. The first number is assigned to the variable <em>quotient</em>, and the second to the variable <em>divisor</em>. The result of the multiplication of these two numbers is the variable <em>dividend</em>.</p>
-<p>The value of the variable <em>dividend</em> is assigned to the sprite <em>Number1</em> and the value of the variable <em>divisor</em> to the sprite <em>Number2</em>.
-This way, when the dividend is divided by the divisor, the mathematician will certainly receive an integer value from the interval [1,9].</p>
+<p>Prandaj, kur të klikohet butoni <em>Mendoni për një detyrë</em>, ai transmeton mesazhin “detyrë”, të dy <em>Mathematician</em> dhe <em>Sign</em> reagojnë ndaj këtij mesazhi.
+<em>Mathematician</em> mendon “Hmmm …”, dhe <em>Sign</em> gjeneron një numër të rastit nga 1 në 4 dhe paraqitet në veshjen e duhur (1 - shumëzim, 2 - shtesë, 3 - zbritje, 4 - ndarje).</p>
+<p>Për të gjitha operacionet përveç ndarjes, Sprite <em>Sign</em> do të transmetojë mesazhin “të rregullt”. Nëse zgjidhet ndarja, sprite do të transmetojë mesazhin “ndarje”, i cili do të shkaktojë një skenar për llogaritjen e shumëzimit të dy numrave që përfundon me transmetimin e mesazhit “ndarje”. Sprites <em>Number1</em> dhe <em>Number2</em> reagojnë ndaj mesazheve të dërguara nga sprite <em>Sign</em>.</p>
+<p>Sprites <em>Number1</em> dhe <em>Number2</em> reagojnë ndaj mesazhit “të rregullt” në të njëjtën mënyrë si reaguan në versionet e mëparshme të projektit, d.m.th ato paraqiten në njërën nga kostumet e zgjedhura rastësisht nga 1 deri në 9.
+Sidoqoftë, nëse ndarja zgjidhej rastësisht, detyra do të vendoset në një mënyrë tjetër, programi shkon nga rezultati drejt numrave që e prodhojnë atë.
+Në procedurën <em>Divide</em>, nga numri i intervalit gjenerohen dy numra të rastit [1,9]. Numri i parë i është caktuar variablës <em>Divide</em>, dhe i dyti në variablib <em>dividend</em>. Rezultati i shumëzimit të këtyre dy numrave është ndryshorja <em>dividend</em>.</p>
+<p>Vlera e variablit <em>dividend</em> i është caktuar sprite <em>Number1</em> dhe vlera e variablit <em>divisor</em> te sprite <em>Number2</em>.
+Në këtë mënyrë, kur dividenti ndahet nga pjesëtuesi, matematikani me siguri do të marrë një vlerë të plotë nga intervali [1,9].</p>
 <a class="reference internal image-reference" href="_images/fig7_37.png"><img alt="_images/fig7_37.png" class="align-center" src="_images/fig7_37.png" style="width: 700px;" /></a>
-<p>We will use this method of generating tasks, from results to operands in other projects as well. This way, we can ensure that the user is given a task that he can solve, for example, not to get negative numbers when subtracting numbers, or to get a result greater than 50 when performing multiplication and that the factors can be larger numbers, and the like.</p>
-<p>What emerges as a new problem, when tasks are solved in this way, is that the dividend is likely to be a two-digit number, and it can also end in zero, which was not included in the costumes for the sprite <em>Number1</em> in the previous versions of the project.
-This can be resolved by introducing one more sprite, a duplicate of the sprite <em>Number1</em>, which we will call <em>Tens</em>, and adding the number zero as the tenth costume to the <em>Number1</em>. Of course, the sprite <em>Tens</em> is hidden and appears on the stage only if the <em>Sign</em> sprite broadcasts the message divide, and the previously calculated dividend is a two-digit number (which will be detected by the variable number of digits).
-This is when the <em>Tens</em> (the digit in tens’ place of the dividend) appears on the left side of the sprite <em>Number1</em>, which receives the value of the units digit of the dividend.</p>
-<p>To extract the digits from the dividend, we use the operation <img alt="letter" src="_images/letter.png" />, which extracts the character with the appropriate sequence number from the string.</p>
-<p>Since the Scratch performs the automatic conversion of the data from numerical to string and vice versa, the digits of multi-digit numbers are simply separated by this operation, and it is not necessary to explain what an integer division is, nor which operation returns the remainder of an integer division.
-The following figures represent the scripts added to the sprites <em>Number1</em>, <em>Number2, and *Sign</em>.</p>
+<p>Ne do të përdorim këtë metodë të gjenerimit të detyrave, nga rezultatet në operandë edhe në projekte të tjera. Në këtë mënyrë, ne mund të sigurojmë që përdoruesit t’i jepet një detyrë që mund ta zgjidhë, për shembull, të mos marrë numra negativ kur zbris numrat, ose të marrë një rezultat më të madh se 50 kur kryen shumëzimin dhe që faktorët mund të jenë numra më të mëdhenj, dhe të ngjashme.</p>
+<p>Ajo që del si një problem i ri, kur detyrat zgjidhen në këtë mënyrë, është se dividenti ka të ngjarë të jetë një numër dyshifror, dhe ai gjithashtu mund të përfundojë në zero, i cili nuk u përfshi në kostumet për sprite <em>Number1</em> në versionet e mëparshme të projektit.
+Kjo mund të zgjidhet duke futur një sprite më shumë, një dublikatë të sprite <em>Number1</em>, të cilën do ta quajmë <em>Dhjetëra</em>, dhe duke shtuar numrin zero si kostumin e dhjetë në <em>Number 1</em>. Sigurisht, sprite <em>Dhjetëra</em> është e fshehur dhe shfaqet në skenë vetëm nëse sprite <em>Sign</em> transmeton ndarjen e mesazhit, dhe dividenti i llogaritur më parë është një numër dyshifror (i cili do të zbulohet nga numri i ndryshueshëm i shifrave) .
+Kjo është kur <em>Dhjetëra</em> (shifra në vendin e dhjetëra të dividentit) shfaqet në anën e majtë të sprite <a href="#id13"><span class="problematic" id="id14">*</span></a>Number <a href="#id15"><span class="problematic" id="id16">*</span></a>, e cila merr vlerën e njësive shifrore të dividendit.</p>
+<div class="system-message" id="id13">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 440); <em><a href="#id14">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<div class="system-message" id="id15">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 440); <em><a href="#id16">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+<p>Për të nxjerrë shifrat nga dividenda, ne përdorim operacionin <img alt="letter" src="_images/letter.png" />, e cila nxjerr karakterin me numrin e sekuencës së duhur nga vargu.</p>
+<p>Meqenëse Scratch kryen konvertimin automatik të të dhënave nga numerike në varg dhe anasjelltas, shifrat e numrave shumë shifrorë thjesht ndahen nga ky operacion, dhe nuk është e nevojshme të shpjegohet se çfarë është një ndarje e plotë, e as që operacioni e kthen pjesa tjetër e një ndarje të plotë.
+Shifrat e mëposhtme paraqesin skriptet që u shtohen sprites <em>Number 1</em>, <em>Number2</em> dhe <em>Sign</em>.</p>
 <a class="reference internal image-reference" href="_images/fig7_38.png"><img alt="_images/fig7_38.png" class="align-center" src="_images/fig7_38.png" style="width: 550px;" /></a>
 </div>
 </div>
-<div class="section" id="ask-did-you-understand">
-<h2><img alt="ask" src="_images/ask.png" /> Did you understand?<a class="headerlink" href="#ask-did-you-understand" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ask-e-kuptuat">
+<h2><img alt="ask" src="_images/ask.png" /> E kuptuat?<a class="headerlink" href="#ask-e-kuptuat" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pyetja-1">
+<h3>Pyetja 1<a class="headerlink" href="#pyetja-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 461)</p>
+<p>On line 461, the last item in a fill-in-the-blank question must be a bulleted list.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">fillintheblank</span><span class="p">::</span> <span class="n">ai11</span>
 
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="ai11">
-            <a class="reference internal image-reference" href="_images/q7_1.png"><img alt="_images/q7_1.png" class="align-center" src="_images/q7_1.png" style="width: 150px;" /></a>
-<p>What is the value of the variable <em>а</em> after the execution of the commands: <input type="text"></p>
+      <span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">7</span><span class="o">/</span><span class="n">q7_1</span><span class="o">.</span><span class="n">png</span>
+        <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">150</span><span class="n">px</span>
+        <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
 
-        <script type="application/json">
-            [[{"number": [4, 4], "feedback": "<p>True</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>The command, which adds the value 5 to the variable, is executed regardless of whether the branching condition has been fulfilled or not.</p>\n"}]]
-        </script>
+     <span class="n">Cila</span> <span class="n">është</span> <span class="n">vlera</span> <span class="n">e</span> <span class="n">variablit</span> <span class="o">*</span><span class="n">a</span><span class="o">*</span> <span class="n">pas</span> <span class="n">ekzekutimit</span> <span class="n">të</span> <span class="n">komandave</span> <span class="o">|</span><span class="n">blank</span><span class="o">|</span>
 
-        </div>
-        </div>
-            </div>
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+      <span class="o">-</span>   <span class="p">:</span><span class="mi">4</span><span class="p">:</span> <span class="n">E</span> <span class="n">vërtetë</span>
+          <span class="p">:</span><span class="n">x</span><span class="p">:</span> <span class="n">Komanda</span><span class="p">,</span> <span class="n">e</span> <span class="n">cila</span> <span class="n">shton</span> <span class="n">vlerën</span> <span class="mi">5</span> <span class="n">në</span> <span class="n">variabël</span><span class="p">,</span> <span class="n">ekzekutohet</span> <span class="n">pavarësisht</span> <span class="n">nëse</span> <span class="n">kushti</span> <span class="n">i</span> <span class="n">degëzimit</span> <span class="n">është</span> <span class="n">përmbushur</span> <span class="n">apo</span> <span class="n">jo</span><span class="o">.</span>
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pyetja-2">
+<h3>Pyetja 2<a class="headerlink" href="#pyetja-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -508,17 +663,17 @@ The following figures represent the scripts added to the sprites <em>Number1</em
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="ai13">
             <a class="reference internal image-reference" href="_images/q7_2.png"><img alt="_images/q7_2.png" class="align-center" src="_images/q7_2.png" style="width: 180px;" /></a>
-<p>What is the value of the variable <em>а</em> after the execution of the commands: <input type="text"></p>
+<p>Cila është vlera e variablit <em>a</em> pas ekzekutimit të komandave: <input type="text"></p>
 
         <script type="application/json">
-            [[{"number": [0, 0], "feedback": "<p>True</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>The command, which adds the value 5 to the variable, is executed regardless of whether the branching condition has been fulfilled or not.</p>\n"}]]
+            [[{"number": [0, 0], "feedback": "<p>E v\u00ebrtet\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>Komanda, e cila shton vler\u00ebn 5 n\u00eb variab\u00ebl, ekzekutohet pavar\u00ebsisht n\u00ebse kushti i deg\u00ebzimit \u00ebsht\u00eb p\u00ebrmbushur apo jo.</p>\n"}]]
         </script>
 
         </div>
         </div>
             </div>
-<div class="section" id="question-3">
-<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-3">
+<h3>Pyetja 3<a class="headerlink" href="#pyetja-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -527,17 +682,17 @@ The following figures represent the scripts added to the sprites <em>Number1</em
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="ai14">
             <a class="reference internal image-reference" href="_images/q7_3.png"><img alt="_images/q7_3.png" class="align-center" src="_images/q7_3.png" style="width: 190px;" /></a>
-<p>What is the value of the variable y after the execution of the commands: <input type="text"></p>
+<p>Cila është vlera e variablit y pas ekzekutimit të komandave: <input type="text"></p>
 
         <script type="application/json">
-            [[{"number": [-2, -2], "feedback": "<p>True</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>The command, which adds the value 5 to the variable, is executed regardless of whether the branching condition has been fulfilled or not.</p>\n"}]]
+            [[{"number": [-2, -2], "feedback": "<p>E v\u00ebrtet\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>Komanda, e cila shton vler\u00ebn 5 n\u00eb variab\u00ebl, ekzekutohet pavar\u00ebsisht n\u00ebse kushti i deg\u00ebzimit \u00ebsht\u00eb p\u00ebrmbushur apo jo.</p>\n"}]]
         </script>
 
         </div>
         </div>
             </div>
-<div class="section" id="question-4">
-<h3>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-4">
+<h3>Pyetja 4<a class="headerlink" href="#pyetja-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -546,17 +701,17 @@ The following figures represent the scripts added to the sprites <em>Number1</em
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="ai15">
             <a class="reference internal image-reference" href="_images/q7_4.png"><img alt="_images/q7_4.png" class="align-center" src="_images/q7_4.png" style="width: 190px;" /></a>
-<p>What is the value of the variable y after the execution of the commands: <input type="text"></p>
+<p>Cila është vlera e variablit y pas ekzekutimit të komandave: <input type="text"></p>
 
         <script type="application/json">
-            [[{"number": [180, 180], "feedback": "<p>True</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>The command, which adds the value 5 to the variable, is executed regardless of whether the branching condition has been fulfilled or not.</p>\n"}]]
+            [[{"number": [180, 180], "feedback": "<p>E v\u00ebrtet\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>Komanda, e cila shton vler\u00ebn 5 n\u00eb variab\u00ebl, ekzekutohet pavar\u00ebsisht n\u00ebse kushti i deg\u00ebzimit \u00ebsht\u00eb p\u00ebrmbushur apo jo.</p>\n"}]]
         </script>
 
         </div>
         </div>
             </div>
-<div class="section" id="question-5">
-<h3>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-5">
+<h3>Pyetja 5<a class="headerlink" href="#pyetja-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -564,21 +719,21 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="ai16">
-            <p>Q-83: Which of the following series of commands exchanges the values of the variables a and b? (Select all correct answers)</p>
+            <p>Q-83: Cila nga seritë e komandave të mëposhtme shkëmben vlerat e variablave a dhe b? (Zgjidhni të gjitha përgjigjet e sakta)</p>
 <a class="reference internal image-reference" href="_images/q7_5.png"><img alt="_images/q7_5.png" class="align-center" src="_images/q7_5.png" style="width: 500px;" /></a>
 
-            <li data-component="answer" data-correct id="ai16_opt_a"></li><li data-component="feedback" id="ai16_opt_a">с is an auxiliary variable.</li>
+            <li data-component="answer" data-correct id="ai16_opt_a"></li><li data-component="feedback" id="ai16_opt_a">с është një varibël ndihmës.</li>
             
-            <li data-component="answer"  id="ai16_opt_b"></li><li data-component="feedback" id="ai16_opt_b">а is an auxiliary variable, b and C exchange the values.</li>
+            <li data-component="answer"  id="ai16_opt_b"></li><li data-component="feedback" id="ai16_opt_b">а është një varibël ndihmës, b dhe C shkëmbejnë vlerat.</li>
             
-            <li data-component="answer"  id="ai16_opt_c"></li><li data-component="feedback" id="ai16_opt_c">If b=0, the division is not defined.</li>
+            <li data-component="answer"  id="ai16_opt_c"></li><li data-component="feedback" id="ai16_opt_c">Nëse b=0, tndarja nuk është e përcaktuar..</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-6">
-<h3>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-6">
+<h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -586,23 +741,23 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="for10a">
-            <p>Q-84: What will the sprite say after the execution of the command stack a) and what after the stack b)?</p>
+            <p>Q-84: Çfarë do të thotë sprite pas ekzekutimit të pirgut të komandës a) dhe çfarë pas pjesës b)?</p>
 <a class="reference internal image-reference" href="_images/q7_6.png"><img alt="_images/q7_6.png" class="align-center" src="_images/q7_6.png" style="width: 450px;" /></a>
 
-            <li data-component="answer"  id="for10a_opt_a">6 and 6</li><li data-component="feedback" id="for10a_opt_a"></li>
+            <li data-component="answer"  id="for10a_opt_a">6 dhe 6</li><li data-component="feedback" id="for10a_opt_a"></li>
             
-            <li data-component="answer"  id="for10a_opt_b">3 and 3</li><li data-component="feedback" id="for10a_opt_b">The branching condition has been fulfilled; therefore, the initial value of the variable is increased.</li>
+            <li data-component="answer"  id="for10a_opt_b">3 dhe 3</li><li data-component="feedback" id="for10a_opt_b">Kushti i degëzimit është përmbushur; prandaj, vlera fillestare e variablit është rritur.</li>
             
-            <li data-component="answer" data-correct id="for10a_opt_c">6 and 3</li><li data-component="feedback" id="for10a_opt_c"></li>
+            <li data-component="answer" data-correct id="for10a_opt_c">6 dhe 3</li><li data-component="feedback" id="for10a_opt_c"></li>
             
-            <li data-component="answer"  id="for10a_opt_d">3 and 6</li><li data-component="feedback" id="for10a_opt_d"></li>
+            <li data-component="answer"  id="for10a_opt_d">3 dhe 6</li><li data-component="feedback" id="for10a_opt_d"></li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-7">
-<h3>Question 7<a class="headerlink" href="#question-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-7">
+<h3>Pyetja 7<a class="headerlink" href="#pyetja-7" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -611,13 +766,13 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="if08a">
-            <p>Q-85: For which values of the variable <em>а</em> will the variable <em>b</em> receive the value 1? (Select all correct answers).</p>
+            <p>Q-85: Për cilat vlera të variablit <em>a</em> do të marrë ndryshorja <em>b</em> vlerën 1? (Zgjidhni të gjitha përgjigjet e sakta).</p>
 
-            <li data-component="answer"  id="if08a_opt_a">a=5</li><li data-component="feedback" id="if08a_opt_a">It is false that 5<5, the branching condition is not fulfilled.</li>
+            <li data-component="answer"  id="if08a_opt_a">a=5</li><li data-component="feedback" id="if08a_opt_a">Është e gabuar që 5 <5, gjendja e degëzimit nuk plotësohet.</li>
             
             <li data-component="answer" data-correct id="if08a_opt_b">a=0</li><li data-component="feedback" id="if08a_opt_b">0<5.</li>
             
-            <li data-component="answer"  id="if08a_opt_c">a=10</li><li data-component="feedback" id="if08a_opt_c">It is false that 10<5, the branching condition is not fulfilled.</li>
+            <li data-component="answer"  id="if08a_opt_c">a=10</li><li data-component="feedback" id="if08a_opt_c">Është e gabuar që 10 <5, gjendja e degëzimit nuk përmbushet</li>
             
             <li data-component="answer" data-correct id="if08a_opt_d">a=4</li><li data-component="feedback" id="if08a_opt_d">4<5.</li>
             
@@ -625,8 +780,8 @@ The following figures represent the scripts added to the sprites <em>Number1</em
             </ul>
             </div>
             </div>
-<div class="section" id="question-8">
-<h3>Question 8<a class="headerlink" href="#question-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-8">
+<h3>Pyetja 8<a class="headerlink" href="#pyetja-8" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -634,42 +789,46 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="if09a">
-            <p>Q-86: For which values of the variables <em>а</em> and <em>b</em> will the variable <em>min</em> receive the value of the variable <em>a</em>? (Select all correct answers).</p>
+            <p>Q-86: Për cilat vlera të variablave <em>a</em> dhe <em>b</em> a do të marrë variabli <em>min</em> vlerën e variablit <em>a</em>? (Zgjidhni të gjitha përgjigjet e sakta).</p>
 <a class="reference internal image-reference" href="_images/q7_8.png"><img alt="_images/q7_8.png" class="align-center" src="_images/q7_8.png" style="width: 200px;" /></a>
 
             <li data-component="answer" data-correct id="if09a_opt_a">a=5 b=10</li><li data-component="feedback" id="if09a_opt_a">5<10.</li>
             
-            <li data-component="answer"  id="if09a_opt_b">a=0 b=-1</li><li data-component="feedback" id="if09a_opt_b">Since 0>-1, the branching condition is not fulfilled.</li>
+            <li data-component="answer"  id="if09a_opt_b">a=0 b=-1</li><li data-component="feedback" id="if09a_opt_b">Meqë 0>-1, kushti i degëzimit nuk përmbushet.</li>
             
-            <li data-component="answer"  id="if09a_opt_c">a=10 b=5</li><li data-component="feedback" id="if09a_opt_c">Since 10>5, the branching condition is not fulfilled.</li>
+            <li data-component="answer"  id="if09a_opt_c">a=10 b=5</li><li data-component="feedback" id="if09a_opt_c">Meqë 10>5, kushti i degëzimit nuk përmbushet.</li>
             
-            <li data-component="answer"  id="if09a_opt_d">a=4 b=4</li><li data-component="feedback" id="if09a_opt_d">Since 4=4, the branching condition is not fulfilled.</li>
+            <li data-component="answer"  id="if09a_opt_d">a=4 b=4</li><li data-component="feedback" id="if09a_opt_d">Meqë 4=4, kushti i degëzimit nuk përmbushet.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-9">
-<h3>Question 9<a class="headerlink" href="#question-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-9">
+<h3>Pyetja 9<a class="headerlink" href="#pyetja-9" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
     </div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 619)</p>
+<p>On line 619, the last item in a fill-in-the-blank question must be a bulleted list.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. fillintheblank:: if11a
 
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="if11a">
-            <a class="reference internal image-reference" href="_images/q7_9.png"><img alt="_images/q7_9.png" class="align-center" src="_images/q7_9.png" style="width: 200px;" /></a>
-<p>What will be the value of the variable <em>a</em> after the execution of the condition command, if the values of the variable <em>a</em> and <em>b</em> were previously: a=4 and b=2? <input type="text"></p>
+      .. image:: ../_images/7/q7_9.png
+        :width: 200px
+        :align: center
 
-        <script type="application/json">
-            [[{"regex": "^ *\u0434\u0430 *$", "regexFlags": "", "feedback": "<p>True</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>The command, which adds the value 5 to the variable, is executed regardless of whether the branching condition has been fulfilled or not.</p>\n"}]]
-        </script>
+     Cila do të jetë vlera e ndryshores *a* pas ekzekutimit të komandës kusht, nëse më parë ishin vlerat e variablit *a* dhe *b*: a = 4 dhe b = 2? |blank|
 
-        </div>
-        </div>
-            </div>
-<div class="section" id="question-10">
-<h3>Question 10<a class="headerlink" href="#question-10" title="Permalink to this headline">¶</a></h3>
+      -   :да: E vërtetë
+          :x: Komanda, e cila shton vlerën 5 në variabël, ekzekutohet pavarësisht nëse kushti i degëzimit është përmbushur apo jo.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pyetja-10">
+<h3>Pyetja 10<a class="headerlink" href="#pyetja-10" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -677,19 +836,19 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if12">
-            <p>Q-87: Do these two conditional branching commands always perform the same job?</p>
+            <p>Q-87: A kryejnë gjithmonë  të njëjtën punë këto dy komanda të degëzimit me kusht?</p>
 <a class="reference internal image-reference" href="_images/q7_10.png"><img alt="_images/q7_10.png" class="align-center" src="_images/q7_10.png" style="width: 500px;" /></a>
 
-            <li data-component="answer"  id="if12_opt_a">yes</li><li data-component="feedback" id="if12_opt_a">For а=0 the first command assigns the value 5 to the variable b, and the second command the value 2.</li>
+            <li data-component="answer"  id="if12_opt_a">po</li><li data-component="feedback" id="if12_opt_a">Për а=0 komanda e parë i jep vlerën 5 variablit b, dhe komandës së dytë vlerën 2.</li>
             
-            <li data-component="answer" data-correct id="if12_opt_b">no</li><li data-component="feedback" id="if12_opt_b"></li>
+            <li data-component="answer" data-correct id="if12_opt_b">jo</li><li data-component="feedback" id="if12_opt_b"></li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="question-11">
-<h3>Question 11<a class="headerlink" href="#question-11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-11">
+<h3>Pyetja 11<a class="headerlink" href="#pyetja-11" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -698,11 +857,11 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if13a">
-            <p>Q-88: What will be the value of the variable <em>b</em> after the execution of the condition command if the value of the variable <em>b</em> was previously b=2?</p>
+            <p>Q-88: Cila do të jetë vlera e variablit <em>b</em> pas ekzekutimit të komandës kusht nëse vlera e variablit <em>b</em> ishte më parë b = 2?</p>
 
             <li data-component="answer" data-correct id="if13a_opt_a">b=5</li><li data-component="feedback" id="if13a_opt_a"></li>
             
-            <li data-component="answer"  id="if13a_opt_b">b=2</li><li data-component="feedback" id="if13a_opt_b">The branching condition has been fulfilled; the initial value of the variable is increased.</li>
+            <li data-component="answer"  id="if13a_opt_b">b=2</li><li data-component="feedback" id="if13a_opt_b">Kushti i degëzimit është përmbushur; rritet vlera fillestare e variablit.</li>
             
             <li data-component="answer"  id="if13a_opt_c">b=6</li><li data-component="feedback" id="if13a_opt_c"></li>
             
@@ -714,13 +873,13 @@ The following figures represent the scripts added to the sprites <em>Number1</em
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="if13b">
-            <p>Q-89: What will be the value of the variable <em>b</em> after the execution of the condition command if the value of the variable <em>b</em> was previously b=3?</p>
+            <p>Q-89: Cila do të jetë vlera e ndryshores <em>b</em> pas ekzekutimit të komandës kusht nëse vlera e variablit <em>b</em> ishte më parë b = 3?</p>
 
             <li data-component="answer"  id="if13b_opt_a">b=5</li><li data-component="feedback" id="if13b_opt_a"></li>
             
             <li data-component="answer"  id="if13b_opt_b">b=2</li><li data-component="feedback" id="if13b_opt_b"></li>
             
-            <li data-component="answer"  id="if13b_opt_c">b=6</li><li data-component="feedback" id="if13b_opt_c">The branching condition is not fulfilled; therefore, the initial value of the variable does not change.</li>
+            <li data-component="answer"  id="if13b_opt_c">b=6</li><li data-component="feedback" id="if13b_opt_c">Kushti i degëzimit nuk përmbushet; prandaj, vlera fillestare e variablit nuk ndryshon.</li>
             
             <li data-component="answer" data-correct id="if13b_opt_d">b=3</li><li data-component="feedback" id="if13b_opt_d"></li>
             
@@ -728,8 +887,8 @@ The following figures represent the scripts added to the sprites <em>Number1</em
             </ul>
             </div>
             </div>
-<div class="section" id="question-12">
-<h3>Question 12<a class="headerlink" href="#question-12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pyetja-12">
+<h3>Pyetja 12<a class="headerlink" href="#pyetja-12" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
@@ -738,8 +897,8 @@ The following figures represent the scripts added to the sprites <em>Number1</em
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="if16">
-    <span data-component="question">Q-90: By dragging the rectangles, match the initial values of the variables with values received after the execution of the conditional command.</span>
-	<span data-component=feedback>Try again</span>
+    <span data-component="question">Q-90: Duke tërhequr drejtkëndësat, përputheni me vlerat fillestare të variablave me vlerat e marra pas ekzekutimit të komandës së kushtëzuar.</span>
+	<span data-component=feedback>Provo përsëri</span>
 
     <li data-component="draggable" id="if16_drag1">a=2 b=1</li>
     <li data-component="dropzone" for="if16_drag1">a=2 b=5</li>
@@ -754,10 +913,18 @@ The following figures represent the scripts added to the sprites <em>Number1</em
     <li data-component="dropzone" for="if16_drag4">a=-5 b=-1</li>
 </ul></div></div>
 </div>
-<div class="section" id="try-try-it">
-<h2><img alt="try" src="_images/try.png" /> Try it!<a class="headerlink" href="#try-try-it" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="exercise-1">
-<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="try-provoje">
+<h2><img alt="try" src="_images/try.png" /> Provoje!<a class="headerlink" href="#try-provoje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 706)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>|try| Provoje!
+-------------
+</pre></div>
+</div>
+</div>
+<div class="section" id="ushtrimi-1">
+<h3>Ushtrimi 1<a class="headerlink" href="#ushtrimi-1" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -766,18 +933,16 @@ The following figures represent the scripts added to the sprites <em>Number1</em
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a series of commands that:</p>
-<ol class="arabic simple">
-<li><p>exchanges the values ​​of two variables;</p></li>
-<li><p>determines which number is greater between two numbers entered from the input;</p></li>
-<li><p>determines the minimum of three numbers entered from the input.</p></li>
-</ol>
+<p>Shkruaj një seri komandash që:</p>
 
     </p></div></div>
+<p>   1. shkëmben vlerat e dy variablit;</p>
+<p>   2. përcakton se cili numër është më i madh midis dy numrave të futur nga inputi;</p>
+<p>   3. përcakton minimumin e tre numrave të futur nga inputi.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-2">
-<h3>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-2">
+<h3>Ushtrimi 2<a class="headerlink" href="#ushtrimi-2" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
@@ -786,15 +951,15 @@ The following figures represent the scripts added to the sprites <em>Number1</em
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Check in Scratch whether the following stacks of commands exchange the values of the variables <strong>х</strong> and <strong>у</strong> regardless of their initial values.</p>
+<p>Kontrolloni në Scratch nëse shkallët e komandave të mëposhtme shkëmbejnë vlerat e variablave <strong>х</strong> dhe <strong>у</strong> pavarësisht nga vlerat fillestare të tyre.</p>
 <a class="reference internal image-reference" href="_images/ex7_2.png"><img alt="_images/ex7_2.png" class="align-center" src="_images/ex7_2.png" style="width: 400px;" /></a>
-<p>What happens if х=0 or у=0?</p>
+<p>Çfarë ndodh nëse х=0 ose у=0?</p>
 
     </p></div></div>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-3">
-<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-3">
+<h3>Ushtrimi 3<a class="headerlink" href="#ushtrimi-3" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -803,21 +968,19 @@ The following figures represent the scripts added to the sprites <em>Number1</em
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a program, which repeats the following sequence of steps:</p>
-<ul class="simple">
-<li><p>the sprite asks the user to enter a natural number and then says</p></li>
-<li><p>which number comes before,</p></li>
-<li><p>which number comes after,</p></li>
-<li><p>which number is double the value and</p></li>
-<li><p>which number is half the value of the entered number.</p></li>
-</ul>
-<p>Repetition should be stopped when the user enters the number 0.</p>
+<p>Shkruaj një program, i cili përsërit sekuencën e mëposhtme të hapave:</p>
 
     </p></div></div>
+<p>   - sprite i kërkon përdoruesit të shkruaj një numër natyror dhe më pas thotë
+   - cili numër vjen më parë,
+   - cili numër vjen pas,
+   - cili numër është dyfish i vlerës dhe
+   - cili numër është gjysma e vlerës së numrit të futur.</p>
+<p>   Përsëritja duhet të ndalet kur përdoruesi hyn në numrin 0.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-4">
-<h3>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-4">
+<h3>Ushtrimi 4<a class="headerlink" href="#ushtrimi-4" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="2" style="display:none">
 
@@ -826,22 +989,20 @@ The following figures represent the scripts added to the sprites <em>Number1</em
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Write a program, which repeats the following sequence of steps:</p>
-<ul class="simple">
-<li><p>the sprite asks the user to enter two whole numbers <strong>х</strong> and <strong>у</strong> that are not zero and then says</p></li>
-<li><p>the sum of the numbers “х” and “у” is “х+у”,</p></li>
-<li><p>the difference of numbers “х” and “у” is “х-у”,</p></li>
-<li><p>the product of the numbers “х” and “у” is “х*у” and</p></li>
-<li><p>the quotient of the numbers “х” and “у” is “х/у”.</p></li>
-</ul>
-<p>whereby instead of the variables listed under quotation marks, it should put their values.</p>
-<p>Repetition should be stopped when the user enters the number 0 either as the value of <strong>х</strong> or <strong>у</strong>.</p>
+<p>Shkruaj një program, i cili përsërit sekuencën e mëposhtme të hapave:</p>
 
     </p></div></div>
+<p>   - sprite i kërkon përdoruesit të fusë dy numra të tërë <strong>х</strong> dhe <strong>у</strong> që nuk janë zero dhe pastaj thotë
+   - shuma e numrave “х” dhe “у” është “х + у”,
+   - ndryshimi i numrave “х” dhe “у” është “х-у”,
+   - produkti i numrave “х” dhe “у” është “х * у” dhe
+   - pjesëtori i numrave “х” dhe “у” është “х / у”.</p>
+<p>   me ç’rast në vend të variablave të listuara nën thonjëza, ai duhet të vendosë vlerat e tyre.</p>
+<p>   Përsëritja duhet të ndalet kur përdoruesi hyn në numrin 0 ose si vlera e <strong>х</strong> ose <strong>y</strong>.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="exercise-5">
-<h3>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrimi-5">
+<h3>Ushtrimi 5<a class="headerlink" href="#ushtrimi-5" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="3" style="display:none">
 
@@ -851,18 +1012,20 @@ The following figures represent the scripts added to the sprites <em>Number1</em
         <div class="course-content">
             <p>
 <ol class="arabic simple">
-<li><p>The expression <strong>16 : 8 : 4 : 2</strong> is given. What is the value of this expression? Write it in Scratch and check.</p></li>
-<li><p>If we add two pairs of brackets in different positions, we will get expressions that have different results. Determine all possible values ​​that can be obtained in this way.</p></li>
-<li><p>Write each possibility in Scratch and check your results.</p></li>
+<li><p>Shprehja <strong>16: 8: 4: 2</strong> është dhënë. Cila është vlera e kësaj shprehje? Shkruani atë në Scratch dhe kontrolloni.</p></li>
 </ol>
-<p><strong>Help.</strong> Adding brackets will give you the following expressions:  <code class="docutils literal notranslate"><span class="pre">((16</span> <span class="pre">:</span> <span class="pre">8)</span> <span class="pre">:</span> <span class="pre">4)</span> <span class="pre">:</span> <span class="pre">2</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">(16</span> <span class="pre">:</span> <span class="pre">(8</span> <span class="pre">:</span> <span class="pre">4))</span> <span class="pre">:</span> <span class="pre">2</span></code>  <code class="docutils literal notranslate"><span class="pre">(16</span> <span class="pre">:</span> <span class="pre">8)</span> <span class="pre">:</span> <span class="pre">(4</span> <span class="pre">:</span> <span class="pre">2)</span></code>  <code class="docutils literal notranslate"><span class="pre">16</span> <span class="pre">:((8</span> <span class="pre">:</span> <span class="pre">4)</span> <span class="pre">:</span> <span class="pre">2)</span></code>  <code class="docutils literal notranslate"><span class="pre">16</span> <span class="pre">:</span> <span class="pre">(8</span> <span class="pre">:</span> <span class="pre">(4</span> <span class="pre">:</span> <span class="pre">2))</span></code></p>
 
     </p></div></div>
+<p>   2. Nëse shtojmë dy palë kllapa në pozicione të ndryshme, do të marrim shprehje që kanë rezultate të ndryshme. Përcaktoni të gjitha vlerat e mundshme që mund të merren në këtë mënyrë.</p>
+<p>   3. Shkruajini secilën mundësi në Scratch dhe kontrolloni rezultatet tuaja.</p>
+<p>   <strong>Ndihmë.</strong> Shtimi i kllapave do t’ju japë shprehjet e mëposhtme::  <code class="docutils literal notranslate"><span class="pre">((16</span> <span class="pre">:</span> <span class="pre">8)</span> <span class="pre">:</span> <span class="pre">4)</span> <span class="pre">:</span> <span class="pre">2</span></code></p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">(16</span> <span class="pre">:</span> <span class="pre">(8</span> <span class="pre">:</span> <span class="pre">4))</span> <span class="pre">:</span> <span class="pre">2</span></code>  <code class="docutils literal notranslate"><span class="pre">(16</span> <span class="pre">:</span> <span class="pre">8)</span> <span class="pre">:</span> <span class="pre">(4</span> <span class="pre">:</span> <span class="pre">2)</span></code>  <code class="docutils literal notranslate"><span class="pre">16</span> <span class="pre">:((8</span> <span class="pre">:</span> <span class="pre">4)</span> <span class="pre">:</span> <span class="pre">2)</span></code>  <code class="docutils literal notranslate"><span class="pre">16</span> <span class="pre">:</span> <span class="pre">(8</span> <span class="pre">:</span> <span class="pre">(4</span> <span class="pre">:</span> <span class="pre">2))</span></code></p>
+</div></blockquote>
 </div>
 </div>
-<div class="section" id="bug-debug-it">
-<h2><img alt="bug" src="_images/bug.png" /> Debug it!<a class="headerlink" href="#bug-debug-it" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bug-debug">
+<h2><img alt="bug" src="_images/bug.png" /> Debug!<a class="headerlink" href="#bug-debug" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="bug-1">
 <h3>Bug 1<a class="headerlink" href="#bug-1" title="Permalink to this headline">¶</a></h3>
 
@@ -871,15 +1034,19 @@ The following figures represent the scripts added to the sprites <em>Number1</em
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The student wanted to change the behavior of the cat in the project “The Hunt”. He/she wanted the cat to go around in circles every time it touches the mouse (it moves 1 step and turns 1 degree 360 times).
-The student added the following scripts to the cat sprite, but when the project was tested, the cat did not turn when it touched the mouse. Where is the bug?</p>
+<dd class="field-odd"><p>Studenti dëshironte të ndryshonte sjelljen e maceve në projektin “The Hunt”. Ai / ajo dëshironte që macja të shëtiste nëpër qarqe sa herë që prek miun (lëviz 1 hap dhe kthen 1 shkallë 360 herë).</p>
 </dd>
 </dl>
-<a class="reference internal image-reference" href="_images/bug7_1.png"><img alt="_images/bug7_1.png" class="align-center" src="_images/bug7_1.png" style="width: 500px;" /></a>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 810)</p>
+<p>Field list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>    Studenti shtoi shkrimet e mëposhtme në sprajën e maceve, por kur projekti u testua, macja nuk u kthye kur preku miun. Ku është faji?</p>
+<a class="reference internal image-reference" href="../_images/7/bug7_1.png"><img alt="../_images/7/bug7_1.png" class="align-center" src="../_images/7/bug7_1.png" style="width: 500px;" /></a>
 
-    <div data-component="reveal" id="сакривање15"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The condition is only checked immediately after the green flag has been clicked. It needs to be checked constantly, and this means that the conditional command should be placed in an infinite loop.</p>
+    <div data-component="reveal" id="сакривање15"   data-showtitle="Shih përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigje:</strong></p>
+<p>Gjendja kontrollohet vetëm pasi të keni klikuar flamurin e gjelbër. Duhet të kontrollohet vazhdimisht, dhe kjo do të thotë që komanda e kushtëzuar duhet të vendoset në një cikël të pafund.</p>
 
     </div>
     </div>
@@ -891,14 +1058,14 @@ The student added the following scripts to the cat sprite, but when the project 
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>The student wanted to make a simpler version of the Maze project without the variables, so he/she arranged for the mouse sprite to go back to the starting position (23,-158) when it touches the wall of the maze (touches the color black). However, the mouse touched the walls of the maze even when the student did not expect that to happen. Where did the student go wrong?</p>
+<dd class="field-odd"><p>Studenti dëshironte të bënte një version më të thjeshtë të projektit Maze pa ndryshore, kështu që ai / ajo rregulloi që sprite e mouse të ktheheshin në pozicionin fillestar (23, -158) kur prek murin e labirint (prek ngjyrën zi). Sidoqoftë, miu preku muret e labirintit edhe kur studenti nuk priste që të ndodhte. Ku gaboi studenti?</p>
 </dd>
 </dl>
-<a class="reference internal image-reference" href="_images/bug7_2.png"><img alt="_images/bug7_2.png" class="align-center" src="_images/bug7_2.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/7/bug7_2.png"><img alt="../_images/7/bug7_2.png" class="align-center" src="../_images/7/bug7_2.png" style="width: 300px;" /></a>
 
-    <div data-component="reveal" id="сакривање1"   data-showtitle="Show the Answer" data-hidetitle="Hide the Answer">
-    <p><strong>Answer:</strong></p>
-<p>The sprite moves before it is pointed in the specific direction, so it steps in the direction determined by the previously executed command.</p>
+    <div data-component="reveal" id="сакривање1"   data-showtitle="Shih përgjigjen" data-hidetitle="Fshih përgjigjen">
+    <p><strong>Përgjigje:</strong></p>
+<p>Sprite lëviz përpara se të tregohet në drejtimin specifik, kështu që shkon në drejtimin e përcaktuar nga komanda e ekzekutuar më parë.</p>
 
     </div>
     </div>
@@ -910,97 +1077,121 @@ The student added the following scripts to the cat sprite, but when the project 
     </div>
 <dl class="field-list simple">
 <dt class="field-odd">Question</dt>
-<dd class="field-odd"><p>This program was also supposed to take the sprite back to the starting position every time it touched the wall of the maze. However, sometimes this happened, and other times it did not. What went wrong?</p>
+<dd class="field-odd"><p>Programi i tij gjithashtu ishte dashur të merrte sprite përsëri në pozicionin fillestar sa herë që prekte murin e labirint. Sidoqoftë, ndonjëherë kjo ndodhte, dhe herë të tjera jo. Çfarë shkoi keq?</p>
 </dd>
 </dl>
-<a class="reference internal image-reference" href="_images/bug7_3.png"><img alt="_images/bug7_3.png" class="align-center" src="_images/bug7_3.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/7/bug7_3.png"><img alt="../_images/7/bug7_3.png" class="align-center" src="../_images/7/bug7_3.png" style="width: 300px;" /></a>
 
     <div data-component="reveal" id="сакривање2"   data-showtitle="Show" data-hidetitle="Hide">
     <dl class="field-list simple">
 <dt class="field-odd">showtitle</dt>
-<dd class="field-odd"><p>Show the Answer</p>
+<dd class="field-odd"><p>Shih përgjigjen</p>
 </dd>
 <dt class="field-even">hidetitle</dt>
-<dd class="field-even"><p>Hide the Answer</p>
+<dd class="field-even"><p>Fshih përgjigjen</p>
 </dd>
 </dl>
-<p><strong>Answer:</strong></p>
-<p>The block <em>if then</em>, which checks if the sprite touched the wall, is placed inside a block that checks if the left arrow key is pressed, and it should be after it. This way, the condition attached to the sprite touching the wall is checked only if the sprite goes to the left.</p>
+<p><strong>Përgjigje:</strong></p>
+<p>Blloku <em>if else</em>, i cili kontrollon nëse njolla preku murin, vendoset brenda një blloku që kontrollon nëse shtypet tasti i majtë i shigjetës, dhe duhet të jetë pas tij. Në këtë mënyrë, gjendja e bashkangjitur me sprite që prek murin kontrollohet vetëm nëse sprite shkon në të majtë.</p>
 
     </div>
     </div>
 </div>
-<div class="section" id="book-summary">
-<h2><img alt="book" src="_images/book.png" /> Summary<a class="headerlink" href="#book-summary" title="Permalink to this headline">¶</a></h2>
-<p>In this lesson, we learned how to create and use variables. We also introduced the blocks from the group <em>Operators</em> and showed how we could create complex function blocks. The projects we used as examples have a more complex structure - they are composed of basic elements of program logic. Finding logical mistakes in this type of projects is not easy. This is why we will use the following lessons to show ways that project development and testing can be made easier by splitting large scripts into procedures - logical parts that each perform a single function.</p>
-<p><strong>New concepts</strong>: variable - simple, complex, local, global.</p>
-<p><strong>Scratch commands</strong>: <img alt="variables_blocks" src="_images/variables.png" /> - <img alt="set_var" src="_images/set_var.png" />, <img alt="change_var" src="_images/change_var.png" />, <img alt="show_var" src="_images/show_var.png" /> , <img alt="hide_var" src="_images/hide_var.png" />; <img alt="sensing_blocks" src="_images/sensing.png" /> - <img alt="touching_color" src="_images/touching_color.png" />, <img alt="parameter_of" src="_images/parameter_of.png" />; <img alt="operator_blocks" src="_images/operators.png" /> - <img alt="or" src="_images/or.png" />, <img alt="mod" src="_images/mod.png" />, <img alt="join" src="_images/join.png" />, <img alt="function" src="_images/function.png" /></p>
+<div class="section" id="book-permbledhje">
+<h2><img alt="book" src="_images/book.png" /> Përmbledhje<a class="headerlink" href="#book-permbledhje" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 866)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">book</span><span class="o">|</span> <span class="n">Përmbledhje</span>
+<span class="o">--------------</span>
+</pre></div>
 </div>
-<div class="section" id="project-create-a-projects">
-<h2><img alt="project" src="_images/project.png" /> Create a projects<a class="headerlink" href="#project-create-a-projects" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-1-calculator">
-<h3>Project 1 - “Calculator”<a class="headerlink" href="#project-1-calculator" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Në këtë mësim, mësuam si të krijojmë dhe përdorim variablat. Ne gjithashtu prezantuam blloqet nga grupi <em>Operatorët</em> dhe treguam se si mund të krijonim blloqe funksionesh komplekse. Projektet që kemi përdorur si shembuj kanë një strukturë më komplekse - ato përbëhen nga elementë themelorë të logjikës së programit. Gjetja e gabimeve logjike në këtë lloj projekti nuk është e lehtë. Kjo është arsyeja pse ne do të përdorim mësimet e mëposhtme për të treguar mënyrat se zhvillimi dhe testimi i projektit mund të bëhen më të lehtë duke i ndarë skriptet e mëdha në procedura - pjesë logjike që secili kryen një funksion të vetëm.</p>
+<p><strong>Koncepte të reja</strong>: variable - simple, complex, local, global.</p>
+<p><strong>Komanda Scratch</strong>: <img alt="variables_blocks" src="_images/variables.png" /> - <img alt="set_var" src="_images/set_var.png" />, <img alt="change_var" src="_images/change_var.png" />, <img alt="show_var" src="_images/show_var.png" /> , <img alt="hide_var" src="_images/hide_var.png" />; <img alt="sensing_blocks" src="_images/sensing.png" /> - <img alt="touching_color" src="_images/touching_color.png" />, <img alt="parameter_of" src="_images/parameter_of.png" />; <img alt="operator_blocks" src="_images/operators.png" /> - <img alt="or" src="_images/or.png" />, <img alt="mod" src="_images/mod.png" />, <img alt="join" src="_images/join.png" />, <img alt="function" src="_images/function.png" /></p>
+</div>
+<div class="section" id="project-krijo-projekte">
+<h2><img alt="project" src="_images/project.png" /> Krijo projekte<a class="headerlink" href="#project-krijo-projekte" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="projekti-1-calculator">
+<h3>Projekti 1 - “Calculator”<a class="headerlink" href="#projekti-1-calculator" title="Permalink to this headline">¶</a></h3>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>Start a new project called <em>Calculator</em> in which you will make a calculator that performs the basic arithmetic operations - addition, subtraction, multiplication and division. For this exercise, you will need the following sprites: the button with the sign +, the button with the sign -, the button with the sign *, and the button with the sign /.</p>
-<p>Apart from the sprites, you will also need the following variables: input values <em>x</em> and <em>y</em> and the <em>Result</em>.</p>
-<p>Create the project in the following manner:</p>
+<p>Filloni një projekt të ri të quajtur <em>Calculator</em> në të cilin do të bëni një kalkulator që kryen operacionet themelore aritmetike - shtesë, zbritje, shumëzim dhe ndarje. Për këtë ushtrim, do t’ju duhen sprites e mëposhtme: butoni me shenjë +, butoni me shenjë -, butoni me shenjën *, dhe butonin me shenjën /.</p>
+<p>Përveç sprites, do t’ju nevojiten edhe variablat e mëposhtëm: vlerat e hyrjes <em>x</em> dhe <em>y</em> dhe <em>Resul</em>.</p>
+<p>Krijoni projektin në mënyrën e mëposhtme:</p>
 <ol class="arabic simple">
-<li><p>As the backdrop, draw a rectangle with “CALCULATOR” written in the upper left corner.</p></li>
-<li><p>Create all necessary variables and arrange them on the calculator.</p></li>
-<li><p>Upload 4 sprites, which you will use to perform the arithmetic operations and arrange them on the calculator.</p></li>
-<li><p>For each button create the following script: when you click on the button, the appropriate arithmetic operation is performed.</p></li>
-<li><p>Test the result.</p></li>
+<li><p>Si sfond, vizatoni një drejtkëndësh me “CALCULATOR” i shkruar në këndin e sipërm të majtë.</p></li>
+<li><p>Krijoni të gjitha ndryshoret e nevojshme dhe rregulloni ato në kalkulator.</p></li>
+<li><p>Ngarko 4 sprit, të cilat do të përdorësh për të kryer operacionet aritmetike dhe për t’i rregulluar ato në kalkulator.</p></li>
+<li><p>Për secilën buton krijoni skenarin e mëposhtëm: kur klikoni në buton, kryhet operacioni i duhur aritmetik.</p></li>
+<li><p>Testoni rezultatin.</p></li>
 </ol>
-<p>The calculator probably works fine, but it is not obvious which operation was performed last.</p>
-<p>Therefore, change the calculator so that the button, which was pressed last, changes the color to red (this will mean that the result seen on the stage is the result of that specific operation).</p>
-<p>Instruction: You have to create a second costume for each button. The button in the new costume should be red. When you click on the button, the script should broadcast the message “New operation”, and then change to the red costume.
-In addition, each button should have a script that “listens” for the messages, and when it receives the message “New operation”, it should change back to the original costume.</p>
+<p>Llogaritësi ndoshta funksionon mirë, por nuk është e qartë se cili operacion u krye për herë të fundit.</p>
+<p>Prandaj, ndryshoni kalkulatorin në mënyrë që butoni, i cili është shtypur i fundit, të ndryshojë ngjyrën në të kuqe (kjo do të thotë se rezultati i parë në skenë është rezultat i këtij operacioni specifik).</p>
+<p>Udhëzim: Ju duhet të krijoni një kostum të dytë për secilin buton. Butoni në kostumin e ri duhet të jetë i kuq. Kur klikoni në butonin, skenari duhet të transmetojë mesazhin “Operacion i ri”, dhe pastaj të ndryshojë në kostumin e kuq.
+Përveç kësaj, çdo buton duhet të ketë një skenar që “dëgjon” mesazhet, dhe kur merr mesazhin “Operacioni i ri”, duhet të kthehet përsëri në kostumin origjinal.</p>
 </div>
-<div class="section" id="project-2-program-based-on-block-diagrams">
-<h3>Project 2 - Program Based on Block Diagrams<a class="headerlink" href="#project-2-program-based-on-block-diagrams" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-2-programi-i-bazuar-ne-diagrama-te-bllokut">
+<h3>Projekti 2 - Programi i bazuar në Diagrama të Bllokut<a class="headerlink" href="#projekti-2-programi-i-bazuar-ne-diagrama-te-bllokut" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 902)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Projekti</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">Programi</span> <span class="n">i</span> <span class="n">bazuar</span> <span class="n">në</span> <span class="n">Diagrama</span> <span class="n">të</span> <span class="n">Bllokut</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="1" style="display:none">
 
     </div>
-<p>Create a program in Scratch that fits the following algorithm.</p>
+<p>Krijoni një program në Scratch që i përshtatet algoritmit të mëposhtëm.</p>
 <a class="reference internal image-reference" href="_images/algoritam.png"><img alt="_images/algoritam.png" class="align-center" src="_images/algoritam.png" style="width: 490px;" /></a>
-<p>Determine the result of the execution of this program for а = 157;  а = 342;  а = 529.</p>
-<p>How many digits will be in the result obtained by the execution of the given program?</p>
-<p>Does the number of digits depend on the input value of the three-digit number а?</p>
-<p>Edit the program so that the result is always a two-digit number.</p>
+<p>Përcaktoni rezultatin e ekzekutimit të këtij programi për a = 157; а = 342; а = 529.</p>
+<p>Sa shifra do të jenë në rezultatin e marrë nga ekzekutimi i programit të dhënë?</p>
+<p>A varet numri i shifrave nga vlera e hyrjes së numrit tre shifror a?</p>
+<p>Ndryshoni programin në mënyrë që rezultati të jetë gjithnjë një numër dyshifror.</p>
 </div>
-<div class="section" id="project-3-car-race">
-<h3>Project 3 - “Car Race”<a class="headerlink" href="#project-3-car-race" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="projekti-3-gara-e-makinave">
+<h3>Projekti 3 - “Gara e makinave”<a class="headerlink" href="#projekti-3-gara-e-makinave" title="Permalink to this headline">¶</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Variables.rst</span>, line 921)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Projekti</span> <span class="mi">3</span> <span class="o">-</span> <span class="s2">&quot;Gara e makinave&quot;</span>
+<span class="o">~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+</div>
 
     <div data-level="2" style="display:none">
 
     </div>
-<p>Start a new project, which will be called “Car Race”. In this project, you will make a game for two players.
-There should be 3 sprites on the stage: 2 cars and a gate with the words “Finish line” written on it.
-Both cars can move forward and backward and rotate clockwise and counterclockwise.</p>
-<p>The control keys for the first car are:</p>
+<p>Filloni një projekt të ri, i cili do të quhet “Gara e makinave”. Në këtë projekt, ju do të bëni një lojë për dy lojtarë.
+Në skenë duhet të jenë 3 sprit: 2 makina dhe një portë me fjalët “Linja e mbarimit” të shkruara në të.
+Të dy makinat mund të lëvizin përpara dhe prapa dhe të rrotullohen në drejtim të akrepave të orës dhe në të kundërt.</p>
+<p>Çelësat e kontrollit për makinën e parë janë:</p>
 <ul class="simple">
-<li><p>The up arrow key - The car goes forward</p></li>
-<li><p>The down arrow key - The car goes backward</p></li>
-<li><p>The left arrow key - The car rotates counterclockwise</p></li>
-<li><p>The right arrow key - The car rotates clockwise</p></li>
+<li><p>Kyçi i shigjetës lart - Makina shkon përpara</p></li>
+<li><p>Shigjeta poshtë shigjetës - Makina shkon prapa</p></li>
+<li><p>keyelësi i majtë i shigjetës - Makina rrotullohet në të kundërt</p></li>
+<li><p>Kyçi i duhur i shigjetës - Makina rrotullohet në drejtim të akrepave të orës</p></li>
 </ul>
-<p>The control keys for the second car are:</p>
+<p>Keyselësat e kontrollit për makinën e dytë janë:</p>
 <ul class="simple">
-<li><p>W             The car goes forward</p></li>
-<li><p>S             The car goes backward</p></li>
-<li><p>А             The car rotates counterclockwise</p></li>
-<li><p>D             The car rotates clockwise</p></li>
+<li><p>W Makina shkon përpara</p></li>
+<li><p>S Makina shkon prapa</p></li>
+<li><p>А Makina rrotullohet në të djathtë</p></li>
+<li><p>D Makina rrotullohet në drejtim të akrepave të orës</p></li>
 </ul>
-<p>When you finish making the script for the first car, duplicate it and make the necessary changes such as the names of the control keys and the appearance of the second car.
-The finish line should appear on a randomly chosen position on the stage. The cars, controlled by appropriate keys, drive toward the finish line.
-Whoever touches the finish line first, scores a point. When a car touches the finish line gate, it disappears from the stage and appears in a new randomly chosen position (consider the dimensions of the stage and the coordinates of the lower-left and upper-right points).
-Cars are now driving toward a new destination. Whoever touches the gate first gets 1 point. The gate disappears again and appears in a new location…and the same thing repeats.
-The first car to score 30 points is the winner. The race is finished and the message “Player 1 is the winner” or “Player 2 is the winner” should appear on the stage.
-To keep the score for each car, you need to introduce the variables <em>Player1</em> and <em>Player2</em>. To track the coordinates of the finish line gate, you need to introduce the variables <em>gx</em> and <em>gy</em>.</p>
+<p>Kur të përfundoni duke bërë skenarin për makinën e parë, kopjoni atë dhe bëni ndryshimet e nevojshme siç janë emrat e çelësave të kontrollit dhe pamjen e makinës së dytë.
+Linja e përfundimit duhet të shfaqet në një pozicion të zgjedhur rastësisht në skenë. Makinat, të kontrolluara nga çelësat e duhur, drejtojnë drejt vijës së mbarimit.
+Kush prek në vijën e finishit i pari, shënon një pikë. Kur një makinë prek portën e vijës së mbarimit, ajo zhduket nga skena dhe shfaqet në një pozicion të ri të zgjedhur rastësisht (merrni parasysh dimensionet e fazës dhe koordinatat e pikave të poshtme të majtë dhe të djathtë të sipërm).
+Tani veturat po udhëtojnë drejt një destinacioni të ri. Kush prek portën i pari merr 1 pikë. Porta zhduket përsëri dhe shfaqet në një vend të ri … dhe e njëjta gjë përsëritet.
+Makina e parë që shënon 30 pikë është fituesi. Gara ka mbaruar dhe mesazhi “Player 1 është fituesi” ose “Player 2 është fituesi” duhet të dalë në skenë.
+Për të mbajtur rezultatin për secilën makinë, duhet të prezantoni variablat <em>Player1</em> dhe <em>Player2</em>. Për të ndjekur koordinatat e portës së linjës së përfundimit, duhet të prezantoni ndryshoret <em>gx</em> dhe <em>gy</em>.</p>
 </div>
 </div>
 </div>
@@ -1009,17 +1200,17 @@ To keep the score for each car, you need to introduce the variables <em>Player1<
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Yes Or No - Making Decisions' data-toggle="tooltip"><a href="Scratch3 Branching.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Po ose jo - Marrja e vendimeve' data-toggle="tooltip"><a href="Scratch3 Branching.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - How to Program Faster – Procedures' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Si të programojmë më shpejt – Proçedurat' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Yes Or No - Making Decisions' data-toggle="tooltip"><a href="Scratch3 Branching.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Po ose jo - Marrja e vendimeve' data-toggle="tooltip"><a href="Scratch3 Branching.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - How to Program Faster – Procedures' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Si të programojmë më shpejt – Proçedurat' data-toggle="tooltip"><a href="Scratch3 Procedures.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 
