@@ -51,7 +51,7 @@ Në programet që kemi krijuar në mësimet e mëparshme, kemi përdorur vetëm 
 Në projektin e quajtur "Quiz", ekziston një listë e pyetjeve dhe një listë me përgjigje të sakta. Pyetjet dhe përgjigjet mund të futen paraprakisht, ose ato mund të ngarkohen nga një bazë e të dhënave tekstuale. Programi shtron pyetjet rastësisht dhe më pas kontrollon nëse përgjigja e dhënë nga përdoruesi është e saktë. Nëse përgjigja është e saktë, përdoruesi do të marrë një pikë, dhe nëse jo, programi do të transmetojë përgjigjen e saktë. Në fund, bazuar në numrin e përgjigjeve të sakta, përdoruesi merr një notë.
 
 Shembulli 1 - Projekti "Quiz"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -72,7 +72,7 @@ Projekti i mëposhtëm ilustron se si elementët e listës mund të zgjidhen ras
 .......
 
 Shembulli 2 - Projekti "Uria"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -117,7 +117,7 @@ Shifra e mëposhtme përmban të gjitha skriptet e shtuara në rrjedhën kryesor
 Projekti i mëposhtëm ilustron se si mund t'i ndajmë të gjitha objektet në grupe të dëshirueshme, të padëshirueshme dhe asnjanëse. Regjistrimi i objekteve të dëshirueshme ruhet në një listë, dhe të objekteve të padëshirueshme në një listë tjetër. Kur zgjidhet objekti, programi së pari kontrollon se cilit grup i përket: nëse është e dëshirueshme, do të merren pikë pozitive, dhe nëse është e padëshirueshme, do të merren pikë negative; nëse është neutrale, numri i pikëve nuk do të ndryshojë. Për shembull, kjo mund të jetë strategjia nëse po bëni një lojë për fëmijë, ku ata duhet të mbledhin sa më shumë sende të dobishme dhe të shmangin sendet e rrezikshme (shiko detyrat e projektit).
 
 Shembulli 3 - Projekti "Ushqimi"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -148,7 +148,7 @@ Shkrimet e shtuara në Zara gjithashtu lejojnë që programi të llogarisë numr
 .......
 
 Shembulli 4 - Projekti "Magjistar i ngathët"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
@@ -224,7 +224,7 @@ Ruani këtë projekt të modifikuar nën emrin *Clumsy Wizard2*.
 Shënim. Nëse projekti përdoret për të praktikuar shtimin dhe zbritjen me numra deri në 10, do të jetë e dobishme të futni një pyetje "bosh" |ask_wait| në skenarin e shtuar tek magjistari i vajzës së re në vend të bllokut të pritjes |wait_sec|. Vetëm kur fëmija të japë përgjigjen, do ta shtypim *Enter* dhe do ta kontrollojmë atë përgjigje.
 
 |ask| Përgjigjuni pyetjeve të mëposhtme
---------------------------------------
+-------------------------------------------
 
 Për të gjitha pyetjet që pasojnë, supozohet se, fillimisht, lista ka elementët e mëposhtëm
 
@@ -434,7 +434,7 @@ Bug 1
    Në komandën ``wait until`` të shkrimeve të shtuara në mollë dhe spritat e portokallit, ura që duhet t'i prekë nuk është vendosur si duhet.
       
 |book| Përmbledhje
-----------------
+-----------------------
 
 Në këtë mësim, mësuam si të përdorim listat në Scratch - lloji i të dhënave që ka një strukturë komplekse, e cila mundëson të ruhen shumë vlera në të njëjtën kohë. Ne pamë që elementët e listës mund të jenë lloje të ndryshme të të dhënave, dhe se ato mund të përdoren për zgjedhjen e një prej kostumeve të një sprite të caktuar ose për zgjedhjen e një prej sprites nga lista e sprites. Me shembuj të projektit, ne gjithashtu ilustronim sinkronizimin e sjelljes së sprites të shumëzuar duke përdorur mesazhe. Për më tepër, ne treguam se si programi mund të përdoret për të klonuar sprites dhe si këto klone mund të sillen ndryshe nëse sprite që i krijuan ato kanë ndryshore lokale.
 
@@ -506,7 +506,7 @@ Programi kryesor duhet të shfaq të gjithë numrat binjakë (numrat kryesorë q
 
 
 Projekti 4 - Loja "Objekte të rrezikshme"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 

@@ -116,7 +116,7 @@ Pasi të njihni bazat e mjedisit, është koha të mësoni se si mund t'i dërgo
 Ne kemi treguar mënyrën e thjeshtë për ta bërë fjalën tonë sprite në projektin tonë "Hello World", dhe pastaj duke bërë ushtrime të azhurnuar projektin tonë në mënyrë që sprite të shqiptojë vërtet tekstin, ne do të tregojmë tani komandat themelore të cilat do të na mundësojnë të lëvizim tonë, dhe pastaj ne do t'i përmirësojmë ato përmes ushtrimeve të ndryshme.
 
 Shembulli 1 - Projekti "The Walk"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 ||1| Klikoni në blloqet *Motion*, dhe pastaj tërhiqni bllokun |move_steps| në Script Area dhe klikoni mbi të. Macja do të lëvizë 10 hapa djathtas.
@@ -170,7 +170,7 @@ Në shembullin e mëparshëm, ne kemi përdorur bllokun ``forever`` për ta bër
 
   Në projektin tonë të ardhshëm, ne do të tregojmë se si ju mund të prezantoni sprites dhe sfondet e reja, dhe si të udhëzoni një sprite duke përdorur treguesin e miut. Prandaj, para se të kaloni në këtë shembull, shikoni mësimet * Shtoni një Sprite * dhe * Shtoni një sfond *.
 
-Shembulli 2 - "Ecni Dinosauri"
+Shembulli 2 - "Ecen Dinosauri"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ** Krijimi i Projektit **
@@ -247,7 +247,7 @@ Studioni tutorialin *Përdorni tastet e shigjetave* dhe krijoni një projekt ku 
 .......
 
 Shembulli 4 - "Lëvizja me një kthesë"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ne do të krijojmë një projekt më shumë për lëvizjen e sprites duke përdorur një tastierë, por me funksione të modifikuara të çelësave të shigjetave. Ne do t'i heqim blloqet për drejtimin dhe do të bashkohemi me butonin *shigjetë të majtë* dhe tastin *shigjetë të djathtë*me komandat të cilat rrotullohen sprite 15 gradë në të majtë ose në të djathtë. Gjithashtu, ne do të bashkohemi me tastin *shigjeta lart * dhe tastin *shigjetë poshtë* me bllokun ``lëvizni 10 hapa``,
 
@@ -375,6 +375,7 @@ Pyetja 6
 
    .. image:: ../_images/2/q2_6.png
       :width: 530px   
+
 Pyetja 7
 ~~~~~~~~~~
 
@@ -560,7 +561,7 @@ Ushtrimi 1 - Ndiq pozicionin e Sprite
 .......
 
 Ushrimi 2 - Vendosja e pozicionit të Sprite duke përdorur blloqet absolute të lëvizjes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -587,7 +588,7 @@ Ushrimi 2 - Vendosja e pozicionit të Sprite duke përdorur blloqet absolute të
 ........
 
 Ushtrimi 3 - Lëvizja relative dhe absolute
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
@@ -622,7 +623,7 @@ Ushtrimi 3 - Lëvizja relative dhe absolute
 .......
 
 Ushtrimi 4 - Përdorni bllokimin e stilit të rrotullimit dhe drejtimit
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -662,7 +663,7 @@ Nxënësi dëshironte që ura e tij të shkonte në mes të majtë dhe skajit t�
    
   
 |book| Përmbledhje
---------------
+---------------------
 
 Në këtë mësim, ne treguam se si mund të përcaktojmë pozicionin e saktë të një pike në skenë duke shikuar të dy koordinatat. Ne mund të dërgojmë sprita në një pozicion të veçantë në skenë duke përdorur blloqet lëvizëse absolute dhe relative. Lëvizja absolute është duke e zhvendosur Sprite në një lokacion të ri në skenë - destinacionin, pavarësisht nga pozicioni i saj i mëparshëm. Nga ana tjetër, lëvizja Relative është duke ndryshuar pozicionin e sprite në lidhje me pozicionin e saj të mëparshëm në skenë. Faza nuk mund të funksionojë blloqe lëvizjeje. Duke parë shembujt e projektit dhe duke bërë ushtrimet, mësuam se si mund të kontrollojmë lëvizjen e sprites tonë duke përdorur tastierën dhe miun tonë.
 

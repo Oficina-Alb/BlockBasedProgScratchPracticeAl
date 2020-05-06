@@ -1,5 +1,5 @@
 Hapat e sekuencave
-=================
+===================
 
 .. include:: blocks.txt
 
@@ -87,7 +87,7 @@ Blloqet *Motion* që shtjelluam në mësimin e mëparshëm mund të përdoren ve
 Ne mund të argëtojmë miqtë tanë duke i treguar shaka, dhe gjithashtu duke u treguar atyre mashtrime matematikore. Projekti i mëposhtëm ilustron njërën prej tyre. Ka vetëm një skenar me një strukturë të thjeshtë lineare.
 
 Shembulli 1 - Projekti "Mashtrim matematikor"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -235,8 +235,8 @@ Nëse nga ana tjetër ju pëlqen një sfidë, le të themi diçka për këtë te
 
 .......
 
-Shembulli 4 - Projekti "Efekte tSprite"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Shembulli 4 - Projekti "Efektet Sprite"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -714,7 +714,7 @@ Gabimi 3
 
 
 |book| Përmbledhje
---------------
+-------------------
 
 Në këtë mësim u njohëm me grupet dhe format e blloqeve nga paleta e bllokut, të cilat përdoren për të dhënë komanda të gjuhës programuese në Scratch. Fjalori vizual i Scratch përmban më shumë se 100 blloqe të ndarë në 10 grupe. Gramatika vizuale e Scratch realizohet përmes formës specifike që kanë blloqet, gjë që nuk i lejon ata të lidhen nëse funksionet e tyre nuk janë të pajtueshme. Blloqet e pavarura janë të lidhura në atë mënyrë që ato formojnë skriptet, të cilat përcaktojnë sjelljen e objekteve përkatëse, dhe blloqet e funksioneve vendosin vlerat e kërkuara.
  

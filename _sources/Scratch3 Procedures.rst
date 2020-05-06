@@ -1,5 +1,5 @@
 Si të programojmë më shpejt – Proçedurat
-=====================================
+===========================================
 
 .. include:: blocks.txt
 
@@ -51,7 +51,7 @@ Për t'i bërë projektet me strukturë komplekse më të shpejtë dhe më të l
 ----------------------------------------
 
 Shembulli 1 - Projekti "Rrjete me katrorë"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
@@ -353,7 +353,7 @@ Projekti 1 - "Forma gjeometrike"
 Krijoni një version të projektit "Format gjeometrike" nga mësimi 5, duke përdorur procedurat. Procedurat realizohen me përdorimin e komandave të importuara..
 
 Projekti 2 - "Rruga e qytetit"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 

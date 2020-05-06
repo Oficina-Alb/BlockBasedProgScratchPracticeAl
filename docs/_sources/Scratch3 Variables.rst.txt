@@ -77,7 +77,7 @@ Për programe më komplekse, do të duhet të caktojmë vlera të caktuara, d.m.
 ------------------------------------
 
 Shembull 1 - Projekti "The Hunt"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -270,7 +270,7 @@ Shembulli i mëposhtëm mund të përdoret si një program arsimor për parashko
 .......
 
 Shembulli 4 - Projekti "Young Mathematician"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
@@ -863,7 +863,7 @@ Bug 3
   
 
 |book| Përmbledhje
---------------
+--------------------
 
 Në këtë mësim, mësuam si të krijojmë dhe përdorim variablat. Ne gjithashtu prezantuam blloqet nga grupi *Operatorët* dhe treguam se si mund të krijonim blloqe funksionesh komplekse. Projektet që kemi përdorur si shembuj kanë një strukturë më komplekse - ato përbëhen nga elementë themelorë të logjikës së programit. Gjetja e gabimeve logjike në këtë lloj projekti nuk është e lehtë. Kjo është arsyeja pse ne do të përdorim mësimet e mëposhtme për të treguar mënyrat se zhvillimi dhe testimi i projektit mund të bëhen më të lehtë duke i ndarë skriptet e mëdha në procedura - pjesë logjike që secili kryen një funksion të vetëm.
 
@@ -899,7 +899,7 @@ Udhëzim: Ju duhet të krijoni një kostum të dytë për secilin buton. Butoni 
 Përveç kësaj, çdo buton duhet të ketë një skenar që "dëgjon" mesazhet, dhe kur merr mesazhin "Operacioni i ri", duhet të kthehet përsëri në kostumin origjinal.
 
 Projekti 2 - Programi i bazuar në Diagrama të Bllokut
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -918,7 +918,7 @@ A varet numri i shifrave nga vlera e hyrjes së numrit tre shifror a?
 Ndryshoni programin në mënyrë që rezultati të jetë gjithnjë një numër dyshifror.
 
 Projekti 3 - "Gara e makinave"
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 

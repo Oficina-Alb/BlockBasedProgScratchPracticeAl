@@ -69,10 +69,10 @@ Nëse shtoni |pen_down| bllokoni në Sprite tuaj, që nga atëherë, Sprite do t
   Ju vini re që ne nuk kemi thënë që ne dërgojmë **një mesazh, por që ne e transmetojmë**. Kjo pasi, në Scratch, mesazhi u drejtohet të gjitha objekteve, dhe jo vetëm një. Transmetimi dhe marrja e mesazheve në Scratch arrihet me blloqet e mëposhtme |Transmition|, |transmision_wait| dhe |when_receive| nga grupi *Events*.
 
 |study| Studioni shembujt e mëposhtëm
-------------------------------------
+----------------------------------------
 
 Shembulli 1 - Projekt "Vizato një vijë" 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Do të krijojmë një projekt në të cilin do të vizatojmë një rresht që është 10 pixel i gjerë dhe 300 pixel i gjatë. Ne do të zgjedhim sprite Pencil nga biblioteka e sprites, dhe ne do të fshijmë spërkatjen e maceve. Meqenëse duam që shenja të pozicionohet përgjatë majës së sprite të Lapsit, ne do ta lëvizim qendrën e kostumit në majë. Ne mund ta bëjmë këtë duke hapur skedën *Costum*. Mjetet e disponueshme do të shfaqen në anën e majtë të ekranit të vizatimit; në rastin tonë, këto do të jenë mjete vektoriale sepse kemi zgjedhur një sprite vektoriale (1). Përdorni |v_select| për të zgjedhur tërë sprite (2), dhe pastaj tërhiqeni sprite në mënyrë që maja e lapsit të jetë mbi shenjën |center| që tregon qendrën e ekranit (3).
 
@@ -168,7 +168,7 @@ Shifra e mëposhtme paraqet një skenar që përcakton vlerat fillestare dhe pam
 Shembulli i mëposhtëm tregon se si mund të vizatojmë stile të ndryshme të linjave për nënvizim, duke përdorur komandën përsëritëse për të specifikuar numrin e herë që përsëritet një veprim, të cilin do t'i prezantojmë në mësimin tjetër.
 
 Shembulli 4 - Projekti "Linjat"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -444,7 +444,7 @@ Ushtrimi 2
 .......
 
 Ushtrimi 3
-~~~~~~~~~~
+~~~~~~~~~~~
 
 .. level:: 2
 
@@ -455,7 +455,7 @@ Ushtrimi 3
 .......
 
 Ushtrimi 4
-~~~~~~~~~~
+~~~~~~~~~~~
 
 .. level:: 2
 
@@ -613,7 +613,7 @@ Bug 3
 
   
 |book| Përmbledhje
---------------
+--------------------
 
 Në këtë mësim, ne prezantuam grafikat e breshkave, të cilat paraqesin një shembull të grafikës vektoriale. Në Scratch, çdo sprite ka një stilolaps me të cilin mund të vizatohet ndërsa lëviz në skenë. Kjo stilolaps virtual ka formën e një furçe të rrumbullakët, dhe ne mund të ndryshojmë madhësinë e saj, ngjyrën, ngopjen, shkëlqimin dhe transparencën. Me shembuj dhe ushtrime të ndryshme mësuam se si të përdorim dhe të lidhim blloqet *Motion* dhe *Pen* për të krijuar vizatime të ndryshme. Ne kemi mësuar gjithashtu se si të përdorim komanda për përsëritje për të krijuar skriptet që janë më të shkurtër dhe më të efektshëm. Komandat për përsëritje do të shtjellohen më tej në mësimin tjetër. Në shembullin e fundit, ne treguam se si mund të sinkronizon sjelljen e sprites duke shkëmbyer mesazhe. Mekanizmi i shkëmbimit të mesazheve mund të përdoret gjithashtu për realizimin e procedurave, të cilat do të shpjegohen në mësimin tjetër.
 

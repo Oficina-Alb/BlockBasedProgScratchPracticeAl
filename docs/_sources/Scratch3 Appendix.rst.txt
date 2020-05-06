@@ -10,12 +10,12 @@ Shtesë
   |intro11s|
 
 Funksionet bllok
-----------------
+--------------------
 
 Në Scratch, forma e një blloku siguron që, kur blloqet janë të lidhura, ato mund të formojnë vetëm shkrime, të cilat janë sintetike të sakta. Ka blloqe të pavarura dhe blloqe funksionimi. Blloqet e pavarura (blloqet e kapelave, blloqet e pirgut, blloqet C dhe blloqet e kapakëve) korrespondojnë me komandat gjuhësore. Blloqet e funksioneve (reporterët dhe blloqet logjike) ruajnë vlerat e blloqeve të pavarura. Në mësimin 3, ne folëm për llojet e ndryshme të blloqeve, dhe tani do të prezantojmë funksionet e grupeve kryesore të bllokut dhe disa prej grupeve të vendosura në pjesën Zgjatjet.
 
 blloqet e lëvizjes
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |motion_blocks| Lëvizja
     
@@ -85,7 +85,7 @@ Njëzet blloqe janë të dukshme kur sprite është në fokus dhe tre nëngrupe 
 Efektet grafike, të cilat mund të shtohen në sprite, janë:
 
 .. hlist::
-    :columns: 1
+   :columns: 1
 
     * color - ndryshon ngjyrën e sprite,
     * fisheye - jep përshtypjen e një sprite që shihet përmes një lente me kënd të gjerë,
@@ -117,7 +117,7 @@ Blloqet nga grupi *Show* janë shtjelluar në mësimin 3 të këtij kursi.
 .....
 
 Blloqet Sound
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 .. sidebar:: |sound_blocks| Sound 
     
@@ -226,7 +226,7 @@ Klonët zakonisht kryejnë një veprim kur krijohen. Blloku |when_clone| shkakto
 .....
 
 Blloqet e ndjeshmërisë
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |sensing_blocks| Sensing
     
@@ -329,7 +329,7 @@ Funksionet matematikore që mund të zgjidhen nga lista drop-down e bllokut |fun
 .....
 
 Variablat dhe Blloqet Lista
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |variables_blocks| Variables and Lists
     
@@ -395,7 +395,7 @@ Variablat janë shtjelluar në mësimin 7, dhe listat në mësimin 9 të këtij 
 .....
 
 Blloqet e mia
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |my_blocks| My blocks
     
@@ -483,7 +483,7 @@ Scratch ka një redaktues të integruar të bojrave që mund të përdorni për 
      :align: center
 
 Ndërfaqja e përdoruesit
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Figura e mëposhtme tregon paraqitjen e redaktorit të ngjyrave të integruara në mënyrën vektoriale dhe rasteri.
 
@@ -517,7 +517,7 @@ Shënim. Libraria e kostumeve përmban kostume individuale të të gjitha sprite
 Nën këndin e poshtëm të majtë të zonës së vizatimit është butoni (2) që ndërron redaktorin nga një modalitet në një tjetër. Mjetet specifike për mënyrën e veçantë mund të gjenden në anën e majtë të ekranit pranë zonës së vizatimit, në figurën tonë mënyra e vektorit shënohet me (5) dhe modalitetin raster (bitmap) me (6). Opsionet mund të shihen sipër zonës së vizatimit (kanavacë). Disa prej tyre janë të zakonshme për të dy mënyrat e funksionimit, në figurë, këto opsione janë përshtatur me drejtkëndësha të kuq (3), dhe disa prej tyre vlejnë vetëm për mënyrën vektoriale, këto janë të përshtatura me drejtkëndësha gri (4).
 
 Opsione të zakonshme
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Këto opsione janë të vendosura mbi zonën e vizatimit.
 
@@ -716,12 +716,12 @@ Përdorni këtë mjet nëse doni të vizatoni një elips në ngjyrën e zgjedhur
 Përdorni këtë mjet nëse doni të vizatoni një drejtkëndësh në ngjyrën e zgjedhur për vizatim. Klikoni për të nënvizuar këndin e sipërm të majtë, pastaj tërhiqni (mbani tastin shift ndërsa vizatoni me mjetin drejtkëndësh) derisa të merrni madhësinë që dëshironi. Ju mund të ndryshoni stilin e mbushjes (të mbushur ose bosh) dhe trashësinë e linjës duke përdorur butonat në zonën e opsioneve. Drejtkëndëshi i krijuar ka 4 pika kontrolli, një në secilin skaj.
 
 Duke përdorur Redaktorin e Tingullit të Ndërtuar
---------------------------------
+----------------------------------------------------
 
 Redaktori i tingullit lejon përdoruesit të modifikojnë dhe rimodelojnë tinguj. Në muzikë, termi *remix* përdoret për t'iu referuar një versioni të ri, të modifikuar të një përbërje muzikore.
 
 Ndërfaqja e përdoruesit
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Dritarja e redaktorit të tingullit është e ndarë në dy fusha: lista e tingullit (1) dhe zona e redaktimit (2).
 

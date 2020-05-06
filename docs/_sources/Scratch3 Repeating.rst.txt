@@ -1,5 +1,5 @@
 Përsëritja e hapave
-===============
+=====================
 
 .. include:: blocks.txt
 
@@ -45,7 +45,7 @@ Një nga shembujt më të thjeshtë të komandave të përsëritjes është koma
   Mund të ndodhë gjithashtu që cikli të vazhdojë të funksionojë pafundësisht nëse kushti për daljen nga lak nuk është përmbushur kurrë.
 
 |study| Studioni shembujt e mëposhtëm
-------------------------------------
+---------------------------------------
 
 .. sidebar:: Dimensionet e Sprite 
  
@@ -214,7 +214,7 @@ Struktura e zgjidhjes për këtë detyrë, ku një cikël është futur në një
 .......
 
 Shembulli 2 - Projekti "Format gjeometrike"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -281,7 +281,7 @@ Ne do të përdorim pjesë të projekteve të mëparshme për projektin tonë t�
 .......
 
 Shembulli 3 - Projekti "Ornamente" 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
@@ -686,7 +686,7 @@ Sidoqoftë, programi i tij nuk e mundësoi këtë. Flutura u rrëshqit në mes t
 
 
 |book| Përmbledhje
---------------
+--------------------
 
 Në këtë mësim, ne kemi mbuluar komandat për përsëritje. Me shembuj të projekteve të ndryshme kemi ilustruar se si të përdorim secilën nga tre llojet e sytheve: forever loop, coun loop - ku ne e dimë paraprakisht numrin e përsëritjeve, dhe ciklin e gjendjes - ku një model do të përsëritet derisa të ketë një gjendje të caktuar është përmbushur. Ne gjithashtu treguam se dy ose më shumë sythe mund të kombinohen për të ekzekutuar njëra pas tjetrës (përbërja lineare), ose njëra mund të futet në tjetrën (përbërja e folesë). Për më tepër, mësuam si të përdorim komandën e futjes së të dhënave. 
 
@@ -722,7 +722,7 @@ Gjatësia e brinjës duhet të jetë 100 pixel.
 
  
 Projekti 3 - "trekëndësha"
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 

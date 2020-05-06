@@ -1,5 +1,5 @@
 Po ose jo - Marrja e vendimeve
-============================
+===============================
 
 .. include:: blocks.txt
 
@@ -50,9 +50,9 @@ Siç thamë edhe më parë, shkrimet përshkruajnë sjelljen e objekteve, të ci
 
 .. sidebar:: Simbolet e llojeve të caktuara të hapave algoritmik
 
-    |simboli|
+    |symbol|
 
-.. |simboli| image:: ../_images/6/fig6_3.png
+.. |symbol| image:: ../_images/6/fig6_3.png
 
 Qëllimi kryesor i një diagrami bllok është të tregojë sekuencën e ekzekutimit të hapave individualë algoritëm. Ajo siguron një lidhje të qartë midis detajeve dhe tërësisë së algoritmit dhe e bën të lehtë zbulimin e gabimeve në strukturën e tij.
 
@@ -140,7 +140,7 @@ Skenari i plotë që përshkruan sjelljen e magjistarit është paraqitur në fi
 
 
 Shembulli 2 - Projekti "Dangerous Snowflakes"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -697,7 +697,7 @@ Project 2 - "Hungry Shark"
 Krijoni një projekt në të cilin peshkaqeni po ndjek peshk. Peshkaqeni duhet të lundrojë majtas në të djathtë vazhdimisht, dhe kur presioni i hapësirës, ​​ai duhet të lëvizë lart. Nëse sprite peshkaqeni prek një peshk, peshqit do të zhduken, dhe pastaj rishfaqen pas 3 deri në 5 sekonda në një pozicion të rastit. Kohëzgjatja e ndryshme e pauzës midis zhdukjes dhe rishfaqjes së një peshku dhe lokacioneve të ndryshme mund të arrihet duke përdorur operacionin *numrin e rastit*. Sprite (Shark2) ka tre kostume, kështu që ndryshimi i kostumit mund të përfaqësojë reagimin e peshkaqenit kur prek një peshk. Atribuoni lëvizje të ndryshme tek spritat e peshkut, sprite cancer dhe kandil deti. Kandil deti duhet të lëvizë lart e poshtë, gaforret duhet të lëvizin majtas dhe djathtas, dhe peshqit duhet të lëvizin me shpejtësi të ndryshme. Të gjitha sprites - peshkaqen, lloje të ndryshme të peshkut, gaforret dhe kandil deti, si dhe sfondi mund të merren nga bibliotekat e sprites dhe sfondit. Ju mund të bëni lloje të ndryshme të peshkut duke përdorur kostume të ndryshme të sprite *fish*.
 
 Projekti 3 - "Një qen dhe një mace"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 

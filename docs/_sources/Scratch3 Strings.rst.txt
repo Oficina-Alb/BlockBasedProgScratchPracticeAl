@@ -68,7 +68,7 @@ Një varg paraqet një seri personazhesh që trajtohen një pjesë të vetme të
 ----------------------------------------
 
 Shembulli 1 - Projekti "Parrot"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -101,7 +101,7 @@ Projekti që vijon do t'ju tregojë se si mund të përdorni operacione në varg
 .......
 
 Shembulli 2 - Projekti "Exchange Digits"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
@@ -124,7 +124,7 @@ Skenari i projektit është paraqitur në figurën vijuese.
 Projekti i mëposhtëm kontrollon nëse fjala e futur është një palindrome. Një *palindrome* është një fjalë ose një frazë, e cila lexon të njëjtën gjë nga e majta në të djathtë dhe nga e djathta në të majtë. Për shembull, fjala "zonjë" është një palindrome. Një numër që është një palindrom përcaktohet në mënyrë të ngjashme. Për shembull, 12321 është një palindrome.
 
 Shembulli 3 - Projekti "Palindrome"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
@@ -146,7 +146,7 @@ Skenari për projektin *Palindrome* është paraqitur në figurën vijuese.
 .......
 
 Shembulli 4 - Projekti "String Operations"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Në këtë projekt, përdoruesit i kërkohet të zgjedhë njërën nga operacionet: *copy* ose *delete*. Kërkohet hyrja në varësi të asaj që është zgjedhur, dhe më pas shkruhet rezultati i operacionit. Operacioni caktohet duke klikuar në butonin e duhur, i cili më pas transmeton operacionin. Kur të merret mesazhi që identifikon operacionin e zgjedhur, skenari që ekzekuton operacionin e dhënë do të funksionojë.
 Ka dy sprites që marrin pjesë në projekt: butoni *copy* për të bërë kopje dhe *delete* për fshirje. Skenari që kryen fshirjen është disi më i thjeshtë. Bazuar në vlerat e shkruara për numrin e karaktereve dhe pozicionet nga të cilat merren, vendoset një varg i ri s2. Kjo varg është e zbrazët në fillim, dhe themelohet duke shtuar një karakter në një kohë nga një pjesë e caktuar e vargut fillestar.
@@ -166,7 +166,7 @@ Skripti për fshirjen bën të kundërtën - ai formon vargun nga pjesët e vend
 
 
 |ask| Përgjigju pyetjeve të mëposhtme
--------------------------------------
+----------------------------------------
 
 Pyetja 1
 ~~~~~~~~~~~
@@ -200,7 +200,7 @@ Pyetja 2
    
    Cili do të jetë rezultati i operacionit ``letter 2 of LENA``?
 
-Question 3
+Pyetja 3
 ~~~~~~~~~~~
 
 .. level:: 1

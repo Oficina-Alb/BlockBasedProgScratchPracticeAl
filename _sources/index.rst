@@ -16,7 +16,7 @@ Programimi me blloqe në Scratch - praktikë
 
 
 Përmbajtja
--------
+-----------
 
 .. toctree::
     :maxdepth: 2

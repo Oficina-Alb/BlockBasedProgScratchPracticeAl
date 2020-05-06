@@ -305,7 +305,7 @@ Pyetja 10
 Është koha të eksporoni
 
 |Try| Provoje!
--------------
+---------------
 
 Ushtrimi 1 - Exploro *Tutoriale*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -323,7 +323,7 @@ Ushtrimi 1 - Exploro *Tutoriale*
 .......
 
 Ushtrimi 2 - Informacion mbi Sprite
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 1
 
@@ -386,7 +386,7 @@ Ushtrimi 4 - Dublikimi dhe fshirja e sprites
 .......
 
 Ushtrimi 5 - Përdorimi i tingullit  
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Paralajmërim.** Këtë ushtrim mund ta përfundoni vetëm nëse kompjuteri juaj ka një mundësi të regjistrimit audio!
 
@@ -419,7 +419,7 @@ Eksploroni Tutorialin *Record Sound*, dhe përpiquni të krijoni një projekt ku
 .......
 
 Ushtrimi 6 - Përdorimi i shtesës *Teksti në të folur*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Paralajmërim.** Këtë ushtrim mund ta përfundoni vetëm nëse kompjuteri juaj është i lidhur në Internet!
 
@@ -462,7 +462,7 @@ Nxënësi dëshironte të bënte versionin e tij / saj të projektit "Përshënd
 Por pasi klikova mbi flamurin e gjelbër, Sprite tha vetëm *Më pëlqen programimi*. Cila është gabimi?
 
 |book| Përmbledhje
---------------
+---------------------
 
 Në mësimin e parë u njohëm me pjesët kryesore të ndërfaqes së gjuhës programuese Scratch, dhe krijuam, vrapoi dhe shpëtuam programin tonë të parë - projektin "Hello World". Duke bërë ushtrime, ne treguam se si mund t'i bëjmë sprites të thonë fjali kemi regjistruar vetë duke përdorur Redaktuesin e Tingullit ose ato të ngarkuar nga shtesa Tekst në të folur (vetëm nëse kompjuteri është i lidhur në internet).
 
@@ -481,7 +481,7 @@ Shënim. Udhëzimet të shënuara me |*| do të diskutohen në mësimet që vijo
 ---------------------------
 
 Projekti 1 - "Rreth meje"
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Krijoni një projekt që do të na tregojë diçka për ju. Zgjidhni një djalë ose një vajzë të sprite nga biblioteka e Sprite dhe bashkëngjitni një skenar që do të bëjë që sprite të thotë tre fjalitë e mëposhtme: "Emri im është ...", "Unë jam ... vjeç" dhe "Shkolla ime është  ... ". Vendosni informacionin tuaj në vend të pikave.
 
