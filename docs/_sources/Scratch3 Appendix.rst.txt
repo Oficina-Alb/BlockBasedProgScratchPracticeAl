@@ -464,7 +464,7 @@ Kjo shtesë mund të përdoret vetëm nëse kompjuteri është i lidhur në Inte
 Kur ju zgjidhni |translate_extension| nga *Zgjatjet*, dy blloqe të reja shfaqen në paletën e bllokut. Ato lejojnë që teksti i shkruar në një gjuhë të përkthehet në një gjuhë tjetër. Blloku |language| tregon se cila gjuhë është e vendosur në Scratch. Teksti i shkruar në gjuhën e tanishme në fushën e parë hyrëse të bllokut |translate_to| është përkthyer në gjuhën e zgjedhur nga lista rënëse e fushës së dytë të hyrjes. Nëse blloku i përkthimit vendoset në fushën hyrëse të bllokut ``say`` ose ``think``, përdoruesi mund të shohë përkthimin.
 
 Përdorimi i redaktorit të integruar të grafikëve (bojës)
---------------------------------------------
+----------------------------------------------------------
 
 Scratch ka një redaktues të integruar të bojrave që mund të përdorni për të krijuar dhe modifikuar sprites, kostumet dhe sfondet. Kjo edito
 
@@ -658,7 +658,7 @@ Zona e zgjedhur mund të jetë:
 3. fshihet duke shtypur butonin Del në tastierë.
 
 Punimi në mënyrën vektoriale
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: Veglat e vektorit
 
