@@ -14,22 +14,22 @@ Pasi të njihni bazat e mjedisit, është koha të mësoni se si mund t'i dërgo
 
 .. sidebar:: Sprite Coordinates
 
- |stage|
+   |stage|
 
 .. |stage| image:: ../_images/2/fig2_1.png
 
 .. topic:: Skena
       
- Kur hapni Scratch, skena krijohet automatikisht: një drejtkëndësh i bardhë 480 pika i gjerë dhe 360 pika i lartë. Pika më e vogël që mund të shfaqet në një ekran grafik kompjuterik quhet *Pixel*.
+   Kur hapni Scratch, skena krijohet automatikisht: një drejtkëndësh i bardhë 480 pika i gjerë dhe 360 pika i lartë. Pika më e vogël që mund të shfaqet në një ekran grafik kompjuterik quhet *Pixel*.
 
   Skena është aty ku do të zhvillojnë tregimet, lojërat dhe animacionet tuaja. Shtë i palëvizshëm, si një akuariumi, por banorët e tij - Sprites janë gjithmonë në lëvizje dhe bashkëveprojnë me njëri-tjetrin. Për të kontrolluar me lehtësi lëvizjet e sprites, secilës vend në skenë i është caktuar një adresë - *koordinatat x dhe y*, këto koordinata paraqesin distancën e asaj vendi të veçantë nga qendra e skenës. Pika, e cila është e vendosur në qendër të fazës ka koordinatat х = 0 dhe у = 0, ose (0,0).
 
-  Koordinatat na lejojnë të lëvizim me saktësi sprites tonë nëpër skenë dhe t'i pozicionojmë ato kudo që dëshirojmë (x, y). Pozicioni aktual i sprite mund të shihet në informacionin aktiv të sprite. 
+ Koordinatat na lejojnë të lëvizim me saktësi sprites tonë nëpër skenë dhe t'i pozicionojmë ato kudo që dëshirojmë (x, y). Pozicioni aktual i sprite mund të shihet në informacionin aktiv të sprite. 
 
 
 .. topic:: Funksionet e blloqeve *Motion*
  
- Të gjitha komandat, të cilat mundësojnë pozicionimin e sprite në vendin e dëshiruar dhe kontrollojnë drejtimin dhe lëvizjen e tij, janë të vendosura në grupin e blloqeve të quajtur *lëvizja*. Në këtë mësim, ju do të mësoni më shumë rreth blloqeve të lëvizjes dhe si të përdorni **blloqet e reportazheve**, duke parë shembuj dhe duke bërë ushtrime. Blloqet e reporterëve nuk korrespondojnë me komandat gjuhësore, dhe ato nuk mund të qëndrojnë në mënyrë të pavarur në një skenar. Funksioni i një blloku reporterësh nga grupi *Motion* është ruajtja e koordinatave dhe udhëzimeve aktuale të Sprites.
+   Të gjitha komandat, të cilat mundësojnë pozicionimin e sprite në vendin e dëshiruar dhe kontrollojnë drejtimin dhe lëvizjen e tij, janë të vendosura në grupin e blloqeve të quajtur *lëvizja*. Në këtë mësim, ju do të mësoni më shumë rreth blloqeve të lëvizjes dhe si të përdorni **blloqet e reportazheve**, duke parë shembuj dhe duke bërë ushtrime. Blloqet e reporterëve nuk korrespondojnë me komandat gjuhësore, dhe ato nuk mund të qëndrojnë në mënyrë të pavarur në një skenar. Funksioni i një blloku reporterësh nga grupi *Motion* është ruajtja e koordinatave dhe udhëzimeve aktuale të Sprites.
 
 .. topic:: Motion Reporters
 
@@ -50,12 +50,12 @@ Pasi të njihni bazat e mjedisit, është koha të mësoni se si mund t'i dërgo
 
   Në Scratch ju mund ta dërgoni sprite tuaj në një pozicion të caktuar (х, у) në skenë, domethënë, ju mund të kryeni lëvizje absolute duke përdorur blloqet e mëposhtme:
 
-  - |goto_xy| - shkoni në pozicionin (х, у),
-  - |glide_xy| - rrëshqisni në pozicionin (х, у),
-  - |set_x| - vendosni koordinatën x në pozicion,
-  - |set_y|  - vendosni koordinatën y në pozicion.
+- |goto_xy| - shkoni në pozicionin (х, у),
+- |glide_xy| - rrëshqisni në pozicionin (х, у),
+- |set_x| - vendosni koordinatën x në pozicion,
+- |set_y|  - vendosni koordinatën y në pozicion.
 
- duke përdorur bllokun |goto_xy| i sprite do të lëvizë menjëherë në pozicionin e dhënë (х, у).
+duke përdorur bllokun |goto_xy| i sprite do të lëvizë menjëherë në pozicionin e dhënë (х, у).
 
  Në mënyrë të ngjashme, objektivi do të arrihet me bllokun |glide_xy|, por masa nuk do të ishte e menjëhershme; do të zgjaste një numër i caktuar sekondash. Sa më i lartë të jetë numri i sekondave të dhëna, aq më shumë do t'i duhet spërkatjes për të arritur në destinacionin e saj.
 
@@ -69,8 +69,8 @@ Pasi të njihni bazat e mjedisit, është koha të mësoni se si mund t'i dërgo
  
  - |change_x| - zhvendosni një sasi të caktuar pikselash horizontalisht në lidhje me pozicionin aktual,
  - |change_y| - zhvendosni një sasi të caktuar pikselash vertikalisht në lidhje me pozicionin aktual (х, у),
- - |ana_right| - ktheni djathtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
- - |ana_left| - ktheni majtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
+ - |turn_right| - ktheni djathtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
+ - |turn_left| - ktheni majtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
  - |move_steps| - lëvizni një sasi të caktuar hapash në drejtimin e dhënë në lidhje me pozicionin aktual.
     
 
@@ -81,13 +81,14 @@ Pasi të njihni bazat e mjedisit, është koha të mësoni se si mund t'i dërgo
 
    |direction1|
 
-    (1) për të zgjedhur njërën prej vlerave të ofruara nga lista rënëse, për shembull (0) lart;
-    (2) shkruani një vlerë të re, në vend të së vjetër, për shembull 45;
-    (3) për të rrotulluar shigjetën blu që tregon drejtimin në informacionin aktual të Sprite.
+   
+(1) për të zgjedhur njërën prej vlerave të ofruara nga lista rënëse, për shembull (0) lart;
+(2) shkruani një vlerë të re, në vend të së vjetër, për shembull 45;
+(3) për të rrotulluar shigjetën blu që tregon drejtimin në informacionin aktual të Sprite.
 
-    Nga lista e lëshimit mund të zgjidhni se cili objekt do të drejtohet Sprite në bllokun tjetër.
-
-   |direction2|
+Nga lista e lëshimit mund të zgjidhni se cili objekt do të drejtohet Sprite në bllokun tjetër.
+ 
+  |direction2|
 
 .. |direction1| image:: ../_images/2/fig2_3.png
 
@@ -95,7 +96,7 @@ Pasi të njihni bazat e mjedisit, është koha të mësoni se si mund t'i dërgo
 
 .. topic:: Drejtimi dhe rrotullimi
 
- Përveç blloqeve të rrotullimit |kthesës_right| dhe |turn_left|, të cilat ju lejojnë të ndryshoni drejtimin në lidhje me drejtimin aktual të sprite, në Scratch, ekziston një mundësi për të përdorur blloqe që vendosin drejtimin pavarësisht nga pozicioni aktual i Sprite.
+ Përveç blloqeve të rrotullimit |turn_right| dhe |turn_left|, të cilat ju lejojnë të ndryshoni drejtimin në lidhje me drejtimin aktual të sprite, në Scratch, ekziston një mundësi për të përdorur blloqe që vendosin drejtimin pavarësisht nga pozicioni aktual i Sprite.
 
   Këto janë blloqet|point_direction| dhe |point_towards|.
 
@@ -145,7 +146,7 @@ Ekziston një mënyrë për të mbajtur lëvizjen e sprite brenda kufijve të ek
 
 Duke drejtuar këtë skenar të ndryshuar, macja do të lëvizë vazhdimisht nga një skaj në tjetrin, por kur të zhvendoset në të majtë, do të përballet me mënyrën e gabuar. Sigurisht, ekziston një mënyrë për ta rregulluar këtë. Njëra është të ndryshoni mënyrën e lëvizjes së sprite në Informacionin Sprite, dhe tjetra është të përdorni një nga blloqet e rrotullimit.
 
-|7| Zvarrit bllokun |rotacioni_style| nga blloqet *Motion* dhe vendoseni sipër bllokut të përsëritur përgjithmonë. Sigurohuni që mënyra e rrotullimit *majtas-djathtas* është zgjedhur nga lista dropdown e këtij blloku.
+|7| Zvarrit bllokun |rotation_style| nga blloqet *Motion* dhe vendoseni sipër bllokut të përsëritur përgjithmonë. Sigurohuni që mënyra e rrotullimit *majtas-djathtas* është zgjedhur nga lista dropdown e këtij blloku.
 
 |8| Vendosni | klikuar_flag | bllok në krye të Script, dhe duke bërë këtë ju keni përfunduar projektin "Ecni".
 
@@ -168,20 +169,20 @@ Në shembullin e mëparshëm, ne kemi përdorur bllokun ``forever`` për ta bër
 
 .. sidebar:: Selecting the Backdrop
 
-  Në projektin tonë të ardhshëm, ne do të tregojmë se si ju mund të prezantoni sprites dhe sfondet e reja, dhe si të udhëzoni një sprite duke përdorur treguesin e miut. Prandaj, para se të kaloni në këtë shembull, shikoni mësimet * Shtoni një Sprite * dhe * Shtoni një sfond *.
+  Në projektin tonë të ardhshëm, ne do të tregojmë se si ju mund të prezantoni sprites dhe sfondet e reja, dhe si të udhëzoni një sprite duke përdorur treguesin e mouse. Prandaj, para se të kaloni në këtë shembull, shikoni mësimet *Shtoni një Sprite* dhe *Shtoni një sfond*.
 
 Shembulli 2 - "Ecen Dinosauri"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-** Krijimi i Projektit **
+**Krijimi i Projektit**
 
 .. sidebar:: Zgjedhja e sfondit
+   
+   Ju mund të shtoni një sfond të ri në projekt duke klikuar ikonën e vendosur në të djathtë, ngjitur me ikonën Zgjidhni një Sprite, e cila përdoret për zgjedhjen e spritave të reja.
 
-  Ju mund të shtoni një sfond të ri në projekt duke klikuar ikonën e vendosur në të djathtë, ngjitur me ikonën Zgjidhni një Sprite, e cila përdoret për zgjedhjen e spritave të reja.
+  |new_backdrop|
 
-  |New_backdrop|
-
-.. |new_backdrop| imazh :: ../_images/2/fig2_8.png
+.. |new_backdrop| image:: ../_images/2/fig2_8.png
 
 
 |1| Klikoni në ikonën për të zgjedhur sfondet dhe zgjidhni sfondin *Jurassic* nga biblioteka e prapavijës.
@@ -190,7 +191,7 @@ Shembulli 2 - "Ecen Dinosauri"
 
 |3| Vendosni sprites tuaj si ato janë në figurën e mësipërme. Ju duhet të ndryshoni drejtimin e *Dinosaur2*. Vlera e paracaktuar e drejtimit për të gjitha sprites është 90: sup: `о` (ata po kërkojnë në të djathtë) dhe stili i tyre i rrotullimit është *Gjithë Rreth*. Të gjitha këto cilësime mund të ndryshohen në pjesën e informacionit Sprite ose duke përdorur blloqe të përshtatshme për të formuar skriptet që i shtohen një Sprite të veçantë. Në këtë projekt, ne do të përdorim opsionin e parë.
 
-|4| Në dritaren e informacionit Sprite vendosni stilin e rrotullimit si më poshtë: *Dinosaur1* - *mos rrotullohet*, *Dinosaur2 * - *majtas / djathtas*, *Dinosaur3* - *All*.
+|4| Në dritaren e informacionit Sprite vendosni stilin e rrotullimit si më poshtë: *Dinosaur1* - *mos rrotullohet*, *Dinosaur2* - *majtas / djathtas*, *Dinosaur3* - *All*.
 
 |5| Të gjithë dinosaurët shtojnë të njëjtin skenar, i cili do t'i urdhërojë ata të drejtojnë drejt maceve gjatë drejtimit të të gjithë projektit. Sidoqoftë, ata do të sillen ndryshe sepse nuk kanë të njëjtin stil rotacioni në cilësimet e tyre të informacionit Sprite.
    
@@ -286,9 +287,9 @@ Pyetja 2
 
 .. mchoice:: stage2
    :answer_a: në këndin e sipërm të majtë të Fazës
-   :answer_b: në këndin e poshtëm të majtë të Fazës
-   :answer_c: në qendër të Skenës
-   :answer_d: varet nga sfondi i shtuar
+   :answer_b: në këndin e poshtëm të majtë të Fazës
+   :answer_c: në qendër të Skenës
+   :answer_d: varet nga sfondi i shtuar
    :correct: c
    :feedback_a: 
    :feedback_b: 
@@ -329,7 +330,7 @@ Pyetja 4
    :feedback_a:  
    :feedback_b: Saktë.
    
-    A mund të bllokojë Stage bllokimin e lëvizjes?
+   A mund të bllokojë Stage bllokimin e lëvizjes?
 
 Pyetja 5
 ~~~~~~~~~~
@@ -350,9 +351,9 @@ Pyetja 5
 
    Cilët blloqe mundësojnë lëvizje absolute? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/2/q2_5.png
-      :width: 530px   
-      :align: center
+.. image:: ../_images/2/q2_5.png
+   :width: 530px   
+   :align: center
 
 Pyetja 6
 ~~~~~~~~~~
@@ -373,8 +374,8 @@ Pyetja 6
 
    Cilët blloqe mundësojnë lëvizjen relative? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/2/q2_6.png
-      :width: 530px   
+.. image:: ../_images/2/q2_6.png
+   :width: 530px   
 
 Pyetja 7
 ~~~~~~~~~~
@@ -393,11 +394,11 @@ Pyetja 7
    :feedback_c: 
    :feedback_d: 
 
-    Cila nga blloqet përfaqëson reporterët në lëvizje? (Zgjidhni të gjitha përgjigjet e sakta)
+   Cila nga blloqet përfaqëson reporterët në lëvizje? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/2/q2_7.png
-      :width: 310px   
-      :align: center
+.. image:: ../_images/2/q2_7.png
+   :width: 310px   
+   :align: center
 
 
 Pyetja 8
@@ -460,8 +461,7 @@ Në figurën e mëposhtme mund të shihni një fazë me pesë pika të ndryshme.
    :feedback_c: 
    :feedback_d: 
 
-   Cilat pikë kanë një koordinatë negative *y*?
-    (Zgjidhni të gjitha përgjigjet e sakta)
+   Cilat pikë kanë një koordinatë negative *y*? (Zgjidhni të gjitha përgjigjet e sakta)
 
 .. dragndrop:: coordinates_various
    :feedback: Provo Përsëri
@@ -494,7 +494,7 @@ Në figurën e mëposhtme mund të shihni një fazë me gjashtë pika të ndrysh
     :match_5: E|||(160,80)
     :match_6: F|||(0,80)
     
-    Duke tërhequr drejtkëndësat, çiftoni pikat me koordinatat e tyre.
+    Duke tërhequr drejtkëndëshat, çiftoni pikat me koordinatat e tyre.
 
 .. mchoice:: symmetry_х
    :answer_a: Point А
@@ -537,7 +537,7 @@ Në figurën e mëposhtme mund të shihni një fazë me gjashtë pika të ndrysh
    Cilat pika janë ekuivalente nga boshti *y*? (Zgjidhni të gjitha përgjigjet e sakta)
 
 |try| Provoje!
--------------
+-------------------
 
 Ushtrimi 1 - Ndiq pozicionin e Sprite
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -594,7 +594,7 @@ Ushtrimi 3 - Lëvizja relative dhe absolute
 
 .. infonote::
    
-  |Mundohuni të drejtoni Sprite nga pika A në pikën B duke përdorur blloqe të ndryshme *Lëvizjeje*.
+   Mundohuni të drejtoni Sprite nga pika A në pikën B duke përdorur blloqe të ndryshme *Lëvizjeje*.
    
   |1| Vendosni *Rrjetin* nga libraria e Sfondit si sfond.
 
@@ -602,7 +602,7 @@ Ushtrimi 3 - Lëvizja relative dhe absolute
   
   |3| Vendosni shkronjën A në këndin e poshtëm të majtë të Fazës në pozicionin (-200, -120), dhe shkronjën B në këndin e sipërm të djathtë në pozicionin (200, 120). Mënyra më e saktë për ta bërë këtë është të shtoni |goto_xy| bllokoni shkronjën A (tërhiqeni atë në zonën e shkrimeve ndërsa shkronja A është aktive) dhe shkruani koordinatat e duhura х dhe у, dhe pastaj klikoni në bllok. Ndiqni të njëjtat hapa për shkronjën B.
   
-  |4| Shtoni bllokun |goto| për mace dhe zgjidhni *Block-A* nga lista drop-down (e cila do të shfaqet kur klikoni në trekëndëshin e bardhë në kutinë e zgjedhjes). **Shënim**. |Goto| |! = | |Goto_xy|.
+  |4| Shtoni bllokun |goto| për mace dhe zgjidhni *Block-A* nga lista drop-down (e cila do të shfaqet kur klikoni në trekëndëshin e bardhë në kutinë e zgjedhjes). **Shënim**. |goto| |!=| |goto_xy|.
    
   |5| Klikoni në bllokun |goto| dhe macja do të jetë pas shkronjës A.
   
@@ -614,9 +614,9 @@ Ushtrimi 3 - Lëvizja relative dhe absolute
 
   |7| Tani në |goto| bllokoni zgjidhni *Block-B*, dhe pastaj klikoni mbi të. Macja do të jetë menjëherë përpara shkronjës B.
 
-   |8| Shtoni bllokun |glide_to| për mace dhe zgjidhni *Block-A* nga lista drop-down, pastaj klikoni mbi të. Macja do të rrëshqasë për 1 sekondë te shkronja A. **Shënim**. |Glide_to| |! = | |Glide_xy|.
+   |8| Shtoni bllokun |glide_to| për mace dhe zgjidhni *Block-A* nga lista drop-down, pastaj klikoni mbi të. Macja do të rrëshqasë për 1 sekondë te shkronja A. **Shënim**. |glide_to| |!=| |glide_xy|.
     
-   |9| Provoni mënyrën e tretë. Së pari, shtoni | point_towards | bllok për mace, dhe nga lista drop-down zgjidhni opsionin ku macja tregon drejt sprite  Block-A*. **Shënim**. |Point_towards| |! = | |point_direction|
+   |9| Provoni mënyrën e tretë. Së pari, shtoni |point_towards| bllok për mace, dhe nga lista drop-down zgjidhni opsionin ku macja tregon drejt sprite  Block-A*. **Shënim**. |point_towards| |!=| |point_direction|
 
    Klikoni në |move_steps| bllokoni derisa macja të arrijë shkronjën A.
 

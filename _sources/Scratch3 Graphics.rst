@@ -13,7 +13,7 @@ Në mësimet e mëparshme, mësuam se si mund të lëvizim sprite duke përdorur
 
 .. topic:: Grafik breshke
 
-Scratch është një nga gjuhët moderne të programimit që përfshin opsionet e grafikës së breshkave, e futur për herë të parë në gjuhën *Logo* rreth pesëdhjetë vjet më parë.
+   Scratch është një nga gjuhët moderne të programimit që përfshin opsionet e grafikës së breshkave, e futur për herë të parë në gjuhën *Logo* rreth pesëdhjetë vjet më parë.
 
  *Logo* mundësoi kontrollin e një pajisjeje breshke, një lloj roboti, i cili ishte i lidhur me kompjuterin. Breshka mund të lëvizë në një sipërfaqe horizontale mbrapa dhe me radhë dhe të ndryshojë drejtimin dhe orientimin e saj. Nëse një copë letër ishte vendosur nën breshkë, ajo mund të linte një shenjë, duke formuar kështu grafika të quajtura *grafika e breshkës*.
   
@@ -27,7 +27,7 @@ Scratch është një nga gjuhët moderne të programimit që përfshin opsionet 
 
 .. topic:: Funksionet e blloqeve *Pen*
 
-Grupi *pen* i blloqeve, të cilat bënë të mundur që sprites të lënë një shenjë kur lëvizin, d.m.th. për të mbështetur grafikët e breshkave, janë të vendosura midis shtesave.
+   Grupi *pen* i blloqeve, të cilat bënë të mundur që sprites të lënë një shenjë kur lëvizin, d.m.th. për të mbështetur grafikët e breshkave, janë të vendosura midis shtesave.
 
   Për të përdorur blloqe nga ky grup, duhet të:
 
@@ -43,30 +43,31 @@ Grupi *pen* i blloqeve, të cilat bënë të mundur që sprites të lënë një 
 
 Grupi *Pen* përfshin blloqet e mëposhtme:
  
- .. hlist::
-    :columns: 2
+.. hlist::
+   :columns: 2
 
-     * |erase_all| - fshin të gjitha shenjat e bëra nga stilolapsi
-     * |stamp| - vulos imazhin e sprite në skenë
-     * |pen_up| - heq stilolapsin lart
-     * |pen_down| - e ul penën
-     * |set_color| - vendos ngjyrën e lapsit
-     * |set_pen| - vendos parametrat e vizatimit
-     * |change_pen| - ndryshon parametrat e vizatimit
-     * |set_pen_size| - përcakton madhësinë (trashësinë) e shenjës së stilolapsit
-     * |change_pen_size| - ndryshon madhësinë (trashësinë) e shenjës së stilolapsit
+   * |erase_all| - fshin të gjitha shenjat e bëra nga stilolapsi
+   * |stamp| - vulos imazhin e sprite në skenë
+   * |pen_up| - heq stilolapsin lart
+   * |pen_down| - e ul penën
+   * |set_color| - vendos ngjyrën e lapsit
+   * |set_pen| - vendos parametrat e vizatimit
+   * |change_pen| - ndryshon parametrat e vizatimit
+   * |set_pen_size| - përcakton madhësinë (trashësinë) e shenjës së stilolapsit
+   * |change_pen_size| - ndryshon madhësinë (trashësinë) e shenjës së stilolapsit
 
 Nëse shtoni |pen_down| bllokoni në Sprite tuaj, që nga atëherë, Sprite do të lërë një shenjë në skenë sa herë që lëviz. Kur shtoni bllokun |pen_up|, ajo do të ndalojë të lërë shenjën derisa të shtoni |pen_down| bllokohet përsëri. Pamja e shenjës përcaktohet nga parametrat e vizatimit. Parametrat e vizatimit përfshijnë madhësinë (trashësinë), ngjyrën, ngopjen, shkëlqimin dhe transparencën e shenjës së lënë nga stilolapsi.
  
-  Shënim. |Erase_all| |! = | |Fshi|. Blloku i parë i referohet vizatimeve dhe i dyti sprites.
+  Shënim. |Erase_all| |!=| |hide|. Blloku i parë i referohet vizatimeve dhe i dyti sprites.
 
 
 .. topic:: Përdor mesazhe për sinkronizim
 
  Sjellja nxitet gjithmonë nga një ngjarje, e cila mund të jetë një veprim ose marrje e një mesazhi. Në mësimet dhe projektet e mëparshme, ne përdorëm bllokun ``wait`` kur donim të sinkronizon sjelljen e sprites tonë. Në projektin "Llogaritja" kemi mundësuar që vajzat dhe djemtë tanë të kenë një bisedë të sinkronizuar - kur vajza po fliste, djali po dëgjonte dhe anasjelltas.
  
-  Tani do të tregojmë se si mund të koordinohen veprimet e sprites (dhe skena), në varësi të faktit nëse ka ndodhur një ngjarje e mesazhit të transmetuar.
-  Ju vini re që ne nuk kemi thënë që ne dërgojmë **një mesazh, por që ne e transmetojmë**. Kjo pasi, në Scratch, mesazhi u drejtohet të gjitha objekteve, dhe jo vetëm një. Transmetimi dhe marrja e mesazheve në Scratch arrihet me blloqet e mëposhtme |Transmition|, |transmision_wait| dhe |when_receive| nga grupi *Events*.
+Tani do të tregojmë se si mund të koordinohen veprimet e sprites (dhe skena), në varësi të faktit nëse ka ndodhur një ngjarje e mesazhit të transmetuar.
+  
+Ju vini re që ne nuk kemi thënë që ne dërgojmë **një mesazh, por që ne e transmetojmë**. Kjo pasi, në Scratch, mesazhi u drejtohet të gjitha objekteve, dhe jo vetëm një. Transmetimi dhe marrja e mesazheve në Scratch arrihet me blloqet e mëposhtme |broadcast|, |broadcast_wait| dhe |when_receive| nga grupi *Events*.
 
 |study| Studioni shembujt e mëposhtëm
 ----------------------------------------
@@ -314,12 +315,11 @@ Pyetja 4
    :feedback_c: 
    :feedback_d: 
 
-   Cila prej blloqeve i përket grupit *Pen* të blloqeve?
-    (Zgjidhni të gjitha përgjigjet e sakta)
+   Cila prej blloqeve i përket grupit *Pen* të blloqeve? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/4/q4_4.png
-      :width: 600px   
-      :align: center
+.. image:: ../_images/4/q4_4.png
+   :width: 600px   
+   :align: center
 
 Pyetja 5
 ~~~~~~~~~~
@@ -338,12 +338,11 @@ Pyetja 5
    :feedback_c: 
    :feedback_d: 
 
-   Secili prej këtyre blloqeve ndryshon diçka. Cila do të ndryshojë shenjën e lënë nga lapsa gjatë vizatimit?
-    (Zgjidhni të gjitha përgjigjet e sakta)
+   Secili prej këtyre blloqeve ndryshon diçka. Cila do të ndryshojë shenjën e lënë nga lapsa gjatë vizatimit? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/4/q4_5.png
-      :width: 705px   
-      :align: center
+.. image:: ../_images/4/q4_5.png
+   :width: 705px   
+   :align: center
 
 Pyetja 6
 ~~~~~~~~~~
@@ -362,8 +361,7 @@ Pyetja 6
    :feedback_c: 
    :feedback_d: 
 
-   Në disa programe sprite nuk lë shenjë kur lëviz? Pse ndodh kjo?
-    (Zgjidhni të gjitha përgjigjet e sakta) 
+   Në disa programe sprite nuk lë shenjë kur lëviz? Pse ndodh kjo? (Zgjidhni të gjitha përgjigjet e sakta) 
 
    
 Pyetja 7
@@ -372,13 +370,13 @@ Pyetja 7
 .. level:: 1
 
 .. dragndrop:: pen2
-    :feedback: Try again
-    :match_1: hide|||Looks
-    :match_2: erase all|||Pen
-    :match_3: ask_and wait|||Sensing
-    :match_4: point towards|||Motion
+   :feedback: Try again
+   :match_1: hide|||Looks
+   :match_2: erase all|||Pen
+   :match_3: ask_and wait|||Sensing
+   :match_4: point towards|||Motion
     
-    Duke tërhequr drejtkëndësat, çiftoni blloqet me grupet që i përkasin.
+   Duke tërhequr drejtkëndësat, çiftoni blloqet me grupet që i përkasin.
 
 Pyetja 8
 ~~~~~~~~~~
@@ -386,18 +384,17 @@ Pyetja 8
 .. level:: 2
 
 .. dragndrop:: pen3
-    :feedback: Try again
-    :match_1: red|||0
-    :match_2: yellow|||30
-    :match_3: green|||70
-    :match_4: blue|||130
+   :feedback: Try again
+   :match_1: red|||0
+   :match_2: yellow|||30
+   :match_3: green|||70
+   :match_4: blue|||130
     
-    Çdo numër i tërë në intervalin [0,199] korrespondon me një ngjyrë.
-     Duke tërhequr drejtkëndësat, çiftoni ngjyrat me numrin e tyre të kodit.
+   Çdo numër i tërë në intervalin [0,199] korrespondon me një ngjyrë. Duke tërhequr drejtkëndësat, çiftoni ngjyrat me numrin e tyre të kodit.
 
 
 |try| Provoje!
--------------
+----------------
 
 Ushtrimi 1
 ~~~~~~~~~~
@@ -434,12 +431,13 @@ Ushtrimi 2
 
   Krijoni një skenar i cili do të mundësojë vizatimin e mëposhtëm.
 
-   Zhvendoseni sprite në pozicionin (-50,30), vendoseni lapsin poshtë, se sa të shtoni blloqe që mundësojnë lëvizjet e mëposhtme relative:
+Zhvendoseni sprite në pozicionin (-50,30), vendoseni lapsin poshtë, se sa të shtoni blloqe që mundësojnë lëvizjet e mëposhtme relative:
 
   1 |right|, 1 |down|, 2 |right|, 1 |up|, 1 |right|, 2 |down|, 4 |left|, 2 |up|.
 
   Hyrja 5 |right| do të thotë që sprite duhet të lëvizë 10 hapa në të djathtë 5 herë, dhe hyrja 1 |up| që sprite duhet të lëvizë 10 hapa 1 herë.
-   Për shtimin e komandave lëvizëse, do të përdorim edhe shenjat |left| dhe |down |.
+  
+  Për shtimin e komandave lëvizëse, do të përdorim edhe shenjat |left| dhe |down|.
 
 .......
 
@@ -478,8 +476,7 @@ Ushtrimi 4
   
    Sigurohuni që sprite është e fshehur dhe faza të pastrohet.
 
- 
-   Zhvendoseni sprite në pozicionin (-50,30), kjo do të jetë pika fillestare, vendoseni stilolapsin poshtë, pastaj shtypni serinë e mëposhtme të shigjetave:
+Zhvendoseni sprite në pozicionin (-50,30), kjo do të jetë pika fillestare, vendoseni stilolapsin poshtë, pastaj shtypni serinë e mëposhtme të shigjetave:
 
   1 |right|, 1 |down|, 2 |right|, 1 |up|, 1 |right|, 2 |down|, 5 |right|, 2 |up|, 1 |left|, 1 |up|,
 
@@ -522,7 +519,7 @@ Ushtrimi 5
 
   Të gjitha cilësimet nga Diktimi Grafik 1 ende zbatohen, por algoritmi për vizatim është si vijon:
 
-  Zhvendoseni sprite në pikën fillestare (-60,40), vendoseni lapsin poshtë dhe vizatoni:
+Zhvendoseni sprite në pikën fillestare (-60,40), vendoseni lapsin poshtë dhe vizatoni:
 
  3 |right|, 1 |up|, 1 |right|, 4 |down|, 6 |right|, 1 |up|, 1 |right|, 1 |down|, 1 |left|, 
   
@@ -530,7 +527,7 @@ Ushtrimi 5
 
   Nëse i keni ndjekur mirë udhëzimet, duhet të ktheheni në pikën fillestare.
   
-  Çfarë vizatove?
+Çfarë vizatove?
 
   .. reveal:: answer5
      :showtitle: Trego përgjigjen
@@ -573,8 +570,7 @@ Bug 2
 .. level:: 1
 
 :Question:
-   Nxënësi ka shkruar një program i cili supozohet të vizatojë një vijë blu të gjatë 300 pixel, ku 100 pikselat e parë janë 10 pixel të gjerë, 100 pikselat e dytë janë 20 pixel të gjerë, dhe 100 të fundit janë 30 pixel të gjerë.
-    Kur ai drejtoi për herë të parë programi gjithçka ishte në rregull, por çdo herë pas kësaj kur ai do të drejtonte programin linja ishte gjithnjë e gjerë 30 pixel. Cili është problemi?
+   Nxënësi ka shkruar një program i cili supozohet të vizatojë një vijë blu të gjatë 300 pixel, ku 100 pikselat e parë janë 10 pixel të gjerë, 100 pikselat e dytë janë 20 pixel të gjerë, dhe 100 të fundit janë 30 pixel të gjerë. Kur ai drejtoi për herë të parë programi gjithçka ishte në rregull, por çdo herë pas kësaj kur ai do të drejtonte programin linja ishte gjithnjë e gjerë 30 pixel. Cili është problemi?
 
 .. image:: ../_images/4/bug4_2.png
    :width: 205px   
@@ -586,9 +582,7 @@ Bug 2
  
    **Pëgjigja:**
      
-   Në fund të vrapimit të parë, madhësia e lapsit është vendosur në 30, stilolapsi është vendosur në fund të rreshtit në vend (200,0), dhe nuk është lart.
-    Prandaj, kur programi shkon për herë të dytë, stilolapsi do të kthehet në pozicionin e fillimit me madhësinë e stilolapsit të vendosur në 30 pixel, kështu që nëse tërheq mbi të njëjtën shenjë me një madhësi më të vogël të penës, shenja e re nuk do të jetë e dukshme .
-    Gabimi do të korrigjohet nëse lapsi ngrihet përpara se të kthehet në pozicionin e saj fillestar.
+   Në fund të vrapimit të parë, madhësia e lapsit është vendosur në 30, stilolapsi është vendosur në fund të rreshtit në vend (200,0), dhe nuk është lart. Prandaj, kur programi shkon për herë të dytë, stilolapsi do të kthehet në pozicionin e fillimit me madhësinë e stilolapsit të vendosur në 30 pixel, kështu që nëse tërheq mbi të njëjtën shenjë me një madhësi më të vogël të penës, shenja e re nuk do të jetë e dukshme .Gabimi do të korrigjohet nëse lapsi ngrihet përpara se të kthehet në pozicionin e saj fillestar.
  
    
 Bug 3

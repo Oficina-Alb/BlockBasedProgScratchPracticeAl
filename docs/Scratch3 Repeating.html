@@ -215,32 +215,19 @@
 <p>Në shembujt e linjave të vizatimit të mësimit të mëparshëm, ne kemi përdorur urdhërat e përsëritjes për të marrë sprites tonë, duke lëvizur me stilolaps poshtë, për të tërhequr atë që donim, me më pak shkrime.
 Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vijë të pikuar që është e gjatë 400 piksele, shtuam vetëm pesë: katër që përsërisin një model, dhe e pesta që përcakton numrin e përsëritjeve të kërkuara.</p>
 <p>Në këtë mësim, ne do t’i lidhim komandat e përsëritjes me komandat e lëvizjes dhe shikimit, në mënyrë që të krijojmë animacione të ndryshme. Për më tepër, ne do të prezantojmë një komandë e cila ju lejon të vendosni të dhëna hyrëse dhe blloqe që ruajnë vlerat e shprehjeve logjike.</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 18)</p>
-<p>Content block expected for the “topic” directive; none found.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span> <span class="n">blloqe</span> <span class="n">që</span> <span class="n">lejojnë</span> <span class="n">përseritjen</span>
-</pre></div>
-</div>
-</div>
+<div class="topic">
+<p class="topic-title">blloqe që lejojnë përseritjen</p>
 <p>Një nga shembujt më të thjeshtë të komandave të përsëritjes është komanda për përshkrimin e të ashtuquajturit “forever loop”. Komandat përsëritëse përbëjnë <strong>trupin e ciklit</strong>. Drejtimi i tyre mund të ndalet vetëm duke ndaluar programin.</p>
-<blockquote>
-<div><a class="reference internal image-reference" href="_images/fig5_1.png"><img alt="_images/fig5_1.png" class="align-center" src="_images/fig5_1.png" style="width: 310px;" /></a>
-<p>Për shembull, nëse doni të arrini një iluzion që macja po ecën, balerina po vallëzon, dhe flutura po fluturon, gjithçka që duhet të bëni është të shtoni një skenar për ta që përsërit blloqet <a href="#id3"><span class="problematic" id="id4">|next_costume | dhe |wait_sec|</span></a> në një lak përgjithmonë.</p>
-</div></blockquote>
+</div>
+<a class="reference internal image-reference" href="_images/fig5_1.png"><img alt="_images/fig5_1.png" class="align-center" src="_images/fig5_1.png" style="width: 310px;" /></a>
+<p>Për shembull, nëse doni të arrini një iluzion që macja po ecën, balerina po vallëzon, dhe flutura po fluturon, gjithçka që duhet të bëni është të shtoni një skenar për ta që përsërit blloqet <img alt="next_costume" src="_images/next_costume.png" /> dhe <img alt="wait_sec" src="_images/wait_sec.png" /> në një lak përgjithmonë.</p>
 <p>  Sigurisht, një sprite duhet të ketë të paktën dy kostume dhe periudha e pritjes duhet të jetë e shkurtër, për shembull, 2 të dhjetat e sekondës (0.2). Komanda e pritjes midis ndryshimeve të kostumit është e domosdoshme që të mund të vëzhgojmë ndryshimin e pamjes.
   Syri i njeriut nuk është në gjendje të regjistrojë ndryshimet me shpejtësinë që i bën kompjuteri. Kjo është arsyeja pse ne jemi duke “ndalur” pamjen e kostumit duke përdorur komandën e pritjes, derisa syri ynë të regjistrojë imazhin e mëparshëm.</p>
-<p>  Në shembujt e paraqitur në mësimin e mëparshëm kemi përdorur të ashtuquajturat “sythe numërimi”. Këto janë përsëritje që dinë paraprakisht se sa herë trupi i lakut do të ekzekutohet.</p>
-<blockquote>
-<div><a class="reference internal image-reference" href="_images/fig5_2.png"><img alt="_images/fig5_2.png" class="align-center" src="_images/fig5_2.png" style="width: 350px;" /></a>
+<p>Në shembujt e paraqitur në mësimin e mëparshëm kemi përdorur të ashtuquajturat “sythe numërimi”. Këto janë përsëritje që dinë paraprakisht se sa herë trupi i lakut do të ekzekutohet.</p>
+<a class="reference internal image-reference" href="_images/fig5_2.png"><img alt="_images/fig5_2.png" class="align-center" src="_images/fig5_2.png" style="width: 350px;" /></a>
 <p>Në Scratch, ekziston gjithashtu një urdhër për të përshkruar një cikël kur numri i përsëritjeve nuk dihet paraprakisht, por varet nëse plotësohet kushti për daljen nga cikli.</p>
 <a class="reference internal image-reference" href="_images/fig5_3.png"><img alt="_images/fig5_3.png" class="align-center" src="_images/fig5_3.png" style="width: 365px;" /></a>
-<p>Kushti për kalimin e komandave të trupit të ciklit (kushti për dalje), kontrollohet në fillim të çdo ciklit, kështu që ekziston mundësia që cikli mos të ekzekutohet as një herë, nëse përcaktohet se kushti është përmbushur gjatë parë kontrolloni.</p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 45)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>  Mund të ndodhë gjithashtu që cikli të vazhdojë të funksionojë pafundësisht nëse kushti për daljen nga lak nuk është përmbushur kurrë.</p>
+<p>Kushti për kalimin e komandave të trupit të ciklit (kushti për dalje), kontrollohet në fillim të çdo ciklit, kështu që ekziston mundësia që cikli mos të ekzekutohet as një herë, nëse përcaktohet se kushti është përmbushur gjatë parë kontrolloni. Mund të ndodhë gjithashtu që cikli të vazhdojë të funksionojë pafundësisht nëse kushti për daljen nga lak nuk është përmbushur kurrë.</p>
 <div class="section" id="study-studioni-shembujt-e-meposhtem">
 <h2><img alt="study" src="_images/study.png" /> Studioni shembujt e mëposhtëm<a class="headerlink" href="#study-studioni-shembujt-e-meposhtem" title="Permalink to this headline">¶</a></h2>
 <div class="sidebar">
@@ -278,31 +265,27 @@ Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vij�
 <p>  Rezultati i dëshiruar i përfundimit të detyrës mund të shihet në Figurën 1.</p>
 <p>  Ky rezultat mund të arrihet duke përfunduar hapat e mëposhtëm:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">hlist</span><span class="p">::</span>
-   <span class="p">:</span><span class="n">columns</span><span class="p">:</span> <span class="mi">2</span>
+  <span class="p">:</span><span class="n">columns</span><span class="p">:</span> <span class="mi">2</span>
 
-    <span class="o">*</span> <span class="o">|</span><span class="mi">1</span><span class="o">|</span> <span class="n">ne</span> <span class="n">zmadhojmë</span> <span class="n">sprite</span> <span class="mi">300</span><span class="o">%</span> <span class="n">kështu</span> <span class="n">që</span> <span class="n">tani</span> <span class="n">ylli</span> <span class="n">ka</span> <span class="n">dimensionet</span> <span class="mi">120</span><span class="n">х120</span><span class="p">,</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">1</span><span class="o">|</span> <span class="n">ne</span> <span class="n">zmadhojmë</span> <span class="n">sprite</span> <span class="mi">300</span><span class="o">%</span> <span class="n">kështu</span> <span class="n">që</span> <span class="n">tani</span> <span class="n">ylli</span> <span class="n">ka</span> <span class="n">dimensionet</span> <span class="mi">120</span><span class="n">х120</span><span class="p">,</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">2</span><span class="o">|</span> <span class="n">ne</span> <span class="n">e</span> <span class="n">pozicionojmë</span> <span class="n">sprite</span> <span class="n">në</span> <span class="n">mënyrë</span> <span class="n">që</span> <span class="n">ana</span> <span class="n">e</span> <span class="n">majtë</span> <span class="n">e</span> <span class="n">yllit</span> <span class="n">të</span> <span class="n">jetë</span> <span class="n">e</span> <span class="n">drejtë</span> <span class="n">pranë</span> <span class="n">skajit</span> <span class="n">të</span> <span class="n">majtë</span> <span class="n">të</span> <span class="n">fazës</span><span class="p">:</span> <span class="n">х</span> <span class="o">=</span> <span class="o">-</span><span class="mi">180</span><span class="p">,</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">3</span><span class="o">|</span> <span class="n">ne</span> <span class="n">lëmë</span> <span class="n">një</span> <span class="n">pullë</span><span class="p">,</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">4</span><span class="o">|</span> <span class="n">ne</span> <span class="n">e</span> <span class="n">lëvizim</span> <span class="n">sprite</span> <span class="n">gjerësinë</span> <span class="n">e</span> <span class="n">saj</span> <span class="n">në</span> <span class="n">të</span> <span class="n">djathtë</span> <span class="p">(</span><span class="mi">120</span> <span class="n">hapa</span><span class="p">),</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">5</span><span class="o">|</span> <span class="n">ne</span> <span class="n">ndryshojmë</span> <span class="n">ngjyrën</span> <span class="n">e</span> <span class="n">sprite</span> <span class="p">(</span><span class="n">duke</span> <span class="n">përdorur</span> <span class="n">komandën</span> <span class="n">e</span> <span class="n">efektit</span> <span class="n">të</span> <span class="n">ngjyrës</span> <span class="n">së</span> <span class="n">ndryshimit</span><span class="p">),</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">6</span><span class="o">|</span> <span class="n">ne</span> <span class="n">lëmë</span> <span class="n">një</span> <span class="n">pullë</span><span class="p">,</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">7</span><span class="o">|</span> <span class="n">ne</span> <span class="n">e</span> <span class="n">lëvizim</span> <span class="n">sprite</span> <span class="n">gjerësinë</span> <span class="n">e</span> <span class="n">saj</span> <span class="n">në</span> <span class="n">të</span> <span class="n">djathtë</span> <span class="p">(</span><span class="mi">120</span> <span class="n">hapa</span><span class="p">),</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">8</span><span class="o">|</span> <span class="n">ne</span> <span class="n">ndryshojmë</span> <span class="n">ngjyrën</span> <span class="n">e</span> <span class="n">sprite</span> <span class="p">(</span><span class="n">duke</span> <span class="n">përdorur</span> <span class="n">komandën</span> <span class="n">e</span> <span class="n">efektit</span> <span class="n">të</span> <span class="n">ngjyrës</span> <span class="n">së</span> <span class="n">ndryshimit</span><span class="p">),</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">9</span><span class="o">|</span> <span class="n">ne</span> <span class="n">lëmë</span> <span class="n">një</span> <span class="n">pullë</span><span class="p">,</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">10</span><span class="o">|</span> <span class="n">ne</span> <span class="n">e</span> <span class="n">lëvizim</span> <span class="n">sprite</span> <span class="n">gjerësinë</span> <span class="n">e</span> <span class="n">saj</span> <span class="n">në</span> <span class="n">të</span> <span class="n">djathtë</span> <span class="p">(</span><span class="mi">120</span> <span class="n">hapa</span><span class="p">),</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">11</span><span class="o">|</span> <span class="n">ne</span> <span class="n">ndryshojmë</span> <span class="n">ngjyrën</span> <span class="n">e</span> <span class="n">sprite</span> <span class="p">(</span><span class="n">duke</span> <span class="n">përdorur</span> <span class="n">komandën</span> <span class="n">e</span> <span class="n">efektit</span> <span class="n">të</span> <span class="n">ngjyrës</span> <span class="n">së</span> <span class="n">ndryshimit</span><span class="p">),</span>
+  <span class="o">*</span> <span class="o">|</span><span class="mi">12</span><span class="o">|</span> <span class="n">ne</span> <span class="n">lëmë</span> <span class="n">një</span> <span class="n">pullë</span><span class="o">.</span>
 </pre></div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 108)</p>
-<p>Literal block ends without a blank line; unexpected unindent.</p>
-</div>
-<p>     * <img alt="2" src="_images/2.png" /> ne e pozicionojmë sprite në mënyrë që ana e majtë e yllit të jetë e drejtë pranë skajit të majtë të fazës: х = -180,
-     * <img alt="3" src="_images/3.png" /> ne lëmë një pullë,
-     * <img alt="4" src="_images/4.png" /> ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
-     * <img alt="5" src="_images/5.png" /> ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
-     * <img alt="6" src="_images/6.png" /> ne lëmë një pullë,
-     * <img alt="7" src="_images/7.png" /> ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
-     * <img alt="8" src="_images/8.png" /> ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
-     * <img alt="9" src="_images/9.png" /> ne lëmë një pullë,
-     * <img alt="10" src="_images/10.png" /> ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
-     * <img alt="11" src="_images/11.png" /> ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
-     * <img alt="12" src="_images/12.png" /> ne lëmë një pullë.</p>
 <p>  Mund të shohim që i përsërisëm hapat 4-6 tri herë. Mund të kishim bërë të njëjtën gjë me më pak shkrime, siç ilustron figura e mëposhtme.</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="_images/fig5_7.png"><img alt="_images/fig5_7.png" class="align-center" src="_images/fig5_7.png" style="width: 500px;" /></a>
-<p>Blloku <img alt="repeat" src="_images/repeat.png" /> nga grupi <em>Control</em> na lejon të grumbullojmë skenarin e kërkuar vetëm një herë dhe të vendosim sa herë duhet të përsëritet.</p>
 </div></blockquote>
+<p>Blloku <img alt="repeat" src="_images/repeat.png" /> nga grupi <em>Control</em> na lejon të grumbullojmë skenarin e kërkuar vetëm një herë dhe të vendosim sa herë duhet të përsëritet.</p>
 <p>  Ky bllok është një shembull i të ashtuquajturave <strong>C-blocks</strong>, forma e të cilit na kujton shkronjën C. Thërrima brenda një blloku C merr një skenar si një fushë hyrëse. Prandaj, ky bllok ka dy fusha hyrëse: njëra për numrin e përsëritjeve dhe tjetra për skenarin.</p>
 <div class="sidebar">
 <p class="sidebar-title">Imazhi 2</p>
@@ -321,19 +304,13 @@ Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vij�
 <p class="sidebar-title">Imazhi 3</p>
 <p><img alt="fig3" src="_images/fig5_10.png" /></p>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 154)</p>
-<p>Content block expected for the “topic” directive; none found.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">topic</span><span class="p">::</span>  <span class="n">Detyra</span> <span class="mi">3</span>
-</pre></div>
-</div>
-</div>
+<div class="topic">
+<p class="topic-title">Detyra 3</p>
 <p>Shkruaj një program i cili do të vizatojë 15 yje me ngjyra të ndryshme njëra mbi tjetrën në qendër të skenës, madhësia e yllit të parë duhet të jetë 320x320 (800% më e madhe se origjinali), dhe secila pas kësaj duhet të jetë më e vogël nga 50, siç është paraqitur në figurën 3.</p>
+</div>
 <p>  Sidoqoftë, kur themi më të vogël për 50, nënkuptojmë 750%, 700% … më të mëdha se origjinale (dhe jo 50 pixel më të vegjël, ose 50% të 800%). Për të shmangur përzierjen e imazhit të ri me atë të bërë gjatë ekzekutimit të mëparshëm, duhet të shtojmë komandën erase në fillim.</p>
 <p>  Zgjidhja e detyrës është dhënë në figurën e mëposhtme.</p>
-<blockquote>
-<div><a class="reference internal image-reference" href="_images/fig5_11.png"><img alt="_images/fig5_11.png" class="align-center" src="_images/fig5_11.png" style="width: 225px;" /></a>
-</div></blockquote>
+<a class="reference internal image-reference" href="_images/fig5_11.png"><img alt="_images/fig5_11.png" class="align-center" src="_images/fig5_11.png" style="width: 225px;" /></a>
 <div class="sidebar">
 <p class="sidebar-title">Imazhi 4</p>
 <p><img alt="fig4" src="_images/fig5_12.png" /></p>
@@ -394,7 +371,7 @@ Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vij�
 <p>Ne do të përmirësojmë projektin në mënyrë që ai të tërheq një formë gjeometrike të dhënë nga përdoruesi me të dhënat e hyrjes. Në këtë version të projektit, parametrat e vizatimit përcaktohen duke klikuar mbi flamurin e gjelbër. Pastaj përdoruesit i kërkohet të shtypë numrin e anëve të poligonit që ai / ajo dëshiron të vizatojë.</p>
 <p>Blloku i të dhënave hyrëse <img alt="ask_wait" src="_images/ask_wait.png" /> ndodhet në grupin <a href="#id1"><span class="problematic" id="id2">*</span></a>Sensing .</p>
 <div class="system-message" id="id1">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 261); <em><a href="#id2">backlink</a></em></p>
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 260); <em><a href="#id2">backlink</a></em></p>
 <p>Inline emphasis start-string without end-string.</p>
 </div>
 <p>Pas ekzekutimit të kësaj komande, Scratch kujton atë që përdoruesi vendosi në hapësirën e quajtur <img alt="answer" src="_images/answer.png" /></p>
@@ -438,7 +415,7 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="loop01">
-            <p>Q-55:  A është gjendja që lejon daljen nga një cikël i quajtur trupi i ciklit?</p>
+            <p>Q-55: A është gjendja që lejon daljen nga një cikël i quajtur trupi i ciklit?</p>
 
             <li data-component="answer"  id="loop01_opt_a">po</li><li data-component="feedback" id="loop01_opt_a"></li>
             
@@ -457,7 +434,7 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="loop02">
-            <p>Q-56:  A është ndalja e programit mënyra e vetme për të ndaluar funksionimin e forever loop?</p>
+            <p>Q-56: A është ndalja e programit mënyra e vetme për të ndaluar funksionimin e forever loop?</p>
 
             <li data-component="answer" data-correct id="loop02_opt_a">po</li><li data-component="feedback" id="loop02_opt_a">Saktë.</li>
             
@@ -496,7 +473,6 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="loop04">
             <p>Q-58: Cila nga këto cikle forever lejon që sprite të lëvizë majtas-djathtas dhe të duket djathtas, nëse <img alt="goto_xy" src="_images/goto_xy.png" />, <img alt="point_towards" src="_images/point_towards.png" /> dhe <img alt="rotation_style" src="_images/rotation_style.png" /> komandat ishin ekzekutuar më parë? (Zgjidhni të gjitha përgjigjet e sakta).</p>
-<a class="reference internal image-reference" href="_images/q5_4.png"><img alt="_images/q5_4.png" class="align-center" src="_images/q5_4.png" style="width: 665px;" /></a>
 
             <li data-component="answer" data-correct id="loop04_opt_a"></li><li data-component="feedback" id="loop04_opt_a"></li>
             
@@ -509,7 +485,8 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 
             </ul>
             </div>
-            </div>
+            <a class="reference internal image-reference" href="_images/q5_4.png"><img alt="_images/q5_4.png" class="align-center" src="_images/q5_4.png" style="width: 665px;" /></a>
+</div>
 <div class="section" id="pyetja-5">
 <h3>Pyetja 5<a class="headerlink" href="#pyetja-5" title="Permalink to this headline">¶</a></h3>
 
@@ -520,7 +497,6 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="loop05">
             <p>Q-59: Cila nga këto sythe përgjithmonë lejon që sprite të ndryshojë vazhdimisht midis dy pozicioneve: këmbët lart dhe këmbët poshtë, nëse <img alt="goto_xy" src="_images/goto_xy.png" />, <img alt="point_towards" src="_images/point_towards.png" /> dhe <img alt="rotation_style2" src="_images/rotation_style2.png" /> komandat ishin ekzekutuar më parë? (Zgjidhni të gjitha përgjigjet e sakta).</p>
-<a class="reference internal image-reference" href="_images/q5_5.png"><img alt="_images/q5_5.png" class="align-center" src="_images/q5_5.png" style="width: 690px;" /></a>
 
             <li data-component="answer"  id="loop05_opt_a"></li><li data-component="feedback" id="loop05_opt_a"></li>
             
@@ -533,7 +509,8 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 
             </ul>
             </div>
-            </div>
+            <a class="reference internal image-reference" href="_images/q5_5.png"><img alt="_images/q5_5.png" class="align-center" src="_images/q5_5.png" style="width: 690px;" /></a>
+</div>
 <div class="section" id="pyetja-6">
 <h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
@@ -544,7 +521,6 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="for01">
             <p>Q-60: Cila nga këto cikle numërimi lejon që Sprite të bëjë 80 hapa? (Zgjidhni të gjitha përgjigjet e sakta).</p>
-<a class="reference internal image-reference" href="_images/q5_6.png"><img alt="_images/q5_6.png" class="align-center" src="_images/q5_6.png" style="width: 565px;" /></a>
 
             <li data-component="answer" data-correct id="for01_opt_a"></li><li data-component="feedback" id="for01_opt_a"></li>
             
@@ -557,7 +533,8 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 
             </ul>
             </div>
-            </div>
+            <a class="reference internal image-reference" href="_images/q5_6.png"><img alt="_images/q5_6.png" class="align-center" src="_images/q5_6.png" style="width: 565px;" /></a>
+</div>
 <div class="section" id="pyetja-7">
 <h3>Pyetja 7<a class="headerlink" href="#pyetja-7" title="Permalink to this headline">¶</a></h3>
 
@@ -614,7 +591,6 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="repeat2">
             <p>Q-63: Cila nga këto rafte do të lejojë që Sprite të thotë <em>Hello</em> nëse përdoruesi fut vlerën 0?</p>
-<a class="reference internal image-reference" href="_images/q5_9.png"><img alt="_images/q5_9.png" class="align-center" src="_images/q5_9.png" style="width: 500px;" /></a>
 
             <li data-component="answer" data-correct id="repeat2_opt_a">A</li><li data-component="feedback" id="repeat2_opt_a">Saktë.</li>
             
@@ -627,7 +603,8 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 
             </ul>
             </div>
-            
+            <a class="reference internal image-reference" href="_images/q5_9.png"><img alt="_images/q5_9.png" class="align-center" src="_images/q5_9.png" style="width: 500px;" /></a>
+
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="repeat2b">
             <p>Q-64: Sa herë do të funksionojë trupi i ciklit (А), nëse përdoruesi fut përgjigjet e pyetjes sipas rendit vijues: 1, 2, 3, 0.</p>
@@ -669,14 +646,6 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 </div>
 <div class="section" id="try-provoje">
 <h2><img alt="try" src="_images/try.png" /> Provoje!<a class="headerlink" href="#try-provoje" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 545)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>|try| Provoje!
--------------
-</pre></div>
-</div>
-</div>
 <div class="section" id="ushtrimi-1">
 <h3>Ushtrimi 1<a class="headerlink" href="#ushtrimi-1" title="Permalink to this headline">¶</a></h3>
 

@@ -15,8 +15,9 @@ Në këtë mësim, ne do të mësojmë se si të përdorim blloqet e komandës q
 
 .. topic:: Komanda me Degët
 
- Në projektet që kanë një strukturë të thjeshtë lineare, çdo komandë funksionon vetëm një herë.
- Në mësimin e mëparshëm, mësuam për blloqet C - blloqet që përshkruajnë ciklin, të cilat lejojnë që komandat e tjera, të cilat futen në to, të ekzekutojnë shumë herë. Përveç blloqeve që përshkruajnë ciklin, blloqet që mundësojnë degëzimin gjithashtu kanë një hyrje për një skenar. Në varësi të plotësimit të kushteve të degëzimit, komandat e futura do të ekzekutohen apo jo.
+   Në projektet që kanë një strukturë të thjeshtë lineare, çdo komandë funksionon vetëm një herë.
+
+Në mësimin e mëparshëm, mësuam për blloqet C - blloqet që përshkruajnë ciklin, të cilat lejojnë që komandat e tjera, të cilat futen në to, të ekzekutojnë shumë herë. Përveç blloqeve që përshkruajnë ciklin, blloqet që mundësojnë degëzimin gjithashtu kanë një hyrje për një skenar. Në varësi të plotësimit të kushteve të degëzimit, komandat e futura do të ekzekutohen apo jo.
  
  Komanda e degëzimit që korrespondon me bllokun C ka një hyrje në skript, përveç fushës së hyrjes logjike të shprehjes. Ndërsa komanda e degëzimit që korrespondon me bllokun E ka dy hyrje të skriptit. Nëse kushti i degëzimit është përmbushur, komanda e parë do të lejojë ekzekutimin e komandave të futura në *if ... else* "mouth", dhe nëse jo, këto komanda nuk do të ekzekutohen, dhe programi do të vazhdojë në *else* pjesë e bllokut, e cila përshkruan se çfarë duhet të bëhet në rast se kushti nuk është përmbushur.      
 
@@ -34,7 +35,7 @@ Komanda e dytë e ndarjes me kusht kushton disa komanda në varësi të faktit n
 
 .. topic:: Elementët bazë të programimit logjik në Scratch 
 
-Siç thamë edhe më parë, shkrimet përshkruajnë sjelljen e objekteve, të cilave u janë bashkangjitur. Të gjithë skenarët e sjelljes, sado komplekse, përbëhen nga kombinime të elementeve themelorë të logjikës së programit, këto janë:
+   Siç thamë edhe më parë, shkrimet përshkruajnë sjelljen e objekteve, të cilave u janë bashkangjitur. Të gjithë skenarët e sjelljes, sado komplekse, përbëhen nga kombinime të elementeve themelorë të logjikës së programit, këto janë:
   
  * sekuencat hap,
 
@@ -94,19 +95,19 @@ Algoritmi i tretë, i cili ka sythe, korrespondon me skenarin që ka komanda pë
 **Skriptet në Scratch duken si algoritme të shkruara me diagrame bllok.**
 
 
-.. topic:: Funksionet e bllokut nga grupi*Sensing* 
+.. topic:: Funksionet e bllokut nga grupi *Sensing* 
 
- Grupi *Sensing* është i përbërë nga blloqe që lejojnë projektin të pranojë të dhëna nga pajisje të ndryshme, ashtu si njerëzit përdorin shqisat për të mbledhur informacione nga mjedisi i tyre. Ekzistojnë blloqe, të cilat ruajnë të dhënat që korrespondojnë me të dhënat që një person do të mbledhte me sensin e prekjes, shikimit ose dëgjimit. Disa blloqe në këtë grup lejojnë që të nxiten veprime të ndryshme në varësi të pozitës së sprite, si dhe në varësi të kohës, datës, etj. Në këtë mësim, ne do të prezantojmë blloqet që:
+   Grupi *Sensing* është i përbërë nga blloqe që lejojnë projektin të pranojë të dhëna nga pajisje të ndryshme, ashtu si njerëzit përdorin shqisat për të mbledhur informacione nga mjedisi i tyre. Ekzistojnë blloqe, të cilat ruajnë të dhënat që korrespondojnë me të dhënat që një person do të mbledhte me sensin e prekjes, shikimit ose dëgjimit. Disa blloqe në këtë grup lejojnë që të nxiten veprime të ndryshme në varësi të pozitës së sprite, si dhe në varësi të kohës, datës, etj. Në këtë mësim, ne do të prezantojmë blloqet që:
 
   * ruaj informacionin për pozicionin e sprite në lidhje me treguesin e miut dhe objektet e tjera,
   * aktivizoni të dhënat hyrëse duke përdorur tastierën,
   * ruaj informacionin për operacionet e vazhdueshme të kryera nga miu dhe tastiera.
 
-  Blloqet e mbetura nga grupi *Sensing* do të prezantohen në mësimet e mëposhtme, dhe një përmbledhje e plotë e funksioneve të tyre është dhënë në pjesën * Shtojca *.
+ Blloqet e mbetura nga grupi *Sensing* do të prezantohen në mësimet e mëposhtme, dhe një përmbledhje e plotë e funksioneve të tyre është dhënë në pjesën *Shtojca*.
 
 
 |study| Studioni shembujt e mëposhtëm
-------------------------------------
+--------------------------------------
 
 Shembulli 1 - Projekt "Selection"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -235,10 +236,11 @@ Nga paleta, mjetet që përmbajnë vektor zgjedhin |v_rectan|, dhe mënyra e viz
    :width: 380px   
    :align: center
 
-Meqenëse keni përdorur mjetin |v_group  për të grupuar objektet, të cilat përbëjnë shtëpinë, mund të përdorni mjetin |copy| për ta kopjuar atë. Pasi ta keni bërë këtë, vendosni kopjen në këndin e poshtëm të djathtë të skenës dhe shtëpinë origjinale në këndin e sipërm të majtë.
+Meqenëse keni përdorur mjetin |v_group| për të grupuar objektet, të cilat përbëjnë shtëpinë, mund të përdorni mjetin |copy| për ta kopjuar atë. Pasi ta keni bërë këtë, vendosni kopjen në këndin e poshtëm të djathtë të skenës dhe shtëpinë origjinale në këndin e sipërm të majtë.
+
 Pastaj vendosni madhësinë e të dy sprites që të mund të futen brenda shtëpive të tyre.
 
-Tani, ne do të kalojmë në pikturë, dhe ne do të përdorim mjetin  v_fill|. Zbatimi i këtij mjeti, kur bëhet fjalë për plotësimin e zonave të caktuara, nuk është i njëjtë me mënyrën e rasterit (bitmap).
+Tani, ne do të kalojmë në pikturë, dhe ne do të përdorim mjetin |v_fill|. Zbatimi i këtij mjeti, kur bëhet fjalë për plotësimin e zonave të caktuara, nuk është i njëjtë me mënyrën e rasterit (bitmap).
 Nëse zona nuk është e mbyllur, në modalitetin e rasterit bojë do të "rrjedh" në tërë imazhin. Në mënyrën vektoriale, kjo nuk ndodh - nuk do të jeni në gjendje ta pikturoni atë fare.
 Kjo është arsyeja pse së pari duhet të "mbyllni" zonën që dëshironi të pikturoni.
 Kjo është bërë duke përdorur mjetin |v_select|, ju duhet të klikoni në imazh, dhe pastaj ju zgjidhni pjesën e figurës që nuk është e lidhur (2) dhe bashkëngjitni atë në pjesën tjetër të figurës (3). Pastaj, duke përdorur mjetin |v_fill|, ju mund të pikturoni si brendësinë (4) ashtu edhe linjat që formojnë zonën (5).
@@ -435,20 +437,20 @@ Pyetja 7
 
 .. mchoice:: if07
    :answer_a: të ndryshme pavarësisht nga pozicioni i sprite
-   :answer_b: e njëjta pavarësisht nga pozicioni i sprite
-   :answer_c: e ndryshme nëse y nuk është 0
-   :answer_d: e ndryshme nëse x nuk është 0
-   :correct: b
-   :feedback_a: Në të dyja rastet, kushti që duhet të përmbushet për fjalinë "Ju jeni në qendër të fazës" që duhet thënë, është e njëjtë.
-   :Feedback_b:
-   :feedback_c: Në këtë rast, kushti nuk plotësohet në asnjë prej blloqeve (A) ose (B), dhe "Ju jeni në qendër të fazës" nuk do të thuhet.
-   :feedback_d: Në këtë rast, kushti nuk plotësohet në asnjë prej blloqeve (A) ose (B), dhe "Ju jeni në qendër të fazës" nuk do të thuhet.
+   :answer_b: e njëjta pavarësisht nga pozicioni i sprite
+   :answer_c: e ndryshme nëse y nuk është 0
+   :answer_d: e ndryshme nëse x nuk është 0
+   :correct: b
+   :feedback_a: Në të dyja rastet, kushti që duhet të përmbushet për fjalinë "Ju jeni në qendër të fazës" që duhet thënë, është e njëjtë.
+   :Feedback_b:
+   :feedback_c: Në këtë rast, kushti nuk plotësohet në asnjë prej blloqeve (A) ose (B), dhe "Ju jeni në qendër të fazës" nuk do të thuhet.
+   :feedback_d: Në këtë rast, kushti nuk plotësohet në asnjë prej blloqeve (A) ose (B), dhe "Ju jeni në qendër të fazës" nuk do të thuhet.
+   
+   Cili është rezultati i ekzekutimit të komandave të bllokut (А) dhe (В)?
 
-    Cili është rezultati i ekzekutimit të komandave të bllokut (А) dhe (В)?
-
-   .. image:: ../_images/6/q6_07.png
-      :width: 600px   
-      :align: center
+.. image:: ../_images/6/q6_07.png
+   :width: 600px   
+   :align: center
 
 Pyetja 8
 ~~~~~~~~~~
@@ -462,14 +464,14 @@ Pyetja 8
    :answer_c: 
    :correct: a
    :feedback_a: Në mënyrë të qartë përcakton që х = 0 dhe у = 0.
-   :feedback_b: Këto janë koordinatat e disa prej pikave në diagonale të sistemit të koordinatave, ato mund të jenë (0,0), por ato nuk duhet të jenë.
-   :feedback_c: Këto janë koordinatat e disa prej pikave në boshtin x ose boshtin y. Mund të jetë gjithashtu pika ku ato kryqëzohen, por nuk ka pse të jetë.
+   :feedback_b: Këto janë koordinatat e disa prej pikave në diagonale të sistemit të koordinatave, ato mund të jenë (0,0), por ato nuk duhet të jenë.
+   :feedback_c: Këto janë koordinatat e disa prej pikave në boshtin x ose boshtin y. Mund të jetë gjithashtu pika ku ato kryqëzohen, por nuk ka pse të jetë.
+   
+   Cila nga komandat e gjendjes ka gjendjen e duhur për thënien - koordinatat e vendndodhjes së sprite janë (0,0), d.m.th. spraza është në qendër të fazës? (Zgjidhni të gjitha përgjigjet e sakta)
 
-    Cila nga komandat e gjendjes ka gjendjen e duhur për thënien - koordinatat e vendndodhjes së sprite janë (0,0), d.m.th. spraza është në qendër të fazës? (Zgjidhni të gjitha përgjigjet e sakta)
-
-   .. image:: ../_images/6/q6_08.png
-      :width: 1020px   
-      :align: center
+.. image:: ../_images/6/q6_08.png
+   :width: 1020px   
+   :align: center
    
 Pyetja 9
 ~~~~~~~~~~
@@ -484,9 +486,9 @@ Pyetja 9
    :answer_d: 
    :correct: a,d
    :feedback_a: Pjesa e mbetur, pasi numri është ndarë me 6, është 0.
-   :feedback_b: Numri 2 dhe 3 plotësojnë këtë gjendje, por ato nuk mund të ndahen me 6.
-   :feedback_c: Numri 11 e plotëson këtë gjendje, por nuk mund të ndahet me 6.
-   :feedback_d: Numri mund të ndahet nga të dy faktorët kryesorë të numrit 6.
+   :feedback_b: Numri 2 dhe 3 plotësojnë këtë gjendje, por ato nuk mund të ndahen me 6.
+   :feedback_c: Numri 11 e plotëson këtë gjendje, por nuk mund të ndahet me 6.
+   :feedback_d: Numri mund të ndahet nga të dy faktorët kryesorë të numrit 6.
    
     Në projektin *Marrja e një vendimi* treguam se si përdoret operacioni *mod* për të kontrolluar nëse një numër i caktuar mund të ndahet me 2.
     Cila nga kushtet e mëposhtme ju lejon të kontrolloni nëse numri që vendosni mund të ndahet me 6? (Zgjidhni të gjitha përgjigjet e sakta)
@@ -506,7 +508,8 @@ Ushtrimi 1
 .. infonote::
 
   Kur përdoruesi pritet të fusë një lloj informacioni, duhet të bëjmë një pyetje që sugjeron formën e pritur të përgjigjes, për shembull: "Vendosni datën tuaj të lindjes (dd / mm / yy)".
-   Formuloni pyetjet e dhëna për hyrjen:
+   
+Formuloni pyetjet e dhëna për hyrjen:
 
    а) Një numër midis 1 dhe 10
 
@@ -525,7 +528,8 @@ Ushtrimi 2
 .. infonote::
 
  Programi, i cili duhet të llogarisë peshën ideale, kërkon që përdoruesi të futë peshën e tij / saj (në kg) dhe gjatësinë (në cm).
-  Shkruani pjesë të programit që kontrollojnë nëse përdoruesi ka hyrë në të dhënat e sakta të peshës, p.sh. nga intervali [40,160] dhe lartësia, p.sh. [140.210].
+  
+Shkruani pjesë të programit që kontrollojnë nëse përdoruesi ka hyrë në të dhënat e sakta të peshës, p.sh. nga intervali [40,160] dhe lartësia, p.sh. [140.210].
   
 Ushtrimi 3
 ~~~~~~~~~~
@@ -582,8 +586,11 @@ Ushtrimi 5
 .. infonote::
 
  Krijoni një mini-projekt të quajtur *Greater* në të cilin sprite i kërkon përdoruesit të fusë një numër midis 1 dhe 100.
-  Programi zgjedh një numër (duke përdorur bllokun e operatorit të numrave të rastit) gjithashtu midis 1 dhe 100 dhe pastaj i thotë përdoruesit numri i të cilit është më i madh.
-  Dialogu duhet të fillohet duke klikuar në sprite.
+
+
+Programi zgjedh një numër (duke përdorur bllokun e operatorit të numrave të rastit) gjithashtu midis 1 dhe 100 dhe pastaj i thotë përdoruesit numri i të cilit është më i madh.
+
+Dialogu duhet të fillohet duke klikuar në sprite.
 
  .. reveal:: упутство12
    :showtitle: Trego instruksionin
@@ -604,8 +611,7 @@ Bug 1
 .. level:: 1
 
 :Question:
-  Studenti dëshironte të krijonte një skenar që lejonte lëvizjen e degës të kontrollohej nga shigjetat. Ai / ajo shkroi programin e treguar në figurën në të majtë.
-    Pastaj studenti vuri re që komanda |move_steps| përsëritet 4 herë, kështu që ai / ajo e ndryshoi skenarin në programin e paraqitur në figurën në të djathtë. Sidoqoftë, studenti nuk arriti sjelljen e dëshiruar të sprite. Ku bëri një gabim studenti?
+  Studenti dëshironte të krijonte një skenar që lejonte lëvizjen e degës të kontrollohej nga shigjetat. Ai / ajo shkroi programin e treguar në figurën në të majtë. Pastaj studenti vuri re që komanda |move_steps| përsëritet 4 herë, kështu që ai / ajo e ndryshoi skenarin në programin e paraqitur në figurën në të djathtë. Sidoqoftë, studenti nuk arriti sjelljen e dëshiruar të sprite. Ku bëri një gabim studenti?
 
 .. image:: ../_images/6/bug6_1.png
    :width: 500px   
@@ -615,9 +621,9 @@ Bug 1
    :showtitle: Shih përgjigjen
    :hidetitle: Fshih përgjigjen
  
-   **Përgjigjs:**
+   **Përgjigja:**
      
-   Në programin e ndryshuar, komanda |veprim_steps| do të rrjedhë vazhdimisht dhe sprite do të lëvizë në drejtimin që u zgjodh e fundit, pavarësisht nëse çelësi me atë drejtim është shtypur apo jo.
+   Në programin e ndryshuar, komanda |move_steps| do të rrjedhë vazhdimisht dhe sprite do të lëvizë në drejtimin që u zgjodh e fundit, pavarësisht nëse çelësi me atë drejtim është shtypur apo jo.
    
 Bug 2
 ~~~~~
@@ -669,7 +675,7 @@ Bug 3
    
 
 |book| Përmbledhje
---------------
+--------------------
 
 Në këtë mësim, mësuam për urdhrat e degëzimit që ju lejojnë të krijoni shkrime degëzuese. Ne prezantuam blloqet nga grupi *Sensing* dhe treguam se si komanda për futjen e të dhënave duke përdorur tastierën është ekzekutuar në Scratch. Ne gjithashtu mësuam se si të sinkronizojmë sjelljen e sprites duke përdorur transmetimin e mesazheve. Për më tepër, ne treguam se si të përdorim mjetin në mënyrën vektoriale të redaktorit të brendshëm të bojrave.
 
@@ -697,7 +703,7 @@ Project 2 - "Hungry Shark"
 Krijoni një projekt në të cilin peshkaqeni po ndjek peshk. Peshkaqeni duhet të lundrojë majtas në të djathtë vazhdimisht, dhe kur presioni i hapësirës, ​​ai duhet të lëvizë lart. Nëse sprite peshkaqeni prek një peshk, peshqit do të zhduken, dhe pastaj rishfaqen pas 3 deri në 5 sekonda në një pozicion të rastit. Kohëzgjatja e ndryshme e pauzës midis zhdukjes dhe rishfaqjes së një peshku dhe lokacioneve të ndryshme mund të arrihet duke përdorur operacionin *numrin e rastit*. Sprite (Shark2) ka tre kostume, kështu që ndryshimi i kostumit mund të përfaqësojë reagimin e peshkaqenit kur prek një peshk. Atribuoni lëvizje të ndryshme tek spritat e peshkut, sprite cancer dhe kandil deti. Kandil deti duhet të lëvizë lart e poshtë, gaforret duhet të lëvizin majtas dhe djathtas, dhe peshqit duhet të lëvizin me shpejtësi të ndryshme. Të gjitha sprites - peshkaqen, lloje të ndryshme të peshkut, gaforret dhe kandil deti, si dhe sfondi mund të merren nga bibliotekat e sprites dhe sfondit. Ju mund të bëni lloje të ndryshme të peshkut duke përdorur kostume të ndryshme të sprite *fish*.
 
 Projekti 3 - "Një qen dhe një mace"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 

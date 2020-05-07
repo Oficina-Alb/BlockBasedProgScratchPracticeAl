@@ -32,19 +32,19 @@ Për t'i bërë projektet me strukturë komplekse më të shpejtë dhe më të l
     :width: 560px   
     :align: center
 
- Blloku i ri gjithashtu mund të ketë fushat e hyrjes. Për shkak të kësaj, ne jemi në gjendje të tërheqim trekëndësha me gjatësi të ndryshme të anëve me të njëjtin bllok. Për ta arritur këtë, duhet të zgjedhim opsionin *Redakto* nga menuja e shorcutt, të cilën do ta marrim duke klikuar me të djathtën në bllokun e ri (1). Dritarja e dialogut *Bëni një bllok* do të hapet përsëri. Nga tre opsionet e ofruara për shtimin e fushave të reja në bllok, duhet të zgjidhni *Shtoni një emër hyrje ose tekst* (2) dhe një fushë hyrëse do të shfaqet në bllokun (3); në këtë bllok do të futim *a* - emrin e variablit për gjatësinë e anës së një trekëndëshi.
+Blloku i ri gjithashtu mund të ketë fushat e hyrjes. Për shkak të kësaj, ne jemi në gjendje të tërheqim trekëndësha me gjatësi të ndryshme të anëve me të njëjtin bllok. Për ta arritur këtë, duhet të zgjedhim opsionin *Redakto* nga menuja e shorcutt, të cilën do ta marrim duke klikuar me të djathtën në bllokun e ri (1). Dritarja e dialogut *Bëni një bllok* do të hapet përsëri. Nga tre opsionet e ofruara për shtimin e fushave të reja në bllok, duhet të zgjidhni *Shtoni një emër hyrje ose tekst* (2) dhe një fushë hyrëse do të shfaqet në bllokun (3); në këtë bllok do të futim *a* - emrin e variablit për gjatësinë e anës së një trekëndëshi.
 
  .. image:: ../_images/8/fig8_3.png
     :width: 920px   
     :align: center
  
- Nëse do të kishim zgjedhur *Shtoni një boolean të dhënash*, fusha e hyrjes do të kishte një formë gjashtëkëndore dhe do të kishte qenë në gjendje të merrte vetëm blloqe logjike, dhe opsioni *Shto një etiketë * do të mundësonte që teksti të shkruhej pas hyrjes fusha.
+Nëse do të kishim zgjedhur *Shtoni një boolean të dhënash*, fusha e hyrjes do të kishte një formë gjashtëkëndore dhe do të kishte qenë në gjendje të merrte vetëm blloqe logjike, dhe opsioni *Shto një etiketë* do të mundësonte që teksti të shkruhej pas hyrjes fusha.
  
-  *Mos harroni.* Kudo që dëshironi të përdorni variablin *a* në blloqe përkufizimi, duhet të tërhiqni reporterin e kësaj ndryshore nga titulli i përcaktimit të bllokut (4). Prandaj, jo shkronja a, as reporteri *a* nga paleta e bllokut, por reporteri nga titulli i përkufizimit |nije_isto|
+*Mos harroni* Kudo që dëshironi të përdorni variablin *a* në blloqe përkufizimi, duhet të tërhiqni reporterin e kësaj ndryshore nga titulli i përcaktimit të bllokut (4). Prandaj, jo shkronja a, as reporteri *a* nga paleta e bllokut, por reporteri nga titulli i përkufizimit |nije_isto|
 
- .. |nije_isto| image:: ../_images/8/fig8_4.png  
+.. |nije_isto| image:: ../_images/8/fig8_4.png  
  
- Emri *a*, të cilin kemi futur në përkufizimin e procedurës *Vizatoni një trekëndësh* quhet një parametër. Procedurat mund të kenë më shumë se një parametër. Për shembull, ne mund të krijojmë një procedurë *Vizatoni një poligon*, i cili tërheq poligone të rregullt me numër të ndryshëm të anëve që kanë gjatësi të ndryshme. Në vend të përcaktimit të blloqeve të veçanta për vizatimin e një trekëndëshi, një shumëkëndëshi katërkëndësh dhe të tjerë, me një gjatësi të caktuar anësh, do të përcaktojmë vetëm një bllok me parametrat *numrin e brinjëve* dhe *gjatësinë e*. Vlerat e brinjëve specifike të parametrave që do t'i vendosim si **argumenti** i komandës së prezantuar rishtazi. Ky argument do të zëvendësojë çdo paraqitje të numrit të parametrit të palëve në procedurë. Mund të themi se parametri është mbajtësi i vendit të caktuar për argumentin.     
+Emri *a*, të cilin kemi futur në përkufizimin e procedurës *Vizatoni një trekëndësh* quhet një parametër. Procedurat mund të kenë më shumë se një parametër. Për shembull, ne mund të krijojmë një procedurë *Vizatoni një poligon*, i cili tërheq poligone të rregullt me numër të ndryshëm të anëve që kanë gjatësi të ndryshme. Në vend të përcaktimit të blloqeve të veçanta për vizatimin e një trekëndëshi, një shumëkëndëshi katërkëndësh dhe të tjerë, me një gjatësi të caktuar anësh, do të përcaktojmë vetëm një bllok me parametrat *numrin e brinjëve* dhe *gjatësinë e*. Vlerat e brinjëve specifike të parametrave që do t'i vendosim si **argumenti** i komandës së prezantuar rishtazi. Ky argument do të zëvendësojë çdo paraqitje të numrit të parametrit të palëve në procedurë. Mund të themi se parametri është mbajtësi i vendit të caktuar për argumentin.     
  
  
 |study| Studioni shembujt e mëposhtëm
@@ -109,17 +109,17 @@ Kur përdoruesi i përgjigjet pyetjes "Done (yes / no)?" me "po", variabli do t�
 .......
 
 Shembulli 3 - Projekti "Ndëresa"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 
 Në këtë projekt, ne do të vizatojmë imazhe komplekse duke përdorur vetëm një procedurë me parametra. Kjo është procedura *Vizatoni një drejtkëndësh* me parametrat *a* dhe *b* për gjatësinë e anëve. Për ta bërë programin kryesor të lexueshëm, ne gjithashtu e ndamë inicializimin e lapsit në një procedurë të veçantë *PenSetup*, e cila përcakton ngjyrën dhe madhësinë (trashësinë) e lapsit që do të përdoret për vizatim. Shifra e mëposhtme paraqet skriptet që përcaktojnë këto dy procedura. Variabli *unit* përcaktohet në programin kryesor, dhe mundëson vizatimin e drejtkëndëshe proporcionalë me dimensione të ndryshme.
 
 .. image:: ../_images/8/fig8_9.png
-    :width: 450px   
-    :align: center
+   :width: 450px   
+   :align: center
     
-**Krijimi i projekti **
+**Krijimi i projektit**
 
 Ngarkoni sfondin *Xy-grid-20px* nga biblioteka e prapavijës. Kjo është një rrjet i përbërë nga katrorë 24x18, me anët 20x20 pixel. (Ju mund ta keni bërë vetë këtë sfond duke përdorur projektin e mëparshëm). Kjo sfond është e përshtatshme sepse, mbi të, ne mund të shohim qartë proporcionet e imazheve që duam të krijojmë.
 
@@ -232,7 +232,7 @@ Pyetja 5
    :feedback_c: 
    :feedback_d: 
    
-   Cili bllok i përket grupit * Ngjarjet *? (Zgjidhni të gjitha përgjigjet e sakta)
+   Cili bllok i përket grupit *Ngjarjet*? (Zgjidhni të gjitha përgjigjet e sakta)
 
 Pyetja 6
 ~~~~~~~~~~~
@@ -265,13 +265,15 @@ Ushtrimi 1
 
 .. infonote::
 
- Krijoni një procedurë *Square1* me parametrat: koordinatat **x** dhe **y** të pikës së sipërme të majtë dhe gjatësinë e brinjës **а**.
-  Procedura duhet të vizatojë një katror me brinjët paralele me boshtet x dhe y.
-  Pastaj, krijoni një skenar, i cili e quan këtë procedurë shumë herë dhe tërheq katrorë koncentrike siç paraqitet në figurën e mëposhtme.
+   Krijoni një procedurë *Square1* me parametrat: koordinatat **x** dhe **y** të pikës së sipërme të majtë dhe gjatësinë e brinjës **а**.
 
- .. image:: ../_images/8/ex8_1.png
-         :width: 210px   
-         :align: center 
+Procedura duhet të vizatojë një katror me brinjët paralele me boshtet x dhe y.
+
+Pastaj, krijoni një skenar, i cili e quan këtë procedurë shumë herë dhe tërheq katrorë koncentrike siç paraqitet në figurën e mëposhtme.
+
+.. image:: ../_images/8/ex8_1.png
+   :width: 210px   
+   :align: center 
         
 .......
 
@@ -285,8 +287,8 @@ Ushtrimi 2
  Krijoni procedurën *Square2* me parametrat: koordinatat **x** dhe **y** të pikës së sipërme të majtë, gjatësia e anës **a** dhe drejtimi i brinjës së parë **këndi** , e cila tërhiqet nga procedura. Pastaj, krijoni një skenar, i cili e quan këtë procedurë disa herë dhe vizaton 10 katrorë me këndin e sipërm të majtë të përbashkët, me të njëjtat anët në mënyrë që drejtimi i secilës anë të parë pasuese të rrotullohet 36 gradë nga drejtimi i anës së parë të mëparshme katrore.
 
  .. image:: ../_images/8/ex8_2.png
-         :width: 290px   
-         :align: center 
+      :width: 290px   
+      :align: center 
 
 .......
 
@@ -298,12 +300,14 @@ Ushtrimi 3
 .. infonote::
 
  Krijoni procedurën **Drejtkëndësh** me parametrat: koordinatat **x** dhe **y** të pikës së sipërme të majtë, dhe gjatësitë e brinjëve **a** dhe **b**.
-  Procedura duhet të vizatojë një drejtkëndësh me gjatësinë e brinjës **a** paralel me boshtin x, dhe **b** paralel me boshtin y.
-  Pastaj, krijoni një skenar, i cili e quan këtë procedurë dhe vizaton një drejtkëndësh me argumentet që janë vendosur në mënyrë të rastësishme, të ngjashme me figurën më poshtë. 
+  
+Procedura duhet të vizatojë një drejtkëndësh me gjatësinë e brinjës **a** paralel me boshtin x, dhe **b** paralel me boshtin y.
+
+Pastaj, krijoni një skenar, i cili e quan këtë procedurë dhe vizaton një drejtkëndësh me argumentet që janë vendosur në mënyrë të rastësishme, të ngjashme me figurën më poshtë. 
  
- .. image:: ../_images/8/ex8_3.png
-         :width: 235px   
-         :align: center 
+.. image:: ../_images/8/ex8_3.png
+   :width: 235px   
+   :align: center 
          
 
 |bug| Debug!

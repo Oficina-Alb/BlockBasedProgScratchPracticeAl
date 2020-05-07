@@ -219,24 +219,27 @@
 <p>Për të kuptuar më mirë këto operacione, do të tregojmë rezultatin e secilit operacion të kryer në vargjet s1 = BANANA dhe s2 = ANA.</p>
 </div>
 <p>  Në gjuhët e programimit, operacionet që kryhen më shpesh në tela janë këto:</p>
-<dl class="simple">
-<dt>  - përcaktimi i gjatësisë së vargut</dt><dd><p><code class="docutils literal notranslate"><span class="pre">gjatëesia</span> <span class="pre">e</span> <span class="pre">s1</span></code> → 6</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>krahasimi i vargjeve</p></li>
+<p>  - përcaktimi i gjatësisë së vargut</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">gjatëesia</span> <span class="pre">e</span> <span class="pre">s1</span></code> → 6</p>
+</div></blockquote>
+<ul>
+<li><p>krahasimi i vargjeve</p>
+<blockquote>
+<div><p>përcaktimi i cili vjen së pari me alfabet
+`` s1 &lt;s2? `` → false
+kjo është e gabuar sepse “BANANA” vjen pas “ANA” në rend alfabeti,</p>
+</div></blockquote>
+</li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Strings.rst</span>, line 26)</p>
-<p>Bullet list ends without a blank line; unexpected unindent.</p>
-</div>
-<p>      përcaktimi i cili vjen së pari me alfabet</p>
-<p>      `` s1 &lt;s2? `` → false</p>
-<p>      kjo është e gabuar sepse “BANANA” vjen pas “ANA” në rend alfabeti,</p>
-<p> - telat lidhës (bashkues)
-      <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">s1</span> <span class="pre">and</span> <span class="pre">s2</span></code> А BANANААNА,</p>
-<p> - zgjedhjen e një personazhi që zë një pozicion specifik në tekst
-      `` letter 3 of s1`` → N,</p>
+<p> - telat lidhës (bashkues)</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">s1</span> <span class="pre">and</span> <span class="pre">s2</span></code> А BANANААNА,</p>
+</div></blockquote>
+<p> - zgjedhjen e një personazhi që zë një pozicion specifik në tekst</p>
+<blockquote>
+<div><p>`` letter 3 of s1`` → N,</p>
+</div></blockquote>
 <p> - përmban?
       kontrollon nëse vargu s1 përmban vargun s2</p>
 <p>      <code class="docutils literal notranslate"><span class="pre">s2</span> <span class="pre">in</span> <span class="pre">s1?</span></code> → true</p>
@@ -286,7 +289,7 @@
 <em>numri i përmbysur</em> është formuar ku janë shkëmbyer shifra e parë dhe e tretë. Ky numër i ri është krijuar duke përdorur dy operacione <img alt="join" src="_images/join.png" />
 Në fund, prezantuesi transmeton numrin origjinal dhe numrin e sapoformuar.</p>
 <p>Skenari i projektit është paraqitur në figurën vijuese.</p>
-<a class="reference internal image-reference" href="../_images/10/fig10_4.png"><img alt="../_images/10/fig10_4.png" class="align-center" src="../_images/0/fig10_4.png" style="width: 645px;" /></a>
+<a class="reference internal image-reference" href="../_images/10/fig10_4.png"><img alt="../_images/10/fig10_4.png" class="align-center" src="../_images0/fig10_4.png" style="width: 645px;" /></a>
 <hr class="docutils" />
 <p>Projekti i mëposhtëm kontrollon nëse fjala e futur është një palindrome. Një <em>palindrome</em> është një fjalë ose një frazë, e cila lexon të njëjtën gjë nga e majta në të djathtë dhe nga e djathta në të majtë. Për shembull, fjala “zonjë” është një palindrome. Një numër që është një palindrom përcaktohet në mënyrë të ngjashme. Për shembull, 12321 është një palindrome.</p>
 </div>
@@ -297,11 +300,11 @@ Në fund, prezantuesi transmeton numrin origjinal dhe numrin e sapoformuar.</p>
 
     </div>
 <p>Prezantuesi i kërkon përdoruesit të shkruajë një fjalë. Variabli <em>d</em> merr gjatësinë e fjalës si vlerë. Programi krahason të parën me shkronjën e fundit, të dytën me atë të parafundit etj., Deri në mes të fjalës. Variabli <em>i</em>, vlera fillestare e së cilës është 0 dhe e cila rritet me 1 brenda lakut, mundëson që këto krahasime të kryhen me kontrollin e mëposhtëm.</p>
-<a class="reference internal image-reference" href="../_images/10/fig10_5.png"><img alt="../_images/10/fig10_5.png" class="align-center" src="../_images/0/fig10_5.png" style="width: 485px;" /></a>
+<a class="reference internal image-reference" href="../_images/10/fig10_5.png"><img alt="../_images/10/fig10_5.png" class="align-center" src="../_images0/fig10_5.png" style="width: 485px;" /></a>
 <p>Variabli <em>p</em> tregon numrin e kontrolleve. Nëse njëra nga kontrollet përcakton se shkronjat, të cilat janë krahasuar nuk janë të njëjta, fjala nuk është një palindrome, dhe kjo do të regjistrohet duke i caktuar 0 variablit <em>pal</em> (e cila është vendosur në 1 në fillim) .
 Pasi programi të bëhet duke kontrolluar të gjitha palët e shkronjave, do të shkruajë një mesazh duke thënë nëse fjala është palindrome apo jo (<em>pal</em> = 1 yes, else no).</p>
 <p>Skenari për projektin <em>Palindrome</em> është paraqitur në figurën vijuese.</p>
-<a class="reference internal image-reference" href="../_images/10/fig10_6.png"><img alt="../_images/10/fig10_6.png" class="align-center" src="../_images/0/fig10_6.png" style="width: 495px;" /></a>
+<a class="reference internal image-reference" href="../_images/10/fig10_6.png"><img alt="../_images/10/fig10_6.png" class="align-center" src="../_images0/fig10_6.png" style="width: 495px;" /></a>
 </div>
 <hr class="docutils" />
 <div class="section" id="shembulli-4-projekti-string-operations">
@@ -310,7 +313,7 @@ Pasi programi të bëhet duke kontrolluar të gjitha palët e shkronjave, do të
 Ka dy sprites që marrin pjesë në projekt: butoni <em>copy</em> për të bërë kopje dhe <em>delete</em> për fshirje. Skenari që kryen fshirjen është disi më i thjeshtë. Bazuar në vlerat e shkruara për numrin e karaktereve dhe pozicionet nga të cilat merren, vendoset një varg i ri s2. Kjo varg është e zbrazët në fillim, dhe themelohet duke shtuar një karakter në një kohë nga një pjesë e caktuar e vargut fillestar.</p>
 <a class="reference internal image-reference" href="_images/fig10_7.png"><img alt="_images/fig10_7.png" class="align-center" src="_images/fig10_7.png" style="width: 330px;" /></a>
 <p>Shkrimet e shtuara në marrjen e mesazhit <em>Copy</em> paraqiten në figurën vijuese. Futja e të dhënave dhe formimi i mesazhit dalës paraqiten si procedura të ndara. Këto procedura mund të përdoren gjithashtu kur kërkohet opsioni <em>Delete</em>.</p>
-<a class="reference internal image-reference" href="../_images/10/fig10_8.png"><img alt="../_images/10/fig10_8.png" class="align-center" src="../_images/0/fig10_8.png" style="width: 680px;" /></a>
+<a class="reference internal image-reference" href="../_images/10/fig10_8.png"><img alt="../_images/10/fig10_8.png" class="align-center" src="../_images0/fig10_8.png" style="width: 680px;" /></a>
 <p>Skripti për fshirjen bën të kundërtën - ai formon vargun nga pjesët e vendosura para dhe pas karaktereve të shënuara. Fillon gjithashtu me një varg bosh. Së pari, ajo regjistron karaktere nga pjesa përpara, të cilat pasohen nga personazhe nga pjesa prapa.</p>
 </div>
 </div>
@@ -387,7 +390,8 @@ Ka dy sprites që marrin pjesë në projekt: butoni <em>copy</em> për të bër�
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="string4">
-            
+            <p>Q-80: Cili do të jetë rezultati i operacionit <code class="docutils literal notranslate"><span class="pre">length</span> <span class="pre">of</span> <span class="pre">LENA</span></code>?</p>
+
             <li data-component="answer"  id="string4_opt_a">L</li><li data-component="feedback" id="string4_opt_a">Kjo do të arrihet me letrën e operacionit.</li>
             
             <li data-component="answer"  id="string4_opt_b">LENA</li><li data-component="feedback" id="string4_opt_b"></li>
@@ -399,8 +403,7 @@ Ka dy sprites që marrin pjesë në projekt: butoni <em>copy</em> për të bër�
 
             </ul>
             </div>
-            <p>     Cili do të jetë rezultati i operacionit <code class="docutils literal notranslate"><span class="pre">length</span> <span class="pre">of</span> <span class="pre">LENA</span></code>?</p>
-</div>
+            </div>
 <div class="section" id="pyetje-5">
 <h3>Pyetje 5<a class="headerlink" href="#pyetje-5" title="Permalink to this headline">¶</a></h3>
 
@@ -607,14 +610,6 @@ Përdoruesi hyn në tekst, të cilin projekti duhet ta kodojë dhe deshifrojë n
 </div>
 <div class="section" id="projekti-2-backward">
 <h3>Projekti 2 - “Backward”<a class="headerlink" href="#projekti-2-backward" title="Permalink to this headline">¶</a></h3>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Strings.rst</span>, line 357)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Projekti</span> <span class="mi">2</span> <span class="o">-</span> <span class="s2">&quot;Backward&quot;</span>
-<span class="o">~~~~~~~~~~~~~~~~~~~~~~</span>
-</pre></div>
-</div>
-</div>
 
     <div data-level="3" style="display:none">
 

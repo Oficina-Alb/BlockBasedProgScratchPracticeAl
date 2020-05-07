@@ -259,15 +259,15 @@ Pyetja 2
 .. level:: 1
 
 .. mchoice:: lista2
-    :answer_a: elementi do të shtohet në fillim të listës
-    :answer_b: elementi do të shtohet në fund të listës
-    :answer: elementi do të shtohet nën kushtin që nuk ishte më parë në listë
-    :correct: b
-    :feedback_a: Kjo komandë shton në fund të listës.
-    :feedback_b: E saktë.
-    :feedback_c: Nuk janë bërë kontrolle.
-   
-   Cili është rezultati i ekzekutimit të komandës |l2|?
+   :answer_a: elementi do të shtohet në fillim të listës
+   :answer_b: elementi do të shtohet në fund të listës
+   :answer_C: elementi do të shtohet nën kushtin që nuk ishte më parë në listë
+   :correct: b
+   :feedback_a: Kjo komandë shton në fund të listës.
+   :feedback_b: E saktë.
+   :feedback_c: Nuk janë bërë kontrolle.
+    
+    Cili është rezultati i ekzekutimit të komandës |l2|?
 
 .. |l2| image:: ../_images/9/l2.png
 
@@ -289,7 +289,7 @@ Pyetja 3
 
    How many times will the sprite says "I like fruit"?
 
-   .. image:: ../_images/9/q9_3.png
+.. image:: ../_images/9/q9_3.png
       :width: 220px   
       :align: center
 
@@ -308,9 +308,9 @@ Pyetja 4
    :feedback_b: 
    :feedback_c: 
    
-  Cila komandë do të vendosë elementin *strawberry* në pozicionin e dytë në listë *fruits*? (Zgjidhni të gjitha përgjigjet e sakta)
+   Cila komandë do të vendosë elementin *strawberry* në pozicionin e dytë në listë *fruits*? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/9/q9_4.png
+.. image:: ../_images/9/q9_4.png
       :width: 650px   
       :align: center
 
@@ -341,17 +341,17 @@ Pyetja 6
 .. level:: 2
 
 .. mchoice:: lista6
-    :answer_a: Nëse lista përfshin elementin luleshtrydhe, madhësia e saj nuk do të ndryshojë; përndryshe, luleshtrydhet e elementit do t'i shtohen në fund të listës.
-    :answer_b: Pavarësisht nëse është përfshirë apo jo elementi i luleshtrydhes, ajo do ta shtojë atë në fund të listës.
-    :answer_c: Nëse lista përfshin elementin luleshtrydhe, madhësia e saj nuk do të ndryshojë; përndryshe, luleshtrydhet e elementit do t'i shtohen fillimit të listës.
-    :correct: a
-    :feedback_a: E saktë.
-    :feedback_b: Hyrja në listë kryhet nëse lista nuk e kishte më parë elementin luleshtrydhe.
-    :feedback_c: Nëse shtohet, ajo do të shtohet në fund të listës.
+   :answer_a: Nëse lista përfshin elementin luleshtrydhe, madhësia e saj nuk do të ndryshojë; përndryshe, luleshtrydhet e elementit do t'i shtohen në fund të listës.
+   :answer_b: Pavarësisht nëse është përfshirë apo jo elementi i luleshtrydhes, ajo do ta shtojë atë në fund të listës.
+   :answer_c: Nëse lista përfshin elementin luleshtrydhe, madhësia e saj nuk do të ndryshojë; përndryshe, luleshtrydhet e elementit do t'i shtohen fillimit të listës.
+   :correct: a
+   :feedback_a: E saktë.
+   :feedback_b: Hyrja në listë kryhet nëse lista nuk e kishte më parë elementin luleshtrydhe.
+   :feedback_c: Nëse shtohet, ajo do të shtohet në fund të listës.
    
    Cili është rezultati i ekzekutimit të urdhrave të mëposhtëm?
 
-   .. image:: ../_images/9/q9_6.png
+.. image:: ../_images/9/q9_6.png
       :width: 300px   
       :align: center
 
@@ -421,11 +421,11 @@ Bug 1
 
  Studenti dëshironte të ndryshojë Shembullin 3 të këtij mësimi në mënyrë që të ketë një listë të re të quajtur *eaten* ku do të shkruhen emrat e llojeve të ndryshme të ushqimit të zgjedhur nga Zara. Tek Zara, ai / ajo shtoi skriptet për kontrollin e lëvizjes me çelësat e shigjetave dhe skenarin e treguar në figurën më poshtë. Shifra tregon gjithashtu skriptet e shtuara në sprites të tjera në projekt. Shumica e ngjarjeve u ekzekutuan siç pritej; megjithatë, studenti nuk ishte në gjendje të shkruante mollën dhe portokallin në listë. Ku është faji?  
 
- .. image:: ../_images/9/bug9_1.png
+.. image:: ../_images/9/bug9_1.png
    :width: 810px   
    :align: center
 
- .. reveal:: sаkrivаnjе24
+.. reveal:: sаkrivаnjе24
    :showtitle: Trego përgjigjen
    :hidetitle: Fshih përgjigjen
  

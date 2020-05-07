@@ -222,7 +222,7 @@
 <p>Kur hapni Scratch, skena krijohet automatikisht: një drejtkëndësh i bardhë 480 pika i gjerë dhe 360 pika i lartë. Pika më e vogël që mund të shfaqet në një ekran grafik kompjuterik quhet <em>Pixel</em>.</p>
 </div>
 <p>  Skena është aty ku do të zhvillojnë tregimet, lojërat dhe animacionet tuaja. Shtë i palëvizshëm, si një akuariumi, por banorët e tij - Sprites janë gjithmonë në lëvizje dhe bashkëveprojnë me njëri-tjetrin. Për të kontrolluar me lehtësi lëvizjet e sprites, secilës vend në skenë i është caktuar një adresë - <em>koordinatat x dhe y</em>, këto koordinata paraqesin distancën e asaj vendi të veçantë nga qendra e skenës. Pika, e cila është e vendosur në qendër të fazës ka koordinatat х = 0 dhe у = 0, ose (0,0).</p>
-<p>  Koordinatat na lejojnë të lëvizim me saktësi sprites tonë nëpër skenë dhe t’i pozicionojmë ato kudo që dëshirojmë (x, y). Pozicioni aktual i sprite mund të shihet në informacionin aktiv të sprite.</p>
+<p> Koordinatat na lejojnë të lëvizim me saktësi sprites tonë nëpër skenë dhe t’i pozicionojmë ato kudo që dëshirojmë (x, y). Pozicioni aktual i sprite mund të shihet në informacionin aktiv të sprite.</p>
 <div class="topic">
 <p class="topic-title">Funksionet e blloqeve <em>Motion</em></p>
 <p>Të gjitha komandat, të cilat mundësojnë pozicionimin e sprite në vendin e dëshiruar dhe kontrollojnë drejtimin dhe lëvizjen e tij, janë të vendosura në grupin e blloqeve të quajtur <em>lëvizja</em>. Në këtë mësim, ju do të mësoni më shumë rreth blloqeve të lëvizjes dhe si të përdorni <strong>blloqet e reportazheve</strong>, duke parë shembuj dhe duke bërë ushtrime. Blloqet e reporterëve nuk korrespondojnë me komandat gjuhësore, dhe ato nuk mund të qëndrojnë në mënyrë të pavarur në një skenar. Funksioni i një blloku reporterësh nga grupi <em>Motion</em> është ruajtja e koordinatave dhe udhëzimeve aktuale të Sprites.</p>
@@ -241,21 +241,13 @@
 </div>
 <p>  <strong>Lëvizja Absolute</strong> është duke lëvizur në një vend - destinacion specifik, pavarësisht nga pozicioni aktual i sprite.</p>
 <p>  Në Scratch ju mund ta dërgoni sprite tuaj në një pozicion të caktuar (х, у) në skenë, domethënë, ju mund të kryeni lëvizje absolute duke përdorur blloqet e mëposhtme:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p><img alt="goto_xy" src="_images/goto_xy.png" /> - shkoni në pozicionin (х, у),</p></li>
+<li><p><img alt="glide_xy" src="_images/glide_xy.png" /> - rrëshqisni në pozicionin (х, у),</p></li>
+<li><p><img alt="set_x" src="_images/set_x.png" /> - vendosni koordinatën x në pozicion,</p></li>
+<li><p><img alt="set_y" src="_images/set_y.png" />  - vendosni koordinatën y në pozicion.</p></li>
 </ul>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 54)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>  - <img alt="glide_xy" src="_images/glide_xy.png" /> - rrëshqisni në pozicionin (х, у),
-  - <img alt="set_x" src="_images/set_x.png" /> - vendosni koordinatën x në pozicion,
-  - <img alt="set_y" src="_images/set_y.png" />  - vendosni koordinatën y në pozicion.</p>
-<blockquote>
-<div><p>duke përdorur bllokun <img alt="goto_xy" src="_images/goto_xy.png" /> i sprite do të lëvizë menjëherë në pozicionin e dhënë (х, у).</p>
-</div></blockquote>
+<p>duke përdorur bllokun <img alt="goto_xy" src="_images/goto_xy.png" /> i sprite do të lëvizë menjëherë në pozicionin e dhënë (х, у).</p>
 <p> Në mënyrë të ngjashme, objektivi do të arrihet me bllokun <img alt="glide_xy" src="_images/glide_xy.png" />, por masa nuk do të ishte e menjëhershme; do të zgjaste një numër i caktuar sekondash. Sa më i lartë të jetë numri i sekondave të dhëna, aq më shumë do t’i duhet spërkatjes për të arritur në destinacionin e saj.</p>
 <p> Një mënyrë tjetër për të vendosur një destinacion në lëvizje absolute është vendosja në mënyrë të pavarur e koordinatave x dhe y, duke përdorur blloqet <img alt="set_x" src="_images/set_x.png" /> dhe <img alt="set_y" src="_images/set_y.png" />.</p>
 <p> <strong>Lëvizja Relative</strong> është duke lëvizur në një vend të përcaktuar nga numri i hapave që do të bëjë sprite nga pozicioni aktual. Sigurisht, ju gjithashtu duhet të vendosni drejtimin në të cilin duhet të lëvizë sprite (djathtas, lart, etj.).</p>
@@ -263,33 +255,27 @@
 <p> Në Scratch, ju mund ta dërgoni sprite në një vend të përcaktuar nga numri i hapave nga pozicioni i tij aktual, domethënë, ju mund të kryeni lëvizje relative duke përdorur blloqet e mëposhtme:</p>
 <p> - <img alt="change_x" src="_images/change_x.png" /> - zhvendosni një sasi të caktuar pikselash horizontalisht në lidhje me pozicionin aktual,
  - <img alt="change_y" src="_images/change_y.png" /> - zhvendosni një sasi të caktuar pikselash vertikalisht në lidhje me pozicionin aktual (х, у),
- - <a href="#id5"><span class="problematic" id="id6">|ana_right|</span></a> - ktheni djathtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
- - <a href="#id7"><span class="problematic" id="id8">|ana_left|</span></a> - ktheni majtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
+ - <img alt="turn_right" src="_images/turn_right.png" /> - ktheni djathtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
+ - <img alt="turn_left" src="_images/turn_left.png" /> - ktheni majtas një sasi të caktuar shkallësh në lidhje me drejtimin aktual,
  - <img alt="move_steps" src="_images/move_steps.png" /> - lëvizni një sasi të caktuar hapash në drejtimin e dhënë në lidhje me pozicionin aktual.</p>
 <div class="sidebar">
 <p class="sidebar-title">Blloqet e drejtimit</p>
 <p class="sidebar-subtitle"><img alt="point_direction" src="_images/point_direction.png" /> dhe <img alt="point_towards" src="_images/point_towards.png" /></p>
 <p>Ekzistojnë tre mënyra për të vendosur një vlerë në fushën hyrëse të bllokut të parë:</p>
 <p><img alt="direction1" src="_images/fig2_3.png" /></p>
-<blockquote>
-<div><ol class="arabic simple">
+</div>
+<ol class="arabic simple">
 <li><p>për të zgjedhur njërën prej vlerave të ofruara nga lista rënëse, për shembull (0) lart;</p></li>
+<li><p>shkruani një vlerë të re, në vend të së vjetër, për shembull 45;</p></li>
+<li><p>për të rrotulluar shigjetën blu që tregon drejtimin në informacionin aktual të Sprite.</p></li>
 </ol>
-</div></blockquote>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 85)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
-</div>
-<p>    (2) shkruani një vlerë të re, në vend të së vjetër, për shembull 45;
-    (3) për të rrotulluar shigjetën blu që tregon drejtimin në informacionin aktual të Sprite.</p>
-<p>    Nga lista e lëshimit mund të zgjidhni se cili objekt do të drejtohet Sprite në bllokun tjetër.</p>
+<p>Nga lista e lëshimit mund të zgjidhni se cili objekt do të drejtohet Sprite në bllokun tjetër.</p>
 <blockquote>
 <div><p><img alt="direction2" src="_images/fig2_4.png" /></p>
 </div></blockquote>
 <div class="topic">
 <p class="topic-title">Drejtimi dhe rrotullimi</p>
-<p>Përveç blloqeve të rrotullimit <a href="#id9"><span class="problematic" id="id10">|kthesës_right|</span></a> dhe <img alt="turn_left" src="_images/turn_left.png" />, të cilat ju lejojnë të ndryshoni drejtimin në lidhje me drejtimin aktual të sprite, në Scratch, ekziston një mundësi për të përdorur blloqe që vendosin drejtimin pavarësisht nga pozicioni aktual i Sprite.</p>
+<p>Përveç blloqeve të rrotullimit <img alt="turn_right" src="_images/turn_right.png" /> dhe <img alt="turn_left" src="_images/turn_left.png" />, të cilat ju lejojnë të ndryshoni drejtimin në lidhje me drejtimin aktual të sprite, në Scratch, ekziston një mundësi për të përdorur blloqe që vendosin drejtimin pavarësisht nga pozicioni aktual i Sprite.</p>
 </div>
 <p>  Këto janë blloqet|point_direction| dhe <img alt="point_towards" src="_images/point_towards.png" />.</p>
 <p>  Në figurën e mëposhtme mund të gjeni vlerat kryesore të drejtimit të cilat mund të vendosni në fushën hyrëse të bllokut të parë: <em>lart</em> (Veri), <em>djathtas</em> (Lindje), <em>poshtë</em> (Jug) dhe <em>majtas</em> (Perëndim).</p>
@@ -319,7 +305,7 @@
 <p><img alt="script" src="../_images/fig2_6.png" /></p>
 </div>
 <p>Duke drejtuar këtë skenar të ndryshuar, macja do të lëvizë vazhdimisht nga një skaj në tjetrin, por kur të zhvendoset në të majtë, do të përballet me mënyrën e gabuar. Sigurisht, ekziston një mënyrë për ta rregulluar këtë. Njëra është të ndryshoni mënyrën e lëvizjes së sprite në Informacionin Sprite, dhe tjetra është të përdorni një nga blloqet e rrotullimit.</p>
-<p><img alt="7" src="_images/7.png" /> Zvarrit bllokun <a href="#id11"><span class="problematic" id="id12">|rotacioni_style|</span></a> nga blloqet <em>Motion</em> dhe vendoseni sipër bllokut të përsëritur përgjithmonë. Sigurohuni që mënyra e rrotullimit <em>majtas-djathtas</em> është zgjedhur nga lista dropdown e këtij blloku.</p>
+<p><img alt="7" src="_images/7.png" /> Zvarrit bllokun <img alt="rotation_style" src="_images/rotation_style.png" /> nga blloqet <em>Motion</em> dhe vendoseni sipër bllokut të përsëritur përgjithmonë. Sigurohuni që mënyra e rrotullimit <em>majtas-djathtas</em> është zgjedhur nga lista dropdown e këtij blloku.</p>
 <p><img alt="8" src="_images/8.png" /> Vendosni | klikuar_flag | bllok në krye të Script, dhe duke bërë këtë ju keni përfunduar projektin “Ecni”.</p>
 <p>Tani mund ta drejtoni projektin duke klikuar në <em>flamurin e gjelbër</em> dhe ta ndaloni duke klikuar në shenjën <em>stop</em>. Ruani projektin dhe vazhdoni të eksploroni.</p>
 <hr class="docutils" />
@@ -332,37 +318,23 @@
 <p><strong>Creation of the Project</strong></p>
 <div class="sidebar">
 <p class="sidebar-title">Selecting the Backdrop</p>
-<p>Në projektin tonë të ardhshëm, ne do të tregojmë se si ju mund të prezantoni sprites dhe sfondet e reja, dhe si të udhëzoni një sprite duke përdorur treguesin e miut. Prandaj, para se të kaloni në këtë shembull, shikoni mësimet * Shtoni një Sprite * dhe * Shtoni një sfond <a href="#id1"><span class="problematic" id="id2">*</span></a>.</p>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 171); <em><a href="#id2">backlink</a></em></p>
-<p>Inline emphasis start-string without end-string.</p>
-</div>
+<p>Në projektin tonë të ardhshëm, ne do të tregojmë se si ju mund të prezantoni sprites dhe sfondet e reja, dhe si të udhëzoni një sprite duke përdorur treguesin e mouse. Prandaj, para se të kaloni në këtë shembull, shikoni mësimet <em>Shtoni një Sprite</em> dhe <em>Shtoni një sfond</em>.</p>
 </div>
 </div>
 <div class="section" id="shembulli-2-ecen-dinosauri">
 <h3>Shembulli 2 - “Ecen Dinosauri”<a class="headerlink" href="#shembulli-2-ecen-dinosauri" title="Permalink to this headline">¶</a></h3>
-<p>** Krijimi i Projektit **</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 178)</p>
-<p>Content block expected for the “sidebar” directive; none found.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">sidebar</span><span class="p">::</span> <span class="n">Zgjedhja</span> <span class="n">e</span> <span class="n">sfondit</span>
-</pre></div>
-</div>
-</div>
-<p>  Ju mund të shtoni një sfond të ri në projekt duke klikuar ikonën e vendosur në të djathtë, ngjitur me ikonën Zgjidhni një Sprite, e cila përdoret për zgjedhjen e spritave të reja.</p>
-<p>  <a href="#id13"><span class="problematic" id="id14">|New_backdrop|</span></a></p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 184)</p>
-<p>Substitution definition “new_backdrop” empty or invalid.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">new_backdrop</span><span class="o">|</span> <span class="n">imazh</span> <span class="p">::</span> <span class="o">../</span><span class="n">_images</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">fig2_8</span><span class="o">.</span><span class="n">png</span>
-
-</pre></div>
-</div>
+<p><strong>Krijimi i Projektit</strong></p>
+<div class="sidebar">
+<p class="sidebar-title">Zgjedhja e sfondit</p>
+<blockquote>
+<div><p>Ju mund të shtoni një sfond të ri në projekt duke klikuar ikonën e vendosur në të djathtë, ngjitur me ikonën Zgjidhni një Sprite, e cila përdoret për zgjedhjen e spritave të reja.</p>
+</div></blockquote>
+<p><img alt="new_backdrop" src="../_images/fig2_8.png" /></p>
 </div>
 <p><img alt="1" src="_images/1.png" /> Klikoni në ikonën për të zgjedhur sfondet dhe zgjidhni sfondin <em>Jurassic</em> nga biblioteka e prapavijës.</p>
 <p><img alt="2" src="_images/2.png" /> Zgjidhni sprites <em>Dinosaur1</em>, <em>Dinosaur2</em> dhe <em>Dinosaur3</em> nga biblioteka e Sprites.</p>
 <p><img alt="3" src="_images/3.png" /> Vendosni sprites tuaj si ato janë në figurën e mësipërme. Ju duhet të ndryshoni drejtimin e <em>Dinosaur2</em>. Vlera e paracaktuar e drejtimit për të gjitha sprites është 90: sup: <cite>о</cite> (ata po kërkojnë në të djathtë) dhe stili i tyre i rrotullimit është <em>Gjithë Rreth</em>. Të gjitha këto cilësime mund të ndryshohen në pjesën e informacionit Sprite ose duke përdorur blloqe të përshtatshme për të formuar skriptet që i shtohen një Sprite të veçantë. Në këtë projekt, ne do të përdorim opsionin e parë.</p>
-<p><img alt="4" src="_images/4.png" /> Në dritaren e informacionit Sprite vendosni stilin e rrotullimit si më poshtë: <em>Dinosaur1</em> - <em>mos rrotullohet</em>, <em>Dinosaur2 * - *majtas / djathtas</em>, <em>Dinosaur3</em> - <em>All</em>.</p>
+<p><img alt="4" src="_images/4.png" /> Në dritaren e informacionit Sprite vendosni stilin e rrotullimit si më poshtë: <em>Dinosaur1</em> - <em>mos rrotullohet</em>, <em>Dinosaur2</em> - <em>majtas / djathtas</em>, <em>Dinosaur3</em> - <em>All</em>.</p>
 <p><img alt="5" src="_images/5.png" /> Të gjithë dinosaurët shtojnë të njëjtin skenar, i cili do t’i urdhërojë ata të drejtojnë drejt maceve gjatë drejtimit të të gjithë projektit. Sidoqoftë, ata do të sillen ndryshe sepse nuk kanë të njëjtin stil rotacioni në cilësimet e tyre të informacionit Sprite.</p>
 <p><img alt="6" src="_images/6.png" /> Për sprite e maceve ju duhet të vendosni komandat, të cilat do t’i mundësojnë të drejtojnë drejt koordinatave të treguesit të miut, domethënë, të lëvizni nëpër skenë në të njëjtën mënyrë përdoruesi lëviz miun.</p>
 <p>Skriptet që përshkruajnë sjelljen e dinosaurëve dhe maceve janë paraqitur në figurën vijuese.</p>
@@ -433,43 +405,23 @@
     <div data-level="1" style="display:none">
 
     </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 287)</p>
-<p>No correct answer specified.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">mchoice</span><span class="p">::</span> <span class="n">stage2</span>
-   <span class="p">:</span><span class="n">answer_a</span><span class="p">:</span> <span class="n">në</span> <span class="n">këndin</span> <span class="n">e</span> <span class="n">sipërm</span> <span class="n">të</span> <span class="n">majtë</span> <span class="n">të</span> <span class="n">Fazës</span>
-</pre></div>
-</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 289)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
-</div>
-<p>   :answer_b: në këndin e poshtëm të majtë të Fazës
-   :answer_c: në qendër të Skenës
-   :answer_d: varet nga sfondi i shtuar</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 292)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">correct</dt>
-<dd class="field-odd"><p>c</p>
-</dd>
-<dt class="field-even">feedback_a</dt>
-<dd class="field-even"><p></p></dd>
-<dt class="field-odd">feedback_b</dt>
-<dd class="field-odd"><p></p></dd>
-<dt class="field-even">feedback_c</dt>
-<dd class="field-even"><p>Saktë.</p>
-</dd>
-<dt class="field-odd">feedback_d</dt>
-<dd class="field-odd"><p></p></dd>
-</dl>
-<p>Ku është vendndodhja e pikës me koordinatat (0,0)?</p>
-</div></blockquote>
-</div>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="stage2">
+            <p>Q-11: Ku është vendndodhja e pikës me koordinatat (0,0)?</p>
+
+            <li data-component="answer"  id="stage2_opt_a">në këndin e sipërm të majtë të Fazës</li><li data-component="feedback" id="stage2_opt_a"></li>
+            
+            <li data-component="answer"  id="stage2_opt_b">në këndin e poshtëm të majtë të Fazës</li><li data-component="feedback" id="stage2_opt_b"></li>
+            
+            <li data-component="answer" data-correct id="stage2_opt_c">në qendër të Skenës</li><li data-component="feedback" id="stage2_opt_c">Saktë.</li>
+            
+            <li data-component="answer"  id="stage2_opt_d">varet nga sfondi i shtuar</li><li data-component="feedback" id="stage2_opt_d"></li>
+            
+
+            </ul>
+            </div>
+            </div>
 <div class="section" id="pyetja-3">
 <h3>Pyetja 3<a class="headerlink" href="#pyetja-3" title="Permalink to this headline">¶</a></h3>
 
@@ -502,7 +454,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="stage3">
-            <p>Q-13:  A mund të bllokojë Stage bllokimin e lëvizjes?</p>
+            <p>Q-13: A mund të bllokojë Stage bllokimin e lëvizjes?</p>
 
             <li data-component="answer"  id="stage3_opt_a">po</li><li data-component="feedback" id="stage3_opt_a"></li>
             
@@ -522,7 +474,6 @@
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="absolute_motion">
             <p>Q-14: Cilët blloqe mundësojnë lëvizje absolute? (Zgjidhni të gjitha përgjigjet e sakta)</p>
-<a class="reference internal image-reference" href="_images/q2_5.png"><img alt="_images/q2_5.png" class="align-center" src="_images/q2_5.png" style="width: 530px;" /></a>
 
             <li data-component="answer" data-correct id="absolute_motion_opt_a"></li><li data-component="feedback" id="absolute_motion_opt_a"></li>
             
@@ -535,7 +486,8 @@
 
             </ul>
             </div>
-            </div>
+            <a class="reference internal image-reference" href="_images/q2_5.png"><img alt="_images/q2_5.png" class="align-center" src="_images/q2_5.png" style="width: 530px;" /></a>
+</div>
 <div class="section" id="pyetja-6">
 <h3>Pyetja 6<a class="headerlink" href="#pyetja-6" title="Permalink to this headline">¶</a></h3>
 
@@ -546,7 +498,6 @@
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="relative_motion">
             <p>Q-15: Cilët blloqe mundësojnë lëvizjen relative? (Zgjidhni të gjitha përgjigjet e sakta)</p>
-<a class="reference internal image-reference" href="_images/q2_6.png"><img alt="_images/q2_6.png" src="_images/q2_6.png" style="width: 530px;" /></a>
 
             <li data-component="answer"  id="relative_motion_opt_a"></li><li data-component="feedback" id="relative_motion_opt_a"></li>
             
@@ -559,7 +510,8 @@
 
             </ul>
             </div>
-            </div>
+            <a class="reference internal image-reference" href="_images/q2_6.png"><img alt="_images/q2_6.png" src="_images/q2_6.png" style="width: 530px;" /></a>
+</div>
 <div class="section" id="pyetja-7">
 <h3>Pyetja 7<a class="headerlink" href="#pyetja-7" title="Permalink to this headline">¶</a></h3>
 
@@ -569,8 +521,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="reporters">
-            <p>Q-16:  Cila nga blloqet përfaqëson reporterët në lëvizje? (Zgjidhni të gjitha përgjigjet e sakta)</p>
-<a class="reference internal image-reference" href="_images/q2_7.png"><img alt="_images/q2_7.png" class="align-center" src="_images/q2_7.png" style="width: 310px;" /></a>
+            <p>Q-16: Cila nga blloqet përfaqëson reporterët në lëvizje? (Zgjidhni të gjitha përgjigjet e sakta)</p>
 
             <li data-component="answer"  id="reporters_opt_a"></li><li data-component="feedback" id="reporters_opt_a"></li>
             
@@ -583,7 +534,8 @@
 
             </ul>
             </div>
-            </div>
+            <a class="reference internal image-reference" href="_images/q2_7.png"><img alt="_images/q2_7.png" class="align-center" src="_images/q2_7.png" style="width: 310px;" /></a>
+</div>
 <div class="section" id="pyetja-8">
 <h3>Pyetja 8<a class="headerlink" href="#pyetja-8" title="Permalink to this headline">¶</a></h3>
 
@@ -635,7 +587,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="coordinates2">
-            <p>Q-19: Cilat pikë kanë një koordinatë negative <em>y</em>?</p>
+            <p>Q-19: Cilat pikë kanë një koordinatë negative <em>y</em>? (Zgjidhni të gjitha përgjigjet e sakta)</p>
 
             <li data-component="answer"  id="coordinates2_opt_a">Point A</li><li data-component="feedback" id="coordinates2_opt_a"></li>
             
@@ -648,12 +600,7 @@
 
             </ul>
             </div>
-            <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 464)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
-</div>
-<p>    (Zgjidhni të gjitha përgjigjet e sakta)</p>
-
+            
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="coordinates_various">
     <span data-component="question">Q-20: Duke tërhequr drejtkëndësat, çiftoni pikat me koordinatat e tyre.</span>
@@ -685,7 +632,7 @@
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="coordinates_symmetrical">
-    <span data-component="question">Q-21: Duke tërhequr drejtkëndësat, çiftoni pikat me koordinatat e tyre.</span>
+    <span data-component="question">Q-21: Duke tërhequr drejtkëndëshat, çiftoni pikat me koordinatat e tyre.</span>
 	<span data-component=feedback>Provo Përsëri</span>
 
     <li data-component="draggable" id="coordinates_symmetrical_drag1">A</li>
@@ -757,14 +704,6 @@
 </div>
 <div class="section" id="try-provoje">
 <h2><img alt="try" src="_images/try.png" /> Provoje!<a class="headerlink" href="#try-provoje" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 540)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>|try| Provoje!
--------------
-</pre></div>
-</div>
-</div>
 <div class="section" id="ushtrimi-1-ndiq-pozicionin-e-sprite">
 <h3>Ushtrimi 1 - Ndiq pozicionin e Sprite<a class="headerlink" href="#ushtrimi-1-ndiq-pozicionin-e-sprite" title="Permalink to this headline">¶</a></h3>
 
@@ -818,25 +757,21 @@
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><a href="#id3"><span class="problematic" id="id4">|</span></a>Mundohuni të drejtoni Sprite nga pika A në pikën B duke përdorur blloqe të ndryshme <em>Lëvizjeje</em>.</p>
-<div class="system-message" id="id3">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Coordinates.rst</span>, line 597); <em><a href="#id4">backlink</a></em></p>
-<p>Inline substitution_reference start-string without end-string.</p>
-</div>
+<p>Mundohuni të drejtoni Sprite nga pika A në pikën B duke përdorur blloqe të ndryshme <em>Lëvizjeje</em>.</p>
 
     </p></div></div>
 <p>  <img alt="1" src="_images/1.png" /> Vendosni <em>Rrjetin</em> nga libraria e Sfondit si sfond.</p>
 <p>  <img alt="2" src="_images/2.png" /> Zgjidhni dy shkronja të reja nga libraria e sprite - shkronjat A dhe B (Blloku-A dhe Blloku-B).</p>
 <p>  <img alt="3" src="_images/3.png" /> Vendosni shkronjën A në këndin e poshtëm të majtë të Fazës në pozicionin (-200, -120), dhe shkronjën B në këndin e sipërm të djathtë në pozicionin (200, 120). Mënyra më e saktë për ta bërë këtë është të shtoni <img alt="goto_xy" src="_images/goto_xy.png" /> bllokoni shkronjën A (tërhiqeni atë në zonën e shkrimeve ndërsa shkronja A është aktive) dhe shkruani koordinatat e duhura х dhe у, dhe pastaj klikoni në bllok. Ndiqni të njëjtat hapa për shkronjën B.</p>
-<p>  <img alt="4" src="_images/4.png" /> Shtoni bllokun <img alt="goto" src="_images/goto.png" /> për mace dhe zgjidhni <em>Block-A</em> nga lista drop-down (e cila do të shfaqet kur klikoni në trekëndëshin e bardhë në kutinë e zgjedhjes). <strong>Shënim</strong>. <img alt="goto" src="_images/goto.png" /> <a href="#id15"><span class="problematic" id="id16">|! = | |Goto_xy|</span></a>.</p>
+<p>  <img alt="4" src="_images/4.png" /> Shtoni bllokun <img alt="goto" src="_images/goto.png" /> për mace dhe zgjidhni <em>Block-A</em> nga lista drop-down (e cila do të shfaqet kur klikoni në trekëndëshin e bardhë në kutinë e zgjedhjes). <strong>Shënim</strong>. <img alt="goto" src="_images/goto.png" /> <img alt="!=" src="_images/not_equal.png" /> <img alt="goto_xy" src="_images/goto_xy.png" />.</p>
 <p>  <img alt="5" src="_images/5.png" /> Klikoni në bllokun <img alt="goto" src="_images/goto.png" /> dhe macja do të jetë pas shkronjës A.</p>
 <p>  <img alt="6" src="_images/6.png" /> Klikoni në blloku <img alt="goto_layer" src="_images/goto_layer.png" /> nga grupi <em>Looks</em> blloqet dhe macja do të jetë përpara shkronjës A.</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="_images/ex2_3.png"><img alt="_images/ex2_3.png" class="align-center" src="_images/ex2_3.png" style="width: 220px;" /></a>
 <p><img alt="7" src="_images/7.png" /> Tani në <img alt="goto" src="_images/goto.png" /> bllokoni zgjidhni <em>Block-B</em>, dhe pastaj klikoni mbi të. Macja do të jetë menjëherë përpara shkronjës B.</p>
 </div></blockquote>
-<p>   <img alt="8" src="_images/8.png" /> Shtoni bllokun <img alt="glide_to" src="_images/glide_to.png" /> për mace dhe zgjidhni <em>Block-A</em> nga lista drop-down, pastaj klikoni mbi të. Macja do të rrëshqasë për 1 sekondë te shkronja A. <strong>Shënim</strong>. <img alt="glide_to" src="_images/glide_to.png" /> <a href="#id17"><span class="problematic" id="id18">|! = | |Glide_xy|</span></a>.</p>
-<p>   <img alt="9" src="_images/9.png" /> Provoni mënyrën e tretë. Së pari, shtoni | point_towards | bllok për mace, dhe nga lista drop-down zgjidhni opsionin ku macja tregon drejt sprite  Block-A*. <strong>Shënim</strong>. <img alt="point_towards" src="_images/point_towards.png" /> <a href="#id19"><span class="problematic" id="id20">|! = | |point_direction|</span></a></p>
+<p>   <img alt="8" src="_images/8.png" /> Shtoni bllokun <img alt="glide_to" src="_images/glide_to.png" /> për mace dhe zgjidhni <em>Block-A</em> nga lista drop-down, pastaj klikoni mbi të. Macja do të rrëshqasë për 1 sekondë te shkronja A. <strong>Shënim</strong>. <img alt="glide_to" src="_images/glide_to.png" /> <img alt="!=" src="_images/not_equal.png" /> <img alt="glide_xy" src="_images/glide_xy.png" />.</p>
+<p>   <img alt="9" src="_images/9.png" /> Provoni mënyrën e tretë. Së pari, shtoni <img alt="point_towards" src="_images/point_towards.png" /> bllok për mace, dhe nga lista drop-down zgjidhni opsionin ku macja tregon drejt sprite  Block-A*. <strong>Shënim</strong>. <img alt="point_towards" src="_images/point_towards.png" /> <img alt="!=" src="_images/not_equal.png" /> <img alt="point_direction" src="_images/point_direction.png" /></p>
 <p>   Klikoni në <img alt="move_steps" src="_images/move_steps.png" /> bllokoni derisa macja të arrijë shkronjën A.</p>
 </div>
 <hr class="docutils" />

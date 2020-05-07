@@ -20,20 +20,22 @@ Një varg paraqet një seri personazhesh që trajtohen një pjesë të vetme të
   Në gjuhët e programimit, operacionet që kryhen më shpesh në tela janë këto:
 
   - përcaktimi i gjatësisë së vargut
-      ``gjatëesia e s1`` → 6
+   
+   ``gjatëesia e s1`` → 6
 
 - krahasimi i vargjeve
-      përcaktimi i cili vjen së pari me alfabet
-
-      `` s1 <s2? `` → false
-
-      kjo është e gabuar sepse "BANANA" vjen pas "ANA" në rend alfabeti,
+      
+      përcaktimi i cili vjen së pari me alfabet
+      `` s1 <s2? `` → false
+      kjo është e gabuar sepse "BANANA" vjen pas "ANA" në rend alfabeti,
 
  - telat lidhës (bashkues)
-      ``join s1 and s2`` А BANANААNА,
+
+   ``join s1 and s2`` А BANANААNА,
 
  - zgjedhjen e një personazhi që zë një pozicion specifik në tekst
-      `` letter 3 of s1`` → N,
+   
+    `` letter 3 of s1`` → N,
 
  - përmban?
       kontrollon nëse vargu s1 përmban vargun s2
@@ -235,8 +237,8 @@ Pyetja 4
    :feedback_b: 
    :feedback_c: Saktë.
    :feedback_d: Kjo do të arrihet duke u bashkuar me këto dy fjalë.
-   
-     Cili do të jetë rezultati i operacionit ``length of LENA``?
+   
+   Cili do të jetë rezultati i operacionit ``length of LENA``?
 
 Pyetje 5
 ~~~~~~~~~~~
@@ -266,13 +268,13 @@ Pyetje 6
 
 
 .. dragndrop:: string6
-    :feedback: Provo përsëeri
-    :match_1: A|||A
-    :match_2: B|||nothing returns
-    :match_3: C|||1
-    :match_4: D|||7
+   :feedback: Provo përsëeri
+   :match_1: A|||A
+   :match_2: B|||nothing returns
+   :match_3: C|||1
+   :match_4: D|||7
        
-    Duke zvarritur, lidhni komandat me vlerat e kthimit.
+   Duke zvarritur, lidhni komandat me vlerat e kthimit.
    
 
 |try| Provoje!
@@ -354,7 +356,7 @@ dhe përdoruesi hyn në tekstin MASK, programi do ta kodojë atë si LVPJ.
 Sidoqoftë, nëse teksti hyrës MASK duhet të deshifrohet, programi do ta shndërrojë atë në ОQUL.
 
 Projekti 2 - "Backward"
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 3
 

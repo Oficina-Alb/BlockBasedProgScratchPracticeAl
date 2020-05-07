@@ -164,14 +164,14 @@ Disa pjesë të ndërfaqes Scratch janë shënuar me numra nga 1 në 5.
    :align: center
       
 .. dragndrop:: interface2
-    :feedback: Try again
-    :match_1: stage|||4
-    :match_2: blocks palette|||2
-    :match_3: scripts area|||3
-    :match_4: sprite list|||5
-    :match_5: menu bar|||1
+   :feedback: Try again
+   :match_1: stage|||4
+   :match_2: blocks palette|||2
+   :match_3: scripts area|||3
+   :match_4: sprite list|||5
+   :match_5: menu bar|||1
     
-    Tërhiqni emrin e secilës pjesë të mjedisit në pozicionin përkatës në figurë.
+   Tërhiqni emrin e secilës pjesë të mjedisit në pozicionin përkatës në figurë.
 
 
 Pyetja 3
@@ -186,7 +186,7 @@ Pyetja 3
    :feedback_a: Gabim. Projekti duhet të ketë një fazë me të paktën një sfond.
    :feedback_b: Saktë.
    
-     Mund të bëni një projekt që nuk ka një fazë?
+   Mund të bëni një projekt që nuk ka një fazë?
 
 Pyetja 4
 ~~~~~~~~~~
@@ -199,8 +199,8 @@ Pyetja 4
    :correct: a
    :feedback_a: Saktë.
    :feedback_b: Gabim. Projekti mund të ketë vetëm skenare që janë të lidhura me skenën.
-   
-    Mund të bëni një projekt që nuk ka sprites?
+   
+   Mund të bëni një projekt që nuk ka sprites?
 
 Pyetja 5
 ~~~~~~~~~~
@@ -214,7 +214,7 @@ Pyetja 5
    :feedback_a: Gabim. Objekti duhet të ketë të paktën një pamje, kostum skenik - sfond dhe spërkatje.
    :feedback_b: Saktë.
    
-    A mund të krijoni një skenë ose një spërkatje pa u caktuar atyre një vështrim?
+   A mund të krijoni një skenë ose një spërkatje pa u caktuar atyre një vështrim?
 
 Pyetja 6
 ~~~~~~~~~~
@@ -298,7 +298,7 @@ Pyetja 10
    :feedback_d: 
 
    Çfarë mund të caktohet në etapa dhe sprites?
-    (Zgjidhni të gjitha përgjigjet e sakta)  
+   (Zgjidhni të gjitha përgjigjet e sakta)  
 
 
 
@@ -429,23 +429,23 @@ Eksploro Tutorialin *Krijoni Animime që Flasin*, atëherë përpiquni të krijo
 
 .. infonote::
 
- |1 | Hap Scratch
+ |1| Hap Scratch
 
- |2| Klikoni në ikonën |extensions|  e vendosur në fund të bllokut Paleta. Do të shfaqen blloqet *Extension*.
-  
- |3| Nga blloqet *Extension* ju duhet të zgjidhni |sound_extension|. Tre blloqe të reja do të shfaqen në paletën e bllokut. Këto blloqe do t'i japin mundësi sprite të thotë tekstin e shkruar në fushën e hyrjes bllok |speak|, në gjuhën e vendosur në bllokut |set_language| bllok. Ju gjithashtu mund të vendosni llojin e zërit që do të përdoret: femër (soprano ose alt) ose mashkull (tenor ose bas). Kjo është bërë me bllokun |set_voice|.
-  
- |4| Tërhiqni bllokun |set_language| në zonën e shkrimeve.
-  
- |5| Tërhiqni bllokun |set_voice| në zonën e shkrimeve dhe zgjidhni zërin e Sprite.
-  
- |6| Tërhiqni bllokun |speak| në zonën e shkrimeve dhe shkruani *Hello World* në fushën e tij të dhëna.
-
- |7| Shtoni edhe dy blloqe |speak|, pastaj shtypni dy fjalitë e tjera të folura nga macja.
-
- |8| Bashko blloqet së bashku për të formuar një pirg dhe vendosni bllokun |clicked_flag| në majë.
-
- |9| Ruani këtë projekt nën emrin "Hello World3".
+ |2| Klikoni në ikonën |extensions|  e vendosur në fund të bllokut Paleta. Do të shfaqen blloqet *Extension*.
+ 
+ |3| Nga blloqet *Extension* ju duhet të zgjidhni |voices_extension|. Tre blloqe të reja do të shfaqen në paletën e bllokut. Këto blloqe do t'i japin mundësi sprite të thotë tekstin e shkruar në fushën e hyrjes se bllokut |speak|, në gjuhën e vendosur në bllokut |set_language|. Ju gjithashtu mund të vendosni llojin e zërit që do të përdoret: femër (soprano ose alt) ose mashkull (tenor ose bas). Kjo është bërë me bllokun |set_voice|.
+ 
+ |4| Tërhiqni bllokun |set_language| në zonën e shkrimeve.
+ 
+ |5| Tërhiqni bllokun |set_voice| në zonën e shkrimeve dhe zgjidhni zërin e Sprite.
+ 
+ |6| Tërhiqni bllokun |speak| në zonën e shkrimeve dhe shkruani *Hello World* në fushën e tij të dhëna.
+ 
+ |7| Shtoni edhe dy blloqe |speak|, pastaj shtypni dy fjalitë e tjera të folura nga macja
+ 
+ |8| Bashko blloqet së bashku për të formuar një pirg dhe vendosni bllokun |clicked_flag| në majë.
+ 
+ |9| Ruani këtë projekt nën emrin "Hello World3".
 
 |bug| Debug!
 ---------------

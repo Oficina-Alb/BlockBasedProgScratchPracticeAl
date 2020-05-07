@@ -59,18 +59,20 @@ Për programe më komplekse, do të duhet të caktojmë vlera të caktuara, d.m.
 
   Disa blloqe reporterësh gjithashtu kanë kutitë e kontrollit. Nëse përdoruesi klikon në kutinë e kontrollit, në skenë do të shfaqet një monitor, dhe do të shfaq vlerën aktuale të variablit.
   Monitori mund të shfaq vlerat e variablave në shumë formate të ndryshme të paraqitura në figurën vijuese.
-  
+
   .. image:: ../_images/7/fig7_3.png
-         :width: 240px   
-         :align: center
+      :width: 240px   
+      :align: center
 
-   (A) një shfaqje e vogël e vlerës me emrin e variablit,
 
-   (B) shfaqje e madhe e vlerës pa emrin,
 
-   (C) me një rrëshqitës, i cili i mundëson përdoruesit të ndryshojë vlerën e variablës.
+(A) një shfaqje e vogël e vlerës me emrin e variablit,
 
-   Formati mund të ndryshohet duke klikuar dy herë në monitor. Formati i rrëshqitësit mund të përdoret vetëm për ndryshoret e krijuara nga përdoruesi. Duke klikuar me të djathtën në shiritin, mund të vendosni vlerat minimale dhe maksimale.
+(B) shfaqje e madhe e vlerës pa emrin,
+
+(C) me një rrëshqitës, i cili i mundëson përdoruesit të ndryshojë vlerën e variablës.
+
+Formati mund të ndryshohet duke klikuar dy herë në monitor. Formati i rrëshqitësit mund të përdoret vetëm për ndryshoret e krijuara nga përdoruesi. Duke klikuar me të djathtën në shiritin, mund të vendosni vlerat minimale dhe maksimale.
 
 
 |study| Studioni shembujt
@@ -89,7 +91,7 @@ Ne po prezantojmë kushte komplekse dhe operacione logjike.
 
 **Krijimi i sfondit dhe sprites**
 
-Në këtë projekt, ka tre sprites - *Cat 1*, *Cat 2* dhe *Mouse* dhe një sfond. Ne do të krijojmë sfondin duke modifikuar pak nga sfondi *fushën e Hay * nga libraria Scratch.
+Në këtë projekt, ka tre sprites - *Cat 1*, *Cat 2* dhe *Mouse* dhe një sfond. Ne do të krijojmë sfondin duke modifikuar pak nga sfondi *fushën e Hay* nga libraria Scratch.
 
 .. image:: ../_images/7/fig7_4.png
    :width: 480px   
@@ -159,22 +161,22 @@ Ne gjithashtu do të prezantojmë një kohëmatës, i cili do të ndalojë lojë
 Në mënyrë që të mund të gjurmoni pikët e lojtarëve, të dy variablat *Player 1* dhe *Player 2* duhet të kontrollohen, dhe monitorët e tyre duhet të shfaqen në formatin e parë.
 
 .. image:: ../_images/7/fig7_10.png
-         :width: 700px   
-         :align: center
+   :width: 700px   
+   :align: center
 
 Në fillim të shkrimit të shtuar te miu, ne duhet të vendosim vlerat e tyre fillestare në 0. Sa herë që një mace prek miun, numri i pikave duhet të rritet.
 Prandaj, skripti i miut tani ka pamjen e mëposhtme.
 
 .. image:: ../_images/7/fig7_11.png
-         :width: 540px   
-         :align: center
+   :width: 540px   
+   :align: center
 
 Ajo që mbetet është të përcaktoni afatin kohor të lojës. Ne mund ta bëjmë këtë duke vendosur vlerën e variblit *Time*, e vendosur në skenarin e shkaktuar duke klikuar mbi flamurin e gjelbër, në numrin e dëshiruar, për shembull, 120 sekonda. Atëherë do ta vendosim komandën |wait_sec| në cikël, i cili do të përsëritet 120 herë, dhe zvogëloni vlerën e variablës me 1.
 Do të shtojmë komandën |stop| mbas ciklit, dhe bashkëngjitni këtë skenar në degën e miut.
 
 .. image:: ../_images/7/fig7_12.png
-         :width: 190px   
-         :align: center
+   :width: 190px   
+   :align: center
 
 .......
 
@@ -281,6 +283,7 @@ Në një tokë magjike, ka katër sprites një magjistar i ri *Mathematician*, *
     :align: center
 
 *Numbers* dhe *Signs* dëshirojnë të luajnë një lojë të quajtur *Example*: sa herë që përdoruesi klikon mbi butonin *Vendosni një detyrë* ata zgjedhin rastësisht kostumin e tyre, si kur dikush rrokullis një monedhë.
+
 Sidoqoftë ndryshimi i *Numbers* dhe *Signs*, *Mathematician* i shton dhe shumon ato pa bërë ndonjë gabim.
 
 Nuk dihet saktësisht se cili magjistar e mësoi atë, por thuhet se *Mathematician* po kërkon një mjeshtër i cili do ta mësonte atë të ndahej dhe të zbriste.
@@ -337,56 +340,55 @@ Nëse nuk jeni akoma të sigurt se si ta bëni këtë, shihni një shpjegim më 
    :showtitle: Trego shpjegimin
    :hidetitle: Fshih shpjegimin
  
-   Në kapitullin *Loops* kemi bërë një klasifikim të blloqeve të përdorura në Scratch dhe treguam që të ashtuquajturat  blloqe të funksionit* futen në të ashtuquajturat *Blloqe të Komandës*. Ndërsa fillojmë krijimin e projekteve që janë më komplekse, do të duhet të përdorim blloqe funksionimi më komplekse, të cilat përbëhen nga disa blloqe të tjera funksioni, si në shembullin që po përshkruajmë këtu. Kjo është arsyeja pse ne do të përdorim imazhet për të treguar hap pas hapi se si krijohet blloku i ndërlikuar i argumentit *mendimi i *. Duke bërë këtë, ne do të kthehemi prapa, nga fundi në fillim.
-    Ne duhet të marrim:  
+   Në kapitullin *Loops* kemi bërë një klasifikim të blloqeve të përdorura në Scratch dhe treguam që të ashtuquajturat  blloqe të funksionit* futen në të ashtuquajturat *Blloqe të Komandës*. Ndërsa fillojmë krijimin e projekteve që janë më komplekse, do të duhet të përdorim blloqe funksionimi më komplekse, të cilat përbëhen nga disa blloqe të tjera funksioni, si në shembullin që po përshkruajmë këtu. Kjo është arsyeja pse ne do të përdorim imazhet për të treguar hap pas hapi se si krijohet blloku i ndërlikuar i argumentit *te mendimit*. Duke bërë këtë, ne do të kthehemi prapa, nga fundi në fillim.
   
    Ne duhet të marrim |expr1|
 
    .. |expr1| image:: ../_images/7/fig7_21.png
  
-   1. Si mund të marrim |expr2| and |expr3|?
+1. Si mund të marrim |expr2| and |expr3|?
 
    .. |expr2| image:: ../_images/7/fig7_26.png
 
    .. |expr3| image:: ../_images/7/fig7_27.png
 
-   а) Marrim bllokun |expr4| nga grupi *Sensing*. 
+а) Marrim bllokun |expr4| nga grupi *Sensing*. 
 
    .. |expr4| image:: ../_images/7/fig7_28.png
-
-   b) Nga lista sprite, të cilën e marrim kur klikojmë në trekëndëshin ngjitur me sprite *Mathematician*, do të zgjedhim *Numrin 1* (d.m.th. *Numrin2*)
-    c) Nga lista e ndryshoreve të shtuara në këtë sprite, të cilat i marrim kur klikojmë në trekëndëshin pranë ndryshores *vendin x*, do të zgjedhim *numrin e kostumit*
+   
+b) Nga lista sprite, të cilën e marrim kur klikojmë në trekëndëshin ngjitur me sprite *Mathematician*, do të zgjedhim *Numrin 1* (d.m.th. *Numrin2*)
+    
+c) Nga lista e ndryshoreve të shtuara në këtë sprite, të cilat i marrim kur klikojmë në trekëndëshin pranë ndryshores *vendin x*, do të zgjedhim *numrin e kostumit*
 
    .. image:: ../_images/7/fig7_29.png
-         :width: 615px   
-         :align: center
+      :width: 615px   
+      :align: center
 
+2. Si mund të marrim |expr6|
 
-    2. Si mund të marrim |expr6|
+.. |expr6| image:: ../_images/7/fig7_30.png
 
-   .. |expr6| image:: ../_images/7/fig7_30.png
+а) Ne e marrim bllokun |multiply| nga grupi *Operatorët*
+   
+b) Vendosim argumentin e parë që morëm nga përshkrimi 1 në kutinë e parë |expr7|
 
-    а) Ne e marrim bllokun |multiply| nga grupi *Operatorët*
+.. |expr7| image:: ../_images/7/fig7_31.png
 
-    b) Vendosim argumentin e parë që morëm nga përshkrimi 1 në kutinë e parë |expr7|
+c) Vendosim argumentin e dytë që morëm nga përshkrimi 1 në kutinë e dytë
 
-   .. |expr7| image:: ../_images/7/fig7_31.png
+3. Si mund të marrim |expr8|
 
-    c) Vendosim argumentin e dytë që morëm nga përshkrimi 1 në kutinë e dytë
+.. |expr8| image:: ../_images/7/fig7_32.png
 
-    3. Si mund të marrim |expr8|
+а) Ne e marrim bllokun |join| nga grupi *Operatorët*
 
-   .. |expr8| image:: ../_images/7/fig7_32.png
+b) Ne shkruajmë tekstin "Përgjigja është" në fushën e parë |expr9|
 
-    а) Ne e marrim bllokun |join| nga grupi *Operatorët*
+.. |expr9| image:: ../_images/7/fig7_33.png
 
-    b) Ne shkruajmë tekstin "Përgjigja është" në fushën e parë |expr9|
+s) Ne e vendosim argumentin që formuam nga përshkrimi 2 në fushën e dytë
 
-   .. |expr9| image:: ../_images/7/fig7_33.png
-
-    s) Ne e vendosim argumentin që formuam nga përshkrimi 2 në fushën e dytë
-
-    4. Më në fund, argumenti i formuar në këtë mënyrë, ne vendosëm në fushën e bllokut |think|
+4. Më në fund, argumenti i formuar në këtë mënyrë, ne vendosëm në fushën e bllokut |think|
 
  
 **Përditësimi i parë**
@@ -399,8 +401,8 @@ Ne mund ta përmirësojmë projektin në mënyrë që, pasi të marrim detyrën 
 Duhet të shtohet gjithashtu udhëzimi se si duhet të përdoret programi. Kjo mund të arrihet me futjen e një butoni tjetër mbi të cilin mund të shkruajmë fjalën *Udhëzim*. Kur klikohet ky buton, transmeton një mesazh; si sfondi ashtu edhe sprite matematikan duhet të reagojnë ndaj këtij mesazhi. Sfondi do të shndërrohet në *Backdrop2*, i cili ka udhëzimet e shkruara në të, dhe matematikani zvogëlohet në 30% të madhësisë së tij, në mënyrë që të mos mbulojë udhëzimin.
 
 .. image:: ../_images/7/fig7_34.png
-         :width: 625px   
-         :align: center
+   :width: 625px   
+   :align: center
 
 **Përditësimi i tretë**  
 
@@ -409,15 +411,15 @@ Duhet të shtohet gjithashtu udhëzimi se si duhet të përdoret programi. Kjo m
 Nëse duam që programi të kryejë operacionet aritmetike të zbritjes dhe ndarjes, projekti do të bëhet më kompleks. Për ta bërë këtë azhurnim, duhet të shtojmë edhe dy kostume në burimin *Sign* për ``zbritjen`` dhe ``:`` për pjeëtimin. Ne gjithashtu duhet të ndryshojmë skenarin, i cili përshkruan sjelljen e matematikanit kur përdoruesi klikon mbi të.
  	 	 
 .. image:: ../_images/7/fig7_35.png
-         :width: 625px   
-         :align: center    
+   :width: 625px   
+   :align: center    
 
 Supozohet se përdoruesi është i njohur me konceptin e numrave negativ. Kur bëhet fjalë për ndarjen, duhet të sigurohemi që rezultati të jetë një numër i plotë dhe të shmangim ndarjen në zero.
 Për të shmangur problemet e mundshme kur bëhet fjalë për ndarjen, nëse operacioni i zgjedhur, i cili gjenerohet në mënyrë të rastësishme, ndodh të jetë ndarje, ne do të transmetojmë mesazhin *divide *, ndërsa për të gjitha operacionet e tjera do të përdorim të njëjtën zgjidhje të aplikuar në versionet e mëparshme të projektit.
 
 .. image:: ../_images/7/fig7_36.png
-         :width: 625px   
-         :align: center   
+   :width: 625px   
+   :align: center   
 
 Prandaj, kur të klikohet butoni *Mendoni për një detyrë*, ai transmeton mesazhin "detyrë", të dy *Mathematician* dhe *Sign* reagojnë ndaj këtij mesazhi.
 *Mathematician* mendon "Hmmm ...", dhe *Sign* gjeneron një numër të rastit nga 1 në 4 dhe paraqitet në veshjen e duhur (1 - shumëzim, 2 - shtesë, 3 - zbritje, 4 - ndarje).
@@ -432,8 +434,8 @@ Vlera e variablit *dividend* i është caktuar sprite *Number1* dhe vlera e vari
 Në këtë mënyrë, kur dividenti ndahet nga pjesëtuesi, matematikani me siguri do të marrë një vlerë të plotë nga intervali [1,9]. 
 
 .. image:: ../_images/7/fig7_37.png
-         :width: 700px   
-         :align: center  
+   :width: 700px   
+   :align: center  
          
 Ne do të përdorim këtë metodë të gjenerimit të detyrave, nga rezultatet në operandë edhe në projekte të tjera. Në këtë mënyrë, ne mund të sigurojmë që përdoruesit t’i jepet një detyrë që mund ta zgjidhë, për shembull, të mos marrë numra negativ kur zbris numrat, ose të marrë një rezultat më të madh se 50 kur kryen shumëzimin dhe që faktorët mund të jenë numra më të mëdhenj, dhe të ngjashme.
 
@@ -447,8 +449,8 @@ Meqenëse Scratch kryen konvertimin automatik të të dhënave nga numerike në 
 Shifrat e mëposhtme paraqesin skriptet që u shtohen sprites *Number 1*, *Number2* dhe *Sign*.
 
 .. image:: ../_images/7/fig7_38.png
-         :width: 550px   
-         :align: center  
+   :width: 550px   
+   :align: center  
 
 
 |ask| E kuptuat?
@@ -461,13 +463,13 @@ Pyetja 1
 .. fillintheblank:: ai11
 		    
       .. image:: ../_images/7/q7_1.png
-        :width: 150px   
-        :align: center 
+         :width: 150px   
+         :align: center 
         
-     Cila është vlera e variablit *a* pas ekzekutimit të komandave |blank|
+      Cila është vlera e variablit *a* pas ekzekutimit të komandave |blank|
 
       -   :4: E vërtetë
-          :x: Komanda, e cila shton vlerën 5 në variabël, ekzekutohet pavarësisht nëse kushti i degëzimit është përmbushur apo jo.
+             :x: Komanda, e cila shton vlerën 5 në variabël, ekzekutohet pavarësisht nëse kushti i degëzimit është përmbushur apo jo.
   
 
 
@@ -479,13 +481,13 @@ Pyetja 2
 .. fillintheblank:: ai13
 		    
       .. image:: ../_images/7/q7_2.png
-        :width: 180px   
-        :align: center      
+         :width: 180px   
+         :align: center      
 
       Cila është vlera e variablit *a* pas ekzekutimit të komandave: |blank|
 
       -   :0: E vërtetë
-          :x: Komanda, e cila shton vlerën 5 në variabël, ekzekutohet pavarësisht nëse kushti i degëzimit është përmbushur apo jo.
+            :x: Komanda, e cila shton vlerën 5 në variabël, ekzekutohet pavarësisht nëse kushti i degëzimit është përmbushur apo jo.
 
 Pyetja 3
 ~~~~~~~~~~~
@@ -619,10 +621,10 @@ Pyetja 9
 .. fillintheblank:: if11a
 
       .. image:: ../_images/7/q7_9.png
-        :width: 200px   
-        :align: center
+         :width: 200px   
+         :align: center
           
-     Cila do të jetë vlera e ndryshores *a* pas ekzekutimit të komandës kusht, nëse më parë ishin vlerat e variablit *a* dhe *b*: a = 4 dhe b = 2? |blank|
+      Cila do të jetë vlera e ndryshores *a* pas ekzekutimit të komandës kusht, nëse më parë ishin vlerat e variablit *a* dhe *b*: a = 4 dhe b = 2? |blank|
 
       -   :да: E vërtetë
           :x: Komanda, e cila shton vlerën 5 në variabël, ekzekutohet pavarësisht nëse kushti i degëzimit është përmbushur apo jo.
@@ -703,7 +705,7 @@ Pyetja 12
 
 
 |try| Provoje!
--------------
+------------------
 
 Ushtrimi 1
 ~~~~~~~~~~
@@ -732,8 +734,8 @@ Ushtrimi 2
   Kontrolloni në Scratch nëse shkallët e komandave të mëposhtme shkëmbejnë vlerat e variablave **х** dhe **у** pavarësisht nga vlerat fillestare të tyre.
 
   .. image:: ../_images/7/ex7_2.png
-         :width: 400px   
-         :align: center 
+      :width: 400px   
+      :align: center 
 
   Çfarë ndodh nëse х=0 ose у=0?
 
@@ -806,8 +808,10 @@ Bug 1
 .. level:: 1
 
 :Question:
+  
    Studenti dëshironte të ndryshonte sjelljen e maceve në projektin "The Hunt". Ai / ajo dëshironte që macja të shëtiste nëpër qarqe sa herë që prek miun (lëviz 1 hap dhe kthen 1 shkallë 360 herë).
-    Studenti shtoi shkrimet e mëposhtme në sprajën e maceve, por kur projekti u testua, macja nuk u kthye kur preku miun. Ku është faji?
+   
+   Studenti shtoi shkrimet e mëposhtme në sprajën e maceve, por kur projekti u testua, macja nuk u kthye kur preku miun. Ku është faji?
    
 .. image:: ../_images/7/bug7_1.png
    :width: 500px   
@@ -906,8 +910,8 @@ Projekti 2 - Programi i bazuar në Diagrama të Bllokut
 Krijoni një program në Scratch që i përshtatet algoritmit të mëposhtëm.
 
 .. image:: ../_images/7/algoritam.png
-         :width: 490px   
-         :align: center      
+   :width: 490px   
+   :align: center      
 
 Përcaktoni rezultatin e ekzekutimit të këtij programi për a = 157; а = 342; а = 529.
 

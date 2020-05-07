@@ -14,7 +14,7 @@ Funksionet bllok
 
 Në Scratch, forma e një blloku siguron që, kur blloqet janë të lidhura, ato mund të formojnë vetëm shkrime, të cilat janë sintetike të sakta. Ka blloqe të pavarura dhe blloqe funksionimi. Blloqet e pavarura (blloqet e kapelave, blloqet e pirgut, blloqet C dhe blloqet e kapakëve) korrespondojnë me komandat gjuhësore. Blloqet e funksioneve (reporterët dhe blloqet logjike) ruajnë vlerat e blloqeve të pavarura. Në mësimin 3, ne folëm për llojet e ndryshme të blloqeve, dhe tani do të prezantojmë funksionet e grupeve kryesore të bllokut dhe disa prej grupeve të vendosura në pjesën Zgjatjet.
 
-blloqet e lëvizjes
+Blloqet e lëvizjes
 ~~~~~~~~~~~~~~~~~~~~
 
 .. sidebar:: |motion_blocks| Lëvizja
@@ -50,7 +50,7 @@ Disa lloje të të dhënave mund të futen në fushat hyrëse të blloqeve të l
 
 Në disa prej blloqeve, destinacioni zgjidhet nga lista rënëse e bllokut. Ky mund të jetë treguesi i miut, disa sprite të tjera që marrin pjesë në projekt, si dhe një pikë, koordinatat e së cilës gjenerohen në mënyrë të rastësishme.
 
-Blloku |rotacioni_style| ka tre opsione të stilit të rrotullimit: *të gjithë rreth*, *majtas-djathtas* dhe *nuk rrotullohen*. Opsioni i parë do të thotë që sprite mund të përballet me cilindo nga 360 gradë. *Majtas-djathtas* do të thotë që sprite mund të përballet vetëm majtas ose djathtas, dhe çdo drejtim tjetër është i paaftë. Mundësia e fundit do të thotë që sprite gjithmonë përballet drejt.
+Blloku |rotation_style| ka tre opsione të stilit të rrotullimit: *të gjithë rreth*, *majtas-djathtas* dhe *nuk rrotullohen*. Opsioni i parë do të thotë që sprite mund të përballet me cilindo nga 360 gradë. *Majtas-djathtas* do të thotë që sprite mund të përballet vetëm majtas ose djathtas, dhe çdo drejtim tjetër është i paaftë. Mundësia e fundit do të thotë që sprite gjithmonë përballet drejt.
 
 Blloqet nga grupi *Motion* janë shtjelluar në mësimin 2 të këtij praktiku.
 
@@ -85,15 +85,15 @@ Njëzet blloqe janë të dukshme kur sprite është në fokus dhe tre nëngrupe 
 Efektet grafike, të cilat mund të shtohen në sprite, janë:
 
 .. hlist::
-   :columns: 1
+    :columns: 1
 
     * color - ndryshon ngjyrën e sprite,
-    * fisheye - jep përshtypjen e një sprite që shihet përmes një lente me kënd të gjerë,
-    * whirl - kthesë rrëshqitje rreth pikës së saj qendrore,
-    * pixelate - pikselon sprite,
-    * mozaic - krijon imazhe të shumëfishta më të vogla të sprite,
-    * brightness - ndryshon shkëlqimin e sprite, dhe
-    * ghost - ndryshon transparencën e sprite.
+    * fisheye - jep përshtypjen e një sprite që shihet përmes një lente me kënd të gjerë,
+    * whirl - kthesë rrëshqitje rreth pikës së saj qendrore,
+    * pixelate - pikselon sprite,
+    * mozaic - krijon imazhe të shumëfishta më të vogla të sprite,
+    * brightness - ndryshon shkëlqimin e sprite, dhe
+    * ghost - ndryshon transparencën e sprite.
 
 
 Ndryshimi i ngjyrës, për shembull, mund të japë iluzionin se sprite po shpreh emocione ose ndezje, mund të duket sikur u shfaq një gjë krejtësisht e re. Nëse përdorni ndryshimin e ngjyrave me komandën ``stamp``, mund të bëni modele tërheqëse, për shembull, ylber.
@@ -164,7 +164,7 @@ Blloqet Event
  
 .. |fig11_4| image:: ../_images/11/fig11_4.png
 
-Blloqet në këtë grup përdoren për të shkaktuar drejtimin e skenarit dhe dërgimin dhe pranimin e mesazheve. Në këtë grup ka 9 blloqe dhe ato ndahen në 3 nëngrupe. Meqenëse në këtë version të Scratch, sensacioni i videos është zhvendosur në pjesën e shtesave, është hequr nga menyja drop-down e bllokut | kur_greater |.
+Blloqet në këtë grup përdoren për të shkaktuar drejtimin e skenarit dhe dërgimin dhe pranimin e mesazheve. Në këtë grup ka 9 blloqe dhe ato ndahen në 3 nëngrupe. Meqenëse në këtë version të Scratch, sensacioni i videos është zhvendosur në pjesën e shtesave, është hequr nga menyja drop-down e bllokut |when_greater|.
 
 Funksionet e nëngrupeve janë këto:
 
@@ -178,7 +178,7 @@ Funksionet e nëngrupeve janë këto:
 
 Përdoruesi mund të fillojë ekzekutimin e projektit duke klikuar butonin |g_flag|, një nga sprites që merr pjesë në projekt, në sfond ose duke shtypur një nga tastet e tastierës. Projekti zakonisht nxitet kur klikohet flamuri i gjelbër, kjo është kur të gjitha skriptet, të cilat fillojnë me këtë bllok, do të aktivizohen. Këto janë skriptet që kryejnë inicializime të ndryshme, dhe pastaj ia dorëzojnë menaxhimin shkrimeve të tjera. Për shembull, ata fshijnë të gjithë elementët e listës, rivendosin variablat, vendosin skena duke treguar ose fshehur sprites dhe duke ndryshuar kostumet e tyre, fshijnë çdo gjë të tërhequr në skenë, fillojnë muzikën në sfond, etj. Ndërsa është plotësisht e mundur të krijoni projekte pa përdorur këtë bllok, nuk rekomandohet. E vetmja mënyrë se si mund të fillohet një projekt pa përdorur këtë bllok do të ishte aktivizimi i skripteteve që fillojnë me ndonjë bllok tjetër nga kjo nëngrup. Në këtë rast, projekti do të zgjaste vetëm derisa të përfundonin skriptet që varen nga skriptet fillestare.
 
-Shënim. Blloku |clicked_staza| është e dukshme vetëm kur faza është në fokus.
+Shënim. Blloku |clicked_stage| është e dukshme vetëm kur faza është në fokus.
 
 **Shkrimet e shkëputjes kur u plotësua një kusht specifik gjatë ekzekutimit të projektit**
 
@@ -363,21 +363,21 @@ Operacionet që janë mbështetur për të punuar me listat janë:
 
 .. hlist::
     :columns: 1
-
-     * fshirjen e një artikulli nga një pozicion i caktuar në listë,
-     * fshirjen e të gjitha sendeve nga një listë e veçantë,
-     * futja e artikujve në listë në pozicionet e dhëna, dhe
-     * zëvendësimi i artikujve në pozicione të përcaktuara.
+    
+    * fshirjen e një artikulli nga një pozicion i caktuar në listë,
+    * fshirjen e të gjitha sendeve nga një listë e veçantë,
+    * futja e artikujve në listë në pozicionet e dhëna, dhe
+    * zëvendësimi i artikujve në pozicione të përcaktuara.
 
 Informacioni i mëposhtëm mund të merret në lidhje me listën:
 
 .. hlist::
     :columns: 1
-
-     * cili artikull është në pozicionin e specifikuar,
-     * cili është pozicioni (në listë) të sendit të specifikuar,
-     * gjatësia e listës (numri i artikujve në listë), dhe
-     * nëse një artikull është përfshirë në një listë apo jo.
+    
+    * cili artikull është në pozicionin e specifikuar,
+    * cili është pozicioni (në listë) të sendit të specifikuar
+    * gjatësia e listës (numri i artikujve në listë), dhe
+    * nëse një artikull është përfshirë në një listë apo jo.
 
 Variablat dhe listat mund të jenë globale - ato mund të përdoren nga të gjithë sprites, ose lokalë - ato mund të përdoren vetëm nga një sprite. Variablat dhe listat e krijuara për skenë janë të dukshme për të gjitha sprites.
 
@@ -386,9 +386,9 @@ Vlerat aktuale të variablave mund të ndiqen në skenë përmes monitorëve të
 .. hlist::
     :columns: 1
     
-     * shfaqja e vlerës me emrin e ndryshores,
-     * shfaqje e madhe e vlerës pa emrin përkatës të ndryshores,
-     * ekran që përmban një shirit rrëshqitës, i cili mund të përdoret për të ndryshuar vlerën e ndryshores.
+    * shfaqja e vlerës me emrin e ndryshores,
+    * shfaqje e madhe e vlerës pa emrin përkatës të ndryshores,
+    * ekran që përmban një shirit rrëshqitës, i cili mund të përdoret për të ndryshuar vlerën e ndryshores.
 
 Variablat janë shtjelluar në mësimin 7, dhe listat në mësimin 9 të këtij praktiku.
  
@@ -451,15 +451,16 @@ Blloqet Text to Speech dhe Translate Extensions
  
 .. |fig11_11| image:: ../_images/11/fig11_11.png
 
-**Zgjatja e tekstit në të folu **
 
-Kjo zgjatje mund të përdoret vetëm nëse kompjuteri është i lidhur me Internet |search|, sepse ai përdor Shërbimet Ueb në Amazon.
+**Zgjatja e tekstit në të folur**
 
-Kur zgjidhni |voice_extension| nga grupi *Zgjatjet*, tre blloqe të reja do të shfaqen në paletën e bllokut. Ato lejojnë që sprite të thotë tekstin e futur në fushën hyrëse të bllokut të parë, në gjuhën e vendosur nga përdoruesi me bllokun e tretë nga ky grup. Përdoruesi mund të vendosë edhe zërin, i cili në të vërtetë do të flasë tekstin: femër (soprano ose alto) ose mashkull (tenor ose bas). Kjo është vendosur nga një bllok tjetër nga ky grup.
+Kjo zgjatje mund të përdoret vetëm nëse kompjuteri është i lidhur me Internet |requires|, sepse ai përdor Shërbimet Ueb në Amazon.
+
+Kur zgjidhni |voices_extension| nga grupi *Zgjatjet*, tre blloqe të reja do të shfaqen në paletën e bllokut. Ato lejojnë që sprite të thotë tekstin e futur në fushën hyrëse të bllokut të parë, në gjuhën e vendosur nga përdoruesi me bllokun e tretë nga ky grup. Përdoruesi mund të vendosë edhe zërin, i cili në të vërtetë do të flasë tekstin: femër (soprano ose alto) ose mashkull (tenor ose bas). Kjo është vendosur nga një bllok tjetër nga ky grup.
 
 **Përkthim i zgjatjes**
 
-Kjo shtesë mund të përdoret vetëm nëse kompjuteri është i lidhur në Internet | kërkon |, sepse përdor Google.
+Kjo shtesë mund të përdoret vetëm nëse kompjuteri është i lidhur në Internet |requires|, sepse përdor Google.
 
 Kur ju zgjidhni |translate_extension| nga *Zgjatjet*, dy blloqe të reja shfaqen në paletën e bllokut. Ato lejojnë që teksti i shkruar në një gjuhë të përkthehet në një gjuhë tjetër. Blloku |language| tregon se cila gjuhë është e vendosur në Scratch. Teksti i shkruar në gjuhën e tanishme në fushën e parë hyrëse të bllokut |translate_to| është përkthyer në gjuhën e zgjedhur nga lista rënëse e fushës së dytë të hyrjes. Nëse blloku i përkthimit vendoset në fushën hyrëse të bllokut ``say`` ose ``think``, përdoruesi mund të shohë përkthimin.
 
@@ -538,7 +539,7 @@ Lëvizja e shkëlqimit *brightness* ndryshon sa e errët është ngjyra: shkëlq
 Kur klikoni në mjetin e syrit, shfaqet një xham zmadhues me një rreth në qendër.
 Për të zgjedhur ngjyrën e dëshiruar, duhet të vendosni qendrën e xhamit zmadhues mbi pjesën e zonës së vizatimit në të cilën ndodhet ajo ngjyrë dhe të klikoni.
 
-Ekzistojnë katër opsione sipër tre rrëshqitësve. Këto mundësojnë mënyra të ndryshme të mbushjes së një zone me ngjyra. Një zonë mund të plotësohet në mënyrë të barabartë me një ngjyrë të fortë, ose si një gradient, me hije të ndryshme të një ngjyre. Nëse klikoni në njërën prej opsioneve përveç opsionit të ngjyrave të ngurta, do të shfaqen dy ngjyra të zgjedhura: |change|. Duke klikuar në ngjyrën e parë ose të dytë ju mund t'i vendosni ato. Klikimi i *swap* midis dy ngjyrave ndryshon rendin e tyre. Opsionet e mbushjes janë: ngjyra e ngurtë, gradient vertikal, gradient horizontal ose gradient rrethi.
+Ekzistojnë katër opsione sipër tre rrëshqitësve. Këto mundësojnë mënyra të ndryshme të mbushjes së një zone me ngjyra. Një zonë mund të plotësohet në mënyrë të barabartë me një ngjyrë të fortë, ose si një gradient, me hije të ndryshme të një ngjyre. Nëse klikoni në njërën prej opsioneve përveç opsionit të ngjyrave të ngurta, do të shfaqen dy ngjyra të zgjedhura: |swap|. Duke klikuar në ngjyrën e parë ose të dytë ju mund t'i vendosni ato. Klikimi i *swap* midis dy ngjyrave ndryshon rendin e tyre. Opsionet e mbushjes janë: ngjyra e ngurtë, gradient vertikal, gradient horizontal ose gradient rrethi.
 
 |Size| **Ndryshimi i madhësisë së stilolapsit**
 
@@ -562,7 +563,7 @@ Në të djathtë, pranë emrit të kostumit, ka dy butona që quhen prishje dhe 
 Kur zgjidhni një objekt, ekziston mundësia që ta rrokullisni atë horizontalisht ose vertikalisht. Në rreshtin e dytë të opsioneve, ka dy butona me dy shigjeta secila duke treguar një vijë pikash. Një në të majtë rrotullon objektin e zgjedhur horizontalisht, dhe atë në të djathtë vertikalisht.
 
 Opsionet e redaktorit të vektorit
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Këto opsione janë të disponueshme vetëm kur redaktori grafik është në modalitetin e vektorit dhe nuk shfaqet kur është në modalitetin e rasterit.
 
@@ -589,10 +590,10 @@ Në pjesën e sipërme të djathtë të redaktorit të pikturave, ka katër buto
 .. hlist::
     :columns: 1
     
-     * |v_forward| e zhvendos objektin një shtresë përpara (përpara asaj aktuale),
-     * |v_front| lëviz objektin gjatë gjithë rrugës përpara,
-     * |v_backward| zhvendos objektin një shtresë prapa (pas asaj aktuale),
-     * |v_back| lëviz objektin gjatë gjithë rrugës prapa.
+    * |v_forward| e zhvendos objektin një shtresë përpara (përpara asaj aktuale),
+    * |v_front| lëviz objektin gjatë gjithë rrugës përpara
+    * |v_backward| zhvendos objektin një shtresë prapa (pas asaj aktuale),
+    * |v_back| lëviz objektin gjatë gjithë rrugës prapa.
 
 |v_group| **Grupimi** |v_Ungroup| **Çgrupimi**
 
@@ -600,7 +601,7 @@ Ky opsion përdoret për të grupuar shumë objekte në një tërësi. Kur ka sh
 
 Opsioni ungrouping bën të kundërtën - grupi i zgjedhur mund të ndahet në pjesë më të vogla. Ky buton do të bëhet i dukshëm pasi të keni zgjedhur një grup objektesh dhe do t'ju lejojë të mos grumbulloni ato.
 
-|V_curved| **i lakuar** |v_point| **shënim**
+|V_curved| **i lakuar** |v_pointed| **shënim**
 
 Kur përdorni mjetin e riformësimit, ekzistojnë dy mundësi në të djathtë të skicave, të cilat ju lejojnë të bëni skajet ose të lakuara, si një elips ose të theksuar, si një drejtkëndësh. Kjo është e dobishme kur krijoni forma me të dy skajet e lakuara dhe të theksuara. Nëse zgjidhen më shumë se një pikë (mbajeni tastin shift dhe klikoni në më shumë se një), ndryshimi i specifikuar do të zbatohet në të gjitha pikat e zgjedhura.
 
@@ -609,7 +610,7 @@ Duke punuar në modën Raster
 
 .. sidebar:: Veglat Raster 
 
-|rasterski|
+   |rasterski|
 
 .. |rasterski| image:: ../_images/11/fig11_17.png
   
@@ -631,9 +632,9 @@ Ju mund të vizatoni një drejtkëndësh të thjeshtë ose të mbushur (me ngjyr
 
 .. sidebar:: Tekst
 
- |tekst|
+ |text|
 
-.. |tekst| image:: ../_images/11/fig11_18.png
+.. |text| image:: ../_images/11/fig11_18.png
 
 |r_text| **Teksti i të shkruarit**
 
@@ -647,7 +648,7 @@ Ju mund ta mbushni zonën në mënyrë të barabartë me një ngjyrë ose si nj�
 
 Ju mund të vendosni madhësinë e gomës duke përdorur opsionin e duhur. Zonat e fshira bëhen transparente.
 
-| R_select | **Zgjedhja e një zone në formë drejtkëndëshi**
+|R_select| **Zgjedhja e një zone në formë drejtkëndëshi**
 
 Zona e zgjedhur mund të jetë:
 
@@ -679,7 +680,7 @@ Për të rrotulluar një objekt, kapni dhe tërhiqni shigjetat e rrotullimit.
 
 |V_reshape| **Ristrukturimi i një objekti**
 
-Klikoni në objektin që dëshironi të riorganizoni dhe një grup pikash kontrolli do të shfaqen në perimetrin e objektit, siç tregohet në figurën (1). Klikoni në njërën nga pikat e kontrollit dhe tërhiqni (2). Duke klikuar në skicën e objektit mund të krijoni pika të tjera kontrolli (3). Ju mund të fshini një pikë kontrolli duke sjellë kursorin në të (4). Pika e zgjedhur do të ndryshojë ngjyrën dhe pastaj duhet të klikoni mbi të (5). Butonat |v_curved| dhe |v_point|, të cilat paraqiten në opsione, ju lejojnë të lakoni ose drejtoni skicën e objektit.
+Klikoni në objektin që dëshironi të riorganizoni dhe një grup pikash kontrolli do të shfaqen në perimetrin e objektit, siç tregohet në figurën (1). Klikoni në njërën nga pikat e kontrollit dhe tërhiqni (2). Duke klikuar në skicën e objektit mund të krijoni pika të tjera kontrolli (3). Ju mund të fshini një pikë kontrolli duke sjellë kursorin në të (4). Pika e zgjedhur do të ndryshojë ngjyrën dhe pastaj duhet të klikoni mbi të (5). Butonat |v_curved| dhe |v_pointed|, të cilat paraqiten në opsione, ju lejojnë të lakoni ose drejtoni skicën e objektit.
 
 .. image:: ../_images/11/fig11_21.png
    :width: 680px   
@@ -689,11 +690,11 @@ Klikoni në objektin që dëshironi të riorganizoni dhe një grup pikash kontro
 
 Ky mjet është i ngjashëm me mjetin përkatës në modalitetin e rasterit. Mbajeni kursorin e miut dhe lëvizeni për të vizatuar një vijë të lakuar. Në vend të pikselave, linja këtu përcaktohet nga një grup pikash kontrolli. Mund të ndryshoni pamjen e rreshtit me mjetin *Rishape*.
 
-|V_eraser| ** Eraser**
+|V_eraser| **Eraser**
 
 Ky mjet është i ngjashëm me mjetin përkatës në modalitetin e rasterit.
 
-|V_fill| **Mbushja e zonave të mbyllura me ngjyra ose ngjyrosja e skicës së një objekt **
+|V_fill| **Mbushja e zonave të mbyllura me ngjyra ose ngjyrosja e skicës së një objekt**
 
 Mjeti i kovës së bojës në modalitetin vektor funksionon ndryshe sesa në mënyrën e rasterit, ku mjet plotëson çdo zonë të zgjedhur të mbyllur. Kova e mënyrës vektoriale funksionon vetëm me objekte vektoriale. Pas zgjedhjes së këtij mjeti, mund të ndryshoni ngjyrën ose ngjyrën skicë të një objekti duke klikuar mbi të.
 
@@ -701,13 +702,13 @@ Mjeti i kovës së bojës në modalitetin vektor funksionon ndryshe sesa në më
 
 Klikoni në mjet dhe pastaj kudo në kanavacë; kur shfaqet kursori, filloni të shtypni tekstin e dëshiruar. Pasi të keni mbaruar, klikoni kudo tjetër jashtë zonës së tekstit. Mjeti *Choose* do të zgjedhë automatikisht tekstin, në mënyrë që të ndryshoni madhësinë dhe orientimin e tij. Për dallim nga teksti në modalitetin e rasterit, teksti i krijuar në modalitetin vektor mund të redaktohet në çdo kohë, edhe pas daljes nga redaktori i pikturës. Për të qenë në gjendje të modifikoni përmbajtjen e tij, ju vetëm duhet të zgjidhni tekstin.
 
-|V_line| **Vizatimi i një linje të drejtë**
+|V_line| **Vizatimi i një vije të drejtë**
 
 Linja përcaktohet nga dy pika kontrolli në të dy skajet. Për të vizatuar një rresht, klikoni dhe mbani miun ku dëshironi të fillojë rreshtin dhe tërhiqni për të tërhequr vijën në pikën e fundit. Për të vizatuar një vijë horizontale ose vertikale, mbani shtypur butonin Shift ndërsa tërhiqni miun.
 
 Për të vizatuar një vijë të lakuar, së pari duhet të vizatoni një vijë të drejtë, pastaj zgjidhni mjetin *Rishape*, shtypni Shift dhe klikoni kudo në vijë për të krijuar një pikë të re dhe më pas tërhiqni pikën e re të kontrollit. Kjo është një mënyrë për të formuar një vijë të lakuar.
 
-|V_circle| **Vizatimi i një Ellipse**
+|V_circle| **Vizatimi i një Elipsi**
 
 Përdorni këtë mjet nëse doni të vizatoni një elips në ngjyrën e zgjedhur për vizatim. Klikoni për të nënvizuar këndin e sipërm të majtë, pastaj tërhiqni (mbani tastin shift ndërsa vizatoni me mjetin e elipsit) derisa të merrni madhësinë që dëshironi. Ju mund të ndryshoni stilin e mbushjes (të mbushur ose bosh) dhe trashësinë e linjës duke përdorur butonat në zonën e opsioneve. Elipsi i krijuar ka 4 pika kontrolli në mënyrë të barabartë.
 
@@ -750,9 +751,9 @@ Në shiritin e lartë janë mjetet që redaktojnë tingullin, por nuk shtojnë a
 .. hlist::
     :columns: 1
     
-     * një fushë emri për tingullin,
-     * butonat e ribërë dhe ribërë, dhe
-     * butoni |trim|, i cili fshin pjesët e zgjedhura të tingullit.
+    * një fushë emri për tingullin,
+    * butonat e ribërë dhe ribërë, dhe
+    * butoni |trim|, i cili fshin pjesët e zgjedhura të tingullit.
 
 Në shiritin e poshtëm janë mjetet, të cilat bëjnë efekte speciale ndërsa tingulli është duke luajtur:
 

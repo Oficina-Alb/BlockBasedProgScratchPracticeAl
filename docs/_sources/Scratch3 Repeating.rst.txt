@@ -17,32 +17,31 @@ Në këtë mësim, ne do t'i lidhim komandat e përsëritjes me komandat e lëvi
 
 .. topic:: blloqe që lejojnë përseritjen
 
-Një nga shembujt më të thjeshtë të komandave të përsëritjes është komanda për përshkrimin e të ashtuquajturit "forever loop". Komandat përsëritëse përbëjnë **trupin e ciklit**. Drejtimi i tyre mund të ndalet vetëm duke ndaluar programin.
+   Një nga shembujt më të thjeshtë të komandave të përsëritjes është komanda për përshkrimin e të ashtuquajturit "forever loop". Komandat përsëritëse përbëjnë **trupin e ciklit**. Drejtimi i tyre mund të ndalet vetëm duke ndaluar programin.
  
- .. image:: ../_images/5/fig5_1.png
+.. image:: ../_images/5/fig5_1.png
    :width: 310px   
    :align: center
 
- Për shembull, nëse doni të arrini një iluzion që macja po ecën, balerina po vallëzon, dhe flutura po fluturon, gjithçka që duhet të bëni është të shtoni një skenar për ta që përsërit blloqet |next_costume | dhe |wait_sec| në një lak përgjithmonë.
+Për shembull, nëse doni të arrini një iluzion që macja po ecën, balerina po vallëzon, dhe flutura po fluturon, gjithçka që duhet të bëni është të shtoni një skenar për ta që përsërit blloqet |next_costume| dhe |wait_sec| në një lak përgjithmonë.
  
   Sigurisht, një sprite duhet të ketë të paktën dy kostume dhe periudha e pritjes duhet të jetë e shkurtër, për shembull, 2 të dhjetat e sekondës (0.2). Komanda e pritjes midis ndryshimeve të kostumit është e domosdoshme që të mund të vëzhgojmë ndryshimin e pamjes.
   Syri i njeriut nuk është në gjendje të regjistrojë ndryshimet me shpejtësinë që i bën kompjuteri. Kjo është arsyeja pse ne jemi duke "ndalur" pamjen e kostumit duke përdorur komandën e pritjes, derisa syri ynë të regjistrojë imazhin e mëparshëm.
  
-  Në shembujt e paraqitur në mësimin e mëparshëm kemi përdorur të ashtuquajturat "sythe numërimi". Këto janë përsëritje që dinë paraprakisht se sa herë trupi i lakut do të ekzekutohet.
+Në shembujt e paraqitur në mësimin e mëparshëm kemi përdorur të ashtuquajturat "sythe numërimi". Këto janë përsëritje që dinë paraprakisht se sa herë trupi i lakut do të ekzekutohet.
 
- .. image:: ../_images/5/fig5_2.png
+.. image:: ../_images/5/fig5_2.png
    :width: 350px   
    :align: center
 
 
- Në Scratch, ekziston gjithashtu një urdhër për të përshkruar një cikël kur numri i përsëritjeve nuk dihet paraprakisht, por varet nëse plotësohet kushti për daljen nga cikli.
+Në Scratch, ekziston gjithashtu një urdhër për të përshkruar një cikël kur numri i përsëritjeve nuk dihet paraprakisht, por varet nëse plotësohet kushti për daljen nga cikli.
 
- .. image:: ../_images/5/fig5_3.png
+.. image:: ../_images/5/fig5_3.png
    :width: 365px   
    :align: center
 
- Kushti për kalimin e komandave të trupit të ciklit (kushti për dalje), kontrollohet në fillim të çdo ciklit, kështu që ekziston mundësia që cikli mos të ekzekutohet as një herë, nëse përcaktohet se kushti është përmbushur gjatë parë kontrolloni.
-  Mund të ndodhë gjithashtu që cikli të vazhdojë të funksionojë pafundësisht nëse kushti për daljen nga lak nuk është përmbushur kurrë.
+Kushti për kalimin e komandave të trupit të ciklit (kushti për dalje), kontrollohet në fillim të çdo ciklit, kështu që ekziston mundësia që cikli mos të ekzekutohet as një herë, nëse përcaktohet se kushti është përmbushur gjatë parë kontrolloni. Mund të ndodhë gjithashtu që cikli të vazhdojë të funksionojë pafundësisht nëse kushti për daljen nga lak nuk është përmbushur kurrë.
 
 |study| Studioni shembujt e mëposhtëm
 ---------------------------------------
@@ -102,20 +101,20 @@ Shembulli 1 - Projekti "Yje"
   Ky rezultat mund të arrihet duke përfunduar hapat e mëposhtëm::
 
  .. hlist::
-    :columns: 2
-
-     * |1| ne zmadhojmë sprite 300% kështu që tani ylli ka dimensionet 120х120,
-     * |2| ne e pozicionojmë sprite në mënyrë që ana e majtë e yllit të jetë e drejtë pranë skajit të majtë të fazës: х = -180,
-     * |3| ne lëmë një pullë,
-     * |4| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
-     * |5| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
-     * |6| ne lëmë një pullë,
-     * |7| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
-     * |8| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
-     * |9| ne lëmë një pullë,
-     * |10| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
-     * |11| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
-     * |12| ne lëmë një pullë.
+   :columns: 2
+       
+   * |1| ne zmadhojmë sprite 300% kështu që tani ylli ka dimensionet 120х120,
+   * |2| ne e pozicionojmë sprite në mënyrë që ana e majtë e yllit të jetë e drejtë pranë skajit të majtë të fazës: х = -180,
+   * |3| ne lëmë një pullë,
+   * |4| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
+   * |5| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
+   * |6| ne lëmë një pullë,
+   * |7| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
+   * |8| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
+   * |9| ne lëmë një pullë,
+   * |10| ne e lëvizim sprite gjerësinë e saj në të djathtë (120 hapa),
+   * |11| ne ndryshojmë ngjyrën e sprite (duke përdorur komandën e efektit të ngjyrës së ndryshimit),
+   * |12| ne lëmë një pullë.
 
   Mund të shohim që i përsërisëm hapat 4-6 tri herë. Mund të kishim bërë të njëjtën gjë me më pak shkrime, siç ilustron figura e mëposhtme.
 
@@ -123,7 +122,7 @@ Shembulli 1 - Projekti "Yje"
    :width: 500px   
    :align: center
 
- Blloku |repeat| nga grupi *Control* na lejon të grumbullojmë skenarin e kërkuar vetëm një herë dhe të vendosim sa herë duhet të përsëritet.
+Blloku |repeat| nga grupi *Control* na lejon të grumbullojmë skenarin e kërkuar vetëm një herë dhe të vendosim sa herë duhet të përsëritet.
 
   Ky bllok është një shembull i të ashtuquajturave **C-blocks**, forma e të cilit na kujton shkronjën C. Thërrima brenda një blloku C merr një skenar si një fushë hyrëse. Prandaj, ky bllok ka dy fusha hyrëse: njëra për numrin e përsëritjeve dhe tjetra për skenarin.
 
@@ -153,13 +152,13 @@ Shembulli 1 - Projekti "Yje"
 
 .. topic::  Detyra 3
 
-Shkruaj një program i cili do të vizatojë 15 yje me ngjyra të ndryshme njëra mbi tjetrën në qendër të skenës, madhësia e yllit të parë duhet të jetë 320x320 (800% më e madhe se origjinali), dhe secila pas kësaj duhet të jetë më e vogël nga 50, siç është paraqitur në figurën 3.
+   Shkruaj një program i cili do të vizatojë 15 yje me ngjyra të ndryshme njëra mbi tjetrën në qendër të skenës, madhësia e yllit të parë duhet të jetë 320x320 (800% më e madhe se origjinali), dhe secila pas kësaj duhet të jetë më e vogël nga 50, siç është paraqitur në figurën 3.
  
   Sidoqoftë, kur themi më të vogël për 50, nënkuptojmë 750%, 700% ... më të mëdha se origjinale (dhe jo 50 pixel më të vegjël, ose 50% të 800%). Për të shmangur përzierjen e imazhit të ri me atë të bërë gjatë ekzekutimit të mëparshëm, duhet të shtojmë komandën erase në fillim.
 
   Zgjidhja e detyrës është dhënë në figurën e mëposhtme.
 
- .. image:: ../_images/5/fig5_11.png
+.. image:: ../_images/5/fig5_11.png
    :width: 225px   
    :align: center
 
@@ -336,7 +335,7 @@ Pyetja 1
    :feedback_a:  
    :feedback_b: Saktë.
    
-    A është gjendja që lejon daljen nga një cikël i quajtur trupi i ciklit?
+   A është gjendja që lejon daljen nga një cikël i quajtur trupi i ciklit?
 
 Pyetja 2
 ~~~~~~~~~~
@@ -350,7 +349,7 @@ Pyetja 2
    :feedback_a: Saktë.  
    :feedback_b: 
    
-    A është ndalja e programit mënyra e vetme për të ndaluar funksionimin e forever loop?
+   A është ndalja e programit mënyra e vetme për të ndaluar funksionimin e forever loop?
 
 
 Pyetja 3
@@ -387,7 +386,7 @@ Pyetja 4
 
    Cila nga këto cikle forever lejon që sprite të lëvizë majtas-djathtas dhe të duket djathtas, nëse |goto_xy|, |point_towards| dhe |rotation_style| komandat ishin ekzekutuar më parë? (Zgjidhni të gjitha përgjigjet e sakta).
 
-   .. image:: ../_images/5/q5_4.png
+.. image:: ../_images/5/q5_4.png
       :width: 665px   
       :align: center
 
@@ -410,11 +409,11 @@ Pyetja 5
 
    Cila nga këto sythe përgjithmonë lejon që sprite të ndryshojë vazhdimisht midis dy pozicioneve: këmbët lart dhe këmbët poshtë, nëse |goto_xy|, |point_towards| dhe |rotation_style2| komandat ishin ekzekutuar më parë? (Zgjidhni të gjitha përgjigjet e sakta).
 
-   .. |rotation_style2| image:: ../_images/5/rotation_style2.png
+.. |rotation_style2| image:: ../_images/5/rotation_style2.png
 
-   .. image:: ../_images/5/q5_5.png
-      :width: 690px   
-      :align: center
+.. image:: ../_images/5/q5_5.png
+   :width: 690px   
+   :align: center
 
 
 Pyetja 6
@@ -436,7 +435,7 @@ Pyetja 6
   
    Cila nga këto cikle numërimi lejon që Sprite të bëjë 80 hapa? (Zgjidhni të gjitha përgjigjet e sakta).
 
-   .. image:: ../_images/5/q5_6.png
+.. image:: ../_images/5/q5_6.png
       :width: 565px   
       :align: center
 
@@ -502,7 +501,7 @@ Pyetja 9
 
    Cila nga këto rafte do të lejojë që Sprite të thotë *Hello* nëse përdoruesi fut vlerën 0?
    
-   .. image:: ../_images/5/q5_9.png
+.. image:: ../_images/5/q5_9.png
       :width: 500px   
       :align: center
       
@@ -542,7 +541,7 @@ Pyetje 10
 
 
 |try| Provoje!
--------------
+----------------
 
 Ushtrimi 1
 ~~~~~~~~~~

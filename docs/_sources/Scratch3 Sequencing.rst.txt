@@ -13,22 +13,22 @@ Hapat e sekuencave
 Në mësimin e mëparshëm mësuam rreth komandave të lëvizjes dhe tani do të shohim se si mund t'i përdorim komandat nga grupi *Looks* dhe *Events*. Ne do të tregojmë se si i caktojmë një sjellje të veçantë burimit tonë, duke lidhur blloqe për të formuar një skenar. Projektet në këtë mësim përbëhen nga shkrime të bëra nga një seri hapash të njëpasnjëshëm. Mund të themi se ky lloj i shkrimeve ka një strukturë **të thjeshtë lineare**.
 
 .. topic:: Terminologjia dhe gramatika vizuale e gjuhës gërvishtëse
+  
+   Sprites mund të ekzekutojnë më shumë se 100 komanda. Blloqet që korrespondojnë me komandat paraqesin fjalorin e gjuhës Scratch, dhe rregullat me të cilat ato lidhen korrespondojnë me gramatikën e saj. Blloqet mbahen në Paleta Blocks, dhe ato ndahen në 10 ngjyra të ndryshme:
 
-  Sprites mund të ekzekutojnë më shumë se 100 komanda. Blloqet që korrespondojnë me komandat paraqesin fjalorin e gjuhës Scratch, dhe rregullat me të cilat ato lidhen korrespondojnë me gramatikën e saj. Blloqet mbahen në Paleta Blocks, dhe ato ndahen në 10 ngjyra të ndryshme:
+.. hlist::
+   :columns: 5
 
- .. hlist::
-    :columns: 5
-
-    * |motion_blocks| Motion,
-    * |looks_blocks| Looks, 
-    * |sound_blocks| Sound, 
-    * |events_blocks| Events,
-    * |control_blocks| Control, 
-    * |sensing_blocks| Sensing,
-    * |operator_blocks| Operators,
-    * |variables_blocks| Variables, 
-    * |my_blocks| My Blocks 
-    * |extensions| Extensions.  
+   * |motion_blocks| Motion,
+   * |looks_blocks| Looks, 
+   * |sound_blocks| Sound, 
+   * |events_blocks| Events,
+   * |control_blocks| Control, 
+   * |sensing_blocks| Sensing,
+   * |operator_blocks| Operators,
+   * |variables_blocks| Variables, 
+   * |my_blocks| My Blocks 
+   * |extensions| Extensions.  
 
 Blloqet grupohen së bashku për të bërë më të lehtë për përdoruesit të krijojnë skriptet. Pavarësisht se sa e ndërlikuar është sjellja e një sprite të caktuar, skenari që përshkruan se është i përbërë nga një seri operacionesh të thjeshta të përfshira në këto 10 lloje. Nëse e dini se cili lloj aktiviteti duhet të kryejë sprite, lehtë mund të zgjidhni grupin e duhur dhe të merrni prej tij bllokun përkatës.
 
@@ -52,7 +52,7 @@ Blloqet grupohen së bashku për të bërë më të lehtë për përdoruesit të
 
  Në bllokun |say_sec| një fushë hyrëse ka një formë të ngjashme me një drejtkëndësh të rrumbullakosur, dhe tjetra ka një formë të një rrethi. Fushat e hyrjes drejtkëndësh të rrumbullakosur mund të marrin si vlera teksti ashtu edhe numri, ndërsa ato rrethore mund të marrin vetëm vlera të numrave.
 
- Blloku |Glide_xy|ka tre fusha hyrëse.
+ Blloku |glide_xy| ka tre fusha hyrëse.
 
  Disa prej blloqeve kanë fusha hyrjeje gjashtëkëndëshe, për shembull bllok kontrolli |wait_until|. Këto fusha hyrëse mund të marrin vetëm vlera logjike (të vërteta ose false).
 
@@ -76,13 +76,12 @@ Blloqet grupohen së bashku për të bërë më të lehtë për përdoruesit të
 
 .. topic:: Funksionet e blloqeve *Looks* dhe *Events*
 
-Blloqet *Motion* që shtjelluam në mësimin e mëparshëm mund të përdoren vetëm për sprites. Për dallim prej tyre, ju mund të përdorni blloqet nga grupi *Looks* për të menaxhuar pamjen e sprite dhe sfond, d.m.th pamjen e skenës. Sidoqoftë, kjo nuk vlen kjo për të gjitha blloqet e këtij grupi. Midis tyre ka nga ato që vlejnë vetëm për sprites, dhe ato që vlejnë vetëm për skenën. Blloqet nga grupi *Events* inicojnë ekzekutimin e shkrimeve.
+   Blloqet *Motion* që shtjelluam në mësimin e mëparshëm mund të përdoren vetëm për sprites. Për dallim prej tyre, ju mund të përdorni blloqet nga grupi *Looks* për të menaxhuar pamjen e sprite dhe sfond, d.m.th pamjen e skenës. Sidoqoftë, kjo nuk vlen kjo për të gjitha blloqet e këtij grupi. Midis tyre ka nga ato që vlejnë vetëm për sprites, dhe ato që vlejnë vetëm për skenën. Blloqet nga grupi *Events* inicojnë ekzekutimin e shkrimeve.
 
+Në mësimet e mëparshme ne mësojmë tashmë në lidhje me efektet e disa prej blloqeve *Looks* dhe *Events*, për shembull, ``say`` dhe ``shtypni një çelës``. Në këtë mësim, ne do të prezantojmë, në mënyrë më të detajuar, blloqet që lejojnë animim të lehtë me aplikimin e efekteve grafike të integruara, dhe zgjerimin e fjalorit Scratch duke përdorur komanda të reja.
 
- Në mësimet e mëparshme ne mësojmë tashmë në lidhje me efektet e disa prej blloqeve *Looks* dhe *Events*, për shembull, ``say`` dhe ``shtypni një çelës``. Në këtë mësim, ne do të prezantojmë, në mënyrë më të detajuar, blloqet që lejojnë animim të lehtë me aplikimin e efekteve grafike të integruara, dhe zgjerimin e fjalorit Scratch duke përdorur komanda të reja.
-
-|Studim| Studioni shembujt e mëposhtëm
-------------------------------------
+|Study| Studioni shembujt e mëposhtëm
+----------------------------------------
 
 Ne mund të argëtojmë miqtë tanë duke i treguar shaka, dhe gjithashtu duke u treguar atyre mashtrime matematikore. Projekti i mëposhtëm ilustron njërën prej tyre. Ka vetëm një skenar me një strukturë të thjeshtë lineare.
 
@@ -171,8 +170,8 @@ Nëse doni të dini përgjigjen e pyetjes së djalit "Si e dini?", Klikoni në i
 .......
 
 .. sidebar:: Shprehjet aritmetike në gërvishtje
-
-  Grupi *Operatorët* përmban blloqe që mundësojnë kryerjen e operacioneve aritmetike. Për shembull, |plus| bllok mundëson shtesë. Nëse vendosni numrat në fushat hyrëse të këtij blloku, ajo do të llogarisë shumën e tyre. Operatorët nuk mund të qëndrojnë vetëm në skenar, ata duhet të futen në fushën e hyrjes së një blloku të pavarur. Për shembull, nëse i futni ato në fushën hyrëse të bllokut ``say`` ose ``think``, vlera që llogaritin do të shfaqet.
+   
+   Grupi *Operatorët* përmban blloqe që mundësojnë kryerjen e operacioneve aritmetike. Për shembull, |plus| bllok mundëson shtesë. Nëse vendosni numrat në fushat hyrëse të këtij blloku, ajo do të llogarisë shumën e tyre. Operatorët nuk mund të qëndrojnë vetëm në skenar, ata duhet të futen në fushën e hyrjes së një blloku të pavarur. Për shembull, nëse i futni ato në fushën hyrëse të bllokut ``say`` ose ``think``, vlera që llogaritin do të shfaqet.
 
 Shembulli 3 - Projekti "Calculation"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -247,12 +246,10 @@ Projekti i mëposhtëm tregon se si |change_effect| komanda nga grupi *Looks* mu
 Janë 7 kopje të së njëjtës sprite në skenë. Duke klikuar në njërën prej tyre ndryshon sprite duke përdorur një nga shtatë efektet grafike. Kjo mundësohet nga komanda |change_effect|. Sprite thotë gjithashtu se cili efekt është përdorur.
 
 .. sidebar:: Graphic Effects
-    
-    Duke klikuar në trekëndëshin e bardhë në fushën e hyrjes
-    ju do të hapni listën rënëse që përmban më poshtë
-    7 efekte të ndryshme
 
-    |efekti|
+   Duke klikuar në trekëndëshin e bardhë në fushën e hyrjes ju do të hapni listën rënëse që përmban më poshtë ne 7 efekte të ndryshme
+
+|efekti|
 
 .. |efekti| image:: ../_images/3/fig3_8.png
   
@@ -260,7 +257,7 @@ Janë 7 kopje të së njëjtës sprite në skenë. Duke klikuar në njërën pre
 
 |1| Nis njö projekt tö ri.
 
-|2|Fshini sprite mace dhe zgjidhni Sprint *Singer1* nga biblioteka e sprite.
+|2| Fshini sprite mace dhe zgjidhni Sprint *Singer1* nga biblioteka e sprite.
 
 |3| Shtoni skriptin e mëposhtëm në sprite.
 
@@ -323,12 +320,11 @@ Pyetja 1
    :feedback_c: 
    :feedback_d: 
 
-   Cilat nga blloqet i përkasin grupit të komandave *Looks*?
-    (Zgjidhni të gjitha përgjigjet e sakta)
+   Cilat nga blloqet i përkasin grupit të komandave *Looks*? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/3/q3_1.png
-     :width: 410px   
-     :align: center
+.. image:: ../_images/3/q3_1.png
+   :width: 410px   
+   :align: center
 
 Pyetja 2
 ~~~~~~~~~~
@@ -347,12 +343,11 @@ Pyetja 2
    :feedback_c: 
    :feedback_d:  
   
-   Cilin nga blloqet i përkasin grupit *Events* të komandave?
-    (Zgjidhni të gjitha përgjigjet e sakta)
+   Cilin nga blloqet i përkasin grupit *Events* të komandave? (Zgjidhni të gjitha përgjigjet e sakta)
 
-   .. image:: ../_images/3/q3_2.png
-      :width: 520px   
-      :align: center
+.. image:: ../_images/3/q3_2.png
+   :width: 520px   
+   :align: center
 
 Pyetja 3
 ~~~~~~~~~~
@@ -370,13 +365,12 @@ Pyetja 3
    :feedback_b: 
    :feedback_c: 
    :feedback_d: 
+   
+   Cilin nga blloqet i përkasin grupit *Control* të komandave? (Zgjidhni të gjitha përgjigjet e sakta) 
 
-   Cilin nga blloqet i përkasin grupit *Control* të komandave?
-    (Zgjidhni të gjitha përgjigjet e sakta) 
-
-   .. image:: ../_images/3/q3_3.png
-      :width: 505px   
-      :align: center
+.. image:: ../_images/3/q3_3.png
+   :width: 505px   
+   :align: center
 
 Pyetja 4
 ~~~~~~~~~~
@@ -478,13 +472,12 @@ Pyetja 9
    :feedback_b: Gabim. E para ka vlerë 5-3=2
    :feedback_c: Saktë.
    :feedback_d: Gabim. E para ka vlerë 2.
-
-   Cila nga shprehejet |q3_9a| dhe |q3_9b|ka vlerë negative?
+   
+   Cila nga shprehejet |q3_9a| dhe |q3_9b| ka vlerë negative?  
    
 .. |q3_9a| image:: ../_images/3/q3_9a.png
 
 .. |q3_9b| image:: ../_images/3/q3_9b.png
-  
 
 Pyetja 10
 ~~~~~~~~~~~
@@ -542,7 +535,7 @@ Pyetja 12
 
 
 |try| Provoje!
--------------
+---------------
 
 Ushtrimi 1 - Zmadhimi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -760,7 +753,7 @@ Filloni një projekt të ri, të cilin do ta quani *Genius*. Zgjidhni formën kr
 
 
 Projekti 2 - "Kek me çokollatë"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. level:: 2
 
