@@ -287,8 +287,8 @@ Në një tokë magjike, ka katër sprites një magjistar i ri *Mathematician*, *
 Sidoqoftë ndryshimi i *Numbers* dhe *Signs*, *Mathematician* i shton dhe shumon ato pa bërë ndonjë gabim.
 
 Nuk dihet saktësisht se cili magjistar e mësoi atë, por thuhet se *Mathematician* po kërkon një mjeshtër i cili do ta mësonte atë të ndahej dhe të zbriste.
-Sekreti i *Mathematician* është se, përveç që kanë një emër dhe një imazh, çdo kostum gjithashtu ka një numër rendi. Është një numër i zakonshëm me të cilin mund të kryhen operacione matematikore. * Matematikani * thjesht duhet të zbulojë se cili numër i sekuencave të kostumeve për secilën *Number* dhe *Sign* u zgjodh në shembull.
-Meqenëse kemi parë tashmë që reporterët dinë gjithçka, *Mathematician* thjesht mund të marrë reporterët nga grupi *Sensing*, blloku i degëzimit ``if else`` nga grupi *Control*, operatori logjik për barazi dhe operator matematikor për shumëzimin dhe shtimin e numrave nga grupi "Operatorët *.
+Sekreti i *Mathematician* është se, përveç që kanë një emër dhe një imazh, çdo kostum gjithashtu ka një numër rendi. Është një numër i zakonshëm me të cilin mund të kryhen operacione matematikore. *Matematikani* thjesht duhet të zbulojë se cili numër i sekuencave të kostumeve për secilën *Number* dhe *Sign* u zgjodh në shembull.
+Meqenëse kemi parë tashmë që reporterët dinë gjithçka, *Mathematician* thjesht mund të marrë reporterët nga grupi *Sensing*, blloku i degëzimit ``if else`` nga grupi *Control*, operatori logjik për barazi dhe operator matematikor për shumëzimin dhe shtimin e numrave nga grupi "Operatorët*.
 
 Në versionin e parë të projektit, përdoruesi klikon butonin *imagine* për të vendosur detyrën, dhe magjistari i ri e zgjidh atë.
 
@@ -415,7 +415,7 @@ Nëse duam që programi të kryejë operacionet aritmetike të zbritjes dhe ndar
    :align: center    
 
 Supozohet se përdoruesi është i njohur me konceptin e numrave negativ. Kur bëhet fjalë për ndarjen, duhet të sigurohemi që rezultati të jetë një numër i plotë dhe të shmangim ndarjen në zero.
-Për të shmangur problemet e mundshme kur bëhet fjalë për ndarjen, nëse operacioni i zgjedhur, i cili gjenerohet në mënyrë të rastësishme, ndodh të jetë ndarje, ne do të transmetojmë mesazhin *divide *, ndërsa për të gjitha operacionet e tjera do të përdorim të njëjtën zgjidhje të aplikuar në versionet e mëparshme të projektit.
+Për të shmangur problemet e mundshme kur bëhet fjalë për ndarjen, nëse operacioni i zgjedhur, i cili gjenerohet në mënyrë të rastësishme, ndodh të jetë ndarje, ne do të transmetojmë mesazhin *divide*, ndërsa për të gjitha operacionet e tjera do të përdorim të njëjtën zgjidhje të aplikuar në versionet e mëparshme të projektit.
 
 .. image:: ../_images/7/fig7_36.png
    :width: 625px   
@@ -441,7 +441,7 @@ Ne do të përdorim këtë metodë të gjenerimit të detyrave, nga rezultatet n
 
 Ajo që del si një problem i ri, kur detyrat zgjidhen në këtë mënyrë, është se dividenti ka të ngjarë të jetë një numër dyshifror, dhe ai gjithashtu mund të përfundojë në zero, i cili nuk u përfshi në kostumet për sprite *Number1* në versionet e mëparshme të projektit.
 Kjo mund të zgjidhet duke futur një sprite më shumë, një dublikatë të sprite *Number1*, të cilën do ta quajmë *Dhjetëra*, dhe duke shtuar numrin zero si kostumin e dhjetë në *Number 1*. Sigurisht, sprite *Dhjetëra* është e fshehur dhe shfaqet në skenë vetëm nëse sprite *Sign* transmeton ndarjen e mesazhit, dhe dividenti i llogaritur më parë është një numër dyshifror (i cili do të zbulohet nga numri i ndryshueshëm i shifrave) .
-Kjo është kur *Dhjetëra* (shifra në vendin e dhjetëra të dividentit) shfaqet në anën e majtë të sprite *Number *, e cila merr vlerën e njësive shifrore të dividendit.
+Kjo është kur *Dhjetëra* (shifra në vendin e dhjetëra të dividentit) shfaqet në anën e majtë të sprite *Number*, e cila merr vlerën e njësive shifrore të dividendit.
 
 Për të nxjerrë shifrat nga dividenda, ne përdorim operacionin |letter|, e cila nxjerr karakterin me numrin e sekuencës së duhur nga vargu.
 

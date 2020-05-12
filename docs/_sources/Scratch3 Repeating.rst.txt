@@ -257,7 +257,7 @@ Në figurën e mëposhtme, ju mund të shihni skriptet për fillimin e programit
 
 Ne do të përmirësojmë projektin në mënyrë që ai të tërheq një formë gjeometrike të dhënë nga përdoruesi me të dhënat e hyrjes. Në këtë version të projektit, parametrat e vizatimit përcaktohen duke klikuar mbi flamurin e gjelbër. Pastaj përdoruesit i kërkohet të shtypë numrin e anëve të poligonit që ai / ajo dëshiron të vizatojë.
 
-Blloku i të dhënave hyrëse |ask_wait| ndodhet në grupin *Sensing .
+Blloku i të dhënave hyrëse |ask_wait| ndodhet në grupin *Sensing* .
 
 Pas ekzekutimit të kësaj komande, Scratch kujton atë që përdoruesi vendosi në hapësirën e quajtur |answer|
 

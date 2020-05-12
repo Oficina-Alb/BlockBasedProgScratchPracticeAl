@@ -366,20 +366,16 @@ Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vij�
 <a class="reference internal image-reference" href="_images/fig5_18.png"><img alt="_images/fig5_18.png" class="align-center" src="_images/fig5_18.png" style="width: 480px;" /></a>
 <p>Scriptdo skript i lidhur me çelësat 3-6 në tastierë do të fshijë të gjitha shenjat e bëra më parë, do të fshehë sprite dhe pastaj do të vizatojë poligonin përkatës.</p>
 <p>Në figurën e mëposhtme, ju mund të shihni skriptet për fillimin e programit dhe vizatimin e një trekëndëshi dhe një sheshi.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_19.png"><img alt="../_images/5/fig5_19.png" class="align-center" src="../_images/fig5_19.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_19.png"><img alt="_images/fig5_19.png" class="align-center" src="_images/fig5_19.png" style="width: 600px;" /></a>
 <p><strong>Përditësimi i Projektit</strong></p>
 <p>Ne do të përmirësojmë projektin në mënyrë që ai të tërheq një formë gjeometrike të dhënë nga përdoruesi me të dhënat e hyrjes. Në këtë version të projektit, parametrat e vizatimit përcaktohen duke klikuar mbi flamurin e gjelbër. Pastaj përdoruesit i kërkohet të shtypë numrin e anëve të poligonit që ai / ajo dëshiron të vizatojë.</p>
-<p>Blloku i të dhënave hyrëse <img alt="ask_wait" src="_images/ask_wait.png" /> ndodhet në grupin <a href="#id1"><span class="problematic" id="id2">*</span></a>Sensing .</p>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/izabela/BlockBasedProgScratchPracticeAl/_sources/Scratch3 Repeating.rst</span>, line 260); <em><a href="#id2">backlink</a></em></p>
-<p>Inline emphasis start-string without end-string.</p>
-</div>
+<p>Blloku i të dhënave hyrëse <img alt="ask_wait" src="_images/ask_wait.png" /> ndodhet në grupin <em>Sensing</em> .</p>
 <p>Pas ekzekutimit të kësaj komande, Scratch kujton atë që përdoruesi vendosi në hapësirën e quajtur <img alt="answer" src="_images/answer.png" /></p>
 <p>Pritet që përdoruesi të shkruajë një nga numrat midis 3 dhe 6, megjithatë, nëse përdoruesi fut një numër i cili nuk është në këtë interval, programi nuk do të funksionojë siç duhet, dhe kjo duhet të parandalohet.</p>
 <p>Një nga mënyrat për të kontrolluar të dhënat e hyrjes është të përsërisni pyetjen derisa përdoruesi të fusë një numër nga intervali i saktë.</p>
 <a class="reference internal image-reference" href="_images/fig5_20.png"><img alt="_images/fig5_20.png" class="align-center" src="_images/fig5_20.png" style="width: 380px;" /></a>
 <p>Pasi të jenë marrë të dhënat e sakta të hyrjes, do të përdoren për të llogaritur numrin e përsëritjeve dhe këndin e kthesës, prandaj, të katër poligonët mund të vizatohen me të njëjtat komanda.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_21.png"><img alt="../_images/5/fig5_21.png" class="align-center" src="../_images/fig5_21.png" style="width: 380px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_21.png"><img alt="_images/fig5_21.png" class="align-center" src="_images/fig5_21.png" style="width: 380px;" /></a>
 <p>Ne do të përdorim pjesë të projekteve të mëparshme për projektin tonë të ardhshëm. Në të, ne do të tregojmë se si mund të përdorim përbërjen e foleve të sytheve të numërimit për të tërhequr imazhe efektive të prodhuara duke përsëritur modele. Modeli mund të përsëritet pas një numri të caktuar hapash - në atë mënyrë do të marrim të ashtuquajturat skajet dekorative. Modelet mund të përsëriten pas kthimit për të krijuar një kënd ose pas kombinimit të të dy lëvizjeve.</p>
 </div>
 <hr class="docutils" />
@@ -390,18 +386,18 @@ Për shembull, në vend që të shtojmë 400 komanda për të vizatuar një vij�
 
     </div>
 <p>Nëse e përsërisim lakin e numërimit që tërheq një pentagon të rregullt nga shembulli i mëparshëm shumë herë, do të vizatojmë një zbukurim - një imazh më i ndërlikuar i përbërë nga pentagona. Për shembull, nëse vizatojmë 20 pentagona të tilla, duke lëvizur nga e majta në skajin e djathtë të skenës, do të tërheqim kufirin e mëposhtëm dekorativ.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_22.png"><img alt="../_images/5/fig5_22.png" class="align-center" src="../_images/fig5_22.png" style="width: 705px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_22.png"><img alt="_images/fig5_22.png" class="align-center" src="_images/fig5_22.png" style="width: 705px;" /></a>
 <p>Vizatimi i pentagonit mundësohet nga cikli (2), i cili është futur në lakin e jashtëm (1). Cikli i jashtëm përsëritet 20 herë. Sa herë që Cikli i jashtëm vrapon, një pentagon tërhiqet në pozicionin aktual të lapsit, pas së cilës sprite lëviz në të djathtë me stilolaps lart (3). Sprite lëviz vetëm gjysmën e gjatësisë së anës së pentagonit, kjo është arsyeja pse pentagonët mbivendosen.</p>
 <p>Sidoqoftë, nëse përsërisim vizatimin e pentagonave ndërsa ndryshojmë drejtimin e sprite para se të vizatojmë secilën pentagon, kështu që sprite kthehet në një rreth të plotë, do të marrim stolinë e mëposhtme.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_23.png"><img alt="../_images/5/fig5_23.png" class="align-center" src="../_images/fig5_23.png" style="width: 405px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_23.png"><img alt="_images/fig5_23.png" class="align-center" src="_images/fig5_23.png" style="width: 405px;" /></a>
 <p>Meqenëse një rreth i plotë ka 360 gradë, dhe sprite kthehet 15 gradë pas secilës pentagon (2) me stilolaps lart (3), duhet ta përsërisim këtë procedurë 24 herë; prandaj, cikli i jashtëm (1) përsëritet 24 herë.
 Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa, do të marrim një zbukurim pak më të ndryshëm.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_24.png"><img alt="../_images/5/fig5_24.png" class="align-center" src="../_images/fig5_24.png" style="width: 345px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_24.png"><img alt="_images/fig5_24.png" class="align-center" src="_images/fig5_24.png" style="width: 345px;" /></a>
 <p>Nëse e përsërisim zbukurimin e dytë 4 herë, duke shkuar nga e majta në skajin e djathtë të skenës, do të marrim imazhin më poshtë.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_25.png"><img alt="../_images/5/fig5_25.png" class="align-center" src="../_images/fig5_25.png" style="width: 755px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_25.png"><img alt="_images/fig5_25.png" class="align-center" src="_images/fig5_25.png" style="width: 755px;" /></a>
 <p>Prandaj, vizatimi i kufirit të fundit dekorativ arrihet me përbërjen e mbivendosur i cili ka 3 sythe: cikli i brendshëm tërheq një pentagon (3), cikli i mesëm (2) përsërit vizatimin e pentagonit dhe e kthen spërkatjen me stilolaps lart 24 herë, dhe cikli i jashtëm (1) përsërit vizatimin e stoli rrethore dhe e zhvendos sprite me stilolaps lart për vlerën e diametrit të stolive.</p>
 <p>Ky projekt na lejon të vizatojmë secilën prej zbukurimeve duke shtypur një nga çelësat 1-4 në tastierë. Përveç këtyre 4 skripteteve, ekziston një skenar i cili nxitet duke klikuar mbi flamurin e gjelbër, dhe një i cili nxitet me udhëzimin <em>mesazh</em>. Udhëzimi <em>mesazhi</em> transmetohet nga secila skenar në fund të procesit të drejtimit. Kur sprite merr këtë mesazh, ai shfaqet afër pjesës së sipërme të ekranit dhe jep udhëzimin për vizatimin e stolive.</p>
-<a class="reference internal image-reference" href="../_images/5/fig5_26.png"><img alt="../_images/5/fig5_26.png" class="align-center" src="../_images/fig5_26.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="_images/fig5_26.png"><img alt="_images/fig5_26.png" class="align-center" src="_images/fig5_26.png" style="width: 450px;" /></a>
 </div>
 </div>
 <div class="section" id="ask-e-kuptuat">
@@ -565,7 +561,7 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
     <div data-level="2" style="display:none">
 
     </div>
-<a class="reference internal image-reference" href="../_images/5/q5_8.png"><img alt="../_images/5/q5_8.png" class="align-center" src="../_images/q5_8.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/q5_8.png"><img alt="_images/q5_8.png" class="align-center" src="_images/q5_8.png" style="width: 300px;" /></a>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="repeat1">
@@ -653,7 +649,7 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
         <div class="course-content">
             <p>
 <p><strong>Gjerdan e hapur</strong>. Krijoni një projekt i cili tregon një varg qarqesh me ngjyra dhe madhësi të ndryshme duke filluar nga buza e majtë e skenës.</p>
-<a class="reference internal image-reference" href="../_images/5/ex5_1.png"><img alt="../_images/5/ex5_1.png" class="align-center" src="../_images/ex5_1.png" style="width: 240px;" /></a>
+<a class="reference internal image-reference" href="_images/ex5_1.png"><img alt="_images/ex5_1.png" class="align-center" src="_images/ex5_1.png" style="width: 240px;" /></a>
 
     <div data-component="reveal" id="instruction2"   data-showtitle="Shih Instruksionet" data-hidetitle="Shih Instruksionet">
     <p><strong>Udhëzim:</strong></p>
@@ -673,7 +669,7 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
         <div class="course-content">
             <p>
 <p><strong>Gjerdan i Mbyllur</strong>. Krijoni një projekt i cili tërheq një sekuencë të mbyllur me 12 qarqe me ngjyra të ndryshme. Madhësia e lapsit duhet të jetë 50.</p>
-<a class="reference internal image-reference" href="../_images/5/ex5_2.png"><img alt="../_images/5/ex5_2.png" class="align-center" src="../_images/ex5_2.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/ex5_2.png"><img alt="_images/ex5_2.png" class="align-center" src="_images/ex5_2.png" style="width: 200px;" /></a>
 
     <div data-component="reveal" id="instruction3
  :showtitle: Shih Instruksionet
@@ -737,7 +733,7 @@ Nëse midis vizatimeve, sprite ndryshon një kënd dhe gjithashtu lëviz 10 hapa
 <p>Nxënësi dëshironte që sprite të shëtiste midis majës dhe skajit të djathtë të skenës.
 Kjo është arsyeja pse ai / ajo shtoi ndryshimin e vazhdueshëm të kostumit dhe lëviz 10 hapa deri sa të arrijë në skaj, kur kthehet sprite.
 Sidoqoftë, nxënësit nuk i pëlqen fakti që sprite është duke ecur kokëposhtë drejt skajit të majtë të skenës. Çfarë duhet të bëhet për të rregulluar këtë gabim?</p>
-<a class="reference internal image-reference" href="../_images/5/bug5_1.png"><img alt="../_images/5/bug5_1.png" class="align-center" src="../_images/bug5_1.png" style="width: 145px;" /></a>
+<a class="reference internal image-reference" href="_images/bug5_1.png"><img alt="_images/bug5_1.png" class="align-center" src="_images/bug5_1.png" style="width: 145px;" /></a>
 
     <div data-component="reveal" id="hiding10"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
     <p><strong>Përgjigja:</strong></p>
@@ -749,12 +745,12 @@ Sidoqoftë, nxënësit nuk i pëlqen fakti që sprite është duke ecur kokëpos
 <h3>Bug 2<a class="headerlink" href="#bug-2" title="Permalink to this headline">¶</a></h3>
 <p>Nxënësi dëshironte që fluturën e tij të fluturonte, e cila ka dy kostume - një me ngritje dhe një me krahë të ulur, të rrëshqasë duke tundur krahët mes dy pozicioneve të rastit.
 Sidoqoftë, programi i tij nuk e mundësoi këtë. Flutura u rrëshqit në mes të dy pozicioneve, por krahët e saj ishin ulur ose ngritur. Ku gaboi nxënësi?</p>
-<a class="reference internal image-reference" href="../_images/5/bug5_2.png"><img alt="../_images/5/bug5_2.png" class="align-center" src="../_images/bug5_2.png" style="width: 245px;" /></a>
+<a class="reference internal image-reference" href="_images/bug5_2.png"><img alt="_images/bug5_2.png" class="align-center" src="_images/bug5_2.png" style="width: 245px;" /></a>
 
     <div data-component="reveal" id="hiding8"   data-showtitle="Trego përgjigjen" data-hidetitle="Fshih përgjigjen">
     <p><strong>Përgjigja:</strong></p>
 <p>Duhej të ishin krijuar dy skenare, të cilat do të funksiononin paralelisht.</p>
-<a class="reference internal image-reference" href="../_images/5/ans5_2.png"><img alt="../_images/5/ans5_2.png" class="align-center" src="../_images/ans5_2.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/ans5_2.png"><img alt="_images/ans5_2.png" class="align-center" src="_images/ans5_2.png" style="width: 400px;" /></a>
 
     </div>
     </div>
